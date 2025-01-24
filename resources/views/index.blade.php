@@ -1,3 +1,4 @@
+<br><br>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -27,26 +28,26 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="{ { asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{ { asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{ { asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{ { asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{ { asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{ { asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{ { asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{ { asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
 
@@ -97,60 +98,16 @@
             <nav class="main-navigation ">
                 <div class="menu-cover-title header-container dsn-container">MENU</div>
                 <ul id="dsn-primary-list" class="primary-nav h2">
-                    <li class="nav-item has-sub-menu">
+                    <li class="nav-item">
                         <a title="Home" href="#0">
                             <span class="overflow ">Home</span>
                         </a>
-                        <ul class="nav-item">
-                            <li class="dsn-back">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
-                                        <g>
-                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
-                                        </g>
-                                    </svg>
-                                    <span class="text-toggle-back">
-                                        <span class="text-name">Home</span>
-                                        <span class="text-back">Back</span>
-                                    </span>
-                                </span>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Home" href="index.html">
-                                    <span class="overflow">Main Demo</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Corporate" href="corporate.html" data-dsn-text="Corporate">
-                                    <span class="overflow">Corporate</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Architecture" href="architecture.html" data-dsn-text="Architecture">
-                                    <span class="overflow">Architecture</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Creative" href="creative.html" data-dsn-text="Creative">
-                                    <span class="overflow">Creative</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Photographer" href="photography.html" data-dsn-text="Photographer">
-                                    <span class="overflow">Photographer</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Freelancer" href="freelancer.html" data-dsn-text="Freelancer">
-                                    <span class="overflow">Freelancer</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Personal" href="personal.html" data-dsn-text="Personal">
-                                    <span class="overflow">Personal</span>
-                                </a>
-                            </li>
-                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a title="Sobre" href="#0">
+                            <span class="overflow ">Sobre</span>
+                        </a>
                     </li>
 
                     <li class="nav-item has-sub-menu">
@@ -158,98 +115,21 @@
                             <span class="overflow ">Portfolio</span>
                         </a>
                         <ul class="nav-item">
-                            <li class="dsn-back">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
-                                        <g>
-                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
-                                        </g>
-                                    </svg>
-                                    <span class="text-toggle-back">
-                                        <span class="text-name">Portfolio</span>
-                                        <span class="text-back">Back</span>
-                                    </span>
-                                </span>
-                            </li>
-
-                            <li class="nav-item has-sub-menu">
-                                <a title="Card" href="#0" data-dsn-text="Portfolio">
-                                    <span class="overflow">Card</span>
-                                </a>
-                                <ul class="nav-item">
-                                    <li class="dsn-back">
-                                        <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
-                                                <g>
-                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
-                                                </g>
-                                            </svg>
-                                            <span class="text-toggle-back">
-                                                <span class="text-name">Card</span>
-                                                <span class="text-back">Back</span>
-                                            </span>
-                                        </span>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a title="Card 2 columns" href="work.html" data-dsn-text="Our Portfolio">
-                                            <span class="overflow">2 columns</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a title="Card 2 columns" href="work-3.html" data-dsn-text="Our Portfolio">
-                                            <span class="overflow">2 columns Style 2</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="nav-item has-sub-menu">
-                                <a title=">Work massonary" href="#0" data-dsn-text="Portfolio">
-                                    <span class="overflow">massonary</span>
-                                </a>
-                                <ul class="nav-item">
-                                    <li class="dsn-back">
-                                        <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
-                                                <g>
-                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
-                                                </g>
-                                            </svg>
-                                            <span class="text-toggle-back">
-                                                <span class="text-name">Massonary</span>
-                                                <span class="text-back">Back</span>
-                                            </span>
-                                        </span>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a title="Massonary 2 columns" href="work-5.html" data-dsn-text="Our Portfolio">
-                                            <span class="overflow">Massonary 2 columns</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a title="Massonary 3 columns" href="work-4.html" data-dsn-text="Our Portfolio">
-                                            <span class="overflow">Massonary 3 columns</span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </li>
-
                             <li class="nav-item">
                                 <a title="Hover" href="work-hover.html" data-dsn-text="Portfolio">
-                                    <span class="overflow">Hover</span>
+                                    <span class="overflow">1º Portifolio</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a title="horizontal Scroll" href="work-horizontal-scroll.html" data-dsn-text="Portfolio">
-                                    <span class="overflow">horizontal Scroll</span>
+                                    <span class="overflow">2º Portifolio</span>
                                 </a>
                             </li>
 
                             <li class="nav-item">
                                 <a title="Carousel" href="work-2.html" data-dsn-text="Portfolio">
-                                    <span class="overflow">Carousel</span>
+                                    <span class="overflow">1º Portifolio</span>
                                 </a>
                             </li>
                         </ul>
@@ -257,70 +137,47 @@
 
                     <li class="nav-item has-sub-menu">
                         <a title="Home" href="#0">
-                            <span class="overflow ">Works</span>
+                            <span class="overflow ">Serviços</span>
                         </a>
                         <ul class="nav-item">
-                            <li class="dsn-back">
-                                <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
-                                        <g>
-                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
-                                        </g>
-                                    </svg>
-                                    <span class="text-toggle-back">
-                                        <span class="text-name">Works</span>
-                                        <span class="text-back">Back</span>
-                                    </span>
-                                </span>
-                            </li>
                             <li class="nav-item ">
-                                <a title="Binge x The Iconic" href="project-1.html" data-dsn-text="Binge x The Iconic">
-                                    <span class="overflow">Binge x The Iconic</span>
+                                <a title="Serviço 1" href="project-1.html" data-dsn-text="Serviço 1">
+                                    <span class="overflow">Serviço 1</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a title="Me Myself and i" href="project-2.html" data-dsn-text="Me Myself and i">
-                                    <span class="overflow">Me Myself and i</span>
+                                <a title="Serviço 2" href="project-2.html" data-dsn-text="Serviço 2">
+                                    <span class="overflow">Serviço 2</span>
                                 </a>
                             </li>
                             <li class="nav-item ">
-                                <a title="YOUR DREAM CAR" href="project-3.html" data-dsn-text="YOUR DREAM CAR">
-                                    <span class="overflow">YOUR DREAM CAR</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="The Hills - Nissan" href="project-4.html" data-dsn-text="The Hills - Nissan">
-                                    <span class="overflow">The Hills - Nissan</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="Church Copenhagen Denmark" href="project-5.html" data-dsn-text="Church Copenhagen Denmark">
-                                    <span class="overflow">Church Copenhagen Denmark</span>
-                                </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a title="LOST RENDER" href="project-6.html" data-dsn-text="LOST RENDER">
-                                    <span class="overflow">LOST RENDER</span>
-                                </a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a title="Samokat office" href="project-7.html" data-dsn-text="Samokat office">
-                                    <span class="overflow">Samokat office</span>
+                                <a title="Serviço 3" href="project-3.html" data-dsn-text="Serviço 3">
+                                    <span class="overflow">Serviço 3</span>
                                 </a>
                             </li>
                         </ul>
                     </li>
-
-                    <li class="nav-item ">
-                        <a title="About" href="about.html">
-                            <span class="overflow">About</span>
-                        </a>
-                    </li>
                     <li class="nav-item ">
                         <a title="Contact" href="contact.html">
-                            <span class="overflow">Contact</span>
+                            <span class="overflow">Contato</span>
                         </a>
+                    </li>
+                    <li class="nav-item has-sub-menu">
+                        <a title="Contact" href="contact.html">
+                            <span class="overflow">Language</span>
+                        </a>
+                        <ul class="nav-item">
+                            <li class="nav-item">
+                                <a title="Serviço 1" href="project-1.html" data-dsn-text="Serviço 1">
+                                    <span class="overflow">Portugues</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a title="Serviço 2" href="project-2.html" data-dsn-text="Serviço 2">
+                                    <span class="overflow">Inglês</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -715,9 +572,7 @@
                             <div class="box-text p-relative">
                                 <div class="bg-pattern p-absolute w-100 "></div>
                                 <h2 class="title mb-30 dsn-fill">
-                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>WE
-                                        ARE</span>
-                                    <br> BLACK DSN <br> AGENCY
+                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>{{ $args->about_title ? $args->about_title : 'Sem titulo' }}
                                 </h2>
                                 <p class="dsn-up">We build and activate brands through cultural insight, strategic
                                     vision, and the
