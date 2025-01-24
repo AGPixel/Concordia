@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="{{ asset("/bower_components/admin-lte/dist/css/adminlte.min.css") }}" type="text/css">
 
     <link rel="stylesheet" href="{{ asset("/css/style.css") }}" type="text/css">
+
+    <link rel="icon" href="{{ asset("/assets/img/logo-32x32.png") }}" sizes="32x32" />
+    <link rel="icon" href="{{ asset("/assets/img/logo-192x192.png") }}" sizes="192x192" />
 </head>
 <body class="hold-transition login-page">
 
@@ -27,7 +30,7 @@
             <b>Concordia</b>
         </div>
         <!-- /.login-logo -->
-        <div class="card">
+        <div class=" card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Faça o login para iniciar a sessão</p>
                 <div class="input-group mb-3">
