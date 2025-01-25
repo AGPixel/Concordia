@@ -24,4 +24,11 @@ class SiteController extends Controller
 
         return view('index', ['args' => $index_text]);
     }
+
+    public function saveIndexPage(Request $request) {
+
+        $this->service->saveIndexText($request->all());
+        
+        return true;
+    }
 }

@@ -21,4 +21,8 @@ class SiteService extends BaseService
         return $this->repository->indexText();
     }
 
+    public function saveIndexText(array $arr) {
+        $this->repository->saveIndexText($arr);
+    }
+
 }

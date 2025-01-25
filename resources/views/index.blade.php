@@ -572,28 +572,26 @@
                             <div class="box-text p-relative">
                                 <div class="bg-pattern p-absolute w-100 "></div>
                                 <h2 class="title mb-30 dsn-fill">
-                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>{{ $args->about_title ? $args->about_title : 'Sem titulo' }}
+                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>{{ $args->about_title ? $args->about_title : 'about_title' }}
                                 </h2>
-                                <p class="dsn-up">We build and activate brands through cultural insight, strategic
-                                    vision, and the
-                                    power of emotion across every element of its expression.</p>
+                                <p class="dsn-up">{{ $args->about_description ? $args->about_description : 'about_description' }}
 
-                                <div class="dsn-btn dsn-btn-shape mt-30 d-flex">
+                                    <div class="dsn-btn dsn-btn-shape mt-30 d-flex">
 
-                                    <a class="button background-theme effect-ajax" href="about.html">
-                                        <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
-                                            <span>ABOUT US</span>
+                                        <a class="button background-theme effect-ajax" href="about.html">
+                                            <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
+                                                <span>ABOUT US</span>
+                                            </span>
+                                        </a>
+
+                                        <span class="icon background-theme">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
                                         </span>
-                                    </a>
 
-                                    <span class="icon background-theme">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                            </path>
-                                        </svg>
-                                    </span>
-
-                                </div>
+                                    </div>
                             </div>
 
                             <div class="corner-box over-hidden">

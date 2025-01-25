@@ -23,4 +23,10 @@ class SiteRepository extends BaseRepository
           return $this->model::first();
      }
 
+     public function saveIndexText(array $arr) {
+          $indexText = $this->indexText();
+          $indexText->fill($arr);
+          $indexText->save();
+     }
+
 }

@@ -26,12 +26,12 @@ return new class extends Migration
             $table->text('about_description_3')->nullable(true);
             $table->text('about_img_3')->nullable(true);
             $table->text('service_title')->nullable(true);
-            $table->text('service_1_title')->nullable(true);
-            $table->text('service_1_description')->nullable(true);
-            $table->text('service_2_title')->nullable(true);
-            $table->text('service_2_description')->nullable(true);
-            $table->text('service_3_title')->nullable(true);
-            $table->text('service_3_description')->nullable(true);
+            $table->text('service_title_1')->nullable(true);
+            $table->text('service_description_1')->nullable(true);
+            $table->text('service_title_2')->nullable(true);
+            $table->text('service_description_2')->nullable(true);
+            $table->text('service_title_3')->nullable(true);
+            $table->text('service_description_3')->nullable(true);
             $table->text('portifolio_title')->nullable(true);
             $table->text('frame_num_1')->nullable(true);
             $table->text('frame_legend_1')->nullable(true);
@@ -96,6 +96,8 @@ return new class extends Migration
             $table->text('navigation_url_2')->nullable(true);
             $table->text('navigation_title_3')->nullable(true);
             $table->text('navigation_url_3')->nullable(true);
+            $table->timestamp('created_at');
+            $table->timestamp('updated_at');
         });
     }
 

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\UserToken;
+use App\Models\IndexText;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -27,5 +28,9 @@ class DatabaseSeeder extends Seeder
         $userToken->token = '';
         $userToken->expire_at = Carbon::now()->format("Y-m-d H:i:s");
         $userToken->save();
+
+        $indexTitle = new IndexText();
+        $indexTitle->about_title = 'about title';
+        $indexTitle->save();
     }
 }

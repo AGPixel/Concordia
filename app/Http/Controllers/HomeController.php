@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Services\SiteService;
 
 class HomeController extends Controller
 {
+
+    public function __construct() {
+        $this->siteService = new SiteService();
+    }
+
     public function home() {
         return view('viewHome');
     }
@@ -16,5 +22,11 @@ class HomeController extends Controller
 
     public function trocarSenha() {
         return view('dashboard.viewTrocarSenha');
+    }
+
+    public function indexPage() {
+        $index_text = $this->siteService->indexText();
+
+        return view('dashboard.viewIndexPage', ['args' => $index_text]);
     }
 }
