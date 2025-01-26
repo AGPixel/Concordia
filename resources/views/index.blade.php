@@ -608,16 +608,16 @@
 
                             <div class="facts-inner p-10 d-grid grid-lg-2 gap-10 d-grid-no-space">
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
-                                    <h3 class="title d-flex align-items-start justify-content-center">208 <span class="background-theme p-5 has-border-radius">+</span></h3>
+                                    <h3 class="title d-flex align-items-start justify-content-center">{{ $args->about_num_1 ? $args->about_num_1 : 'about_num_1' }}<span class="background-theme p-5 has-border-radius">+</span></h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
-                                        Completed Projects
+                                        {{ $args->about_description_1 ? $args->about_description_1 : 'about_description_1' }}
                                     </p>
                                 </div>
 
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
-                                    <h3 class="title d-flex align-items-start justify-content-center">92 <span class="background-theme p-5 has-border-radius">%</span></h3>
+                                    <h3 class="title d-flex align-items-start justify-content-center">{{ $args->about_num_2 ? $args->about_num_2 : 'about_num_3' }} <span class="background-theme p-5 has-border-radius"></span></h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
-                                        AveAverage Revenue Growth</p>
+                                        {{ $args->about_description_2 ? $args->about_description_2 : 'about_description_2' }}</p>
                                 </div>
 
                             </div>
@@ -628,10 +628,9 @@
                                 </div>
                                 <div class="ex d-flex align-items-end h-100 p-relative z-index-1">
                                     <h2 class="title theme-color dsn-animate-number">
-                                        <span class="animate-number">28</span>
+                                        <span class="animate-number">{{ $args->about_num_3 ? $args->about_num_3 : 'about_num_3' }}</span>
                                     </h2>
-                                    <span class="ml-5 text-upper heading-color">Years <br>
-                                        experience</span>
+                                    <span class="ml-5 text-upper heading-color">{{ $args->about_description_3 ? $args->about_description_3 : 'about_description_3' }}</span>
                                 </div>
                             </div>
                         </div>
@@ -644,9 +643,7 @@
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">SERVICES</span>
-                            <h2 class="title ">Find a
-                                service That<br>
-                                works for you</h2>
+                            <h2 class="title ">{{ $args->service_title ? $args->service_title : 'service_title' }}</h2>
                         </div>
                     </div>
 
@@ -655,10 +652,8 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">Transform your business identity
-                                        through expert branding strategies</h4>
-                                    <p class="mt-30">Elevate your brand’s presence with tailored solutions that resonate
-                                        with your brand</p>
+                                    <h4 class="title-block">{{ $args->service_title_1 ? $args->service_title_1 : 'service_title_1' }}</h4>
+                                    <p class="mt-30">{{ $args->service_description_1 ? $args->service_description_1 : 'service_description_1' }}</p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">01</div>
@@ -675,10 +670,8 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">Unlock innovative web solutions with cutting-edge
-                                        development</h4>
-                                    <p class="mt-30">Our team crafts seamless digital experiences to drive results and
-                                        business growth</p>
+                                    <h4 class="title-block">{{ $args->service_title_2 ? $args->service_title_2 : 'service_title_2' }}</h4>
+                                    <p class="mt-30">{{ $args->service_description_2 ? $args->service_description_2 : 'service_description_2' }}</p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">02</div>
@@ -696,10 +689,8 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">Design intuitive user interfaces for exceptional user
-                                        experiences</h4>
-                                    <p class="mt-30">We create user-centered designs that enhance engagement and
-                                        usability</p>
+                                    <h4 class="title-block">{{ $args->service_title_3 ? $args->service_title_3 : 'service_title_3' }}</h4>
+                                    <p class="mt-30">{{ $args->service_description_3 ? $args->service_description_3 : 'service_description_3' }}</p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">03</div>
@@ -724,9 +715,7 @@
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">SERVICES</span>
-                            <h2 class="title ">Find a
-                                service That<br>
-                                works for you</h2>
+                            <h2 class="title ">{{ $args->portifolio_title ? $args->portifolio_title : 'portifolio_title' }}</h2>
                         </div>
                     </div>
 
@@ -984,19 +973,15 @@
 
 
                             <div class="ex content-blure has-border-radius">
-
-                                <h2 class="big-text">15</h2>
-                                <h5 class="text-upper fw-bold mt-15">(years of work)</h5>
-                                <p class="mt-30  ml-auto mr-auto text-upper">Among the creativity rating of design
-                                    studios (CIS countries, Runet Rating)
-                                </p>
+                                <h2 class="big-text">{{ $args->frame_num_1 ? $args->frame_num_1 : 'frame_num_1' }}</h2>
+                                <h5 class="text-upper fw-bold mt-15">{{ $args->frame_legend_1 ? $args->frame_legend_1 : 'frame_legend_1' }}</h5>
+                                <p class="mt-30 ml-auto mr-auto text-upper">{{ $args->frame_description_1 ? $args->frame_description_1 : 'frame_description_1' }}</p>
                             </div>
 
                             <div class="ex content-blure has-border-radius">
-                                <h2 class="big-text">30</h2>
-                                <h5 class="text-upper fw-bold mt-15">(people)</h5>
-                                <p class="mt-30  ml-auto mr-auto text-upper">Eager to transform the digital world and
-                                    make it better with each new project</p>
+                                <h2 class="big-text">{{ $args->frame_num_2 ? $args->frame_num_2 : 'frame_num_2' }}</h2>
+                                <h5 class="text-upper fw-bold mt-15">{{ $args->frame_legend_2 ? $args->frame_legend_2 : 'frame_legend_2' }}</h5>
+                                <p class="mt-30 ml-auto mr-auto text-upper">{{ $args->frame_description_2 ? $args->frame_description_2 : 'frame_description_2' }}</p>
                             </div>
                         </div>
                     </div>
@@ -1008,11 +993,8 @@
                     <div class="container">
                         <div class="section-title dsn-fill d-flex flex-column mb-70">
                             <span class="sub-heading mb-5">testimonials</span>
-                            <h2 class="title ">What People Are Saying </h2>
-
-                            <p class="mt-20">Consumers today rely heavily on digital <br>
-                                means to research products. We research
-                                a brand of bldend</p>
+                            <h2 class="title ">{{ $args->testimonials_title ? $args->testimonials_title : 'testimonials_title' }}</h2>
+                            <p class="mt-20">{{ $args->testimonials_description ? $args->testimonials_description : 'testimonials_description' }}</p>
                         </div>
                         <div class="testimonials-inner d-flex over-hidden">
                             <div class="swiper swiper-container">
@@ -1020,7 +1002,7 @@
                                     <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                         <div class="content">
                                             <div class="rating">
-                                                <h3 class="heading">4.9
+                                                <h3 class="heading">{{ $args->testimonials_num_1 ? $args->testimonials_num_1 : 'testimonials_num_1' }}
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                         <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                                                     </svg>
@@ -1030,8 +1012,7 @@
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
-                                                We full service digital agency that build’s fascinating users
-                                                experiences...</p>
+                                                {{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}</p>
 
                                             <div class="quote mt-30">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
@@ -1053,8 +1034,8 @@
                                                 </svg>
 
                                                 <div class="text background-section">
-                                                    <h5>MTL Graphic</h5>
-                                                    <span>Envato User</span>
+                                                    <h5>{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
+                                                    <span>{{ $args->testimonials_name_1 ? $args->testimonials_name_1 : 'testimonials_name_1' }}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1063,7 +1044,7 @@
                                     <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                         <div class="content">
                                             <div class="rating">
-                                                <h3 class="heading">4.9
+                                                <h3 class="heading">{{ $args->testimonials_num_2 ? $args->testimonials_num_2 : 'testimonials_num_2' }}
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                         <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                                                     </svg>
@@ -1073,8 +1054,7 @@
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
-                                                We full service digital agency that build’s fascinating users
-                                                experiences...</p>
+                                                {{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}</p>
 
                                             <div class="quote mt-30">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
@@ -1096,8 +1076,8 @@
                                                 </svg>
 
                                                 <div class="text background-section">
-                                                    <h5>MTL Graphic</h5>
-                                                    <span>Envato User</span>
+                                                    <h5>{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
+                                                    <span>{{ $args->testimonials_name_2 ? $args->testimonials_name_2 : 'testimonials_name_2' }}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -1199,10 +1179,8 @@
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">SERVICES</span>
-                            <h2 class="title ">Find a
-                                service That<br>
-                                works for you</h2>
+                            <span class="sub-heading mb-5">TEAM</span>
+                            <h2 class="title ">{{ $args->employee_title ? $args->employee_title : 'employee_title' }}</h2>
                         </div>
                     </div>
 
@@ -1214,22 +1192,21 @@
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Moustafa <br>
-                                            Sabry</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}</h4>
+                                        <span>{{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}</span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : '#' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : '#' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : '#' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -1243,22 +1220,21 @@
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Ahmed <br>
-                                            Shawky</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}</h4>
+                                        <span>{{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}</span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -1272,22 +1248,21 @@
                                 </div>
                                 <div class="content w-100 d-flex justify-content-between">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Hisham <br>
-                                            Megahed</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}</h4>
+                                        <span>{{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}</span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : '#' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : '#' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : '#' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -1300,7 +1275,7 @@
                 <!-- ========== End Team ========== -->
 
 
-                <!-- ========== Blog ========== -->
+                <!-- ========== Blog ==========
                 <section class="dsn-cards-post section-padding">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
@@ -1329,7 +1304,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/blog/1.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/1.jpg") }}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1353,7 +1328,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/blog/2.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/2.jpg") }}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1377,7 +1352,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/blog/3.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/3.jpg") }}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1391,7 +1366,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- ========== End Blog ========== -->
+                 ========== End Blog ========== -->
 
                 <!-- ========== Brand ========== -->
                 <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
@@ -1451,7 +1426,7 @@
                 <section class="next-page v-dark section-padding">
                     <div class="container">
                         <div class="tob-box d-flex justify-content-between align-items-end border-bottom pb-50 mb-50">
-                            <h2 class="title text-upper">time to <br> roar! </h2>
+                            <h2 class="title text-upper">{{ $args->final_title ? $args->final_title : 'final_title' }}</h2>
 
                             <div class="dsn-btn dsn-btn-shape d-flex">
 
@@ -1476,13 +1451,12 @@
                         <div class="bottom-box ">
                             <div class="d-grid custom-width">
                                 <div class="text">
-                                    <h4 class="title-block mb-15">IS YOUR BIG IDEA READY <br> TO GO WILD?</h4>
-                                    <p>DON’T BE SHY. SAY HI TO UNLOCK CREATIVITY AND INNOVATION FOR YOUR SEAMLESS
-                                        PROJECT</p>
+                                    <h4 class="title-block mb-15">{{ $args->sign_title ? $args->sign_title : 'sign_title' }}</h4>
+                                    <p>{{ $args->sign_description ? $args->sign_description : 'sign_description' }}</p>
                                 </div>
 
                                 <div class="p-relative dsn-marquee over-hidden" data-dsn-option='{"speed":0,"duplicatedNumber":7,"duration":7000,"gap":60,"delayBeforeStart":1000,"direction":"left","duplicated":true,"pauseOnHover":false,"startVisible":true,"pauseOnCycle":false,"allowCss3Support":true}'>
-                                    <h2 class="dsn-text-marquee d-flex title-lg">DIGITAL STUDIOS</h2>
+                                    <h2 class="dsn-text-marquee d-flex title-lg">{{ $args->sign_rolling ? $args->sign_rolling : 'sign_rolling' }}</h2>
                                 </div>
                             </div>
 
@@ -1521,13 +1495,13 @@
                                 Navigation Links</h4>
                             <ul>
                                 <li class="text-upper">
-                                    <a href="">home</a>
+                                    <a href="{{ $args->navigation_url_1 ? $args->navigation_url_1 : '#' }}">{{ $args->navigation_title_1 ? $args->navigation_title_1 : 'navigation_title_1' }}</a>
                                 </li>
                                 <li class="text-upper">
-                                    <a href="">Creative</a>
+                                    <a href="{{ $args->navigation_url_2 ? $args->navigation_url_2 : '#' }}">{{ $args->navigation_title_2 ? $args->navigation_title_2 : 'navigation_title_2' }}</a>
                                 </li>
                                 <li class="text-upper">
-                                    <a href="">About us</a>
+                                    <a href="{{ $args->navigation_url_3 ? $args->navigation_url_3 : '#' }}">{{ $args->navigation_title_3 ? $args->navigation_title_3 : 'navigation_title_3' }}</a>
                                 </li>
 
                             </ul>
@@ -1538,10 +1512,10 @@
                                 CONTACT Info</h4>
 
                             <div class="col-contact">
-                                <p><strong>T</strong> : +001 225 3351</p>
-                                <p class="mt-10"><strong>F</strong> :+001 225 3351</p>
+                                <p><strong>T</strong> :{{ $args->contact_telephone ? $args->contact_telephone : '+000 000 0000' }}</p>
+                                <p class="mt-10"><strong>F</strong> :{{ $args->contact_cellphone ? $args->contact_cellphone : '+000 000 0000' }}</p>
                                 <p class="over-hidden mt-10">
-                                    <strong>E</strong> : <a class="link-hover" href="#" data-hover-text="info@dsngrid.com">info@dsngrid.com</a>
+                                    <strong>E</strong> : <a class="link-hover" href="#" data-hover-text="{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}">{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}</a>
                                 </p>
                             </div>
 
@@ -1552,17 +1526,17 @@
                                 socials Links</h4>
                             <ul class="dsn-socials box-social">
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $args->social_url_facebook ? $args->social_url_facebook : 'social_url_facebook' }}" target="_blank" class="background-main">
                                         <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $args->social_url_instagram ? $args->social_url_instagram : 'social_url_instagram' }}" target="_blank" class="background-main">
                                         <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $args->social_url_twitter ? $args->social_url_twitter : 'social_url_twitter' }}" target="_blank" class="background-main">
                                         <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                     </a>
                                 </li>
