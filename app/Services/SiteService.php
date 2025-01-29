@@ -48,17 +48,17 @@ class SiteService extends BaseService
             $arr['testimonials_img_2'] = $this->saveFile($arr['testimonials_img_2']);
             $this->deleteImage($indexText->testimonials_img_2);
         }
-        if ($arr['works_img_1']) {
-            $arr['works_img_1'] = $this->saveFile($arr['works_img_1']);
-            $this->deleteImage($indexText->works_img_1);
+        if ($arr['employee_img_1']) {
+            $arr['employee_img_1'] = $this->saveFile($arr['employee_img_1']);
+            $this->deleteImage($indexText->employee_img_1);
         }
-        if ($arr['works_img_2']) {
-            $arr['works_img_2'] = $this->saveFile($arr['works_img_2']);
-            $this->deleteImage($indexText->works_img_2);
+        if ($arr['employee_img_2']) {
+            $arr['employee_img_2'] = $this->saveFile($arr['employee_img_2']);
+            $this->deleteImage($indexText->employee_img_2);
         }
-        if ($arr['works_img_3']) {
-            $arr['works_img_3'] = $this->saveFile($arr['works_img_3']);
-            $this->deleteImage($indexText->works_img_3);
+        if ($arr['employee_img_3']) {
+            $arr['employee_img_3'] = $this->saveFile($arr['employee_img_3']);
+            $this->deleteImage($indexText->employee_img_3);
         }
 
         return $arr;
@@ -75,7 +75,7 @@ class SiteService extends BaseService
 
     private function deleteImage($fileToDelete) {
         $path = public_path()."\\storage\\";
-        if ($fileToDelete) unlink($path.$fileToDelete);
+        //if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
 }

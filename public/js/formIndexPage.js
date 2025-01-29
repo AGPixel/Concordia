@@ -11,9 +11,9 @@ let bases64 = {
     InputAboutImg3: null,
     InputTestimonialsImg1: null,
     InputTestimonialsImg2: null,
-    InputWorksImg1: null,
-    InputWorksImg2: null,
-    InputWorksImg3: null,
+    InputEmployeeImg1: null,
+    InputEmployeeImg2: null,
+    InputEmployeeImg3: null,
 };
 const inputElementImg = document.getElementById("InputAboutImg");
 inputElementImg.addEventListener("change", load_image_about_preview, false);
@@ -43,25 +43,25 @@ async function load_image_testimonials_img2_preview() {
     bases64.InputTestimonialsImg2 = await toBase64(this.files[0]);
 }
 
-const inputElementWorksImg1 = document.getElementById("InputWorksImg1");
-inputElementWorksImg1.addEventListener("change", load_image_works_img1_preview, false);
-async function load_image_works_img1_preview() {
-    document.getElementById('InputWorksImg1Preview').innerHTML = this.files[0].name;
-    bases64.InputWorksImg1 = await toBase64(this.files[0]);
+const inputEmployeeImg1 = document.getElementById("InputEmployeeImg1");
+inputEmployeeImg1.addEventListener("change", load_image_employee_img1_preview, false);
+async function load_image_employee_img1_preview() {
+    document.getElementById('InputEmployeeImg1Preview').innerHTML = this.files[0].name;
+    bases64.InputEmployeeImg1 = await toBase64(this.files[0]);
 }
 
-const inputElementWorksImg2 = document.getElementById("InputWorksImg2");
-inputElementWorksImg2.addEventListener("change", load_image_works_img2_preview, false);
-async function load_image_works_img2_preview() {
-    document.getElementById('InputWorksImg2Preview').innerHTML = this.files[0].name;
-    bases64.InputWorksImg2 = await toBase64(this.files[0]);
+const inputEmployeeImg2 = document.getElementById("InputEmployeeImg2");
+inputEmployeeImg2.addEventListener("change", load_image_employee_img2_preview, false);
+async function load_image_employee_img2_preview() {
+    document.getElementById('InputEmployeeImg2Preview').innerHTML = this.files[0].name;
+    bases64.InputEmployeeImg2 = await toBase64(this.files[0]);
 }
 
-const inputElementWorksImg3 = document.getElementById("InputWorksImg3");
-inputElementWorksImg3.addEventListener("change", load_image_works_img3_preview, false);
-async function load_image_works_img3_preview() {
-    document.getElementById('InputWorksImg3Preview').innerHTML = this.files[0].name;
-    bases64.InputWorksImg3 = await toBase64(this.files[0]);
+const inputEmployeeImg3 = document.getElementById("InputEmployeeImg3");
+inputEmployeeImg3.addEventListener("change", load_image_employee_img3_preview, false);
+async function load_image_employee_img3_preview() {
+    document.getElementById('InputEmployeeImg3Preview').innerHTML = this.files[0].name;
+    bases64.InputEmployeeImg3 = await toBase64(this.files[0]);
 }
 
 function saveIndexPage() {
@@ -113,33 +113,35 @@ function saveIndexPage() {
         employee_title: document.getElementById('InputEmployeeTitle').value,
         employee_name_1: document.getElementById('InputEmployeeName1').value,
         employee_work_1: document.getElementById('InputEmployeeWork1').value,
+        employee_img_1: bases64.InputEmployeeImg1,
         employee_url_facebook_1: document.getElementById('InputEmployeeUrlFacebook1').value,
         employee_url_instagram_1: document.getElementById('InputEmployeeUrlInstagram1').value,
         employee_url_twitter_1: document.getElementById('InputEmployeeUrlTwitter1').value,
         employee_name_2: document.getElementById('InputEmployeeName2').value,
         employee_work_2: document.getElementById('InputEmployeeWork2').value,
+        employee_img_2: bases64.InputEmployeeImg2,
         employee_url_facebook_2: document.getElementById('InputEmployeeUrlFacebook2').value,
         employee_url_instagram_2: document.getElementById('InputEmployeeUrlInstagram2').value,
         employee_url_twitter_2: document.getElementById('InputEmployeeUrlTwitter2').value,
         employee_name_3: document.getElementById('InputEmployeeName3').value,
         employee_work_3: document.getElementById('InputEmployeeWork3').value,
+        employee_img_3: bases64.InputEmployeeImg3,
         employee_url_facebook_3: document.getElementById('InputEmployeeUrlFacebook3').value,
         employee_url_instagram_3: document.getElementById('InputEmployeeUrlInstagram3').value,
         employee_url_twitter_3: document.getElementById('InputEmployeeUrlTwitter3').value,
 
+        /*
         works_title: document.getElementById('InputWorksTitle').value,
         works_title_1: document.getElementById('InputWorksTitle1').value,
-        works_img_1: bases64.InputWorksImg1,
         works_date_1: document.getElementById('InputWorksDate1').value,
         works_description_1: document.getElementById('InputWorksDescription1').value,
         works_title_2: document.getElementById('InputWorksTitle2').value,
-        works_img_2: bases64.InputWorksImg2,
         works_date_2: document.getElementById('InputWorksDate2').value,
         works_description_2: document.getElementById('InputWorksDescription2').value,
         works_title_3: document.getElementById('InputWorksTitle3').value,
-        works_img_3: bases64.InputWorksImg3,
         works_date_3: document.getElementById('InputWorksDate3').value,
         works_description_3: document.getElementById('InputWorksDescription3').value,
+        */
 
         final_title: document.getElementById('InputFinalTitle').value,
 
@@ -163,16 +165,10 @@ function saveIndexPage() {
         navigation_url_3: document.getElementById('InputNavigationUrl3').value,
     };
 
-    console.log(form);
-
     apiPostBearer(GLOBAL_URL_API + 'save-index-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
-        console.log("save-index-page success");
-        console.log(_return);
         toastSuccess(_return.message);
         hideLoading();
     }, function (_return) {
-        console.log("save-index-page error");
-        console.log(_return);
         toastError(_return.responseJSON.message);
         hideLoading();
     });

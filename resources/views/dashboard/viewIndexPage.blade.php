@@ -306,6 +306,17 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
+                                        <label for="InputEmployeeImg1">Employee Image 1</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputEmployeeImg1">
+                                                <label class="custom-file-label" for="InputEmployeeImg1" id="InputEmployeeImg1Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
                                         <label for="InputEmployeeUrlFacebook1">Employee Facebook 1</label>
                                         <input type="text" name="employeeUrlFacebook1" class="form-control" id="InputEmployeeUrlFacebook1" value="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1: '' }}">
                                     </div>
@@ -332,6 +343,17 @@
                                     <div class="form-group">
                                         <label for="InputEmployeeWork2">Employee Work 2</label>
                                         <input type="text" name="employeeWork2" class="form-control" id="InputEmployeeWork2" value="{{ $args->employee_work_2 ? $args->employee_work_2: '' }}">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputEmployeeImg2">Employee Image 2</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputEmployeeImg2">
+                                                <label class="custom-file-label" for="InputEmployeeImg2" id="InputEmployeeImg2Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -366,6 +388,17 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
+                                        <label for="InputEmployeeImg3">Employee Image 3</label>
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputEmployeeImg3">
+                                                <label class="custom-file-label" for="InputEmployeeImg3" id="InputEmployeeImg3Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
                                         <label for="InputEmployeeUrlFacebook3">Employee Facebook 3</label>
                                         <input type="text" name="employeeUrlFacebook3" class="form-control" id="InputEmployeeUrlFacebook3" value="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3: '' }}">
                                     </div>
@@ -382,7 +415,7 @@
                                         <input type="text" name="employeeUrlTwitter3" class="form-control" id="InputEmployeeUrlTwitter3" value="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3: '' }}">
                                     </div>
                                 </div>
-
+                                <!--
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksTitle">Works Title</label>
@@ -476,7 +509,7 @@
                                         <input type="text" name="worksDescription3" class="form-control" id="InputWorksDescription3" value="{{ $args->works_description_3 ? $args->works_description_3 : '' }}">
                                     </div>
                                 </div>
-
+                                -->
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputFinalTitle">Final Title</label>

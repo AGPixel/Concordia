@@ -598,8 +598,7 @@
                             <div class="corner-box over-hidden">
                                 <div class="corner__lb"></div>
                                 <div class="box-img h-100 img-box-parallax before-z-index dsn-animate dsn-effect-down" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
-
-                                    <img class="cover-bg-img" src="{{asset("/assets/img/hero.jpg")}}" alt="">
+                                    <img class="cover-bg-img" src="{{ $args->about_img ? asset("../storage/$args->about_img") : asset("/assets/img/hero.jpg") }}" alt="">
                                 </div>
                             </div>
 
@@ -632,7 +631,7 @@
 
                             <div class="box-video dsn-up">
                                 <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 dsn-hero-parallax-img before-z-index h-100" data-overlay="5">
-                                    <img class="cover-bg-img" src="{{asset("/assets/img/bg-video.jpg")}}" alt="">
+                                    <img class="cover-bg-img" src="{{ $args->about_img_3 ? asset("../storage/$args->about_img_3") : asset("/assets/img/bg-video.jpg") }}" alt="">
                                 </div>
                                 <div class="ex d-flex align-items-end h-100 p-relative z-index-1">
                                     <h2 class="title theme-color dsn-animate-number">
@@ -1052,7 +1051,7 @@
                                         <div class="box-authoer w-100 v-light background-main p-20">
                                             <div class="authoer d-flex">
                                                 <div class="img">
-                                                    <img class="cover-bg-img" src="{{ asset("/assets/img/team/1.jpg") }}" alt="">
+                                                    <img class="cover-bg-img" src="{{ $args->testimonials_img_1 ? asset("../storage/$args->testimonials_img_1") : asset("/assets/img/team/1.jpg") }}" alt="">
                                                 </div>
 
                                                 <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1095,7 +1094,7 @@
                                         <div class="box-authoer w-100 v-light background-main p-20">
                                             <div class="authoer d-flex">
                                                 <div class="img">
-                                                    <img class="cover-bg-img" src="{{ asset("/assets/img/team/1.jpg") }}" alt="">
+                                                    <img class="cover-bg-img" src="{{ $args->testimonials_img_2 ? asset("../storage/$args->testimonials_img_2") : asset("/assets/img/team/1.jpg") }}" alt="">
                                                 </div>
 
                                                 <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1131,7 +1130,7 @@
                         <div class="d-grid grid-lg-3 grid-md-2">
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/1.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
@@ -1163,7 +1162,7 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/2.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
@@ -1195,7 +1194,7 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/3.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
                                 </div>
                                 <div class="content w-100 d-flex justify-content-between">
                                     <div class="text">
@@ -1259,7 +1258,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/1.jpg")}}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/1.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1283,7 +1282,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/2.jpg")}}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/2.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1307,7 +1306,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/3.jpg")}}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/3.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
