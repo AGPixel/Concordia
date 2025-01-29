@@ -1,4 +1,69 @@
 
+const toBase64 = file => new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+});
+
+let bases64 = {
+    InputAboutImg: null,
+    InputAboutImg3: null,
+    InputTestimonialsImg1: null,
+    InputTestimonialsImg2: null,
+    InputWorksImg1: null,
+    InputWorksImg2: null,
+    InputWorksImg3: null,
+};
+const inputElementImg = document.getElementById("InputAboutImg");
+inputElementImg.addEventListener("change", load_image_about_preview, false);
+async function load_image_about_preview() {
+    document.getElementById('ImageAboutPreview').innerHTML = this.files[0].name;
+    bases64.InputAboutImg = await toBase64(this.files[0]);
+}
+
+const inputElementImg3 = document.getElementById("InputAboutImg3");
+inputElementImg3.addEventListener("change", load_image_about_img3_preview, false);
+async function load_image_about_img3_preview() {
+    document.getElementById('ImageAboutImg3Preview').innerHTML = this.files[0].name;
+    bases64.InputAboutImg3 = await toBase64(this.files[0]);
+}
+
+const inputElementTestimonialsImg1 = document.getElementById("InputTestimonialsImg1");
+inputElementTestimonialsImg1.addEventListener("change", load_image_testimonials_img1_preview, false);
+async function load_image_testimonials_img1_preview() {
+    document.getElementById('InputTestimonialsImg1Preview').innerHTML = this.files[0].name;
+    bases64.InputTestimonialsImg1 = await toBase64(this.files[0]);
+}
+
+const inputElementTestimonialsImg2 = document.getElementById("InputTestimonialsImg2");
+inputElementTestimonialsImg2.addEventListener("change", load_image_testimonials_img2_preview, false);
+async function load_image_testimonials_img2_preview() {
+    document.getElementById('InputTestimonialsImg2Preview').innerHTML = this.files[0].name;
+    bases64.InputTestimonialsImg2 = await toBase64(this.files[0]);
+}
+
+const inputElementWorksImg1 = document.getElementById("InputWorksImg1");
+inputElementWorksImg1.addEventListener("change", load_image_works_img1_preview, false);
+async function load_image_works_img1_preview() {
+    document.getElementById('InputWorksImg1Preview').innerHTML = this.files[0].name;
+    bases64.InputWorksImg1 = await toBase64(this.files[0]);
+}
+
+const inputElementWorksImg2 = document.getElementById("InputWorksImg2");
+inputElementWorksImg2.addEventListener("change", load_image_works_img2_preview, false);
+async function load_image_works_img2_preview() {
+    document.getElementById('InputWorksImg2Preview').innerHTML = this.files[0].name;
+    bases64.InputWorksImg2 = await toBase64(this.files[0]);
+}
+
+const inputElementWorksImg3 = document.getElementById("InputWorksImg3");
+inputElementWorksImg3.addEventListener("change", load_image_works_img3_preview, false);
+async function load_image_works_img3_preview() {
+    document.getElementById('InputWorksImg3Preview').innerHTML = this.files[0].name;
+    bases64.InputWorksImg3 = await toBase64(this.files[0]);
+}
+
 function saveIndexPage() {
     console.log("saveIndexPage");
 
@@ -7,12 +72,14 @@ function saveIndexPage() {
     let form = {
         about_title: document.getElementById('InputAboutTitle').value,
         about_description: document.getElementById('InputAboutDescription').value,
+        about_img: bases64.InputAboutImg,
         about_num_1: document.getElementById('InputAboutNum1').value,
         about_description_1: document.getElementById('InputAboutDescription1').value,
         about_num_2: document.getElementById('InputAboutNum2').value,
         about_description_2: document.getElementById('InputAboutDescription2').value,
         about_num_3: document.getElementById('InputAboutNum3').value,
         about_description_3: document.getElementById('InputAboutDescription3').value,
+        about_img_3: bases64.InputAboutImg3,
 
         service_title: document.getElementById('InputServiceTitle').value,
         service_title_1: document.getElementById('InputServiceTitle1').value,
@@ -34,10 +101,12 @@ function saveIndexPage() {
         testimonials_description: document.getElementById('InputTestimonialsDescription').value,
         testimonials_num_1: document.getElementById('InputTestimonialsNum1').value,
         testimonials_description_1: document.getElementById('InputTestimonialsDescription1').value,
+        testimonials_img_1: bases64.InputTestimonialsImg1,
         testimonials_company_1: document.getElementById('InputTestimonialsCompany1').value,
         testimonials_name_1: document.getElementById('InputTestimonialsName1').value,
         testimonials_num_2: document.getElementById('InputTestimonialsNum2').value,
         testimonials_description_2: document.getElementById('InputTestimonialsDescription2').value,
+        testimonials_img_2: bases64.InputTestimonialsImg2,
         testimonials_company_2: document.getElementById('InputTestimonialsCompany2').value,
         testimonials_name_2: document.getElementById('InputTestimonialsName2').value,
 
@@ -60,12 +129,15 @@ function saveIndexPage() {
 
         works_title: document.getElementById('InputWorksTitle').value,
         works_title_1: document.getElementById('InputWorksTitle1').value,
+        works_img_1: bases64.InputWorksImg1,
         works_date_1: document.getElementById('InputWorksDate1').value,
         works_description_1: document.getElementById('InputWorksDescription1').value,
         works_title_2: document.getElementById('InputWorksTitle2').value,
+        works_img_2: bases64.InputWorksImg2,
         works_date_2: document.getElementById('InputWorksDate2').value,
         works_description_2: document.getElementById('InputWorksDescription2').value,
         works_title_3: document.getElementById('InputWorksTitle3').value,
+        works_img_3: bases64.InputWorksImg3,
         works_date_3: document.getElementById('InputWorksDate3').value,
         works_description_3: document.getElementById('InputWorksDescription3').value,
 
@@ -90,6 +162,8 @@ function saveIndexPage() {
         navigation_title_3: document.getElementById('InputNavigationTitle3').value,
         navigation_url_3: document.getElementById('InputNavigationUrl3').value,
     };
+
+    console.log(form);
 
     apiPostBearer(GLOBAL_URL_API + 'save-index-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
         console.log("save-index-page success");
