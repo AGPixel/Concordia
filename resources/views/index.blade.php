@@ -1,4 +1,3 @@
-<br><br>
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -10,15 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <!-- Obs: A logo-32x32 e logo-192x192 não existe
-    <link rel="icon" href="{ { asset("/assets/img/logo-32x32.png") }}" sizes="32x32" />
-    <link rel="icon" href="{ { asset("/assets/img/logo-192x192.png") }}" sizes="192x192" />
-    -->
+    <link rel="icon" href="{{asset("/assets/img/logo-32x32.png")}}" sizes="32x32" />
+    <link rel="icon" href="{{asset("/assets/img/logo-192x192.png")}}" sizes="192x192" />
 
     <title>MexDot - Ajax Portfolio Showcase HTML Template</title>
 
-    <link rel="stylesheet" href="{{ asset("/assets/css/plugins.css") }}" />
-    <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
+    <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -28,26 +25,26 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="{{ asset(" /assets/img/logo-light.png") }}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="{{ asset(" /assets/img/logo.png") }}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
 
@@ -91,8 +88,8 @@
         <header id="site_menu_header" class="site-header d-none">
             <div class="main-logo">
                 <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
-                    <img src="{{ asset("/assets/img/logo-light.png") }}" class="custom-logo logo-light" alt="EXFOLIO" />
-                    <img src="{{ asset("/assets/img/logo.png") }}" class="custom-logo logo-dark" alt="EXFOLIO" />
+                    <img src="{{asset("/assets/img/logo-light.png")}}" class="custom-logo logo-light" alt="EXFOLIO" />
+                    <img src="{{asset("/assets/img/logo.png")}}" class="custom-logo logo-dark" alt="EXFOLIO" />
                 </a>
             </div>
             <nav class="main-navigation ">
@@ -246,7 +243,7 @@
                                 <div class="swiper-wrapper">
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="6">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project4/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project4/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -287,7 +284,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="7">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project1/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -328,7 +325,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="5">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project2/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project2/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -370,7 +367,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="3">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project3/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project3/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -412,7 +409,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="6">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project5/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project5/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -453,7 +450,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="5">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project6/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project6/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -492,7 +489,7 @@
 
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="4">
-                                            <img loading="lazy" src="{{ asset("/assets/img/portfolio/project7/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project7/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
@@ -572,33 +569,37 @@
                             <div class="box-text p-relative">
                                 <div class="bg-pattern p-absolute w-100 "></div>
                                 <h2 class="title mb-30 dsn-fill">
-                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>{{ $args->about_title ? $args->about_title : 'about_title' }}
+                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>
+                                        {{ $args->about_title ? $args->about_title : 'about_title' }}
+                                    </span>
                                 </h2>
-                                <p class="dsn-up">{{ $args->about_description ? $args->about_description : 'about_description' }}
+                                <p class="dsn-up">
+                                    {{ $args->about_description ? $args->about_description : 'about_description' }}
+                                </p>
 
-                                    <div class="dsn-btn dsn-btn-shape mt-30 d-flex">
+                                <div class="dsn-btn dsn-btn-shape mt-30 d-flex">
 
-                                        <a class="button background-theme effect-ajax" href="about.html">
-                                            <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
-                                                <span>ABOUT US</span>
-                                            </span>
-                                        </a>
-
-                                        <span class="icon background-theme">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                </path>
-                                            </svg>
+                                    <a class="button background-theme effect-ajax" href="about.html">
+                                        <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
+                                            <span>ABOUT US</span>
                                         </span>
+                                    </a>
 
-                                    </div>
+                                    <span class="icon background-theme">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            </path>
+                                        </svg>
+                                    </span>
+
+                                </div>
                             </div>
 
                             <div class="corner-box over-hidden">
                                 <div class="corner__lb"></div>
                                 <div class="box-img h-100 img-box-parallax before-z-index dsn-animate dsn-effect-down" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
 
-                                    <img class="cover-bg-img" src="{{ asset("/assets/img/hero.jpg") }}" alt="">
+                                    <img class="cover-bg-img" src="{{asset("/assets/img/hero.jpg")}}" alt="">
                                 </div>
                             </div>
 
@@ -608,29 +609,40 @@
 
                             <div class="facts-inner p-10 d-grid grid-lg-2 gap-10 d-grid-no-space">
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
-                                    <h3 class="title d-flex align-items-start justify-content-center">{{ $args->about_num_1 ? $args->about_num_1 : 'about_num_1' }}<span class="background-theme p-5 has-border-radius">+</span></h3>
+                                    <h3 class="title d-flex align-items-start justify-content-center">
+                                        {{ $args->about_num_1 ? $args->about_num_1 : 'about_num_1' }}
+                                        <span class="background-theme p-5 has-border-radius">+</span>
+                                    </h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
                                         {{ $args->about_description_1 ? $args->about_description_1 : 'about_description_1' }}
                                     </p>
                                 </div>
 
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
-                                    <h3 class="title d-flex align-items-start justify-content-center">{{ $args->about_num_2 ? $args->about_num_2 : 'about_num_3' }} <span class="background-theme p-5 has-border-radius"></span></h3>
+                                    <h3 class="title d-flex align-items-start justify-content-center">
+                                        {{ $args->about_num_2 ? $args->about_num_2 : 'about_num_2' }}
+                                        <span class="background-theme p-5 has-border-radius">%</span>
+                                    </h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
-                                        {{ $args->about_description_2 ? $args->about_description_2 : 'about_description_2' }}</p>
+                                        {{ $args->about_description_2 ? $args->about_description_2 : 'about_description_2' }}
+                                    </p>
                                 </div>
 
                             </div>
 
                             <div class="box-video dsn-up">
                                 <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 dsn-hero-parallax-img before-z-index h-100" data-overlay="5">
-                                    <img class="cover-bg-img" src="{{ asset("/assets/img/bg-video.jpg") }}" alt="">
+                                    <img class="cover-bg-img" src="{{asset("/assets/img/bg-video.jpg")}}" alt="">
                                 </div>
                                 <div class="ex d-flex align-items-end h-100 p-relative z-index-1">
                                     <h2 class="title theme-color dsn-animate-number">
-                                        <span class="animate-number">{{ $args->about_num_3 ? $args->about_num_3 : 'about_num_3' }}</span>
+                                        <span class="animate-number">
+                                            {{ $args->about_num_3 ? $args->about_num_3 : 'about_num_3' }}
+                                        </span>
                                     </h2>
-                                    <span class="ml-5 text-upper heading-color">{{ $args->about_description_3 ? $args->about_description_3 : 'about_description_3' }}</span>
+                                    <span class="ml-5 text-upper heading-color">
+                                        {{ $args->about_description_3 ? $args->about_description_3 : 'about_description_3' }}
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -643,7 +655,9 @@
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">SERVICES</span>
-                            <h2 class="title ">{{ $args->service_title ? $args->service_title : 'service_title' }}</h2>
+                            <h2 class="title ">
+                                {{ $args->service_title ? $args->service_title : 'service_title' }}
+                            </h2>
                         </div>
                     </div>
 
@@ -652,8 +666,12 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">{{ $args->service_title_1 ? $args->service_title_1 : 'service_title_1' }}</h4>
-                                    <p class="mt-30">{{ $args->service_description_1 ? $args->service_description_1 : 'service_description_1' }}</p>
+                                    <h4 class="title-block">
+                                        {{ $args->service_title_1 ? $args->service_title_1 : 'service_title_1' }}
+                                    </h4>
+                                    <p class="mt-30">
+                                        {{ $args->service_description_1 ? $args->service_description_1 : 'service_description_1' }}
+                                    </p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">01</div>
@@ -670,8 +688,12 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">{{ $args->service_title_2 ? $args->service_title_2 : 'service_title_2' }}</h4>
-                                    <p class="mt-30">{{ $args->service_description_2 ? $args->service_description_2 : 'service_description_2' }}</p>
+                                    <h4 class="title-block">
+                                        {{ $args->service_title_2 ? $args->service_title_2 : 'service_title_2' }}
+                                    </h4>
+                                    <p class="mt-30">
+                                        {{ $args->service_description_2 ? $args->service_description_2 : 'service_description_2' }}
+                                    </p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">02</div>
@@ -689,8 +711,12 @@
                             <div class="service-item grid-item background-main has-border-radius p-relative">
                                 <div class="service-item-inner dsn-up">
 
-                                    <h4 class="title-block">{{ $args->service_title_3 ? $args->service_title_3 : 'service_title_3' }}</h4>
-                                    <p class="mt-30">{{ $args->service_description_3 ? $args->service_description_3 : 'service_description_3' }}</p>
+                                    <h4 class="title-block">
+                                        {{ $args->service_title_3 ? $args->service_title_3 : 'service_title_3' }}
+                                    </h4>
+                                    <p class="mt-30">
+                                        {{ $args->service_description_3 ? $args->service_description_3 : 'service_description_3' }}
+                                    </p>
 
                                     <div class="number mt-50">
                                         <div class="big-text">03</div>
@@ -719,14 +745,13 @@
                         </div>
                     </div>
 
-
                     <div class="dsn-cards root-posts img-h80">
                         <div class="dsn-grid-layout dsn-grid dsn-posts dsn-post-type-cards use-horizontal-scroll box-image-normal" data-dsn-option='{"speed":10,"start":"0"}'>
 
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="7">
-                                    <img src="{{ asset("/assets/img/portfolio/project1/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -760,7 +785,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="5">
-                                    <img src="{{ asset("/assets/img/portfolio/project2/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project2/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -793,7 +818,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="3">
-                                    <img src="{{ asset("/assets/img/portfolio/project3/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project3/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -826,7 +851,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="6">
-                                    <img src="{{ asset("/assets/img/portfolio/project4/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project4/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -859,7 +884,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="6">
-                                    <img src="{{ asset("/assets/img/portfolio/project5/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project5/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -892,7 +917,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="5">
-                                    <img src="{{ asset("/assets/img/portfolio/project6/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project6/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -925,7 +950,7 @@
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
 
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="4">
-                                    <img src="{{ asset("/assets/img/portfolio/project7/1.jpg") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{asset("/assets/img/portfolio/project7/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
 
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
@@ -963,7 +988,7 @@
                 <div class="section-seat section-padding background-section p-relative ">
                     <div class="p-absolute top-0 left-0 bottom-0 w-100">
                         <div class="img-box-parallax before-z-index h-100" data-overlay="4" data-dsn-grid="move-up">
-                            <img src="{{ asset("/assets/img/img-seat.jpg") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                            <img src="{{asset("/assets/img/img-seat.jpg")}}" class="has-bigger-scale cover-bg-img has-direction" alt="">
                         </div>
                     </div>
                     <div class="bg-line"></div>
@@ -1012,7 +1037,8 @@
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
-                                                {{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}</p>
+                                                {{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}
+                                            </p>
 
                                             <div class="quote mt-30">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
@@ -1054,7 +1080,8 @@
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
-                                                {{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}</p>
+                                                {{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}
+                                            </p>
 
                                             <div class="quote mt-30">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
@@ -1082,92 +1109,6 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
-                                        <div class="content">
-                                            <div class="rating">
-                                                <h3 class="heading">4.9
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                                                    </svg>
-                                                </h3>
-
-                                                <p class="text-upper">out of 5 stars</p>
-                                            </div>
-
-                                            <p class="title-block mt-50 text-upper">
-                                                We full service digital agency that build’s fascinating users
-                                                experiences...</p>
-
-                                            <div class="quote mt-30">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
-                                                    <path d="M0 0V30L15.0025 15V0H0Z" fill="#030104"></path>
-                                                    <path d="M24.9961 0V30L39.9986 15V0H24.9961Z" fill="#030104">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-authoer w-100 v-light background-main p-20">
-                                            <div class="authoer d-flex">
-                                                <div class="img">
-                                                    <img class="cover-bg-img" src="{{ asset("/assets/img/team/1.jpg") }}" alt="">
-                                                </div>
-
-                                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
-                                                </svg>
-
-                                                <div class="text background-section">
-                                                    <h5>MTL Graphic</h5>
-                                                    <span>Envato User</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
-                                        <div class="content">
-                                            <div class="rating">
-                                                <h3 class="heading">4.9
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                                                    </svg>
-                                                </h3>
-
-                                                <p class="text-upper">out of 5 stars</p>
-                                            </div>
-
-                                            <p class="title-block mt-50 text-upper">
-                                                We full service digital agency that build’s fascinating users
-                                                experiences...</p>
-
-                                            <div class="quote mt-30">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
-                                                    <path d="M0 0V30L15.0025 15V0H0Z" fill="#030104"></path>
-                                                    <path d="M24.9961 0V30L39.9986 15V0H24.9961Z" fill="#030104">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-authoer w-100 v-light background-main p-20">
-                                            <div class="authoer d-flex">
-                                                <div class="img">
-                                                    <img class="cover-bg-img" src="{{ asset("/assets/img/team/1.jpg") }}" alt="">
-                                                </div>
-
-                                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
-                                                </svg>
-
-                                                <div class="text background-section">
-                                                    <h5>MTL Graphic</h5>
-                                                    <span>Envato User</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1179,8 +1120,10 @@
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">TEAM</span>
-                            <h2 class="title ">{{ $args->employee_title ? $args->employee_title : 'employee_title' }}</h2>
+                            <span class="sub-heading mb-5">SERVICES</span>
+                            <h2 class="title ">
+                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
+                            </h2>
                         </div>
                     </div>
 
@@ -1188,25 +1131,29 @@
                         <div class="d-grid grid-lg-3 grid-md-2">
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/team/1.jpg") }}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/1.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}</h4>
-                                        <span>{{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -1216,12 +1163,16 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/team/2.jpg") }}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/2.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}</h4>
-                                        <span>{{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
@@ -1244,25 +1195,29 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ asset("/assets/img/team/3.jpg") }}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/team/3.jpg")}}" alt="">
                                 </div>
                                 <div class="content w-100 d-flex justify-content-between">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">{{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}</h4>
-                                        <span>{{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : '#' }}" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -1304,7 +1259,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/1.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/1.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1328,7 +1283,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/2.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/2.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
@@ -1352,7 +1307,7 @@
                                     </div>
 
                                     <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ { asset("/assets/img/blog/3.jpg") }}" alt="">
+                                        <img class="cover-bg-img has-border-radius" src="{{asset("/assets/img/blog/3.jpg")}}" alt="">
                                     </div>
 
                                     <div class="content p-relative z-index-1 mt-20">
