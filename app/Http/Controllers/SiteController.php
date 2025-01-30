@@ -47,4 +47,11 @@ class SiteController extends Controller
         
         return true;
     }
+
+    public function sobre() {
+
+        $index_text = $this->service->indexText();
+
+        return view('about', ['index_text' => $index_text]);
+    }
 }

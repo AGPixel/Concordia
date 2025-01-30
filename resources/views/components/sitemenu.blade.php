@@ -15,7 +15,7 @@
             </li>
 
             <li class="nav-item">
-                <a title="Sobre" href="#">
+                <a title="Sobre" href="/sobre">
                     <span class="overflow ">Sobre</span>
                 </a>
             </li>
