@@ -31,4 +31,8 @@ class SiteController extends Controller
         
         return true;
     }
+
+    public function contato() {
+        return view('contactpage');
+    }
 }

@@ -554,6 +554,12 @@
                                         <input type="text" name="socialTwitter" class="form-control" id="InputSocialTwitter" value="{{ $args->social_url_twitter ? $args->social_url_twitter : '' }}">
                                     </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputSocialLinkedin">Social Linkedin</label>
+                                        <input type="text" name="socialLinkedin" class="form-control" id="InputSocialLinkedin" value="{{ $args->social_url_linkedin ? $args->social_url_linkedin : '' }}">
+                                    </div>
+                                </div>
 
                                 <div class="card-body">
                                     <div class="form-group">

@@ -152,6 +152,7 @@ function saveIndexPage() {
         social_url_facebook: document.getElementById('InputSocialFacebook').value,
         social_url_instagram: document.getElementById('InputSocialInstagram').value,
         social_url_twitter: document.getElementById('InputSocialTwitter').value,
+        social_url_linkedin: document.getElementById('InputSocialLinkedin').value,
 
         contact_telephone: document.getElementById('InputContactTelephone').value,
         contact_cellphone: document.getElementById('InputContactCellphone').value,

@@ -89,6 +89,7 @@ class IndexText extends Model
         'social_url_facebook',
         'social_url_instagram',
         'social_url_twitter',
+        'social_url_linkedin',
         'contact_telephone',
         'contact_cellphone',
         'contact_email',

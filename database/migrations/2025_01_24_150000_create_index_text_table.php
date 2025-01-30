@@ -90,6 +90,7 @@ return new class extends Migration
             $table->text('social_url_facebook')->nullable(true);
             $table->text('social_url_instagram')->nullable(true);
             $table->text('social_url_twitter')->nullable(true);
+            $table->text('social_url_linkedin')->nullable(true);
             $table->text('contact_telephone')->nullable(true);
             $table->text('contact_cellphone')->nullable(true);
             $table->text('contact_email')->nullable(true);

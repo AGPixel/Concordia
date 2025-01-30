@@ -75,7 +75,7 @@ class SiteService extends BaseService
 
     private function deleteImage($fileToDelete) {
         $path = public_path()."\\storage\\";
-        //if ($fileToDelete) unlink($path.$fileToDelete);
+        if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
 }
