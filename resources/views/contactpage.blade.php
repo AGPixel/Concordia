@@ -54,12 +54,10 @@
                     <div class="p-relative d-flex align-items-center w-100  h-100 ">
 
                         <div class="box-content d-flex flex-column z-index-1">
-
-
                             <h1 class="title-lg text-upper">CONTATO</h1>
-
                             <div class="contact-links d-flex flex-column w-50 mt-50">
-                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">marketing@example.com
+                                @if(isset($contact->email1))
+                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email1 }}
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -67,7 +65,9 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">office@example.com
+                                @endif
+                                @if(isset($contact->email2))
+                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email2 }}
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -75,6 +75,7 @@
                                         </svg>
                                     </span>
                                 </a>
+                                @endif
                             </div>
                         </div>
 
@@ -104,21 +105,27 @@
                         <div class="social-box d-flex align-items-center">
 
                             <ul class="dsn-socials box-social">
+                                @if(isset($index_text->social_url_facebook))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-main">
                                         <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
                                     </a>
                                 </li>
+                                @endif
+                                @if(isset($index_text->social_url_instagram))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-main">
                                         <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
                                     </a>
                                 </li>
+                                @endif
+                                @if(isset($index_text->social_url_twitter))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-main">
                                         <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -139,7 +146,7 @@
                                         <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
                                             <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
                                         </div>
-                                        <h2 class="title text-upper p-relative">Let's Work Together</h2>
+                                        <h2 class="title text-upper p-relative">{{ $contact->contact_form_title ? $contact->contact_form_title : 'contact_form_title' }}</h2>
                                     </div>
 
                                     <div class="info background-section has-border-radius p-relative over-hidden">
@@ -150,15 +157,36 @@
                                         <div class="p-relative">
                                             <div class="mb-20">
                                                 <h4 class="title-block mb-15">Business Hours</h4>
-
-                                                <p>Monday to Friday: 9 AM - 6 PM<br>Saturday: 10 AM - 4 PM<br>Sunday:
-                                                    Closed
+                                                <p>
+                                                    @if(isset($contact->business_hours1))
+                                                    {{ $contact->business_hours1 }}
+                                                    @endif
+                                                    <br>
+                                                    @if(isset($contact->business_hours2))
+                                                    {{ $contact->business_hours2 }}
+                                                    @endif
+                                                    <br>
+                                                    @if(isset($contact->business_hours3))
+                                                    {{ $contact->business_hours3 }}
+                                                    @endif
                                                 </p>
                                             </div>
 
                                             <div class="">
                                                 <h4 class="title-block mb-15">Address</h4>
-                                                <p>26-30 New Damietta,<br>El-Mahalla El-Kubra,<br>LO 12345</p>
+                                                <p>
+                                                    @if(isset($contact->address1))
+                                                    {{ $contact->address1 }}
+                                                    @endif
+                                                    <br>
+                                                    @if(isset($contact->address2))
+                                                    {{ $contact->address2 }}
+                                                    @endif
+                                                    <br>
+                                                    @if(isset($contact->address3))
+                                                    {{ $contact->address3 }}
+                                                    @endif
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -213,27 +241,34 @@
                                 <p class="heading-color">Available for work</p>
 
                                 <ul class="dsn-socials box-social">
+                                    @if(isset($index_text->social_url_facebook))
                                     <li>
-                                        <a href="#0" target="_blank" class="background-section">
+                                        <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-section">
                                             <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
                                         </a>
                                     </li>
+                                    @endif
+                                    @if(isset($index_text->social_url_instagram))
                                     <li>
-                                        <a href="#0" target="_blank" class="background-section">
+                                        <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-section">
                                             <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
                                         </a>
                                     </li>
+                                    @endif
+                                    @if(isset($index_text->social_url_twitter))
                                     <li>
-                                        <a href="#0" target="_blank" class="background-section">
+                                        <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-section">
                                             <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                         </a>
                                     </li>
-
+                                    @endif
+                                    @if(isset($index_text->social_url_linkedin))
                                     <li>
-                                        <a href="#0" target="_blank" class="background-section">
+                                        <a href="{{ $index_text->social_url_linkedin }}" target="_blank" class="background-section">
                                             <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
                                         </a>
                                     </li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>
@@ -242,7 +277,7 @@
                 </div>
 
                 <!-- ========== Map  ========== -->
-                <div class="map-custom hv-80" data-dsn-lat="51.5073509" data-dsn-len="-0.1277583" data-dsn-zoom="14">
+                <div class="map-custom hv-80" data-dsn-lat="{{ $contact->map_lat ? $contact->map_lat : '1.5073509'}}" data-dsn-len="{{ $contact->map_len ? $contact->map_len : '-0.1277583'}}" data-dsn-zoom="14">
                 </div>
                 <!-- ========== End Map  ========== -->
 
@@ -275,17 +310,17 @@
                             <div class="d-flex gap-10 justify-content-between flex-wrap">
                                 <div class="info-item">
                                     <h6 class="mb-10">Email Address</h6>
-                                    <a class="text-upper" href="#">hello@dsngrid.com</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_email ? $contact->footer_email : 'footer_email'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Call Info</h6>
-                                    <a class="text-upper" href="#">91 98241 82099</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_call ? $contact->footer_call : 'footer_call'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Skype</h6>
-                                    <a class="text-upper" href="#">dsngrid.theme</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_skype ? $contact->footer_skype : 'footer_skype'}}</a>
                                 </div>
                             </div>
 
@@ -297,10 +332,10 @@
                             <div class="d-grid grid-md-3 align-items-center">
                                 <div class="links">
                                     <ul class="d-flex">
-                                        <li><a href="#">HOME</a></li>
+                                        <li><a href="/">HOME</a></li>
                                         <li><a href="#">ABOUT</a></li>
                                         <li><a href="#">WORK</a></li>
-                                        <li><a href="#">CONTACT</a></li>
+                                        <li><a href="/contact">CONTACT</a></li>
                                     </ul>
                                 </div>
 

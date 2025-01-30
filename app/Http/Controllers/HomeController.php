@@ -29,4 +29,10 @@ class HomeController extends Controller
 
         return view('dashboard.viewIndexPage', ['args' => $index_text]);
     }
+
+    public function contactPage() {
+        $contact = $this->siteService->contact();
+
+        return view('dashboard.viewContactPage', ['contact' => $contact]);
+    }
 }

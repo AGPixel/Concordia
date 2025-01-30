@@ -3,6 +3,7 @@
 namespace App\Repositories;
 
 use App\Models\IndexText;
+use App\Models\Contact;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
@@ -15,16 +16,23 @@ class SiteRepository extends BaseRepository
 		$this->model = new IndexText();
 	}
 
-	/**
-     * Get site texts
-     * @return object
-     */
      public function indexText(): object {
           return $this->model::first();
      }
 
      public function saveIndexText(array $arr) {
           $indexText = $this->indexText();
+          $indexText->fill($arr);
+          $indexText->save();
+     }
+
+     public function contact(): object {
+          $modelContact = new Contact();
+          return $modelContact::first();
+     }
+
+     public function saveContact(array $arr) {
+          $indexText = $this->contact();
           $indexText->fill($arr);
           $indexText->save();
      }

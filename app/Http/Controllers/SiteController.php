@@ -33,6 +33,18 @@ class SiteController extends Controller
     }
 
     public function contato() {
-        return view('contactpage');
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        return view('contactpage', ['index_text' => $index_text, 'contact' => $contact]);
+    }
+
+    public function saveContactPage(Request $request) {
+
+        $this->service->saveContact($request->all());
+        
+        return true;
     }
 }

@@ -78,4 +78,12 @@ class SiteService extends BaseService
         if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
+    public function contact() {
+        return $this->repository->contact();
+    }
+
+    public function saveContact(array $arr) {
+        $this->repository->saveContact($arr);
+    }
+
 }

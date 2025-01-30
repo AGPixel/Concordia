@@ -17,5 +17,6 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::get('/verify-token', function() { return true; })->name('api.verify-token');
     Route::post('/trocar-senha', [LoginController::class, 'trocarSenha'])->name('api.trocar-senha');
     Route::post('/save-index-page', [SiteController::class, 'saveIndexPage'])->name('api.save-index-page');
+    Route::post('/save-contact-page', [SiteController::class, 'saveContactPage'])->name('api.save-contact-page');
     
 });

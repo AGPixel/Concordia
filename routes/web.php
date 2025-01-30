@@ -13,6 +13,7 @@ Route::get('/login', [LoginController::class, 'login'])->name('view.login');
 Route::get('/home', [HomeController::class, 'home'])->name('view.home');
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('view.dashboard');
 Route::get('/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
+Route::get('/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');
 Route::get('/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
 Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
 
