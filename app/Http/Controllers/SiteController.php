@@ -52,6 +52,10 @@ class SiteController extends Controller
 
         $index_text = $this->service->indexText();
 
-        return view('about', ['index_text' => $index_text]);
+        $about = $this->service->about();
+
+        $contact = $this->service->contact();
+
+        return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about]);
     }
 }

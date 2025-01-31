@@ -50,31 +50,31 @@
                         <div class="dsn-grid-layout  dsn-grid section-image section-move-image use-horizontal-scroll-image" data-dsn-option='{"speed":1,"start":"100%","end":"0%","pin":false}'>
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc1.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img1 ? asset("../storage/$about->about_img1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc2.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc3.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc4.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img4 ? asset("../storage/$about->about_img4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc2.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
@@ -85,31 +85,31 @@
                         <div class="dsn-grid-layout  dsn-grid section-image section-move-image use-horizontal-scroll-image move-left" data-dsn-option='{"speed":1,"start":"100%","end":"0%","pin":false}'>
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc1.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img1 ? asset("../storage/$about->about_img1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc2.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc3.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc4.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img4 ? asset("../storage/$about->about_img4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/img-arc3.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
@@ -117,7 +117,7 @@
                     </div>
 
                     <div class=" over-hidden box-text has-border-radius v-middle d-flex align-items-center justify-content-center text-center dsn-fill">
-                        <h2 class="title-lg"><span class="fw-200">Seamless</span><br>Experience</h2>
+                        <h2 class="title-lg"><span class="fw-200">{{ $about->about_title_1 ? $about->about_title_1 : 'Seamless' }}</span><br>{{ $about->about_title_2 ? $about->about_title_2 : 'Experience' }}</h2>
                     </div>
                 </div>
                 <!-- ========== End Award Scroll Right========== -->
@@ -129,44 +129,49 @@
                         <div class="section-title mb-70 d-flex flex-column">
                             <span class="sub-heading mb-10 dsn-fill">What we're good at</span>
 
-                            <h2 class="title dsn-fill">Find a
-                                service That<br>
-                                works for you</h2>
+                            <h2 class="title dsn-fill">{{ $about->about_serice_title ? $about->about_serice_title : 'Find a service That works for you' }}</h2>
                         </div>
                     </div>
                     <div class="container">
                         <div class="dsn-cards">
                             <div class="dsn-posts dsn-style-hover-list dsn-layout-fade-up" data-dsn-fx="2">
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/1.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">Digital Strategy</a></h2>
+
+                                @if(isset($about->about_serice_1))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/services/1.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_1 }}</a></h2>
                                     <span class="number">01</span>
                                 </div>
-
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/2.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">Branding</a></h2>
+                                @endif
+                                @if(isset($about->about_serice_2))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/services/2.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_2 }}</a></h2>
                                     <span class="number">02</span>
                                 </div>
-
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/3.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">Web + App Development</a></h2>
+                                @endif
+                                @if(isset($about->about_serice_3))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/services/3.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_3 }}</a></h2>
                                     <span class="number">03</span>
                                 </div>
-
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/4.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">User Experience</a></h2>
+                                @endif
+                                @if(isset($about->about_serice_4))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/services/4.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_4 }}</a></h2>
                                     <span class="number">04</span>
                                 </div>
-
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/5.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">Digital Marketing</a></h2>
+                                @endif
+                                @if(isset($about->about_serice_5))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/services/5.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_5 }}</a></h2>
                                     <span class="number">05</span>
                                 </div>
-
-                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="assets/img/services/6.jpg">
-                                    <h2 class="title"><a href="#" class="effect-ajax">Media Production</a></h2>
+                                @endif
+                                @if(isset($about->about_serice_6))
+                                <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/services/6.jpg")}}">
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_6 }}</a></h2>
                                     <span class="number">06</span>
                                 </div>
-
+                                @endif
                                 <div class="dsn-up d-inline-flex">
                                     <div class="dsn-btn dsn-btn-shape  d-flex no-padding text-upper">
 
@@ -198,64 +203,69 @@
                     <div class="container">
                         <div class="box-text d-flex flex-column justify-content-center">
                             <div class="section-title d-flex flex-column mb-70 dsn-fill">
-                                <h2 class="title">10 years <br> of experience</h2>
+                                <h2 class="title">{{ $about->about_experience_title ? $about->about_experience_title : '10 Years of Experience' }}</h2>
                             </div>
 
+                            @if(isset($about->about_experience_title_1) && isset($about->about_experience_description_1) && isset($about->about_experience_data_1))
                             <div class="award-item p-relative dsn-up">
                                 <div class="d-grid grid-half-1">
-                                    <div class="date">Portfolio - 2023</div>
+                                    <div class="date">{{ $about->about_experience_data_1 }}</div>
 
                                     <div class="d-flex justify-content-between">
                                         <div class="">
-                                            <h4 class="title-block mb-5">AWARDS</h4>
-                                            <p>Masters in Web Design (HONORS)</p>
+                                            <h4 class="title-block mb-5">{{ $about->about_experience_title_1 }}</h4>
+                                            <p>{{ $about->about_experience_description_1 }}</p>
                                         </div>
                                         <img src="assets/img/awwards/trophy.png" alt="">
                                     </div>
                                 </div>
                             </div>
-
+                            @endif
+                            @if(isset($about->about_experience_title_2) && isset($about->about_experience_description_2) && isset($about->about_experience_data_2))
                             <div class="award-item p-relative dsn-up">
                                 <div class="d-grid grid-half-1">
-                                    <div class="date">Portfolio - 2023</div>
+                                    <div class="date">{{ $about->about_experience_data_2 }}</div>
 
                                     <div class="d-flex justify-content-between">
                                         <div class="">
-                                            <h4 class="title-block mb-5">AWARDS</h4>
-                                            <p>Masters in Web Design (HONORS)</p>
+                                            <h4 class="title-block mb-5">{{ $about->about_experience_title_2 }}</h4>
+                                            <p>{{ $about->about_experience_description_2 }}</p>
                                         </div>
                                         <img src="assets/img/awwards/trophy.png" alt="">
                                     </div>
                                 </div>
                             </div>
-
+                            @endif
+                            @if(isset($about->about_experience_title_3) && isset($about->about_experience_description_3) && isset($about->about_experience_data_3))
                             <div class="award-item p-relative dsn-up">
                                 <div class="d-grid grid-half-1">
-                                    <div class="date">Portfolio - 2023</div>
+                                    <div class="date">{{ $about->about_experience_data_3 }}</div>
 
                                     <div class="d-flex justify-content-between">
                                         <div class="">
-                                            <h4 class="title-block mb-5">AWARDS</h4>
-                                            <p>Masters in Web Design (HONORS)</p>
+                                            <h4 class="title-block mb-5">{{ $about->about_experience_title_3 }}</h4>
+                                            <p>{{ $about->about_experience_description_3 }}</p>
                                         </div>
                                         <img src="assets/img/awwards/trophy.png" alt="">
                                     </div>
                                 </div>
                             </div>
-
+                            @endif
+                            @if(isset($about->about_experience_title_4) && isset($about->about_experience_description_4) && isset($about->about_experience_data_4))
                             <div class="award-item p-relative dsn-up">
                                 <div class="d-grid grid-half-1">
-                                    <div class="date">Portfolio - 2023</div>
+                                    <div class="date">{{ $about->about_experience_data_4 }}</div>
 
                                     <div class="d-flex justify-content-between">
                                         <div class="">
-                                            <h4 class="title-block mb-5">AWARDS</h4>
-                                            <p>Masters in Web Design (HONORS)</p>
+                                            <h4 class="title-block mb-5">{{ $about->about_experience_title_4 }}</h4>
+                                            <p>{{ $about->about_experience_description_4 }}</p>
                                         </div>
                                         <img src="assets/img/awwards/trophy.png" alt="">
                                     </div>
                                 </div>
                             </div>
+                            @endif
 
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex">
@@ -298,13 +308,13 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="assets/img/testimonial/2.jpg" alt="" data-swiper-parallax-y="-50">
+                                            <img class="has-border-radius" src="{{ $args->testimonials_img_1 ? asset("../storage/$args->testimonials_img_1") : asset("/assets/img/team/1.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“CRESANT HELPED US DOUBLE SALES IN ONE YEAR”</h3>
+                                                <h3 class="title">“{{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}”</h3>
 
                                                 <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">MTL Graphic</h5>
-                                                    <span class="text-upper">Envato User</span>
+                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
+                                                    <span class="text-upper">{{ $args->testimonials_name_1 ? $args->testimonials_name_1 : 'testimonials_name_1' }}</span>
                                                 </div>
                                             </div>
 
@@ -313,30 +323,29 @@
 
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="assets/img/testimonial/1.jpg" alt="" data-swiper-parallax-y="-50">
+                                            <img class="has-border-radius" src="{{ $args->testimonials_img_2 ? asset("../storage/$args->testimonials_img_2") : asset("/assets/img/team/2.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“CRESANT HELPED US DOUBLE SALES IN ONE YEAR”</h3>
+                                                <h3 class="title">“{{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}”</h3>
 
                                                 <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">MTL Graphic</h5>
-                                                    <span class="text-upper">Envato User</span>
+                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
+                                                    <span class="text-upper">{{ $args->testimonials_name_2 ? $args->testimonials_name_2 : 'testimonials_name_2' }}</span>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
+
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="assets/img/team/1.jpg" alt="" data-swiper-parallax-y="-50">
+                                            <img class="has-border-radius" src="{{ $args->testimonials_img_3 ? asset("../storage/$args->testimonials_img_3") : asset("/assets/img/team/2.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“CRESANT HELPED US DOUBLE SALES IN ONE YEAR”</h3>
+                                                <h3 class="title">“{{ $args->testimonials_description_3 ? $args->testimonials_description_3 : 'testimonials_description_3' }}”</h3>
 
                                                 <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">MTL Graphic</h5>
-                                                    <span class="text-upper">Envato User</span>
+                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_3 ? $args->testimonials_company_3 : 'testimonials_company_3' }}</h5>
+                                                    <span class="text-upper">{{ $args->testimonials_name_3 ? $args->testimonials_name_3 : 'testimonials_name_3' }}</span>
                                                 </div>
                                             </div>
-
                                         </div>
                                     </div>
                                 </div>
@@ -353,17 +362,18 @@
                         </div>
                     </div>
                 </section>
-                <!-- ========== End testimonial========== -->
+                <!-- ========== End testimonial ========== -->
 
-                <!-- ==========  Brand========== -->
+                <!-- ==========  Brand ========== -->
                 <section class="brands background-section section-padding">
                     <div class="container">
 
                         <div class="section-title text-center d-flex flex-column mb-30">
                             <span class="sub-heading dsn-fill ml-auto mr-auto mb-5">OUR BRANDS</span>
 
-                            <h2 class="title dsn-fill">VTEX WINS OVER <br>
-                                THE TOUGHEST CRITICS</h2>
+                            <h2 class="title dsn-fill">
+                                {{ $about->about_brands_title }}
+                            </h2>
                         </div>
 
                         <div class="d-flex flex-column align-items-center justify-content-center ">
@@ -371,54 +381,54 @@
                                 <div class="brand-inner">
                                     <div class="swiper-container swiper">
                                         <div class="swiper-wrapper">
+                                            @if(isset($about->about_brands_img_1))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/1.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_1") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_2))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/2.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_2") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_3))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/3.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_3") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_4))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/5.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_4") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_1))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/6.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_1") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_2))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/1.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_2") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_3))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/2.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_3") }}" alt="">
                                             </div>
-
+                                            @endif
+                                            @if(isset($about->about_brands_img_4))
                                             <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/3.svg" alt="">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_4") }}" alt="">
                                             </div>
-
-                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/5.svg" alt="">
-                                            </div>
-
-                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
-                                                <img src="assets/img/brand/6.svg" alt="">
-                                            </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <p class="max-w570 text-center mt-20 dsn-up">Learn why industry experts from Gartner,
-                                Forrester,
-                                IDC, and others rate VTEX a leading
-                                global digital commerce technology provider.</p>
+                            <p class="max-w570 text-center mt-20 dsn-up">
+                                {{ $about->about_brands_description }}
+                            </p>
 
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex mt-20">
@@ -444,15 +454,14 @@
                 </section>
                 <!-- ========== End Brand========== -->
 
-
                 <!-- ========== Team ========== -->
-                <section class="dsn-team section-margin">
+                <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">Our Team</span>
-                            <h2 class="title ">Find a
-                                service That<br>
-                                works for you</h2>
+                            <h2 class="title ">
+                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
+                            </h2>
                         </div>
                     </div>
 
@@ -460,26 +469,29 @@
                         <div class="d-grid grid-lg-3 grid-md-2">
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/team/1.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Moustafa <br>
-                                            Sabry</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -489,26 +501,29 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/team/2.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Ahmed <br>
-                                            Shawky</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -518,26 +533,29 @@
 
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="assets/img/team/3.jpg" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
                                 </div>
                                 <div class="content w-100 d-flex justify-content-between">
                                     <div class="text">
-                                        <h4 class="title-block text-upper mb-5">Hisham <br>
-                                            Megahed</h4>
-                                        <span>Web Designer</span>
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
+                                        </span>
                                     </div>
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
 
-                                            <a href="#" class="social-item">
+                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
                                         </div>
@@ -578,17 +596,17 @@
                             <div class="d-flex gap-10 justify-content-between flex-wrap">
                                 <div class="info-item">
                                     <h6 class="mb-10">Email Address</h6>
-                                    <a class="text-upper" href="#">hello@dsngrid.com</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_email ? $contact->footer_email : 'footer_email'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Call Info</h6>
-                                    <a class="text-upper" href="#">91 98241 82099</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_call ? $contact->footer_call : 'footer_call'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Skype</h6>
-                                    <a class="text-upper" href="#">dsngrid.theme</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_skype ? $contact->footer_skype : 'footer_skype'}}</a>
                                 </div>
                             </div>
 
@@ -641,10 +659,10 @@
     <!-- ========== End Cursor ========== -->
 
 
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/plugins/dsn-grid.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ asset("/assets/js/jquery-3.7.1.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/custom.js") }}"></script>
 </body>
 
 </html>

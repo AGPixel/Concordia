@@ -35,4 +35,11 @@ class HomeController extends Controller
 
         return view('dashboard.viewContactPage', ['contact' => $contact]);
     }
+
+    public function aboutPage() {
+        $about = $this->siteService->about();
+
+        return view('dashboard.viewAboutPage', ['about' => $about]);
+
+    }
 }

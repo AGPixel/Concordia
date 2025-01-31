@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\UserToken;
 use App\Models\IndexText;
 use App\Models\Contact;
+use App\Models\About;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -45,5 +46,10 @@ class DatabaseSeeder extends Seeder
         $contact->map_lat = '11.5073509';
         $contact->map_len = '-0.1277583';
         $contact->save();
+
+        $about = new About();
+        $about->about_title_1 = 'About';
+        $about->about_title_2 = 'title';
+        $about->save();
     }
 }

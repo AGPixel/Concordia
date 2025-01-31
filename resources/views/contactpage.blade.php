@@ -371,12 +371,10 @@
     <div id="dsn_cursor_inner" class="ball"></div>
     <!-- ========== End Cursor ========== -->
 
-
-
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/plugins/dsn-grid.min.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ asset("/assets/js/jquery-3.7.1.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
+    <script src="{{ asset("/assets/js/custom.js") }}"></script>
 </body>
 
 </html>

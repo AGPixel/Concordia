@@ -86,4 +86,12 @@ class SiteService extends BaseService
         $this->repository->saveContact($arr);
     }
 
+    public function about() {
+        return $this->repository->contact();
+    }
+
+    public function saveAbout(array $arr) {
+        $this->repository->saveAbout($arr);
+    }
+
 }
