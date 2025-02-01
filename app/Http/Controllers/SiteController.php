@@ -68,6 +68,6 @@ class SiteController extends Controller
     }
 
     public function portifolio1() {
-        return view('work');
+        return view('portifolio');
     }
 }
