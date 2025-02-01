@@ -99,7 +99,7 @@ class SiteService extends BaseService
     private function updateImageValue($img,$arrImg) {
         if ($arrImg) {
             $arrImg = $this->saveFile($arrImg);
-            $this->deleteImage($img);
+            if ($img) $this->deleteImage($img);
         }
         return $arrImg;
     }
