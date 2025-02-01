@@ -58,4 +58,12 @@ class SiteController extends Controller
 
         return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about]);
     }
+
+    public function saveAboutPage (Request $request) {
+
+        $this->service->saveAbout($request->all());
+        
+        return true;
+
+    }
 }

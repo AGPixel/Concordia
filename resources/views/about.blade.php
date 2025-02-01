@@ -50,31 +50,31 @@
                         <div class="dsn-grid-layout  dsn-grid section-image section-move-image use-horizontal-scroll-image" data-dsn-option='{"speed":1,"start":"100%","end":"0%","pin":false}'>
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img1 ? asset("../storage/$about->about_img1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_1 ? asset("../storage/$about->about_img_1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img4 ? asset("../storage/$about->about_img4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_4 ? asset("../storage/$about->about_img_4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
@@ -85,31 +85,31 @@
                         <div class="dsn-grid-layout  dsn-grid section-image section-move-image use-horizontal-scroll-image move-left" data-dsn-option='{"speed":1,"start":"100%","end":"0%","pin":false}'>
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img1 ? asset("../storage/$about->about_img1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_1 ? asset("../storage/$about->about_img_1") : asset("/assets/img/img-arc1.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img2 ? asset("../storage/$about->about_img2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/img-arc2.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img4 ? asset("../storage/$about->about_img4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_4 ? asset("../storage/$about->about_img_4") : asset("/assets/img/img-arc4.jpg")}}" alt="">
                                 </div>
                             </div>
 
                             <div class="grid-item">
                                 <div class="image-item h-100">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img3 ? asset("../storage/$about->about_img3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/img-arc3.jpg")}}" alt="">
                                 </div>
                             </div>
 
@@ -129,46 +129,46 @@
                         <div class="section-title mb-70 d-flex flex-column">
                             <span class="sub-heading mb-10 dsn-fill">What we're good at</span>
 
-                            <h2 class="title dsn-fill">{{ $about->about_serice_title ? $about->about_serice_title : 'Find a service That works for you' }}</h2>
+                            <h2 class="title dsn-fill">{{ $about->about_service_title ? $about->about_service_title : 'Find a service That works for you' }}</h2>
                         </div>
                     </div>
                     <div class="container">
                         <div class="dsn-cards">
                             <div class="dsn-posts dsn-style-hover-list dsn-layout-fade-up" data-dsn-fx="2">
 
-                                @if(isset($about->about_serice_1))
+                                @if(isset($about->about_service_1))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/services/1.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_1 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_1 }}</a></h2>
                                     <span class="number">01</span>
                                 </div>
                                 @endif
-                                @if(isset($about->about_serice_2))
+                                @if(isset($about->about_service_2))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/services/2.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_2 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_2 }}</a></h2>
                                     <span class="number">02</span>
                                 </div>
                                 @endif
-                                @if(isset($about->about_serice_3))
+                                @if(isset($about->about_service_3))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/services/3.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_3 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_3 }}</a></h2>
                                     <span class="number">03</span>
                                 </div>
                                 @endif
-                                @if(isset($about->about_serice_4))
+                                @if(isset($about->about_service_4))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/services/4.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_4 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_4 }}</a></h2>
                                     <span class="number">04</span>
                                 </div>
                                 @endif
-                                @if(isset($about->about_serice_5))
+                                @if(isset($about->about_service_5))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/services/5.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_5 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_5 }}</a></h2>
                                     <span class="number">05</span>
                                 </div>
                                 @endif
-                                @if(isset($about->about_serice_6))
+                                @if(isset($about->about_service_6))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/services/6.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_serice_6 }}</a></h2>
+                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_6 }}</a></h2>
                                     <span class="number">06</span>
                                 </div>
                                 @endif

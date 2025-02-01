@@ -32,34 +32,13 @@ class SiteService extends BaseService
         
         $indexText = $this->repository->indexText();
 
-        if ($arr['about_img']) {
-            $arr['about_img'] = $this->saveFile($arr['about_img']);
-            $this->deleteImage($indexText->about_img);
-        }
-        if ($arr['about_img_3']) {
-            $arr['about_img_3'] = $this->saveFile($arr['about_img_3']);
-            $this->deleteImage($indexText->about_img_3);
-        }
-        if ($arr['testimonials_img_1']) {
-            $arr['testimonials_img_1'] = $this->saveFile($arr['testimonials_img_1']);
-            $this->deleteImage($indexText->testimonials_img_1);
-        }
-        if ($arr['testimonials_img_2']) {
-            $arr['testimonials_img_2'] = $this->saveFile($arr['testimonials_img_2']);
-            $this->deleteImage($indexText->testimonials_img_2);
-        }
-        if ($arr['employee_img_1']) {
-            $arr['employee_img_1'] = $this->saveFile($arr['employee_img_1']);
-            $this->deleteImage($indexText->employee_img_1);
-        }
-        if ($arr['employee_img_2']) {
-            $arr['employee_img_2'] = $this->saveFile($arr['employee_img_2']);
-            $this->deleteImage($indexText->employee_img_2);
-        }
-        if ($arr['employee_img_3']) {
-            $arr['employee_img_3'] = $this->saveFile($arr['employee_img_3']);
-            $this->deleteImage($indexText->employee_img_3);
-        }
+        $arr['about_img'] = $this->updateImageValue($indexText->about_img,$arr['about_img']);
+        $arr['about_img_3'] = $this->updateImageValue($indexText->about_img_3,$arr['about_img_3']);
+        $arr['testimonials_img_1'] = $this->updateImageValue($indexText->testimonials_img_1,$arr['testimonials_img_1']);
+        $arr['testimonials_img_2'] = $this->updateImageValue($indexText->testimonials_img_2,$arr['testimonials_img_2']);
+        $arr['employee_img_1'] = $this->updateImageValue($indexText->employee_img_1,$arr['employee_img_1']);
+        $arr['employee_img_2'] = $this->updateImageValue($indexText->employee_img_2,$arr['employee_img_2']);
+        $arr['employee_img_3'] = $this->updateImageValue($indexText->employee_img_3,$arr['employee_img_3']);
 
         return $arr;
     }
@@ -87,11 +66,42 @@ class SiteService extends BaseService
     }
 
     public function about() {
-        return $this->repository->contact();
+        return $this->repository->about();
     }
 
     public function saveAbout(array $arr) {
+        $arr = $this->updateAboutImages($arr);
         $this->repository->saveAbout($arr);
+    }
+
+    private function updateAboutImages(array $arr) {
+        
+        $about = $this->repository->about();
+
+        $arr['about_img_1'] = $this->updateImageValue($about->about_img_1,$arr['about_img_1']);
+        $arr['about_img_2'] = $this->updateImageValue($about->about_img_2,$arr['about_img_2']);
+        $arr['about_img_3'] = $this->updateImageValue($about->about_img_3,$arr['about_img_3']);
+        $arr['about_img_4'] = $this->updateImageValue($about->about_img_4,$arr['about_img_4']);
+        $arr['about_service_img_1'] = $this->updateImageValue($about->about_service_img_1,$arr['about_service_img_1']);
+        $arr['about_service_img_2'] = $this->updateImageValue($about->about_service_img_2,$arr['about_service_img_2']);
+        $arr['about_service_img_3'] = $this->updateImageValue($about->about_service_img_3,$arr['about_service_img_3']);
+        $arr['about_service_img_4'] = $this->updateImageValue($about->about_service_img_4,$arr['about_service_img_4']);
+        $arr['about_service_img_5'] = $this->updateImageValue($about->about_service_img_5,$arr['about_service_img_5']);
+        $arr['about_service_img_6'] = $this->updateImageValue($about->about_service_img_6,$arr['about_service_img_6']);
+        $arr['about_brands_img_1'] = $this->updateImageValue($about->about_brands_img_1,$arr['about_brands_img_1']);
+        $arr['about_brands_img_2'] = $this->updateImageValue($about->about_brands_img_2,$arr['about_brands_img_2']);
+        $arr['about_brands_img_3'] = $this->updateImageValue($about->about_brands_img_3,$arr['about_brands_img_3']);
+        $arr['about_brands_img_4'] = $this->updateImageValue($about->about_brands_img_4,$arr['about_brands_img_4']);
+
+        return $arr;
+    }
+
+    private function updateImageValue($img,$arrImg) {
+        if ($arrImg) {
+            $arrImg = $this->saveFile($arrImg);
+            $this->deleteImage($img);
+        }
+        return $arrImg;
     }
 
 }

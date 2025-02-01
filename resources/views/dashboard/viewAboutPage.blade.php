@@ -98,13 +98,13 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutServiceTitle">About Service Title</label>
-                                        <input type="text" name="aboutServiceTitle" class="form-control" id="InputAboutServiceTitle" value="{{ $about->about_serice_title ? $about->about_serice_title : '' }}">
+                                        <input type="text" name="aboutServiceTitle" class="form-control" id="InputAboutServiceTitle" value="{{ $about->about_service_title ? $about->about_service_title : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService1">About Service 1</label>
-                                        <input type="text" name="aboutService1" class="form-control" id="InputAboutService1" value="{{ $about->about_serice_1 ? $about->about_serice_1 : '' }}">
+                                        <input type="text" name="aboutService1" class="form-control" id="InputAboutService1" value="{{ $about->about_service_1 ? $about->about_service_1 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -121,7 +121,7 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService2">About Service 2</label>
-                                        <input type="text" name="aboutService2" class="form-control" id="InputAboutService2" value="{{ $about->about_serice_2 ? $about->about_serice_2 : '' }}">
+                                        <input type="text" name="aboutService2" class="form-control" id="InputAboutService2" value="{{ $about->about_service_2 ? $about->about_service_2 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -138,7 +138,7 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService3">About Service 3</label>
-                                        <input type="text" name="aboutService3" class="form-control" id="InputAboutService3" value="{{ $about->about_serice_3 ? $about->about_serice_3 : '' }}">
+                                        <input type="text" name="aboutService3" class="form-control" id="InputAboutService3" value="{{ $about->about_service_3 ? $about->about_service_3 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -155,7 +155,7 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService4">About Service 4</label>
-                                        <input type="text" name="aboutService4" class="form-control" id="InputAboutService4" value="{{ $about->about_serice_4 ? $about->about_serice_4 : '' }}">
+                                        <input type="text" name="aboutService4" class="form-control" id="InputAboutService4" value="{{ $about->about_service_4 ? $about->about_service_4 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -172,7 +172,7 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService5">About Service 5</label>
-                                        <input type="text" name="aboutService5" class="form-control" id="InputAboutService5" value="{{ $about->about_serice_5 ? $about->about_serice_5 : '' }}">
+                                        <input type="text" name="aboutService5" class="form-control" id="InputAboutService5" value="{{ $about->about_service_5 ? $about->about_service_5 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -189,7 +189,7 @@
                                 <div class="card-body first-card-body">
                                     <div class="form-group">
                                         <label for="InputAboutService6">About Service 6</label>
-                                        <input type="text" name="aboutService6" class="form-control" id="InputAboutService6" value="{{ $about->about_serice_6 ? $about->about_serice_6 : '' }}">
+                                        <input type="text" name="aboutService6" class="form-control" id="InputAboutService6" value="{{ $about->about_service_6 ? $about->about_service_6 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
