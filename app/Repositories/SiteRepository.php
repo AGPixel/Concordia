@@ -5,6 +5,7 @@ namespace App\Repositories;
 use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
+use App\Models\Work;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
@@ -33,9 +34,9 @@ class SiteRepository extends BaseRepository
      }
 
      public function saveContact(array $arr) {
-          $indexText = $this->contact();
-          $indexText->fill($arr);
-          $indexText->save();
+          $contact = $this->contact();
+          $contact->fill($arr);
+          $contact->save();
      }
 
      public function about(): object {
@@ -44,9 +45,20 @@ class SiteRepository extends BaseRepository
      }
 
      public function saveAbout(array $arr) {
-          $indexText = $this->about();
-          $indexText->fill($arr);
-          $indexText->save();
+          $about = $this->about();
+          $about->fill($arr);
+          $about->save();
+     }
+
+     public function work(): object {
+          $modelWork = new Work();
+          return $modelWork::first();
+     }
+
+     public function saveWork(array $arr) {
+          $work = $this->work();
+          $work->fill($arr);
+          $work->save();
      }
 
 }

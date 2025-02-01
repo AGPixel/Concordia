@@ -96,6 +96,30 @@ class SiteService extends BaseService
         return $arr;
     }
 
+    public function work() {
+        return $this->repository->work();
+    }
+
+    public function saveWork(array $arr) {
+        $arr = $this->updateWorkImages($arr);
+        $this->repository->saveWork($arr);
+    }
+
+    private function updateWorkImages(array $arr) {
+        
+        $work = $this->repository->work();
+
+        $arr['img_1'] = $this->updateImageValue($work->img_1,$arr['img_1']);
+        $arr['img_2'] = $this->updateImageValue($work->img_2,$arr['img_2']);
+        $arr['img_3'] = $this->updateImageValue($work->img_3,$arr['img_3']);
+        $arr['img_4'] = $this->updateImageValue($work->img_4,$arr['img_4']);
+        $arr['img_5'] = $this->updateImageValue($work->img_5,$arr['img_5']);
+        $arr['img_6'] = $this->updateImageValue($work->img_6,$arr['img_6']);
+        $arr['img_7'] = $this->updateImageValue($work->img_7,$arr['img_7']);
+
+        return $arr;
+    }
+
     private function updateImageValue($img,$arrImg) {
         if ($arrImg) {
             $arrImg = $this->saveFile($arrImg);
