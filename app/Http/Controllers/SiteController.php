@@ -66,4 +66,8 @@ class SiteController extends Controller
         return true;
 
     }
+
+    public function portifolio1() {
+        return view('work');
+    }
 }
