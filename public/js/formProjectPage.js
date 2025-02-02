@@ -17,37 +17,37 @@ let bases64 = {
 const InputProjectImgBegin = document.getElementById("InputProjectImgBegin");
 InputProjectImgBegin.addEventListener("change", load_image_project_preview6, false);
 async function load_image_project_preview6() {
-    document.getElementById('InputProjectImgBegin').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImgBeginPreview').innerHTML = this.files[0].name;
     bases64.InputProjectImgBegin = await toBase64(this.files[0]);
 }
 const InputProjectImg1 = document.getElementById("InputProjectImg1");
 InputProjectImg1.addEventListener("change", load_image_project_preview1, false);
 async function load_image_project_preview1() {
-    document.getElementById('InputProjectImg1').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImg1Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg1 = await toBase64(this.files[0]);
 }
 const InputProjectImg2 = document.getElementById("InputProjectImg2");
 InputProjectImg2.addEventListener("change", load_image_project_preview2, false);
 async function load_image_project_preview2() {
-    document.getElementById('InputProjectImg2').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImg2Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg2 = await toBase64(this.files[0]);
 }
 const InputProjectImg3 = document.getElementById("InputProjectImg3");
 InputProjectImg3.addEventListener("change", load_image_project_preview3, false);
 async function load_image_project_preview3() {
-    document.getElementById('InputProjectImg3').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImg3Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg3 = await toBase64(this.files[0]);
 }
 const InputProjectImg4 = document.getElementById("InputProjectImg4");
 InputProjectImg4.addEventListener("change", load_image_project_preview4, false);
 async function load_image_project_preview4() {
-    document.getElementById('InputProjectImg4').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImg4Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg4 = await toBase64(this.files[0]);
 }
 const InputProjectImg5 = document.getElementById("InputProjectImg5");
 InputProjectImg5.addEventListener("change", load_image_project_preview5, false);
 async function load_image_project_preview5() {
-    document.getElementById('InputProjectImg5').innerHTML = this.files[0].name;
+    document.getElementById('InputProjectImg5Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg5 = await toBase64(this.files[0]);
 }
 

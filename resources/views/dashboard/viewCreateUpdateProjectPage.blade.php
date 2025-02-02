@@ -77,7 +77,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImgBegin">Image Begin</label>
+                                        <label for="InputProjectImgBegin">Image Begin</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_begin ? asset("../storage/$project->img_begin") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImgBegin">
@@ -142,7 +143,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImg1">Image 1</label>
+                                        <label for="InputProjectImg1">Image 1</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_1 ? asset("../storage/$project->img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImg1">
@@ -153,7 +155,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImg2">Image 2</label>
+                                        <label for="InputProjectImg2">Image 2</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_2 ? asset("../storage/$project->img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImg2">
@@ -164,7 +167,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImg3">Image 3</label>
+                                        <label for="InputProjectImg3">Image 3</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_3 ? asset("../storage/$project->img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImg3">
@@ -175,7 +179,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImg4">Image 4</label>
+                                        <label for="InputProjectImg4">Image 4</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_4 ? asset("../storage/$project->img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImg4">
@@ -192,7 +197,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputProjectImg5">Image 5</label>
+                                        <label for="InputProjectImg5">Image 5</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $project->img_5 ? asset("../storage/$project->img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputProjectImg5">

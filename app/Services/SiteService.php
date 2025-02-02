@@ -170,6 +170,14 @@ class SiteService extends BaseService
         return $this->repository->projectById($id);
     }
 
+    public function getProjectThatIsNotId($id) {
+        return $this->repository->getProjectThatIsNotId($id);
+    }
+
+    public function getRandomProject($nextprojects) {
+        return $nextprojects[mt_rand(0,count($nextprojects)-1)];
+    }
+
     public function project() {
         return $this->repository->project();
     }
@@ -242,6 +250,8 @@ class SiteService extends BaseService
         if ($arrImg) {
             $arrImg = $this->uploadImageValue($arrImg);
             if ($img) $this->deleteImage($img);
+        } else {
+            $arrImg = $img;
         }
         return $arrImg;
     }

@@ -134,6 +134,9 @@ class SiteController extends Controller
 
         $menuProjects = $this->service->projectActive();
 
-        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        $nextprojects = $this->service->getProjectThatIsNotId($id);
+        $nextProject = $this->service->getRandomProject($nextprojects);
+
+        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 }

@@ -54,7 +54,8 @@
                                 <!-- 11111 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg1">Image 1</label>
+                                        <label for="InputWorkImg1">Image 1</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_1 ? asset("../storage/$work->img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg1">
@@ -78,7 +79,8 @@
                                 <!-- 22222 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg2">Image 2</label>
+                                        <label for="InputWorkImg2">Image 2</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_2 ? asset("../storage/$work->img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg2">
@@ -102,7 +104,8 @@
                                 <!-- 33333 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg3">Image 3</label>
+                                        <label for="InputWorkImg3">Image 3</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_3 ? asset("../storage/$work->img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg3">
@@ -126,7 +129,8 @@
                                 <!-- 44444 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg4">Image 4</label>
+                                        <label for="InputWorkImg4">Image 4</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_4 ? asset("../storage/$work->img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg4">
@@ -150,7 +154,8 @@
                                 <!-- 55555 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg5">Image 5</label>
+                                        <label for="InputWorkImg5">Image 5</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_5 ? asset("../storage/$work->img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg5">
@@ -174,7 +179,8 @@
                                 <!-- 66666 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg6">Image 6</label>
+                                        <label for="InputWorkImg6">Image 6</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_6 ? asset("../storage/$work->img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg6">
@@ -198,7 +204,8 @@
                                 <!-- 77777 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg7">Image 7</label>
+                                        <label for="InputWorkImg7">Image 7</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $work->img_7 ? asset("../storage/$work->img_7") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputWorkImg7">

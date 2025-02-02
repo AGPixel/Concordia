@@ -52,7 +52,7 @@
                 </ul>
             </li>
             <li class="nav-item ">
-                <a title="contato" href="contato">
+                <a title="contato" href="/contato">
                     <span class="overflow">Contato</span>
                 </a>
             </li>

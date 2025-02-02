@@ -53,7 +53,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg">Image About: </label>
+                                        <label for="InputAboutImg">Image About: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->about_img ? asset("../storage/$args->about_img") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg">
@@ -103,7 +104,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg3">Image About 3: </label>
+                                        <label for="InputAboutImg3">Image About 3: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->about_img_3 ? asset("../storage/$args->about_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg3">
@@ -228,7 +230,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputTestimonialsImg1">Testimonials Image 1</label>
+                                        <label for="InputTestimonialsImg1">Testimonials Image 1</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->testimonials_img_1 ? asset("../storage/$args->testimonials_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputTestimonialsImg1">
@@ -264,7 +267,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputTestimonialsImg2">Testimonials Image 2</label>
+                                        <label for="InputTestimonialsImg2">Testimonials Image 2</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->testimonials_img_2 ? asset("../storage/$args->testimonials_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputTestimonialsImg2">
@@ -306,7 +310,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputEmployeeImg1">Employee Image 1</label>
+                                        <label for="InputEmployeeImg1">Employee Image 1</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputEmployeeImg1">
@@ -347,7 +352,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputEmployeeImg2">Employee Image 2</label>
+                                        <label for="InputEmployeeImg2">Employee Image 2</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputEmployeeImg2">
@@ -388,7 +394,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputEmployeeImg3">Employee Image 3</label>
+                                        <label for="InputEmployeeImg3">Employee Image 3</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputEmployeeImg3">
@@ -419,13 +426,13 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksTitle">Works Title</label>
-                                        <input type="text" name="worksTitle" class="form-control" id="InputWorksTitle" value="{{ $args->works_title ? $args->works_title : '' }}">
+                                        <input type="text" name="worksTitle" class="form-control" id="InputWorksTitle" value="{ { $args->works_title ? $args->works_title : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksTitle1">Works Title 1</label>
-                                        <input type="text" name="worksTitle1" class="form-control" id="InputWorksTitle1" value="{{ $args->works_title_1 ? $args->works_title_1 : '' }}">
+                                        <input type="text" name="worksTitle1" class="form-control" id="InputWorksTitle1" value="{ { $args->works_title_1 ? $args->works_title_1 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -442,19 +449,19 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDate1">Works Date 1</label>
-                                        <input type="text" name="worksDate1" class="form-control" id="InputWorksDate1" value="{{ $args->works_date_1 ? $args->works_date_1 : '' }}">
+                                        <input type="text" name="worksDate1" class="form-control" id="InputWorksDate1" value="{ { $args->works_date_1 ? $args->works_date_1 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDescription1">Works Description 1</label>
-                                        <input type="text" name="worksDescription1" class="form-control" id="InputWorksDescription1" value="{{ $args->works_description_1 ? $args->works_description_1 : '' }}">
+                                        <input type="text" name="worksDescription1" class="form-control" id="InputWorksDescription1" value="{ { $args->works_description_1 ? $args->works_description_1 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksTitle2">Works Title 2</label>
-                                        <input type="text" name="worksTitle2" class="form-control" id="InputWorksTitle2" value="{{ $args->works_title_2 ? $args->works_title_2 : '' }}">
+                                        <input type="text" name="worksTitle2" class="form-control" id="InputWorksTitle2" value="{ { $args->works_title_2 ? $args->works_title_2 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -471,19 +478,19 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDate2">Works Date 2</label>
-                                        <input type="text" name="worksDate2" class="form-control" id="InputWorksDate2" value="{{ $args->works_date_2 ? $args->works_date_2 : '' }}">
+                                        <input type="text" name="worksDate2" class="form-control" id="InputWorksDate2" value="{ { $args->works_date_2 ? $args->works_date_2 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDescription2">Works Description 2</label>
-                                        <input type="text" name="worksDescription2" class="form-control" id="InputWorksDescription2" value="{{ $args->works_description_2 ? $args->works_description_2 : '' }}">
+                                        <input type="text" name="worksDescription2" class="form-control" id="InputWorksDescription2" value="{ { $args->works_description_2 ? $args->works_description_2 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksTitle3">Works Title 3</label>
-                                        <input type="text" name="worksTitle3" class="form-control" id="InputWorksTitle3" value="{{ $args->works_title_3 ? $args->works_title_3 : '' }}">
+                                        <input type="text" name="worksTitle3" class="form-control" id="InputWorksTitle3" value="{ { $args->works_title_3 ? $args->works_title_3 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -500,13 +507,13 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDate3">Works Date 3</label>
-                                        <input type="text" name="worksDate3" class="form-control" id="InputWorksDate3" value="{{ $args->works_date_3 ? $args->works_date_3 : '' }}">
+                                        <input type="text" name="worksDate3" class="form-control" id="InputWorksDate3" value="{ { $args->works_date_3 ? $args->works_date_3 : '' }}">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="InputWorksDescription3">Works Description 3</label>
-                                        <input type="text" name="worksDescription3" class="form-control" id="InputWorksDescription3" value="{{ $args->works_description_3 ? $args->works_description_3 : '' }}">
+                                        <input type="text" name="worksDescription3" class="form-control" id="InputWorksDescription3" value="{ { $args->works_description_3 ? $args->works_description_3 : '' }}">
                                     </div>
                                 </div>
                                 -->

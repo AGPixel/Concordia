@@ -150,6 +150,7 @@ function saveAboutPage() {
         about_brands_img_2: bases64.InputAboutBrandsImg2,
         about_brands_img_3: bases64.InputAboutBrandsImg3,
         about_brands_img_4: bases64.InputAboutBrandsImg4,
+        about_brands_description: document.getElementById('InputAboutBrandsDescription').value,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-about-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

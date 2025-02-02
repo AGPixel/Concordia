@@ -109,6 +109,11 @@ class SiteRepository extends BaseRepository
           return $modelProject->where('id',$id)->first();
      }
 
+     public function getProjectThatIsNotId($id) {
+          $modelProject = new Project();
+          return $modelProject->where('id','!=',$id)->get();
+     }
+
      public function project() {
           $modelProject = new Project();
           return $modelProject::get();

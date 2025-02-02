@@ -40,7 +40,6 @@
         <!-- ========== Menu ========== -->
         @include('components.sitemenu',['menuWorks' => $menuWorks])
         <!-- ========== End Menu ========== -->
-
         <div id="dsn-scrollbar">
 
             <!-- ========== Header ========== -->
@@ -51,27 +50,36 @@
 
                         <div class="box-content w-100 d-flex flex-column z-index-1">
 
-                            <h1 class="title-lg text-upper" data-dsn-ajax="title">Binge x <br> The Iconic <span class="fw-200">©
-                                    2021</span></h1>
+                            <h1 class="title-lg text-upper" data-dsn-ajax="title">
+                                {{ $project->title }}
+                            </h1>
 
                             <div class="d-flex justify-content-between align-items-center w-100 mt-30">
                                 <div class="cat p-0">
-                                    <span class="background-section heading-color">UX / UI Design</span>
-                                    <span class="background-section heading-color">Architecture</span>
+                                    @if(isset($project->work_1))
+                                    <span class="background-section heading-color">{{ $project->work_1 }}</span>
+                                    @endif
+                                    @if(isset($project->work_2))
+                                    <span class="background-section heading-color">{{ $project->work_2 }}</span>
+                                    @endif
+                                    @if(isset($project->work_3))
+                                    <span class="background-section heading-color">{{ $project->work_3 }}</span>
+                                    @endif
                                 </div>
 
                                 <div class="item">
-                                    <span class="text-upper"><span>photographer - </span> Janyon Boshoff</span>
+                                    <span class="text-upper"><span>{{ $project->employee_job_1 ? $project->employee_job_1 : ''}}</span> {{ $project->employee_1 ? $project->employee_1 : ''}}</span>
                                 </div>
 
                                 <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
 
-                                    <a class="button" href="https://www.behance.net/gallery/116216459/Binge-x-The-Iconic-Inactivewear?tracking_source=curated_galleries_photography" target="_blank">
+                                    @if(isset($project->url_project))
+                                    <a class="button" href="{{ $project->url_project }}" target="_blank">
                                         <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
                                             <span>View project</span>
                                         </span>
                                     </a>
-
+                                    @endif
                                     <span class="icon background-section theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -89,7 +97,7 @@
 
                 <div class="pl-30 pr-30">
                     <div class="box-img p-relative before-z-index has-border-radius" data-overlay="7" data-dsn-grid="move-up">
-                        <img class="cover-bg-img has-border-radius" src="assets/img/portfolio/project1/1.jpg" alt="">
+                        <img class="cover-bg-img has-border-radius" src="{{ $project->img_begin ? asset("../storage/$project->img_begin") : asset("/assets/img/portfolio/project1/1.jpg") }}" alt="">
                     </div>
                 </div>
 
@@ -98,34 +106,38 @@
 
             <div id="page_wrapper" class="wrapper">
 
-
                 <div class="project-info section-margin">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">project info</span>
-                            <h2 class="title ">head of production <br> Grant Anderson</h2>
+                            <h2 class="title ">{{ $project->title_employees ? $project->title_employees : ''}}</h2>
                         </div>
 
                         <ul class="dsn-style-list">
+                            @if(isset($project->employee_job_1) && isset($project->employee_1))
                             <li class="d-flex justify-content-between align-items-center">
-                                <h5 class="title-block body-color text-upper">agency</h5>
-                                <h4 class="title-block text-upper">Thinkerbell</h4>
+                                <h5 class="title-block body-color text-upper">{{ $project->employee_job_1 }}</h5>
+                                <h4 class="title-block text-upper">{{ $project->employee_1 }}</h4>
                             </li>
-
+                            @endif
+                            @if(isset($project->employee_job_2) && isset($project->employee_2))
                             <li class="d-flex justify-content-between align-items-center">
-                                <h5 class="title-block body-color text-upper">head of production </h5>
-                                <h4 class="title-block text-upper">Grant Anderson</h4>
+                                <h5 class="title-block body-color text-upper">{{ $project->employee_job_2 }}</h5>
+                                <h4 class="title-block text-upper">{{ $project->employee_2 }}</h4>
                             </li>
-
+                            @endif
+                            @if(isset($project->employee_job_3) && isset($project->employee_3))
                             <li class="d-flex justify-content-between align-items-center">
-                                <h5 class="title-block body-color text-upper">photographer</h5>
-                                <h4 class="title-block text-upper">Janyon Boshoff</h4>
+                                <h5 class="title-block body-color text-upper">{{ $project->employee_job_3 }}</h5>
+                                <h4 class="title-block text-upper">{{ $project->employee_3 }}</h4>
                             </li>
-
+                            @endif
+                            @if(isset($project->employee_job_4) && isset($project->employee_4))
                             <li class="d-flex justify-content-between align-items-center">
-                                <h5 class="title-block body-color text-upper">production</h5>
-                                <h4 class="title-block text-upper">Clockwork Films</h4>
+                                <h5 class="title-block body-color text-upper">{{ $project->employee_job_4 }}</h5>
+                                <h4 class="title-block text-upper">{{ $project->employee_4 }}</h4>
                             </li>
+                            @endif
                         </ul>
                     </div>
                 </div>
@@ -136,19 +148,19 @@
                             <div class="dsn-posts flexibly-hover">
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project1/2.jpg" class="cover-bg-img" alt="" />
+                                        <img src="{{ $project->img_1 ? asset("../storage/$project->img_1") : asset("/assets/img/portfolio/project1/2.jpg") }}" class="cover-bg-img" alt="" />
                                     </div>
                                 </div>
 
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project1/4.jpg" class="cover-bg-img" alt="" />
+                                        <img src="{{ $project->img_3 ? asset("../storage/$project->img_3") : asset("/assets/img/portfolio/project1/4.jpg") }}" class="cover-bg-img" alt="" />
                                     </div>
                                 </div>
 
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project1/3.jpg" class="cover-bg-img" alt="" />
+                                        <img src="{{ $project->img_2 ? asset("../storage/$project->img_2") : asset("/assets/img/portfolio/project1/3.jpg") }}" class="cover-bg-img" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -159,20 +171,20 @@
                 <div class="over-hidden section-margin">
                     <div class="img-box-parallax dsn-animate dsn-effect-down has-popup dsn-active" data-dsn-grid="move-up">
 
-                        <div class="effect-popup before-z-index h-100" data-src="assets/img/portfolio/project1/5.jpg" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                            <img class="cover-bg-img has-direction" src="assets/img/portfolio/project1/5.jpg" alt="">
+                        <div class="effect-popup before-z-index h-100" data-src="{{ $project->img_4 ? asset("../storage/$project->img_4") : asset("/assets/img/portfolio/project1/5.jpg") }}" data-caption="{{ $project->img_description_4 ? $project->img_description_4 : 'img_description_4'}}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                            <img class="cover-bg-img has-direction" src="{{ $project->img_4 ? asset("../storage/$project->img_4") : asset("/assets/img/portfolio/project1/5.jpg") }}" alt="">
                         </div>
-                        <div class="cap"><span>Caption #1</span></div>
+                        <div class="cap"><span>{{ $project->img_description_4 ? $project->img_description_4 : 'img_description_4'}}</span></div>
                     </div>
                 </div>
 
                 <div class="container p-relative mb-section">
                     <div class="p-relative img-box-parallax before-z-index has-popup">
-                        <div class="effect-popup before-z-index h-v-70 " data-src="assets/img/portfolio/project1/6.jpg" data-caption="Caption #2" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                            <img class="cover-bg-img has-border-radius" src="assets/img/portfolio/project1/6.jpg" alt="">
+                        <div class="effect-popup before-z-index h-v-70 " data-src="{{ $project->img_5 ? asset("../storage/$project->img_5") : asset("/assets/img/portfolio/project1/6.jpg") }}" data-caption="{{ $project->img_description_5 ? $project->img_description_5 : 'img_description_5'}}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                            <img class="cover-bg-img has-border-radius" src="{{ $project->img_5 ? asset("../storage/$project->img_5") : asset("/assets/img/portfolio/project1/6.jpg") }}" alt="">
                         </div>
                         <div class="cap">
-                            <span>Caption #2</span>
+                            <span>{{ $project->img_description_5 ? $project->img_description_5 : 'img_description_5'}}</span>
                         </div>
                     </div>
                 </div>
@@ -181,12 +193,12 @@
 
             <section class="next-projects p-relative section-padding d-flex flex-column justify-content-center">
                 <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 before-z-index" data-overlay="5" data-dsn-grid="move-up">
-                    <img class="cover-bg-img" src="assets/img/portfolio/project2/1.jpg" alt="">
+                    <img class="cover-bg-img" src="{{ $nextProject->img_1 ? asset("../storage/$nextProject->img_1") : asset("/assets/img/portfolio/project2/1.jpg") }}" alt="">
                 </div>
                 <div class="container p-relative">
                     <div class="box-content w-100 d-flex flex-column p-relative z-index-1">
 
-                        <a href="project-2.html" class="btn-arrow effect-ajax v-light background-main">
+                        <a href="/servico/{{ $nextProject->id }}" class="btn-arrow effect-ajax v-light background-main">
                             <span class="icon theme-color dsn-icon" data-dsn-iconSize="45px">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                     <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -195,13 +207,20 @@
                             </span>
                         </a>
 
-                        <h2 class="title-lg text-upper" data-dsn-ajax="title"><a href="project-2.html" class="effect-ajax">Me <br> Myself and i <span class="fw-200">© 2024</span></a></h2>
+                        <h2 class="title-lg text-upper" data-dsn-ajax="title"><a href="/servico/{{ $nextProject->id }}" class="effect-ajax">{{ $nextProject->title }}</a></h2>
 
 
                         <div class="d-flex justify-content-between align-items-center w-100 mt-30">
                             <div class="cat p-0">
-                                <span class="background-section heading-color">Character design </span>
-                                <span class="background-section heading-color">Digital Art </span>
+                                @if(isset($nextProject->work_1))
+                                <span class="background-section heading-color">{{ $nextProject->work_1 }}</span>
+                                @endif
+                                @if(isset($nextProject->work_2))
+                                <span class="background-section heading-color">{{ $nextProject->work_2 }}</span>
+                                @endif
+                                @if(isset($nextProject->work_3))
+                                <span class="background-section heading-color">{{ $nextProject->work_3 }}</span>
+                                @endif
                             </div>
 
                             <div class="item">

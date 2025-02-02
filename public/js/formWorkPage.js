@@ -18,43 +18,43 @@ let bases64 = {
 const InputWorkImg1 = document.getElementById("InputWorkImg1");
 InputWorkImg1.addEventListener("change", load_image_work_preview1, false);
 async function load_image_work_preview1() {
-    document.getElementById('InputWorkImg1').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg1Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg1 = await toBase64(this.files[0]);
 }
 const InputWorkImg2 = document.getElementById("InputWorkImg2");
 InputWorkImg2.addEventListener("change", load_image_work_preview2, false);
 async function load_image_work_preview2() {
-    document.getElementById('InputWorkImg2').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg2Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg2 = await toBase64(this.files[0]);
 }
 const InputWorkImg3 = document.getElementById("InputWorkImg3");
 InputWorkImg3.addEventListener("change", load_image_work_preview3, false);
 async function load_image_work_preview3() {
-    document.getElementById('InputWorkImg3').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg3Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg3 = await toBase64(this.files[0]);
 }
 const InputWorkImg4 = document.getElementById("InputWorkImg4");
 InputWorkImg4.addEventListener("change", load_image_work_preview4, false);
 async function load_image_work_preview4() {
-    document.getElementById('InputWorkImg4').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg4Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg4 = await toBase64(this.files[0]);
 }
 const InputWorkImg5 = document.getElementById("InputWorkImg5");
 InputWorkImg5.addEventListener("change", load_image_work_preview5, false);
 async function load_image_work_preview5() {
-    document.getElementById('InputWorkImg5').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg5Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg5 = await toBase64(this.files[0]);
 }
 const InputWorkImg6 = document.getElementById("InputWorkImg6");
 InputWorkImg6.addEventListener("change", load_image_work_preview6, false);
 async function load_image_work_preview6() {
-    document.getElementById('InputWorkImg6').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg6Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg6 = await toBase64(this.files[0]);
 }
 const InputWorkImg7 = document.getElementById("InputWorkImg7");
 InputWorkImg7.addEventListener("change", load_image_work_preview7, false);
 async function load_image_work_preview7() {
-    document.getElementById('InputWorkImg7').innerHTML = this.files[0].name;
+    document.getElementById('InputWorkImg7Preview').innerHTML = this.files[0].name;
     bases64.InputWorkImg7 = await toBase64(this.files[0]);
 }
 

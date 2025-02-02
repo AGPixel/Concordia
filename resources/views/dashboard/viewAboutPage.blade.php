@@ -30,6 +30,10 @@
                 padding-bottom: 1em !important;
             }
 
+            .m-bot-05 {
+                margin-bottom: 0.5em !important;
+            }
+
         </style>
         <!-- Main content -->
         <div class="content">
@@ -53,7 +57,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg1">Image About 1: </label>
+                                        <label for="InputAboutImg1">Image About 1: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_1 ? asset("../storage/$about->about_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg1">
@@ -64,7 +69,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg2">Image About 2: </label>
+                                        <label for="InputAboutImg2">Image About 2: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg2">
@@ -75,7 +81,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg3">Image About 3: </label>
+                                        <label for="InputAboutImg3">Image About 3: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg3">
@@ -86,7 +93,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg4">Image About 4: </label>
+                                        <label for="InputAboutImg4">Image About 4: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_4 ? asset("../storage/$about->about_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutImg4">
@@ -109,7 +117,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg1">About Service Image 1: </label>
+                                        <label for="InputAboutServiceImg1">About Service Image 1: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg1">
@@ -126,7 +135,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg2">About Service Image 2: </label>
+                                        <label for="InputAboutServiceImg2">About Service Image 2: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg2">
@@ -143,7 +153,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg3">About Service Image 3: </label>
+                                        <label for="InputAboutServiceImg3">About Service Image 3: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg3">
@@ -160,7 +171,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg4">About Service Image 4: </label>
+                                        <label for="InputAboutServiceImg4">About Service Image 4: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg4">
@@ -177,7 +189,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg5">About Service Image 5: </label>
+                                        <label for="InputAboutServiceImg5">About Service Image 5: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg5">
@@ -194,7 +207,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg6">About Service Image 6: </label>
+                                        <label for="InputAboutServiceImg6">About Service Image 6: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutServiceImg6">
@@ -289,7 +303,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutBrandsImg1">About Brands Image 1: </label>
+                                        <label for="InputAboutBrandsImg1">About Brands Image 1: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_1 ? asset("../storage/$about->about_brands_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutBrandsImg1">
@@ -300,7 +315,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutBrandsImg2">About Brands Image 2: </label>
+                                        <label for="InputAboutBrandsImg2">About Brands Image 2: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_2 ? asset("../storage/$about->about_brands_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutBrandsImg2">
@@ -311,7 +327,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutBrandsImg3">About Brands Image 3: </label>
+                                        <label for="InputAboutBrandsImg3">About Brands Image 3: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_3 ? asset("../storage/$about->about_brands_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutBrandsImg3">
@@ -322,7 +339,8 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutBrandsImg4">About Brands Image 4: </label>
+                                        <label for="InputAboutBrandsImg4">About Brands Image 4: </label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_4 ? asset("../storage/$about->about_brands_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
                                         <div class="input-group">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="InputAboutBrandsImg4">
