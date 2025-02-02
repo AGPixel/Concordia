@@ -12,7 +12,7 @@
     <link rel="icon" href="{{asset("/assets/img/logo-32x32.png")}}" sizes="32x32" />
     <link rel="icon" href="{{asset("/assets/img/logo-192x192.png")}}" sizes="192x192" />
 
-    <title>Concordia</title>
+    <title>Concordia - Sobre</title>
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">

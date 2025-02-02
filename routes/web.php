@@ -10,6 +10,7 @@ Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::get('/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
 Route::get('/portifolio/{id}', [SiteController::class, 'portifolio'])->name('site.portifolio');
+Route::get('/servico', [SiteController::class, 'servico'])->name('site.servico');
 
 Route::get('/login', [LoginController::class, 'login'])->name('view.login');
 Route::get('/home', [HomeController::class, 'home'])->name('view.home');

@@ -43,7 +43,7 @@
                 </a>
                 <ul class="nav-item">
                     <li class="nav-item ">
-                        <a title="Serviço 1" href="project-1.html" data-dsn-text="Serviço 1">
+                        <a title="Serviço 1" href="/servico" data-dsn-text="Serviço 1">
                             <span class="overflow">Serviço 1</span>
                         </a>
                     </li>

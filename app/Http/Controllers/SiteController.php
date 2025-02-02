@@ -100,4 +100,15 @@ class SiteController extends Controller
 
         return view('portifolio',['index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks]);
     }
+
+    public function servico() {
+
+        $menuWorks = $this->service->workActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks]);
+    }
 }
