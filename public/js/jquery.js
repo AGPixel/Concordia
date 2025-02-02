@@ -98,6 +98,28 @@ async function apiPostBearer(url, form, dataType, successPromisse, errorPromisse
     });
 }
 
+async function apiDeleteBearer(url, form, dataType, successPromisse, errorPromisse) {
+    console.log("apiDeleteBearer");
+    jQuery.ajax({
+        url: url,
+        type: "DELETE",
+        data: form,
+        dataType: dataType,
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "Bearer " + getCookie('token')
+        },
+        success: function (_return) {
+            console.log("success apiDeleteBearer", _return);
+            successPromisse(_return);
+        },
+        error: function (_return) {
+            console.log("error apiDeleteBearer", _return);
+            errorPromisse(_return);
+        }
+    });
+}
+
 // -------------------------------- COOKIES -------------------------------- 
 
 function setCookie(name, value = 1, days = 7) {

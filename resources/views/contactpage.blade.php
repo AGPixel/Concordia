@@ -38,7 +38,7 @@
     <main id="main_root" class="main-root">
 
         <!-- ========== Menu ========== -->
-        @include('components.sitemenu')
+        @include('components.sitemenu',['menuWorks'=>$menuWorks])
         <!-- ========== End Menu ========== -->
 
         <div id="dsn-scrollbar">
@@ -103,7 +103,6 @@
                         </div>
 
                         <div class="social-box d-flex align-items-center">
-
                             <ul class="dsn-socials box-social">
                                 @if(isset($index_text->social_url_facebook))
                                 <li>

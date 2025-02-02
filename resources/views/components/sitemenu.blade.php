@@ -22,26 +22,18 @@
 
             <li class="nav-item has-sub-menu">
                 <a title="Home" href="#">
-                    <span class="overflow ">Portfolio</span>
+                    <span class="overflow ">
+                        Portfolio
+                    </span>
                 </a>
                 <ul class="nav-item">
+                    @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
-                        <a title="Hover" href="/portifolio" data-dsn-text="Portfolio">
-                            <span class="overflow">1º Portifolio</span>
+                        <a title="Hover" href="/portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
+                            <span class="overflow">{{ $menuWork->title }}</span>
                         </a>
                     </li>
-
-                    <li class="nav-item">
-                        <a title="horizontal Scroll" href="work-horizontal-scroll.html" data-dsn-text="Portfolio">
-                            <span class="overflow">2º Portifolio</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a title="Carousel" href="work-2.html" data-dsn-text="Portfolio">
-                            <span class="overflow">1º Portifolio</span>
-                        </a>
-                    </li>
+                    @endforeach
                 </ul>
             </li>
 

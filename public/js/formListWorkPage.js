@@ -32,8 +32,25 @@ function newWork() {
 
 function editWork(work) {
     showLoading();
-    console.log(work);
     setTimeout(() => {
         window.location.href = "/work-page/" + work.id;
     }, 500);
+}
+
+function deleteWork(work) {
+    console.log("deleteWork");
+    console.log(work);
+    showLoading();
+
+    let form = {
+        id: work.id
+    };
+
+    apiDeleteBearer(GLOBAL_URL_API + 'delete-work-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
+        toastSuccess(_return.message);
+        location.reload();
+    }, function (_return) {
+        toastError(_return.responseJSON.message);
+        hideLoading();
+    });
 }

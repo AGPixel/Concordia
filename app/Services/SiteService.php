@@ -91,6 +91,10 @@ class SiteService extends BaseService
         return $this->repository->work();
     }
 
+    public function workActive() {
+        return $this->repository->workActive();
+    }
+
     public function saveNewWork(array $arr) {
         $arr = $this->uploadWorkImages($arr);
         $this->repository->saveNewWork($arr);
@@ -106,6 +110,10 @@ class SiteService extends BaseService
             unset($arr['active']);
             $this->repository->saveWork($arr);
         }
+    }
+
+    public function deleteWork(array $arr) {
+        $this->repository->deleteWork($arr['id']);
     }
 
     private function uploadWorkImages(array $arr) {

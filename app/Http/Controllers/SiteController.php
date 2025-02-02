@@ -22,7 +22,9 @@ class SiteController extends Controller
 
         $index_text = $this->service->indexText();
 
-        return view('index', ['args' => $index_text]);
+        $menuWorks = $this->service->workActive();
+
+        return view('index', ['args' => $index_text, 'menuWorks' => $menuWorks]);
     }
 
     public function saveIndexPage(Request $request) {
@@ -38,7 +40,9 @@ class SiteController extends Controller
 
         $contact = $this->service->contact();
 
-        return view('contactpage', ['index_text' => $index_text, 'contact' => $contact]);
+        $menuWorks = $this->service->workActive();
+
+        return view('contactpage', ['index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks]);
     }
 
     public function saveContactPage(Request $request) {
@@ -56,34 +60,44 @@ class SiteController extends Controller
 
         $contact = $this->service->contact();
 
-        return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about]);
+        $menuWorks = $this->service->workActive();
+
+        return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about, 'menuWorks' => $menuWorks]);
     }
 
     public function saveAboutPage(Request $request) {
-
         $this->service->saveAbout($request->all());
         
         return true;
-
     }
 
     public function saveWorkPage(Request $request) {
-
         $this->service->saveWork($request->all());
         
         return true;
+    }
 
+    public function deleteWorkPage(Request $request) {
+        $this->service->deleteWork($request->all());
+        
+        return true;
     }
 
     public function updateActiveWorkPage(Request $request) {
-
         $this->service->updateActiveWork($request->all());
         
         return true;
-
     }
 
-    public function portifolio() {
-        return view('portifolio');
+    public function portifolio($id) {
+        $work = $this->service->workById($id);
+
+        $menuWorks = $this->service->workActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        return view('portifolio',['index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks]);
     }
 }

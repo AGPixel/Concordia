@@ -14,7 +14,7 @@
 
     <title>Concordia - Portifolio</title>
 
-    <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
+    <link rel="stylesheet" href="{{asset("/assets/css/plugins.css")}}" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
 </head>
 
@@ -38,7 +38,7 @@
     <main id="main_root" class="main-root">
 
         <!-- ========== Menu ========== -->
-        @include('components.sitemenu')
+        @include('components.sitemenu',['menuWorks'=>$menuWorks])
         <!-- ========== End Menu ========== -->
 
         <div id="dsn-scrollbar">
@@ -55,11 +55,13 @@
 
                         <div class="box-content z-index-1">
 
-                            <h1 class="title-lg text-upper">Recent work</h1>
+                            <h1 class="title-lg text-upper">
+                                {{ $work->title ? $work->title : 'title' }}
+                            </h1>
 
                             <div class="contact-links w-50 mt-20">
-                                <p>My creative spirit comes alive in the digital realm. With nimble fingers flying
-                                    across the keyboard, I craft clear experiences out of nothing but ones and zeroes.
+                                <p>
+                                    {{ $work->description ? $work->description : 'description' }}
                                 </p>
                             </div>
                         </div>
@@ -88,23 +90,28 @@
                         </div>
 
                         <div class="social-box d-flex align-items-center">
-
                             <ul class="dsn-socials box-social">
+                                @if(isset($index_text->social_url_facebook))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-main">
                                         <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
                                     </a>
                                 </li>
+                                @endif
+                                @if(isset($index_text->social_url_instagram))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-main">
                                         <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
                                     </a>
                                 </li>
+                                @endif
+                                @if(isset($index_text->social_url_twitter))
                                 <li>
-                                    <a href="#0" target="_blank" class="background-main">
+                                    <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-main">
                                         <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                                     </a>
                                 </li>
+                                @endif
                             </ul>
                         </div>
                     </div>
@@ -144,197 +151,157 @@
                                 </div>
                             </div>
 
+
+
                             <div class="container">
                                 <div class="dsn-posts dsn-post-type-cards box-image-normal d-grid grid-md-2 dsn-isotope use-filter v-dark-head" data-dsn-gap="30px">
+                                    @if(isset($work->img_1) && isset($work->type_1) && isset($work->title_1))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
-
                                         <div class="box-content">
                                             <div class="w-100">
                                                 <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
-                                                    <img src="assets/img/portfolio/project1/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                    <img src="{{ asset("../storage/$work->img_1") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">UX / UI
-                                                            Design</span>
+                                                        <span class="background-main heading-color">{{ $work->type_1 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">Binge x The Iconic</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_1 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
-
+                                    @endif
+                                    @if(isset($work->img_2) && isset($work->type_2) && isset($work->title_2))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="5">
-                                                    <img src="assets/img/portfolio/project2/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_2") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Character design </span>
+                                                        <span class="background-main heading-color">{{ $work->type_2 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-2.html" class="effect-ajax init-color" data-dsn-ajax="work">Me Myself and i</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_2 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius photography sports">
-
+                                    @endif
+                                    @if(isset($work->img_3) && isset($work->type_3) && isset($work->title_3))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="3">
-                                                    <img src="assets/img/portfolio/project3/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_3") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Photography</span>
+                                                        <span class="background-main heading-color">{{ $work->type_3 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-3.html" class="effect-ajax init-color" data-dsn-ajax="work">YOUR DREAM CAR</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_3 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand photography">
-
+                                    @endif
+                                    @if(isset($work->img_4) && isset($work->type_4) && isset($work->title_4))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
-                                                    <img src="assets/img/portfolio/project4/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_4") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Photography</span>
+                                                        <span class="background-main heading-color">{{ $work->type_4 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-4.html" class="effect-ajax init-color" data-dsn-ajax="work">The Hills - Nissan</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_4 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion brand">
-
+                                    @endif
+                                    @if(isset($work->img_5) && isset($work->type_5) && isset($work->title_5))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
-                                                    <img src="assets/img/portfolio/project5/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_5") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Architecture</span>
+                                                        <span class="background-main heading-color">{{ $work->type_5 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-5.html" class="effect-ajax init-color" data-dsn-ajax="work">Church Copenhagen Denmark</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_5 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand">
-
+                                    @endif
+                                    @if(isset($work->img_6) && isset($work->type_6) && isset($work->title_6))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
-                                                    <img src="assets/img/portfolio/project6/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_6") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Architecture</span>
+                                                        <span class="background-main heading-color">{{ $work->type_6 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-6.html" class="effect-ajax init-color" data-dsn-ajax="work">LOST RENDER</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_6 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius photography">
-
+                                    @endif
+                                    @if(isset($work->img_7) && isset($work->type_7) && isset($work->title_7))
+                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
-                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="4">
-                                                    <img src="assets/img/portfolio/project7/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                <div class="box-image w-100 h-350 over-hidden before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                    <img src="{{ asset("../storage/$work->img_7") }}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                                 </div>
                                             </div>
-
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
-
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
-
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">Architecture</span>
+                                                        <span class="background-main heading-color">{{ $work->type_7 }}</span>
                                                     </div>
-
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                        <a href="project-7.html" class="effect-ajax init-color" data-dsn-ajax="work">Samokat office</a>
+                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_7 }}</a>
                                                     </h2>
-
                                                 </div>
                                             </div>
                                         </div>
-
                                     </article>
+                                    @endif
                                 </div>
                             </div>
 
@@ -372,17 +339,17 @@
                             <div class="d-grid grid-md-3">
                                 <div class="info-item">
                                     <h6 class="mb-10">Email Address</h6>
-                                    <a class="text-upper" href="#">hello@dsngrid.com</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_email ? $contact->footer_email : 'footer_email'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Call Info</h6>
-                                    <a class="text-upper" href="#">91 98241 82099</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_call ? $contact->footer_call : 'footer_call'}}</a>
                                 </div>
 
                                 <div class="info-item">
                                     <h6 class="mb-10">Skype</h6>
-                                    <a class="text-upper" href="#">dsngrid.theme</a>
+                                    <a class="text-upper" href="#">{{ $contact->footer_skype ? $contact->footer_skype : 'footer_skype'}}</a>
                                 </div>
                             </div>
 

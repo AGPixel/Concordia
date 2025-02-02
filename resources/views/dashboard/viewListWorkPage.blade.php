@@ -109,7 +109,7 @@
                                                     <i class="fa fa-pen"></i>
                                                     &nbsp;Edit
                                                 </button>
-                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0">
+                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0" onclick="deleteWork({{$work}})">
                                                     <i class="fa fa-trash"></i>
                                                     &nbsp;Delete
                                                 </button>

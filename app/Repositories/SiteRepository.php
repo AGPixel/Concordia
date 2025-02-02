@@ -60,6 +60,11 @@ class SiteRepository extends BaseRepository
           return $modelWork::get();
      }
 
+     public function workActive() {
+          $modelWork = new Work();
+          return $modelWork::where('active',1)->get();
+     }
+
      public function saveWork(array $arr) {
           $work = $this->workById($arr['id']);
           $work->fill($arr);
@@ -74,6 +79,10 @@ class SiteRepository extends BaseRepository
 
      public function updateActiveWork(array $arr) {
           Work::where('id',$arr['id'])->update(['active'=>$arr['active']]);
-      }
+     }
+
+     public function deleteWork($id) {
+          Work::where('id',$id)->delete();
+     }
 
 }
