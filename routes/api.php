@@ -22,5 +22,8 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::post('/save-work-page', [SiteController::class, 'saveWorkPage'])->name('api.save-work-page');
     Route::delete('/delete-work-page', [SiteController::class, 'deleteWorkPage'])->name('api.delete-work-page');
     Route::post('/update-active-work', [SiteController::class, 'updateActiveWorkPage'])->name('api.update-actve-work-page');
+    Route::post('/save-project-page', [SiteController::class, 'saveProjectPage'])->name('api.save-project-page');
+    Route::delete('/delete-project-page', [SiteController::class, 'deleteProjectPage'])->name('api.delete-project-page');
+    Route::post('/update-active-work', [SiteController::class, 'updateActiveProjectPage'])->name('api.update-actve-project-page');
     
 });

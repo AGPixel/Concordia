@@ -46,6 +46,12 @@
                         <p class="text">Work</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/list-project-page" class="nav-link">
+                        <i class="nav-icon fa fa-indent"></i>
+                        <p class="text">Project</p>
+                    </a>
+                </li>
                 <li class="nav-header">CONFIGURAÇÕES</li>
                 <li class="nav-item">
                     <a href="/trocar-senha" class="nav-link">

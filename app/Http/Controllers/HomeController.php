@@ -24,11 +24,17 @@ class HomeController extends Controller
         return view('dashboard.viewTrocarSenha');
     }
 
+    // ------------------------------------- INDEX_TEXT -------------------------------------
+
     public function indexPage() {
         $index_text = $this->siteService->indexText();
 
         return view('dashboard.viewIndexPage', ['args' => $index_text]);
     }
+
+    // ------------------------------------- INDEX_TEXT -------------------------------------
+
+    // ------------------------------------- CONTACT -------------------------------------
 
     public function contactPage() {
         $contact = $this->siteService->contact();
@@ -36,11 +42,19 @@ class HomeController extends Controller
         return view('dashboard.viewContactPage', ['contact' => $contact]);
     }
 
+    // ------------------------------------- CONTACT -------------------------------------
+
+    // ------------------------------------- ABOUT -------------------------------------
+
     public function aboutPage() {
         $about = $this->siteService->about();
 
         return view('dashboard.viewAboutPage', ['about' => $about]);
     }
+
+    // ------------------------------------- ABOUT -------------------------------------
+
+    // ------------------------------------- WORK -------------------------------------
 
     public function listWorkPage() {
         $works = $this->siteService->work();
@@ -57,4 +71,26 @@ class HomeController extends Controller
     public function newWorkPage() {
         return view('dashboard.viewCreateUpdateWorkPage', ['work' => []]);
     }
+
+    // ------------------------------------- WORK -------------------------------------
+
+    // ------------------------------------- PROJECT -------------------------------------
+
+    public function listProjectPage() {
+        $projects = $this->siteService->project();
+
+        return view('dashboard.viewListProjectPage', ['projects' => $projects]);
+    }
+
+    public function projectPage($id) {
+        $projects = $this->siteService->projectById($id);
+        
+        return view('dashboard.viewCreateUpdateProjectPage', ['project' => $projects]);
+    }
+
+    public function newProjectPage() {
+        return view('dashboard.viewCreateUpdateProjectPage', ['project' => []]);
+    }
+
+    // ------------------------------------- PROJECT -------------------------------------
 }

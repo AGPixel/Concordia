@@ -13,16 +13,28 @@ Route::get('/portifolio/{id}', [SiteController::class, 'portifolio'])->name('sit
 Route::get('/servico', [SiteController::class, 'servico'])->name('site.servico');
 
 Route::get('/login', [LoginController::class, 'login'])->name('view.login');
+Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
+
+Route::get('/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
+
 Route::get('/home', [HomeController::class, 'home'])->name('view.home');
+
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('view.dashboard');
+
 Route::get('/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
+
 Route::get('/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');
+
 Route::get('/about-page', [HomeController::class, 'aboutPage'])->name('view.about-page');
+
 Route::get('/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
 Route::get('/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
 Route::get('/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');
-Route::get('/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
-Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
+
+Route::get('/list-project-page', [HomeController::class, 'listProjectPage'])->name('view.list-project-page');
+Route::get('/new-project-page', [HomeController::class, 'newProjectPage'])->name('view.new-project-page');
+Route::get('/project-page/{id}', [HomeController::class, 'projectPage'])->name('view.project-page');
+
 
 /*
 
