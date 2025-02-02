@@ -42,21 +42,13 @@
                     <span class="overflow ">Serviços</span>
                 </a>
                 <ul class="nav-item">
-                    <li class="nav-item ">
-                        <a title="Serviço 1" href="/servico" data-dsn-text="Serviço 1">
-                            <span class="overflow">Serviço 1</span>
+                    @foreach($menuProjects as $id => $menuProject)
+                    <li class="nav-item">
+                        <a title="Hover" href="/servico/{{ $menuProject->id }}" data-dsn-text="Serviço">
+                            <span class="overflow">{{ $menuProject->title }}</span>
                         </a>
                     </li>
-                    <li class="nav-item ">
-                        <a title="Serviço 2" href="project-2.html" data-dsn-text="Serviço 2">
-                            <span class="overflow">Serviço 2</span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a title="Serviço 3" href="project-3.html" data-dsn-text="Serviço 3">
-                            <span class="overflow">Serviço 3</span>
-                        </a>
-                    </li>
+                    @endforeach
                 </ul>
             </li>
             <li class="nav-item ">

@@ -123,7 +123,8 @@ class SiteController extends Controller
         return true;
     }
 
-    public function servico() {
+    public function servico($id) {
+        $project = $this->service->projectById($id);
 
         $menuWorks = $this->service->workActive();
 
@@ -133,6 +134,6 @@ class SiteController extends Controller
 
         $menuProjects = $this->service->projectActive();
 
-        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 }
