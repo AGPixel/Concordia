@@ -20,6 +20,8 @@ class SiteService extends BaseService
         $this->repository = new SiteRepository();
     }
 
+    // ------------------------------------- INDEX_TEXT -------------------------------------
+
     public function indexText() {
         return $this->repository->indexText();
     }
@@ -44,6 +46,10 @@ class SiteService extends BaseService
         return $arr;
     }
 
+    // ------------------------------------- INDEX_TEXT -------------------------------------
+
+    // ------------------------------------- CONTACT -------------------------------------
+
     public function contact() {
         return $this->repository->contact();
     }
@@ -51,6 +57,10 @@ class SiteService extends BaseService
     public function saveContact(array $arr) {
         $this->repository->saveContact($arr);
     }
+
+    // ------------------------------------- CONTACT -------------------------------------
+
+    // ------------------------------------- ABOUT -------------------------------------
 
     public function about() {
         return $this->repository->about();
@@ -82,6 +92,10 @@ class SiteService extends BaseService
 
         return $arr;
     }
+
+    // ------------------------------------- ABOUT -------------------------------------
+
+    // ------------------------------------- WORK -------------------------------------
 
     public function workById($id) {
         return $this->repository->workById($id);
@@ -116,6 +130,10 @@ class SiteService extends BaseService
         $this->repository->deleteWork($arr['id']);
     }
 
+    public function updateActiveWork(array $arr) {
+        return $this->repository->updateActiveWork($arr);
+    }
+
     private function uploadWorkImages(array $arr) {
 
         $arr['img_1'] = $this->uploadImageValue($arr['img_1']);
@@ -144,9 +162,76 @@ class SiteService extends BaseService
         return $arr;
     }
 
-    public function updateActiveWork(array $arr) {
-        return $this->repository->updateActiveWork($arr);
+    // ------------------------------------- WORK -------------------------------------
+
+    // ------------------------------------- PROJECT -------------------------------------
+
+    public function projectById($id) {
+        return $this->repository->projectById($id);
     }
+
+    public function project() {
+        return $this->repository->project();
+    }
+
+    public function projectActive() {
+        return $this->repository->projectActive();
+    }
+
+    public function saveNewProject(array $arr) {
+        $arr = $this->uploadProjectImages($arr);
+        $this->repository->saveNewProject($arr);
+    }
+
+    public function saveProject(array $arr) {
+        if ($arr['id'] == 0) {
+            unset($arr['id']);
+            $arr = $this->uploadProjectImages($arr);
+            $this->repository->saveNewProject($arr);
+        } else {
+            $arr = $this->updateProjectImages($arr);
+            unset($arr['active']);
+            $this->repository->saveProject($arr);
+        }
+    }
+
+    public function deleteProject(array $arr) {
+        $this->repository->deleteProject($arr['id']);
+    }
+
+    public function updateActiveProject(array $arr) {
+        return $this->repository->updateActiveProject($arr);
+    }
+
+    private function uploadProjectImages(array $arr) {
+
+        $arr['img_begin'] = $this->uploadImageValue($arr['img_begin']);
+        $arr['img_1']     = $this->uploadImageValue($arr['img_1']);
+        $arr['img_2']     = $this->uploadImageValue($arr['img_2']);
+        $arr['img_3']     = $this->uploadImageValue($arr['img_3']);
+        $arr['img_4']     = $this->uploadImageValue($arr['img_4']);
+        $arr['img_5']     = $this->uploadImageValue($arr['img_5']);
+
+        return $arr;
+    }
+
+    private function updateProjectImages(array $arr) {
+        
+        $project = $this->repository->projectById($arr['id']);
+
+        $arr['img_begin'] = $this->updateImageValue($project->img_begin,$arr['img_begin']);
+        $arr['img_1']     = $this->updateImageValue($project->img_1,$arr['img_1']);
+        $arr['img_2']     = $this->updateImageValue($project->img_2,$arr['img_2']);
+        $arr['img_3']     = $this->updateImageValue($project->img_3,$arr['img_3']);
+        $arr['img_4']     = $this->updateImageValue($project->img_4,$arr['img_4']);
+        $arr['img_5']     = $this->updateImageValue($project->img_5,$arr['img_5']);
+
+        return $arr;
+    }
+
+    // ------------------------------------- PROJECT -------------------------------------
+
+    // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
 
     private function uploadImageValue($arrImg) {
         if ($arrImg) return $this->saveFile($arrImg);
@@ -174,5 +259,7 @@ class SiteService extends BaseService
         $path = public_path()."\\storage\\";
         if ($fileToDelete) unlink($path.$fileToDelete);
     }
+
+    // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
 
 }

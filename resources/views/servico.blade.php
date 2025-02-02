@@ -38,7 +38,7 @@
     <main id="main_root" class="main-root">
 
         <!-- ========== Menu ========== -->
-        @include('components.sitemenu',['menuWorks'=>$menuWorks])
+        @include('components.sitemenu',['menuWorks' => $menuWorks])
         <!-- ========== End Menu ========== -->
 
         <div id="dsn-scrollbar">

@@ -6,6 +6,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\Project;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
@@ -18,6 +19,8 @@ class SiteRepository extends BaseRepository
 		$this->model = new IndexText();
 	}
 
+     // ------------------------------------- INDEX_TEXT -------------------------------------
+
      public function indexText(): object {
           return $this->model::first();
      }
@@ -27,6 +30,10 @@ class SiteRepository extends BaseRepository
           $indexText->fill($arr);
           $indexText->save();
      }
+     
+     // ------------------------------------- INDEX_TEXT -------------------------------------
+
+     // ------------------------------------- CONTACT -------------------------------------
 
      public function contact(): object {
           $modelContact = new Contact();
@@ -39,6 +46,10 @@ class SiteRepository extends BaseRepository
           $contact->save();
      }
 
+     // ------------------------------------- CONTACT -------------------------------------
+
+     // ------------------------------------- ABOUT -------------------------------------
+
      public function about(): object {
           $modelAbout = new About();
           return $modelAbout::first();
@@ -49,6 +60,10 @@ class SiteRepository extends BaseRepository
           $about->fill($arr);
           $about->save();
      }
+
+     // ------------------------------------- ABOUT -------------------------------------
+
+     // ------------------------------------- WORK -------------------------------------
 
      public function workById($id): object {
           $modelWork = new Work();
@@ -84,5 +99,46 @@ class SiteRepository extends BaseRepository
      public function deleteWork($id) {
           Work::where('id',$id)->delete();
      }
+
+     // ------------------------------------- WORK -------------------------------------
+
+     // ------------------------------------- PROJECT -------------------------------------
+
+     public function projectById($id): object {
+          $modelProject = new Project();
+          return $modelProject->where('id',$id)->first();
+     }
+
+     public function project() {
+          $modelProject = new Project();
+          return $modelProject::get();
+     }
+
+     public function projectActive() {
+          $modelProject = new Project();
+          return $modelProject::where('active',1)->get();
+     }
+
+     public function saveProject(array $arr) {
+          $project = $this->projectById($arr['id']);
+          $project->fill($arr);
+          $project->save();
+     }
+
+     public function saveNewProject(array $arr) {
+          $project = new Project();
+          $project->fill($arr);
+          $project->save();
+     }
+
+     public function updateActiveProject(array $arr) {
+          Project::where('id',$arr['id'])->update(['active'=>$arr['active']]);
+     }
+
+     public function deleteProject($id) {
+          Project::where('id',$id)->delete();
+     }
+
+     // ------------------------------------- PROJECT -------------------------------------
 
 }
