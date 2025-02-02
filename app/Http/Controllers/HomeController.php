@@ -50,12 +50,11 @@ class HomeController extends Controller
 
     public function workPage($id) {
         $works = $this->siteService->workById($id);
-
+        
         return view('dashboard.viewCreateUpdateWorkPage', ['work' => $works]);
     }
 
     public function newWorkPage() {
-        //$works = $this->siteService->work();
         return view('dashboard.viewCreateUpdateWorkPage', ['work' => []]);
     }
 }

@@ -58,12 +58,13 @@ async function load_image_work_preview7() {
     bases64.InputWorkImg7 = await toBase64(this.files[0]);
 }
 
-function saveWorkPage() {
+function saveWorkPage(id) {
     console.log("saveWorkPage");
 
     showLoading();
 
     let form = {
+        id: id,
         title: document.getElementById('InputWorkTitle').value,
         description: document.getElementById('InputWorkDescription').value,
         img_1: bases64.InputWorkImg1,

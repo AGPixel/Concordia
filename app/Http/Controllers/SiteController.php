@@ -69,7 +69,7 @@ class SiteController extends Controller
 
     public function saveWorkPage(Request $request) {
 
-        $this->service->saveNewWork($request->all());
+        $this->service->saveWork($request->all());
         
         return true;
 

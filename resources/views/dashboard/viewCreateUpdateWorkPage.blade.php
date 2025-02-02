@@ -221,7 +221,7 @@
                                 </div>
 
                                 <div class="card-footer">
-                                    <button type="button" class="btn btn-primary" onclick="saveWorkPage()">Salvar modificações Work Page</button>
+                                    <button type="button" class="btn btn-primary" onclick="saveWorkPage({{ isset($work->id) ? $work->id : 0 }})">Salvar modificações Work Page</button>
                                 </div>
                             </form>
                         </div>

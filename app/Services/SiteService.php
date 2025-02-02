@@ -97,8 +97,15 @@ class SiteService extends BaseService
     }
 
     public function saveWork(array $arr) {
-        $arr = $this->updateWorkImages($arr);
-        $this->repository->saveWork($arr);
+        if ($arr['id'] == 0) {
+            unset($arr['id']);
+            $arr = $this->uploadWorkImages($arr);
+            $this->repository->saveNewWork($arr);
+        } else {
+            $arr = $this->updateWorkImages($arr);
+            unset($arr['active']);
+            $this->repository->saveWork($arr);
+        }
     }
 
     private function uploadWorkImages(array $arr) {
@@ -116,7 +123,7 @@ class SiteService extends BaseService
 
     private function updateWorkImages(array $arr) {
         
-        $work = $this->repository->work();
+        $work = $this->repository->workById($arr['id']);
 
         $arr['img_1'] = $this->updateImageValue($work->img_1,$arr['img_1']);
         $arr['img_2'] = $this->updateImageValue($work->img_2,$arr['img_2']);
