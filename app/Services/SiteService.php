@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Models\Site;
+use App\Models\Work;
 use App\Repositories\SiteRepository;
 use App\Exceptions\SiteException;
 use App\Exceptions\OldPasswordIncorrectException;
@@ -41,20 +42,6 @@ class SiteService extends BaseService
         $arr['employee_img_3'] = $this->updateImageValue($indexText->employee_img_3,$arr['employee_img_3']);
 
         return $arr;
-    }
-
-    private function saveFile($fileToSave) {
-        $fileToSave = explode(',', $fileToSave);
-        $file       = base64_decode($fileToSave[1]);
-        $safeName   = Str::random(10).'.'.'png';
-        $path       = public_path()."\\storage\\";
-        file_put_contents($path.$safeName, $file);
-        return $safeName;
-    }
-
-    private function deleteImage($fileToDelete) {
-        $path = public_path()."\\storage\\";
-        if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
     public function contact() {
@@ -96,13 +83,35 @@ class SiteService extends BaseService
         return $arr;
     }
 
+    public function workById($id) {
+        return $this->repository->workById($id);
+    }
+
     public function work() {
         return $this->repository->work();
+    }
+
+    public function saveNewWork(array $arr) {
+        $arr = $this->uploadWorkImages($arr);
+        $this->repository->saveNewWork($arr);
     }
 
     public function saveWork(array $arr) {
         $arr = $this->updateWorkImages($arr);
         $this->repository->saveWork($arr);
+    }
+
+    private function uploadWorkImages(array $arr) {
+
+        $arr['img_1'] = $this->uploadImageValue($arr['img_1']);
+        $arr['img_2'] = $this->uploadImageValue($arr['img_2']);
+        $arr['img_3'] = $this->uploadImageValue($arr['img_3']);
+        $arr['img_4'] = $this->uploadImageValue($arr['img_4']);
+        $arr['img_5'] = $this->uploadImageValue($arr['img_5']);
+        $arr['img_6'] = $this->uploadImageValue($arr['img_6']);
+        $arr['img_7'] = $this->uploadImageValue($arr['img_7']);
+
+        return $arr;
     }
 
     private function updateWorkImages(array $arr) {
@@ -120,12 +129,35 @@ class SiteService extends BaseService
         return $arr;
     }
 
+    public function updateActiveWork(array $arr) {
+        return $this->repository->updateActiveWork($arr);
+    }
+
+    private function uploadImageValue($arrImg) {
+        if ($arrImg) return $this->saveFile($arrImg);
+        return $arrImg;
+    }
+
     private function updateImageValue($img,$arrImg) {
         if ($arrImg) {
-            $arrImg = $this->saveFile($arrImg);
+            $arrImg = $this->uploadImageValue($arrImg);
             if ($img) $this->deleteImage($img);
         }
         return $arrImg;
+    }
+
+    private function saveFile($fileToSave) {
+        $fileToSave = explode(',', $fileToSave);
+        $file       = base64_decode($fileToSave[1]);
+        $safeName   = Str::random(10).'.'.'png';
+        $path       = public_path()."\\storage\\";
+        file_put_contents($path.$safeName, $file);
+        return $safeName;
+    }
+
+    private function deleteImage($fileToDelete) {
+        $path = public_path()."\\storage\\";
+        if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
 }

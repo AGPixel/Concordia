@@ -7,6 +7,7 @@ use App\Models\UserToken;
 use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
+use App\Models\Work;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -51,5 +52,17 @@ class DatabaseSeeder extends Seeder
         $about->about_title_1 = 'About';
         $about->about_title_2 = 'title';
         $about->save();
+
+        $work = new Work();
+        $work->title = 'Titulo Ativo';
+        $work->description = 'Descrição Ativo';
+        $work->active = true;
+        $work->save();
+
+        $work = new Work();
+        $work->title = 'Titulo Inativo';
+        $work->description = 'Descrição Inativo';
+        $work->active = false;
+        $work->save();
     }
 }

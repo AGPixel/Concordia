@@ -19,5 +19,7 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::post('/save-index-page', [SiteController::class, 'saveIndexPage'])->name('api.save-index-page');
     Route::post('/save-contact-page', [SiteController::class, 'saveContactPage'])->name('api.save-contact-page');
     Route::post('/save-about-page', [SiteController::class, 'saveAboutPage'])->name('api.save-about-page');
+    Route::post('/save-work-page', [SiteController::class, 'saveWorkPage'])->name('api.save-work-page');
+    Route::post('/update-active-work', [SiteController::class, 'updateActiveWorkPage'])->name('api.update-actve-work-page');
     
 });

@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::get('/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
-Route::get('/portifolio1', [SiteController::class, 'portifolio1'])->name('site.portifolio1');
+Route::get('/portifolio', [SiteController::class, 'portifolio'])->name('site.portifolio');
 
 Route::get('/login', [LoginController::class, 'login'])->name('view.login');
 Route::get('/home', [HomeController::class, 'home'])->name('view.home');
@@ -17,6 +17,9 @@ Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('view.dashb
 Route::get('/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
 Route::get('/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');
 Route::get('/about-page', [HomeController::class, 'aboutPage'])->name('view.about-page');
+Route::get('/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
+Route::get('/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
+Route::get('/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');
 Route::get('/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
 Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
 

@@ -35,7 +35,8 @@ return new class extends Migration
             $table->text('title_6')->nullable(true);
             $table->text('img_7')->nullable(true);
             $table->text('type_7')->nullable(true);
-            $table->text('title_7')->nullable(true);            
+            $table->text('title_7')->nullable(true);
+            $table->boolean('active')->default(true)->nullable(false);
             $table->timestamp('created_at');
             $table->timestamp('updated_at');
         });

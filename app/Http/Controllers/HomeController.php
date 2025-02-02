@@ -40,6 +40,22 @@ class HomeController extends Controller
         $about = $this->siteService->about();
 
         return view('dashboard.viewAboutPage', ['about' => $about]);
+    }
 
+    public function listWorkPage() {
+        $works = $this->siteService->work();
+
+        return view('dashboard.viewListWorkPage', ['works' => $works]);
+    }
+
+    public function workPage($id) {
+        $works = $this->siteService->workById($id);
+
+        return view('dashboard.viewCreateUpdateWorkPage', ['work' => $works]);
+    }
+
+    public function newWorkPage() {
+        //$works = $this->siteService->work();
+        return view('dashboard.viewCreateUpdateWorkPage', ['work' => []]);
     }
 }

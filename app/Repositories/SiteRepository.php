@@ -50,15 +50,30 @@ class SiteRepository extends BaseRepository
           $about->save();
      }
 
-     public function work(): object {
+     public function workById($id): object {
           $modelWork = new Work();
-          return $modelWork::first();
+          return $modelWork->where('id',$id)->first();
+     }
+
+     public function work() {
+          $modelWork = new Work();
+          return $modelWork::get();
      }
 
      public function saveWork(array $arr) {
-          $work = $this->work();
+          $work = $this->workById($arr['id']);
           $work->fill($arr);
           $work->save();
      }
+
+     public function saveNewWork(array $arr) {
+          $work = new Work();
+          $work->fill($arr);
+          $work->save();
+     }
+
+     public function updateActiveWork(array $arr) {
+          Work::where('id',$arr['id'])->update(['active'=>$arr['active']]);
+      }
 
 }

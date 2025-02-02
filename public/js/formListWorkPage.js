@@ -1,0 +1,39 @@
+
+function updateActiveWork(work) {
+    console.log("updateActiveWork");
+
+    showLoading();
+
+    if (work.active) work.active = 0;
+    else work.active = 1;
+
+    let form = {
+        id: work.id,
+        active: work.active,
+    };
+
+    console.log(form);
+    apiPostBearer(GLOBAL_URL_API + 'update-active-work', form, GLOBAL_DATATYPE_JSON, function (_return) {
+        toastSuccess(_return.message);
+        location.reload();
+    }, function (_return) {
+        toastError(_return.responseJSON.message);
+        hideLoading();
+    });
+
+}
+
+function newWork() {
+    showLoading();
+    setTimeout(() => {
+        window.location.href = "/new-work-page";
+    }, 500);
+}
+
+function editWork(work) {
+    showLoading();
+    console.log(work);
+    setTimeout(() => {
+        window.location.href = "/work-page/" + work.id;
+    }, 500);
+}

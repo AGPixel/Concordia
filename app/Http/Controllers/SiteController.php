@@ -59,7 +59,7 @@ class SiteController extends Controller
         return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about]);
     }
 
-    public function saveAboutPage (Request $request) {
+    public function saveAboutPage(Request $request) {
 
         $this->service->saveAbout($request->all());
         
@@ -67,7 +67,23 @@ class SiteController extends Controller
 
     }
 
-    public function portifolio1() {
+    public function saveWorkPage(Request $request) {
+
+        $this->service->saveNewWork($request->all());
+        
+        return true;
+
+    }
+
+    public function updateActiveWorkPage(Request $request) {
+
+        $this->service->updateActiveWork($request->all());
+        
+        return true;
+
+    }
+
+    public function portifolio() {
         return view('portifolio');
     }
 }
