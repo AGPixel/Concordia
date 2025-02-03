@@ -36,6 +36,15 @@ class DatabaseSeeder extends Seeder
 
         $indexTitle = new IndexText();
         $indexTitle->about_title = 'about title';
+        $indexTitle->about_num_1 = '1';
+        $indexTitle->about_description = ' descrição 1';
+        $indexTitle->about_num_2 = '2';
+        $indexTitle->about_description = ' descrição 2';
+        $indexTitle->about_num_3 = '3';
+        $indexTitle->about_description = ' descrição 3';
+        $indexTitle->frame_num_1 = '15';
+        $indexTitle->frame_num_2 = '30';
+        $indexTitle->about_title = 'about title';
         $indexTitle->save();
 
         $contact = new Contact();

@@ -17,6 +17,42 @@
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
+    <style>
+        .modal-show-terms {
+            position: absolute;
+            z-index: 100;
+            background-color: black;
+            padding: 1em;
+        }
+
+        .modal-terms-buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1em;
+        }
+
+        .bt-modal-term-no {
+            width: 8.5em;
+            height: 3em;
+            color: #fff;
+            background-color: #dc3545;
+            border-color: #dc3545;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+        .bt-modal-term-accept {
+            width: 8.5em;
+            height: 3em;
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+            box-shadow: none;
+            cursor: pointer;
+        }
+
+    </style>
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -35,6 +71,26 @@
             </filter>
         </defs>
     </svg>
+
+    <div class="modal fade modal-show-terms" id="modal-lg">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Aceitação dos Termos de Uso</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ao acessar e utilizar este site, você concorda em cumprir e estar vinculado aos termos e condições estabelecidos nesta página. Caso não concorde com os termos, solicitamos que não utilize o site. O site Concordia reserva-se o direito de modificar, alterar ou atualizar os termos de uso a qualquer momento, e recomendamos que você revise esta página periodicamente para manter-se informado sobre as alterações.</p>
+                </div>
+                <div class="modal-footer justify-content-between modal-terms-buttons">
+                    <button type="button" class="btn btn-default bt-modal-term-no" data-dismiss="modal" onclick="document.getElementById('modal-lg').style.display = 'none'">Não aceito</button>
+                    <button type="button" class="btn btn-primary bt-modal-term-accept" onclick="document.getElementById('modal-lg').style.display = 'none'">Aceito</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main id="main_root" class="main-root">
 
