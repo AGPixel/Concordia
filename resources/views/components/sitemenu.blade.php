@@ -21,7 +21,7 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Home" href="#">
+                <a title="Home" href="/portifolio">
                     <span class="overflow ">
                         Portfolio
                     </span>

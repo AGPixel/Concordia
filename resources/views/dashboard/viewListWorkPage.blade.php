@@ -12,7 +12,7 @@
 
         @extends('components.tituloConteudo')
 
-        @section('titulo','Works Page')
+        @section('titulo','Portifolio Page')
 
         @section('conteudo')
         <!-- Colocado esse style somente por enquanto, mudar depois. -->
@@ -62,6 +62,28 @@
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body first-card-body">
+                            <div class="form-group">
+                                <label for="InputPortifolioTitle">Title</label>
+                                <input type="text" name="workTitle" class="form-control" id="InputPortifolioTitle" value="{{ isset($portifolioGeral->title) ? $portifolioGeral->title : '' }}">
+                            </div>
+                        </div>
+                        <div class="card-body first-card-body">
+                            <div class="form-group">
+                                <label for="InputPortifolioDescription">Description</label>
+                                <input type="text" name="workDescription" class="form-control" id="InputPortifolioDescription" value="{{ isset($portifolioGeral->description) ? $portifolioGeral->description : '' }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 m-bot-1em">
+                        <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="savePortifolioGeral()">
+                            <i class="fa fa-save"></i>
+                            &nbsp;Save
+                        </button>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-10">
                     </div>

@@ -114,6 +114,18 @@ class SiteService extends BaseService
 
     // ------------------------------------- ABOUT -------------------------------------
 
+    // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
+
+    public function portifolioGeral() {
+        return $this->repository->portifolioGeral();
+    }
+
+    public function savePortifolioGeral(array $arr) {
+        $this->repository->savePortifolioGeral($arr);
+    }
+
+    // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
+
     // ------------------------------------- WORK -------------------------------------
 
     public function workById($id) {

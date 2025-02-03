@@ -8,6 +8,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\PortifolioGeral;
 use App\Models\Project;
 use App\Models\MetaTags;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -45,6 +46,10 @@ class DatabaseSeeder extends Seeder
         $indexTitle->frame_num_1 = '15';
         $indexTitle->frame_num_2 = '30';
         $indexTitle->about_title = 'about title';
+        $indexTitle->social_url_facebook = 'facebook';
+        $indexTitle->social_url_instagram = 'instagram';
+        $indexTitle->social_url_twitter = 'twitter';
+        $indexTitle->social_url_linkedin = 'linkedin';
         $indexTitle->save();
 
         $contact = new Contact();
@@ -63,6 +68,11 @@ class DatabaseSeeder extends Seeder
         $about->about_title_1 = 'About';
         $about->about_title_2 = 'title';
         $about->save();
+
+        $portifolioGeral = new PortifolioGeral();
+        $portifolioGeral->title = 'Trabalho recente';
+        $portifolioGeral->description = 'Descrição sobre o trabalho recente Descrição sobre o trabalho recente Descrição sobre o trabalho recente Descrição sobre o trabalho recente';
+        $portifolioGeral->save();
 
         $work = new Work();
         $work->title = 'Titulo Ativo';

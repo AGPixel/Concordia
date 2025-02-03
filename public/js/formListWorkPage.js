@@ -54,3 +54,22 @@ function deleteWork(work) {
         hideLoading();
     });
 }
+
+function savePortifolioGeral() {
+
+    showLoading();
+
+    let form = {
+        title: document.getElementById('InputPortifolioTitle').value,
+        description: document.getElementById('InputPortifolioDescription').value,
+    };
+
+    apiPostBearer(GLOBAL_URL_API + 'save-portifolio-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
+        toastSuccess(_return.message);
+        location.reload();
+    }, function (_return) {
+        toastError(_return.responseJSON.message);
+        hideLoading();
+    });
+
+}

@@ -7,6 +7,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\PortifolioGeral;
 use App\Models\Project;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
@@ -78,6 +79,21 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- ABOUT -------------------------------------
+
+     // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
+
+     public function portifolioGeral() {
+          $modelPortifolioGeral = new PortifolioGeral();
+          return $modelPortifolioGeral::first();
+     }
+
+     public function savePortifolioGeral(array $arr) {
+          $portifolioGeral = $this->portifolioGeral();
+          $portifolioGeral->fill($arr);
+          $portifolioGeral->save();
+     }
+
+     // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
 
      // ------------------------------------- WORK -------------------------------------
 

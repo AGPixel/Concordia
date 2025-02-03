@@ -105,6 +105,23 @@ class SiteController extends Controller
         return true;
     }
 
+    public function portifolioGeral() {
+        $portifolioGeral = $this->service->portifolioGeral();
+
+        $works = $this->service->work();
+        $metaTags = $this->service->metaTags();
+
+        $menuWorks = $this->service->workActive();
+        $portifolios = $this->service->workActive();
+        $menuProjects = $this->service->projectActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        return view('portifoliogeral',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'portifolioGeral' => $portifolioGeral, 'portifolios' => $portifolios, 'works' => $works, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+    }
+
     public function portifolio($id) {
         $work = $this->service->workById($id);
         $metaTags = $this->service->metaTags();
@@ -117,6 +134,12 @@ class SiteController extends Controller
         $contact = $this->service->contact();
 
         return view('portifolio',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+    }
+
+    public function savePortifolioPage(Request $request) {
+        $this->service->savePortifolioGeral($request->all());
+        
+        return true;
     }
 
     public function saveProjectPage(Request $request) {

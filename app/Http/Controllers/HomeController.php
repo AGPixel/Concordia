@@ -67,9 +67,10 @@ class HomeController extends Controller
     // ------------------------------------- WORK -------------------------------------
 
     public function listWorkPage() {
+        $portifolioGeral = $this->siteService->portifolioGeral();
         $works = $this->siteService->work();
 
-        return view('dashboard.viewListWorkPage', ['works' => $works]);
+        return view('dashboard.viewListWorkPage', ['works' => $works, 'portifolioGeral' => $portifolioGeral]);
     }
 
     public function workPage($id) {
