@@ -519,6 +519,90 @@
                                 -->
                                 <div class="card-body">
                                     <div class="form-group">
+                                        <label for="InputBrandsBgImg">Brands Background Image</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_bg_img ? asset("../storage/$args->brands_bg_img") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsBgImg">
+                                                <label class="custom-file-label" for="InputBrandsBgImg" id="InputBrandsBgImgPreview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg1">Brands Image 1</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_1 ? asset("../storage/$args->brands_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg1">
+                                                <label class="custom-file-label" for="InputBrandsImg1" id="InputBrandsImg1Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg2">Brands Image 2</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_2 ? asset("../storage/$args->brands_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg2">
+                                                <label class="custom-file-label" for="InputBrandsImg2" id="InputBrandsImg2Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg3">Brands Image 3</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_3 ? asset("../storage/$args->brands_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg3">
+                                                <label class="custom-file-label" for="InputBrandsImg3" id="InputBrandsImg3Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg4">Brands Image 4</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_4 ? asset("../storage/$args->brands_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg4">
+                                                <label class="custom-file-label" for="InputBrandsImg4" id="InputBrandsImg4Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg5">Brands Image 5</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_5 ? asset("../storage/$args->brands_img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg5">
+                                                <label class="custom-file-label" for="InputBrandsImg5" id="InputBrandsImg5Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <label for="InputBrandsImg6">Brands Image 6</label><br>
+                                        <img class="m-bot-05 image_preview" src="{{ $args->brands_img_6 ? asset("../storage/$args->brands_img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
+                                        <div class="input-group">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="InputBrandsImg6">
+                                                <label class="custom-file-label" for="InputBrandsImg6" id="InputBrandsImg6Preview">Clique para escolher o arquivo</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
                                         <label for="InputFinalTitle">Final Title</label>
                                         <input type="text" name="finalTitle" class="form-control" id="InputFinalTitle" value="{{ $args->final_title ? $args->final_title : '' }}">
                                     </div>

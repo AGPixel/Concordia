@@ -692,58 +692,71 @@
                  ========== End Blog ========== -->
 
                 <!-- ========== Brand ========== -->
+                @if(isset($args->brands_bg_img))
                 <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
                     <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
                         <div class="img-box-parallax before-z-index w-100 h-100 p-absolute top-0 bottom-0 left-0" data-overlay="7" data-dsn-grid="move-up">
-                            <img src="{{ asset("/assets/img/img-under-header.jpg") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                            <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
                         </div>
                     </div>
                     <!-- Parei aqui - Criar os brands no index text e coloca-los para serem adicionados as imagens -->
                     <div class="container">
                         <div class="brand-inner d-grid grid-md-2 grid-lg-4  align-items-center p-relative z-index-1">
                             <div class="brand-boxs d-flex flex-column align-items-end">
+                                @if(isset($args->brands_img_1))
                                 <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("/assets/img/brand/1.svg") }}" alt="">
+                                    <img src="{{ asset("../storage/$args->brands_img_1") }}" alt="">
                                 </div>
-
+                                @endif
+                                @if(isset($args->brands_img_2))
                                 <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("/assets/img/brand/2.svg") }}" alt="">
+                                    <img src="{{ asset("../storage/$args->brands_img_2") }}" alt="">
                                 </div>
+                                @endif
                             </div>
 
                             <div class="brand-boxs d-flex flex-column align-items-start">
-                                <div class="brand-item brand-item-sm content-blure">
-                                    <img src="{{ asset("/assets/img/brand/6.svg") }}" alt="">
-                                </div>
-
-                                <div class="brand-item brand-item-lg content-blure mt-30">
-                                    <img src="{{ asset("/assets/img/brand/5.svg") }}" alt="">
-                                </div>
-                            </div>
-
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                <div class="brand-item brand-item-sm content-blure">
-                                    <img src="{{ asset("/assets/img/brand/3.svg") }}" alt="">
-                                </div>
-
-                                <div class="brand-item brand-item-lg content-blure mt-30">
-                                    <img src="{{ asset("/assets/img/brand/4.svg") }}" alt="">
-                                </div>
-                            </div>
-
-                            <div class="brand-boxs d-flex flex-column align-items-start">
+                                @if(isset($args->brands_img_5))
                                 <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("/assets/img/brand/5.svg") }}" alt="">
+                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
                                 </div>
-
+                                @endif
+                                @if(isset($args->brands_img_6))
                                 <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("/assets/img/brand/6.svg") }}" alt="">
+                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
                                 </div>
+                                @endif
+                            </div>
 
+                            <div class="brand-boxs d-flex flex-column align-items-start">
+                                @if(isset($args->brands_img_3))
+                                <div class="brand-item brand-item-lg content-blure">
+                                    <img src="{{ asset("../storage/$args->brands_img_3") }}" alt="">
+                                </div>
+                                @endif
+                                @if(isset($args->brands_img_4))
+                                <div class="brand-item brand-item-sm content-blure mt-30">
+                                    <img src="{{ asset("../storage/$args->brands_img_4") }}" alt="">
+                                </div>
+                                @endif
+                            </div>
+
+                            <div class="brand-boxs d-flex flex-column align-items-start">
+                                @if(isset($args->brands_img_5))
+                                <div class="brand-item brand-item-lg content-blure">
+                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
+                                </div>
+                                @endif
+                                @if(isset($args->brands_img_6))
+                                <div class="brand-item brand-item-sm content-blure mt-30">
+                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
+                                </div>
+                                @endif
                             </div>
                         </div>
                     </div>
                 </div>
+                @endif
                 <!-- ========== End Brand ========== -->
 
                 <section class="next-page v-dark section-padding">
@@ -835,10 +848,19 @@
                                 CONTACT Info</h4>
 
                             <div class="col-contact">
-                                <p><strong>T</strong> :{{ $args->contact_telephone ? $args->contact_telephone : '+000 000 0000' }}</p>
-                                <p class="mt-10"><strong>F</strong> :{{ $args->contact_cellphone ? $args->contact_cellphone : '+000 000 0000' }}</p>
+                                <p>
+                                    <strong>T</strong>
+                                    :{{ $args->contact_telephone ? $args->contact_telephone : '+000 000 0000' }}
+                                </p>
+                                <p class="mt-10">
+                                    <strong>F</strong>
+                                    :{{ $args->contact_cellphone ? $args->contact_cellphone : '+000 000 0000' }}
+                                </p>
                                 <p class="over-hidden mt-10">
-                                    <strong>E</strong> : <a class="link-hover" href="#" data-hover-text="{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}">{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}</a>
+                                    <strong>E</strong> :
+                                    <a class="link-hover" href="#" data-hover-text="{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}">
+                                        {{ $args->contact_email ? $args->contact_email : 'email@email.com' }}
+                                    </a>
                                 </p>
                             </div>
 

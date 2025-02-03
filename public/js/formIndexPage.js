@@ -14,6 +14,13 @@ let bases64 = {
     InputEmployeeImg1: null,
     InputEmployeeImg2: null,
     InputEmployeeImg3: null,
+    InputBrandsImgBg: null,
+    InputBrandsImg1: null,
+    InputBrandsImg2: null,
+    InputBrandsImg3: null,
+    InputBrandsImg4: null,
+    InputBrandsImg5: null,
+    InputBrandsImg6: null,
 };
 const inputElementImg = document.getElementById("InputAboutImg");
 inputElementImg.addEventListener("change", load_image_about_preview, false);
@@ -21,47 +28,83 @@ async function load_image_about_preview() {
     document.getElementById('ImageAboutPreview').innerHTML = this.files[0].name;
     bases64.InputAboutImg = await toBase64(this.files[0]);
 }
-
 const inputElementImg3 = document.getElementById("InputAboutImg3");
 inputElementImg3.addEventListener("change", load_image_about_img3_preview, false);
 async function load_image_about_img3_preview() {
     document.getElementById('ImageAboutImg3Preview').innerHTML = this.files[0].name;
     bases64.InputAboutImg3 = await toBase64(this.files[0]);
 }
-
 const inputElementTestimonialsImg1 = document.getElementById("InputTestimonialsImg1");
 inputElementTestimonialsImg1.addEventListener("change", load_image_testimonials_img1_preview, false);
 async function load_image_testimonials_img1_preview() {
     document.getElementById('InputTestimonialsImg1Preview').innerHTML = this.files[0].name;
     bases64.InputTestimonialsImg1 = await toBase64(this.files[0]);
 }
-
 const inputElementTestimonialsImg2 = document.getElementById("InputTestimonialsImg2");
 inputElementTestimonialsImg2.addEventListener("change", load_image_testimonials_img2_preview, false);
 async function load_image_testimonials_img2_preview() {
     document.getElementById('InputTestimonialsImg2Preview').innerHTML = this.files[0].name;
     bases64.InputTestimonialsImg2 = await toBase64(this.files[0]);
 }
-
 const inputEmployeeImg1 = document.getElementById("InputEmployeeImg1");
 inputEmployeeImg1.addEventListener("change", load_image_employee_img1_preview, false);
 async function load_image_employee_img1_preview() {
     document.getElementById('InputEmployeeImg1Preview').innerHTML = this.files[0].name;
     bases64.InputEmployeeImg1 = await toBase64(this.files[0]);
 }
-
 const inputEmployeeImg2 = document.getElementById("InputEmployeeImg2");
 inputEmployeeImg2.addEventListener("change", load_image_employee_img2_preview, false);
 async function load_image_employee_img2_preview() {
     document.getElementById('InputEmployeeImg2Preview').innerHTML = this.files[0].name;
     bases64.InputEmployeeImg2 = await toBase64(this.files[0]);
 }
-
 const inputEmployeeImg3 = document.getElementById("InputEmployeeImg3");
 inputEmployeeImg3.addEventListener("change", load_image_employee_img3_preview, false);
 async function load_image_employee_img3_preview() {
     document.getElementById('InputEmployeeImg3Preview').innerHTML = this.files[0].name;
     bases64.InputEmployeeImg3 = await toBase64(this.files[0]);
+}
+const InputBrandsImgBg = document.getElementById("InputBrandsImgBg");
+InputBrandsImgBg.addEventListener("change", load_image_employee_img4_preview, false);
+async function load_image_employee_img4_preview() {
+    document.getElementById('InputBrandsImgBgPreview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImgBg = await toBase64(this.files[0]);
+}
+const InputBrandsImg1 = document.getElementById("InputBrandsImg1");
+InputBrandsImg1.addEventListener("change", load_image_employee_img5_preview, false);
+async function load_image_employee_img5_preview() {
+    document.getElementById('InputBrandsImg1Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg1 = await toBase64(this.files[0]);
+}
+const InputBrandsImg2 = document.getElementById("InputBrandsImg2");
+InputBrandsImg2.addEventListener("change", load_image_employee_img6_preview, false);
+async function load_image_employee_img6_preview() {
+    document.getElementById('InputBrandsImg2Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg2 = await toBase64(this.files[0]);
+}
+const InputBrandsImg3 = document.getElementById("InputBrandsImg3");
+InputBrandsImg3.addEventListener("change", load_image_employee_img7_preview, false);
+async function load_image_employee_img7_preview() {
+    document.getElementById('InputBrandsImg3Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg3 = await toBase64(this.files[0]);
+}
+const InputBrandsImg4 = document.getElementById("InputBrandsImg4");
+InputBrandsImg4.addEventListener("change", load_image_employee_img7_preview, false);
+async function load_image_employee_img7_preview() {
+    document.getElementById('InputBrandsImg4Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg4 = await toBase64(this.files[0]);
+}
+const InputBrandsImg5 = document.getElementById("InputBrandsImg5");
+InputBrandsImg5.addEventListener("change", load_image_employee_img7_preview, false);
+async function load_image_employee_img7_preview() {
+    document.getElementById('InputBrandsImg5Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg5 = await toBase64(this.files[0]);
+}
+const InputBrandsImg6 = document.getElementById("InputBrandsImg6");
+InputBrandsImg6.addEventListener("change", load_image_employee_img7_preview, false);
+async function load_image_employee_img7_preview() {
+    document.getElementById('InputBrandsImg6Preview').innerHTML = this.files[0].name;
+    bases64.InputBrandsImg6 = await toBase64(this.files[0]);
 }
 
 function saveIndexPage() {
@@ -142,6 +185,14 @@ function saveIndexPage() {
         works_date_3: document.getElementById('InputWorksDate3').value,
         works_description_3: document.getElementById('InputWorksDescription3').value,
         */
+
+        brands_bg_img: bases64.InputBrandsImgBg,
+        brands_img_1: bases64.InputBrandsImg1,
+        brands_img_2: bases64.InputBrandsImg2,
+        brands_img_3: bases64.InputBrandsImg3,
+        brands_img_4: bases64.InputBrandsImg4,
+        brands_img_5: bases64.InputBrandsImg5,
+        brands_img_6: bases64.InputBrandsImg6,
 
         final_title: document.getElementById('InputFinalTitle').value,
 

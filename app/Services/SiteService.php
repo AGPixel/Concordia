@@ -42,6 +42,13 @@ class SiteService extends BaseService
         $arr['employee_img_1'] = $this->updateImageValue($indexText->employee_img_1,$arr['employee_img_1']);
         $arr['employee_img_2'] = $this->updateImageValue($indexText->employee_img_2,$arr['employee_img_2']);
         $arr['employee_img_3'] = $this->updateImageValue($indexText->employee_img_3,$arr['employee_img_3']);
+        $arr['brands_bg_img'] = $this->updateImageValue($indexText->brands_bg_img,$arr['brands_bg_img']);
+        $arr['brands_img_1'] = $this->updateImageValue($indexText->brands_img_1,$arr['brands_img_1']);
+        $arr['brands_img_2'] = $this->updateImageValue($indexText->brands_img_2,$arr['brands_img_2']);
+        $arr['brands_img_3'] = $this->updateImageValue($indexText->brands_img_3,$arr['brands_img_3']);
+        $arr['brands_img_4'] = $this->updateImageValue($indexText->brands_img_4,$arr['brands_img_4']);
+        $arr['brands_img_5'] = $this->updateImageValue($indexText->brands_img_5,$arr['brands_img_5']);
+        $arr['brands_img_6'] = $this->updateImageValue($indexText->brands_img_6,$arr['brands_img_6']);
 
         return $arr;
     }

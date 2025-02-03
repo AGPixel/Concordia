@@ -8,6 +8,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\Project;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -64,5 +65,45 @@ class DatabaseSeeder extends Seeder
         $work->description = 'Descrição Inativo';
         $work->active = false;
         $work->save();
+
+        $work = new Work();
+        $work->title = 'Titulo Um';
+        $work->description = 'Descrição Um';
+        $work->active = true;
+        $work->save();
+
+        $work = new Work();
+        $work->title = 'Titulo Dois';
+        $work->description = 'Descrição Dois';
+        $work->active = true;
+        $work->save();
+
+        $project = new Project();
+        $project->title = 'Titulo Ativo';
+        $project->work_1 = 'Project work Ativo';
+        $project->url_project = 'http://google.com';
+        $project->active = true;
+        $project->save();
+
+        $project = new Project();
+        $project->title = 'Titulo Inativo';
+        $project->work_1 = 'Project work Inativo';
+        $project->url_project = 'http://facebook.com';
+        $project->active = false;
+        $project->save();
+
+        $project = new Project();
+        $project->title = 'Titulo Um';
+        $project->work_1 = 'Project work Um';
+        $project->url_project = 'http://instagram.com';
+        $project->active = true;
+        $project->save();
+
+        $project = new Project();
+        $project->title = 'Titulo Dois';
+        $project->work_1 = 'Project work Dois';
+        $project->url_project = 'http://globo.com';
+        $project->active = true;
+        $project->save();
     }
 }

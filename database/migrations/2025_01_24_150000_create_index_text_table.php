@@ -83,6 +83,13 @@ return new class extends Migration
             $table->text('works_img_3')->nullable(true);
             $table->text('works_date_3')->nullable(true);
             $table->text('works_description_3')->nullable(true);
+            $table->text('brands_bg_img')->nullable(true);
+            $table->text('brands_img_1')->nullable(true);
+            $table->text('brands_img_2')->nullable(true);
+            $table->text('brands_img_3')->nullable(true);
+            $table->text('brands_img_4')->nullable(true);
+            $table->text('brands_img_5')->nullable(true);
+            $table->text('brands_img_6')->nullable(true);
             $table->text('final_title')->nullable(true);
             $table->text('sign_title')->nullable(true);
             $table->text('sign_description')->nullable(true);
