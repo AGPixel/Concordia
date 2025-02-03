@@ -24,6 +24,16 @@ class HomeController extends Controller
         return view('dashboard.viewTrocarSenha');
     }
 
+    // ------------------------------------- META TAGS -------------------------------------
+
+    public function metaTagsPage() {
+        $metaTags = $this->siteService->metaTags();
+
+        return view('dashboard.viewMetaTagsPage', ['metaTags' => $metaTags]);
+    }
+    
+    // ------------------------------------- META TAGS -------------------------------------
+
     // ------------------------------------- INDEX_TEXT -------------------------------------
 
     public function indexPage() {

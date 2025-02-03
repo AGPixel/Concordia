@@ -18,16 +18,25 @@ class SiteController extends Controller
         $this->service = new SiteService();
     }
 
+    public function saveMetaTagsPage(Request $request) {
+
+        $this->service->saveMetaTags($request->all());
+        
+        return true;
+    }
+
     public function index() {
 
         $index_text = $this->service->indexText();
+        $metaTags = $this->service->metaTags();
+
         $projects = $this->service->projectActive();
         $portifolios = $this->service->workActive();
-
+        
         $menuWorks = $this->service->workActive();
         $menuProjects = $this->service->projectActive();
 
-        return view('index', ['args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
+        return view('index', ['metaTags' => $metaTags, 'args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
     }
 
     public function saveIndexPage(Request $request) {
@@ -40,13 +49,14 @@ class SiteController extends Controller
     public function contato() {
 
         $index_text = $this->service->indexText();
+        $metaTags = $this->service->metaTags();
 
         $contact = $this->service->contact();
 
         $menuWorks = $this->service->workActive();
         $menuProjects = $this->service->projectActive();
 
-        return view('contactpage', ['index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('contactpage', ['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function saveContactPage(Request $request) {
@@ -59,6 +69,7 @@ class SiteController extends Controller
     public function sobre() {
 
         $index_text = $this->service->indexText();
+        $metaTags = $this->service->metaTags();
 
         $about = $this->service->about();
 
@@ -67,7 +78,7 @@ class SiteController extends Controller
         $menuWorks = $this->service->workActive();
         $menuProjects = $this->service->projectActive();
 
-        return view('about', ['args' => $index_text, 'contact' => $contact, 'about' => $about, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('about', ['metaTags' => $metaTags, 'args' => $index_text, 'contact' => $contact, 'about' => $about, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function saveAboutPage(Request $request) {
@@ -96,6 +107,7 @@ class SiteController extends Controller
 
     public function portifolio($id) {
         $work = $this->service->workById($id);
+        $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
         $menuProjects = $this->service->projectActive();
@@ -104,7 +116,7 @@ class SiteController extends Controller
 
         $contact = $this->service->contact();
 
-        return view('portifolio',['index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('portifolio',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function saveProjectPage(Request $request) {
@@ -127,6 +139,7 @@ class SiteController extends Controller
 
     public function servico($id) {
         $project = $this->service->projectById($id);
+        $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
 
@@ -139,6 +152,6 @@ class SiteController extends Controller
         $nextprojects = $this->service->getProjectThatIsNotId($id);
         $nextProject = $this->service->getRandomProject($nextprojects);
 
-        return view('servico',['index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('servico',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 }

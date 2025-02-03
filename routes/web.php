@@ -21,6 +21,8 @@ Route::get('/home', [HomeController::class, 'home'])->name('view.home');
 
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('view.dashboard');
 
+Route::get('/meta-tags-page', [HomeController::class, 'metaTagsPage'])->name('view.meta-tags-page');
+
 Route::get('/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
 
 Route::get('/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');

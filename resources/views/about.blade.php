@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="{{ isset($metaTags->description) ? $metaTags->description : 'Description' }}">
+    <meta name="keywords" content="{{ isset($metaTags->keywords) ? $metaTags->keywords : 'Keywords' }}">
+    <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ isset($metaTags->title) ? $metaTags->title : 'Concordia' }} - Sobre</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="{{asset("/assets/img/logo-32x32.png")}}" sizes="32x32" />
     <link rel="icon" href="{{asset("/assets/img/logo-192x192.png")}}" sizes="192x192" />
-
-    <title>Concordia - Sobre</title>
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">

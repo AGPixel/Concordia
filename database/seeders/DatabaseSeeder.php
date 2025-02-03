@@ -9,6 +9,7 @@ use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
 use App\Models\Project;
+use App\Models\MetaTags;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -105,5 +106,11 @@ class DatabaseSeeder extends Seeder
         $project->url_project = 'http://globo.com';
         $project->active = true;
         $project->save();
+
+        $metaTags = new MetaTags();
+        $metaTags->title = 'Concordia';
+        $metaTags->description = 'Descrição concordia';
+        $metaTags->keywords = 'keywords aqui';
+        $metaTags->save();
     }
 }

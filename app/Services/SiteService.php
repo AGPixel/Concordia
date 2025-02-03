@@ -20,6 +20,18 @@ class SiteService extends BaseService
         $this->repository = new SiteRepository();
     }
 
+    // ------------------------------------- META TAGS -------------------------------------
+
+    public function metaTags() {
+        return $this->repository->metaTags();
+    }
+
+    public function saveMetaTags(array $arr) {
+        $this->repository->saveMetaTags($arr);
+    }
+
+    // ------------------------------------- META TAGS -------------------------------------
+
     // ------------------------------------- INDEX_TEXT -------------------------------------
 
     public function indexText() {

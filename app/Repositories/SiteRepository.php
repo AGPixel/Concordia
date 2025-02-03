@@ -2,6 +2,7 @@
 
 namespace App\Repositories;
 
+use App\Models\MetaTags;
 use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
@@ -18,6 +19,21 @@ class SiteRepository extends BaseRepository
 	public function __construct() {
 		$this->model = new IndexText();
 	}
+
+     // ------------------------------------- META TAGS -------------------------------------
+
+     public function metaTags(): object {
+          $modelMetaTags = new MetaTags();
+          return $modelMetaTags::first();
+     }
+
+     public function saveMetaTags(array $arr) {
+          $metaTags = $this->metaTags();
+          $metaTags->fill($arr);
+          $metaTags->save();
+     }
+
+     // ------------------------------------- META TAGS -------------------------------------
 
      // ------------------------------------- INDEX_TEXT -------------------------------------
 
