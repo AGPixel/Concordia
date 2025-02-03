@@ -30,10 +30,6 @@
                 padding-bottom: 1em !important;
             }
 
-            .m-bot-05 {
-                margin-bottom: 0.5em !important;
-            }
-
         </style>
         <!-- Main content -->
         <div class="content">

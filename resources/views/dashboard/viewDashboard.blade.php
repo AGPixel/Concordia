@@ -12,14 +12,14 @@
 
         @extends('components.tituloConteudo')
 
-        @section('titulo','Dashboard')
+        @section('titulo','')
 
         @section('conteudo')
         <!-- Main content -->
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
-                    conteudo aqui aaa
+                    Selecione no menu ao lado o que deseja fazer
                 </div>
                 <!-- /.row -->
             </div>

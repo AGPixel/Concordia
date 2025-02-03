@@ -50,292 +50,54 @@
                         <div class="bg-container p-absolute dsn-hero-parallax-img  w-100 h-100 z-index-1">
                             <div class="swiper swiper-container  h-100">
                                 <div class="swiper-wrapper">
+                                    @foreach($projects as $id => $project)
                                     <div class="slide-item swiper-slide over-hidden">
                                         <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="6">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project4/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <img loading="lazy" src="{{ isset($project->img_begin) ? asset("../storage/$project->img_begin") : asset("/assets/img/portfolio/project4/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                         </div>
                                         <div class="slide-content p-absolute">
                                             <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-4.html" data-dsn-ajax="slider">The <br> Hills - Nissan
+                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-4.html" data-dsn-ajax="slider">
+                                                    {{ $project->title }}
                                                 </a>
                                             </h2>
 
                                             <div class="d-flex  justify-content-between align-items-center w-100 mt-30">
                                                 <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Photography</span>
-                                                    <span class="background-section heading-color">branding</span>
+                                                    @if(isset($project->work_1))
+                                                    <span class="background-section heading-color">{{ $project->work_1 }}</span>
+                                                    @endif
+                                                    @if(isset($project->work_2))
+                                                    <span class="background-section heading-color">{{ $project->work_2 }}</span>
+                                                    @endif
+                                                    @if(isset($project->work_3))
+                                                    <span class="background-section heading-color">{{ $project->work_3 }}</span>
+                                                    @endif
                                                 </div>
 
                                                 <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> Bax
-                                                        Towner</span>
+                                                    <span class="text-upper"><span>{{ $project->employee_job_1 ? $project->employee_job_1 : ''}}</span> {{ $project->employee_1 ? $project->employee_1 : ''}}</span>
                                                 </p>
 
                                                 <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-4.html">
+                                                    @if(isset($project->url_project))
+                                                    <a class="button effect-ajax" href="{{ $project->url_project }}" target="_blank">
                                                         <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
                                                             <span>View project</span>
                                                         </span>
                                                     </a>
-
+                                                    @endif
                                                     <span class="icon background-section theme-color">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
-
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="7">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-1.html" data-dsn-ajax="slider">Binge x <br> The Iconic
-                                                </a>
-                                            </h2>
-
-                                            <div class="d-flex justify-content-between description align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">UX / UI Design</span>
-                                                    <span class="background-section heading-color">Architecture</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> Janyon
-                                                        Boshoff</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-1.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="5">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project2/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-2.html" data-dsn-ajax="slider">Me <br> Myself and
-                                                    i</a>
-                                            </h2>
-
-                                            <div class="d-flex justify-content-between description align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Character
-                                                        design</span>
-                                                    <span class="background-section heading-color">Digital Art</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> Chris
-                                                        Labrooy</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-2.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="3">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project3/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-3.html" data-dsn-ajax="slider">YOUR <br> DREAM CAR
-                                                </a>
-                                            </h2>
-
-                                            <div class="d-flex justify-content-between description align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Photography</span>
-                                                    <span class="background-section heading-color">branding</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> Aaron
-                                                        Brimhall</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-3.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="6">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project5/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-5.html" data-dsn-ajax="slider">Church <br> Copenhagen
-                                                    Denmark</a>
-                                            </h2>
-
-                                            <div class="d-flex description justify-content-between align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Photography</span>
-                                                    <span class="background-section heading-color">Architecture</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> Kacper
-                                                        Mroczek</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-5.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="5">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project6/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-6.html" data-dsn-ajax="slider">LOST <br> RENDER </a>
-                                            </h2>
-
-                                            <div class="d-flex description justify-content-between align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Photography</span>
-                                                    <span class="background-section heading-color">Architecture</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> CJ Gong</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-6.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="4">
-                                            <img loading="lazy" src="{{asset("/assets/img/portfolio/project7/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <h2 class="title-lg has-box-mod p-relative">
-                                                <a data-dsn-split="chars" class="effect-ajax text-upper" href="project-7.html" data-dsn-ajax="slider">Samokat <br> office</a>
-                                            </h2>
-
-                                            <div class="d-flex description justify-content-between align-items-center w-100 mt-30">
-                                                <div class="cat head-meta p-0">
-                                                    <span class="background-section heading-color">Architecture</span>
-                                                    <span class="background-section heading-color">Interior
-                                                        Design</span>
-                                                </div>
-
-                                                <p class="item description">
-                                                    <span class="text-upper"><span>photographer - </span> KIDZ
-                                                        Studio</span>
-                                                </p>
-
-                                                <div class="dsn-btn dsn-btn-shape d-inline-flex d-flex no-padding text-upper">
-
-                                                    <a class="button effect-ajax" href="project-7.html">
-                                                        <span class="title-btn p-relative  z-index-1" data-animate-text="View project">
-                                                            <span>View project</span>
-                                                        </span>
-                                                    </a>
-
-                                                    <span class="icon background-section theme-color">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -548,245 +310,43 @@
 
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">SERVICES</span>
+                            <span class="sub-heading mb-5">Portifolio</span>
                             <h2 class="title ">{{ $args->portifolio_title ? $args->portifolio_title : 'portifolio_title' }}</h2>
                         </div>
                     </div>
 
                     <div class="dsn-cards root-posts img-h80">
                         <div class="dsn-grid-layout dsn-grid dsn-posts dsn-post-type-cards use-horizontal-scroll box-image-normal" data-dsn-option='{"speed":10,"start":"0"}'>
-
+                            @foreach($portifolios as $id => $portifolio)
                             <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
                                 <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="7">
-                                    <img src="{{asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <img src="{{ isset($portifolio->img_1) ? asset("../storage/$portifolio->img_1") : asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                 </div>
-
                                 <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
                                     <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">UX / UI Design</span>
-                                        <span class="background-section heading-color">Architecture</span>
+                                        @if(isset($portifolio->type_1))
+                                        <span class="background-main heading-color">{{ $portifolio->type_1 }}</span>
+                                        @endif
+                                        @if(isset($portifolio->type_2))
+                                        <span class="background-main heading-color">{{ $portifolio->type_2 }}</span>
+                                        @endif
                                     </div>
-
                                     <div class="d-flex justify-content-between align-items-center mt-15">
                                         <h2 class="post-title word-wrap d-inline-block title-block text-upper text-upper">
-                                            <a href="project-1.html" class="effect-ajax" data-dsn-ajax="work">Binge x
-                                                <br> The Iconic <span class="fw-200">©
-                                                    2021</span></a>
+                                            <a href="/portifolio/{{ $portifolio->id }}" class="effect-ajax" data-dsn-ajax="work">{{ $portifolio->title }}</a>
                                         </h2>
-
-                                        <a href="project-1.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
+                                        <a href="/portifolio/{{ $portifolio->id }}" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                             <span class="icon v-dark background-section">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                     <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                     </path>
                                                 </svg>
                                             </span>
-
                                         </a>
                                     </div>
                                 </div>
-
                             </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="5">
-                                    <img src="{{asset("/assets/img/portfolio/project2/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Character design </span>
-                                        <span class="background-section heading-color">Digital Art </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper text-upper">
-                                            <a href="project-2.html" class="effect-ajax" data-dsn-ajax="work">Me <br>
-                                                Myself and i <span class="fw-200">© 2024</span></a>
-                                        </h2>
-
-                                        <a href="project-2.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="3">
-                                    <img src="{{asset("/assets/img/portfolio/project3/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Photography </span>
-                                        <span class="background-section heading-color">branding </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                            <a href="project-3.html" class="effect-ajax" data-dsn-ajax="work">YOUR <br>
-                                                DREAM CAR <span class="fw-200">© 2024</span></a>
-                                        </h2>
-
-                                        <a href="project-3.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="6">
-                                    <img src="{{asset("/assets/img/portfolio/project4/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Photography </span>
-                                        <span class="background-section heading-color">branding </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                            <a href="project-4.html" class="effect-ajax" data-dsn-ajax="work">The <br>
-                                                Hills - Nissan <span class="fw-200">© 2019</span></a>
-                                        </h2>
-
-                                        <a href="project-4.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="6">
-                                    <img src="{{asset("/assets/img/portfolio/project5/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Photography </span>
-                                        <span class="background-section heading-color">Architecture </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                            <a href="project-5.html" class="effect-ajax" data-dsn-ajax="work">Church
-                                                <br> Copenhagen Denmark</a>
-                                        </h2>
-
-                                        <a href="project-5.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="5">
-                                    <img src="{{asset("/assets/img/portfolio/project6/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Photography </span>
-                                        <span class="background-section heading-color">Architecture </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                            <a href="project-6.html" class="effect-ajax" data-dsn-ajax="work">LOST <br>
-                                                RENDER <span class="fw-200">© 2023</span></a>
-                                        </h2>
-
-                                        <a href="project-6.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
-
-                            <article class="dsn-item-post grid-item h-max-content over-hidden p-relative z-index-2">
-
-                                <div class="box-image-bg w-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-overlay="4">
-                                    <img src="{{asset("/assets/img/portfolio/project7/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
-                                </div>
-
-                                <div class="content d-flex flex-column p-absolute bottom-0 left-0 w-100 p-20 z-index-1">
-
-                                    <div class="cat p-0 d-flex">
-                                        <span class="background-section heading-color">Architecture </span>
-                                        <span class="background-section heading-color">Interior Design </span>
-                                    </div>
-
-                                    <div class="d-flex justify-content-between align-items-center mt-15">
-                                        <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                            <a href="project-7.html" class="effect-ajax" data-dsn-ajax="work">Samokat
-                                                <br> office <span class="fw-200">© 2021</span></a>
-                                        </h2>
-
-                                        <a href="project-7.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
-                                            <span class="icon v-dark background-section">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                    </path>
-                                                </svg>
-                                            </span>
-
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </article>
+                            @endforeach
                         </div>
                     </div>
                 </section>
@@ -1138,7 +698,7 @@
                             <img src="{{ asset("/assets/img/img-under-header.jpg") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
                         </div>
                     </div>
-
+                    <!-- Parei aqui - Criar os brands no index text e coloca-los para serem adicionados as imagens -->
                     <div class="container">
                         <div class="brand-inner d-grid grid-md-2 grid-lg-4  align-items-center p-relative z-index-1">
                             <div class="brand-boxs d-flex flex-column align-items-end">

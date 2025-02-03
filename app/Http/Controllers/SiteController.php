@@ -21,11 +21,13 @@ class SiteController extends Controller
     public function index() {
 
         $index_text = $this->service->indexText();
+        $projects = $this->service->projectActive();
+        $portifolios = $this->service->workActive();
 
         $menuWorks = $this->service->workActive();
         $menuProjects = $this->service->projectActive();
 
-        return view('index', ['args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('index', ['args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
     }
 
     public function saveIndexPage(Request $request) {

@@ -46,9 +46,11 @@
             <!-- ========== Header ========== -->
             <header class="header-page v-dark-head dsn-header-animation pb-80 p-relative">
 
+                <!--
                 <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
                     <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
                 </div>
+                -->
 
                 <div class="p-relative container dsn-hero-parallax-title h-100">
                     <div class="p-relative d-flex align-items-center w-100  h-100 ">
@@ -126,8 +128,8 @@
                     <div class="p-relative box-image-parallax dsn-style-cards">
                         <div class="root-posts has-filter">
 
+                            <!--
                             <div class="dsn-filtering z-index-1 p-relative w-100 mb-70 pt-50 pb-50 border-bottom">
-
                                 <div class="filtering-t w-100">
                                     <div class="filtering-wrap w-100">
                                         <div class="filtering w-100">
@@ -150,8 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-
-
+                            -->
 
                             <div class="container">
                                 <div class="dsn-posts dsn-post-type-cards box-image-normal d-grid grid-md-2 dsn-isotope use-filter v-dark-head" data-dsn-gap="30px">
