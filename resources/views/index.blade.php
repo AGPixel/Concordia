@@ -950,8 +950,7 @@
 
                 <div class="copyright background-main">
                     <div class="container d-flex align-items-center justify-content-between">
-                        <p>Copyright © 2024 <a href="#">DSNGrid</a></p>
-
+                        <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
                         <div class="dsn-default-btn dsn-icon-heading-color">
                             <a class="dsn-btn dsn-border border-color-default background-transparent image-zoom move-circle has-icon-left dsn-parallax-hover" href="#main_root" rel="nofollow" data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
                                 <span class="d-flex align-items-center justify-content-center h-100">

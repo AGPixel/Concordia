@@ -5683,6 +5683,7 @@ body.error404 .sm-title-block span {
 .footer-personal .copyright {
   font-size: 14px;
   text-align: right;
+  width: 29em;
 }
 
 @media only screen and (max-width: 767px) {

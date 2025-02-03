@@ -6,8 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/logo-32x32.png" sizes="32x32" />
@@ -26,29 +25,25 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
@@ -67,10 +62,8 @@
 
         <span class="loading-text text-uppercase mt-30 dsn-container">Loading ...</span>
         <div class="bg-load background-section d-flex align-items-end dsn-bg-pattern bg-offset bg-square">
-            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10"
-                preserveAspectRatio="none">
-                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
-                    vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
             </svg>
         </div>
 
@@ -81,8 +74,7 @@
             <filter id="buttonFilter">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
                 </feGaussianBlur>
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="buttonFilter"></feColorMatrix>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="buttonFilter"></feColorMatrix>
                 <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
                 </feComposite>
                 <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
@@ -95,8 +87,7 @@
         <!-- ========== Menu ========== -->
         <header id="site_menu_header" class="site-header d-none">
             <div class="main-logo">
-                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home"
-                    aria-current="page">
+                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
                     <img src="assets/img/logo-light.png" class="custom-logo logo-light" alt="EXFOLIO" />
                     <img src="assets/img/logo.png" class="custom-logo logo-dark" alt="EXFOLIO" />
                 </a>
@@ -111,11 +102,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -169,11 +158,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -190,11 +177,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -223,11 +208,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -257,8 +240,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a title="horizontal Scroll" href="work-horizontal-scroll.html"
-                                    data-dsn-text="Portfolio">
+                                <a title="horizontal Scroll" href="work-horizontal-scroll.html" data-dsn-text="Portfolio">
                                     <span class="overflow">horizontal Scroll</span>
                                 </a>
                             </li>
@@ -278,11 +260,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -353,14 +333,12 @@
                         <div class="nav-content mt-30">
                             <h5 class="sm-title-block mb-10">Contact</h5>
                             <p class="links over-hidden mb-1">
-                                <a class="link-hover d-block" href="tel:00201004392260"
-                                    data-hover-text="+00 (2)012 3321">+00
+                                <a class="link-hover d-block" href="tel:00201004392260" data-hover-text="+00 (2)012 3321">+00
                                     (2)01004392260</a>
                                 <a class="link-hover" href="tel:00201024552406" data-hover-text="+00 (2)012 3321">+00
                                     (2)01024552406</a>
                             </p>
-                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com"
-                                    data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
+                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com" data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
 
                         </div>
                     </div>
@@ -368,14 +346,10 @@
                         <div class="nav-social-inner p-relative">
                             <h5 class="sm-title-block mb-10">Follow us</h5>
                             <ul style="--dsn-li-name: dsn6;">
-                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Dribbble.</a></li>
-                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Behance.</a></li>
-                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Linkedin.</a></li>
-                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Twitter.</a></li>
+                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Dribbble.</a></li>
+                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Behance.</a></li>
+                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Twitter.</a></li>
                             </ul>
                         </div>
                     </div>
@@ -395,8 +369,7 @@
             </div>
             <div class="bg-load background-main"></div>
 
-            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
-                class="bg-load dsn-svg-transition">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
                 <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
             </svg>
 
@@ -407,13 +380,11 @@
 
             <!-- ========== Header ========== -->
             <header id="dsn_header" class="header-architecture v-dark-head-mobile h-100-v dsn-header-animation">
-                <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 before-z-index" data-dsn-grid="move-up"
-                    data-overlay="4">
+                <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0 before-z-index" data-dsn-grid="move-up" data-overlay="4">
                     <img class="cover-bg-img" src="assets/img/header-architecture.jpg" alt="">
                 </div>
 
-                <div
-                    class="content h-100 p-relative z-index-1 d-flex flex-column align-items-center justify-content-end pb-section">
+                <div class="content h-100 p-relative z-index-1 d-flex flex-column align-items-center justify-content-end pb-section">
                     <div class="container">
                         <h3 class="title-lg text-upper text-center">Architects with
                             a different Approach</h3>
@@ -459,10 +430,8 @@
 
                         <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
 
-                            <a class="dsn-scroll-bottom  button background-section" href="#page_wrapper" rel="nofollow"
-                                data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                    data-animate-text="Scroll Down">
+                            <a class="dsn-scroll-bottom  button background-section" href="#page_wrapper" rel="nofollow" data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Scroll Down">
                                     <span>Scroll Down</span>
                                 </span>
                             </a>
@@ -498,8 +467,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -521,8 +489,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -544,8 +511,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -567,8 +533,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -601,16 +566,14 @@
                                     <div class="dsn-btn dsn-btn-shape d-flex mt-30 ">
 
                                         <a class="button background-main effect-ajax" href="about.html">
-                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                                data-animate-text="ABOUT US">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
                                                 <span>ABOUT US</span>
                                             </span>
                                         </a>
 
                                         <span class="icon background-main">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -655,8 +618,7 @@
 
                                         <span class="icon background-main theme-color">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -665,16 +627,13 @@
 
                                     <div class="icon-right">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                                fill="#121212"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                         </svg>
                                     </div>
                                 </div>
 
                                 <div class="item-img h-100">
-                                    <div class="box-img img-lg img-box-parallax before-z-index h-100"
-                                        data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
+                                    <div class="box-img img-lg img-box-parallax before-z-index h-100" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
                                         <img class="cover-bg-img" src="assets/img/img-arc1.jpg" alt="">
                                     </div>
                                 </div>
@@ -695,8 +654,7 @@
 
                                         <span class="icon background-main theme-color">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -705,16 +663,13 @@
 
                                     <div class="icon-right">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                                fill="#121212"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                         </svg>
                                     </div>
                                 </div>
 
                                 <div class="item-img h-100">
-                                    <div class="box-img img-lg img-box-parallax before-z-index h-100"
-                                        data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
+                                    <div class="box-img img-lg img-box-parallax before-z-index h-100" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
                                         <img class="cover-bg-img" src="assets/img/img-arc3.jpg" alt="">
                                     </div>
                                 </div>
@@ -735,8 +690,7 @@
 
                                         <span class="icon background-main theme-color">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -745,9 +699,7 @@
 
                                     <div class="icon-right">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                                fill="#121212"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                         </svg>
                                     </div>
                                 </div>
@@ -768,8 +720,7 @@
 
                                         <span class="icon background-main theme-color">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -778,9 +729,7 @@
 
                                     <div class="icon-right">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                                fill="#121212"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                         </svg>
                                     </div>
                                 </div>
@@ -796,24 +745,20 @@
                     <div class="container">
                         <div class="box-img d-flex p-relative">
 
-                            <div class="img-sm"
-                                data-dsn-animation='{"to":{"y":"-20vh"},"responsive":["tablet","desktop"]}'>
+                            <div class="img-sm" data-dsn-animation='{"to":{"y":"-20vh"},"responsive":["tablet","desktop"]}'>
                                 <img class="has-border-radius" src="assets/img/img-arc2.jpg" alt="">
                             </div>
-                            <div class="box-img img-lg img-box-parallax before-z-index has-border-radius"
-                                data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
+                            <div class="box-img img-lg img-box-parallax before-z-index has-border-radius" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="0">
 
                                 <img class="has-border-radius" src="assets/img/img-arc1.jpg" alt="">
                             </div>
 
 
-                            <div class="img-md z-index-1"
-                                data-dsn-animation='{"from":{"marginLeft":"-10"},"to":{"marginLeft":"-60"},"responsive":["tablet","desktop"]}'>
+                            <div class="img-md z-index-1" data-dsn-animation='{"from":{"marginLeft":"-10"},"to":{"marginLeft":"-60"},"responsive":["tablet","desktop"]}'>
                                 <img class="has-border-radius" src="assets/img/img-arc3.jpg" alt="">
                             </div>
 
-                            <div class="img-last z-index-2"
-                                data-dsn-animation='{"from":{"y":"-100"},"to":{"y":"0"},"responsive":["tablet","desktop"]}'>
+                            <div class="img-last z-index-2" data-dsn-animation='{"from":{"y":"-100"},"to":{"y":"0"},"responsive":["tablet","desktop"]}'>
                                 <img class="cover-bg-img has-border-radius" src="assets/img/img-arc4.jpg" alt="">
                             </div>
                         </div>
@@ -833,8 +778,7 @@
                                         <span class="text-upper">MArchitecture</span>
                                         <a href="#" class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </a>
@@ -846,8 +790,7 @@
                                         <span class="text-upper">Interior</span>
                                         <a href="#" class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </a>
@@ -859,8 +802,7 @@
                                         <span class="text-upper">Landscape</span>
                                         <a href="#" class="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </a>
@@ -875,33 +817,28 @@
 
 
                 <!-- ==========  Work List ========== -->
-                <section class="our-work work-full dsn-swiper p-relative"
-                    data-dsn-option='{"spaceBetween":0,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":3,"speed":1000,"effect":"card"}'>
+                <section class="our-work work-full dsn-swiper p-relative" data-dsn-option='{"spaceBetween":0,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":3,"speed":1000,"effect":"card"}'>
 
                     <div class="dsn-cards">
                         <div class="dsn-posts dsn-fill-animation">
                             <div class="swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="7">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="7">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project1/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">UX / UI Design</span>
                                                     <span class="background-section heading-color">Architecture</span>
                                                 </div>
 
-                                                <a href="project-1.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-1.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -911,9 +848,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-1.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">Binge x <br> The Iconic <span
-                                                            class="fw-200">©
+                                                    <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">Binge x <br> The Iconic <span class="fw-200">©
                                                             2021</a>
                                                 </h2>
 
@@ -923,13 +858,11 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project2/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">Character design
@@ -937,12 +870,10 @@
                                                     <span class="background-section heading-color">Digital Art </span>
                                                 </div>
 
-                                                <a href="project-2.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-2.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -952,8 +883,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-2.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">Me <br> Myself and i <span class="fw-200">©
+                                                    <a href="project-2.html" class="effect-ajax init-color" data-dsn-ajax="work">Me <br> Myself and i <span class="fw-200">©
                                                             2024</span></a>
                                                 </h2>
 
@@ -963,25 +893,21 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="3">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="3">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project3/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">Photography </span>
                                                     <span class="background-section heading-color">branding </span>
                                                 </div>
 
-                                                <a href="project-3.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-3.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -991,8 +917,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-3.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">YOUR <br> DREAM CAR <span class="fw-200">©
+                                                    <a href="project-3.html" class="effect-ajax init-color" data-dsn-ajax="work">YOUR <br> DREAM CAR <span class="fw-200">©
                                                             2024</span></a>
                                                 </h2>
 
@@ -1002,25 +927,21 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="6">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="6">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project4/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">Photography </span>
                                                     <span class="background-section heading-color">branding </span>
                                                 </div>
 
-                                                <a href="project-4.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-4.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1030,9 +951,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-4.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">The <br> Hills - Nissan <span
-                                                            class="fw-200">© 2019</span></a>
+                                                    <a href="project-4.html" class="effect-ajax init-color" data-dsn-ajax="work">The <br> Hills - Nissan <span class="fw-200">© 2019</span></a>
                                                 </h2>
 
                                                 <p class="text-right">Elevate your <br> brand’s presence </p>
@@ -1041,25 +960,21 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="6">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="6">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project5/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">Photography </span>
                                                     <span class="background-section heading-color">Architecture </span>
                                                 </div>
 
-                                                <a href="project-5.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-5.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1069,8 +984,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-5.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">Church <br> Copenhagen Denmark</a>
+                                                    <a href="project-5.html" class="effect-ajax init-color" data-dsn-ajax="work">Church <br> Copenhagen Denmark</a>
                                                 </h2>
 
                                                 <p class="text-right">Elevate your <br> brand’s presence </p>
@@ -1079,25 +993,21 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project6/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">Photography </span>
                                                     <span class="background-section heading-color">Architecture </span>
                                                 </div>
 
-                                                <a href="project-6.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-6.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1107,8 +1017,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-6.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">LOST <br> RENDER <span class="fw-200">©
+                                                    <a href="project-6.html" class="effect-ajax init-color" data-dsn-ajax="work">LOST <br> RENDER <span class="fw-200">©
                                                             2023</span></a>
                                                 </h2>
 
@@ -1118,25 +1027,21 @@
                                     </div>
 
                                     <div class="work-item swiper-slide grid-item p-relative">
-                                        <div class="box-img img-lg img-box-parallax before-z-index"
-                                            data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
+                                        <div class="box-img img-lg img-box-parallax before-z-index" data-dsn-triggerhook="bottom" data-dsn-grid="move-up" data-overlay="5">
                                             <img class="cover-bg-img" src="assets/img/portfolio/project7/1.jpg" alt="">
                                         </div>
 
-                                        <div
-                                            class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
+                                        <div class="box-content d-flex flex-column p-absolute w-100 bottom-0 left-0 p-30 z-index-1">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="cat p-0 d-flex">
                                                     <span class="background-section heading-color">UX / UI Design</span>
                                                     <span class="background-section heading-color">Architecture</span>
                                                 </div>
 
-                                                <a href="project-7.html"
-                                                    class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-7.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1146,9 +1051,7 @@
 
                                             <div class="d-flex justify-content-between align-items-end mt-10">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-7.html" class="effect-ajax init-color"
-                                                        data-dsn-ajax="work">Binge x <br> The Iconic <span
-                                                            class="fw-200">©
+                                                    <a href="project-7.html" class="effect-ajax init-color" data-dsn-ajax="work">Binge x <br> The Iconic <span class="fw-200">©
                                                             2021</span></a>
                                                 </h2>
 
@@ -1165,8 +1068,7 @@
 
 
                 <!-- ==========   testimonials ========== -->
-                <section class="dsn-testimonials testimonials-small section-margin dsn-swiper"
-                    data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"card"}'>
+                <section class="dsn-testimonials testimonials-small section-margin dsn-swiper" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"card"}'>
                     <div class="container">
                         <div class="d-grid grid-md-2">
                             <div class=" pinned-scroll">
@@ -1183,14 +1085,12 @@
                             <div class="testimonials-inner d-flex ml-auto over-hidden">
                                 <div class="swiper swiper-container">
                                     <div class="swiper-wrapper">
-                                        <div
-                                            class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
+                                        <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                             <div class="content">
                                                 <div class="rating">
                                                     <h3 class="heading">4.9
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                            <path
-                                                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                                                         </svg>
                                                     </h3>
 
@@ -1202,8 +1102,7 @@
                                                     experiences...</p>
 
                                                 <div class="quote mt-30">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30"
-                                                        viewBox="0 0 40 30" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
                                                         <path d="M0 0V30L15.0025 15V0H0Z" fill="#030104"></path>
                                                         <path d="M24.9961 0V30L39.9986 15V0H24.9961Z" fill="#030104">
                                                         </path>
@@ -1217,11 +1116,8 @@
                                                         <img class="cover-bg-img" src="assets/img/team/1.jpg" alt="">
                                                     </div>
 
-                                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z"
-                                                            fill="#E0E0E0"></path>
+                                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
                                                     </svg>
 
                                                     <div class="text background-section">
@@ -1232,14 +1128,12 @@
                                             </div>
                                         </div>
 
-                                        <div
-                                            class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
+                                        <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                             <div class="content">
                                                 <div class="rating">
                                                     <h3 class="heading">4.9
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                            <path
-                                                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                                            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                                                         </svg>
                                                     </h3>
 
@@ -1251,8 +1145,7 @@
                                                     experiences...</p>
 
                                                 <div class="quote mt-30">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30"
-                                                        viewBox="0 0 40 30" fill="none">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
                                                         <path d="M0 0V30L15.0025 15V0H0Z" fill="#030104"></path>
                                                         <path d="M24.9961 0V30L39.9986 15V0H24.9961Z" fill="#030104">
                                                         </path>
@@ -1266,11 +1159,8 @@
                                                         <img class="cover-bg-img" src="assets/img/team/1.jpg" alt="">
                                                     </div>
 
-                                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <path
-                                                            d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z"
-                                                            fill="#E0E0E0"></path>
+                                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
                                                     </svg>
 
                                                     <div class="text background-section">
@@ -1302,13 +1192,11 @@
                             <div class="d-grid grid-md-2 hover-box-item">
                                 <div class="post-item p-relative grid-item">
                                     <div class="cat background-section d-flex p-absolute top-0 right-0 z-index-1">
-                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                            y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                             </path>
                                         </svg>
-                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                            y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                             </path>
                                         </svg>
@@ -1328,13 +1216,11 @@
 
                                 <div class="post-item p-relative grid-item">
                                     <div class="cat background-section d-flex p-absolute top-0 right-0 z-index-1">
-                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                            y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                             </path>
                                         </svg>
-                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0"
-                                            y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
                                             <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                             </path>
                                         </svg>
@@ -1366,16 +1252,14 @@
                             <div class="dsn-btn dsn-btn-shape d-flex">
 
                                 <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color"
-                                        data-animate-text="Let's talk!">
+                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
                                         <span>Let's talk!</span>
                                     </span>
                                 </a>
 
                                 <span class="icon background-main v-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path
-                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                         </path>
                                     </svg>
                                 </span>
@@ -1429,9 +1313,7 @@
 
                                 <div class="copyright">
                                     <p class="over-hidden">
-                                        © 2024 Digital Agency Designed by
-                                        <a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank">DSN
-                                            Grid</a>
+                                        <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
                                     </p>
                                 </div>
                             </div>

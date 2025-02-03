@@ -6,8 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/logo-32x32.png" sizes="32x32" />
@@ -25,29 +24,25 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
@@ -66,10 +61,8 @@
 
         <span class="loading-text text-uppercase mt-30 dsn-container">Loading ...</span>
         <div class="bg-load background-section d-flex align-items-end dsn-bg-pattern bg-offset bg-square">
-            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10"
-                preserveAspectRatio="none">
-                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
-                    vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
             </svg>
         </div>
 
@@ -80,8 +73,7 @@
             <filter id="buttonFilter">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
                 </feGaussianBlur>
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="buttonFilter"></feColorMatrix>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="buttonFilter"></feColorMatrix>
                 <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
                 </feComposite>
                 <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
@@ -94,8 +86,7 @@
         <!-- ========== Menu ========== -->
         <header id="site_menu_header" class="site-header d-none">
             <div class="main-logo">
-                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home"
-                    aria-current="page">
+                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
                     <img src="assets/img/logo-light.png" class="custom-logo logo-light" alt="EXFOLIO" />
                     <img src="assets/img/logo.png" class="custom-logo logo-dark" alt="EXFOLIO" />
                 </a>
@@ -110,11 +101,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -168,11 +157,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -189,11 +176,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -222,11 +207,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -256,8 +239,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a title="horizontal Scroll" href="work-horizontal-scroll.html"
-                                    data-dsn-text="Portfolio">
+                                <a title="horizontal Scroll" href="work-horizontal-scroll.html" data-dsn-text="Portfolio">
                                     <span class="overflow">horizontal Scroll</span>
                                 </a>
                             </li>
@@ -277,11 +259,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -352,14 +332,12 @@
                         <div class="nav-content mt-30">
                             <h5 class="sm-title-block mb-10">Contact</h5>
                             <p class="links over-hidden mb-1">
-                                <a class="link-hover d-block" href="tel:00201004392260"
-                                    data-hover-text="+00 (2)012 3321">+00
+                                <a class="link-hover d-block" href="tel:00201004392260" data-hover-text="+00 (2)012 3321">+00
                                     (2)01004392260</a>
                                 <a class="link-hover" href="tel:00201024552406" data-hover-text="+00 (2)012 3321">+00
                                     (2)01024552406</a>
                             </p>
-                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com"
-                                    data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
+                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com" data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
 
                         </div>
                     </div>
@@ -367,14 +345,10 @@
                         <div class="nav-social-inner p-relative">
                             <h5 class="sm-title-block mb-10">Follow us</h5>
                             <ul style="--dsn-li-name: dsn6;">
-                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Dribbble.</a></li>
-                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Behance.</a></li>
-                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Linkedin.</a></li>
-                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Twitter.</a></li>
+                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Dribbble.</a></li>
+                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Behance.</a></li>
+                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Twitter.</a></li>
                             </ul>
                         </div>
                     </div>
@@ -394,8 +368,7 @@
             </div>
             <div class="bg-load background-main"></div>
 
-            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
-                class="bg-load dsn-svg-transition">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
                 <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
             </svg>
 
@@ -409,8 +382,7 @@
                 <div class="content d-flex flex-column justify-content-center align-items-center h-100-v">
                     <h1 class="title-lg text-upper  scale-span ">
                         <span>Digital</span>
-                        <img src="assets/img/hero-img.webp"
-                            alt="" class="cover-bg-img d-inline-block">
+                        <img src="assets/img/hero-img.webp" alt="" class="cover-bg-img d-inline-block">
                         <span>designer</span>
                     </h1>
 
@@ -420,8 +392,7 @@
                     <div class="dsn-btn dsn-btn-shape d-flex mt-30 ">
 
                         <a class="button background-section v-dark effect-ajax" href="about.html">
-                            <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                data-animate-text="About Me">
+                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="About Me">
                                 <span>About Me</span>
                             </span>
                         </a>
@@ -440,10 +411,8 @@
                     <div class="container d-flex justify-content-between">
                         <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
 
-                            <a class="button background-section" href="#page_wrapper" rel="nofollow"
-                                data-dsn-option="{&quot;ease&quot;: &quot;power4.inOut&quot; , &quot;duration&quot; : 1.5}">
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                    data-animate-text="Scroll Down">
+                            <a class="button background-section" href="#page_wrapper" rel="nofollow" data-dsn-option="{&quot;ease&quot;: &quot;power4.inOut&quot; , &quot;duration&quot; : 1.5}">
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Scroll Down">
                                     <span>Scroll Down</span>
                                 </span>
                             </a>
@@ -459,10 +428,8 @@
 
                         <div class="dsn-btn dsn-btn-shape d-flex">
 
-                            <a class="button background-section effect-ajax" href="contact.html"
-                                data-dsn-text="Contact Mes">
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                    data-animate-text="Contact Me">
+                            <a class="button background-section effect-ajax" href="contact.html" data-dsn-text="Contact Mes">
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Me">
                                     <span>Contact Me</span>
                                 </span>
                             </a>
@@ -492,26 +459,19 @@
                                 EXPERIENCES <br>
                                 FOR BRANDS</h2>
 
-                            <svg class="svg-arrow p-absolute dsn-up" width="168" height="168" viewBox="0 0 168 168"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="svg-arrow p-absolute dsn-up" width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_2611_728)">
                                     <mask maskUnits="userSpaceOnUse" x="0" y="0" width="168" height="168">
-                                        <path d="M168 168L168 0L0 -7.34351e-06L-7.34351e-06 168L168 168Z"
-                                            fill="white" />
+                                        <path d="M168 168L168 0L0 -7.34351e-06L-7.34351e-06 168L168 168Z" fill="white" />
                                     </mask>
                                     <g mask="url(#mask0_2611_728)">
-                                        <path
-                                            d="M-1.14418e-07 2.61757C0.00188117 1.9525 0.256151 1.31293 0.711416 0.828103C1.16668 0.343275 1.789 0.0493324 2.45264 0.0056675C3.11628 -0.0379968 3.77178 0.171871 4.28665 0.592868C4.80151 1.01386 5.13738 1.6146 5.22638 2.27369C5.39176 3.48382 22.9163 123.719 136.814 142.201C137.503 142.314 138.118 142.693 138.526 143.258C138.932 143.823 139.099 144.526 138.988 145.215C138.876 145.902 138.496 146.517 137.931 146.924C137.366 147.331 136.663 147.498 135.974 147.386C18.186 128.271 0.191629 4.22145 0.0236293 2.97195C0.00791771 2.85447 2.05536e-05 2.73608 -1.14418e-07 2.61757Z"
-                                            fill="#3D3D3D" />
-                                        <path
-                                            d="M166 146.993C154.224 150.202 139.441 156.155 130 163L138.587 144.6L133.346 125C141.449 133.374 154.966 141.791 166 146.993Z"
-                                            fill="#3D3D3D" />
+                                        <path d="M-1.14418e-07 2.61757C0.00188117 1.9525 0.256151 1.31293 0.711416 0.828103C1.16668 0.343275 1.789 0.0493324 2.45264 0.0056675C3.11628 -0.0379968 3.77178 0.171871 4.28665 0.592868C4.80151 1.01386 5.13738 1.6146 5.22638 2.27369C5.39176 3.48382 22.9163 123.719 136.814 142.201C137.503 142.314 138.118 142.693 138.526 143.258C138.932 143.823 139.099 144.526 138.988 145.215C138.876 145.902 138.496 146.517 137.931 146.924C137.366 147.331 136.663 147.498 135.974 147.386C18.186 128.271 0.191629 4.22145 0.0236293 2.97195C0.00791771 2.85447 2.05536e-05 2.73608 -1.14418e-07 2.61757Z" fill="#3D3D3D" />
+                                        <path d="M166 146.993C154.224 150.202 139.441 156.155 130 163L138.587 144.6L133.346 125C141.449 133.374 154.966 141.791 166 146.993Z" fill="#3D3D3D" />
                                     </g>
                                 </g>
                                 <defs>
                                     <clipPath>
-                                        <rect width="168" height="168" fill="white"
-                                            transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
+                                        <rect width="168" height="168" fill="white" transform="matrix(-4.37114e-08 1 1 4.37114e-08 0 0)" />
                                     </clipPath>
                                 </defs>
                             </svg>
@@ -528,16 +488,14 @@
                                     <div class="dsn-btn dsn-btn-shape d-flex mt-30 ">
 
                                         <a class="button background-main v-dark effect-ajax" href="about.html">
-                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                                data-animate-text="About Me">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="About Me">
                                                 <span>About Me</span>
                                             </span>
                                         </a>
 
                                         <span class="icon background-main v-dark">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -548,8 +506,7 @@
                             </div>
                         </div>
 
-                        <div class="box-brands mt-50 border-top border-bottom dsn-swiper dsn-up"
-                            data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":false,"parallax":false,"slidesPerView":5,"speed":1000,"effect":"slide"}'>
+                        <div class="box-brands mt-50 border-top border-bottom dsn-swiper dsn-up" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":false,"parallax":false,"slidesPerView":5,"speed":1000,"effect":"slide"}'>
                             <div class="d-grid custom-width align-items-center">
                                 <div class="box-title">
                                     <h6>WORKED WITH GLOBAL <br> LARGEST BRANDS</h6>
@@ -607,8 +564,7 @@
                 <!-- ========== End About Us ========== -->
 
                 <!-- ==========  Service ========== -->
-                <section
-                    class="dsn-service services-accordion section-margin not-filter dsn-filter ">
+                <section class="dsn-service services-accordion section-margin not-filter dsn-filter ">
                     <div class="container">
 
                         <div class="section-title dsn-fill d-flex flex-column mb-70">
@@ -621,23 +577,18 @@
                             <div class="accordion__wrapper">
 
                                 <div class="accordion__item dsn-up active">
-                                    <div
-                                        class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
                                         <h2 class="title tab-title heading-color text-upper" role="tab" data-tab="0">
                                             UI/UX</h2>
 
                                         <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
-                                                viewBox="0 0 17 15" fill="">
-                                                <path
-                                                    d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
-                                                    fill=""></path>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                                <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
                                             </svg>
                                         </div>
                                     </div>
 
-                                    <div class="accordion__answer tab-description active w-100" role="tabpanel"
-                                        data-tab="0">
+                                    <div class="accordion__answer tab-description active w-100" role="tabpanel" data-tab="0">
                                         <div class="d-grid grid-1-half">
                                             <div class="text">
                                                 <p class="title-block text-upper">Our branding services cover every
@@ -656,17 +607,13 @@
                                 </div>
 
                                 <div class="accordion__item dsn-up">
-                                    <div
-                                        class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
                                         <h2 class="title tab-title heading-color text-upper" role="tab" data-tab="0">
                                             Brand</h2>
 
                                         <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
-                                                viewBox="0 0 17 15" fill="">
-                                                <path
-                                                    d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
-                                                    fill=""></path>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                                <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
                                             </svg>
                                         </div>
                                     </div>
@@ -688,17 +635,13 @@
                                 </div>
 
                                 <div class="accordion__item dsn-up">
-                                    <div
-                                        class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
+                                    <div class="accordion__question user-no-selection d-flex align-items-center justify-content-between">
                                         <h2 class="title tab-title heading-color text-upper" role="tab" data-tab="0">
                                             Animation</h2>
 
                                         <div class="icon">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
-                                                viewBox="0 0 17 15" fill="">
-                                                <path
-                                                    d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
-                                                    fill=""></path>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                                <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
                                             </svg>
                                         </div>
                                     </div>
@@ -738,8 +681,7 @@
 
                             <div class="dsn-skills">
                                 <div class="d-grid grid-md-2 dsn-layout-fade-up">
-                                    <div
-                                        class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
+                                    <div class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
 
                                         <div class="box-img mr-15 v-dark background-section">
                                             <img src="assets/img/skills/1.webp" alt="">
@@ -752,15 +694,12 @@
                                             <span class="number mb-5">84%</span>
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="84%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="84%"></span>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
+                                    <div class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
 
                                         <div class="box-img mr-15 v-dark background-section">
                                             <img src="assets/img/skills/2.webp" alt="">
@@ -773,15 +712,12 @@
                                             <span class="number mb-5">90%</span>
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="90%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="90%"></span>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
+                                    <div class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
 
                                         <div class="box-img mr-15 v-dark background-section">
                                             <img src="assets/img/skills/5.webp" alt="">
@@ -794,15 +730,12 @@
                                             <span class="number mb-5">92%</span>
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="92%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="92%"></span>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
+                                    <div class="dsn-skills-item grid-item background-main has-border-radius p-10 d-flex align-items-center dsn-up">
 
                                         <div class="box-img mr-15 v-dark background-section">
                                             <img src="assets/img/skills/4.webp" alt="">
@@ -815,9 +748,7 @@
                                             <span class="number mb-5">77%</span>
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="77%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="77%"></span>
                                             </div>
                                         </div>
                                     </div>
@@ -833,8 +764,7 @@
                 <section class="dsn-award section-margin">
                     <div class="container">
                         <div class="d-grid grid-md-2 over-hidden">
-                            <div class="box-img h-100 has-border-radius dsn-animate dsn-effect-down"
-                                data-dsn-grid="move-up">
+                            <div class="box-img h-100 has-border-radius dsn-animate dsn-effect-down" data-dsn-grid="move-up">
                                 <img class="has-border-radius" src="assets/img/header-personal.jpg" alt="">
                             </div>
 
@@ -876,16 +806,14 @@
                                     <div class="dsn-btn dsn-btn-shape d-flex">
 
                                         <a class="button background-main v-dark effect-ajax" href="contact.html">
-                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                                data-animate-text="Contact me">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact me">
                                                 <span>Contact me</span>
                                             </span>
                                         </a>
 
                                         <span class="icon background-main v-dark">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                <path
-                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                 </path>
                                             </svg>
                                         </span>
@@ -912,27 +840,22 @@
                     </div>
 
                     <div class="container">
-                        <div class="dsn-cards use-v-scroll p-relative"
-                             data-dsn-option='{"speed" : 4,"center_screen" : true }'>
+                        <div class="dsn-cards use-v-scroll p-relative" data-dsn-option='{"speed" : 4,"center_screen" : true }'>
                             <div class="dsn-posts ">
                                 <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius">
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
-                                                <img src="assets/img/portfolio/project1/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                <img src="assets/img/portfolio/project1/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-1.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">Binge x The Iconic</a>
+                                                    <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">Binge x The Iconic</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -940,12 +863,10 @@
                                                     <span class="background-section heading-color">Architecture</span>
                                                 </div>
 
-                                                <a href="project-1.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-1.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -962,20 +883,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="5">
-                                                <img src="assets/img/portfolio/project2/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="5">
+                                                <img src="assets/img/portfolio/project2/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-2.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">Me Myself and i</a>
+                                                    <a href="project-2.html" class="effect-ajax init-color" data-dsn-ajax="work">Me Myself and i</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -983,12 +900,10 @@
                                                     <span class="background-section heading-color">Digital Art</span>
                                                 </div>
 
-                                                <a href="project-2.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-2.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1005,20 +920,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="3">
-                                                <img src="assets/img/portfolio/project3/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="3">
+                                                <img src="assets/img/portfolio/project3/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-3.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">YOUR DREAM CAR</a>
+                                                    <a href="project-3.html" class="effect-ajax init-color" data-dsn-ajax="work">YOUR DREAM CAR</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -1026,12 +937,10 @@
                                                     <span class="background-section heading-color">branding</span>
                                                 </div>
 
-                                                <a href="project-3.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-3.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1048,20 +957,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
-                                                <img src="assets/img/portfolio/project4/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
+                                                <img src="assets/img/portfolio/project4/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-4.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">The Hills - Nissan</a>
+                                                    <a href="project-4.html" class="effect-ajax init-color" data-dsn-ajax="work">The Hills - Nissan</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -1069,12 +974,10 @@
                                                     <span class="background-section heading-color">branding</span>
                                                 </div>
 
-                                                <a href="project-4.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-4.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1091,20 +994,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
-                                                <img src="assets/img/portfolio/project5/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="6">
+                                                <img src="assets/img/portfolio/project5/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-5.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">Church Copenhagen Denmark</a>
+                                                    <a href="project-5.html" class="effect-ajax init-color" data-dsn-ajax="work">Church Copenhagen Denmark</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -1112,12 +1011,10 @@
                                                     <span class="background-section heading-color">Architecture</span>
                                                 </div>
 
-                                                <a href="project-5.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-5.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1134,20 +1031,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="5">
-                                                <img src="assets/img/portfolio/project6/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="5">
+                                                <img src="assets/img/portfolio/project6/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-6.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">LOST RENDER</a>
+                                                    <a href="project-6.html" class="effect-ajax init-color" data-dsn-ajax="work">LOST RENDER</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -1155,12 +1048,10 @@
                                                     <span class="background-section heading-color">Architecture</span>
                                                 </div>
 
-                                                <a href="project-6.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-6.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1177,20 +1068,16 @@
 
                                     <div class="box-content d-flex ">
                                         <div class="img-cat w-100">
-                                            <div
-                                                    class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="4">
-                                                <img src="assets/img/portfolio/project7/1.jpg"
-                                                     class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                            <div class="box-image-bg w-100 over-hidden has-border-radius before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="4">
+                                                <img src="assets/img/portfolio/project7/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                             </div>
                                         </div>
 
-                                        <div
-                                                class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
+                                        <div class="post-content v-light background-main z-index-1 d-flex flex-column p-absolute">
 
                                             <div class="post-info d-flex justify-content-between align-items-center">
                                                 <h2 class="post-title word-wrap d-inline-block title-block">
-                                                    <a href="project-7.html" class="effect-ajax init-color"
-                                                       data-dsn-ajax="work">Samokat office</a>
+                                                    <a href="project-7.html" class="effect-ajax init-color" data-dsn-ajax="work">Samokat office</a>
                                                 </h2>
 
                                                 <div class="cat background-main d-flex">
@@ -1198,12 +1085,10 @@
                                                     <span class="background-section heading-color">Interior Design</span>
                                                 </div>
 
-                                                <a href="project-7.html"
-                                                   class="dsn-btn dsn-btn-shape d-flex effect-ajax">
+                                                <a href="project-7.html" class="dsn-btn dsn-btn-shape d-flex effect-ajax">
                                                     <span class="icon background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path
-                                                                    d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                             </path>
                                                         </svg>
                                                     </span>
@@ -1223,25 +1108,20 @@
 
 
                 <!-- ==========  testimonial ========== -->
-                <section class="testimonal-personal section-margin dsn-swiper"
-                    data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"slide"}'>
+                <section class="testimonal-personal section-margin dsn-swiper" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"slide"}'>
                     <div class="container">
                         <div class="d-flex">
                             <div class="prev-paginate">
                                 <span class="dsn-icon dsn-icon-heading-color background-section">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
-                                        fill="">
-                                        <path
-                                            d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z"
-                                            fill=""></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                        <path d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z" fill=""></path>
                                     </svg>
                                 </span>
                             </div>
 
                             <div class="swiper-container swiper">
                                 <div class="swiper-wrapper">
-                                    <div
-                                        class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
+                                    <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
                                             <img class="has-border-radius" src="assets/img/testimonial/2.jpg" alt="">
                                             <h3 class="title">“CRESANT HELPED US DOUBLE SALES IN ONE YEAR”</h3>
@@ -1253,8 +1133,7 @@
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
+                                    <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
                                             <img class="has-border-radius" src="assets/img/testimonial/2.jpg" alt="">
                                             <h3 class="title">“CRESANT HELPED US DOUBLE SALES IN ONE YEAR”</h3>
@@ -1270,11 +1149,8 @@
 
                             <div class="next-paginate">
                                 <span class="dsn-icon dsn-icon-heading-color background-section">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15"
-                                        fill="">
-                                        <path
-                                            d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
-                                            fill=""></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                        <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
                                     </svg>
                                 </span>
                             </div>
@@ -1295,8 +1171,7 @@
                         </div>
 
                         <div class="dsn-posts" data-dsn-fx="22">
-                            <article
-                                class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
+                            <article class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
                                 <div class="box-img has-border-radius">
                                     <img class="cover-bg-img has-border-radius" src="assets/img/blog/1.jpg" alt="">
                                 </div>
@@ -1323,8 +1198,7 @@
                                         <a href="#" class="dsn-btn dsn-btn-shape d-flex">
                                             <span class="icon v-light background-section">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                     </path>
                                                 </svg>
                                             </span>
@@ -1336,8 +1210,7 @@
 
                             </article>
 
-                            <article
-                                class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
+                            <article class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
                                 <div class="box-img has-border-radius">
                                     <img class="cover-bg-img has-border-radius" src="assets/img/blog/2.jpg" alt="">
                                 </div>
@@ -1364,8 +1237,7 @@
                                         <a href="#" class="dsn-btn dsn-btn-shape d-flex">
                                             <span class="icon v-light background-section">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                     </path>
                                                 </svg>
                                             </span>
@@ -1377,8 +1249,7 @@
 
                             </article>
 
-                            <article
-                                class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
+                            <article class="dsn-item-post over-hidden p-relative box-hover-image w-100 d-grid grid-half-1 dsn-up">
                                 <div class="box-img has-border-radius">
                                     <img class="cover-bg-img has-border-radius" src="assets/img/blog/3.jpg" alt="">
                                 </div>
@@ -1405,8 +1276,7 @@
                                         <a href="#" class="dsn-btn dsn-btn-shape d-flex">
                                             <span class="icon v-light background-section">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                    <path
-                                                        d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                                     </path>
                                                 </svg>
                                             </span>
@@ -1430,16 +1300,14 @@
                             <div class="dsn-btn dsn-btn-shape d-flex">
 
                                 <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color"
-                                        data-animate-text="Let's talk!">
+                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
                                         <span>Let's talk!</span>
                                     </span>
                                 </a>
 
                                 <span class="icon background-main v-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path
-                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                         </path>
                                     </svg>
                                 </span>
@@ -1493,9 +1361,7 @@
 
                                 <div class="copyright">
                                     <p class="over-hidden">
-                                        © 2024 Digital Agency Designed by
-                                        <a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank">DSN
-                                            Grid</a>
+                                        <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
                                     </p>
                                 </div>
                             </div>

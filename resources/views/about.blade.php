@@ -625,7 +625,6 @@
                                         <li><a href="#">CONTACT</a></li>
                                     </ul>
                                 </div>
-
                                 <div class="dsn-logo main-logo d-flex align-items-center justify-content-center">
                                     <div class="main-logo">
                                         <a href="#" class="custom-logo-link main-brand effect-ajax">
@@ -637,9 +636,7 @@
 
                                 <div class="copyright">
                                     <p class="over-hidden">
-                                        © 2024 Digital Agency Designed by
-                                        <a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank">DSN
-                                            Grid</a>
+                                        <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
                                     </p>
                                 </div>
                             </div>

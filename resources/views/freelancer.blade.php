@@ -6,8 +6,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/img/logo-32x32.png" sizes="32x32" />
@@ -25,29 +24,25 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async"
-                        loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
                     <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
                 </span>
             </span>
@@ -66,10 +61,8 @@
 
         <span class="loading-text text-uppercase mt-30 dsn-container">Loading ...</span>
         <div class="bg-load background-section d-flex align-items-end dsn-bg-pattern bg-offset bg-square">
-            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10"
-                preserveAspectRatio="none">
-                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z"
-                    vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
             </svg>
         </div>
 
@@ -80,8 +73,7 @@
             <filter id="buttonFilter">
                 <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur">
                 </feGaussianBlur>
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
-                    result="buttonFilter"></feColorMatrix>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="buttonFilter"></feColorMatrix>
                 <feComposite in="SourceGraphic" in2="buttonFilter" operator="atop">
                 </feComposite>
                 <feBlend in="SourceGraphic" in2="buttonFilter"></feBlend>
@@ -93,8 +85,7 @@
         <!-- ========== Menu ========== -->
         <header id="site_menu_header" class="site-header d-none">
             <div class="main-logo">
-                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home"
-                    aria-current="page">
+                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
                     <img src="assets/img/logo-light.png" class="custom-logo logo-light" alt="EXFOLIO" />
                     <img src="assets/img/logo.png" class="custom-logo logo-dark" alt="EXFOLIO" />
                 </a>
@@ -109,11 +100,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -167,11 +156,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -188,11 +175,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -221,11 +206,9 @@
                                 <ul class="nav-item">
                                     <li class="dsn-back">
                                         <span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                                viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                                 <g>
-                                                    <path
-                                                        d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                                    <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                                 </g>
                                             </svg>
                                             <span class="text-toggle-back">
@@ -255,8 +238,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a title="horizontal Scroll" href="work-horizontal-scroll.html"
-                                    data-dsn-text="Portfolio">
+                                <a title="horizontal Scroll" href="work-horizontal-scroll.html" data-dsn-text="Portfolio">
                                     <span class="overflow">horizontal Scroll</span>
                                 </a>
                             </li>
@@ -276,11 +258,9 @@
                         <ul class="nav-item">
                             <li class="dsn-back">
                                 <span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
-                                        viewBox="0 0 400.004 400.004" xml:space="preserve">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px" viewBox="0 0 400.004 400.004" xml:space="preserve">
                                         <g>
-                                            <path
-                                                d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
+                                            <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757 c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072 c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315 C400.004,190.438,392.251,182.686,382.688,182.686z" />
                                         </g>
                                     </svg>
                                     <span class="text-toggle-back">
@@ -351,14 +331,12 @@
                         <div class="nav-content mt-30">
                             <h5 class="sm-title-block mb-10">Contact</h5>
                             <p class="links over-hidden mb-1">
-                                <a class="link-hover d-block" href="tel:00201004392260"
-                                    data-hover-text="+00 (2)012 3321">+00
+                                <a class="link-hover d-block" href="tel:00201004392260" data-hover-text="+00 (2)012 3321">+00
                                     (2)01004392260</a>
                                 <a class="link-hover" href="tel:00201024552406" data-hover-text="+00 (2)012 3321">+00
                                     (2)01024552406</a>
                             </p>
-                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com"
-                                    data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
+                            <p class="links over-hidden"><a class="link-hover" href="mailto:info@dsngrid.com" data-hover-text="info@dsngrid.com">info@dsngrid.com</a></p>
 
                         </div>
                     </div>
@@ -366,14 +344,10 @@
                         <div class="nav-social-inner p-relative">
                             <h5 class="sm-title-block mb-10">Follow us</h5>
                             <ul style="--dsn-li-name: dsn6;">
-                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Dribbble.</a></li>
-                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Behance.</a></li>
-                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Linkedin.</a></li>
-                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank"
-                                        rel="nofollow noopener noreferrer">Twitter.</a></li>
+                                <li style="--dsn-li-index: 0;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Dribbble.</a></li>
+                                <li style="--dsn-li-index: 1;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Behance.</a></li>
+                                <li style="--dsn-li-index: 2;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                                <li style="--dsn-li-index: 3;"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Twitter.</a></li>
                             </ul>
                         </div>
                     </div>
@@ -393,8 +367,7 @@
             </div>
             <div class="bg-load background-main"></div>
 
-            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
-                class="bg-load dsn-svg-transition">
+            <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
                 <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
             </svg>
 
@@ -405,33 +378,26 @@
 
 
             <!-- ========== Header ========== -->
-            <header id="dsn_header"
-                class="header-personal v-dark-head dsn-header-animation h-100-v dsn-header-animation">
+            <header id="dsn_header" class="header-personal v-dark-head dsn-header-animation h-100-v dsn-header-animation">
                 <div class="bg-gradient p-absolute w-100 h-100 top-0 left-0"></div>
                 <div class="p-relative dsn-hero-parallax-title h-100-v d-flex  z-index-1">
                     <div class="p-relative d-flex flex-column justify-content-center w-100  h-100">
-                        <div
-                            class="box-content d-flex flex-column z-index-1 align-items-center text-center dsn-container">
+                        <div class="box-content d-flex flex-column z-index-1 align-items-center text-center dsn-container">
                             <div id="hero_title">
                                 <h5 class="sub-heading">Hey — I'm</h5>
-                                <h1
-                                    class="ah-headline title-lg clip is-full-width text-upper d-flex justify-content-center">
+                                <h1 class="ah-headline title-lg clip is-full-width text-upper d-flex justify-content-center">
                                     Melissa T.Jones
                                 </h1>
 
                                 <div class="social-box p-relative mt-20">
                                     <ul class="d-flex justify-content-between gap-50">
-                                        <li><a class="text-upper heading-color sm-title-block" href="#0" target="_blank"
-                                                rel="nofollow noopener noreferrer">Dribbble.</a>
+                                        <li><a class="text-upper heading-color sm-title-block" href="#0" target="_blank" rel="nofollow noopener noreferrer">Dribbble.</a>
                                         </li>
-                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank"
-                                                rel="nofollow noopener noreferrer">Behance.</a>
+                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Behance.</a>
                                         </li>
-                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank"
-                                                rel="nofollow noopener noreferrer">Linkedin.</a>
+                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Linkedin.</a>
                                         </li>
-                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank"
-                                                rel="nofollow noopener noreferrer">Twitter.</a>
+                                        <li class="text-upper heading-color sm-title-block"><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Twitter.</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -449,10 +415,8 @@
                     <div class="container d-flex justify-content-between">
                         <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
 
-                            <a class="button background-section" href="#page_wrapper" rel="nofollow"
-                                data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                    data-animate-text="Scroll Down">
+                            <a class="button background-section" href="#page_wrapper" rel="nofollow" data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Scroll Down">
                                     <span>Scroll Down</span>
                                 </span>
                             </a>
@@ -468,10 +432,8 @@
 
                         <div class="dsn-btn dsn-btn-shape d-flex">
 
-                            <a class="button background-section effect-ajax" href="contact.html"
-                                data-dsn-text="Contact Mes">
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color"
-                                    data-animate-text="Contact Me">
+                            <a class="button background-section effect-ajax" href="contact.html" data-dsn-text="Contact Mes">
+                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Me">
                                     <span>Contact Me</span>
                                 </span>
                             </a>
@@ -507,16 +469,14 @@
                             <div class="dsn-btn dsn-btn-shape d-flex mt-30">
 
                                 <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color"
-                                        data-animate-text="Let's talk!">
+                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
                                         <span>Let's talk!</span>
                                     </span>
                                 </a>
 
                                 <span class="icon background-main v-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path
-                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                         </path>
                                     </svg>
                                 </span>
@@ -533,19 +493,12 @@
                             <a href="#" class="circular-button v-light background-main v-light background-main">
                                 <div class="circular-wrapper">
                                     <div class="circular-text v-middle">Services</div>
-                                    <img src="assets/img/circle-text.svg"
-                                        loading="lazy" alt=""
-                                        class="circular-text-image"
-                                         data-dsn-animation='{"from":{"rotate":0},"to":{"rotate":140},"responsive":["tablet","desktop"]}'
-
-                                    >
+                                    <img src="assets/img/circle-text.svg" loading="lazy" alt="" class="circular-text-image" data-dsn-animation='{"from":{"rotate":0},"to":{"rotate":140},"responsive":["tablet","desktop"]}'>
                                 </div>
                             </a>
                         </div>
 
-                        <div class="dsn-grid-layout award-move gap-30 section-move-image dsn-grid  align-items-center use-horizontal-scroll-image move-left"
-                            data-dsn-option='{"speed":5,"start":"80%","end":"0%","pin":false}'
-                            style="transform: translateX(50%)">
+                        <div class="dsn-grid-layout award-move gap-30 section-move-image dsn-grid  align-items-center use-horizontal-scroll-image move-left" data-dsn-option='{"speed":5,"start":"80%","end":"0%","pin":false}' style="transform: translateX(50%)">
 
                             <div class="services-item background-main has-border-radius">
                                 <span class="sm-p text-upper theme-color">Public</span>
@@ -563,8 +516,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -573,9 +525,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -596,8 +546,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -606,9 +555,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -629,8 +576,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -639,9 +585,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -662,8 +606,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -672,17 +615,14 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div class="dsn-grid-layout award-move gap-30 section-move-image dsn-grid  align-items-center use-horizontal-scroll-image move-right pt-80"
-                            data-dsn-option='{"speed":3,"start":"106.6%","end":"0%","pin":false,"center":true}'>
+                        <div class="dsn-grid-layout award-move gap-30 section-move-image dsn-grid  align-items-center use-horizontal-scroll-image move-right pt-80" data-dsn-option='{"speed":3,"start":"106.6%","end":"0%","pin":false,"center":true}'>
 
 
                             <div class="services-item background-main has-border-radius">
@@ -701,8 +641,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -711,9 +650,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -734,8 +671,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -744,9 +680,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -767,8 +701,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -777,9 +710,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -800,8 +731,7 @@
 
                                     <span class="icon background-main theme-color">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                            <path
-                                                d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
                                         </svg>
                                     </span>
@@ -810,9 +740,7 @@
 
                                 <div class="icon-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 62 61" fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z"
-                                            fill="#121212"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27 8.5V26.5C27 30.0898 24.0899 33 20.5 33C16.9102 33 14 30.0899 14 26.5V8.5C14 4.91015 16.9102 2 20.5 2C24.0899 2 27 4.91015 27 8.5ZM12 8.5C12 3.80558 15.8056 0 20.5 0C25.1944 0 29 3.80558 29 8.5V26.5C29 31.1944 25.1944 35 20.5 35C15.8056 35 12 31.1944 12 26.5V8.5ZM41.5 22C44.5376 22 47 19.5376 47 16.5C47 13.4624 44.5376 11 41.5 11C38.4624 11 36 13.4624 36 16.5C36 19.5376 38.4624 22 41.5 22ZM41.5 24C45.6421 24 49 20.6421 49 16.5C49 12.3579 45.6421 9 41.5 9C37.3579 9 34 12.3579 34 16.5C34 20.6421 37.3579 24 41.5 24ZM42.8632 58.6403C39.1021 60.1982 35.071 61 31 61C26.929 61 22.8979 60.1982 19.1368 58.6403C15.3757 57.0824 11.9583 54.7989 9.07968 51.9203C6.20107 49.0417 3.91763 45.6243 2.35973 41.8632C0.801836 38.1021 0 34.071 0 30V29H0.999999L7.5 29L7.5 31L2.01725 31C2.13687 34.4672 2.87779 37.8876 4.20749 41.0978C5.66487 44.6163 7.801 47.8132 10.4939 50.5061C13.1868 53.199 16.3837 55.3351 19.9022 56.7925C23.4206 58.2499 27.1917 59 31 59C34.8083 59 38.5794 58.2499 42.0978 56.7925C45.6163 55.3351 48.8132 53.199 51.5061 50.5061C54.199 47.8132 56.3351 44.6163 57.7925 41.0978C59.1222 37.8877 59.8631 34.4672 59.9828 31L33.5 31V29L61 29H62V30C62 34.071 61.1982 38.1021 59.6403 41.8632C58.0824 45.6243 55.7989 49.0417 52.9203 51.9203C50.0417 54.7989 46.6243 57.0824 42.8632 58.6403Z" fill="#121212"></path>
                                     </svg>
                                 </div>
                             </div>
@@ -850,9 +778,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="90%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="90%"></span>
                                             </div>
                                             <span class="number mt-5">90%</span>
 
@@ -869,9 +795,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="84%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="84%"></span>
                                             </div>
                                             <span class="number mt-5">84%</span>
 
@@ -888,9 +812,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="74%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="74%"></span>
                                             </div>
                                             <span class="number mt-5">74%</span>
 
@@ -907,9 +829,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="90%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="90%"></span>
                                             </div>
                                             <span class="number mt-5">90%</span>
 
@@ -926,9 +846,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="77%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="77%"></span>
                                             </div>
                                             <span class="number mt-5">77%</span>
 
@@ -945,9 +863,7 @@
                                         <div class="skills-inner w-100 ">
 
                                             <div class="bar-progress background-section has-border-radius">
-                                                <span
-                                                    class="fill dsn-animate-skill background-heading has-border-radius"
-                                                    data-dsn-width="92%"></span>
+                                                <span class="fill dsn-animate-skill background-heading has-border-radius" data-dsn-width="92%"></span>
                                             </div>
 
                                             <span class="number mt-5">92%</span>
@@ -962,8 +878,7 @@
                 <!-- ========== End Skills ========== -->
 
                 <!-- ==========   Work ========== -->
-                <section class="our-work work-massonary  section-margin not-filter dsn-filter "
-                    data-dsn-option='{"speed" : 15 , "start" : "-40px top"}'>
+                <section class="our-work work-massonary  section-margin not-filter dsn-filter " data-dsn-option='{"speed" : 15 , "start" : "-40px top"}'>
                     <div class="container">
                         <div class="section-title mb-70 dsn-fill d-flex flex-column">
                             <span class="sub-heading mb-5">Our Latest Blogs</span>
@@ -978,10 +893,8 @@
                             <div class="dsn-posts" data-dsn-gap="30px">
                                 <article class="dsn-item-post grid-item p-relative has-border-radius dsn-up">
 
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="7">
-                                        <img src="assets/img/portfolio/project1/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="7">
+                                        <img src="assets/img/portfolio/project1/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -999,7 +912,7 @@
                                                         <br> The Iconic <span class="fw-200">©
                                                             2021</span></a>
                                                 </h2>
-        
+
                                                 <a href="project-1.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1007,7 +920,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
 
@@ -1016,16 +929,10 @@
 
                                 </article>
 
-                                <article class="dsn-item-post grid-item p-relative has-border-radius "
+                                <article class="dsn-item-post grid-item p-relative has-border-radius " data-dsn-animation='{"from":{"y":"0%"},"to":{"y":"30%"},"responsive":["desktop"]}'>
 
-                                         data-dsn-animation='{"from":{"y":"0%"},"to":{"y":"30%"},"responsive":["desktop"]}'
-
-                                >
-
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="5">
-                                        <img src="assets/img/portfolio/project2/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="5">
+                                        <img src="assets/img/portfolio/project2/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -1042,7 +949,7 @@
                                                     <a href="project-2.html" class="effect-ajax" data-dsn-ajax="work">Me <br>
                                                         Myself and i <span class="fw-200">© 2024</span></a>
                                                 </h2>
-        
+
                                                 <a href="project-2.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1050,7 +957,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
 
@@ -1061,10 +968,8 @@
 
                                 <article class="dsn-item-post grid-item p-relative has-border-radius dsn-up">
 
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="3">
-                                        <img src="assets/img/portfolio/project3/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="3">
+                                        <img src="assets/img/portfolio/project3/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -1081,7 +986,7 @@
                                                     <a href="project-3.html" class="effect-ajax" data-dsn-ajax="work">YOUR <br>
                                                         DREAM CAR <span class="fw-200">© 2024</span></a>
                                                 </h2>
-        
+
                                                 <a href="project-3.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1089,7 +994,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
 
@@ -1098,14 +1003,10 @@
 
                                 </article>
 
-                                <article class="dsn-item-post grid-item p-relative has-border-radius align-self-end" data-dsn-triggerhook="top"
-                                         data-dsn-animation='{"from":{"y":"0%"},"to":{"y":"-70%"},"responsive":["desktop"]}'
-                                >
+                                <article class="dsn-item-post grid-item p-relative has-border-radius align-self-end" data-dsn-triggerhook="top" data-dsn-animation='{"from":{"y":"0%"},"to":{"y":"-70%"},"responsive":["desktop"]}'>
 
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="6">
-                                        <img src="assets/img/portfolio/project4/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="6">
+                                        <img src="assets/img/portfolio/project4/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -1122,7 +1023,7 @@
                                                     <a href="project-4.html" class="effect-ajax" data-dsn-ajax="work">The <br>
                                                         Hills - Nissan <span class="fw-200">© 2019</span></a>
                                                 </h2>
-        
+
                                                 <a href="project-4.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1130,7 +1031,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
                                         </div>
@@ -1140,10 +1041,8 @@
 
                                 <article class="dsn-item-post grid-item p-relative has-border-radius dsn-up">
 
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="6">
-                                        <img src="assets/img/portfolio/project5/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="6">
+                                        <img src="assets/img/portfolio/project5/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -1160,7 +1059,7 @@
                                                     <a href="project-5.html" class="effect-ajax" data-dsn-ajax="work">Church
                                                         <br> Copenhagen Denmark</a>
                                                 </h2>
-        
+
                                                 <a href="project-5.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1168,7 +1067,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
                                         </div>
@@ -1178,10 +1077,8 @@
 
                                 <article class="dsn-item-post grid-item p-relative has-border-radius dsn-up">
 
-                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius"
-                                        data-dsn-grid="move-up" data-overlay="5">
-                                        <img src="assets/img/portfolio/project6/1.jpg"
-                                            class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                    <div class="box-image w-100 h-100 over-hidden before-z-index dsn-swiper-parallax-transform has-border-radius" data-dsn-grid="move-up" data-overlay="5">
+                                        <img src="assets/img/portfolio/project6/1.jpg" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
                                     </div>
 
                                     <div class="post-content z-index-1 d-flex align-items-end">
@@ -1195,9 +1092,9 @@
 
                                             <div class="d-flex justify-content-between align-items-center mt-15">
                                                 <h2 class="post-title word-wrap d-inline-block title-block text-upper">
-                                                    <a href="project-6.html" class="effect-ajax" data-dsn-ajax="work">LOST <br>  RENDER <span class="fw-200">© 2023</span></a>
+                                                    <a href="project-6.html" class="effect-ajax" data-dsn-ajax="work">LOST <br> RENDER <span class="fw-200">© 2023</span></a>
                                                 </h2>
-        
+
                                                 <a href="project-6.html" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                                     <span class="icon v-dark background-section">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
@@ -1205,7 +1102,7 @@
                                                             </path>
                                                         </svg>
                                                     </span>
-        
+
                                                 </a>
                                             </div>
                                         </div>
@@ -1220,10 +1117,8 @@
                 <!-- ==========   End Work ========== -->
 
                 <!-- ==========  testimonial ========== -->
-                <section class="testimonal-p dsn-swiper mb-section"
-                    data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"slide"}'>
-                    <div class="p-relative dsn-marquee v-dark background-section pb-15 mb-70 over-hidden"
-                        data-dsn-option='{"speed":0,"duplicatedNumber":7,"duration":7000,"gap":60,"delayBeforeStart":1000,"direction":"left","duplicated":true,"pauseOnHover":false,"startVisible":true,"pauseOnCycle":true,"allowCss3Support":true}'>
+                <section class="testimonal-p dsn-swiper mb-section" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":1,"speed":1000,"effect":"slide"}'>
+                    <div class="p-relative dsn-marquee v-dark background-section pb-15 mb-70 over-hidden" data-dsn-option='{"speed":0,"duplicatedNumber":7,"duration":7000,"gap":60,"delayBeforeStart":1000,"direction":"left","duplicated":true,"pauseOnHover":false,"startVisible":true,"pauseOnCycle":true,"allowCss3Support":true}'>
                         <h2 class="dsn-text-marquee d-flex title-lg text-upper">WE ARE KREYDA</h2>
                     </div>
 
@@ -1231,8 +1126,7 @@
                         <div class="testimonal-inner background-section has-border-radius">
                             <div class="swiper-container swiper">
                                 <div class="swiper-wrapper">
-                                    <div
-                                        class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
+                                    <div class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
 
                                         <p class="title-block heading-color text-upper">"Working with Marcus on our
                                             latest campaign was nothing short of remarkable. His unique style gave our
@@ -1240,8 +1134,7 @@
 
                                         <div class="auther-inner d-flex justify-content-center mt-20">
                                             <div class="box-img">
-                                                <img class="cover-bg-img has-border-radius"
-                                                    src="assets/img/testimonial/2.jpg" alt="">
+                                                <img class="cover-bg-img has-border-radius" src="assets/img/testimonial/2.jpg" alt="">
                                             </div>
 
                                             <div class="auther d-flex flex-column justify-content-center">
@@ -1251,8 +1144,7 @@
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
+                                    <div class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
 
                                         <p class="title-block heading-color text-upper">"Working with Marcus on our
                                             latest campaign was nothing short of remarkable. His unique style gave our
@@ -1260,8 +1152,7 @@
 
                                         <div class="auther-inner d-flex justify-content-center mt-20">
                                             <div class="box-img">
-                                                <img class="cover-bg-img has-border-radius"
-                                                    src="assets/img/testimonial/2.jpg" alt="">
+                                                <img class="cover-bg-img has-border-radius" src="assets/img/testimonial/2.jpg" alt="">
                                             </div>
 
                                             <div class="auther d-flex flex-column justify-content-center">
@@ -1271,8 +1162,7 @@
                                         </div>
                                     </div>
 
-                                    <div
-                                        class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
+                                    <div class="swiper-slide testimonal-item box-padding text-center d-flex flex-column justify-content-center align-items-center">
 
                                         <p class="title-block heading-color text-upper">"Working with Marcus on our
                                             latest campaign was nothing short of remarkable. His unique style gave our
@@ -1280,8 +1170,7 @@
 
                                         <div class="auther-inner d-flex justify-content-center mt-20">
                                             <div class="box-img">
-                                                <img class="cover-bg-img has-border-radius"
-                                                    src="assets/img/testimonial/2.jpg" alt="">
+                                                <img class="cover-bg-img has-border-radius" src="assets/img/testimonial/2.jpg" alt="">
                                             </div>
 
                                             <div class="auther d-flex flex-column justify-content-center">
@@ -1296,22 +1185,16 @@
                             <div class="d-flex dsn-paginate border-top">
                                 <div class="prev-paginate">
                                     <span class="dsn-icon dsn-icon-heading-color">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
-                                            viewBox="0 0 17 15" fill="">
-                                            <path
-                                                d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z"
-                                                fill=""></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                            <path d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z" fill=""></path>
                                         </svg>
                                     </span>
                                 </div>
 
                                 <div class="next-paginate">
                                     <span class="dsn-icon dsn-icon-heading-color">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15"
-                                            viewBox="0 0 17 15" fill="">
-                                            <path
-                                                d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z"
-                                                fill=""></path>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                            <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
                                         </svg>
                                     </span>
                                 </div>
@@ -1344,11 +1227,8 @@
                                             </div>
                                         </div>
                                         <div class="post-time-wrap">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6 0C2.69141 0 0 2.69141 0 6C0 9.30859 2.69141 12 6 12C9.30859 12 12 9.30859 12 6C12 2.69141 9.30859 0 6 0ZM6 1C8.76758 1 11 3.23242 11 6C11 8.76758 8.76758 11 6 11C3.23242 11 1 8.76758 1 6C1 3.23242 3.23242 1 6 1ZM5.5 2V6.5H9V5.5H6.5V2H5.5Z"
-                                                    fill="#808080" />
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 0C2.69141 0 0 2.69141 0 6C0 9.30859 2.69141 12 6 12C9.30859 12 12 9.30859 12 6C12 2.69141 9.30859 0 6 0ZM6 1C8.76758 1 11 3.23242 11 6C11 8.76758 8.76758 11 6 11C3.23242 11 1 8.76758 1 6C1 3.23242 3.23242 1 6 1ZM5.5 2V6.5H9V5.5H6.5V2H5.5Z" fill="#808080" />
                                             </svg>
 
                                             <span class="post-time">Oct 15, 2024</span>
@@ -1375,11 +1255,8 @@
                                             </div>
                                         </div>
                                         <div class="post-time-wrap">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M6 0C2.69141 0 0 2.69141 0 6C0 9.30859 2.69141 12 6 12C9.30859 12 12 9.30859 12 6C12 2.69141 9.30859 0 6 0ZM6 1C8.76758 1 11 3.23242 11 6C11 8.76758 8.76758 11 6 11C3.23242 11 1 8.76758 1 6C1 3.23242 3.23242 1 6 1ZM5.5 2V6.5H9V5.5H6.5V2H5.5Z"
-                                                    fill="#808080" />
+                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 0C2.69141 0 0 2.69141 0 6C0 9.30859 2.69141 12 6 12C9.30859 12 12 9.30859 12 6C12 2.69141 9.30859 0 6 0ZM6 1C8.76758 1 11 3.23242 11 6C11 8.76758 8.76758 11 6 11C3.23242 11 1 8.76758 1 6C1 3.23242 3.23242 1 6 1ZM5.5 2V6.5H9V5.5H6.5V2H5.5Z" fill="#808080" />
                                             </svg>
 
                                             <span class="post-time">Oct 15, 2024</span>
@@ -1410,16 +1287,14 @@
                             <div class="dsn-btn dsn-btn-shape d-flex">
 
                                 <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color"
-                                        data-animate-text="Let's talk!">
+                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
                                         <span>Let's talk!</span>
                                     </span>
                                 </a>
 
                                 <span class="icon background-main v-light">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path
-                                            d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                         </path>
                                     </svg>
                                 </span>
@@ -1473,9 +1348,7 @@
 
                                 <div class="copyright">
                                     <p class="over-hidden">
-                                        © 2024 Digital Agency Designed by
-                                        <a href="#0" class="link-hover" data-hover-text="DSN Grid" target="_blank">DSN
-                                            Grid</a>
+                                        <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
                                     </p>
                                 </div>
                             </div>
