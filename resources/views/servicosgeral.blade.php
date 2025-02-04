@@ -56,7 +56,7 @@
                 <div class="pl-30 pr-30">
                     <div class="box-img p-relative before-z-index has-border-radius" data-overlay="5" data-dsn-grid="move-up">
                         @if($servicoGeral->video)
-                        <video width="100%" controls>
+                        <video width="100%" autoplay loop muted>
                             <source src="{{ asset("../storage/$servicoGeral->video") }}" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
