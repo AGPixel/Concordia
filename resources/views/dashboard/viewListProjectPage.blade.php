@@ -63,6 +63,36 @@
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="InputVideo">Video</label><br>
+                                @if(isset($servicoGeral->video))
+                                <video width="160" height="120" controls>
+                                    <source src="{{ asset("../storage/$servicoGeral->video") }}" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                @else
+                                <img class="m-bot-05 image_preview" src="{{ asset("/assets/img/sem_foto.png") }}" alt="">
+                                @endif
+                                <div class="input-group">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="InputVideo">
+                                        <label class="custom-file-label" for="InputVideo" id="InputVideoPreview">Clique para escolher o arquivo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 m-bot-1em">
+                        <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="saveServicoGeral()">
+                            <i class="fa fa-save"></i>
+                            &nbsp;Save
+                        </button>
+                    </div>
+                </div>
+                <!--
+                <div class="row">
                     <div class="col-md-10">
                     </div>
                     <div class="col-md-2 col-flex m-bot-1em">
@@ -72,6 +102,7 @@
                         </button>
                     </div>
                 </div>
+                -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card card-primary">
@@ -91,8 +122,8 @@
                                         @foreach($projects as $id => $project)
                                         <tr>
                                             <td>{{ $project->id }}</td>
-                                            <td>{{ $project->title }}</td>
-                                            <td>{{ $project->description }}</td>
+                                            <td>{{ $project->title_1 }}</td>
+                                            <td>{{ $project->description_1 }}</td>
                                             <td>
                                                 @if($project->active)
                                                 <button type="button" class="btn btn-success btn-block btn-flat bt-width-toogle" onclick="updateActiveProject({{$project}})">

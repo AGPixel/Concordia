@@ -136,7 +136,7 @@ class SiteController extends Controller
         return view('portifolio',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
-    public function savePortifolioPage(Request $request) {
+    public function savePortifolioGeral(Request $request) {
         $this->service->savePortifolioGeral($request->all());
         
         return true;
@@ -158,6 +158,27 @@ class SiteController extends Controller
         $this->service->updateActiveProject($request->all());
         
         return true;
+    }
+
+    public function saveServicoGeral(Request $request) {
+        $this->service->saveServicoGeral($request->all());
+        
+        return true;
+    }
+
+    public function servicoGeral() {
+        $servicos = $this->service->projectActive();
+        $metaTags = $this->service->metaTags();
+
+        $menuWorks = $this->service->workActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        $menuProjects = $this->service->projectActive();
+
+        return view('servicosgeral',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'servicos' => $servicos, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function servico($id) {

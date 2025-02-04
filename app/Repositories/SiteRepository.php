@@ -8,6 +8,7 @@ use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
 use App\Models\PortifolioGeral;
+use App\Models\ServicoGeral;
 use App\Models\Project;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
@@ -133,6 +134,21 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- WORK -------------------------------------
+
+     // ------------------------------------- SERVICO GERAL -------------------------------------
+
+     public function servicoGeral() {
+          $modelServicoGeral = new ServicoGeral();
+          return $modelServicoGeral::first();
+     }
+
+     public function saveServicoGeral(array $arr) {
+          $servicoGeral = $this->servicoGeral();
+          $servicoGeral->fill($arr);
+          $servicoGeral->save();
+     }
+
+     // ------------------------------------- SERVICO GERAL -------------------------------------
 
      // ------------------------------------- PROJECT -------------------------------------
 

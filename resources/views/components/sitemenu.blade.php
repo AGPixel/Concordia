@@ -21,7 +21,7 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Home" href="/portifolio">
+                <a title="Portifolio" href="/portifolio">
                     <span class="overflow ">
                         Portfolio
                     </span>
@@ -38,7 +38,7 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Home" href="#0">
+                <a title="Serviço" href="/servico">
                     <span class="overflow ">Serviços</span>
                 </a>
                 <ul class="nav-item">
@@ -52,12 +52,12 @@
                 </ul>
             </li>
             <li class="nav-item ">
-                <a title="contato" href="/contato">
+                <a title="Contato" href="/contato">
                     <span class="overflow">Contato</span>
                 </a>
             </li>
             <li class="nav-item has-sub-menu">
-                <a title="" href="">
+                <a title="Lingua" href="">
                     <span class="overflow">Language</span>
                 </a>
                 <ul class="nav-item">

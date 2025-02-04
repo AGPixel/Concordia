@@ -195,6 +195,35 @@ class SiteService extends BaseService
 
     // ------------------------------------- WORK -------------------------------------
 
+    // ------------------------------------- SERVICO GERAL -------------------------------------
+
+    public function servicoGeral() {
+        return $this->repository->servicoGeral();
+    }
+
+    public function saveServicoGeral(array $arr) {
+        $arr = $this->updateServicoFile($arr);
+        $this->repository->saveServicoGeral($arr);
+    }
+
+    private function uploadServicoFile(array $arr) {
+
+        $arr['video'] = $this->uploadVideoValue($arr['video']);
+
+        return $arr;
+    }
+
+    private function updateServicoFile(array $arr) {
+
+        $servico = $this->servicoGeral();
+        
+        $arr['video'] = $this->updateVideoValue($servico->video,$arr['video']);
+
+        return $arr;
+    }
+
+    // ------------------------------------- SERVICO GERAL -------------------------------------
+
     // ------------------------------------- PROJECT -------------------------------------
 
     public function projectById($id) {
@@ -272,6 +301,11 @@ class SiteService extends BaseService
 
     // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
 
+    private function uploadVideoValue($arrImg) {
+        if ($arrImg) return $this->saveVideoFile($arrImg);
+        return $arrImg;
+    }
+
     private function uploadImageValue($arrImg) {
         if ($arrImg) return $this->saveFile($arrImg);
         return $arrImg;
@@ -280,7 +314,17 @@ class SiteService extends BaseService
     private function updateImageValue($img,$arrImg) {
         if ($arrImg) {
             $arrImg = $this->uploadImageValue($arrImg);
-            if ($img) $this->deleteImage($img);
+            if ($img) $this->deleteFile($img);
+        } else {
+            $arrImg = $img;
+        }
+        return $arrImg;
+    }
+
+    private function updateVideoValue($img,$arrImg) {
+        if ($arrImg) {
+            $arrImg = $this->uploadVideoValue($arrImg);
+            if ($img) $this->deleteFile($img);
         } else {
             $arrImg = $img;
         }
@@ -296,7 +340,16 @@ class SiteService extends BaseService
         return $safeName;
     }
 
-    private function deleteImage($fileToDelete) {
+    private function saveVideoFile($fileToSave) {
+        $fileToSave = explode(',', $fileToSave);
+        $file       = base64_decode($fileToSave[1]);
+        $safeName   = Str::random(10).'.'.'mp4';
+        $path       = public_path()."\\storage\\";
+        file_put_contents($path.$safeName, $file);
+        return $safeName;
+    }
+
+    private function deleteFile($fileToDelete) {
         $path = public_path()."\\storage\\";
         if ($fileToDelete) unlink($path.$fileToDelete);
     }

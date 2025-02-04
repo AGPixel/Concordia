@@ -89,8 +89,9 @@ class HomeController extends Controller
 
     public function listProjectPage() {
         $projects = $this->siteService->project();
+        $servicoGeral = $this->siteService->servicoGeral();
 
-        return view('dashboard.viewListProjectPage', ['projects' => $projects]);
+        return view('dashboard.viewListProjectPage', ['projects' => $projects, 'servicoGeral' => $servicoGeral]);
     }
 
     public function projectPage($id) {

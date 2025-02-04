@@ -9,6 +9,7 @@ use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
 use App\Models\PortifolioGeral;
+use App\Models\ServicoGeral;
 use App\Models\Project;
 use App\Models\MetaTags;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -98,31 +99,31 @@ class DatabaseSeeder extends Seeder
         $work->active = true;
         $work->save();
 
+        $servicoGeral = new ServicoGeral();
+        $servicoGeral->video = '';
+        $servicoGeral->save();
+
         $project = new Project();
-        $project->title = 'Titulo Ativo';
-        $project->work_1 = 'Project work Ativo';
-        $project->url_project = 'http://google.com';
+        $project->title_1 = 'Serviço 1';
+        $project->description_1 = 'Descrição 1 serviço 1';
+        $project->title_2 = 'Serviço 1 titulo 2';
+        $project->description_2 = 'Descrição 2 serviço 1';
         $project->active = true;
         $project->save();
 
         $project = new Project();
-        $project->title = 'Titulo Inativo';
-        $project->work_1 = 'Project work Inativo';
-        $project->url_project = 'http://facebook.com';
-        $project->active = false;
-        $project->save();
-
-        $project = new Project();
-        $project->title = 'Titulo Um';
-        $project->work_1 = 'Project work Um';
-        $project->url_project = 'http://instagram.com';
+        $project->title_1 = 'Serviço 2';
+        $project->description_1 = 'Descrição 1 serviço 2';
+        $project->title_2 = 'Serviço 2 titulo 2';
+        $project->description_2 = 'Descrição 2 serviço 2';
         $project->active = true;
         $project->save();
 
         $project = new Project();
-        $project->title = 'Titulo Dois';
-        $project->work_1 = 'Project work Dois';
-        $project->url_project = 'http://globo.com';
+        $project->title_1 = 'Serviço 3';
+        $project->description_1 = 'Descrição 1 serviço 3';
+        $project->title_2 = 'Serviço 3 titulo 2';
+        $project->description_2 = 'Descrição 2 serviço 3';
         $project->active = true;
         $project->save();
 
