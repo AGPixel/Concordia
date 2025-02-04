@@ -2,10 +2,11 @@
     <div class="d-grid grid-md-3 align-items-center">
         <div class="links">
             <ul class="d-flex">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">WORK</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/sobre">Sobre</a></li>
+                <li><a href="/portifolio">Portifolio</a></li>
+                <li><a href="/servico">Serviços</a></li>
+                <li><a href="/contato">Contato</a></li>
             </ul>
         </div>
 
