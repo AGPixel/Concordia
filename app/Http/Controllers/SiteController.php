@@ -167,6 +167,7 @@ class SiteController extends Controller
     }
 
     public function servicoGeral() {
+        $servicoGeral = $this->service->servicoGeral();
         $servicos = $this->service->projectActive();
         $metaTags = $this->service->metaTags();
 
@@ -178,7 +179,13 @@ class SiteController extends Controller
 
         $menuProjects = $this->service->projectActive();
 
-        return view('servicosgeral',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'servicos' => $servicos, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('servicosgeral',['metaTags' => $metaTags, 
+                                     'index_text' => $index_text, 
+                                     'contact' => $contact, 
+                                     'servicos' => $servicos, 
+                                     'servicoGeral' => $servicoGeral,
+                                     'menuWorks' => $menuWorks, 
+                                     'menuProjects' => $menuProjects]);
     }
 
     public function servico($id) {

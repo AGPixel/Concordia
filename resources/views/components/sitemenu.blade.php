@@ -41,15 +41,17 @@
                 <a title="Serviço" href="/servico">
                     <span class="overflow ">Serviços</span>
                 </a>
+                <!--
                 <ul class="nav-item">
-                    @foreach($menuProjects as $id => $menuProject)
+                    @ foreach($menuProjects as $id => $menuProject)
                     <li class="nav-item">
-                        <a title="Hover" href="/servico/{{ $menuProject->id }}" data-dsn-text="Serviço">
-                            <span class="overflow">{{ $menuProject->title }}</span>
+                        <a title="Hover" href="/servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
+                            <span class="overflow">{ { $menuProject->title }}</span>
                         </a>
                     </li>
-                    @endforeach
+                    @ endforeach
                 </ul>
+                -->
             </li>
             <li class="nav-item ">
                 <a title="Contato" href="/contato">

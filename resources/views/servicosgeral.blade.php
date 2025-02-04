@@ -55,8 +55,14 @@
 
                 <div class="pl-30 pr-30">
                     <div class="box-img p-relative before-z-index has-border-radius" data-overlay="5" data-dsn-grid="move-up">
-                        <!-- video -->
+                        @if($servicoGeral->video)
+                        <video width="100%" controls>
+                            <source src="{{ asset("../storage/$servicoGeral->video") }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        @else
                         <img class="cover-bg-img has-border-radius" src="assets/img/portfolio/project2/1.jpg" alt="">
+                        @endif
                     </div>
                 </div>
 
@@ -64,6 +70,7 @@
             <!-- ========== End Header ========== -->
 
             <!-- inicio product -->
+            @foreach($servicos as $id => $s)
             <div id="page_wrapper" class="wrapper">
 
                 <div class="box-move section-padding background-section">
@@ -73,11 +80,11 @@
                             <div class="text pinned-scroll p-relative">
                                 <div class=" pinned-element">
                                     <span class="sub-heading mb-15">Overview</span>
-                                    <h3 class="title text-upper mb-30">The Challenge</h3>
+                                    <h3 class="title text-upper mb-30">{{ $s->title_1 ? $s->title_1 : 'title_1' }}</h3>
 
-                                    <p>Recognizing the brand's commitment to sustainability and natural ingredients, we
-                                        crafted a visual and narrative identity that resonate deeply with eco-conscious
-                                        consumers.</p>
+                                    <p>
+                                        {{ $s->description_1 ? $s->description_1 : 'description_1' }}
+                                    </p>
 
                                 </div>
                             </div>
@@ -85,7 +92,7 @@
                             <div class="box-img">
                                 <div class="d-grid">
                                     <div class="img-item h-v-80">
-                                        <img class="has-border-radius cover-bg-img" src="assets/img/portfolio/project2/2.jpg" alt="">
+                                        <img class="has-border-radius cover-bg-img" src="{{ isset($s->img_1) ? asset("../storage/$s->img_1") : asset("assets/img/portfolio/project2/2.jpg") }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -99,19 +106,19 @@
                             <div class="dsn-posts flexibly-hover gap-30">
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project2/3.jpg" class="cover-bg-img" alt="" />
+                                        <img class="has-border-radius cover-bg-img" src="{{ isset($s->img_2) ? asset("../storage/$s->img_2") : asset("assets/img/portfolio/project2/3.jpg") }}" alt="">
                                     </div>
                                 </div>
 
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project2/4.jpg" class="cover-bg-img" alt="" />
+                                        <img class="has-border-radius cover-bg-img" src="{{ isset($s->img_3) ? asset("../storage/$s->img_3") : asset("assets/img/portfolio/project2/4.jpg") }}" alt="">
                                     </div>
                                 </div>
 
                                 <div class="dsn-item-post grid-item p-relative">
                                     <div class="box-image-bg w-100 h-500">
-                                        <img src="assets/img/portfolio/project2/5.jpg" class="cover-bg-img" alt="" />
+                                        <img class="has-border-radius cover-bg-img" src="{{ isset($s->img_4) ? asset("../storage/$s->img_4") : asset("assets/img/portfolio/project2/5.jpg") }}" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -121,16 +128,16 @@
 
                 <div class="section-margin text-center">
                     <div class="container">
-                        <h3 class="title text-upper mb-30">Headphone product?</h3>
-                        <p class="max-w750">In order to create a more simple design, a unique brand concept was applied
-                            to the headphone. Burberry makes products that are classy yet modern I decided to focus on
-                            making a modern yet classy looking pair of headsets.
-                            I looked for ways to design headphones that look good at any place and any time.</p>
+                        <h3 class="title text-upper mb-30">{{ $s->title_2 ? $s->title_2 : 'title_2' }}</h3>
+                        <p class="max-w750">
+                            {{ $s->description_2 ? $s->description_2 : 'description_2' }}
+                        </p>
                     </div>
                 </div>
-                <!-- end product -->
 
             </div>
+            @endforeach
+            <!-- end product -->
 
         </div>
 
@@ -159,33 +166,7 @@
             </div>
 
             <div class="container">
-                <footer class="footer-personal v-light mt-50">
-                    <div class="d-grid grid-md-3 align-items-center">
-                        <div class="links">
-                            <ul class="d-flex">
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">ABOUT</a></li>
-                                <li><a href="#">WORK</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="dsn-logo main-logo d-flex align-items-center justify-content-center">
-                            <div class="main-logo">
-                                <a href="#" class="custom-logo-link main-brand effect-ajax">
-                                    <img class="custom-logo logo-light" src="assets/img/logo-light.png" alt="">
-                                    <img class="custom-logo logo-dark" src="assets/img/logo.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="copyright">
-                            <p class="over-hidden">
-                                <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
-                            </p>
-                        </div>
-                    </div>
-                </footer>
+                @include('components.sitefooter')
             </div>
         </section>
 
