@@ -13,6 +13,7 @@ Route::get('/portifolio', [SiteController::class, 'portifolioGeral'])->name('sit
 Route::get('/portifolio/{id}', [SiteController::class, 'portifolio'])->name('site.portifolio');
 Route::get('/servico', [SiteController::class, 'servicoGeral'])->name('site.servico-geral');
 Route::get('/servico/{id}', [SiteController::class, 'servico'])->name('site.servico');
+Route::get('/oportunidades', [SiteController::class, 'oportunidades'])->name('site.oportunidades');
 Route::get('/oportunidade-detalhe', [SiteController::class, 'oportunidadeDetalhe'])->name('site.oportunidade-detalhe');
 Route::get('/propriedade-detalhe', [SiteController::class, 'propriedadeDetalhe'])->name('site.propriedade-detalhe');
 
