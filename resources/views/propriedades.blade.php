@@ -52,13 +52,14 @@
             <div id="page_wrapper" class="wrapper">
 
                 <!-- ========== Portfolio ========== -->
-                <div class="p-relative mb-section work-massonary-grid">
+                <div class="p-relative work-massonary-grid mb-section">
                     <div class="p-relative">
                         <div class="root-posts has-filter">
-                            <div class="dsn-container">
-                                <div class="dsn-posts hover-box-item d-grid grid-lg-2 dsn-isotope use-filter" data-dsn-gap="30px">
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
+                            <div class="dsn-container">
+                                <div class="dsn-posts hover-box-item d-grid grid-lg-3 dsn-isotope use-filter" data-dsn-gap="30px">
+
+                                    <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
 
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -70,7 +71,7 @@
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                     </path>
                                                 </svg>
-                                                <span class="background-section heading-color">2023</span>
+                                                <span class="background-section heading-color">2021</span>
                                             </div>
                                             <img src="assets/img/portfolio/project1/1.jpg" class="cover-bg-img" alt="" />
                                         </div>
@@ -106,7 +107,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion sports">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative sports photography">
 
                                         <div class="box-image-bg has-border-radius w-100 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -118,7 +119,7 @@
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                     </path>
                                                 </svg>
-                                                <span class="background-section heading-color">2022</span>
+                                                <span class="background-section heading-color">2024</span>
                                             </div>
 
                                             <img src="assets/img/portfolio/project2/1.jpg" class="cover-bg-img" alt="" />
@@ -155,7 +156,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative sport photographys">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion photography">
 
                                         <div class="box-image-bg has-border-radius w-100 h-v-60 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -203,7 +204,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative brand sports">
 
                                         <div class="box-image-bg has-border-radius w-100 h-350 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -215,7 +216,7 @@
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                     </path>
                                                 </svg>
-                                                <span class="background-section heading-color">2022</span>
+                                                <span class="background-section heading-color">2019</span>
                                             </div>
 
                                             <img src="assets/img/portfolio/project4/1.jpg" class="cover-bg-img" alt="" />
@@ -251,7 +252,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative photography">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion">
 
                                         <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -300,7 +301,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion sports">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
 
                                         <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -350,7 +351,7 @@
 
                                     </article>
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
+                                    <article class="dsn-item-post grid-item over-hidden p-relative brand sports">
 
                                         <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -362,7 +363,7 @@
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                     </path>
                                                 </svg>
-                                                <span class="background-section heading-color">2022</span>
+                                                <span class="background-section heading-color">2021</span>
                                             </div>
 
                                             <img src="assets/img/portfolio/project7/1.jpg" class="cover-bg-img" alt="" />
@@ -398,6 +399,7 @@
                                         </div>
 
                                     </article>
+
                                 </div>
                             </div>
 
