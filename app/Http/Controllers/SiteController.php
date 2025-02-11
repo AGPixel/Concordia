@@ -205,4 +205,22 @@ class SiteController extends Controller
 
         return view('servico',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
+
+    public function oportunidadeDetalhe() {
+        $metaTags = $this->service->metaTags();
+
+        $menuWorks = $this->service->workActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        $menuProjects = $this->service->projectActive();
+
+        return view('oportunidadedetalhe',['metaTags' => $metaTags, 
+                                     'index_text' => $index_text, 
+                                     'contact' => $contact, 
+                                     'menuWorks' => $menuWorks, 
+                                     'menuProjects' => $menuProjects]);
+    }
 }
