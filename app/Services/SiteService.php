@@ -376,6 +376,83 @@ class SiteService extends BaseService
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
 
+    // ------------------------------------- PROPRIEDADE -------------------------------------
+
+    public function propriedadeById($id) {
+        return $this->repository->propriedadeById($id);
+    }
+
+    public function getPropriedadeThatIsNotId($id) {
+        return $this->repository->getPropriedadeThatIsNotId($id);
+    }
+
+    public function getRandomPropriedade($nextpropriedades) {
+        return $nextpropriedades[mt_rand(0,count($nextpropriedades)-1)];
+    }
+
+    public function propriedade() {
+        return $this->repository->propriedade();
+    }
+
+    public function propriedadeActive() {
+        return $this->repository->propriedadeActive();
+    }
+
+    public function saveNewPropriedade(array $arr) {
+        $arr = $this->uploadPropriedadeImages($arr);
+        $this->repository->saveNewPropriedade($arr);
+    }
+
+    public function savePropriedade(array $arr) {
+        if ($arr['id'] == 0) {
+            unset($arr['id']);
+            $arr = $this->uploadPropriedadeImages($arr);
+            $this->repository->saveNewPropriedade($arr);
+        } else {
+            $arr = $this->updatePropriedadeImages($arr);
+            unset($arr['active']);
+            $this->repository->savePropriedade($arr);
+        }
+    }
+
+    public function deletePropriedade(array $arr) {
+        $this->repository->deletePropriedade($arr['id']);
+    }
+
+    public function updateActivePropriedade(array $arr) {
+        return $this->repository->updateActivePropriedade($arr);
+    }
+
+    private function uploadPropriedadeImages(array $arr) {
+
+        $arr['img_1']     = $this->uploadImageValue($arr['img_1']);
+        $arr['img_2']     = $this->uploadImageValue($arr['img_2']);
+        $arr['img_3']     = $this->uploadImageValue($arr['img_3']);
+        $arr['img_4']     = $this->uploadImageValue($arr['img_4']);
+        $arr['img_5']     = $this->uploadImageValue($arr['img_5']);
+        $arr['img_6']     = $this->uploadImageValue($arr['img_6']);
+        $arr['img_7']     = $this->uploadImageValue($arr['img_7']);
+
+        return $arr;
+    }
+
+    private function updatePropriedadeImages(array $arr) {
+        
+        $propriedade = $this->repository->propriedadeById($arr['id']);
+
+        $arr['img_1']     = $this->updateImageValue($propriedade->img_1,$arr['img_1']);
+        $arr['img_2']     = $this->updateImageValue($propriedade->img_2,$arr['img_2']);
+        $arr['img_3']     = $this->updateImageValue($propriedade->img_3,$arr['img_3']);
+        $arr['img_4']     = $this->updateImageValue($propriedade->img_4,$arr['img_4']);
+        $arr['img_5']     = $this->updateImageValue($propriedade->img_5,$arr['img_5']);
+        $arr['img_6']     = $this->updateImageValue($propriedade->img_6,$arr['img_6']);
+        $arr['img_7']     = $this->updateImageValue($propriedade->img_7,$arr['img_7']);
+
+        return $arr;
+    }
+
+    // ------------------------------------- PROPRIEDADE -------------------------------------
+
     // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
 
     private function uploadVideoValue($arrImg) {

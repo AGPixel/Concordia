@@ -11,6 +11,7 @@ use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
 use App\Models\Project;
 use App\Models\Oportunidade;
+use App\Models\Propriedade;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
@@ -238,5 +239,49 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+     // ------------------------------------- PROPRIEDADE -------------------------------------
+
+     public function propriedadeById($id): object {
+          $modelPropriedade = new Propriedade();
+          return $modelPropriedade->where('id',$id)->first();
+     }
+
+     public function getPropriedadeThatIsNotId($id) {
+          $modelPropriedade = new Propriedade();
+          return $modelPropriedade->where('id','!=',$id)->get();
+     }
+
+     public function propriedade() {
+          $modelPropriedade = new Propriedade();
+          return $modelPropriedade::get();
+     }
+
+     public function propriedadeActive() {
+          $modelPropriedade = new Propriedade();
+          return $modelPropriedade::where('active',1)->get();
+     }
+
+     public function savePropriedade(array $arr) {
+          $propriedade = $this->propriedadeById($arr['id']);
+          $propriedade->fill($arr);
+          $propriedade->save();
+     }
+
+     public function saveNewPropriedade(array $arr) {
+          $propriedade = new Propriedade();
+          $propriedade->fill($arr);
+          $propriedade->save();
+     }
+
+     public function updateActivePropriedade(array $arr) {
+          Propriedade::where('id',$arr['id'])->update(['active'=>$arr['active']]);
+     }
+
+     public function deletePropriedade($id) {
+          Propriedade::where('id',$id)->delete();
+     }
+
+     // ------------------------------------- PROPRIEDADE -------------------------------------
 
 }

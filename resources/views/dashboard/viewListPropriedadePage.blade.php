@@ -12,7 +12,7 @@
 
         @extends('components.tituloConteudo')
 
-        @section('titulo','Oportunidade Page')
+        @section('titulo','Propriedade Page')
 
         @section('conteudo')
         <!-- Colocado esse style somente por enquanto, mudar depois. -->
@@ -66,7 +66,7 @@
                     <div class="col-md-10">
                     </div>
                     <div class="col-md-2 col-flex m-bot-1em">
-                        <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="newOportunidade()">
+                        <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="newPropriedade()">
                             <i class="fa fa-plus"></i>
                             &nbsp;Novo
                         </button>
@@ -88,28 +88,28 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($oportunidades as $id => $oportunidade)
+                                        @foreach($propriedades as $id => $propriedade)
                                         <tr>
-                                            <td>{{ $oportunidade->id }}</td>
-                                            <td>{{ $oportunidade->title }}</td>
-                                            <td>{{ $oportunidade->description }}</td>
+                                            <td>{{ $propriedade->id }}</td>
+                                            <td>{{ $propriedade->title }}</td>
+                                            <td>{{ $propriedade->description }}</td>
                                             <td>
-                                                @if($oportunidade->active)
-                                                <button type="button" class="btn btn-success btn-block btn-flat bt-width-toogle" onclick="updateActiveOportunidade({{$oportunidade}})">
+                                                @if($propriedade->active)
+                                                <button type="button" class="btn btn-success btn-block btn-flat bt-width-toogle" onclick="updateActivePropriedade({{$propriedade}})">
                                                     <i class="fa fa-check"></i>
                                                 </button>
                                                 @else
-                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width-toogle" onclick="updateActiveOportunidade({{$oportunidade}})">
+                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width-toogle" onclick="updateActivePropriedade({{$propriedade}})">
                                                     <i class="fas fa-times"></i>
                                                 </button>
                                                 @endif
                                             </td>
                                             <td class="action-bts">
-                                                <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="editOportunidade({{$oportunidade}})">
+                                                <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="editPropriedade({{$propriedade}})">
                                                     <i class="fa fa-pen"></i>
                                                     &nbsp;Edit
                                                 </button>
-                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0" onclick="deleteOportunidade({{$oportunidade}})">
+                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0" onclick="deletePropriedade({{$propriedade}})">
                                                     <i class="fa fa-trash"></i>
                                                     &nbsp;Delete
                                                 </button>
@@ -126,6 +126,6 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-        <script src="{{ asset ("/js/formListOportunidadePage.js") }}"></script>
+        <script src="{{ asset ("/js/formListPropriedadePage.js") }}"></script>
         <!-- /.content -->
         @endsection

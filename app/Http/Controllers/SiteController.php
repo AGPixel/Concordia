@@ -289,4 +289,22 @@ class SiteController extends Controller
                                      'menuWorks' => $menuWorks, 
                                      'menuProjects' => $menuProjects]);
     }
+
+    public function savePropriedadePage(Request $request) {
+        $this->service->savePropriedade($request->all());
+        
+        return true;
+    }
+
+    public function deletePropriedadePage(Request $request) {
+        $this->service->deletePropriedade($request->all());
+        
+        return true;
+    }
+
+    public function updateActivePropriedadePage(Request $request) {
+        $this->service->updateActivePropriedade($request->all());
+        
+        return true;
+    }
 }

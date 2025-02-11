@@ -126,4 +126,25 @@ class HomeController extends Controller
     }
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+    // ------------------------------------- PROPRIEDADE -------------------------------------
+
+    public function listPropriedadePage() {
+        $propriedades = $this->siteService->propriedade();
+        $servicoGeral = $this->siteService->servicoGeral();
+
+        return view('dashboard.viewListPropriedadePage', ['propriedades' => $propriedades, 'servicoGeral' => $servicoGeral]);
+    }
+
+    public function propriedadePage($id) {
+        $propriedade = $this->siteService->propriedadeById($id);
+        
+        return view('dashboard.viewCreateUpdatePropriedadePage', ['propriedade' => $propriedade]);
+    }
+
+    public function newPropriedadePage() {
+        return view('dashboard.viewCreateUpdatePropriedadePage', ['propriedade' => []]);
+    }
+
+    // ------------------------------------- PROPRIEDADE -------------------------------------
 }

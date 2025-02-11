@@ -97,9 +97,9 @@
                                 <div class="m-top-2em">
                                     <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                        <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="Contact Us">
-                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Us">
-                                                <span>Ver Propriedades</span>
+                                        <a class="button background-main v-dark effect-ajax" href="{{ $id == 1 ? 'propriedades' : 'oportunidades' }}" data-dsn-text="{{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}">
+                                                <span>Ver {{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}</span>
                                             </span>
                                         </a>
 

@@ -40,5 +40,9 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::post('/save-oportunidade-page', [SiteController::class, 'saveOportunidadePage'])->name('api.save-oportunidade-page');
     Route::delete('/delete-oportunidade-page', [SiteController::class, 'deleteOportunidadePage'])->name('api.delete-oportunidade-page');
     Route::post('/update-active-oportunidade', [SiteController::class, 'updateActiveOportunidadePage'])->name('api.update-actve-oportunidade-page');
+
+    Route::post('/save-propriedade-page', [SiteController::class, 'savePropriedadePage'])->name('api.save-propriedade-page');
+    Route::delete('/delete-propriedade-page', [SiteController::class, 'deletePropriedadePage'])->name('api.delete-propriedade-page');
+    Route::post('/update-active-propriedade', [SiteController::class, 'updateActivePropriedadePage'])->name('api.update-actve-propriedade-page');
     
 });
