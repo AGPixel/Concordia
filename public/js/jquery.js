@@ -1,5 +1,11 @@
-
-const GLOBAL_URL = "http://127.0.0.1:8000/";
+let host = window.location.hostname;
+if (host == 'http://127.0.0.1:8000/') {
+    //is development
+    const GLOBAL_URL = "http://127.0.0.1:8000/";
+} else {
+    // is production
+    const GLOBAL_URL = "https://pixeldev05.com/";
+}
 const GLOBAL_URL_API = GLOBAL_URL + "api/";
 const GLOBAL_DATATYPE_JSON = "json";
 let modalLoading = $('#modal-overlay');
