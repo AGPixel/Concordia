@@ -223,4 +223,22 @@ class SiteController extends Controller
                                      'menuWorks' => $menuWorks, 
                                      'menuProjects' => $menuProjects]);
     }
+
+    public function propriedadeDetalhe() {
+        $metaTags = $this->service->metaTags();
+
+        $menuWorks = $this->service->workActive();
+
+        $index_text = $this->service->indexText();
+
+        $contact = $this->service->contact();
+
+        $menuProjects = $this->service->projectActive();
+
+        return view('propriedadedetalhe',['metaTags' => $metaTags, 
+                                     'index_text' => $index_text, 
+                                     'contact' => $contact, 
+                                     'menuWorks' => $menuWorks, 
+                                     'menuProjects' => $menuProjects]);
+    }
 }

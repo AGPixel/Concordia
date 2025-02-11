@@ -14,6 +14,7 @@ Route::get('/portifolio/{id}', [SiteController::class, 'portifolio'])->name('sit
 Route::get('/servico', [SiteController::class, 'servicoGeral'])->name('site.servico-geral');
 Route::get('/servico/{id}', [SiteController::class, 'servico'])->name('site.servico');
 Route::get('/oportunidade-detalhe', [SiteController::class, 'oportunidadeDetalhe'])->name('site.oportunidade-detalhe');
+Route::get('/propriedade-detalhe', [SiteController::class, 'propriedadeDetalhe'])->name('site.propriedade-detalhe');
 
 Route::get('/login', [LoginController::class, 'login'])->name('view.login');
 Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
