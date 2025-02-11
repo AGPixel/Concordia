@@ -336,6 +336,7 @@ class SiteService extends BaseService
         $file       = base64_decode($fileToSave[1]);
         $safeName   = Str::random(10).'.'.'png';
         $path       = public_path()."\\storage\\";
+        if (env("APP_ENV") == "production") $path = "storage/";
         file_put_contents($path.$safeName, $file);
         return $safeName;
     }
@@ -345,12 +346,14 @@ class SiteService extends BaseService
         $file       = base64_decode($fileToSave[1]);
         $safeName   = Str::random(10).'.'.'mp4';
         $path       = public_path()."\\storage\\";
+        if (env("APP_ENV") == "production") $path = "storage/";
         file_put_contents($path.$safeName, $file);
         return $safeName;
     }
 
     private function deleteFile($fileToDelete) {
         $path = public_path()."\\storage\\";
+        if (env("APP_ENV") == "production") $path = "storage/";
         if ($fileToDelete) unlink($path.$fileToDelete);
     }
 
