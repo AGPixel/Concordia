@@ -10,6 +10,7 @@ use App\Models\Work;
 use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
 use App\Models\Project;
+use App\Models\Oportunidade;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
@@ -193,5 +194,49 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- PROJECT -------------------------------------
+
+     // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+     public function oportunidadeById($id): object {
+          $modelOportunidade = new Oportunidade();
+          return $modelOportunidade->where('id',$id)->first();
+     }
+
+     public function getOportunidadeThatIsNotId($id) {
+          $modelOportunidade = new Oportunidade();
+          return $modelOportunidade->where('id','!=',$id)->get();
+     }
+
+     public function oportunidade() {
+          $modelOportunidade = new Oportunidade();
+          return $modelOportunidade::get();
+     }
+
+     public function oportunidadeActive() {
+          $modelOportunidade = new Oportunidade();
+          return $modelOportunidade::where('active',1)->get();
+     }
+
+     public function saveOportunidade(array $arr) {
+          $oportunidade = $this->oportunidadeById($arr['id']);
+          $oportunidade->fill($arr);
+          $oportunidade->save();
+     }
+
+     public function saveNewOportunidade(array $arr) {
+          $oportunidade = new Oportunidade();
+          $oportunidade->fill($arr);
+          $oportunidade->save();
+     }
+
+     public function updateActiveOportunidade(array $arr) {
+          Oportunidade::where('id',$arr['id'])->update(['active'=>$arr['active']]);
+     }
+
+     public function deleteOportunidade($id) {
+          Oportunidade::where('id',$id)->delete();
+     }
+
+     // ------------------------------------- OPORTUNIDADE -------------------------------------
 
 }

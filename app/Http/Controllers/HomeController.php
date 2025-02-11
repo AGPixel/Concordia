@@ -105,4 +105,25 @@ class HomeController extends Controller
     }
 
     // ------------------------------------- PROJECT -------------------------------------
+
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+    public function listOportunidadePage() {
+        $oportunidades = $this->siteService->oportunidade();
+        $servicoGeral = $this->siteService->servicoGeral();
+
+        return view('dashboard.viewListOportunidadePage', ['oportunidades' => $oportunidades, 'servicoGeral' => $servicoGeral]);
+    }
+
+    public function oportunidadePage($id) {
+        $oportunidade = $this->siteService->oportunidadeById($id);
+        
+        return view('dashboard.viewCreateUpdateOportunidadePage', ['oportunidade' => $oportunidade]);
+    }
+
+    public function newOportunidadePage() {
+        return view('dashboard.viewCreateUpdateOportunidadePage', ['oportunidade' => []]);
+    }
+
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
 }

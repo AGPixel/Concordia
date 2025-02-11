@@ -299,6 +299,83 @@ class SiteService extends BaseService
 
     // ------------------------------------- PROJECT -------------------------------------
 
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+    public function oportunidadeById($id) {
+        return $this->repository->oportunidadeById($id);
+    }
+
+    public function getOportunidadeThatIsNotId($id) {
+        return $this->repository->getOportunidadeThatIsNotId($id);
+    }
+
+    public function getRandomOportunidade($nextoportunidades) {
+        return $nextoportunidades[mt_rand(0,count($nextoportunidades)-1)];
+    }
+
+    public function oportunidade() {
+        return $this->repository->oportunidade();
+    }
+
+    public function oportunidadeActive() {
+        return $this->repository->oportunidadeActive();
+    }
+
+    public function saveNewOportunidade(array $arr) {
+        $arr = $this->uploadOportunidadeImages($arr);
+        $this->repository->saveNewOportunidade($arr);
+    }
+
+    public function saveOportunidade(array $arr) {
+        if ($arr['id'] == 0) {
+            unset($arr['id']);
+            $arr = $this->uploadOportunidadeImages($arr);
+            $this->repository->saveNewOportunidade($arr);
+        } else {
+            $arr = $this->updateOportunidadeImages($arr);
+            unset($arr['active']);
+            $this->repository->saveOportunidade($arr);
+        }
+    }
+
+    public function deleteOportunidade(array $arr) {
+        $this->repository->deleteOportunidade($arr['id']);
+    }
+
+    public function updateActiveOportunidade(array $arr) {
+        return $this->repository->updateActiveOportunidade($arr);
+    }
+
+    private function uploadOportunidadeImages(array $arr) {
+
+        $arr['img_1']     = $this->uploadImageValue($arr['img_1']);
+        $arr['img_2']     = $this->uploadImageValue($arr['img_2']);
+        $arr['img_3']     = $this->uploadImageValue($arr['img_3']);
+        $arr['img_4']     = $this->uploadImageValue($arr['img_4']);
+        $arr['img_5']     = $this->uploadImageValue($arr['img_5']);
+        $arr['img_6']     = $this->uploadImageValue($arr['img_6']);
+        $arr['img_7']     = $this->uploadImageValue($arr['img_7']);
+
+        return $arr;
+    }
+
+    private function updateOportunidadeImages(array $arr) {
+        
+        $oportunidade = $this->repository->oportunidadeById($arr['id']);
+
+        $arr['img_1']     = $this->updateImageValue($oportunidade->img_1,$arr['img_1']);
+        $arr['img_2']     = $this->updateImageValue($oportunidade->img_2,$arr['img_2']);
+        $arr['img_3']     = $this->updateImageValue($oportunidade->img_3,$arr['img_3']);
+        $arr['img_4']     = $this->updateImageValue($oportunidade->img_4,$arr['img_4']);
+        $arr['img_5']     = $this->updateImageValue($oportunidade->img_5,$arr['img_5']);
+        $arr['img_6']     = $this->updateImageValue($oportunidade->img_6,$arr['img_6']);
+        $arr['img_7']     = $this->updateImageValue($oportunidade->img_7,$arr['img_7']);
+
+        return $arr;
+    }
+
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
+
     // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
 
     private function uploadVideoValue($arrImg) {

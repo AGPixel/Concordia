@@ -239,6 +239,24 @@ class SiteController extends Controller
                                      'menuProjects' => $menuProjects]);
     }
 
+    public function saveOportunidadePage(Request $request) {
+        $this->service->saveOportunidade($request->all());
+        
+        return true;
+    }
+
+    public function deleteOportunidadePage(Request $request) {
+        $this->service->deleteOportunidade($request->all());
+        
+        return true;
+    }
+
+    public function updateActiveOportunidadePage(Request $request) {
+        $this->service->updateActiveOportunidade($request->all());
+        
+        return true;
+    }
+
     public function propriedades() {
         $metaTags = $this->service->metaTags();
 

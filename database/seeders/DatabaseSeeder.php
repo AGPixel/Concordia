@@ -8,6 +8,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\Oportunidade;
 use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
 use App\Models\Project;
@@ -132,5 +133,11 @@ class DatabaseSeeder extends Seeder
         $metaTags->description = 'Descrição concordia';
         $metaTags->keywords = 'keywords aqui';
         $metaTags->save();
+
+        $work = new Oportunidade();
+        $work->title = 'Titulo Dois';
+        $work->description = 'Descrição Dois';
+        $work->active = true;
+        $work->save();
     }
 }

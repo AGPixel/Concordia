@@ -43,6 +43,13 @@ Route::get('/list-project-page', [HomeController::class, 'listProjectPage'])->na
 Route::get('/new-project-page', [HomeController::class, 'newProjectPage'])->name('view.new-project-page');
 Route::get('/project-page/{id}', [HomeController::class, 'projectPage'])->name('view.project-page');
 
+Route::get('/list-oportunidade-page', [HomeController::class, 'listOportunidadePage'])->name('view.list-oportunidade-page');
+Route::get('/new-oportunidade-page', [HomeController::class, 'newOportunidadePage'])->name('view.new-oportunidade-page');
+Route::get('/oportunidade-page/{id}', [HomeController::class, 'oportunidadePage'])->name('view.oportunidade-page');
+
+Route::get('/list-propriedade-page', [HomeController::class, 'listPropriedadePage'])->name('view.list-propriedade-page');
+Route::get('/new-propriedade-page', [HomeController::class, 'newPropriedadePage'])->name('view.new-propriedade-page');
+Route::get('/propriedade-page/{id}', [HomeController::class, 'propriedadePage'])->name('view.propriedade-page');
 
 /*
 
