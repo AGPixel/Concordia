@@ -99,7 +99,7 @@
 
                                         <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="Contact Us">
                                             <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Us">
-                                                <span>Contact Us</span>
+                                                <span>Ver Propriedades</span>
                                             </span>
                                         </a>
 
