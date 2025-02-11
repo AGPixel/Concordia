@@ -22,6 +22,10 @@
             padding-top: 3em;
         }
 
+        .m-top-2em {
+            margin-top: 2em;
+        }
+
     </style>
 </head>
 
@@ -78,7 +82,8 @@
                         <div class="d-grid grid-half-1">
 
                             <div class="text pinned-scroll p-relative">
-                                <div class=" pinned-element">
+                                <div class="">
+                                    <!-- <div class=" pinned-element"> -->
                                     <span class="sub-heading mb-15">Overview</span>
                                     <h3 class="title text-upper mb-30">{{ $s->title_1 ? $s->title_1 : 'title_1' }}</h3>
 
@@ -86,7 +91,28 @@
                                         {{ $s->description_1 ? $s->description_1 : 'description_1' }}
                                     </p>
 
+
                                 </div>
+                                @if( $id > 0 )
+                                <div class="m-top-2em">
+                                    <div class="dsn-btn dsn-btn-shape d-flex">
+
+                                        <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="Contact Us">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Us">
+                                                <span>Contact Us</span>
+                                            </span>
+                                        </a>
+
+                                        <span class="icon background-main v-dark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </div>
+                                </div>
+                                @endif
                             </div>
 
                             <div class="box-img">
