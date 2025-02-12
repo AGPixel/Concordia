@@ -35,6 +35,21 @@
     height: 5em;
 }
 
+.image_bandeira {
+    width: 2.5em;
+    width: 2em;
+    margin-right: 1em;
+}
+
 .m-bot-05 {
     margin-bottom: 0.5em !important;
+}
+
+.input-text-language-48percent {
+    width: 48%;
+    float: left;
+}
+
+.m-left-4percent {
+    margin-right: 4%;
 }

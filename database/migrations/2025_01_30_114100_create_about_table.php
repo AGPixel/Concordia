@@ -70,6 +70,7 @@ return new class extends Migration
             $table->text('about_experience_description_3_eng')->nullable(true);
             $table->text('about_experience_title_4_eng')->nullable(true);
             $table->text('about_experience_description_4_eng')->nullable(true);
+            $table->text('about_brands_title_eng')->nullable(true);
             $table->text('about_brands_description_eng')->nullable(true);
 
             $table->dateTime('created_at');

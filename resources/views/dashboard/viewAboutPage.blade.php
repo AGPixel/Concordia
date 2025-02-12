@@ -40,316 +40,314 @@
                             <!-- form start -->
                             <form id="quickForm">
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutTitle1">About Title 1</label>
-                                        <input type="text" name="aboutTitle1" class="form-control" id="InputAboutTitle1" value="{{ $about->about_title_1 ? $about->about_title_1 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Title 1',
+                                    'id_input_text' => 'InputAboutTitle1',
+                                    'arg_value' => $about->about_title_1 ? $about->about_title_1 : '',
+                                    'arg_value_eng' => $about->about_title_1_eng ? $about->about_title_1_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Title 2',
+                                    'id_input_text' => 'InputAboutTitle2',
+                                    'arg_value' => $about->about_title_2 ? $about->about_title_2 : '',
+                                    'arg_value_eng' => $about->about_title_2_eng ? $about->about_title_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutTitle2">About Title 2</label>
-                                        <input type="text" name="aboutTitle2" class="form-control" id="InputAboutTitle2" value="{{ $about->about_title_2 ? $about->about_title_2 : '' }}">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image About 1',
+                                        'id_img_file' => 'InputAboutImg1',
+                                        'id_text_file' => 'ImageAbout1',
+                                        'arg_value' => $about->about_img_1 ? asset("../storage/$about->about_img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg1">Image About 1: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_1 ? asset("../storage/$about->about_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutImg1">
-                                                <label class="custom-file-label disable" for="InputAboutImg1" id="ImageAbout1">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image About 2',
+                                        'id_img_file' => 'InputAboutImg2',
+                                        'id_text_file' => 'ImageAbout2',
+                                        'arg_value' => $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg2">Image About 2: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_2 ? asset("../storage/$about->about_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutImg2">
-                                                <label class="custom-file-label disable" for="InputAboutImg2" id="ImageAbout2">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image About 3',
+                                        'id_img_file' => 'InputAboutImg3',
+                                        'id_text_file' => 'ImageAbout3',
+                                        'arg_value' => $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg3">Image About 3: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_3 ? asset("../storage/$about->about_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutImg3">
-                                                <label class="custom-file-label disable" for="InputAboutImg3" id="ImageAbout3">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image About 4',
+                                        'id_img_file' => 'InputAboutImg4',
+                                        'id_text_file' => 'ImageAbout4',
+                                        'arg_value' => $about->about_img_4 ? asset("../storage/$about->about_img_4") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service Title',
+                                    'id_input_text' => 'InputAboutServiceTitle',
+                                    'arg_value' => $about->about_service_title ? $about->about_service_title : '',
+                                    'arg_value_eng' => $about->about_service_title_eng ? $about->about_service_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 1',
+                                    'id_input_text' => 'InputAboutService1',
+                                    'arg_value' => $about->about_service_1 ? $about->about_service_1 : '',
+                                    'arg_value_eng' => $about->about_service_1_eng ? $about->about_service_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 1',
+                                        'id_img_file' => 'InputAboutServiceImg1',
+                                        'id_text_file' => 'aboutServiceImg1',
+                                        'arg_value' => $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 2',
+                                    'id_input_text' => 'InputAboutService2',
+                                    'arg_value' => $about->about_service_2 ? $about->about_service_2 : '',
+                                    'arg_value_eng' => $about->about_service_2_eng ? $about->about_service_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 2',
+                                        'id_img_file' => 'InputAboutServiceImg2',
+                                        'id_text_file' => 'aboutServiceImg2',
+                                        'arg_value' => $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 3',
+                                    'id_input_text' => 'InputAboutService3',
+                                    'arg_value' => $about->about_service_3 ? $about->about_service_3 : '',
+                                    'arg_value_eng' => $about->about_service_3_eng ? $about->about_service_3_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 3',
+                                        'id_img_file' => 'InputAboutServiceImg3',
+                                        'id_text_file' => 'aboutServiceImg3',
+                                        'arg_value' => $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 4',
+                                    'id_input_text' => 'InputAboutService4',
+                                    'arg_value' => $about->about_service_4 ? $about->about_service_4 : '',
+                                    'arg_value_eng' => $about->about_service_4_eng ? $about->about_service_4_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 4',
+                                        'id_img_file' => 'InputAboutServiceImg4',
+                                        'id_text_file' => 'aboutServiceImg4',
+                                        'arg_value' => $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 5',
+                                    'id_input_text' => 'InputAboutService5',
+                                    'arg_value' => $about->about_service_5 ? $about->about_service_5 : '',
+                                    'arg_value_eng' => $about->about_service_5_eng ? $about->about_service_5_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 5',
+                                        'id_img_file' => 'InputAboutServiceImg5',
+                                        'id_text_file' => 'aboutServiceImg5',
+                                        'arg_value' => $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Service 6',
+                                    'id_input_text' => 'InputAboutService6',
+                                    'arg_value' => $about->about_service_6 ? $about->about_service_6 : '',
+                                    'arg_value_eng' => $about->about_service_6_eng ? $about->about_service_6_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Service Image 6',
+                                        'id_img_file' => 'InputAboutServiceImg6',
+                                        'id_text_file' => 'aboutServiceImg6',
+                                        'arg_value' => $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Title',
+                                    'id_input_text' => 'InputAboutExperienceTitle',
+                                    'arg_value' => $about->about_experience_title ? $about->about_experience_title : '',
+                                    'arg_value_eng' => $about->about_experience_title_eng ? $about->about_experience_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Title 1',
+                                    'id_input_text' => 'InputAboutExperienceTitle1',
+                                    'arg_value' => $about->about_experience_title_1 ? $about->about_experience_title_1 : '',
+                                    'arg_value_eng' => $about->about_experience_title_1_eng ? $about->about_experience_title_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Description 1',
+                                    'id_input_text' => 'InputAboutExperienceDescription1',
+                                    'arg_value' => $about->about_experience_description_1 ? $about->about_experience_description_1 : '',
+                                    'arg_value_eng' => $about->about_experience_description_1_eng ? $about->about_experience_description_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'About Experience Data 1',
+                                    'id_input_text' => 'InputAboutExperienceData1',
+                                    'arg_value' => $about->about_experience_data_1 ? $about->about_experience_data_1 : '' ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Title 2',
+                                    'id_input_text' => 'InputAboutExperienceTitle2',
+                                    'arg_value' => $about->about_experience_title_2 ? $about->about_experience_title_2 : '',
+                                    'arg_value_eng' => $about->about_experience_title_2_eng ? $about->about_experience_title_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Description 2',
+                                    'id_input_text' => 'InputAboutExperienceDescription2',
+                                    'arg_value' => $about->about_experience_description_2 ? $about->about_experience_description_2 : '',
+                                    'arg_value_eng' => $about->about_experience_description_2_eng ? $about->about_experience_description_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'About Experience Data 2',
+                                    'id_input_text' => 'InputAboutExperienceData2',
+                                    'arg_value' => $about->about_experience_data_2 ? $about->about_experience_data_2 : '' ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Title 3',
+                                    'id_input_text' => 'InputAboutExperienceTitle3',
+                                    'arg_value' => $about->about_experience_title_3 ? $about->about_experience_title_3 : '',
+                                    'arg_value_eng' => $about->about_experience_title_3_eng ? $about->about_experience_title_3_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Description 3',
+                                    'id_input_text' => 'InputAboutExperienceDescription3',
+                                    'arg_value' => $about->about_experience_description_3 ? $about->about_experience_description_3 : '',
+                                    'arg_value_eng' => $about->about_experience_description_3_eng ? $about->about_experience_description_3_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'About Experience Data 3',
+                                    'id_input_text' => 'InputAboutExperienceData3',
+                                    'arg_value' => $about->about_experience_data_3 ? $about->about_experience_data_3 : '' ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Title 4',
+                                    'id_input_text' => 'InputAboutExperienceTitle4',
+                                    'arg_value' => $about->about_experience_title_4 ? $about->about_experience_title_4 : '',
+                                    'arg_value_eng' => $about->about_experience_title_4_eng ? $about->about_experience_title_4_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Experience Description 4',
+                                    'id_input_text' => 'InputAboutExperienceDescription4',
+                                    'arg_value' => $about->about_experience_description_4 ? $about->about_experience_description_4 : '',
+                                    'arg_value_eng' => $about->about_experience_description_4_eng ? $about->about_experience_description_4_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'About Experience Data 4',
+                                    'id_input_text' => 'InputAboutExperienceData4',
+                                    'arg_value' => $about->about_experience_data_4 ? $about->about_experience_data_4 : '' ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Brands Title',
+                                    'id_input_text' => 'InputAboutBrandsTitle',
+                                    'arg_value' => $about->about_brands_title ? $about->about_brands_title : '',
+                                    'arg_value_eng' => $about->about_brands_title_eng ? $about->about_brands_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Brands Image 1',
+                                        'id_img_file' => 'InputAboutBrandsImg1',
+                                        'id_text_file' => 'aboutBrandsImg1',
+                                        'arg_value' => $about->about_brands_img_1 ? asset("../storage/$about->about_brands_img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutImg4">Image About 4: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_img_4 ? asset("../storage/$about->about_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutImg4">
-                                                <label class="custom-file-label disable" for="InputAboutImg4" id="ImageAbout4">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutServiceTitle">About Service Title</label>
-                                        <input type="text" name="aboutServiceTitle" class="form-control" id="InputAboutServiceTitle" value="{{ $about->about_service_title ? $about->about_service_title : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService1">About Service 1</label>
-                                        <input type="text" name="aboutService1" class="form-control" id="InputAboutService1" value="{{ $about->about_service_1 ? $about->about_service_1 : '' }}">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Brands Image 2',
+                                        'id_img_file' => 'InputAboutBrandsImg2',
+                                        'id_text_file' => 'aboutBrandsImg2',
+                                        'arg_value' => $about->about_brands_img_2 ? asset("../storage/$about->about_brands_img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg1">About Service Image 1: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg1">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg1" id="aboutServiceImg1">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService2">About Service 2</label>
-                                        <input type="text" name="aboutService2" class="form-control" id="InputAboutService2" value="{{ $about->about_service_2 ? $about->about_service_2 : '' }}">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Brands Image 3',
+                                        'id_img_file' => 'InputAboutBrandsImg3',
+                                        'id_text_file' => 'aboutBrandsImg3',
+                                        'arg_value' => $about->about_brands_img_3 ? asset("../storage/$about->about_brands_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputAboutServiceImg2">About Service Image 2: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg2">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg2" id="aboutServiceImg2">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Brands Image 4',
+                                        'id_img_file' => 'InputAboutBrandsImg4',
+                                        'id_text_file' => 'aboutBrandsImg4',
+                                        'arg_value' => $about->about_brands_img_4 ? asset("../storage/$about->about_brands_img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService3">About Service 3</label>
-                                        <input type="text" name="aboutService3" class="form-control" id="InputAboutService3" value="{{ $about->about_service_3 ? $about->about_service_3 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutServiceImg3">About Service Image 3: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg3">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg3" id="aboutServiceImg3">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService4">About Service 4</label>
-                                        <input type="text" name="aboutService4" class="form-control" id="InputAboutService4" value="{{ $about->about_service_4 ? $about->about_service_4 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutServiceImg4">About Service Image 4: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg4">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg4" id="aboutServiceImg4">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService5">About Service 5</label>
-                                        <input type="text" name="aboutService5" class="form-control" id="InputAboutService5" value="{{ $about->about_service_5 ? $about->about_service_5 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutServiceImg5">About Service Image 5: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg5">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg5" id="aboutServiceImg5">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutService6">About Service 6</label>
-                                        <input type="text" name="aboutService6" class="form-control" id="InputAboutService6" value="{{ $about->about_service_6 ? $about->about_service_6 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutServiceImg6">About Service Image 6: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutServiceImg6">
-                                                <label class="custom-file-label disable" for="InputAboutServiceImg6" id="aboutServiceImg6">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceTitle">About Experience Title</label>
-                                        <input type="text" name="aboutExperienceTitle" class="form-control" id="InputAboutExperienceTitle" value="{{ $about->about_experience_title ? $about->about_experience_title : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceTitle1">About Experience Title 1</label>
-                                        <input type="text" name="aboutExperienceTitle1" class="form-control" id="InputAboutExperienceTitle1" value="{{ $about->about_experience_title_1 ? $about->about_experience_title_1 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceDescription1">About Experience Description 1</label>
-                                        <input type="text" name="aboutExperienceDescription1" class="form-control" id="InputAboutExperienceDescription1" value="{{ $about->about_experience_description_1 ? $about->about_experience_description_1 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceData1">About Experience Data 1</label>
-                                        <input type="text" name="aboutExperienceData1" class="form-control" id="InputAboutExperienceData1" value="{{ $about->about_experience_data_1 ? $about->about_experience_data_1 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceTitle2">About Experience Title 2</label>
-                                        <input type="text" name="aboutExperienceTitle2" class="form-control" id="InputAboutExperienceTitle2" value="{{ $about->about_experience_title_2 ? $about->about_experience_title_2 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceDescription2">About Experience Description 2</label>
-                                        <input type="text" name="aboutExperienceDescription2" class="form-control" id="InputAboutExperienceDescription2" value="{{ $about->about_experience_description_2 ? $about->about_experience_description_2 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceData2">About Experience Data 2</label>
-                                        <input type="text" name="aboutExperienceData2" class="form-control" id="InputAboutExperienceData2" value="{{ $about->about_experience_data_2 ? $about->about_experience_data_2 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceTitle3">About Experience Title 3</label>
-                                        <input type="text" name="aboutExperienceTitle3" class="form-control" id="InputAboutExperienceTitle3" value="{{ $about->about_experience_title_3 ? $about->about_experience_title_3 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceDescription3">About Experience Description 3</label>
-                                        <input type="text" name="aboutExperienceDescription3" class="form-control" id="InputAboutExperienceDescription3" value="{{ $about->about_experience_description_3 ? $about->about_experience_description_3 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceData3">About Experience Data 3</label>
-                                        <input type="text" name="aboutExperienceData3" class="form-control" id="InputAboutExperienceData3" value="{{ $about->about_experience_data_3 ? $about->about_experience_data_3 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceTitle4">About Experience Title 4</label>
-                                        <input type="text" name="aboutExperienceTitle4" class="form-control" id="InputAboutExperienceTitle4" value="{{ $about->about_experience_title_4 ? $about->about_experience_title_4 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceDescription4">About Experience Description 4</label>
-                                        <input type="text" name="aboutExperienceDescription4" class="form-control" id="InputAboutExperienceDescription4" value="{{ $about->about_experience_description_4 ? $about->about_experience_description_4 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutExperienceData4">About Experience Data 4</label>
-                                        <input type="text" name="aboutExperienceData4" class="form-control" id="InputAboutExperienceData4" value="{{ $about->about_experience_data_4 ? $about->about_experience_data_4 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsTitle">About Brands Title</label>
-                                        <input type="text" name="aboutBrandsTitle" class="form-control" id="InputAboutBrandsTitle" value="{{ $about->about_brands_title ? $about->about_brands_title : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsImg1">About Brands Image 1: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_1 ? asset("../storage/$about->about_brands_img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutBrandsImg1">
-                                                <label class="custom-file-label disable" for="InputAboutBrandsImg1" id="aboutBrandsImg1">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsImg2">About Brands Image 2: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_2 ? asset("../storage/$about->about_brands_img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutBrandsImg2">
-                                                <label class="custom-file-label disable" for="InputAboutBrandsImg2" id="aboutBrandsImg2">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsImg3">About Brands Image 3: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_3 ? asset("../storage/$about->about_brands_img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutBrandsImg3">
-                                                <label class="custom-file-label disable" for="InputAboutBrandsImg3" id="aboutBrandsImg3">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsImg4">About Brands Image 4: </label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $about->about_brands_img_4 ? asset("../storage/$about->about_brands_img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputAboutBrandsImg4">
-                                                <label class="custom-file-label disable" for="InputAboutBrandsImg4" id="aboutBrandsImg4">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputAboutBrandsDescription">About Brands Description</label>
-                                        <input type="text" name="aboutBrandsDescription" class="form-control" id="InputAboutBrandsDescription" value="{{ $about->about_brands_description ? $about->about_brands_description : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Brands Description',
+                                    'id_input_text' => 'InputAboutBrandsDescription',
+                                    'arg_value' => $about->about_brands_description ? $about->about_brands_description : '',
+                                    'arg_value_eng' => $about->about_brands_description_eng ? $about->about_brands_description_eng : ''
+                                    ])
                                 </div>
 
                                 <div class="card-footer">
