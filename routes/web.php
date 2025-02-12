@@ -6,17 +6,17 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [SiteController::class, 'index'])->name('site.index');
-Route::get('/contato', [SiteController::class, 'contato'])->name('site.contato');
-Route::get('/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
-Route::get('/portifolio', [SiteController::class, 'portifolioGeral'])->name('site.portifolio-geral');
-Route::get('/portifolio/{id}', [SiteController::class, 'portifolio'])->name('site.portifolio');
-Route::get('/servico', [SiteController::class, 'servicoGeral'])->name('site.servico-geral');
-Route::get('/servico/{id}', [SiteController::class, 'servico'])->name('site.servico');
-Route::get('/oportunidades', [SiteController::class, 'oportunidades'])->name('site.oportunidades');
-Route::get('/oportunidade/{id}', [SiteController::class, 'oportunidadeDetalhe'])->name('site.oportunidade-detalhe');
-Route::get('/propriedades', [SiteController::class, 'propriedades'])->name('site.propriedades');
-Route::get('/propriedade/{id}', [SiteController::class, 'propriedadeDetalhe'])->name('site.propriedade-detalhe');
+Route::get('/{lingua}/', [SiteController::class, 'index'])->name('site.index');
+Route::get('/{lingua}/contato', [SiteController::class, 'contato'])->name('site.contato');
+Route::get('/{lingua}/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
+Route::get('/{lingua}/portifolio', [SiteController::class, 'portifolioGeral'])->name('site.portifolio-geral');
+Route::get('/{lingua}/portifolio/{id}', [SiteController::class, 'portifolio'])->name('site.portifolio');
+Route::get('/{lingua}/servico', [SiteController::class, 'servicoGeral'])->name('site.servico-geral');
+Route::get('/{lingua}/servico/{id}', [SiteController::class, 'servico'])->name('site.servico');
+Route::get('/{lingua}/oportunidades', [SiteController::class, 'oportunidades'])->name('site.oportunidades');
+Route::get('/{lingua}/oportunidade/{id}', [SiteController::class, 'oportunidadeDetalhe'])->name('site.oportunidade-detalhe');
+Route::get('/{lingua}/propriedades', [SiteController::class, 'propriedades'])->name('site.propriedades');
+Route::get('/{lingua}/propriedade/{id}', [SiteController::class, 'propriedadeDetalhe'])->name('site.propriedade-detalhe');
 
 Route::get('/project-3', function() {
     return view('project-3');

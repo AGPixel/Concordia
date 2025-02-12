@@ -182,7 +182,7 @@
 
                                                 <div class="post-info">
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="/portifolio/{{ $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $portifolio->title }}</a>
+                                                        <a href="/pt/portifolio/{{ $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $portifolio->title }}</a>
                                                     </h2>
 
                                                 </div>

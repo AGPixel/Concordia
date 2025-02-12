@@ -25,8 +25,8 @@ class SiteController extends Controller
         return true;
     }
 
-    public function index() {
-
+    public function index($lingua) {
+        
         $index_text = $this->service->indexText();
         $metaTags = $this->service->metaTags();
 
@@ -46,7 +46,7 @@ class SiteController extends Controller
         return true;
     }
 
-    public function contato() {
+    public function contato($lingua) {
 
         $index_text = $this->service->indexText();
         $metaTags = $this->service->metaTags();
@@ -66,7 +66,7 @@ class SiteController extends Controller
         return true;
     }
 
-    public function sobre() {
+    public function sobre($lingua) {
 
         $index_text = $this->service->indexText();
         $metaTags = $this->service->metaTags();
@@ -105,7 +105,7 @@ class SiteController extends Controller
         return true;
     }
 
-    public function portifolioGeral() {
+    public function portifolioGeral($lingua) {
         $portifolioGeral = $this->service->portifolioGeral();
 
         $works = $this->service->work();
@@ -122,7 +122,7 @@ class SiteController extends Controller
         return view('portifoliogeral',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'portifolioGeral' => $portifolioGeral, 'portifolios' => $portifolios, 'works' => $works, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
-    public function portifolio($id) {
+    public function portifolio($lingua,$id) {
         $work = $this->service->workById($id);
         $metaTags = $this->service->metaTags();
 
@@ -166,7 +166,7 @@ class SiteController extends Controller
         return true;
     }
 
-    public function servicoGeral() {
+    public function servicoGeral($lingua) {
         $servicoGeral = $this->service->servicoGeral();
         $servicos = $this->service->projectActive();
         $metaTags = $this->service->metaTags();
@@ -188,7 +188,7 @@ class SiteController extends Controller
                                      'menuProjects' => $menuProjects]);
     }
 
-    public function servico($id) {
+    public function servico($lingua,$id) {
         $project = $this->service->projectById($id);
         $metaTags = $this->service->metaTags();
 
@@ -206,7 +206,7 @@ class SiteController extends Controller
         return view('servico',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
-    public function oportunidades() {
+    public function oportunidades($lingua) {
         $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
@@ -224,7 +224,7 @@ class SiteController extends Controller
                                      'oportunidades' => $oportunidades]);
     }
 
-    public function oportunidadeDetalhe($id) {
+    public function oportunidadeDetalhe($lingua,$id) {
         $oportunidade = $this->service->oportunidadeById($id);
         $metaTags = $this->service->metaTags();
 
@@ -262,7 +262,7 @@ class SiteController extends Controller
         return true;
     }
 
-    public function propriedades() {
+    public function propriedades($lingua) {
         $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
@@ -280,7 +280,7 @@ class SiteController extends Controller
                                      'propriedades' => $propriedades]);
     }
 
-    public function propriedadeDetalhe($id) {
+    public function propriedadeDetalhe($lingua,$id) {
         $propriedade = $this->service->propriedadeById($id);
         $metaTags = $this->service->metaTags();
 

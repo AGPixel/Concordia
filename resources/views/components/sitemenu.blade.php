@@ -9,19 +9,19 @@
         <div class="menu-cover-title header-container dsn-container">MENU</div>
         <ul id="dsn-primary-list" class="primary-nav h2">
             <li class="nav-item">
-                <a title="Home" href="/">
+                <a title="Home" href="/pt/">
                     <span class="overflow ">Home</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a title="Sobre" href="/sobre">
+                <a title="Sobre" href="/pt/sobre">
                     <span class="overflow ">Sobre</span>
                 </a>
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Portifolio" href="/portifolio">
+                <a title="Portifolio" href="/pt/portifolio">
                     <span class="overflow ">
                         Portfolio
                     </span>
@@ -29,7 +29,7 @@
                 <ul class="nav-item">
                     @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
-                        <a title="Hover" href="/portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
+                        <a title="Hover" href="/pt/portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
                             <span class="overflow">{{ $menuWork->title }}</span>
                         </a>
                     </li>
@@ -38,14 +38,14 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Serviço" href="/servico">
+                <a title="Serviço" href="/pt/servico">
                     <span class="overflow ">Serviços</span>
                 </a>
                 <!--
                 <ul class="nav-item">
                     @ foreach($menuProjects as $id => $menuProject)
                     <li class="nav-item">
-                        <a title="Hover" href="/servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
+                        <a title="Hover" href="/pt/servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
                             <span class="overflow">{ { $menuProject->title }}</span>
                         </a>
                     </li>
@@ -54,7 +54,7 @@
                 -->
             </li>
             <li class="nav-item ">
-                <a title="Contato" href="/contato">
+                <a title="Contato" href="/pt/contato">
                     <span class="overflow">Contato</span>
                 </a>
             </li>
@@ -64,6 +64,7 @@
                 </a>
                 <ul class="nav-item">
                     <li class="nav-item">
+                        <!-- Parei aqui, fazer mudar de lingua -->
                         <a title="Serviço 1" href="" data-dsn-text="Serviço 1">
                             <span class="overflow">Portugues</span>
                         </a>
