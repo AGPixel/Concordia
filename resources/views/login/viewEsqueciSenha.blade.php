@@ -45,7 +45,7 @@
                     <!-- /.col -->
                 </div>
                 <p class="mt-3 mb-1">
-                    <a href="/login">Voltar a pagina de login</a>
+                    <a href="/pt/login">Voltar a pagina de login</a>
                 </p>
             </div>
             <!-- /.login-card-body -->

@@ -93,7 +93,7 @@ function savePropriedadePage(id) {
 
     apiPostBearer(GLOBAL_URL_API + 'save-propriedade-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
-        window.location.href = "/list-propriedade-page";
+        window.location.href = "/pt/list-propriedade-page";
     }, function (_return) {
         toastError(_return.responseJSON.message);
         hideLoading();

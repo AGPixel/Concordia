@@ -11,7 +11,7 @@ function verifyToken() {
         console.log("verify-token error");
         console.log(_return);
         toastError(_return.responseJSON.message);
-        goTo('/login');
+        goTo('/pt/login');
     });
 }
 

@@ -26,14 +26,14 @@ function updateActivePropriedade(propriedade) {
 function newPropriedade() {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/new-propriedade-page";
+        window.location.href = "/pt/new-propriedade-page";
     }, 500);
 }
 
 function editPropriedade(propriedade) {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/propriedade-page/" + propriedade.id;
+        window.location.href = "/pt/propriedade-page/" + propriedade.id;
     }, 500);
 }
 

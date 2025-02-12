@@ -26,14 +26,14 @@ function updateActiveOportunidade(oportunidade) {
 function newOportunidade() {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/new-oportunidade-page";
+        window.location.href = "/pt/new-oportunidade-page";
     }, 500);
 }
 
 function editOportunidade(oportunidade) {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/oportunidade-page/" + oportunidade.id;
+        window.location.href = "/pt/oportunidade-page/" + oportunidade.id;
     }, 500);
 }
 

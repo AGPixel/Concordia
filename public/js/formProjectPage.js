@@ -85,7 +85,7 @@ function saveProjectPage(id) {
 
     apiPostBearer(GLOBAL_URL_API + 'save-project-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
-        window.location.href = "/list-project-page";
+        window.location.href = "/pt/list-project-page";
     }, function (_return) {
         toastError(_return.responseJSON.message);
         hideLoading();

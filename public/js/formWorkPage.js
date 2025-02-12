@@ -93,7 +93,7 @@ function saveWorkPage(id) {
 
     apiPostBearer(GLOBAL_URL_API + 'save-work-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
-        window.location.href = "/list-work-page";
+        window.location.href = "/pt/list-work-page";
     }, function (_return) {
         toastError(_return.responseJSON.message);
         hideLoading();

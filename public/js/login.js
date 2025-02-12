@@ -27,7 +27,7 @@ async function logar(url) {
             setCookie('token', _return.object.token, 0.1);
             localStorage.setItem('name', _return.object.name);
             localStorage.setItem('email', _return.object.email);
-            goTo('/dashboard');
+            goTo('/pt/dashboard');
         },
         function (_return) {
             console.log("promisse error");

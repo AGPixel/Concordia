@@ -42,14 +42,14 @@ function updateActiveProject(project) {
 function newProject() {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/new-project-page";
+        window.location.href = "/pt/new-project-page";
     }, 500);
 }
 
 function editProject(project) {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/project-page/" + project.id;
+        window.location.href = "/pt/project-page/" + project.id;
     }, 500);
 }
 

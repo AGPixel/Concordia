@@ -59,7 +59,7 @@
                     <!-- /.col -->
                 </div>
                 <p class="mb-1">
-                    <a href="/esqueci-senha">Esqueci a palavra passe</a>
+                    <a href="/pt/esqueci-senha">Esqueci a palavra passe</a>
                 </p>
             </div>
             <!-- /.login-card-body -->

@@ -22,42 +22,42 @@ Route::get('/project-3', function() {
     return view('project-3');
 })->name('site.project-3');
 
-Route::get('/login', [LoginController::class, 'login'])->name('view.login');
-Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
+Route::get('/pt/login', [LoginController::class, 'login'])->name('view.login');
+Route::get('/pt/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
 
-Route::get('/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
+Route::get('/pt/trocar-senha', [HomeController::class, 'trocarSenha'])->name('view.trocar-senha');
 
-Route::get('/home', [HomeController::class, 'home'])->name('view.home');
+Route::get('/pt/home', [HomeController::class, 'home'])->name('view.home');
 
-Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('view.dashboard');
+Route::get('/pt/dashboard', [HomeController::class, 'dashboard'])->name('view.dashboard');
 
-Route::get('/meta-tags-page', [HomeController::class, 'metaTagsPage'])->name('view.meta-tags-page');
+Route::get('/pt/meta-tags-page', [HomeController::class, 'metaTagsPage'])->name('view.meta-tags-page');
 
-Route::get('/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
+Route::get('/pt/index-page', [HomeController::class, 'indexPage'])->name('view.index-page');
 
-Route::get('/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');
+Route::get('/pt/contact-page', [HomeController::class, 'contactPage'])->name('view.contact-page');
 
-Route::get('/about-page', [HomeController::class, 'aboutPage'])->name('view.about-page');
+Route::get('/pt/about-page', [HomeController::class, 'aboutPage'])->name('view.about-page');
 
-Route::get('/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
-Route::get('/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
-Route::get('/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');
+Route::get('/pt/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
+Route::get('/pt/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
+Route::get('/pt/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');
 
-Route::get('/list-project-page', [HomeController::class, 'listProjectPage'])->name('view.list-project-page');
-Route::get('/new-project-page', [HomeController::class, 'newProjectPage'])->name('view.new-project-page');
-Route::get('/project-page/{id}', [HomeController::class, 'projectPage'])->name('view.project-page');
+Route::get('/pt/list-project-page', [HomeController::class, 'listProjectPage'])->name('view.list-project-page');
+Route::get('/pt/new-project-page', [HomeController::class, 'newProjectPage'])->name('view.new-project-page');
+Route::get('/pt/project-page/{id}', [HomeController::class, 'projectPage'])->name('view.project-page');
 
-Route::get('/list-oportunidade-page', [HomeController::class, 'listOportunidadePage'])->name('view.list-oportunidade-page');
-Route::get('/new-oportunidade-page', [HomeController::class, 'newOportunidadePage'])->name('view.new-oportunidade-page');
-Route::get('/oportunidade-page/{id}', [HomeController::class, 'oportunidadePage'])->name('view.oportunidade-page');
+Route::get('/pt/list-oportunidade-page', [HomeController::class, 'listOportunidadePage'])->name('view.list-oportunidade-page');
+Route::get('/pt/new-oportunidade-page', [HomeController::class, 'newOportunidadePage'])->name('view.new-oportunidade-page');
+Route::get('/pt/oportunidade-page/{id}', [HomeController::class, 'oportunidadePage'])->name('view.oportunidade-page');
 
-Route::get('/list-propriedade-page', [HomeController::class, 'listPropriedadePage'])->name('view.list-propriedade-page');
-Route::get('/new-propriedade-page', [HomeController::class, 'newPropriedadePage'])->name('view.new-propriedade-page');
-Route::get('/propriedade-page/{id}', [HomeController::class, 'propriedadePage'])->name('view.propriedade-page');
+Route::get('/pt/list-propriedade-page', [HomeController::class, 'listPropriedadePage'])->name('view.list-propriedade-page');
+Route::get('/pt/new-propriedade-page', [HomeController::class, 'newPropriedadePage'])->name('view.new-propriedade-page');
+Route::get('/pt/propriedade-page/{id}', [HomeController::class, 'propriedadePage'])->name('view.propriedade-page');
 
 /*
 
-Route::get('/dashboard', function () {
+Route::get('/pt/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 

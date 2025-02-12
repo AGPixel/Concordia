@@ -1,6 +1,6 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/dashboard" class="brand-link">
+    <a href="/pt/dashboard" class="brand-link">
         <img src="{{ asset("/bower_components/admin-lte/dist/img/AdminLTELogo.png") }}" alt="Concordia Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Concordia</span>
     </a>
@@ -23,56 +23,56 @@
                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                 <li class="nav-header">SITE</li>
                 <li class="nav-item">
-                    <a href="/meta-tags-page" class="nav-link">
+                    <a href="/pt/meta-tags-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Meta Tags</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/index-page" class="nav-link">
+                    <a href="/pt/index-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Index</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/contact-page" class="nav-link">
+                    <a href="/pt/contact-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Contact</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/about-page" class="nav-link">
+                    <a href="/pt/about-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">About</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/list-work-page" class="nav-link">
+                    <a href="/pt/list-work-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Work</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/list-project-page" class="nav-link">
+                    <a href="/pt/list-project-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Project</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/list-oportunidade-page" class="nav-link">
+                    <a href="/pt/list-oportunidade-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Oportunidade</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/list-propriedade-page" class="nav-link">
+                    <a href="/pt/list-propriedade-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Propriedade</p>
                     </a>
                 </li>
                 <li class="nav-header">CONFIGURAÇÕES</li>
                 <li class="nav-item">
-                    <a href="/trocar-senha" class="nav-link">
+                    <a href="/pt/trocar-senha" class="nav-link">
                         <i class="nav-icon fa fa-key"></i>
                         <p class="text">Password</p>
                     </a>

@@ -26,14 +26,14 @@ function updateActiveWork(work) {
 function newWork() {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/new-work-page";
+        window.location.href = "/pt/new-work-page";
     }, 500);
 }
 
 function editWork(work) {
     showLoading();
     setTimeout(() => {
-        window.location.href = "/work-page/" + work.id;
+        window.location.href = "/pt/work-page/" + work.id;
     }, 500);
 }
 

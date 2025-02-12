@@ -66,7 +66,7 @@ function saveOportunidadePage(id) {
 
     apiPostBearer(GLOBAL_URL_API + 'save-oportunidade-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
-        window.location.href = "/list-oportunidade-page";
+        window.location.href = "/pt/list-oportunidade-page";
     }, function (_return) {
         toastError(_return.responseJSON.message);
         hideLoading();
