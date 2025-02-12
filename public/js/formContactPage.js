@@ -8,6 +8,7 @@ function saveContactPage() {
         email1: document.getElementById('InputContactEmail1').value,
         email2: document.getElementById('InputContactEmail2').value,
         contact_form_title: document.getElementById('InputContactTitle').value,
+        contact_form_title_eng: document.getElementById('InputContactTitleEng').value,
         business_hours1: document.getElementById('InputBusinessHour1').value,
         business_hours2: document.getElementById('InputBusinessHour2').value,
         business_hours3: document.getElementById('InputBusinessHour3').value,
