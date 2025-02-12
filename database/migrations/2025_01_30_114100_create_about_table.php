@@ -51,8 +51,8 @@ return new class extends Migration
             $table->text('about_brands_img_3')->nullable(true);
             $table->text('about_brands_img_4')->nullable(true);
             $table->text('about_brands_description')->nullable(true);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

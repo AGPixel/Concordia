@@ -22,8 +22,8 @@ return new class extends Migration
             $table->text('title_2')->nullable(true);
             $table->text('description_2')->nullable(true);
             $table->boolean('active')->default(true)->nullable(false);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

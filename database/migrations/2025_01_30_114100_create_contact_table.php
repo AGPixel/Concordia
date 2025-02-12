@@ -27,8 +27,8 @@ return new class extends Migration
             $table->text('footer_email')->nullable(true);
             $table->text('footer_call')->nullable(true);
             $table->text('footer_skype')->nullable(true);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

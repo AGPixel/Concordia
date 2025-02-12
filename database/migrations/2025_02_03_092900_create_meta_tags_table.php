@@ -16,8 +16,8 @@ return new class extends Migration
             $table->text('title')->nullable(true);
             $table->text('description')->nullable(true);
             $table->text('keywords')->nullable(true);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

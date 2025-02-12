@@ -37,8 +37,8 @@ return new class extends Migration
             $table->text('type_7')->nullable(true);
             $table->text('title_7')->nullable(true);
             $table->boolean('active')->default(true)->nullable(false);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 

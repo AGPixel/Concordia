@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('servico_geral', function (Blueprint $table) {
             $table->id();
             $table->text('video')->nullable(true);
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->dateTime('created_at');
+            $table->dateTime('updated_at');
         });
     }
 
