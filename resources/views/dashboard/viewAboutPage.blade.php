@@ -222,8 +222,7 @@
                                     'title' => 'About Experience Description 1',
                                     'id_input_text' => 'InputAboutExperienceDescription1',
                                     'arg_value' => $about->about_experience_description_1 ? $about->about_experience_description_1 : '',
-                                    'arg_value_eng' => $about->about_experience_description_1_eng ? $about->about_experience_description_1_eng : ''
-                                    ])
+                                    'arg_value_eng' => $about->about_experience_description_1_eng ? $about->about_experience_description_1_eng : '' ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
