@@ -61,7 +61,9 @@ function savePortifolioGeral() {
 
     let form = {
         title: document.getElementById('InputPortifolioTitle').value,
+        title_eng: document.getElementById('InputPortifolioTitleEng').value,
         description: document.getElementById('InputPortifolioDescription').value,
+        description_eng: document.getElementById('InputPortifolioDescriptionEng').value,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-portifolio-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

@@ -65,16 +65,20 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card-body first-card-body">
-                            <div class="form-group">
-                                <label for="InputPortifolioTitle">Title</label>
-                                <input type="text" name="workTitle" class="form-control" id="InputPortifolioTitle" value="{{ isset($portifolioGeral->title) ? $portifolioGeral->title : '' }}">
-                            </div>
+                            @include('components.inputtextpteng',[
+                            'title' => 'Title',
+                            'id_input_text' => 'InputPortifolioTitle',
+                            'arg_value' => $portifolioGeral->title ? $portifolioGeral->title : '',
+                            'arg_value_eng' => $portifolioGeral->title_eng ? $portifolioGeral->title_eng : ''
+                            ])
                         </div>
                         <div class="card-body first-card-body">
-                            <div class="form-group">
-                                <label for="InputPortifolioDescription">Description</label>
-                                <input type="text" name="workDescription" class="form-control" id="InputPortifolioDescription" value="{{ isset($portifolioGeral->description) ? $portifolioGeral->description : '' }}">
-                            </div>
+                            @include('components.inputtextpteng',[
+                            'title' => 'Description',
+                            'id_input_text' => 'InputPortifolioDescription',
+                            'arg_value' => $portifolioGeral->description ? $portifolioGeral->description : '',
+                            'arg_value_eng' => $portifolioGeral->description_eng ? $portifolioGeral->description_eng : ''
+                            ])
                         </div>
                     </div>
                     <div class="col-md-12 m-bot-1em">
