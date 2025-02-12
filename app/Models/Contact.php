@@ -15,6 +15,7 @@ class Contact extends Model
         'email1',
         'email2',
         'contact_form_title',
+        'contact_form_title_eng',
         'business_hours1',
         'business_hours2',
         'business_hours3',

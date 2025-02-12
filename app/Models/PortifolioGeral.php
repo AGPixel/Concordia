@@ -13,7 +13,9 @@ class PortifolioGeral extends Model
 
     protected $fillable = [
         'title',
+        'title_eng',
         'description',
+        'description_eng',
     ];
 
 }
