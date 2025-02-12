@@ -215,13 +215,17 @@ class SiteController extends Controller
 
         $contact = $this->service->contact();
 
+        $oportunidades = $this->service->oportunidade();
+
         return view('oportunidades',['metaTags' => $metaTags, 
                                      'index_text' => $index_text, 
                                      'contact' => $contact, 
-                                     'menuWorks' => $menuWorks]);
+                                     'menuWorks' => $menuWorks, 
+                                     'oportunidades' => $oportunidades]);
     }
 
-    public function oportunidadeDetalhe() {
+    public function oportunidadeDetalhe($id) {
+        $oportunidade = $this->service->oportunidadeById($id);
         $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
@@ -232,11 +236,12 @@ class SiteController extends Controller
 
         $menuProjects = $this->service->projectActive();
 
-        return view('oportunidadedetalhe',['metaTags' => $metaTags, 
-                                     'index_text' => $index_text, 
-                                     'contact' => $contact, 
-                                     'menuWorks' => $menuWorks, 
-                                     'menuProjects' => $menuProjects]);
+        return view('oportunidadedetalhe',['metaTags' => $metaTags,
+                                     'index_text' => $index_text,
+                                     'contact' => $contact,
+                                     'menuWorks' => $menuWorks,
+                                     'menuProjects' => $menuProjects,
+                                     'oportunidade' => $oportunidade]);
     }
 
     public function saveOportunidadePage(Request $request) {

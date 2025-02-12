@@ -14,6 +14,9 @@ class Oportunidade extends Model
     protected $fillable = [
         'title',
         'description',
+        'year',
+        'job_1',
+        'job_2',
         'img_1',
         'type_1',
         'title_1',
@@ -26,15 +29,6 @@ class Oportunidade extends Model
         'img_4',
         'type_4',
         'title_4',
-        'img_5',
-        'type_5',
-        'title_5',
-        'img_6',
-        'type_6',
-        'title_6',
-        'img_7',
-        'type_7',
-        'title_7',
     ];
 
 }

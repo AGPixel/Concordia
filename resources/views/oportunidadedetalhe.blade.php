@@ -43,15 +43,16 @@
         <!-- ========== End Menu ========== -->
 
         <div id="dsn-scrollbar">
-
-            <div class="over-hidden section-margin">
-                <div class="img-box-parallax dsn-animate dsn-effect-down has-popup dsn-active" data-dsn-grid="move-up">
-
-                    <div class="effect-popup before-z-index h-100" data-src="assets/img/portfolio/project5/5.jpg" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                        <img class="cover-bg-img has-direction" src="assets/img/portfolio/project5/5.jpg" alt="">
-                    </div>
+            @php
+            //dd($oportunidade->type_2);
+            @endphp
+            <!-- ========== Slider Parallax ========== -->
+            <header class="dsn-section-padding v-dark-head h-100-v p-relative">
+                <div class="effect-popup before-z-index h-100" data-src="{{ isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                    <img class="cover-bg-img has-direction" src="{{ isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                 </div>
-            </div>
+            </header>
+            <!-- ========== End Slider Parallax ========== -->
 
             <div class="section-margin">
                 <div class="container">
@@ -69,19 +70,19 @@
                 <div class="container p-relative">
                     <div class="d-grid grid-sm-2 align-items-center">
                         <div class="p-relative img-box-parallax before-z-index has-popup">
-                            <div class="effect-popup before-z-index h-v-70 " data-src="assets/img/portfolio/project5/3.jpg" data-caption="Caption #2" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                                <img class="cover-bg-img has-border-radius" src="assets/img/portfolio/project5/3.jpg" alt="">
+                            <div class="effect-popup before-z-index h-v-70 " data-src="{{ isset($oportunidade->img_2) ? asset("../storage/$oportunidade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_2) ?? $oportunidade->type_2 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                                <img class="cover-bg-img has-border-radius" src="{{ isset($oportunidade->img_2) ? asset("../storage/$oportunidade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             </div>
                             <div class="cap">
-                                <span>Caption</span>
+                                <span>{{ isset($oportunidade->type_2) ? $oportunidade->type_2 : ''}}</span>
                             </div>
                         </div>
                         <div class="p-relative img-box-parallax before-z-index has-popup">
-                            <div class="effect-popup before-z-index h-v-70" data-src="assets/img/portfolio/project1/7.jpg" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                                <img class="cover-bg-img has-border-radius" src="assets/img/portfolio/project5/4.jpg" alt="">
+                            <div class="effect-popup before-z-index h-v-70" data-src="{{ isset($oportunidade->img_3) ? asset("../storage/$oportunidade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_3) ?? $oportunidade->type_3 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                                <img class="cover-bg-img has-border-radius" src="{{ isset($oportunidade->img_3) ? asset("../storage/$oportunidade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             </div>
                             <div class="cap">
-                                <span>Caption</span>
+                                <span>{{ isset($oportunidade->type_3) ? $oportunidade->type_3 : '' }}</span>
                             </div>
                         </div>
                     </div>
@@ -90,12 +91,12 @@
                 <div class="container over-hidden mt-30">
                     <div class="img-box-parallax dsn-animate dsn-effect-down has-popup dsn-active" data-dsn-grid="move-up">
 
-                        <div class="effect-popup before-z-index h-100" data-src="assets/img/portfolio/project5/2.jpg" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                            <img class="cover-bg-img has-direction has-border-radius" src="assets/img/portfolio/project5/2.jpg" alt="">
+                        <div class="effect-popup before-z-index h-100" data-src="{{ isset($oportunidade->img_4) ? asset("../storage/$oportunidade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_4) ?? $oportunidade->type_4 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                            <img class="cover-bg-img has-direction has-border-radius" src="{{ isset($oportunidade->img_4) ? asset("../storage/$oportunidade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                         </div>
 
                         <div class="cap">
-                            <span>Caption</span>
+                            <span>{{ isset($oportunidade->type_4) ? $oportunidade->type_4 : '' }}</span>
                         </div>
                     </div>
                 </div>

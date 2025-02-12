@@ -138,6 +138,9 @@ class DatabaseSeeder extends Seeder
         $oportunidade = new Oportunidade();
         $oportunidade->title = 'Oportunidade Um';
         $oportunidade->description = 'Oportunidade Descrição Um';
+        $oportunidade->year = '2023';
+        $oportunidade->job_1 = 'Job 1';
+        $oportunidade->job_2 = 'Job 2';
         $oportunidade->active = true;
         $oportunidade->save();
 

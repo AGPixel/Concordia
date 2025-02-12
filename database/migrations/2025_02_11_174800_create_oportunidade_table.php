@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->text('title')->nullable(true);
             $table->text('description')->nullable(true);
+            $table->text('year')->nullable(true);
+            $table->text('job_1')->nullable(true);
+            $table->text('job_2')->nullable(true);
             $table->text('img_1')->nullable(true);
             $table->text('type_1')->nullable(true);
             $table->text('title_1')->nullable(true);
@@ -27,15 +30,6 @@ return new class extends Migration
             $table->text('img_4')->nullable(true);
             $table->text('type_4')->nullable(true);
             $table->text('title_4')->nullable(true);
-            $table->text('img_5')->nullable(true);
-            $table->text('type_5')->nullable(true);
-            $table->text('title_5')->nullable(true);
-            $table->text('img_6')->nullable(true);
-            $table->text('type_6')->nullable(true);
-            $table->text('title_6')->nullable(true);
-            $table->text('img_7')->nullable(true);
-            $table->text('type_7')->nullable(true);
-            $table->text('title_7')->nullable(true);
             $table->boolean('active')->default(true)->nullable(false);
             $table->timestamp('created_at');
             $table->timestamp('updated_at');

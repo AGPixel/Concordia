@@ -51,6 +51,24 @@
                                         <input type="text" name="oportunidadeDescription" class="form-control" id="InputOportunidadeDescription" value="{{ isset($oportunidade->description) ? $oportunidade->description : '' }}">
                                     </div>
                                 </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputOportunidadeYear">Year</label>
+                                        <input type="text" name="oportunidadeYear" class="form-control" id="InputOportunidadeYear" value="{{ isset($oportunidade->year) ? $oportunidade->year : '' }}">
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputOportunidadeJob1">Job 1</label>
+                                        <input type="text" name="oportunidadeJob1" class="form-control" id="InputOportunidadeJob1" value="{{ isset($oportunidade->job_1) ? $oportunidade->job_1 : '' }}">
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputOportunidadeJob2">Job 2</label>
+                                        <input type="text" name="oportunidadeJob2" class="form-control" id="InputOportunidadeJob2" value="{{ isset($oportunidade->job_2) ? $oportunidade->job_2 : '' }}">
+                                    </div>
+                                </div>
                                 <!-- 11111 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -149,81 +167,6 @@
                                     <div class="form-group">
                                         <label for="InputOportunidadeTitle4">Title 4</label>
                                         <input type="text" name="oportunidadeTitle4" class="form-control" id="InputOportunidadeTitle4" value="{{ isset($oportunidade->title_4) ? $oportunidade->title_4 : '' }}">
-                                    </div>
-                                </div>
-                                <!-- 55555 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeImg5">Image 5</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($oportunidade->img_5) ? asset("../storage/$oportunidade->img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputOportunidadeImg5">
-                                                <label class="custom-file-label disable" for="InputOportunidadeImg5" id="ImageOportunidadeImg5Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeType5">Type 5</label>
-                                        <input type="text" name="oportunidadeType5" class="form-control" id="InputOportunidadeType5" value="{{ isset($oportunidade->type_5) ? $oportunidade->type_5 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeTitle5">Title 5</label>
-                                        <input type="text" name="oportunidadeTitle5" class="form-control" id="InputOportunidadeTitle5" value="{{ isset($oportunidade->title_5) ? $oportunidade->title_5 : '' }}">
-                                    </div>
-                                </div>
-                                <!-- 66666 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeImg6">Image 6</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($oportunidade->img_6) ? asset("../storage/$oportunidade->img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputOportunidadeImg6">
-                                                <label class="custom-file-label disable" for="InputOportunidadeImg6" id="ImageOportunidadeImg6Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeType6">Type 6</label>
-                                        <input type="text" name="oportunidadeType6" class="form-control" id="InputOportunidadeType6" value="{{ isset($oportunidade->type_6) ? $oportunidade->type_6 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeTitle6">Title 6</label>
-                                        <input type="text" name="oportunidadeTitle6" class="form-control" id="InputOportunidadeTitle6" value="{{ isset($oportunidade->title_6) ? $oportunidade->title_6 : '' }}">
-                                    </div>
-                                </div>
-                                <!-- 77777 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeImg7">Image 7</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($oportunidade->img_7) ? asset("../storage/$oportunidade->img_7") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputOportunidadeImg7">
-                                                <label class="custom-file-label disable" for="InputOportunidadeImg7" id="ImageOportunidadeImg7Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeType7">Type 7</label>
-                                        <input type="text" name="oportunidadeType7" class="form-control" id="InputOportunidadeType7" value="{{ isset($oportunidade->type_7) ? $oportunidade->type_7 : '' }}">
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputOportunidadeTitle7">Title 7</label>
-                                        <input type="text" name="oportunidadeTitle7" class="form-control" id="InputOportunidadeTitle7" value="{{ isset($oportunidade->title_7) ? $oportunidade->title_7 : '' }}">
                                     </div>
                                 </div>
 

@@ -58,9 +58,11 @@
                             <div class="dsn-container">
                                 <div class="dsn-posts hover-box-item d-grid grid-lg-2 dsn-isotope use-filter" data-dsn-gap="30px">
 
+                                    @foreach($oportunidades as $id => $oportunidade)
                                     <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
 
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
+                                            @if(isset($oportunidade->year))
                                             <div class="cat background-main d-flex p-absolute top-0 right-0">
                                                 <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
@@ -70,9 +72,10 @@
                                                     <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                     </path>
                                                 </svg>
-                                                <span class="background-section heading-color">2023</span>
+                                                <span class="background-section heading-color">{{ $oportunidade->year }}</span>
                                             </div>
-                                            <img src="assets/img/portfolio/project1/1.jpg" class="cover-bg-img" alt="" />
+                                            @endif
+                                            <img src="{{ isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" class="cover-bg-img" alt="" />
                                         </div>
 
                                         <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
@@ -80,18 +83,20 @@
                                             <div class="post-info d-flex justify-content-between">
                                                 <div class="">
                                                     <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">UX / UI
-                                                            Design</span>
-                                                        <span class="background-section heading-color">Architecture</span>
+                                                        @if(isset($oportunidade->job_1))
+                                                        <span class="background-section heading-color">{{ $oportunidade->job_1 }}</span>
+                                                        @endif
+                                                        @if(isset($oportunidade->job_2))
+                                                        <span class="background-section heading-color">{{ $oportunidade->job_2 }}</span>
+                                                        @endif
                                                     </div>
 
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">Binge x <br> The Iconic <span class="fw-200">©
-                                                                2021</span></a>
+                                                        <a href="oportunidade/{{ $oportunidade->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $oportunidade->title }}</a>
                                                     </h2>
                                                 </div>
 
-                                                <a href="project-1.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
+                                                <a href="oportunidade/{{ $oportunidade->id }}" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
                                                     <span class="icon background-section v-light">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -105,299 +110,8 @@
                                         </div>
 
                                     </article>
+                                    @endforeach
 
-                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion sports">
-
-                                        <div class="box-image-bg has-border-radius w-100 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2022</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project2/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Character design
-                                                        </span>
-                                                        <span class="background-section heading-color">Digital Art
-                                                        </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">Me <br> Myself and i <span class="fw-200">© 2024</span></a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-2.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative sport photographys">
-
-                                        <div class="box-image-bg has-border-radius w-100 h-v-60 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2017</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project3/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Photography
-                                                        </span>
-                                                        <span class="background-section heading-color">branding </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-3.html" class="effect-ajax init-color" data-dsn-ajax="work">YOUR <br> DREAM CAR <span class="fw-200">© 2024</span></a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-3.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
-
-                                        <div class="box-image-bg has-border-radius w-100 h-350 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2022</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project4/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Photography
-                                                        </span>
-                                                        <span class="background-section heading-color">branding </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-4.html" class="effect-ajax init-color" data-dsn-ajax="work">BThe <br> Hills - Nissan <span class="fw-200">© 2019</span></a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-4.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative photography">
-
-                                        <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2022</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project5/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Photography
-                                                        </span>
-                                                        <span class="background-section heading-color">Architecture
-                                                        </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-5.html" class="effect-ajax init-color" data-dsn-ajax="work">Church <br> Copenhagen Denmark</a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-5.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative fashion sports">
-
-                                        <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2024</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project6/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Photography
-                                                        </span>
-                                                        <span class="background-section heading-color">Architecture
-                                                        </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-6.html" class="effect-ajax init-color" data-dsn-ajax="work">LOST <br> RENDER <span class="fw-200">©
-                                                                2023</span></a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-6.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
-
-                                    <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
-
-                                        <div class="box-image-bg has-border-radius w-100 h-500 over-hidden before-z-index">
-                                            <div class="cat background-main d-flex p-absolute top-0 right-0">
-                                                <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                    <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                    </path>
-                                                </svg>
-                                                <span class="background-section heading-color">2022</span>
-                                            </div>
-
-                                            <img src="assets/img/portfolio/project7/1.jpg" class="cover-bg-img" alt="" />
-                                        </div>
-
-                                        <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
-
-                                            <div class="post-info d-flex justify-content-between">
-                                                <div class="">
-                                                    <div class="cat d-flex p-0 mb-5">
-                                                        <span class="background-section heading-color">Architecture
-                                                        </span>
-                                                        <span class="background-section heading-color">Interior Design
-                                                        </span>
-                                                    </div>
-
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="project-7.html" class="effect-ajax init-color" data-dsn-ajax="work">Samokat <br> office <span class="fw-200">© 2021</span></a>
-                                                    </h2>
-                                                </div>
-
-                                                <a href="project-7.html" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
-                                                    <span class="icon background-section v-light">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                                            </path>
-                                                        </svg>
-                                                    </span>
-
-                                                </a>
-
-                                            </div>
-                                        </div>
-
-                                    </article>
                                 </div>
                             </div>
 

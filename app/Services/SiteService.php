@@ -352,9 +352,6 @@ class SiteService extends BaseService
         $arr['img_2']     = $this->uploadImageValue($arr['img_2']);
         $arr['img_3']     = $this->uploadImageValue($arr['img_3']);
         $arr['img_4']     = $this->uploadImageValue($arr['img_4']);
-        $arr['img_5']     = $this->uploadImageValue($arr['img_5']);
-        $arr['img_6']     = $this->uploadImageValue($arr['img_6']);
-        $arr['img_7']     = $this->uploadImageValue($arr['img_7']);
 
         return $arr;
     }
@@ -367,9 +364,6 @@ class SiteService extends BaseService
         $arr['img_2']     = $this->updateImageValue($oportunidade->img_2,$arr['img_2']);
         $arr['img_3']     = $this->updateImageValue($oportunidade->img_3,$arr['img_3']);
         $arr['img_4']     = $this->updateImageValue($oportunidade->img_4,$arr['img_4']);
-        $arr['img_5']     = $this->updateImageValue($oportunidade->img_5,$arr['img_5']);
-        $arr['img_6']     = $this->updateImageValue($oportunidade->img_6,$arr['img_6']);
-        $arr['img_7']     = $this->updateImageValue($oportunidade->img_7,$arr['img_7']);
 
         return $arr;
     }
