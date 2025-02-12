@@ -18,6 +18,10 @@ Route::get('/oportunidade/{id}', [SiteController::class, 'oportunidadeDetalhe'])
 Route::get('/propriedades', [SiteController::class, 'propriedades'])->name('site.propriedades');
 Route::get('/propriedade/{id}', [SiteController::class, 'propriedadeDetalhe'])->name('site.propriedade-detalhe');
 
+Route::get('/project-3', function() {
+    return view('project-3');
+})->name('site.project-3');
+
 Route::get('/login', [LoginController::class, 'login'])->name('view.login');
 Route::get('/esqueci-senha', [LoginController::class, 'esqueciSenha'])->name('view.esqueci-senha');
 

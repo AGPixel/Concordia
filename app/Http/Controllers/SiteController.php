@@ -271,13 +271,17 @@ class SiteController extends Controller
 
         $contact = $this->service->contact();
 
+        $propriedades = $this->service->propriedade();
+
         return view('propriedades',['metaTags' => $metaTags, 
                                      'index_text' => $index_text, 
                                      'contact' => $contact, 
-                                     'menuWorks' => $menuWorks]);
+                                     'menuWorks' => $menuWorks, 
+                                     'propriedades' => $propriedades]);
     }
 
-    public function propriedadeDetalhe() {
+    public function propriedadeDetalhe($id) {
+        $propriedade = $this->service->propriedadeById($id);
         $metaTags = $this->service->metaTags();
 
         $menuWorks = $this->service->workActive();
@@ -292,7 +296,8 @@ class SiteController extends Controller
                                      'index_text' => $index_text, 
                                      'contact' => $contact, 
                                      'menuWorks' => $menuWorks, 
-                                     'menuProjects' => $menuProjects]);
+                                     'menuProjects' => $menuProjects,
+                                     'propriedade' => $propriedade]);
     }
 
     public function savePropriedadePage(Request $request) {

@@ -77,16 +77,17 @@
         <!-- ========== Menu ========== -->
         @include('components.sitemenu',['menuWorks'=>$menuWorks])
         <!-- ========== End Menu ========== -->
-
+        @php
+        //dd($propriedade);
+        @endphp
         <div id="dsn-scrollbar">
 
             <!-- ========== Slider Parallax ========== -->
             <header class="dsn-section-padding v-dark-head h-100-v p-relative">
                 <div class="copyright background-main">
                     <div class="img-box-parallax dsn-animate dsn-effect-down has-popup dsn-active" data-dsn-grid="move-up">
-
-                        <div class="effect-popup before-z-index h-100" data-src="assets/img/portfolio/project1/5.jpg" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                            <img class="cover-bg-img has-direction" src="assets/img/portfolio/project3/2.jpg" alt="">
+                        <div class="effect-popup before-z-index h-100" data-src="{{ isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($propriedade->title_1) ? asset("../storage/$propriedade->title_1") : '' }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
+                            <img class="cover-bg-img has-direction" src="{{ isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -97,11 +98,10 @@
 
                 <div class="section-margin text-center">
                     <div class="container">
-                        <h3 class="title text-upper mb-30">Headphone product?</h3>
-                        <p class="max-w750">In order to create a more simple design, a unique brand concept was applied
-                            to the headphone. Burberry makes products that are classy yet modern I decided to focus on
-                            making a modern yet classy looking pair of headsets.
-                            I looked for ways to design headphones that look good at any place and any time.</p>
+                        <h3 class="title text-upper mb-30">{{ isset($propriedade->title_1) ? $oportunidade->title_1 : 'Titulo 1' }}</h3>
+                        <p class="max-w750">
+                            {{ isset($propriedade->description) ? $propriedade->description : 'Descrição 1' }}
+                        </p>
                     </div>
                 </div>
 
@@ -109,47 +109,54 @@
 
                 <div class="container p-relative section-margin over-hidden">
                     <div class="gallery-portfolio">
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/3.jpg" data-fancybox="_1" data-caption="Caption #1">
-                            <img src="assets/img/portfolio/project3/3.jpg" alt="">
+                        @if(isset($propriedade->img_2))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_2) ? $propriedade->title_2 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_2) ? $propriedade->type_2 : '' }}</span>
                             </div>
                         </a>
-
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/4.jpg" data-fancybox="_1" data-caption="Caption #2">
-                            <img src="assets/img/portfolio/project3/4.jpg" alt="">
+                        @endif
+                        @if(isset($propriedade->img_3))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_3) ? $propriedade->title_3 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_3) ? $propriedade->type_3 : '' }}</span>
                             </div>
                         </a>
-
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/5.jpg" data-fancybox="_1" data-caption="Caption #3">
-                            <img src="assets/img/portfolio/project3/5.jpg" alt="">
+                        @endif
+                        @if(isset($propriedade->img_4))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_4) ? $propriedade->title_4 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_4) ? $propriedade->type_4 : '' }}</span>
                             </div>
                         </a>
-
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/6.jpg" data-fancybox="_1" data-caption="Caption #4">
-                            <img src="assets/img/portfolio/project3/6.jpg" alt="">
+                        @endif
+                        @if(isset($propriedade->img_5))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_5) ? $propriedade->title_5 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_5) ? $propriedade->type_5 : '' }}</span>
                             </div>
                         </a>
-
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/7.jpg" data-fancybox="_1" data-caption="Caption #4">
-                            <img src="assets/img/portfolio/project3/7.jpg" alt="">
+                        @endif
+                        @if(isset($propriedade->img_6))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_6) ? $propriedade->title_6 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_6) ? $propriedade->type_6 : '' }}</span>
                             </div>
                         </a>
-
-                        <a class="link-pop fj-gallery-item" href="assets/img/portfolio/project3/8.jpg" data-fancybox="_1" data-caption="Caption #4">
-                            <img src="assets/img/portfolio/project3/8.jpg" alt="">
+                        @endif
+                        @if(isset($propriedade->img_7))
+                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_7) ? $propriedade->title_7 : '' }}">
+                            <img width="512" height="320" src="{{ isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                             <div class="cap">
-                                <span>Web Design</span>
+                                <span>{{ isset($propriedade->type_7) ? $propriedade->type_7 : '' }}</span>
                             </div>
                         </a>
+                        @endif
                     </div>
                 </div>
 

@@ -56,12 +56,10 @@
 
             <div class="section-margin">
                 <div class="container">
-                    <h3 class="title text-upper mb-30">Headphone product?</h3>
-                    <p class="max-w750">PDF HAUS is a practical product design educational institution situated in
-                        Korea.
-                        PDF HAUS, which started from a designer community called PDF (Product Designer's Forum), was
-                        able to sense the difficulties that students, designer-to-be or new designers, or other
-                        non-majors interested in design are going through, and the passion in them.</p>
+                    <h3 class="title text-upper mb-30">{{ isset($oportunidade->title_1) ? $oportunidade->title_1 : 'Titulo 1' }}</h3>
+                    <p class="max-w750">
+                        {{ isset($oportunidade->description) ? $oportunidade->description : 'Descrição 1' }}
+                    </p>
                 </div>
             </div>
 

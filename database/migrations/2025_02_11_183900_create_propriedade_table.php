@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->text('title')->nullable(true);
             $table->text('description')->nullable(true);
+            $table->text('year')->nullable(true);
+            $table->text('job_1')->nullable(true);
+            $table->text('job_2')->nullable(true);
             $table->text('img_1')->nullable(true);
             $table->text('type_1')->nullable(true);
             $table->text('legend_1')->nullable(true);

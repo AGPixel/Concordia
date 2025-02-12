@@ -14,6 +14,9 @@ class Propriedade extends Model
     protected $fillable = [
         'title',
         'description',
+        'year',
+        'job_1',
+        'job_2',
         'img_1',
         'type_1',
         'legend_1',

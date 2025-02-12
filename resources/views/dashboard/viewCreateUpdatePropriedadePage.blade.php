@@ -51,6 +51,24 @@
                                         <input type="text" name="propriedadeDescription" class="form-control" id="InputPropriedadeDescription" value="{{ isset($propriedade->description) ? $propriedade->description : '' }}">
                                     </div>
                                 </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputPropriedadeYear">Year</label>
+                                        <input type="text" name="propriedadeYear" class="form-control" id="InputPropriedadeYear" value="{{ isset($propriedade->year) ? $propriedade->year : '' }}">
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputPropriedadeJob1">Job 1</label>
+                                        <input type="text" name="propriedadeJob1" class="form-control" id="InputPropriedadeJob1" value="{{ isset($propriedade->job_1) ? $propriedade->job_1 : '' }}">
+                                    </div>
+                                </div>
+                                <div class="card-body first-card-body">
+                                    <div class="form-group">
+                                        <label for="InputPropriedadeJob2">Job 2</label>
+                                        <input type="text" name="propriedadeJob2" class="form-control" id="InputPropriedadeJob2" value="{{ isset($propriedade->job_2) ? $propriedade->job_2 : '' }}">
+                                    </div>
+                                </div>
                                 <!-- 11111 -->
                                 <div class="card-body">
                                     <div class="form-group">

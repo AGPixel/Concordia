@@ -147,6 +147,9 @@ class DatabaseSeeder extends Seeder
         $propriedade = new Propriedade();
         $propriedade->title = 'Propriedade Um';
         $propriedade->description = 'Propriedade Descrição Um';
+        $propriedade->year = '2023';
+        $propriedade->job_1 = 'Job 1';
+        $propriedade->job_2 = 'Job 2';
         $propriedade->active = true;
         $propriedade->save();
     }
