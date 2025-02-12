@@ -103,6 +103,96 @@
 
         </div>
 
+        <div class="">
+
+            <!-- ========== Contact  ========== -->
+            <div class="p-relative contact-form over-hidden section-padding">
+                <div class="p-relative container ">
+                    <div class="d-grid" data-dsn-gap="30px 30px">
+                        <div class="box-info d-grid">
+                            <div class="box-title p-relative over-hidden">
+                                <h2 class="title text-upper p-relative">{{ $contact->contact_form_title ? $contact->contact_form_title : 'contact_form_title' }}</h2>
+                            </div>
+                            <div class="dsn-form form-box d-flex flex-column p-relative">
+                                <form id="contact-form" class="form w-100" method="post" action="contact.php" data-toggle="validator">
+                                    <div class="messages"></div>
+                                    <div class="input__wrap controls">
+                                        <div class="d-grid" data-dsn-gap="0px 30px">
+                                            <div class="form-group dsn-up">
+                                                <div class="entry-box">
+
+                                                    <input id="form_name" type="text" name="name" placeholder="Type your name" required="required" data-error="name is required." />
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                            <div class="form-group dsn-up">
+                                                <div class="entry-box">
+
+                                                    <input id="form_email" type="email" name="email" placeholder="Type your Email Address" required="required" data-error="Valid email is required." />
+                                                </div>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="form-group dsn-up">
+                                            <div class="entry-box">
+
+                                                <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="Tell us about you and the world" required="required" data-error="Please,leave us a message."></textarea>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div class="d-flex dsn-up w-100">
+                                            <div class="image-zoom move-circle w-100" data-dsn="parallax">
+                                                <input class="background-theme w-100" type="submit" value="Send Message">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-box border-bottom border-top mt-30 d-flex align-items-center justify-content-center">
+                        <p class="heading-color">Available for work</p>
+
+                        <ul class="dsn-socials box-social">
+                            @if(isset($index_text->social_url_facebook))
+                            <li>
+                                <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-section">
+                                    <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
+                                </a>
+                            </li>
+                            @endif
+                            @if(isset($index_text->social_url_instagram))
+                            <li>
+                                <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-section">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
+                                </a>
+                            </li>
+                            @endif
+                            @if(isset($index_text->social_url_twitter))
+                            <li>
+                                <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-section">
+                                    <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
+                                </a>
+                            </li>
+                            @endif
+                            @if(isset($index_text->social_url_linkedin))
+                            <li>
+                                <a href="{{ $index_text->social_url_linkedin }}" target="_blank" class="background-section">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
+                                </a>
+                            </li>
+                            @endif
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- ========== End Contact  ========== -->
+        </div>
+
         <section class="next-page background-section pt-section pb-50 p-top-3em">
 
             <div class="container over-hidden">
