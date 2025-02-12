@@ -51,6 +51,27 @@ return new class extends Migration
             $table->text('about_brands_img_3')->nullable(true);
             $table->text('about_brands_img_4')->nullable(true);
             $table->text('about_brands_description')->nullable(true);
+
+            $table->text('about_title_1_eng')->nullable(true);
+            $table->text('about_title_2_eng')->nullable(true);
+            $table->text('about_service_title_eng')->nullable(true);
+            $table->text('about_service_1_eng')->nullable(true);
+            $table->text('about_service_2_eng')->nullable(true);
+            $table->text('about_service_3_eng')->nullable(true);
+            $table->text('about_service_4_eng')->nullable(true);
+            $table->text('about_service_5_eng')->nullable(true);
+            $table->text('about_service_6_eng')->nullable(true);
+            $table->text('about_experience_title_eng')->nullable(true);
+            $table->text('about_experience_title_1_eng')->nullable(true);
+            $table->text('about_experience_description_1_eng')->nullable(true);
+            $table->text('about_experience_title_2_eng')->nullable(true);
+            $table->text('about_experience_description_2_eng')->nullable(true);
+            $table->text('about_experience_title_3_eng')->nullable(true);
+            $table->text('about_experience_description_3_eng')->nullable(true);
+            $table->text('about_experience_title_4_eng')->nullable(true);
+            $table->text('about_experience_description_4_eng')->nullable(true);
+            $table->text('about_brands_description_eng')->nullable(true);
+
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });

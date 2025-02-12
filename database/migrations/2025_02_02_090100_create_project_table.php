@@ -21,6 +21,12 @@ return new class extends Migration
             $table->text('img_4')->nullable(true);
             $table->text('title_2')->nullable(true);
             $table->text('description_2')->nullable(true);
+
+            $table->text('title_1_eng')->nullable(true);
+            $table->text('description_1_eng')->nullable(true);
+            $table->text('title_2_eng')->nullable(true);
+            $table->text('description_2_eng')->nullable(true);
+
             $table->boolean('active')->default(true)->nullable(false);
             $table->dateTime('created_at');
             $table->dateTime('updated_at');

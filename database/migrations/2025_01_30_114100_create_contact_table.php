@@ -27,6 +27,9 @@ return new class extends Migration
             $table->text('footer_email')->nullable(true);
             $table->text('footer_call')->nullable(true);
             $table->text('footer_skype')->nullable(true);
+
+            $table->text('contact_form_title_eng')->nullable(true);
+
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });

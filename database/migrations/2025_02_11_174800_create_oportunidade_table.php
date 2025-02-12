@@ -30,6 +30,20 @@ return new class extends Migration
             $table->text('img_4')->nullable(true);
             $table->text('type_4')->nullable(true);
             $table->text('title_4')->nullable(true);
+
+            $table->text('title_eng')->nullable(true);
+            $table->text('description_eng')->nullable(true);
+            $table->text('job_1_eng')->nullable(true);
+            $table->text('job_2_eng')->nullable(true);
+            $table->text('type_1_eng')->nullable(true);
+            $table->text('title_1_eng')->nullable(true);
+            $table->text('type_2_eng')->nullable(true);
+            $table->text('title_2_eng')->nullable(true);
+            $table->text('type_3_eng')->nullable(true);
+            $table->text('title_3_eng')->nullable(true);
+            $table->text('type_4_eng')->nullable(true);
+            $table->text('title_4_eng')->nullable(true);
+
             $table->boolean('active')->default(true)->nullable(false);
             $table->dateTime('created_at');
             $table->dateTime('updated_at');

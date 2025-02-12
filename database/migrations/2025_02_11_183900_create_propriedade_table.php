@@ -39,6 +39,28 @@ return new class extends Migration
             $table->text('img_7')->nullable(true);
             $table->text('type_7')->nullable(true);
             $table->text('legend_7')->nullable(true);
+
+            $table->text('title_eng')->nullable(true);
+            $table->text('description_eng')->nullable(true);
+            $table->text('year_eng')->nullable(true);
+            $table->text('job_1_eng')->nullable(true);
+            $table->text('job_2_eng')->nullable(true);
+            $table->text('img_1_eng')->nullable(true);
+            $table->text('type_1_eng')->nullable(true);
+            $table->text('legend_1_eng')->nullable(true);
+            $table->text('type_2_eng')->nullable(true);
+            $table->text('legend_2_eng')->nullable(true);
+            $table->text('type_3_eng')->nullable(true);
+            $table->text('legend_3_eng')->nullable(true);
+            $table->text('type_4_eng')->nullable(true);
+            $table->text('legend_4_eng')->nullable(true);
+            $table->text('type_5_eng')->nullable(true);
+            $table->text('legend_5_eng')->nullable(true);
+            $table->text('type_6_eng')->nullable(true);
+            $table->text('legend_6_eng')->nullable(true);
+            $table->text('type_7_eng')->nullable(true);
+            $table->text('legend_7_eng')->nullable(true);
+
             $table->boolean('active')->default(true)->nullable(false);
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
