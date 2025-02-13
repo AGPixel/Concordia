@@ -58,14 +58,11 @@
                                 <!-- 11111 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg1">Image 1</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_1 ? asset("../storage/$work->img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg1">
-                                                <label class="custom-file-label disable" for="InputWorkImg1" id="ImageWorkImg1Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 1',
+                                        'id_img_file' => 'InputWorkImg1',
+                                        'id_text_file' => 'ImageWorkImg1Preview',
+                                        'arg_value' => $work->img_1 ? asset("../storage/$work->img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -87,14 +84,11 @@
                                 <!-- 22222 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg2">Image 2</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_2 ? asset("../storage/$work->img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg2">
-                                                <label class="custom-file-label disable" for="InputWorkImg2" id="ImageWorkImg2Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 2',
+                                        'id_img_file' => 'InputWorkImg2',
+                                        'id_text_file' => 'ImageWorkImg2Preview',
+                                        'arg_value' => $work->img_2 ? asset("../storage/$work->img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -116,14 +110,11 @@
                                 <!-- 33333 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg3">Image 3</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_3 ? asset("../storage/$work->img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg3">
-                                                <label class="custom-file-label disable" for="InputWorkImg3" id="ImageWorkImg3Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 3',
+                                        'id_img_file' => 'InputWorkImg3',
+                                        'id_text_file' => 'ImageWorkImg3Preview',
+                                        'arg_value' => $work->img_3 ? asset("../storage/$work->img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -145,14 +136,11 @@
                                 <!-- 44444 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg4">Image 4</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_4 ? asset("../storage/$work->img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg4">
-                                                <label class="custom-file-label disable" for="InputWorkImg4" id="ImageWorkImg4Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 4',
+                                        'id_img_file' => 'InputWorkImg4',
+                                        'id_text_file' => 'ImageWorkImg4Preview',
+                                        'arg_value' => $work->img_4 ? asset("../storage/$work->img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -174,14 +162,11 @@
                                 <!-- 55555 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg5">Image 5</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_5 ? asset("../storage/$work->img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg5">
-                                                <label class="custom-file-label disable" for="InputWorkImg5" id="ImageWorkImg5Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 5',
+                                        'id_img_file' => 'InputWorkImg5',
+                                        'id_text_file' => 'ImageWorkImg5Preview',
+                                        'arg_value' => $work->img_5 ? asset("../storage/$work->img_5") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -203,14 +188,11 @@
                                 <!-- 66666 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg6">Image 6</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_6 ? asset("../storage/$work->img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg6">
-                                                <label class="custom-file-label disable" for="InputWorkImg6" id="ImageWorkImg6Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 6',
+                                        'id_img_file' => 'InputWorkImg6',
+                                        'id_text_file' => 'ImageWorkImg6Preview',
+                                        'arg_value' => $work->img_6 ? asset("../storage/$work->img_6") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -232,14 +214,11 @@
                                 <!-- 77777 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputWorkImg7">Image 7</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ $work->img_7 ? asset("../storage/$work->img_7") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputWorkImg7">
-                                                <label class="custom-file-label disable" for="InputWorkImg7" id="ImageWorkImg7Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 7',
+                                        'id_img_file' => 'InputWorkImg7',
+                                        'id_text_file' => 'ImageWorkImg7Preview',
+                                        'arg_value' => $work->img_7 ? asset("../storage/$work->img_7") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body">
