@@ -1,5 +1,4 @@
 "use strict";
-console.log("bbb");
 const dsnParam = {
   map: {
     marker_icon: "assets/img/map-marker.png",
@@ -21,7 +20,6 @@ const dsnParam = {
 
 (function ($) {
   "use strict";
-  console.log("aaaa");
   preloader();
   effectBackForward();
 
@@ -364,7 +362,6 @@ const dsnParam = {
 
   function preloader() {
     const preloader = $("#dsn_preloader");
-    console.log('preloader - 1');
     if (!preloader.length) {
       window.addEventListener('DOMContentLoaded', function () {
         reloadAjax().catch($err => {

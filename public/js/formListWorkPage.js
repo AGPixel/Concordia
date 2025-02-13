@@ -1,6 +1,5 @@
 
 function updateActiveWork(work) {
-    console.log("updateActiveWork");
 
     showLoading();
 
@@ -12,7 +11,6 @@ function updateActiveWork(work) {
         active: work.active,
     };
 
-    console.log(form);
     apiPostBearer(GLOBAL_URL_API + 'update-active-work', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
         location.reload();
@@ -38,8 +36,6 @@ function editWork(work) {
 }
 
 function deleteWork(work) {
-    console.log("deleteWork");
-    console.log(work);
     showLoading();
 
     let form = {

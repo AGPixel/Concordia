@@ -38,7 +38,6 @@ async function load_image_oportunidade_preview4() {
 }
 
 function saveOportunidadePage(id) {
-    console.log("saveOportunidadePage");
 
     showLoading();
 

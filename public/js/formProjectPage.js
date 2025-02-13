@@ -45,7 +45,6 @@ async function load_image_project_preview4() {
 }
 
 function saveProjectPage(id) {
-    console.log("saveProjectPage");
 
     showLoading();
 

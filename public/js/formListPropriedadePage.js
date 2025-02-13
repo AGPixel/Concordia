@@ -1,6 +1,5 @@
 
 function updateActivePropriedade(propriedade) {
-    console.log("updateActivePropriedade");
 
     showLoading();
 
@@ -12,7 +11,6 @@ function updateActivePropriedade(propriedade) {
         active: propriedade.active,
     };
 
-    console.log(form);
     apiPostBearer(GLOBAL_URL_API + 'update-active-propriedade', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
         location.reload();
@@ -38,8 +36,6 @@ function editPropriedade(propriedade) {
 }
 
 function deletePropriedade(propriedade) {
-    console.log("deletePropriedade");
-    console.log(propriedade);
     showLoading();
 
     let form = {

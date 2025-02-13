@@ -59,7 +59,6 @@ async function load_image_work_preview7() {
 }
 
 function saveWorkPage(id) {
-    console.log("saveWorkPage");
 
     showLoading();
 

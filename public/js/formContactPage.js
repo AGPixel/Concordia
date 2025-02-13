@@ -1,6 +1,5 @@
 
 function saveContactPage() {
-    console.log("saveContactPage");
 
     showLoading();
 

@@ -16,7 +16,6 @@ async function load_image_work_preview1() {
 }
 
 function updateActiveProject(project) {
-    console.log("updateActiveProject");
 
     showLoading();
 
@@ -28,7 +27,6 @@ function updateActiveProject(project) {
         active: project.active,
     };
 
-    console.log(form);
     apiPostBearer(GLOBAL_URL_API + 'update-active-project', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
         location.reload();
@@ -54,8 +52,6 @@ function editProject(project) {
 }
 
 function deleteProject(project) {
-    console.log("deleteProject");
-    console.log(project);
     showLoading();
 
     let form = {

@@ -475,7 +475,6 @@ const dsnParam = {
     function preloader() {
 
         const preloader = $("#dsn_preloader");
-        console.log('preloader - 2');
         if (!preloader.length) {
             window.addEventListener('DOMContentLoaded', function () {
                 reloadAjax().catch($err => {

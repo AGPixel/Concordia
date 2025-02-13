@@ -1,6 +1,5 @@
 
 function saveMetaTags() {
-    console.log("saveMetaTags");
 
     showLoading();
 

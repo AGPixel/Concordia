@@ -1,6 +1,5 @@
 
 function updateActiveOportunidade(oportunidade) {
-    console.log("updateActiveOportunidade");
 
     showLoading();
 
@@ -12,7 +11,6 @@ function updateActiveOportunidade(oportunidade) {
         active: oportunidade.active,
     };
 
-    console.log(form);
     apiPostBearer(GLOBAL_URL_API + 'update-active-oportunidade', form, GLOBAL_DATATYPE_JSON, function (_return) {
         toastSuccess(_return.message);
         location.reload();
@@ -38,8 +36,6 @@ function editOportunidade(oportunidade) {
 }
 
 function deleteOportunidade(oportunidade) {
-    console.log("deleteOportunidade");
-    console.log(oportunidade);
     showLoading();
 
     let form = {

@@ -59,7 +59,6 @@ async function load_image_propriedade_preview7() {
 }
 
 function savePropriedadePage(id) {
-    console.log("savePropriedadePage");
 
     showLoading();
 

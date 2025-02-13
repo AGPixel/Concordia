@@ -108,7 +108,6 @@ async function load_image_employee_img7_preview() {
 }
 
 function saveIndexPage() {
-    console.log("saveIndexPage");
 
     showLoading();
 

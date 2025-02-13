@@ -24,42 +24,35 @@ function hideLoading(id) {
 // ----------------- FUNÇÕES DA API -----------------
 
 function apiGet(url, dataType, successPromisse, errorPromisse) {
-    console.log("apiGet");
     jQuery.ajax({
         url: url,
         type: "GET",
         dataType: dataType,
         success: function (_return) {
-            console.log("success get", _return);
             successPromisse(_return);
         },
         error: function (_return) {
-            console.log("error get", _return);
             errorPromisse(_return);
         }
     });
 }
 
 async function apiPost(url, form, dataType, successPromisse, errorPromisse) {
-    console.log("apiPost");
     jQuery.ajax({
         url: url,
         type: "POST",
         data: form,
         dataType: dataType,
         success: function (_return) {
-            console.log("success post", _return);
             successPromisse(_return);
         },
         error: function (_return) {
-            console.log("error post", _return);
             errorPromisse(_return);
         }
     });
 }
 
 function apiGetBearer(url, dataType, successPromisse, errorPromisse) {
-    console.log("apiGetBearer");
     jQuery.ajax({
         url: url,
         type: "GET",
@@ -69,18 +62,15 @@ function apiGetBearer(url, dataType, successPromisse, errorPromisse) {
             "Authorization": "Bearer " + getCookie('token')
         },
         success: function (_return) {
-            console.log("success apiGetBearer", _return);
             successPromisse(_return);
         },
         error: function (_return) {
-            console.log("error apiGetBearer", _return);
             errorPromisse(_return);
         }
     });
 }
 
 async function apiPostBearer(url, form, dataType, successPromisse, errorPromisse) {
-    console.log("apiPostBearer");
     jQuery.ajax({
         url: url,
         type: "POST",
@@ -91,18 +81,15 @@ async function apiPostBearer(url, form, dataType, successPromisse, errorPromisse
             "Authorization": "Bearer " + getCookie('token')
         },
         success: function (_return) {
-            console.log("success apiPostBearer", _return);
             successPromisse(_return);
         },
         error: function (_return) {
-            console.log("error apiPostBearer", _return);
             errorPromisse(_return);
         }
     });
 }
 
 async function apiDeleteBearer(url, form, dataType, successPromisse, errorPromisse) {
-    console.log("apiDeleteBearer");
     jQuery.ajax({
         url: url,
         type: "DELETE",
@@ -113,11 +100,9 @@ async function apiDeleteBearer(url, form, dataType, successPromisse, errorPromis
             "Authorization": "Bearer " + getCookie('token')
         },
         success: function (_return) {
-            console.log("success apiDeleteBearer", _return);
             successPromisse(_return);
         },
         error: function (_return) {
-            console.log("error apiDeleteBearer", _return);
             errorPromisse(_return);
         }
     });
@@ -200,12 +185,6 @@ function toastQuestion(title) {
 
 // -------------------------------- EXECUÇÕES -------------------------------- 
 
-console.log("EXECUÇÕES");
-console.log(!getCookie('language'));
-console.log(getCookie('language'));
 if (!getCookie('language')) {
-    console.log("aaa");
-    setCookie('language', 'pt');
-    console.log("bbb");
+    setCookie('language', 'pt', 0.1);
 }
-console.log("ccc");

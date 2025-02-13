@@ -1,6 +1,5 @@
 
 function salvarNovaSenha() {
-    console.log("salvarNovaSenha");
 
     let oldPassword = document.getElementById('InputOldPassword').value;
     let newPassword = document.getElementById('InputNewPassword').value;
@@ -36,8 +35,6 @@ function salvarNovaSenha() {
     };
 
     apiPostBearer(GLOBAL_URL_API + 'trocar-senha', form, GLOBAL_DATATYPE_JSON, function (_return) {
-        console.log("verify-token success");
-        console.log(_return);
         toastSuccess(_return.message);
         hideLoading();
         document.getElementById('InputOldPassword').value = '';
@@ -45,8 +42,7 @@ function salvarNovaSenha() {
         document.getElementById('InputReNewPassword').value = '';
         document.getElementById('CheckTerms').checked = false;
     }, function (_return) {
-        console.log("verify-token error");
-        console.log(_return);
+        console.error(_return);
         toastError(_return.responseJSON.message);
         hideLoading();
     });

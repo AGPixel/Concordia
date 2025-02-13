@@ -108,7 +108,6 @@ async function load_image_about_preview14() {
 }
 
 function saveAboutPage() {
-    console.log("saveAboutPage");
 
     showLoading();
 
