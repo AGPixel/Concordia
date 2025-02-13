@@ -45,7 +45,6 @@ return new class extends Migration
             $table->text('year_eng')->nullable(true);
             $table->text('job_1_eng')->nullable(true);
             $table->text('job_2_eng')->nullable(true);
-            $table->text('img_1_eng')->nullable(true);
             $table->text('type_1_eng')->nullable(true);
             $table->text('legend_1_eng')->nullable(true);
             $table->text('type_2_eng')->nullable(true);

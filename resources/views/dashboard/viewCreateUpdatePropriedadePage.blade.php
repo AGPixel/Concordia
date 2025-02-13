@@ -40,209 +40,224 @@
                             <!-- form start -->
                             <form id="quickForm">
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle">Title</label>
-                                        <input type="text" name="propriedadeTitle" class="form-control" id="InputPropriedadeTitle" value="{{ isset($propriedade->title) ? $propriedade->title : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Title',
+                                    'id_input_text' => 'InputPropriedadeTitle',
+                                    'arg_value' => $propriedade->title ? $propriedade->title : '',
+                                    'arg_value_eng' => $propriedade->title_eng ? $propriedade->title_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeDescription">Description</label>
-                                        <input type="text" name="propriedadeDescription" class="form-control" id="InputPropriedadeDescription" value="{{ isset($propriedade->description) ? $propriedade->description : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Description',
+                                    'id_input_text' => 'InputPropriedadeDescription',
+                                    'arg_value' => $propriedade->description ? $propriedade->description : '',
+                                    'arg_value_eng' => $propriedade->description_eng ? $propriedade->description_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeYear">Year</label>
-                                        <input type="text" name="propriedadeYear" class="form-control" id="InputPropriedadeYear" value="{{ isset($propriedade->year) ? $propriedade->year : '' }}">
-                                    </div>
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Year',
+                                    'id_input_text' => 'InputPropriedadeYear',
+                                    'arg_value' => $propriedade->year ? $propriedade->year : '' ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeJob1">Job 1</label>
-                                        <input type="text" name="propriedadeJob1" class="form-control" id="InputPropriedadeJob1" value="{{ isset($propriedade->job_1) ? $propriedade->job_1 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Job 1',
+                                    'id_input_text' => 'InputPropriedadeJob1',
+                                    'arg_value' => $propriedade->job_1 ? $propriedade->job_1 : '',
+                                    'arg_value_eng' => $propriedade->job_1_eng ? $propriedade->job_1_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeJob2">Job 2</label>
-                                        <input type="text" name="propriedadeJob2" class="form-control" id="InputPropriedadeJob2" value="{{ isset($propriedade->job_2) ? $propriedade->job_2 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Job 2',
+                                    'id_input_text' => 'InputPropriedadeJob2',
+                                    'arg_value' => $propriedade->job_2 ? $propriedade->job_2 : '',
+                                    'arg_value_eng' => $propriedade->job_2_eng ? $propriedade->job_2_eng : ''
+                                    ])
                                 </div>
                                 <!-- 11111 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg1">Image 1</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg1">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg1" id="ImagePropriedadeImg1Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 1',
+                                        'id_img_file' => 'InputPropriedadeImg1',
+                                        'id_text_file' => 'ImagePropriedadeImg1Preview',
+                                        'arg_value' => $propriedade->img_1 ? asset("../storage/$propriedade->img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType1">Type 1</label>
-                                        <input type="text" name="propriedadeType1" class="form-control" id="InputPropriedadeType1" value="{{ isset($propriedade->type_1) ? $propriedade->type_1 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 1',
+                                    'id_input_text' => 'InputPropriedadeType1',
+                                    'arg_value' => $propriedade->type_1 ? $propriedade->type_1 : '',
+                                    'arg_value_eng' => $propriedade->type_1_eng ? $propriedade->type_1_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle1">Title 1</label>
-                                        <input type="text" name="propriedadeTitle1" class="form-control" id="InputPropriedadeTitle1" value="{{ isset($propriedade->title_1) ? $propriedade->title_1 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 1',
+                                    'id_input_text' => 'InputPropriedadeLegend1',
+                                    'arg_value' => $propriedade->legend_1 ? $propriedade->legend_1 : '',
+                                    'arg_value_eng' => $propriedade->legend_1_eng ? $propriedade->legend_1_eng : ''
+                                    ])
                                 </div>
                                 <!-- 22222 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg2">Image 2</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg2">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg2" id="ImagePropriedadeImg2Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 2',
+                                        'id_img_file' => 'InputPropriedadeImg2',
+                                        'id_text_file' => 'ImagePropriedadeImg2Preview',
+                                        'arg_value' => $propriedade->img_2 ? asset("../storage/$propriedade->img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType2">Type 2</label>
-                                        <input type="text" name="propriedadeType2" class="form-control" id="InputPropriedadeType2" value="{{ isset($propriedade->type_2) ? $propriedade->type_2 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 2',
+                                    'id_input_text' => 'InputPropriedadeType2',
+                                    'arg_value' => $propriedade->type_2 ? $propriedade->type_2 : '',
+                                    'arg_value_eng' => $propriedade->type_2_eng ? $propriedade->type_2_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle2">Title 2</label>
-                                        <input type="text" name="propriedadeTitle2" class="form-control" id="InputPropriedadeTitle2" value="{{ isset($propriedade->title_2) ? $propriedade->title_2 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 2',
+                                    'id_input_text' => 'InputPropriedadeLegend2',
+                                    'arg_value' => $propriedade->legend_2 ? $propriedade->legend_2 : '',
+                                    'arg_value_eng' => $propriedade->legend_2_eng ? $propriedade->legend_2_eng : ''
+                                    ])
                                 </div>
                                 <!-- 33333 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg3">Image 3</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg3">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg3" id="ImagePropriedadeImg3Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 3',
+                                        'id_img_file' => 'InputPropriedadeImg3',
+                                        'id_text_file' => 'ImagePropriedadeImg3Preview',
+                                        'arg_value' => $propriedade->img_3 ? asset("../storage/$propriedade->img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType3">Type 3</label>
-                                        <input type="text" name="propriedadeType3" class="form-control" id="InputPropriedadeType3" value="{{ isset($propriedade->type_3) ? $propriedade->type_3 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 3',
+                                    'id_input_text' => 'InputPropriedadeType3',
+                                    'arg_value' => $propriedade->type_3 ? $propriedade->type_3 : '',
+                                    'arg_value_eng' => $propriedade->type_3_eng ? $propriedade->type_3_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle3">Title 3</label>
-                                        <input type="text" name="propriedadeTitle3" class="form-control" id="InputPropriedadeTitle3" value="{{ isset($propriedade->title_3) ? $propriedade->title_3 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 3',
+                                    'id_input_text' => 'InputPropriedadeLegend3',
+                                    'arg_value' => $propriedade->legend_3 ? $propriedade->legend_3 : '',
+                                    'arg_value_eng' => $propriedade->legend_3_eng ? $propriedade->legend_3_eng : ''
+                                    ])
                                 </div>
                                 <!-- 44444 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg4">Image 4</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg4">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg4" id="ImagePropriedadeImg4Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 4',
+                                        'id_img_file' => 'InputPropriedadeImg4',
+                                        'id_text_file' => 'ImagePropriedadeImg4Preview',
+                                        'arg_value' => $propriedade->img_4 ? asset("../storage/$propriedade->img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType4">Type 4</label>
-                                        <input type="text" name="propriedadeType4" class="form-control" id="InputPropriedadeType4" value="{{ isset($propriedade->type_4) ? $propriedade->type_4 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 4',
+                                    'id_input_text' => 'InputPropriedadeType4',
+                                    'arg_value' => $propriedade->type_4 ? $propriedade->type_4 : '',
+                                    'arg_value_eng' => $propriedade->type_4_eng ? $propriedade->type_4_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle4">Title 4</label>
-                                        <input type="text" name="propriedadeTitle4" class="form-control" id="InputPropriedadeTitle4" value="{{ isset($propriedade->title_4) ? $propriedade->title_4 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 4',
+                                    'id_input_text' => 'InputPropriedadeLegend4',
+                                    'arg_value' => $propriedade->legend_4 ? $propriedade->legend_4 : '',
+                                    'arg_value_eng' => $propriedade->legend_4_eng ? $propriedade->legend_4_eng : ''
+                                    ])
                                 </div>
                                 <!-- 55555 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg5">Image 5</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg5">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg5" id="ImagePropriedadeImg5Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 5',
+                                        'id_img_file' => 'InputPropriedadeImg5',
+                                        'id_text_file' => 'ImagePropriedadeImg5Preview',
+                                        'arg_value' => $propriedade->img_5 ? asset("../storage/$propriedade->img_5") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType5">Type 5</label>
-                                        <input type="text" name="propriedadeType5" class="form-control" id="InputPropriedadeType5" value="{{ isset($propriedade->type_5) ? $propriedade->type_5 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 5',
+                                    'id_input_text' => 'InputPropriedadeType5',
+                                    'arg_value' => $propriedade->type_5 ? $propriedade->type_5 : '',
+                                    'arg_value_eng' => $propriedade->type_5_eng ? $propriedade->type_5_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle5">Title 5</label>
-                                        <input type="text" name="propriedadeTitle5" class="form-control" id="InputPropriedadeTitle5" value="{{ isset($propriedade->title_5) ? $propriedade->title_5 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 5',
+                                    'id_input_text' => 'InputPropriedadeLegend5',
+                                    'arg_value' => $propriedade->legend_5 ? $propriedade->legend_5 : '',
+                                    'arg_value_eng' => $propriedade->legend_5_eng ? $propriedade->legend_5_eng : ''
+                                    ])
                                 </div>
                                 <!-- 66666 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg6">Image 6</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg6">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg6" id="ImagePropriedadeImg6Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 6',
+                                        'id_img_file' => 'InputPropriedadeImg6',
+                                        'id_text_file' => 'ImagePropriedadeImg6Preview',
+                                        'arg_value' => $propriedade->img_6 ? asset("../storage/$propriedade->img_6") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType6">Type 6</label>
-                                        <input type="text" name="propriedadeType6" class="form-control" id="InputPropriedadeType6" value="{{ isset($propriedade->type_6) ? $propriedade->type_6 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 6',
+                                    'id_input_text' => 'InputPropriedadeType6',
+                                    'arg_value' => $propriedade->type_6 ? $propriedade->type_6 : '',
+                                    'arg_value_eng' => $propriedade->type_6_eng ? $propriedade->type_6_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle6">Title 6</label>
-                                        <input type="text" name="propriedadeTitle6" class="form-control" id="InputPropriedadeTitle6" value="{{ isset($propriedade->title_6) ? $propriedade->title_6 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 6',
+                                    'id_input_text' => 'InputPropriedadeLegend6',
+                                    'arg_value' => $propriedade->legend_6 ? $propriedade->legend_6 : '',
+                                    'arg_value_eng' => $propriedade->legend_6_eng ? $propriedade->legend_6_eng : ''
+                                    ])
                                 </div>
                                 <!-- 77777 -->
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="InputPropriedadeImg7">Image 7</label><br>
-                                        <img class="m-bot-05 image_preview" src="{{ isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : asset("/assets/img/sem_foto.png") }}" alt="">
-                                        <div class="input-group">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="InputPropriedadeImg7">
-                                                <label class="custom-file-label disable" for="InputPropriedadeImg7" id="ImagePropriedadeImg7Preview">Clique para escolher o arquivo</label>
-                                            </div>
-                                        </div>
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Image 7',
+                                        'id_img_file' => 'InputPropriedadeImg7',
+                                        'id_text_file' => 'ImagePropriedadeImg7Preview',
+                                        'arg_value' => $propriedade->img_7 ? asset("../storage/$propriedade->img_7") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeType7">Type 7</label>
-                                        <input type="text" name="propriedadeType7" class="form-control" id="InputPropriedadeType7" value="{{ isset($propriedade->type_7) ? $propriedade->type_7 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 7',
+                                    'id_input_text' => 'InputPropriedadeType7',
+                                    'arg_value' => $propriedade->type_7 ? $propriedade->type_7 : '',
+                                    'arg_value_eng' => $propriedade->type_7_eng ? $propriedade->type_7_eng : ''
+                                    ])
                                 </div>
                                 <div class="card-body first-card-body">
-                                    <div class="form-group">
-                                        <label for="InputPropriedadeTitle7">Title 7</label>
-                                        <input type="text" name="propriedadeTitle7" class="form-control" id="InputPropriedadeTitle7" value="{{ isset($propriedade->title_7) ? $propriedade->title_7 : '' }}">
-                                    </div>
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Legend 7',
+                                    'id_input_text' => 'InputPropriedadeLegend7',
+                                    'arg_value' => $propriedade->legend_7 ? $propriedade->legend_7 : '',
+                                    'arg_value_eng' => $propriedade->legend_7_eng ? $propriedade->legend_7_eng : ''
+                                    ])
                                 </div>
 
                                 <div class="card-footer">
