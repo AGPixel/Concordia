@@ -34,8 +34,55 @@ class SiteService extends BaseService
 
     // ------------------------------------- INDEX_TEXT -------------------------------------
 
-    public function indexText() {
-        return $this->repository->indexText();
+    public function indexText($lingua = 'pt') {
+        $index_text = $this->repository->indexText();
+
+        if ($lingua == 'eng') {
+            $index_text->about_title = $this->changeLanguage($index_text->about_title,$index_text->about_title_eng);
+            $index_text->about_description = $this->changeLanguage($index_text->about_description,$index_text->about_description_eng);
+            $index_text->about_description_1 = $this->changeLanguage($index_text->about_description_1,$index_text->about_description_1_eng);
+            $index_text->about_description_2 = $this->changeLanguage($index_text->about_description_2,$index_text->about_description_2_eng);
+            $index_text->about_description_3 = $this->changeLanguage($index_text->about_description_3,$index_text->about_description_3_eng);
+            $index_text->service_title = $this->changeLanguage($index_text->service_title,$index_text->service_title_eng);
+            $index_text->service_title_1 = $this->changeLanguage($index_text->service_title_1,$index_text->service_title_1_eng);
+            $index_text->service_description_1 = $this->changeLanguage($index_text->service_description_1,$index_text->service_description_1_eng);
+            $index_text->service_title_2 = $this->changeLanguage($index_text->service_title_2,$index_text->service_title_2_eng);
+            $index_text->service_description_2 = $this->changeLanguage($index_text->service_description_2,$index_text->service_description_2_eng);
+            $index_text->service_title_3 = $this->changeLanguage($index_text->service_title_3,$index_text->service_title_3_eng);
+            $index_text->service_description_3 = $this->changeLanguage($index_text->service_description_3,$index_text->service_description_3_eng);
+            $index_text->portifolio_title = $this->changeLanguage($index_text->portifolio_title,$index_text->portifolio_title_eng);
+            $index_text->frame_legend_1 = $this->changeLanguage($index_text->frame_legend_1,$index_text->frame_legend_1_eng);
+            $index_text->frame_description_1 = $this->changeLanguage($index_text->frame_description_1,$index_text->frame_description_1_eng);
+            $index_text->frame_legend_2 = $this->changeLanguage($index_text->frame_legend_2,$index_text->frame_legend_2_eng);
+            $index_text->frame_description_2 = $this->changeLanguage($index_text->frame_description_2,$index_text->frame_description_2_eng);
+            $index_text->testimonials_title = $this->changeLanguage($index_text->testimonials_title,$index_text->testimonials_title_eng);
+            $index_text->testimonials_description = $this->changeLanguage($index_text->testimonials_description,$index_text->testimonials_description_eng);
+            $index_text->testimonials_description_1 = $this->changeLanguage($index_text->testimonials_description_1,$index_text->testimonials_description_1_eng);
+            $index_text->testimonials_description_2 = $this->changeLanguage($index_text->testimonials_description_2,$index_text->testimonials_description_2_eng);
+            $index_text->employee_title = $this->changeLanguage($index_text->employee_title,$index_text->employee_title_eng);
+            $index_text->employee_name_1 = $this->changeLanguage($index_text->employee_name_1,$index_text->employee_name_1_eng);
+            $index_text->employee_work_1 = $this->changeLanguage($index_text->employee_work_1,$index_text->employee_work_1_eng);
+            $index_text->employee_name_2 = $this->changeLanguage($index_text->employee_name_2,$index_text->employee_name_2_eng);
+            $index_text->employee_work_2 = $this->changeLanguage($index_text->employee_work_2,$index_text->employee_work_2_eng);
+            $index_text->employee_name_3 = $this->changeLanguage($index_text->employee_name_3,$index_text->employee_name_3_eng);
+            $index_text->employee_work_3 = $this->changeLanguage($index_text->employee_work_3,$index_text->employee_work_3_eng);
+            $index_text->works_title = $this->changeLanguage($index_text->works_title,$index_text->works_title_eng);
+            $index_text->works_title_1 = $this->changeLanguage($index_text->works_title_1,$index_text->works_title_1_eng);
+            $index_text->works_description_1 = $this->changeLanguage($index_text->works_description_1,$index_text->works_description_1_eng);
+            $index_text->works_title_2 = $this->changeLanguage($index_text->works_title_2,$index_text->works_title_2_eng);
+            $index_text->works_description_2 = $this->changeLanguage($index_text->works_description_2,$index_text->works_description_2_eng);
+            $index_text->works_title_3 = $this->changeLanguage($index_text->works_title_3,$index_text->works_title_3_eng);
+            $index_text->works_description_3 = $this->changeLanguage($index_text->works_description_3,$index_text->works_description_3_eng);
+            $index_text->final_title = $this->changeLanguage($index_text->final_title,$index_text->final_title_eng);
+            $index_text->sign_title = $this->changeLanguage($index_text->sign_title,$index_text->sign_title_eng);
+            $index_text->sign_description = $this->changeLanguage($index_text->sign_description,$index_text->sign_description_eng);
+            $index_text->sign_rolling = $this->changeLanguage($index_text->sign_rolling,$index_text->sign_rolling_eng);
+            $index_text->navigation_title_1 = $this->changeLanguage($index_text->navigation_title_1,$index_text->navigation_title_1_eng);
+            $index_text->navigation_title_2 = $this->changeLanguage($index_text->navigation_title_2,$index_text->navigation_title_2_eng);
+            $index_text->navigation_title_3 = $this->changeLanguage($index_text->navigation_title_3,$index_text->navigation_title_3_eng);
+        }
+
+        return $index_text;
     }
 
     public function saveIndexText(array $arr) {
@@ -69,8 +116,15 @@ class SiteService extends BaseService
 
     // ------------------------------------- CONTACT -------------------------------------
 
-    public function contact() {
-        return $this->repository->contact();
+    public function contact($lingua = 'pt') {
+
+        $contact = $this->repository->contact();
+
+        if ($lingua == 'eng') {
+            $contact->about_title = $contact->contact_form_title_eng != '' ? $contact->contact_form_title_eng : $contact->contact_form_title;
+        }
+
+        return $contact;
     }
 
     public function saveContact(array $arr) {
@@ -81,8 +135,34 @@ class SiteService extends BaseService
 
     // ------------------------------------- ABOUT -------------------------------------
 
-    public function about() {
-        return $this->repository->about();
+    public function about($lingua = 'pt') {
+
+        $about = $this->repository->about();
+
+        if ($lingua == 'eng') {
+            $about->about_title_1 = $this->changeLanguage($about->about_title_1,$about->about_title_1_eng);
+            $about->about_title_2 = $this->changeLanguage($about->about_title_2,$about->about_title_2_eng);
+            $about->about_service_title = $this->changeLanguage($about->about_service_title,$about->about_service_title_eng);
+            $about->about_service_1 = $this->changeLanguage($about->about_service_1,$about->about_service_1_eng);
+            $about->about_service_2 = $this->changeLanguage($about->about_service_2,$about->about_service_2_eng);
+            $about->about_service_3 = $this->changeLanguage($about->about_service_3,$about->about_service_3_eng);
+            $about->about_service_4 = $this->changeLanguage($about->about_service_4,$about->about_service_4_eng);
+            $about->about_service_5 = $this->changeLanguage($about->about_service_5,$about->about_service_5_eng);
+            $about->about_service_6 = $this->changeLanguage($about->about_service_6,$about->about_service_6_eng);
+            $about->about_experience_title = $this->changeLanguage($about->about_experience_title,$about->about_experience_title_eng);
+            $about->about_experience_title_1 = $this->changeLanguage($about->about_experience_title_1,$about->about_experience_title_1_eng);
+            $about->about_experience_description_1 = $this->changeLanguage($about->about_experience_description_1,$about->about_experience_description_1_eng);
+            $about->about_experience_title_2 = $this->changeLanguage($about->about_experience_title_2,$about->about_experience_title_2_eng);
+            $about->about_experience_description_2 = $this->changeLanguage($about->about_experience_description_2,$about->about_experience_description_2_eng);
+            $about->about_experience_title_3 = $this->changeLanguage($about->about_experience_title_3,$about->about_experience_title_3_eng);
+            $about->about_experience_description_3 = $this->changeLanguage($about->about_experience_description_3,$about->about_experience_description_3_eng);
+            $about->about_experience_title_4 = $this->changeLanguage($about->about_experience_title_4,$about->about_experience_title_4_eng);
+            $about->about_experience_description_4 = $this->changeLanguage($about->about_experience_description_4,$about->about_experience_description_4_eng);
+            $about->about_brands_title = $this->changeLanguage($about->about_brands_title,$about->about_brands_title_eng);
+            $about->about_brands_description = $this->changeLanguage($about->about_brands_description,$about->about_brands_description_eng);
+        }
+
+        return $about;
     }
 
     public function saveAbout(array $arr) {
@@ -116,8 +196,16 @@ class SiteService extends BaseService
 
     // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
 
-    public function portifolioGeral() {
-        return $this->repository->portifolioGeral();
+    public function portifolioGeral($lingua = 'pt') {
+
+        $portifolio = $this->repository->portifolioGeral();
+
+        if ($lingua == 'eng') {
+            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+        }
+
+        return $portifolio;
     }
 
     public function savePortifolioGeral(array $arr) {
@@ -126,18 +214,81 @@ class SiteService extends BaseService
 
     // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
 
-    // ------------------------------------- WORK -------------------------------------
+    // ------------------------------------- PORTIFOLIO -------------------------------------
 
-    public function workById($id) {
-        return $this->repository->workById($id);
+    public function workById($id,$lingua = 'pt') {
+        $portifolio = $this->repository->workById($id);
+
+        if ($lingua == 'eng') {
+            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+            $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
+            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+            $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
+            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+            $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
+            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+            $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
+            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+            $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
+            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+            $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
+            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+            $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
+            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+        }
+
+        return $portifolio;
     }
 
-    public function work() {
-        return $this->repository->work();
+    public function work($lingua = 'pt') {
+        $portifolio = $this->repository->work();
+
+        if ($lingua == 'eng') {
+            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+            $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
+            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+            $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
+            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+            $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
+            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+            $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
+            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+            $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
+            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+            $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
+            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+            $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
+            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+        }
+
+        return $portifolio;
     }
 
-    public function workActive() {
-        return $this->repository->workActive();
+    public function workActive($lingua = 'pt') {
+        $portifolio = $this->repository->workActive();
+
+        if ($lingua == 'eng') {
+            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+            $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
+            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+            $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
+            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+            $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
+            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+            $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
+            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+            $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
+            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+            $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
+            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+            $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
+            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+        }
+
+        return $portifolio;
     }
 
     public function saveNewWork(array $arr) {
@@ -193,12 +344,13 @@ class SiteService extends BaseService
         return $arr;
     }
 
-    // ------------------------------------- WORK -------------------------------------
+    // ------------------------------------- PORTIFOLIO -------------------------------------
 
     // ------------------------------------- SERVICO GERAL -------------------------------------
 
-    public function servicoGeral() {
-        return $this->repository->servicoGeral();
+    public function servicoGeral($lingua = 'pt') {
+        $servico = $this->repository->servicoGeral();
+        return $servico;
     }
 
     public function saveServicoGeral(array $arr) {
@@ -226,8 +378,17 @@ class SiteService extends BaseService
 
     // ------------------------------------- PROJECT -------------------------------------
 
-    public function projectById($id) {
-        return $this->repository->projectById($id);
+    public function projectById($id,$lingua = 'pt') {
+        $project = $this->repository->projectById($id);
+
+        if ($lingua == 'eng') {
+            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
+            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
+            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
+            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+        }
+
+        return $project;
     }
 
     public function getProjectThatIsNotId($id) {
@@ -238,12 +399,30 @@ class SiteService extends BaseService
         return $nextprojects[mt_rand(0,count($nextprojects)-1)];
     }
 
-    public function project() {
-        return $this->repository->project();
+    public function project($lingua = 'pt') {
+        $project = $this->repository->project();
+
+        if ($lingua == 'eng') {
+            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
+            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
+            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
+            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+        }
+
+        return $project;
     }
 
-    public function projectActive() {
-        return $this->repository->projectActive();
+    public function projectActive($lingua = 'pt') {
+        $project = $this->repository->projectActive();
+
+        if ($lingua == 'eng') {
+            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
+            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
+            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
+            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+        }
+
+        return $project;
     }
 
     public function saveNewProject(array $arr) {
@@ -299,8 +478,25 @@ class SiteService extends BaseService
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
 
-    public function oportunidadeById($id) {
-        return $this->repository->oportunidadeById($id);
+    public function oportunidadeById($id,$lingua = 'pt') {
+        $oportunidade = $this->repository->oportunidadeById($id);
+
+        if ($lingua == 'eng') {
+            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+        }
+
+        return $oportunidade;
     }
 
     public function getOportunidadeThatIsNotId($id) {
@@ -311,12 +507,46 @@ class SiteService extends BaseService
         return $nextoportunidades[mt_rand(0,count($nextoportunidades)-1)];
     }
 
-    public function oportunidade() {
-        return $this->repository->oportunidade();
+    public function oportunidade($lingua = 'pt') {
+        $oportunidade = $this->repository->oportunidade();
+
+        if ($lingua == 'eng') {
+            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+        }
+
+        return $oportunidade;
     }
 
-    public function oportunidadeActive() {
-        return $this->repository->oportunidadeActive();
+    public function oportunidadeActive($lingua = 'pt') {
+        $oportunidade = $this->repository->oportunidadeActive();
+
+        if ($lingua == 'eng') {
+            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+        }
+
+        return $oportunidade;
     }
 
     public function saveNewOportunidade(array $arr) {
@@ -370,8 +600,31 @@ class SiteService extends BaseService
 
     // ------------------------------------- PROPRIEDADE -------------------------------------
 
-    public function propriedadeById($id) {
-        return $this->repository->propriedadeById($id);
+    public function propriedadeById($id,$lingua = 'pt') {
+        $propriedade = $this->repository->propriedadeById($id);
+
+        if ($lingua == 'eng') {
+            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+        }
+
+        return $propriedade;
     }
 
     public function getPropriedadeThatIsNotId($id) {
@@ -382,12 +635,58 @@ class SiteService extends BaseService
         return $nextpropriedades[mt_rand(0,count($nextpropriedades)-1)];
     }
 
-    public function propriedade() {
-        return $this->repository->propriedade();
+    public function propriedade($lingua = 'pt') {
+        $propriedade = $this->repository->propriedade();
+
+        if ($lingua == 'eng') {
+            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+        }
+
+        return $propriedade;
     }
 
-    public function propriedadeActive() {
-        return $this->repository->propriedadeActive();
+    public function propriedadeActive($lingua = 'pt') {
+        $propriedade = $this->repository->propriedadeActive();
+
+        if ($lingua == 'eng') {
+            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+        }
+
+        return $propriedade;
     }
 
     public function saveNewPropriedade(array $arr) {
@@ -446,6 +745,13 @@ class SiteService extends BaseService
     // ------------------------------------- PROPRIEDADE -------------------------------------
 
     // ------------------------------------- FUNÇÕES GERAIS -------------------------------------
+
+    /**
+     * Função que recebe por referencia e salva ele
+     */
+    private function changeLanguage($pt,$eng) {
+        return $eng != '' ? $eng : $pt;
+    }
 
     private function uploadVideoValue($arrImg) {
         if ($arrImg) return $this->saveVideoFile($arrImg);
