@@ -12,7 +12,6 @@ let bases64 = {
     InputProjectImg2: null,
     InputProjectImg3: null,
     InputProjectImg4: null,
-    InputProjectImg5: null,
 };
 const InputProjectImgBegin = document.getElementById("InputProjectImgBegin");
 InputProjectImgBegin.addEventListener("change", load_image_project_preview6, false);
@@ -44,12 +43,6 @@ async function load_image_project_preview4() {
     document.getElementById('InputProjectImg4Preview').innerHTML = this.files[0].name;
     bases64.InputProjectImg4 = await toBase64(this.files[0]);
 }
-const InputProjectImg5 = document.getElementById("InputProjectImg5");
-InputProjectImg5.addEventListener("change", load_image_project_preview5, false);
-async function load_image_project_preview5() {
-    document.getElementById('InputProjectImg5Preview').innerHTML = this.files[0].name;
-    bases64.InputProjectImg5 = await toBase64(this.files[0]);
-}
 
 function saveProjectPage(id) {
     console.log("saveProjectPage");
@@ -58,28 +51,20 @@ function saveProjectPage(id) {
 
     let form = {
         id: id,
-        title: document.getElementById('InputProjectTitle').value,
-        work_1: document.getElementById('InputProjectWork1').value,
-        work_2: document.getElementById('InputProjectWork2').value,
-        work_3: document.getElementById('InputProjectWork3').value,
+        title_1: document.getElementById('InputProjectTitle1').value,
+        title_1_eng: document.getElementById('InputProjectTitle1Eng').value,
+        description_1: document.getElementById('InputProjectDescription1').value,
+        description_1_eng: document.getElementById('InputProjectDescription1Eng').value,
         url_project: document.getElementById('InputProjectUrlProject').value,
         img_begin: bases64.InputProjectImgBegin,
-        title_employees: document.getElementById('InputProjectTitleEmployee').value,
-        employee_job_1: document.getElementById('InputProjectEmployeeJob1').value,
-        employee_1: document.getElementById('InputProjectEmployee1').value,
-        employee_job_2: document.getElementById('InputProjectEmployeeJob2').value,
-        employee_2: document.getElementById('InputProjectEmployee2').value,
-        employee_job_3: document.getElementById('InputProjectEmployeeJob3').value,
-        employee_3: document.getElementById('InputProjectEmployee3').value,
-        employee_job_4: document.getElementById('InputProjectEmployeeJob4').value,
-        employee_4: document.getElementById('InputProjectEmployee4').value,
         img_1: bases64.InputProjectImg1,
         img_2: bases64.InputProjectImg2,
         img_3: bases64.InputProjectImg3,
         img_4: bases64.InputProjectImg4,
-        img_description_4: document.getElementById('InputProjectImageDescription4').value,
-        img_5: bases64.InputProjectImg5,
-        img_description_5: document.getElementById('InputProjectImageDescription5').value,
+        title_2: document.getElementById('InputProjectTitle2').value,
+        title_2_eng: document.getElementById('InputProjectTitle2Eng').value,
+        description_2: document.getElementById('InputProjectDescription2').value,
+        description_2_eng: document.getElementById('InputProjectDescription2Eng').value,
         active: 1,
     };
 

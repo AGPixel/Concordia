@@ -114,7 +114,7 @@
                                             <th>ID</th>
                                             <th>Title</th>
                                             <th>Description</th>
-                                            <th>Status</th>
+                                            <!--<th>Status</th>-->
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -124,26 +124,31 @@
                                             <td>{{ $project->id }}</td>
                                             <td>{{ $project->title_1 }}</td>
                                             <td>{{ $project->description_1 }}</td>
+                                            <!--
                                             <td>
-                                                @if($project->active)
-                                                <button type="button" class="btn btn-success btn-block btn-flat bt-width-toogle" onclick="updateActiveProject({{$project}})">
+                                                @ if($project->active)
+                                                <button type="button" class="btn btn-success btn-block btn-flat bt-width-toogle" onclick="updateActiveProject({ {$project}})">
                                                     <i class="fa fa-check"></i>
                                                 </button>
-                                                @else
-                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width-toogle" onclick="updateActiveProject({{$project}})">
+                                                @ else
+                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width-toogle" onclick="updateActiveProject({ {$project}})">
                                                     <i class="fas fa-times"></i>
                                                 </button>
-                                                @endif
+                                                @ endif
+                                                
                                             </td>
+                                            -->
                                             <td class="action-bts">
                                                 <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="editProject({{$project}})">
                                                     <i class="fa fa-pen"></i>
                                                     &nbsp;Edit
                                                 </button>
-                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0" onclick="deleteProject({{$project}})">
+                                                <!--
+                                                <button type="button" class="btn btn-danger btn-block btn-flat bt-width m-top-0" onclick="deleteProject({ {$project}})">
                                                     <i class="fa fa-trash"></i>
                                                     &nbsp;Delete
                                                 </button>
+                                                -->
                                             </td>
                                         </tr>
                                         @endforeach
