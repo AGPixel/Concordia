@@ -6,6 +6,7 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('/', function() { return redirect('/pt/'); });
 Route::get('/{lingua}/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/{lingua}/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::get('/{lingua}/sobre', [SiteController::class, 'sobre'])->name('site.sobre');

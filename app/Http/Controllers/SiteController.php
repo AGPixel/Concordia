@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\SiteService;
+use Illuminate\Support\Facades\Route;
 
 /**
  * Controlador de todo o site para o usuario final
