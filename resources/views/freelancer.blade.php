@@ -24,26 +24,26 @@
         <div class="dsnload p-absolute">
             <span class="dsnload__row">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo.png" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo.png" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo.png" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
                 </span>
             </span>
             <span class="dsnload__row dsnload__row--sibling">
                 <span class="dsnload__img">
-                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                    <img src="assets/img/logo.png" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo-light.png" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                    <img src="assets/img/logo.png" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
                 </span>
             </span>
 
@@ -52,7 +52,7 @@
 
 
         <div class="logo-box v-middle">
-            <h3 class="title text-upper">Exfolio</h3>
+            <h3 class="title text-upper">Concordia</h3>
         </div>
 
         <div class="loading-count">
@@ -85,9 +85,9 @@
         <!-- ========== Menu ========== -->
         <header id="site_menu_header" class="site-header d-none">
             <div class="main-logo">
-                <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
-                    <img src="assets/img/logo-light.png" class="custom-logo logo-light" alt="EXFOLIO" />
-                    <img src="assets/img/logo.png" class="custom-logo logo-dark" alt="EXFOLIO" />
+                <a href="index.html" data-dsn-text="Concordia" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+                    <img src="assets/img/logo-light.png" class="custom-logo logo-light" alt="Concordia" />
+                    <img src="assets/img/logo.png" class="custom-logo logo-dark" alt="Concordia" />
                 </a>
             </div>
             <nav class="main-navigation ">

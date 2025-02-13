@@ -15,7 +15,7 @@ const dsnParam = {
         mouseMultiplier: 1,
     },
 
-    name: "EXFOLIO"
+    name: "Concordia"
 };
 
 

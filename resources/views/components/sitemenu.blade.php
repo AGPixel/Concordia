@@ -1,8 +1,8 @@
 <header id="site_menu_header" class="site-header d-none">
     <div class="main-logo">
-        <a href="index.html" data-dsn-text="EXFOLIO" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
-            <img src="{{asset("/assets/img/logo-light.png")}}" class="custom-logo logo-light" alt="EXFOLIO" />
-            <img src="{{asset("/assets/img/logo.png")}}" class="custom-logo logo-dark" alt="EXFOLIO" />
+        <a href="index.html" data-dsn-text="Concordia" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+            <img src="{{asset("/assets/img/logo-light.png")}}" class="custom-logo logo-light" alt="Concordia" />
+            <img src="{{asset("/assets/img/logo.png")}}" class="custom-logo logo-dark" alt="Concordia" />
         </a>
     </div>
     <nav class="main-navigation ">
@@ -15,21 +15,21 @@
             </li>
 
             <li class="nav-item">
-                <a title="Sobre" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}sobre">
-                    <span class="overflow ">Sobre</span>
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Sobre" : "About" : "Sobre" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}sobre">
+                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Sobre" : "About" : "Sobre" }}</span>
                 </a>
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Portifolio" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Portifolio" : "Portfolio" : "Portifolio" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
                     <span class="overflow ">
-                        Portfolio
+                        {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Portifolio" : "Portfolio" : "Portifolio" }}
                     </span>
                 </a>
                 <ul class="nav-item">
                     @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
-                        <a title="Hover" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
+                        <a title="{{ $menuWork->title }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->id }}" data-dsn-text="{{ $menuWork->title }}">
                             <span class="overflow">{{ $menuWork->title }}</span>
                         </a>
                     </li>
@@ -38,14 +38,14 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Serviço" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">
-                    <span class="overflow ">Serviços</span>
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">
+                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}</span>
                 </a>
                 <!--
                 <ul class="nav-item">
                     @ foreach($menuProjects as $id => $menuProject)
                     <li class="nav-item">
-                        <a title="Hover" href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
+                        <a title="Hover" href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico/{ { $menuProject->id }}" data-dsn-text="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}">
                             <span class="overflow">{ { $menuProject->title }}</span>
                         </a>
                     </li>
@@ -54,17 +54,16 @@
                 -->
             </li>
             <li class="nav-item ">
-                <a title="Contato" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">
-                    <span class="overflow">Contato</span>
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contato" : "Contact" : "Contato" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">
+                    <span class="overflow">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contato" : "Contact" : "Contato" }}</span>
                 </a>
             </li>
             <li class="nav-item has-sub-menu">
-                <a title="Lingua" href="">
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Lingua" : "Language" : "Lingua" }}" href="">
                     <img class="m-bot-05 image_bandeira" src="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? asset("../storage/pt.png") : asset("../storage/eng.png") : asset("../storage/pt.png") }}" alt="">
                 </a>
                 <ul class="nav-item min-width-3em transform-translate-x-75px">
                     <li class="nav-item min-width-3em">
-                        <!-- Parei aqui, fazer mudar de lingua -->
                         <a title="Portugues" href="/pt/" data-dsn-text="Portugues" onclick="setCookie('language','pt'); localtion.reload();">
                             <span class="overflow">
                                 <img class="m-bot-05 image_bandeira" src="{{ asset("../storage/pt.png") }}" alt="">

@@ -271,9 +271,9 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                    <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="Contact Us">
-                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact Us">
-                                            <span>Contact Us</span>
+                                    <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
+                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
+                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}</span>
                                         </span>
                                     </a>
 

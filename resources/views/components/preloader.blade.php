@@ -3,26 +3,26 @@
     <div class="dsnload p-absolute">
         <span class="dsnload__row">
             <span class="dsnload__img">
-                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
             </span>
         </span>
         <span class="dsnload__row dsnload__row--sibling">
             <span class="dsnload__img">
-                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
             </span>
         </span>
         <span class="dsnload__row dsnload__row--sibling">
             <span class="dsnload__img">
-                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
             </span>
         </span>
         <span class="dsnload__row dsnload__row--sibling">
             <span class="dsnload__img">
-                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Exfolio" decoding="async" loading="lazy" />
-                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Exfolio" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo-light.png")}}" class="logo-dark" alt="Concordia" decoding="async" loading="lazy" />
+                <img src="{{asset("/assets/img/logo.png")}}" class="logo-light" alt="Concordia" decoding="async" loading="lazy" />
             </span>
         </span>
 
@@ -31,7 +31,7 @@
 
 
     <div class="logo-box v-middle">
-        <h3 class="title text-upper">Exfolio</h3>
+        <h3 class="title text-upper">Concordia</h3>
     </div>
 
     <div class="loading-count">
