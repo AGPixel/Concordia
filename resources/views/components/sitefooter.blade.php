@@ -2,11 +2,11 @@
     <div class="d-grid grid-md-3 align-items-center">
         <div class="links">
             <ul class="d-flex">
-                <li><a href="/pt/">Home</a></li>
-                <li><a href="/pt/sobre">Sobre</a></li>
-                <li><a href="/pt/portifolio">Portifolio</a></li>
-                <li><a href="/pt/servico">Serviços</a></li>
-                <li><a href="/pt/contato">Contato</a></li>
+                <li><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}">Home</a></li>
+                <li><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}sobre">Sobre</a></li>
+                <li><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">Portifolio</a></li>
+                <li><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">Serviços</a></li>
+                <li><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">Contato</a></li>
             </ul>
         </div>
 

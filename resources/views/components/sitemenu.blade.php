@@ -9,19 +9,19 @@
         <div class="menu-cover-title header-container dsn-container">MENU</div>
         <ul id="dsn-primary-list" class="primary-nav h2">
             <li class="nav-item">
-                <a title="Home" href="/pt/">
+                <a title="Home" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}">
                     <span class="overflow ">Home</span>
                 </a>
             </li>
 
             <li class="nav-item">
-                <a title="Sobre" href="/pt/sobre">
+                <a title="Sobre" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}sobre">
                     <span class="overflow ">Sobre</span>
                 </a>
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Portifolio" href="/pt/portifolio">
+                <a title="Portifolio" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
                     <span class="overflow ">
                         Portfolio
                     </span>
@@ -29,7 +29,7 @@
                 <ul class="nav-item">
                     @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
-                        <a title="Hover" href="/pt/portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
+                        <a title="Hover" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->id }}" data-dsn-text="Portfolio">
                             <span class="overflow">{{ $menuWork->title }}</span>
                         </a>
                     </li>
@@ -38,14 +38,14 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="Serviço" href="/pt/servico">
+                <a title="Serviço" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">
                     <span class="overflow ">Serviços</span>
                 </a>
                 <!--
                 <ul class="nav-item">
                     @ foreach($menuProjects as $id => $menuProject)
                     <li class="nav-item">
-                        <a title="Hover" href="/pt/servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
+                        <a title="Hover" href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico/{ { $menuProject->id }}" data-dsn-text="Serviço">
                             <span class="overflow">{ { $menuProject->title }}</span>
                         </a>
                     </li>
@@ -54,24 +54,28 @@
                 -->
             </li>
             <li class="nav-item ">
-                <a title="Contato" href="/pt/contato">
+                <a title="Contato" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">
                     <span class="overflow">Contato</span>
                 </a>
             </li>
             <li class="nav-item has-sub-menu">
                 <a title="Lingua" href="">
-                    <span class="overflow">Language</span>
+                    <img class="m-bot-05 image_bandeira" src="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? asset("../storage/pt.png") : asset("../storage/eng.png") : asset("../storage/pt.png") }}" alt="">
                 </a>
-                <ul class="nav-item">
-                    <li class="nav-item">
+                <ul class="nav-item min-width-3em transform-translate-x-75px">
+                    <li class="nav-item min-width-3em">
                         <!-- Parei aqui, fazer mudar de lingua -->
-                        <a title="Serviço 1" href="" data-dsn-text="Serviço 1">
-                            <span class="overflow">Portugues</span>
+                        <a title="Portugues" href="/pt/" data-dsn-text="Portugues" onclick="setCookie('language','pt'); localtion.reload();">
+                            <span class="overflow">
+                                <img class="m-bot-05 image_bandeira" src="{{ asset("../storage/pt.png") }}" alt="">
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a title="Serviço 2" href="" data-dsn-text="Serviço 2">
-                            <span class="overflow">Inglês</span>
+                        <a title="English" href="/eng/" data-dsn-text="English" onclick="setCookie('language','eng'); localtion.reload();">
+                            <span class="overflow">
+                                <img class="m-bot-05 image_bandeira" src="{{ asset("../storage/eng.png") }}" alt="">
+                            </span>
                         </a>
                     </li>
                 </ul>

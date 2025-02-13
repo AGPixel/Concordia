@@ -8910,3 +8910,17 @@ body.tax-product_cat #dsn_header {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.image_bandeira {
+  width: 2.5em;
+  width: 2em;
+  margin-right: 1em;
+}
+
+.min-width-3em {
+  min-width: 3em !important;
+}
+
+.transform-translate-x-75px {
+  transform: translateX(75px) !important;
+}

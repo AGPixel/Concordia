@@ -242,53 +242,57 @@ class SiteService extends BaseService
     }
 
     public function work($lingua = 'pt') {
-        $portifolio = $this->repository->work();
+        $portifolios = $this->repository->work();
 
         if ($lingua == 'eng') {
-            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
-            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
-            $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
-            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
-            $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
-            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
-            $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
-            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
-            $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
-            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
-            $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
-            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
-            $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
-            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
-            $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
-            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+            foreach($portifolios as $id => $portifolio) {
+                $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+                $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+                $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
+                $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+                $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
+                $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+                $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
+                $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+                $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
+                $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+                $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
+                $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+                $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
+                $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+                $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
+                $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+            }
         }
 
-        return $portifolio;
+        return $portifolios;
     }
 
     public function workActive($lingua = 'pt') {
-        $portifolio = $this->repository->workActive();
+        $portifolios = $this->repository->workActive();
 
         if ($lingua == 'eng') {
-            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
-            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
-            $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
-            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
-            $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
-            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
-            $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
-            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
-            $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
-            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
-            $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
-            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
-            $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
-            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
-            $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
-            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+            foreach($portifolios as $id => $portifolio) {
+                $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+                $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+                $portifolio->type_1 = $this->changeLanguage($portifolio->type_1,$portifolio->type_1_eng);
+                $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+                $portifolio->type_2 = $this->changeLanguage($portifolio->type_2,$portifolio->type_2_eng);
+                $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+                $portifolio->type_3 = $this->changeLanguage($portifolio->type_3,$portifolio->type_3_eng);
+                $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+                $portifolio->type_4 = $this->changeLanguage($portifolio->type_4,$portifolio->type_4_eng);
+                $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+                $portifolio->type_5 = $this->changeLanguage($portifolio->type_5,$portifolio->type_5_eng);
+                $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+                $portifolio->type_6 = $this->changeLanguage($portifolio->type_6,$portifolio->type_6_eng);
+                $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+                $portifolio->type_7 = $this->changeLanguage($portifolio->type_7,$portifolio->type_7_eng);
+                $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+            }
         }
 
-        return $portifolio;
+        return $portifolios;
     }
 
     public function saveNewWork(array $arr) {
@@ -403,10 +407,12 @@ class SiteService extends BaseService
         $project = $this->repository->project();
 
         if ($lingua == 'eng') {
-            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
-            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
-            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
-            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+            foreach($project as $id => $p) {
+                $p->title_1 = $this->changeLanguage($p->title_1,$p->title_1_eng);
+                $p->description_1 = $this->changeLanguage($p->description_1,$p->description_1_eng);
+                $p->title_2 = $this->changeLanguage($p->title_2,$p->title_2_eng);
+                $p->description_2 = $this->changeLanguage($p->description_2,$p->description_2_eng);
+            }
         }
 
         return $project;
@@ -414,14 +420,14 @@ class SiteService extends BaseService
 
     public function projectActive($lingua = 'pt') {
         $project = $this->repository->projectActive();
-
         if ($lingua == 'eng') {
-            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
-            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
-            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
-            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+            foreach($project as $id => $p) {
+                $p->title_1 = $this->changeLanguage($p->title_1,$p->title_1_eng);
+                $p->description_1 = $this->changeLanguage($p->description_1,$p->description_1_eng);
+                $p->title_2 = $this->changeLanguage($p->title_2,$p->title_2_eng);
+                $p->description_2 = $this->changeLanguage($p->description_2,$p->description_2_eng);
+            }
         }
-
         return $project;
     }
 

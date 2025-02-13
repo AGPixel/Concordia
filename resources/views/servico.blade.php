@@ -200,7 +200,7 @@
                 <div class="container p-relative">
                     <div class="box-content w-100 d-flex flex-column p-relative z-index-1">
 
-                        <a href="/pt/servico/{{ $nextProject->id }}" class="btn-arrow effect-ajax v-light background-main">
+                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico/{{ $nextProject->id }}" class="btn-arrow effect-ajax v-light background-main">
                             <span class="icon theme-color dsn-icon" data-dsn-iconSize="45px">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                     <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -209,7 +209,7 @@
                             </span>
                         </a>
 
-                        <h2 class="title-lg text-upper" data-dsn-ajax="title"><a href="/pt/servico/{{ $nextProject->id }}" class="effect-ajax">{{ $nextProject->title }}</a></h2>
+                        <h2 class="title-lg text-upper" data-dsn-ajax="title"><a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico/{{ $nextProject->id }}" class="effect-ajax">{{ $nextProject->title }}</a></h2>
 
 
                         <div class="d-flex justify-content-between align-items-center w-100 mt-30">
@@ -248,6 +248,7 @@
     <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
     <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
     <script src="{{ asset("/assets/js/custom.js") }}"></script>
+    <script src="{{ asset("/assets/js/jquery.js") }}"></script>
 </body>
 
 </html>

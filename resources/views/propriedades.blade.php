@@ -93,11 +93,11 @@
                                                     </div>
 
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="/pt/propriedade/{{ $propriedade->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $propriedade->title }}</a>
+                                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $propriedade->title }}</a>
                                                     </h2>
                                                 </div>
 
-                                                <a href="/pt/propriedade/{{ $propriedade->id }}" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
+                                                <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->id }}" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20">
                                                     <span class="icon background-section v-light">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -143,6 +143,7 @@
     <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
     <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
     <script src="{{ asset("/assets/js/custom.js") }}"></script>
+    <script src="{{ asset("/js/jquery.js") }}"></script>
 </body>
 
 </html>

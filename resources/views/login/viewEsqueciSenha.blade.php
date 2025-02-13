@@ -45,7 +45,7 @@
                     <!-- /.col -->
                 </div>
                 <p class="mt-3 mb-1">
-                    <a href="/pt/login">Voltar a pagina de login</a>
+                    <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}login">Voltar a pagina de login</a>
                 </p>
             </div>
             <!-- /.login-card-body -->

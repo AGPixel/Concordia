@@ -182,7 +182,7 @@
 
                                                 <div class="post-info">
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="/pt/portifolio/{{ $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $portifolio->title }}</a>
+                                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $portifolio->title }}</a>
                                                     </h2>
 
                                                 </div>
@@ -268,6 +268,7 @@
     <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
     <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
     <script src="{{ asset("/assets/js/custom.js") }}"></script>
+    <script src="{{ asset("/js/jquery.js") }}"></script>
 </body>
 
 </html>

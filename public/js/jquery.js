@@ -197,3 +197,15 @@ function toastQuestion(title) {
         title: title
     });
 }
+
+// -------------------------------- EXECUÇÕES -------------------------------- 
+
+console.log("EXECUÇÕES");
+console.log(!getCookie('language'));
+console.log(getCookie('language'));
+if (!getCookie('language')) {
+    console.log("aaa");
+    setCookie('language', 'pt');
+    console.log("bbb");
+}
+console.log("ccc");

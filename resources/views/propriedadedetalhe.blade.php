@@ -285,6 +285,7 @@
     <script src="{{ asset("/assets/js/plugins.min.js") }}"></script>
     <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
     <script src="{{ asset("/assets/js/custom.js") }}"></script>
+    <script src="{{ asset("/js/jquery.js") }}"></script>
 </body>
 
 </html>
