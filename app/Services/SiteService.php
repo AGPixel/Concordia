@@ -517,18 +517,20 @@ class SiteService extends BaseService
         $oportunidade = $this->repository->oportunidade();
 
         if ($lingua == 'eng') {
-            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
-            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
-            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
-            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
-            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
-            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
-            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
-            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
-            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
-            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
-            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
-            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+            foreach($oportunidades as $id => $oportunidade) {
+                $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+                $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+                $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+                $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+                $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+                $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+                $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+                $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+                $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+                $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+                $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+                $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+            }
         }
 
         return $oportunidade;
@@ -538,18 +540,20 @@ class SiteService extends BaseService
         $oportunidade = $this->repository->oportunidadeActive();
 
         if ($lingua == 'eng') {
-            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
-            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
-            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
-            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
-            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
-            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
-            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
-            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
-            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
-            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
-            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
-            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+            foreach($oportunidades as $id => $oportunidade) {
+                $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+                $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+                $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+                $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+                $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+                $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+                $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+                $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+                $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+                $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+                $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+                $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+            }
         }
 
         return $oportunidade;
@@ -642,54 +646,58 @@ class SiteService extends BaseService
     }
 
     public function propriedade($lingua = 'pt') {
-        $propriedade = $this->repository->propriedade();
+        $propriedades = $this->repository->propriedade();
 
         if ($lingua == 'eng') {
-            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
-            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
-            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
-            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
-            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
-            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
-            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
-            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
-            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
-            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
-            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
-            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
-            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
-            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
-            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
-            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
-            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
-            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+            foreach($propriedades as $id => $propriedade) {
+                $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+                $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+                $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+                $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+                $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+                $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+                $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+                $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+                $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+                $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+                $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+                $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+                $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+                $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+                $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+                $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+                $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+                $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+            }
         }
 
-        return $propriedade;
+        return $propriedades;
     }
 
     public function propriedadeActive($lingua = 'pt') {
         $propriedade = $this->repository->propriedadeActive();
 
         if ($lingua == 'eng') {
-            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
-            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
-            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
-            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
-            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
-            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
-            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
-            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
-            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
-            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
-            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
-            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
-            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
-            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
-            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
-            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
-            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
-            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+            foreach($propriedades as $id => $propriedade) {
+                $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+                $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+                $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+                $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+                $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+                $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+                $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+                $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+                $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+                $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+                $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+                $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+                $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+                $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+                $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+                $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+                $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+                $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+            }
         }
 
         return $propriedade;

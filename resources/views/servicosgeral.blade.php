@@ -97,9 +97,9 @@
                                 <div class="m-top-2em">
                                     <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                        <a class="button background-main v-dark effect-ajax" href="{{ $id == 1 ? 'propriedades' : 'oportunidades' }}" data-dsn-text="{{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}">
-                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}">
-                                                <span>Ver {{ $id == 1 ? 'Propriedades' : 'Oportunidades' }}</span>
+                                        <a class="button background-main v-dark effect-ajax" href="{{ $id == 1 ? 'propriedades' : 'oportunidades' }}" data-dsn-text="{{ ($id == 1 ? (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Propriedades' : 'Properties') : 'Propriedades') : (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Oportunidades' : 'Oportunities') : 'Oportunidades')) }}">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ ($id == 1 ? (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Propriedades' : 'Properties') : 'Propriedades') : (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Oportunidades' : 'Oportunities') : 'Oportunidades')) }}">
+                                                <span>{{ ($id == 1 ? (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Ver Propriedades' : 'See Properties') : 'Ver Propriedades') : (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Ver Oportunidades' : 'See Oportunities') : 'Ver Oportunidades')) }}</span>
                                             </span>
                                         </a>
 
