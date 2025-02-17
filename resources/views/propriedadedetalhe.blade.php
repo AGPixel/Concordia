@@ -17,42 +17,6 @@
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
-    <style>
-        .modal-show-terms {
-            position: absolute;
-            z-index: 100;
-            background-color: black;
-            padding: 1em;
-        }
-
-        .modal-terms-buttons {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            padding-top: 1em;
-        }
-
-        .bt-modal-term-no {
-            width: 8.5em;
-            height: 3em;
-            color: #fff;
-            background-color: #dc3545;
-            border-color: #dc3545;
-            box-shadow: none;
-            cursor: pointer;
-        }
-
-        .bt-modal-term-accept {
-            width: 8.5em;
-            height: 3em;
-            color: #fff;
-            background-color: #28a745;
-            border-color: #28a745;
-            box-shadow: none;
-            cursor: pointer;
-        }
-
-    </style>
 </head>
 
 <body class="v-dark dsn-ajax">

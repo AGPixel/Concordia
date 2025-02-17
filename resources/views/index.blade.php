@@ -23,6 +23,7 @@
             z-index: 100;
             background-color: black;
             padding: 1em;
+            bottom: 0;
         }
 
         .modal-terms-buttons {
