@@ -66,7 +66,7 @@
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Image Begin',
                                         'id_img_file' => 'InputProjectImgBegin',
-                                        'id_text_file' => 'ImageProjectImgBeginPreview',
+                                        'id_text_file' => 'InputProjectImgBeginPreview',
                                         'arg_value' => isset($project->img_begin) ? asset("../storage/$project->img_begin") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Image 1',
                                         'id_img_file' => 'InputProjectImg1',
-                                        'id_text_file' => 'ImageProjectImg1Preview',
+                                        'id_text_file' => 'InputProjectImg1Preview',
                                         'arg_value' => isset($project->img_1) ? asset("../storage/$project->img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Image 2',
                                         'id_img_file' => 'InputProjectImg2',
-                                        'id_text_file' => 'ImageProjectImg2Preview',
+                                        'id_text_file' => 'InputProjectImg2Preview',
                                         'arg_value' => isset($project->img_2) ? asset("../storage/$project->img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
@@ -93,7 +93,7 @@
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Image 3',
                                         'id_img_file' => 'InputProjectImg3',
-                                        'id_text_file' => 'ImageProjectImg3Preview',
+                                        'id_text_file' => 'InputProjectImg3Preview',
                                         'arg_value' => isset($project->img_3) ? asset("../storage/$project->img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Image 4',
                                         'id_img_file' => 'InputProjectImg4',
-                                        'id_text_file' => 'ImageProjectImg4Preview',
+                                        'id_text_file' => 'InputProjectImg4Preview',
                                         'arg_value' => isset($project->img_4) ? asset("../storage/$project->img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
