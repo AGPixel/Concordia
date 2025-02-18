@@ -178,7 +178,7 @@
 
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Portifolio Title',
+                                    'title' => 'Projects Title',
                                     'id_input_text' => 'InputPortifolioTitle',
                                     'arg_value' => $args->portifolio_title ? $args->portifolio_title : '',
                                     'arg_value_eng' => $args->portifolio_title_eng ? $args->portifolio_title_eng : ''

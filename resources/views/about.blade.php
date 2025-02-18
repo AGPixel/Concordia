@@ -17,6 +17,19 @@
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
+    <style>
+        @media only screen and (min-width: 992px) {
+            .title-lg {
+                font-size: 110px;
+                line-height: 135px;
+            }
+        }
+
+        span .word {
+            height: 1.16em !important;
+        }
+
+    </style>
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -177,8 +190,8 @@
                                     <div class="dsn-btn dsn-btn-shape  d-flex no-padding text-upper">
 
                                         <a class="button" href="#">
-                                            <span class="title-btn p-relative  z-index-1" data-animate-text="Explore All Services">
-                                                <span>Explore All Services</span>
+                                            <span class="title-btn p-relative  z-index-1" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Explorar todos os serviços" : "Explore All Services" : "Explorar todos os serviços" }}">
+                                                <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Explorar todos os serviços" : "Explore All Services" : "Explorar todos os serviços" }}</span>
                                             </span>
                                         </a>
 
@@ -271,7 +284,7 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                    <a class="button background-main v-dark effect-ajax" href="contact.html" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
+                                    <a class="button background-main v-dark effect-ajax" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
                                         <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
                                             <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}</span>
                                         </span>
@@ -435,8 +448,8 @@
                                 <div class="dsn-btn dsn-btn-shape d-flex mt-20">
 
                                     <a class="button background-main v-dark" href="#">
-                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Contact me">
-                                            <span>Contact me</span>
+                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}">
+                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}</span>
                                         </span>
                                     </a>
 
@@ -568,56 +581,115 @@
                 </section>
                 <!-- ========== End Team ========== -->
 
-                <section class="next-page v-dark pt-section background-section pb-50">
-                    <div class="container">
-                        <div class="tob-box d-flex justify-content-between align-items-end border-bottom pb-50 mb-50">
-                            <h2 class="title text-upper">time to <br> roar! </h2>
+                <footer class="footer background-section v-dark pt-60">
+                    <div class="container p-relative">
+                        <div class="d-grid grid-lg-4 grid-md-3">
+                            <div class="logo-wrap">
+                                <div class="logo d-flex">
+                                    <img src="{{ asset("/assets/img/logo-light.png") }}" alt="" class="logo">
+                                </div>
+                                <svg class="shape-one" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_13_104)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M30 0H0C16.5684 0 30 13.4314 30 30V0Z" fill="#0E0E0E" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_13_104">
+                                            <rect width="30" height="30" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <svg class="shape-two" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H30C13.4316 0 0 13.4314 0 30V0Z" fill="#0E0E0E" />
+                                </svg>
 
-                            <div class="dsn-btn dsn-btn-shape d-flex">
+                            </div>
 
-                                <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
-                                        <span>Let's talk!</span>
+                            <div class="footer-links">
+                                <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                    Navigation Links</h4>
+                                <ul>
+                                    <li class="text-upper">
+                                        <a href="{{ $args->navigation_url_1 ? $args->navigation_url_1 : '#' }}">{{ $args->navigation_title_1 ? $args->navigation_title_1 : 'navigation_title_1' }}</a>
+                                    </li>
+                                    <li class="text-upper">
+                                        <a href="{{ $args->navigation_url_2 ? $args->navigation_url_2 : '#' }}">{{ $args->navigation_title_2 ? $args->navigation_title_2 : 'navigation_title_2' }}</a>
+                                    </li>
+                                    <li class="text-upper">
+                                        <a href="{{ $args->navigation_url_3 ? $args->navigation_url_3 : '#' }}">{{ $args->navigation_title_3 ? $args->navigation_title_3 : 'navigation_title_3' }}</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <div class="footer-contact">
+                                <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                    CONTACT Info</h4>
+
+                                <div class="col-contact">
+                                    <p>
+                                        <strong>T</strong>
+                                        :{{ $args->contact_telephone ? $args->contact_telephone : '+000 000 0000' }}
+                                    </p>
+                                    <p class="mt-10">
+                                        <strong>F</strong>
+                                        :{{ $args->contact_cellphone ? $args->contact_cellphone : '+000 000 0000' }}
+                                    </p>
+                                    <p class="over-hidden mt-10">
+                                        <strong>E</strong> :
+                                        <a class="link-hover" href="#" data-hover-text="{{ $args->contact_email ? $args->contact_email : 'email@email.com' }}">
+                                            {{ $args->contact_email ? $args->contact_email : 'email@email.com' }}
+                                        </a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="footer-socials">
+                                <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                    socials Links</h4>
+                                <ul class="dsn-socials box-social">
+                                    <li>
+                                        <a href="{{ $args->social_url_facebook ? $args->social_url_facebook : 'social_url_facebook' }}" target="_blank" class="background-main">
+                                            <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ $args->social_url_instagram ? $args->social_url_instagram : 'social_url_instagram' }}" target="_blank" class="background-main">
+                                            <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ $args->social_url_twitter ? $args->social_url_twitter : 'social_url_twitter' }}" target="_blank" class="background-main">
+                                            <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="copyright background-main">
+                        <div class="container d-flex align-items-center justify-content-between">
+                            <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
+                            <div class="dsn-default-btn dsn-icon-heading-color">
+                                <a class="dsn-btn dsn-border border-color-default background-transparent image-zoom move-circle has-icon-left dsn-parallax-hover" href="#main_root" rel="nofollow" data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
+                                    <span class="d-flex align-items-center justify-content-center h-100">
+                                        <span class="dsn-icon no-padding heading-color z-index-1 btn-icon-left">
+                                            <svg enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <path d="M24.285,11.284L16,19.571l-8.285-8.288c-0.395-0.395-1.034-0.395-1.429,0  c-0.394,0.395-0.394,1.035,0,1.43l8.999,9.002l0,0l0,0c0.394,0.395,1.034,0.395,1.428,0l8.999-9.002  c0.394-0.395,0.394-1.036,0-1.431C25.319,10.889,24.679,10.889,24.285,11.284z" fill="#121313" id="Expand_More"></path>
+
+                                            </svg>
+                                        </span>
+                                        <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="SCROLL TOP">
+                                            <span>SCROLL TOP</span>
+                                        </span>
                                     </span>
                                 </a>
-
-                                <span class="icon background-main v-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                        </path>
-                                    </svg>
-                                </span>
-
                             </div>
                         </div>
                     </div>
-
-                    <div class="container over-hidden">
-                        <div class="bottom-box ">
-                            <div class="d-flex gap-10 justify-content-between flex-wrap">
-                                <div class="info-item">
-                                    <h6 class="mb-10">Email Address</h6>
-                                    <a class="text-upper" href="#">{{ $contact->footer_email ? $contact->footer_email : 'footer_email'}}</a>
-                                </div>
-
-                                <div class="info-item">
-                                    <h6 class="mb-10">Call Info</h6>
-                                    <a class="text-upper" href="#">{{ $contact->footer_call ? $contact->footer_call : 'footer_call'}}</a>
-                                </div>
-
-                                <div class="info-item">
-                                    <h6 class="mb-10">Skype</h6>
-                                    <a class="text-upper" href="#">{{ $contact->footer_skype ? $contact->footer_skype : 'footer_skype'}}</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        @include('components.sitefooter')
-                    </div>
-                </section>
+                </footer>
 
             </div>
 

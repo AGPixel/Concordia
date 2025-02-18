@@ -53,6 +53,10 @@
             cursor: pointer;
         }
 
+        span .word {
+            height: 1.15em !important;
+        }
+
     </style>
 </head>
 
@@ -175,13 +179,16 @@
                     <div class="dsn-nex-prev v-dark-head d-flex">
                         <div class="prev">
                             <div class="dsn-wrapper h-100"></div>
-                            <h5 class="heading-color">PREV</h5>
+                            <h5 class="heading-color">
+                                {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "ANTERIOR" : "PREV" : "ANTERIOR" }}
+                            </h5>
                         </div>
 
                         <div class="next dsn-active">
                             <div class="dsn-wrapper h-100"></div>
                             <h5 class="heading-color">
-                                NEXT</h5>
+                                {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "PRÓXIMO" : "NEXT" : "PRÓXIMO" }}
+                            </h5>
                         </div>
                     </div>
 
@@ -198,7 +205,7 @@
                             <div class="box-text p-relative">
                                 <div class="bg-pattern p-absolute w-100 "></div>
                                 <h2 class="title mb-30 dsn-fill">
-                                    <span data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>
+                                    <span style="padding-left:0%;" data-dsn-animation='{"from":{"paddingLeft":"0%"},"to":{"paddingLeft":"5%"},"responsive":["tablet","desktop"]}'>
                                         {{ $args->about_title ? $args->about_title : 'about_title' }}
                                     </span>
                                 </h2>
@@ -208,9 +215,9 @@
 
                                 <div class="dsn-btn dsn-btn-shape mt-30 d-flex">
 
-                                    <a class="button background-theme effect-ajax" href="about.html">
-                                        <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="ABOUT US">
-                                            <span>ABOUT US</span>
+                                    <a class="button background-theme effect-ajax" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/sobre" : "/eng/sobre" : "/pt/sobre" }}">
+                                        <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "SOBRE NÓS" : "ABOUT US" : "SOBRE NÓS" }}">
+                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "SOBRE NÓS" : "ABOUT US" : "SOBRE NÓS" }}</span>
                                         </span>
                                     </a>
 
@@ -239,7 +246,6 @@
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
                                     <h3 class="title d-flex align-items-start justify-content-center">
                                         {{ $args->about_num_1 ? $args->about_num_1 : 'about_num_1' }}
-                                        <span class="background-theme p-5 has-border-radius">+</span>
                                     </h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
                                         {{ $args->about_description_1 ? $args->about_description_1 : 'about_description_1' }}
@@ -249,7 +255,6 @@
                                 <div class="fact-item background-main has-border-radius p-30 dsn-up">
                                     <h3 class="title d-flex align-items-start justify-content-center">
                                         {{ $args->about_num_2 ? $args->about_num_2 : 'about_num_2' }}
-                                        <span class="background-theme p-5 has-border-radius">%</span>
                                     </h3>
                                     <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
                                         {{ $args->about_description_2 ? $args->about_description_2 : 'about_description_2' }}
@@ -368,7 +373,7 @@
 
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">Portifolio</span>
+                            <span class="sub-heading mb-5">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}</span>
                             <h2 class="title ">{{ $args->portifolio_title ? $args->portifolio_title : 'portifolio_title' }}</h2>
                         </div>
                     </div>
@@ -459,7 +464,7 @@
                                                     </svg>
                                                 </h3>
 
-                                                <p class="text-upper">out of 5 stars</p>
+                                                <p class="text-upper">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "de 5 estrelas" : "out of 5 stars" : "de 5 estrelas" }}</p>
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
@@ -477,14 +482,6 @@
 
                                         <div class="box-authoer w-100 v-light background-main p-20">
                                             <div class="authoer d-flex">
-                                                <div class="img">
-                                                    <img class="cover-bg-img" src="{{ $args->testimonials_img_1 ? asset("../storage/$args->testimonials_img_1") : asset("/assets/img/team/1.jpg") }}" alt="">
-                                                </div>
-
-                                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
-                                                </svg>
-
                                                 <div class="text background-section">
                                                     <h5>{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
                                                     <span>{{ $args->testimonials_name_1 ? $args->testimonials_name_1 : 'testimonials_name_1' }}</span>
@@ -502,7 +499,7 @@
                                                     </svg>
                                                 </h3>
 
-                                                <p class="text-upper">out of 5 stars</p>
+                                                <p class="text-upper">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "de 5 estrelas" : "out of 5 stars" : "de 5 estrelas" }}</p>
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
@@ -520,14 +517,6 @@
 
                                         <div class="box-authoer w-100 v-light background-main p-20">
                                             <div class="authoer d-flex">
-                                                <div class="img">
-                                                    <img class="cover-bg-img" src="{{ $args->testimonials_img_2 ? asset("../storage/$args->testimonials_img_2") : asset("/assets/img/team/1.jpg") }}" alt="">
-                                                </div>
-
-                                                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M0 0C10.6801 7.41878 16.3937 7.34643 26 0V19C15.594 10.5293 9.86673 10.5632 0 19V0Z" fill="#E0E0E0"></path>
-                                                </svg>
-
                                                 <div class="text background-section">
                                                     <h5>{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
                                                     <span>{{ $args->testimonials_name_2 ? $args->testimonials_name_2 : 'testimonials_name_2' }}</span>
@@ -825,8 +814,8 @@
                             <div class="dsn-btn dsn-btn-shape d-flex">
 
                                 <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="Let's talk!">
-                                        <span>Let's talk!</span>
+                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}">
+                                        <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}</span>
                                     </span>
                                 </a>
 
@@ -970,6 +959,7 @@
                     </div>
                 </div>
             </footer>
+
         </div>
 
     </main>

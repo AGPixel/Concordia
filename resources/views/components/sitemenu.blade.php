@@ -21,9 +21,9 @@
             </li>
 
             <li class="nav-item has-sub-menu">
-                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Portifolio" : "Portfolio" : "Portifolio" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
+                <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
                     <span class="overflow ">
-                        {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Portifolio" : "Portfolio" : "Portifolio" }}
+                        {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}
                     </span>
                 </a>
                 <ul class="nav-item">

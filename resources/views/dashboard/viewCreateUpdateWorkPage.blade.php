@@ -12,7 +12,7 @@
 
         @extends('components.tituloConteudo')
 
-        @section('titulo','Portifolio Page')
+        @section('titulo',(isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos").' Page')
 
         @section('conteudo')
         <!-- Colocado esse style somente por enquanto, mudar depois. -->
