@@ -48,7 +48,7 @@
             <header class="header-page v-dark-head dsn-header-animation pb-80 p-relative">
 
                 <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
-                    <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
+                    <img class="cover-bg-img" src="{{asset("assets/img/bg.svg")}}" alt="">
                 </div>
 
                 <div class="p-relative container dsn-hero-parallax-title h-100">
@@ -144,14 +144,14 @@
                                 <div class="box-info d-grid">
                                     <div class="box-title background-section has-border-radius p-relative over-hidden">
                                         <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
-                                            <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
+                                            <img class="cover-bg-img" src="{{asset("assets/img/bg.svg")}}" alt="">
                                         </div>
                                         <h2 class="title text-upper p-relative">{{ $contact->contact_form_title ? $contact->contact_form_title : 'contact_form_title' }}</h2>
                                     </div>
 
                                     <div class="info background-section has-border-radius p-relative over-hidden">
                                         <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
-                                            <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
+                                            <img class="cover-bg-img" src="{{asset("assets/img/bg.svg")}}" alt="">
                                         </div>
 
                                         <div class="p-relative">
@@ -194,7 +194,7 @@
 
                                 <div class="box-form background-section p-relative over-hidden box-padding has-border-radius">
                                     <div class="box-img h-100 w-100 h-100 p-absolute top-0 right-0" data-overlay="7">
-                                        <img class="cover-bg-img" src="assets/img/bg.svg" alt="">
+                                        <img class="cover-bg-img" src="{{asset("assets/img/bg.svg")}}" alt="">
                                     </div>
                                     <div class="dsn-form form-box d-flex flex-column p-relative">
                                         <form id="contact-form" class="form w-100" method="post" action="contact.php" data-toggle="validator">

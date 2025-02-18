@@ -23,7 +23,7 @@
         }
 
         .m-top-2em {
-            margin-top: 2em;
+            margin-top: 2em !important;
         }
 
     </style>
