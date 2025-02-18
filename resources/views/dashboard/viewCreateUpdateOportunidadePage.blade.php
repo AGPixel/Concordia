@@ -43,38 +43,38 @@
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title',
                                     'id_input_text' => 'InputOportunidadeTitle',
-                                    'arg_value' => $oportunidade->title ? $oportunidade->title : '',
-                                    'arg_value_eng' => $oportunidade->title_eng ? $oportunidade->title_eng : ''
+                                    'arg_value' => isset($oportunidade->title) ? $oportunidade->title : '',
+                                    'arg_value_eng' => isset($oportunidade->title_eng) ? $oportunidade->title_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Description',
                                     'id_input_text' => 'InputOportunidadeDescription',
-                                    'arg_value' => $oportunidade->description ? $oportunidade->description : '',
-                                    'arg_value_eng' => $oportunidade->description_eng ? $oportunidade->description_eng : ''
+                                    'arg_value' => isset($oportunidade->description) ? $oportunidade->description : '',
+                                    'arg_value_eng' => isset($oportunidade->description_eng) ? $oportunidade->description_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Year',
                                     'id_input_text' => 'InputOportunidadeYear',
-                                    'arg_value' => $oportunidade->year ? $oportunidade->year : '' ])
+                                    'arg_value' => isset($oportunidade->year) ? $oportunidade->year : '' ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Job 1',
                                     'id_input_text' => 'InputOportunidadeJob1',
-                                    'arg_value' => $oportunidade->job_1 ? $oportunidade->job_1 : '',
-                                    'arg_value_eng' => $oportunidade->job_1_eng ? $oportunidade->job_1_eng : ''
+                                    'arg_value' => isset($oportunidade->job_1) ? $oportunidade->job_1 : '',
+                                    'arg_value_eng' => isset($oportunidade->job_1_eng) ? $oportunidade->job_1_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Job 2',
                                     'id_input_text' => 'InputOportunidadeJob2',
-                                    'arg_value' => $oportunidade->job_2 ? $oportunidade->job_2 : '',
-                                    'arg_value_eng' => $oportunidade->job_2_eng ? $oportunidade->job_2_eng : ''
+                                    'arg_value' => isset($oportunidade->job_2) ? $oportunidade->job_2 : '',
+                                    'arg_value_eng' => isset($oportunidade->job_2_eng) ? $oportunidade->job_2_eng : ''
                                     ])
                                 </div>
                                 <!-- 11111 -->
@@ -84,23 +84,23 @@
                                         'title' => 'Image 1',
                                         'id_img_file' => 'InputOportunidadeImg1',
                                         'id_text_file' => 'ImageOportunidadeImg1Preview',
-                                        'arg_value' => $oportunidade->img_1 ? asset("../storage/$oportunidade->img_1") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 1',
                                     'id_input_text' => 'InputOportunidadeType1',
-                                    'arg_value' => $oportunidade->type_1 ? $oportunidade->type_1 : '',
-                                    'arg_value_eng' => $oportunidade->type_1_eng ? $oportunidade->type_1_eng : ''
+                                    'arg_value' => isset($oportunidade->type_1) ? $oportunidade->type_1 : '',
+                                    'arg_value_eng' => isset($oportunidade->type_1_eng) ? $oportunidade->type_1_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title 1',
                                     'id_input_text' => 'InputOportunidadeTitle1',
-                                    'arg_value' => $oportunidade->title_1 ? $oportunidade->title_1 : '',
-                                    'arg_value_eng' => $oportunidade->title_1_eng ? $oportunidade->title_1_eng : ''
+                                    'arg_value' => isset($oportunidade->title_1) ? $oportunidade->title_1 : '',
+                                    'arg_value_eng' => isset($oportunidade->title_1_eng) ? $oportunidade->title_1_eng : ''
                                     ])
                                 </div>
                                 <!-- 22222 -->
@@ -110,23 +110,23 @@
                                         'title' => 'Image 2',
                                         'id_img_file' => 'InputOportunidadeImg2',
                                         'id_text_file' => 'ImageOportunidadeImg2Preview',
-                                        'arg_value' => $oportunidade->img_2 ? asset("../storage/$oportunidade->img_2") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($oportunidade->img_2) ? asset("../storage/$oportunidade->img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 2',
                                     'id_input_text' => 'InputOportunidadeType2',
-                                    'arg_value' => $oportunidade->type_2 ? $oportunidade->type_2 : '',
-                                    'arg_value_eng' => $oportunidade->type_2_eng ? $oportunidade->type_2_eng : ''
+                                    'arg_value' => isset($oportunidade->type_2) ? $oportunidade->type_2 : '',
+                                    'arg_value_eng' => isset($oportunidade->type_2_eng) ? $oportunidade->type_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title 2',
                                     'id_input_text' => 'InputOportunidadeTitle2',
-                                    'arg_value' => $oportunidade->title_2 ? $oportunidade->title_2 : '',
-                                    'arg_value_eng' => $oportunidade->title_2_eng ? $oportunidade->title_2_eng : ''
+                                    'arg_value' => isset($oportunidade->title_2) ? $oportunidade->title_2 : '',
+                                    'arg_value_eng' => isset($oportunidade->title_2_eng) ? $oportunidade->title_2_eng : ''
                                     ])
                                 </div>
                                 <!-- 33333 -->
@@ -136,23 +136,23 @@
                                         'title' => 'Image 3',
                                         'id_img_file' => 'InputOportunidadeImg3',
                                         'id_text_file' => 'ImageOportunidadeImg3Preview',
-                                        'arg_value' => $oportunidade->img_3 ? asset("../storage/$oportunidade->img_3") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($oportunidade->img_3) ? asset("../storage/$oportunidade->img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 3',
                                     'id_input_text' => 'InputOportunidadeType3',
-                                    'arg_value' => $oportunidade->type_3 ? $oportunidade->type_3 : '',
-                                    'arg_value_eng' => $oportunidade->type_3_eng ? $oportunidade->type_3_eng : ''
+                                    'arg_value' => isset($oportunidade->type_3) ? $oportunidade->type_3 : '',
+                                    'arg_value_eng' => isset($oportunidade->type_3_eng) ? $oportunidade->type_3_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title 3',
                                     'id_input_text' => 'InputOportunidadeTitle3',
-                                    'arg_value' => $oportunidade->title_3 ? $oportunidade->title_3 : '',
-                                    'arg_value_eng' => $oportunidade->title_3_eng ? $oportunidade->title_3_eng : ''
+                                    'arg_value' => isset($oportunidade->title_3) ? $oportunidade->title_3 : '',
+                                    'arg_value_eng' => isset($oportunidade->title_3_eng) ? $oportunidade->title_3_eng : ''
                                     ])
                                 </div>
                                 <!-- 44444 -->
@@ -162,23 +162,23 @@
                                         'title' => 'Image 4',
                                         'id_img_file' => 'InputOportunidadeImg4',
                                         'id_text_file' => 'ImageOportunidadeImg4Preview',
-                                        'arg_value' => $oportunidade->img_4 ? asset("../storage/$oportunidade->img_4") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($oportunidade->img_4) ? asset("../storage/$oportunidade->img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 4',
                                     'id_input_text' => 'InputOportunidadeType4',
-                                    'arg_value' => $oportunidade->type_4 ? $oportunidade->type_4 : '',
-                                    'arg_value_eng' => $oportunidade->type_4_eng ? $oportunidade->type_4_eng : ''
+                                    'arg_value' => isset($oportunidade->type_4) ? $oportunidade->type_4 : '',
+                                    'arg_value_eng' => isset($oportunidade->type_4_eng) ? $oportunidade->type_4_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title 4',
                                     'id_input_text' => 'InputOportunidadeTitle4',
-                                    'arg_value' => $oportunidade->title_4 ? $oportunidade->title_4 : '',
-                                    'arg_value_eng' => $oportunidade->title_4_eng ? $oportunidade->title_4_eng : ''
+                                    'arg_value' => isset($oportunidade->title_4) ? $oportunidade->title_4 : '',
+                                    'arg_value_eng' => isset($oportunidade->title_4_eng) ? $oportunidade->title_4_eng : ''
                                     ])
                                 </div>
 

@@ -43,38 +43,38 @@
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title',
                                     'id_input_text' => 'InputPropriedadeTitle',
-                                    'arg_value' => $propriedade->title ? $propriedade->title : '',
-                                    'arg_value_eng' => $propriedade->title_eng ? $propriedade->title_eng : ''
+                                    'arg_value' => isset($propriedade->title) ? $propriedade->title : '',
+                                    'arg_value_eng' => isset($propriedade->title_eng) ? $propriedade->title_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Description',
                                     'id_input_text' => 'InputPropriedadeDescription',
-                                    'arg_value' => $propriedade->description ? $propriedade->description : '',
-                                    'arg_value_eng' => $propriedade->description_eng ? $propriedade->description_eng : ''
+                                    'arg_value' => isset($propriedade->description) ? $propriedade->description : '',
+                                    'arg_value_eng' => isset($propriedade->description_eng) ? $propriedade->description_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Year',
                                     'id_input_text' => 'InputPropriedadeYear',
-                                    'arg_value' => $propriedade->year ? $propriedade->year : '' ])
+                                    'arg_value' => isset($propriedade->year) ? $propriedade->year : '' ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Job 1',
                                     'id_input_text' => 'InputPropriedadeJob1',
-                                    'arg_value' => $propriedade->job_1 ? $propriedade->job_1 : '',
-                                    'arg_value_eng' => $propriedade->job_1_eng ? $propriedade->job_1_eng : ''
+                                    'arg_value' => isset($propriedade->job_1) ? $propriedade->job_1 : '',
+                                    'arg_value_eng' => isset($propriedade->job_1_eng) ? $propriedade->job_1_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Job 2',
                                     'id_input_text' => 'InputPropriedadeJob2',
-                                    'arg_value' => $propriedade->job_2 ? $propriedade->job_2 : '',
-                                    'arg_value_eng' => $propriedade->job_2_eng ? $propriedade->job_2_eng : ''
+                                    'arg_value' => isset($propriedade->job_2) ? $propriedade->job_2 : '',
+                                    'arg_value_eng' => isset($propriedade->job_2_eng) ? $propriedade->job_2_eng : ''
                                     ])
                                 </div>
                                 <!-- 11111 -->
@@ -84,23 +84,23 @@
                                         'title' => 'Image 1',
                                         'id_img_file' => 'InputPropriedadeImg1',
                                         'id_text_file' => 'ImagePropriedadeImg1Preview',
-                                        'arg_value' => $propriedade->img_1 ? asset("../storage/$propriedade->img_1") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 1',
                                     'id_input_text' => 'InputPropriedadeType1',
-                                    'arg_value' => $propriedade->type_1 ? $propriedade->type_1 : '',
-                                    'arg_value_eng' => $propriedade->type_1_eng ? $propriedade->type_1_eng : ''
+                                    'arg_value' => isset($propriedade->type_1) ? $propriedade->type_1 : '',
+                                    'arg_value_eng' => isset($propriedade->type_1_eng) ? $propriedade->type_1_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 1',
                                     'id_input_text' => 'InputPropriedadeLegend1',
-                                    'arg_value' => $propriedade->legend_1 ? $propriedade->legend_1 : '',
-                                    'arg_value_eng' => $propriedade->legend_1_eng ? $propriedade->legend_1_eng : ''
+                                    'arg_value' => isset($propriedade->legend_1) ? $propriedade->legend_1 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_1_eng) ? $propriedade->legend_1_eng : ''
                                     ])
                                 </div>
                                 <!-- 22222 -->
@@ -110,23 +110,23 @@
                                         'title' => 'Image 2',
                                         'id_img_file' => 'InputPropriedadeImg2',
                                         'id_text_file' => 'ImagePropriedadeImg2Preview',
-                                        'arg_value' => $propriedade->img_2 ? asset("../storage/$propriedade->img_2") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 2',
                                     'id_input_text' => 'InputPropriedadeType2',
-                                    'arg_value' => $propriedade->type_2 ? $propriedade->type_2 : '',
-                                    'arg_value_eng' => $propriedade->type_2_eng ? $propriedade->type_2_eng : ''
+                                    'arg_value' => isset($propriedade->type_2) ? $propriedade->type_2 : '',
+                                    'arg_value_eng' => isset($propriedade->type_2_eng) ? $propriedade->type_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 2',
                                     'id_input_text' => 'InputPropriedadeLegend2',
-                                    'arg_value' => $propriedade->legend_2 ? $propriedade->legend_2 : '',
-                                    'arg_value_eng' => $propriedade->legend_2_eng ? $propriedade->legend_2_eng : ''
+                                    'arg_value' => isset($propriedade->legend_2) ? $propriedade->legend_2 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_2_eng) ? $propriedade->legend_2_eng : ''
                                     ])
                                 </div>
                                 <!-- 33333 -->
@@ -136,23 +136,23 @@
                                         'title' => 'Image 3',
                                         'id_img_file' => 'InputPropriedadeImg3',
                                         'id_text_file' => 'ImagePropriedadeImg3Preview',
-                                        'arg_value' => $propriedade->img_3 ? asset("../storage/$propriedade->img_3") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 3',
                                     'id_input_text' => 'InputPropriedadeType3',
-                                    'arg_value' => $propriedade->type_3 ? $propriedade->type_3 : '',
-                                    'arg_value_eng' => $propriedade->type_3_eng ? $propriedade->type_3_eng : ''
+                                    'arg_value' => isset($propriedade->type_3) ? $propriedade->type_3 : '',
+                                    'arg_value_eng' => isset($propriedade->type_3_eng) ? $propriedade->type_3_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 3',
                                     'id_input_text' => 'InputPropriedadeLegend3',
-                                    'arg_value' => $propriedade->legend_3 ? $propriedade->legend_3 : '',
-                                    'arg_value_eng' => $propriedade->legend_3_eng ? $propriedade->legend_3_eng : ''
+                                    'arg_value' => isset($propriedade->legend_3) ? $propriedade->legend_3 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_3_eng) ? $propriedade->legend_3_eng : ''
                                     ])
                                 </div>
                                 <!-- 44444 -->
@@ -162,23 +162,23 @@
                                         'title' => 'Image 4',
                                         'id_img_file' => 'InputPropriedadeImg4',
                                         'id_text_file' => 'ImagePropriedadeImg4Preview',
-                                        'arg_value' => $propriedade->img_4 ? asset("../storage/$propriedade->img_4") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 4',
                                     'id_input_text' => 'InputPropriedadeType4',
-                                    'arg_value' => $propriedade->type_4 ? $propriedade->type_4 : '',
-                                    'arg_value_eng' => $propriedade->type_4_eng ? $propriedade->type_4_eng : ''
+                                    'arg_value' => isset($propriedade->type_4) ? $propriedade->type_4 : '',
+                                    'arg_value_eng' => isset($propriedade->type_4_eng) ? $propriedade->type_4_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 4',
                                     'id_input_text' => 'InputPropriedadeLegend4',
-                                    'arg_value' => $propriedade->legend_4 ? $propriedade->legend_4 : '',
-                                    'arg_value_eng' => $propriedade->legend_4_eng ? $propriedade->legend_4_eng : ''
+                                    'arg_value' => isset($propriedade->legend_4) ? $propriedade->legend_4 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_4_eng) ? $propriedade->legend_4_eng : ''
                                     ])
                                 </div>
                                 <!-- 55555 -->
@@ -188,23 +188,23 @@
                                         'title' => 'Image 5',
                                         'id_img_file' => 'InputPropriedadeImg5',
                                         'id_text_file' => 'ImagePropriedadeImg5Preview',
-                                        'arg_value' => $propriedade->img_5 ? asset("../storage/$propriedade->img_5") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 5',
                                     'id_input_text' => 'InputPropriedadeType5',
-                                    'arg_value' => $propriedade->type_5 ? $propriedade->type_5 : '',
-                                    'arg_value_eng' => $propriedade->type_5_eng ? $propriedade->type_5_eng : ''
+                                    'arg_value' => isset($propriedade->type_5) ? $propriedade->type_5 : '',
+                                    'arg_value_eng' => isset($propriedade->type_5_eng) ? $propriedade->type_5_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 5',
                                     'id_input_text' => 'InputPropriedadeLegend5',
-                                    'arg_value' => $propriedade->legend_5 ? $propriedade->legend_5 : '',
-                                    'arg_value_eng' => $propriedade->legend_5_eng ? $propriedade->legend_5_eng : ''
+                                    'arg_value' => isset($propriedade->legend_5) ? $propriedade->legend_5 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_5_eng) ? $propriedade->legend_5_eng : ''
                                     ])
                                 </div>
                                 <!-- 66666 -->
@@ -214,23 +214,23 @@
                                         'title' => 'Image 6',
                                         'id_img_file' => 'InputPropriedadeImg6',
                                         'id_text_file' => 'ImagePropriedadeImg6Preview',
-                                        'arg_value' => $propriedade->img_6 ? asset("../storage/$propriedade->img_6") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 6',
                                     'id_input_text' => 'InputPropriedadeType6',
-                                    'arg_value' => $propriedade->type_6 ? $propriedade->type_6 : '',
-                                    'arg_value_eng' => $propriedade->type_6_eng ? $propriedade->type_6_eng : ''
+                                    'arg_value' => isset($propriedade->type_6) ? $propriedade->type_6 : '',
+                                    'arg_value_eng' => isset($propriedade->type_6_eng) ? $propriedade->type_6_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 6',
                                     'id_input_text' => 'InputPropriedadeLegend6',
-                                    'arg_value' => $propriedade->legend_6 ? $propriedade->legend_6 : '',
-                                    'arg_value_eng' => $propriedade->legend_6_eng ? $propriedade->legend_6_eng : ''
+                                    'arg_value' => isset($propriedade->legend_6) ? $propriedade->legend_6 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_6_eng) ? $propriedade->legend_6_eng : ''
                                     ])
                                 </div>
                                 <!-- 77777 -->
@@ -240,23 +240,23 @@
                                         'title' => 'Image 7',
                                         'id_img_file' => 'InputPropriedadeImg7',
                                         'id_text_file' => 'ImagePropriedadeImg7Preview',
-                                        'arg_value' => $propriedade->img_7 ? asset("../storage/$propriedade->img_7") : asset("/assets/img/sem_foto.png")])
+                                        'arg_value' => isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Type 7',
                                     'id_input_text' => 'InputPropriedadeType7',
-                                    'arg_value' => $propriedade->type_7 ? $propriedade->type_7 : '',
-                                    'arg_value_eng' => $propriedade->type_7_eng ? $propriedade->type_7_eng : ''
+                                    'arg_value' => isset($propriedade->type_7) ? $propriedade->type_7 : '',
+                                    'arg_value_eng' => isset($propriedade->type_7_eng) ? $propriedade->type_7_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Legend 7',
                                     'id_input_text' => 'InputPropriedadeLegend7',
-                                    'arg_value' => $propriedade->legend_7 ? $propriedade->legend_7 : '',
-                                    'arg_value_eng' => $propriedade->legend_7_eng ? $propriedade->legend_7_eng : ''
+                                    'arg_value' => isset($propriedade->legend_7) ? $propriedade->legend_7 : '',
+                                    'arg_value_eng' => isset($propriedade->legend_7_eng) ? $propriedade->legend_7_eng : ''
                                     ])
                                 </div>
 
