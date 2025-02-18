@@ -12,7 +12,7 @@
 
         @extends('components.tituloConteudo')
 
-        @section('titulo','Oportunidade Page')
+        @section('titulo','Oportunidades')
 
         @section('conteudo')
         <!-- Colocado esse style somente por enquanto, mudar depois. -->
