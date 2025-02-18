@@ -11,6 +11,7 @@ let bases64 = {
     InputAboutImg3: null,
     InputTestimonialsImg1: null,
     InputTestimonialsImg2: null,
+    InputFrameImg: null,
     InputEmployeeImg1: null,
     InputEmployeeImg2: null,
     InputEmployeeImg3: null,
@@ -45,6 +46,12 @@ inputElementTestimonialsImg2.addEventListener("change", load_image_testimonials_
 async function load_image_testimonials_img2_preview() {
     document.getElementById('InputTestimonialsImg2Preview').innerHTML = this.files[0].name;
     bases64.InputTestimonialsImg2 = await toBase64(this.files[0]);
+}
+const InputFrameImg = document.getElementById("InputFrameImg");
+InputFrameImg.addEventListener("change", load_image_frame_img_preview, false);
+async function load_image_frame_img_preview() {
+    document.getElementById('ImageFrameImgPreview').innerHTML = this.files[0].name;
+    bases64.InputFrameImg = await toBase64(this.files[0]);
 }
 const inputEmployeeImg1 = document.getElementById("InputEmployeeImg1");
 inputEmployeeImg1.addEventListener("change", load_image_employee_img1_preview, false);
@@ -145,6 +152,8 @@ function saveIndexPage() {
 
         portifolio_title: document.getElementById('InputPortifolioTitle').value,
         portifolio_title_eng: document.getElementById('InputPortifolioTitleEng').value,
+
+        frame_img: bases64.InputFrameImg,
         frame_num_1: document.getElementById('InputFrameNumber1').value,
         frame_legend_1: document.getElementById('InputFrameLegend1').value,
         frame_legend_1_eng: document.getElementById('InputFrameLegend1Eng').value,

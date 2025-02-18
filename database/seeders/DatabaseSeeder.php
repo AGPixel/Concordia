@@ -32,8 +32,32 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('a'),
         ]);
 
+        User::factory()->create([
+            'name' => 'Admin 2',
+            'email' => 'admin2@example.com',
+            'password' => Hash::make('b'),
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin 3',
+            'email' => 'admin3@example.com',
+            'password' => Hash::make('c'),
+        ]);
+
         $userToken = new UserToken();
         $userToken->user_id = 1;
+        $userToken->token = '';
+        $userToken->expire_at = Carbon::now()->format("Y-m-d H:i:s");
+        $userToken->save();
+
+        $userToken = new UserToken();
+        $userToken->user_id = 2;
+        $userToken->token = '';
+        $userToken->expire_at = Carbon::now()->format("Y-m-d H:i:s");
+        $userToken->save();
+
+        $userToken = new UserToken();
+        $userToken->user_id = 3;
         $userToken->token = '';
         $userToken->expire_at = Carbon::now()->format("Y-m-d H:i:s");
         $userToken->save();

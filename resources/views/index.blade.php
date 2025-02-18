@@ -419,7 +419,7 @@
                 <div class="section-seat section-padding background-section p-relative ">
                     <div class="p-absolute top-0 left-0 bottom-0 w-100">
                         <div class="img-box-parallax before-z-index h-100" data-overlay="4" data-dsn-grid="move-up">
-                            <img src="{{asset("/assets/img/img-seat.jpg")}}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                            <img src="{{ isset($args->frame_img) ? asset("../storage/$args->frame_img") : asset("/assets/img/img-seat.jpg")}}" class="has-bigger-scale cover-bg-img has-direction" alt="">
                         </div>
                     </div>
                     <div class="bg-line"></div>

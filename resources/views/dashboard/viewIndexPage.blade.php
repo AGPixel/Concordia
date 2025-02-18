@@ -186,6 +186,15 @@
                                 </div>
 
                                 <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Frame Image',
+                                        'id_img_file' => 'InputFrameImg',
+                                        'id_text_file' => 'ImageFrameImgPreview',
+                                        'arg_value' => $args->frame_img ? asset("../storage/$args->frame_img") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Frame Number 1',
                                     'id_input_text' => 'InputFrameNumber1',

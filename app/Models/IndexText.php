@@ -45,6 +45,7 @@ class IndexText extends Model
         'service_description_3_eng',
         'portifolio_title',
         'portifolio_title_eng',
+        'frame_img',
         'frame_num_1',
         'frame_legend_1',
         'frame_legend_1_eng',

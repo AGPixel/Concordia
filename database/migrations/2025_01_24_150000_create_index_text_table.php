@@ -33,6 +33,7 @@ return new class extends Migration
             $table->text('service_title_3')->nullable(true);
             $table->text('service_description_3')->nullable(true);
             $table->text('portifolio_title')->nullable(true);
+            $table->text('frame_img')->nullable(true);
             $table->text('frame_num_1')->nullable(true);
             $table->text('frame_legend_1')->nullable(true);
             $table->text('frame_description_1')->nullable(true);
