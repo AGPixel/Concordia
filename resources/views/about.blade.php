@@ -141,7 +141,7 @@
                 <section class="services-lest-hover not-filter dsn-filter p-relative section-margin">
                     <div class="container">
                         <div class="section-title mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-10 dsn-fill">What we're good at</span>
+                            <span class="sub-heading mb-10 dsn-fill">{{ $about->about_pre_title_1 ? $about->about_pre_title_1 : 'Seamless' }}</span>
 
                             <h2 class="title dsn-fill">{{ $about->about_service_title ? $about->about_service_title : 'Find a service That works for you' }}</h2>
                         </div>
@@ -383,7 +383,7 @@
                     <div class="container">
 
                         <div class="section-title text-center d-flex flex-column mb-30">
-                            <span class="sub-heading dsn-fill ml-auto mr-auto mb-5">OUR BRANDS</span>
+                            <span class="sub-heading dsn-fill ml-auto mr-auto mb-5">{{ $about->about_pre_title_2 ? $about->about_pre_title_2 : 'Seamless' }}</span>
 
                             <h2 class="title dsn-fill">
                                 {{ $about->about_brands_title }}
@@ -472,7 +472,7 @@
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">Our Team</span>
+                            <span class="sub-heading mb-5">{{ $about->about_pre_title_3 ? $about->about_pre_title_3 : 'Seamless' }}</span>
                             <h2 class="title ">
                                 {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
                             </h2>

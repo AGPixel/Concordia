@@ -16,6 +16,8 @@ class About extends Model
         'about_title_1_eng',
         'about_title_2',
         'about_title_2_eng',
+        'about_pre_title_1',
+        'about_pre_title_1_eng',
         'about_img_1',
         'about_img_2',
         'about_img_3',
@@ -62,6 +64,8 @@ class About extends Model
         'about_experience_description_4',
         'about_experience_description_4_eng',
         'about_experience_data_4',
+        'about_pre_title_2',
+        'about_pre_title_2_eng',
         'about_brands_title',
         'about_brands_title_eng',
         'about_brands_img_1',
@@ -70,6 +74,8 @@ class About extends Model
         'about_brands_img_4',
         'about_brands_description',
         'about_brands_description_eng',
+        'about_pre_title_3',
+        'about_pre_title_3_eng',
     ];
 
 }

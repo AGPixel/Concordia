@@ -116,6 +116,8 @@ function saveAboutPage() {
         about_title_1_eng: document.getElementById('InputAboutTitle1Eng').value,
         about_title_2: document.getElementById('InputAboutTitle2').value,
         about_title_2_eng: document.getElementById('InputAboutTitle2Eng').value,
+        about_pre_title_1: document.getElementById('InputAboutPreTitle1').value,
+        about_pre_title_1_eng: document.getElementById('InputAboutPreTitle1Eng').value,
         about_img_1: bases64.InputAboutImg1,
         about_img_2: bases64.InputAboutImg2,
         about_img_3: bases64.InputAboutImg3,
@@ -162,6 +164,8 @@ function saveAboutPage() {
         about_experience_description_4: document.getElementById('InputAboutExperienceDescription4').value,
         about_experience_description_4_eng: document.getElementById('InputAboutExperienceDescription4Eng').value,
         about_experience_data_4: document.getElementById('InputAboutExperienceData4').value,
+        about_pre_title_2: document.getElementById('InputAboutPreTitle2').value,
+        about_pre_title_2_eng: document.getElementById('InputAboutPreTitle2Eng').value,
         about_brands_title: document.getElementById('InputAboutBrandsTitle').value,
         about_brands_title_eng: document.getElementById('InputAboutBrandsTitleEng').value,
         about_brands_img_1: bases64.InputAboutBrandsImg1,
@@ -170,6 +174,8 @@ function saveAboutPage() {
         about_brands_img_4: bases64.InputAboutBrandsImg4,
         about_brands_description: document.getElementById('InputAboutBrandsDescription').value,
         about_brands_description_eng: document.getElementById('InputAboutBrandsDescriptionEng').value,
+        about_pre_title_3: document.getElementById('InputAboutPreTitle3').value,
+        about_pre_title_3_eng: document.getElementById('InputAboutPreTitle3Eng').value,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-about-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

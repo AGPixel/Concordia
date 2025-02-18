@@ -55,6 +55,14 @@
                                     'arg_value_eng' => $about->about_title_2_eng ? $about->about_title_2_eng : ''
                                     ])
                                 </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Pre Title 1',
+                                    'id_input_text' => 'InputAboutPreTitle1',
+                                    'arg_value' => $about->about_pre_title_1 ? $about->about_pre_title_1 : '',
+                                    'arg_value_eng' => $about->about_pre_title_1_eng ? $about->about_pre_title_1_eng : ''
+                                    ])
+                                </div>
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
@@ -298,6 +306,14 @@
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
+                                    'title' => 'About Pre Title 2',
+                                    'id_input_text' => 'InputAboutPreTitle2',
+                                    'arg_value' => $about->about_pre_title_2 ? $about->about_pre_title_2 : '',
+                                    'arg_value_eng' => $about->about_pre_title_2_eng ? $about->about_pre_title_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
                                     'title' => 'About Brands Title',
                                     'id_input_text' => 'InputAboutBrandsTitle',
                                     'arg_value' => $about->about_brands_title ? $about->about_brands_title : '',
@@ -346,6 +362,14 @@
                                     'id_input_text' => 'InputAboutBrandsDescription',
                                     'arg_value' => $about->about_brands_description ? $about->about_brands_description : '',
                                     'arg_value_eng' => $about->about_brands_description_eng ? $about->about_brands_description_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Pre Title 3',
+                                    'id_input_text' => 'InputAboutPreTitle3',
+                                    'arg_value' => $about->about_pre_title_3 ? $about->about_pre_title_3 : '',
+                                    'arg_value_eng' => $about->about_pre_title_3_eng ? $about->about_pre_title_3_eng : ''
                                     ])
                                 </div>
 
