@@ -154,40 +154,46 @@
                                     @foreach($portifolios as $id => $portifolio)
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
 
-                                        <div class="box-content d-flex ">
-                                            <div class="img-cat w-100">
-                                                <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
-                                                    <img src="{{ isset($portifolio->img_1) ? asset("../storage/$portifolio->img_1") : asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
+                                            <div class="box-content d-flex ">
+                                                <div class="img-cat w-100">
+                                                    <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                        <img src="{{ isset($portifolio->img_1) ? asset("../storage/$portifolio->img_1") : asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                    </div>
+
+                                                    <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
+                                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
+                                                            </path>
+                                                        </svg>
+                                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
+                                                            </path>
+                                                        </svg>
+                                                        @if(isset($portifolio->type_1))
+                                                        <span class="background-main heading-color">{{ $portifolio->type_1 }}</span>
+                                                        @endif
+                                                        @if(isset($portifolio->type_2))
+                                                        <span class="background-main heading-color">{{ $portifolio->type_2 }}</span>
+                                                        @endif
+                                                    </div>
                                                 </div>
 
-                                                <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
-                                                    <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                        <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                        </path>
-                                                    </svg>
-                                                    <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                        <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                        </path>
-                                                    </svg>
-                                                    @if(isset($portifolio->type_1))
-                                                    <span class="background-main heading-color">{{ $portifolio->type_1 }}</span>
-                                                    @endif
-                                                    @if(isset($portifolio->type_2))
-                                                    <span class="background-main heading-color">{{ $portifolio->type_2 }}</span>
-                                                    @endif
+                                                <div class="post-content p-30 v-dark-head p-relative z-index-1 d-flex flex-column p-absolute w-100 bottom-0">
+
+                                                    <div class="post-info">
+                                                        <h2 class="post-title word-wrap d-inline-block title-block">
+                                                            {{ $portifolio->title }}
+                                                            <!--
+                                                        <a href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{ { $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">
+                                                        </a>
+                                                        -->
+                                                        </h2>
+
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                            <div class="post-content p-30 v-dark-head p-relative z-index-1 d-flex flex-column p-absolute w-100 bottom-0">
-
-                                                <div class="post-info">
-                                                    <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">{{ $portifolio->title }}</a>
-                                                    </h2>
-
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
 
                                     </article>
                                     @endforeach
