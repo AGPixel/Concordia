@@ -209,6 +209,93 @@
             </div>
 
             <footer class="footer background-section v-dark pt-60">
+                <div class="container p-relative">
+                    <div class="d-grid grid-lg-4 grid-md-3">
+                        <div class="logo-wrap">
+                            <div class="logo d-flex">
+                                <img src="{{ asset("/assets/img/logo-light.png") }}" alt="" class="logo">
+                            </div>
+                            <svg class="shape-one" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_13_104)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M30 0H0C16.5684 0 30 13.4314 30 30V0Z" fill="#0E0E0E" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_13_104">
+                                        <rect width="30" height="30" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <svg class="shape-two" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H30C13.4316 0 0 13.4314 0 30V0Z" fill="#0E0E0E" />
+                            </svg>
+
+                        </div>
+
+                        <div class="footer-links">
+                            <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                Navigation Links</h4>
+                            <ul>
+                                <li class="text-upper">
+                                    <a href="{{ $index_text->navigation_url_1 ? $index_text->navigation_url_1 : '#' }}">{{ $index_text->navigation_title_1 ? $index_text->navigation_title_1 : 'navigation_title_1' }}</a>
+                                </li>
+                                <li class="text-upper">
+                                    <a href="{{ $index_text->navigation_url_2 ? $index_text->navigation_url_2 : '#' }}">{{ $index_text->navigation_title_2 ? $index_text->navigation_title_2 : 'navigation_title_2' }}</a>
+                                </li>
+                                <li class="text-upper">
+                                    <a href="{{ $index_text->navigation_url_3 ? $index_text->navigation_url_3 : '#' }}">{{ $index_text->navigation_title_3 ? $index_text->navigation_title_3 : 'navigation_title_3' }}</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="footer-contact">
+                            <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                CONTACT Info</h4>
+
+                            <div class="col-contact">
+                                <p>
+                                    <strong>T</strong>
+                                    :{{ $index_text->contact_telephone ? $index_text->contact_telephone : '+000 000 0000' }}
+                                </p>
+                                <p class="mt-10">
+                                    <strong>F</strong>
+                                    :{{ $index_text->contact_cellphone ? $index_text->contact_cellphone : '+000 000 0000' }}
+                                </p>
+                                <p class="over-hidden mt-10">
+                                    <strong>E</strong> :
+                                    <a class="link-hover" href="#" data-hover-text="{{ $index_text->contact_email ? $index_text->contact_email : 'email@email.com' }}">
+                                        {{ $index_text->contact_email ? $index_text->contact_email : 'email@email.com' }}
+                                    </a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="footer-socials">
+                            <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+                                socials Links</h4>
+                            <ul class="dsn-socials box-social">
+                                <li>
+                                    <a href="{{ $index_text->social_url_facebook ? $index_text->social_url_facebook : 'social_url_facebook' }}" target="_blank" class="background-main">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ $index_text->social_url_instagram ? $index_text->social_url_instagram : 'social_url_instagram' }}" target="_blank" class="background-main">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ $index_text->social_url_twitter ? $index_text->social_url_twitter : 'social_url_twitter' }}" target="_blank" class="background-main">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
                 <div class="copyright background-main">
                     <div class="container d-flex align-items-center justify-content-between">
                         <strong>Copyright &copy; 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} <a href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a>.</strong> All rights reserved.
