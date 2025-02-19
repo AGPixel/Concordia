@@ -287,7 +287,7 @@
                 <section class="dsn-service padding-service section-padding background-section hover-box-item dsn-layout-fade-up">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">SERVICES</span>
+                            <span class="sub-heading mb-5">{{ $args->pre_title_1 ? $args->pre_title_1 : 'pre_title_1' }}</span>
                             <h2 class="title ">
                                 {{ $args->service_title ? $args->service_title : 'service_title' }}
                             </h2>
@@ -373,7 +373,7 @@
 
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}</span>
+                            <span class="sub-heading mb-5">{{ $args->pre_title_2 ? $args->pre_title_2 : 'pre_title_2' }}</span>
                             <h2 class="title ">{{ $args->portifolio_title ? $args->portifolio_title : 'portifolio_title' }}</h2>
                         </div>
                     </div>
@@ -448,7 +448,7 @@
                 <section class="dsn-testimonials testimonials-small full-testimonials section-margin dsn-swiper" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":2,"speed":1000,"effect":"card"}'>
                     <div class="container">
                         <div class="section-title dsn-fill d-flex flex-column mb-70">
-                            <span class="sub-heading mb-5">testimonials</span>
+                            <span class="sub-heading mb-5">{{ $args->pre_title_3 ? $args->pre_title_3 : 'pre_title_3' }}</span>
                             <h2 class="title ">{{ $args->testimonials_title ? $args->testimonials_title : 'testimonials_title' }}</h2>
                             <p class="mt-20">{{ $args->testimonials_description ? $args->testimonials_description : 'testimonials_description' }}</p>
                         </div>
@@ -535,7 +535,7 @@
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">SERVICES</span>
+                            <span class="sub-heading mb-5">{{ $args->pre_title_4 ? $args->pre_title_4 : 'pre_title_4' }}</span>
                             <h2 class="title ">
                                 {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
                             </h2>

@@ -121,6 +121,39 @@
 
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
+                                    'title' => 'Pre Title 1',
+                                    'id_input_text' => 'InputPreTitle1',
+                                    'arg_value' => $args->pre_title_1 ? $args->pre_title_1 : '',
+                                    'arg_value_eng' => $args->pre_title_1_eng ? $args->pre_title_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Pre Title 2',
+                                    'id_input_text' => 'InputPreTitle2',
+                                    'arg_value' => $args->pre_title_2 ? $args->pre_title_2 : '',
+                                    'arg_value_eng' => $args->pre_title_2_eng ? $args->pre_title_2_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Pre Title 3',
+                                    'id_input_text' => 'InputPreTitle3',
+                                    'arg_value' => $args->pre_title_3 ? $args->pre_title_3 : '',
+                                    'arg_value_eng' => $args->pre_title_3_eng ? $args->pre_title_3_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Pre Title 4',
+                                    'id_input_text' => 'InputPreTitle4',
+                                    'arg_value' => $args->pre_title_4 ? $args->pre_title_4 : '',
+                                    'arg_value_eng' => $args->pre_title_4_eng ? $args->pre_title_4_eng : ''
+                                    ])
+                                </div>
+
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
                                     'title' => 'Service Title',
                                     'id_input_text' => 'InputServiceTitle',
                                     'arg_value' => $args->service_title ? $args->service_title : '',
@@ -144,6 +177,15 @@
                                     ])
                                 </div>
                                 <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Service Image 1',
+                                        'id_img_file' => 'InputServiceImg1',
+                                        'id_text_file' => 'ImageServiceImg1Preview',
+                                        'arg_value' => $args->service_img_1 ? asset("../storage/$args->service_img_1") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Service Title 2',
                                     'id_input_text' => 'InputServiceTitle2',
@@ -160,6 +202,15 @@
                                     ])
                                 </div>
                                 <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Service Image 2',
+                                        'id_img_file' => 'InputServiceImg2',
+                                        'id_text_file' => 'ImageServiceImg2Preview',
+                                        'arg_value' => $args->service_img_2 ? asset("../storage/$args->service_img_2") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Service Title 3',
                                     'id_input_text' => 'InputServiceTitle3',
@@ -174,6 +225,15 @@
                                     'arg_value' => $args->service_description_3 ? $args->service_description_3 : '',
                                     'arg_value_eng' => $args->service_description_3_eng ? $args->service_description_3_eng : ''
                                     ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Service Image 3',
+                                        'id_img_file' => 'InputServiceImg3',
+                                        'id_text_file' => 'ImageServiceImg3Preview',
+                                        'arg_value' => $args->service_img_3 ? asset("../storage/$args->service_img_3") : asset("/assets/img/sem_foto.png")])
+                                    </div>
                                 </div>
 
                                 <div class="card-body">
@@ -470,8 +530,8 @@
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Brands Background Image',
-                                        'id_img_file' => 'InputBrandsBgImg',
-                                        'id_text_file' => 'InputBrandsBgImgPreview',
+                                        'id_img_file' => 'InputBrandsImgBg',
+                                        'id_text_file' => 'InputBrandsImgBgPreview',
                                         'arg_value' => $args->brands_bg_img ? asset("../storage/$args->brands_bg_img") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>

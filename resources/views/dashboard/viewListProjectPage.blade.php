@@ -83,6 +83,30 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="card-body">
+                            @include('components.inputtextpteng',[
+                            'title' => 'Pre Title 1',
+                            'id_input_text' => 'InputPreTitle1',
+                            'arg_value' => $servicoGeral->pre_title_1 ? $servicoGeral->pre_title_1 : '',
+                            'arg_value_eng' => $servicoGeral->pre_title_1_eng ? $servicoGeral->pre_title_1_eng : ''
+                            ])
+                        </div>
+                        <div class="card-body">
+                            @include('components.inputtextpteng',[
+                            'title' => 'Pre Title 2',
+                            'id_input_text' => 'InputPreTitle2',
+                            'arg_value' => $servicoGeral->pre_title_2 ? $servicoGeral->pre_title_2 : '',
+                            'arg_value_eng' => $servicoGeral->pre_title_2_eng ? $servicoGeral->pre_title_2_eng : ''
+                            ])
+                        </div>
+                        <div class="card-body">
+                            @include('components.inputtextpteng',[
+                            'title' => 'Pre Title 3',
+                            'id_input_text' => 'InputPreTitle3',
+                            'arg_value' => $servicoGeral->pre_title_3 ? $servicoGeral->pre_title_3 : '',
+                            'arg_value_eng' => $servicoGeral->pre_title_3_eng ? $servicoGeral->pre_title_3_eng : ''
+                            ])
+                        </div>
                     </div>
                     <div class="col-md-12 m-bot-1em">
                         <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="saveServicoGeral()">

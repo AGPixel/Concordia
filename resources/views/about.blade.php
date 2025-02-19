@@ -29,6 +29,10 @@
             height: 1.16em !important;
         }
 
+        .m-top-0px {
+            margin-top: 0px !important;
+        }
+
     </style>
 </head>
 
@@ -141,7 +145,7 @@
                 <section class="services-lest-hover not-filter dsn-filter p-relative section-margin">
                     <div class="container">
                         <div class="section-title mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-10 dsn-fill">{{ $about->about_pre_title_1 ? $about->about_pre_title_1 : 'Seamless' }}</span>
+                            <span class="sub-heading mb-10 dsn-fill">{{ $about->about_pre_title_1 ? $about->about_pre_title_1 : 'about_pre_title_1' }}</span>
 
                             <h2 class="title dsn-fill">{{ $about->about_service_title ? $about->about_service_title : 'Find a service That works for you' }}</h2>
                         </div>
@@ -322,9 +326,8 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="{{ $args->testimonials_img_1 ? asset("../storage/$args->testimonials_img_1") : asset("/assets/img/team/1.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“{{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}”</h3>
+                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}”</h3>
 
                                                 <div class="auther mt-20">
                                                     <h5 class="text-upper mb-5">{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
@@ -337,9 +340,8 @@
 
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="{{ $args->testimonials_img_2 ? asset("../storage/$args->testimonials_img_2") : asset("/assets/img/team/2.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“{{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}”</h3>
+                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}”</h3>
 
                                                 <div class="auther mt-20">
                                                     <h5 class="text-upper mb-5">{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
@@ -351,9 +353,8 @@
 
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
-                                            <img class="has-border-radius" src="{{ $args->testimonials_img_3 ? asset("../storage/$args->testimonials_img_3") : asset("/assets/img/team/2.jpg") }}" alt="" data-swiper-parallax-y="-50">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title">“{{ $args->testimonials_description_3 ? $args->testimonials_description_3 : 'testimonials_description_3' }}”</h3>
+                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_3 ? $args->testimonials_description_3 : 'testimonials_description_3' }}”</h3>
 
                                                 <div class="auther mt-20">
                                                     <h5 class="text-upper mb-5">{{ $args->testimonials_company_3 ? $args->testimonials_company_3 : 'testimonials_company_3' }}</h5>
@@ -383,7 +384,7 @@
                     <div class="container">
 
                         <div class="section-title text-center d-flex flex-column mb-30">
-                            <span class="sub-heading dsn-fill ml-auto mr-auto mb-5">{{ $about->about_pre_title_2 ? $about->about_pre_title_2 : 'Seamless' }}</span>
+                            <span class="sub-heading dsn-fill ml-auto mr-auto mb-5">{{ $about->about_pre_title_2 ? $about->about_pre_title_2 : 'about_pre_title_2' }}</span>
 
                             <h2 class="title dsn-fill">
                                 {{ $about->about_brands_title }}
@@ -472,7 +473,7 @@
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">{{ $about->about_pre_title_3 ? $about->about_pre_title_3 : 'Seamless' }}</span>
+                            <span class="sub-heading mb-5">{{ $about->about_pre_title_3 ? $about->about_pre_title_3 : 'about_pre_title_3' }}</span>
                             <h2 class="title ">
                                 {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
                             </h2>

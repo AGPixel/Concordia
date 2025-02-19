@@ -69,22 +69,24 @@ function deleteProject(project) {
 
 function saveServicoGeral() {
 
-    if (bases64.InputVideo != null) {
-        showLoading();
+    showLoading();
 
-        let form = {
-            video: bases64.InputVideo,
-        };
+    let form = {
+        video: bases64.InputVideo,
+        pre_title_1: document.getElementById('InputPreTitle1').value,
+        pre_title_1_eng: document.getElementById('InputPreTitle1Eng').value,
+        pre_title_2: document.getElementById('InputPreTitle2').value,
+        pre_title_2_eng: document.getElementById('InputPreTitle2Eng').value,
+        pre_title_3: document.getElementById('InputPreTitle3').value,
+        pre_title_3_eng: document.getElementById('InputPreTitle3Eng').value,
+    };
 
-        apiPostBearer(GLOBAL_URL_API + 'save-servico-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
-            toastSuccess(_return.message);
-            location.reload();
-        }, function (_return) {
-            toastError(_return.responseJSON.message);
-            hideLoading();
-        });
-    } else {
-        toastError("Adicione um video MP4 para salvar");
-    }
+    apiPostBearer(GLOBAL_URL_API + 'save-servico-page', form, GLOBAL_DATATYPE_JSON, function (_return) {
+        toastSuccess(_return.message);
+        location.reload();
+    }, function (_return) {
+        toastError(_return.responseJSON.message);
+        hideLoading();
+    });
 
 }

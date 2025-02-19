@@ -15,6 +15,9 @@ let bases64 = {
     InputEmployeeImg1: null,
     InputEmployeeImg2: null,
     InputEmployeeImg3: null,
+    InputServiceImg1: null,
+    InputServiceImg2: null,
+    InputServiceImg3: null,
     InputBrandsImgBg: null,
     InputBrandsImg1: null,
     InputBrandsImg2: null,
@@ -71,8 +74,26 @@ async function load_image_employee_img3_preview() {
     document.getElementById('InputEmployeeImg3Preview').innerHTML = this.files[0].name;
     bases64.InputEmployeeImg3 = await toBase64(this.files[0]);
 }
-const InputBrandsImgBg = document.getElementById("InputBrandsImgBg");
-InputBrandsImgBg.addEventListener("change", load_image_employee_img4_preview, false);
+const inputServiceImg1 = document.getElementById("InputServiceImg1");
+inputServiceImg1.addEventListener("change", load_image_service_img1_preview, false);
+async function load_image_service_img1_preview() {
+    document.getElementById('ImageServiceImg1Preview').innerHTML = this.files[0].name;
+    bases64.InputServiceImg1 = await toBase64(this.files[0]);
+}
+const inputServiceImg2 = document.getElementById("InputServiceImg2");
+inputServiceImg2.addEventListener("change", load_image_service_img2_preview, false);
+async function load_image_service_img2_preview() {
+    document.getElementById('ImageServiceImg2Preview').innerHTML = this.files[0].name;
+    bases64.InputServiceImg2 = await toBase64(this.files[0]);
+}
+const inputServiceImg3 = document.getElementById("InputServiceImg3");
+inputServiceImg3.addEventListener("change", load_image_service_img3_preview, false);
+async function load_image_service_img3_preview() {
+    document.getElementById('ImageServiceImg3Preview').innerHTML = this.files[0].name;
+    bases64.InputServiceImg3 = await toBase64(this.files[0]);
+}
+const inputBrandsImgBg = document.getElementById("InputBrandsImgBg");
+inputBrandsImgBg.addEventListener("change", load_image_employee_img4_preview, false);
 async function load_image_employee_img4_preview() {
     document.getElementById('InputBrandsImgBgPreview').innerHTML = this.files[0].name;
     bases64.InputBrandsImgBg = await toBase64(this.files[0]);
@@ -96,20 +117,20 @@ async function load_image_employee_img7_preview() {
     bases64.InputBrandsImg3 = await toBase64(this.files[0]);
 }
 const InputBrandsImg4 = document.getElementById("InputBrandsImg4");
-InputBrandsImg4.addEventListener("change", load_image_employee_img7_preview, false);
-async function load_image_employee_img7_preview() {
+InputBrandsImg4.addEventListener("change", load_image_employee_img8_preview, false);
+async function load_image_employee_img8_preview() {
     document.getElementById('InputBrandsImg4Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg4 = await toBase64(this.files[0]);
 }
 const InputBrandsImg5 = document.getElementById("InputBrandsImg5");
-InputBrandsImg5.addEventListener("change", load_image_employee_img7_preview, false);
-async function load_image_employee_img7_preview() {
+InputBrandsImg5.addEventListener("change", load_image_employee_img9_preview, false);
+async function load_image_employee_img9_preview() {
     document.getElementById('InputBrandsImg5Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg5 = await toBase64(this.files[0]);
 }
 const InputBrandsImg6 = document.getElementById("InputBrandsImg6");
-InputBrandsImg6.addEventListener("change", load_image_employee_img7_preview, false);
-async function load_image_employee_img7_preview() {
+InputBrandsImg6.addEventListener("change", load_image_employee_img10_preview, false);
+async function load_image_employee_img10_preview() {
     document.getElementById('InputBrandsImg6Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg6 = await toBase64(this.files[0]);
 }
@@ -135,20 +156,32 @@ function saveIndexPage() {
         about_description_3_eng: document.getElementById('InputAboutDescription3Eng').value,
         about_img_3: bases64.InputAboutImg3,
 
+        pre_title_1: document.getElementById('InputPreTitle1').value,
+        pre_title_1_eng: document.getElementById('InputPreTitle1Eng').value,
+        pre_title_2: document.getElementById('InputPreTitle2').value,
+        pre_title_2_eng: document.getElementById('InputPreTitle2Eng').value,
+        pre_title_3: document.getElementById('InputPreTitle3').value,
+        pre_title_3_eng: document.getElementById('InputPreTitle3Eng').value,
+        pre_title_4: document.getElementById('InputPreTitle4').value,
+        pre_title_4_eng: document.getElementById('InputPreTitle4Eng').value,
+
         service_title: document.getElementById('InputServiceTitle').value,
         service_title_eng: document.getElementById('InputServiceTitleEng').value,
         service_title_1: document.getElementById('InputServiceTitle1').value,
         service_title_1_eng: document.getElementById('InputServiceTitle1Eng').value,
         service_description_1: document.getElementById('InputServiceDescription1').value,
         service_description_1_eng: document.getElementById('InputServiceDescription1Eng').value,
+        service_img_1: bases64.InputServiceImg1,
         service_title_2: document.getElementById('InputServiceTitle2').value,
         service_title_2_eng: document.getElementById('InputServiceTitle2Eng').value,
         service_description_2: document.getElementById('InputServiceDescription2').value,
         service_description_2_eng: document.getElementById('InputServiceDescription2Eng').value,
+        service_img_2: bases64.InputServiceImg2,
         service_title_3: document.getElementById('InputServiceTitle3').value,
         service_title_3_eng: document.getElementById('InputServiceTitle3Eng').value,
         service_description_3: document.getElementById('InputServiceDescription3').value,
         service_description_3_eng: document.getElementById('InputServiceDescription3Eng').value,
+        service_img_3: bases64.InputServiceImg3,
 
         portifolio_title: document.getElementById('InputPortifolioTitle').value,
         portifolio_title_eng: document.getElementById('InputPortifolioTitleEng').value,

@@ -84,7 +84,18 @@
                             <div class="text pinned-scroll p-relative">
                                 <div class="">
                                     <!-- <div class=" pinned-element"> -->
-                                    <span class="sub-heading mb-15">Overview</span>
+                                    <span class="sub-heading mb-15">
+                                        <!-- OBS: Estou sem tempo, da pra ficar melhor -->
+                                        @if( $id == 0 )
+                                        {{ $servicoGeral->pre_title_1 ? $servicoGeral->pre_title_1 : 'pre_title_1' }}
+                                        @endif
+                                        @if( $id == 1 )
+                                        {{ $servicoGeral->pre_title_2 ? $servicoGeral->pre_title_2 : 'pre_title_2' }}
+                                        @endif
+                                        @if( $id == 2 )
+                                        {{ $servicoGeral->pre_title_3 ? $servicoGeral->pre_title_3 : 'pre_title_3' }}
+                                        @endif
+                                    </span>
                                     <h3 class="title text-upper mb-30">{{ $s->title_1 ? $s->title_1 : 'title_1' }}</h3>
 
                                     <p>

@@ -156,7 +156,7 @@
 
                                         <div class="p-relative">
                                             <div class="mb-20">
-                                                <h4 class="title-block mb-15">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Horário comercial" : "Business Hours" : "Horário comercial" }}</h4>
+                                                <h4 class="title-block mb-15">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Horário" : "Business Hours" : "Horário" }}</h4>
                                                 <p>
                                                     @if(isset($contact->business_hours1))
                                                     {{ $contact->business_hours1 }}

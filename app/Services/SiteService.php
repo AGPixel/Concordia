@@ -101,6 +101,9 @@ class SiteService extends BaseService
         $arr['employee_img_1'] = $this->updateImageValue($indexText->employee_img_1,$arr['employee_img_1']);
         $arr['employee_img_2'] = $this->updateImageValue($indexText->employee_img_2,$arr['employee_img_2']);
         $arr['employee_img_3'] = $this->updateImageValue($indexText->employee_img_3,$arr['employee_img_3']);
+        $arr['service_img_1'] = $this->updateImageValue($indexText->service_img_1,$arr['service_img_1']);
+        $arr['service_img_2'] = $this->updateImageValue($indexText->service_img_2,$arr['service_img_2']);
+        $arr['service_img_3'] = $this->updateImageValue($indexText->service_img_3,$arr['service_img_3']);
         $arr['brands_bg_img'] = $this->updateImageValue($indexText->brands_bg_img,$arr['brands_bg_img']);
         $arr['frame_img'] = $this->updateImageValue($indexText->brands_bg_img,$arr['frame_img']);
         $arr['brands_img_1'] = $this->updateImageValue($indexText->brands_img_1,$arr['brands_img_1']);
@@ -358,6 +361,13 @@ class SiteService extends BaseService
 
     public function servicoGeral($lingua = 'pt') {
         $servico = $this->repository->servicoGeral();
+
+        if ($lingua == 'eng') {
+            $servico->about_pre_title_1 = $this->changeLanguage($servico->about_pre_title_1,$servico->about_pre_title_1_eng);
+            $servico->about_pre_title_2 = $this->changeLanguage($servico->about_pre_title_2,$servico->about_pre_title_2_eng);
+            $servico->about_pre_title_3 = $this->changeLanguage($servico->about_pre_title_3,$servico->about_pre_title_3_eng);
+        }
+
         return $servico;
     }
 

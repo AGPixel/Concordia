@@ -13,6 +13,12 @@ class ServicoGeral extends Model
 
     protected $fillable = [
         'video',
+        'pre_title_1',
+        'pre_title_1_eng',
+        'pre_title_2',
+        'pre_title_2_eng',
+        'pre_title_3',
+        'pre_title_3_eng',
     ];
 
 }
