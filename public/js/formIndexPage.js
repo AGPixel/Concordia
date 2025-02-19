@@ -50,8 +50,8 @@ async function load_image_testimonials_img2_preview() {
     document.getElementById('InputTestimonialsImg2Preview').innerHTML = this.files[0].name;
     bases64.InputTestimonialsImg2 = await toBase64(this.files[0]);
 }
-const InputFrameImg = document.getElementById("InputFrameImg");
-InputFrameImg.addEventListener("change", load_image_frame_img_preview, false);
+const inputFrameImg = document.getElementById("InputFrameImg");
+inputFrameImg.addEventListener("change", load_image_frame_img_preview, false);
 async function load_image_frame_img_preview() {
     document.getElementById('ImageFrameImgPreview').innerHTML = this.files[0].name;
     bases64.InputFrameImg = await toBase64(this.files[0]);

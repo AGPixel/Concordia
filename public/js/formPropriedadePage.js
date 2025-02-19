@@ -15,44 +15,44 @@ let bases64 = {
     InputPropriedadeImg6: null,
     InputPropriedadeImg7: null,
 };
-const InputPropriedadeImg1 = document.getElementById("InputPropriedadeImg1");
-InputPropriedadeImg1.addEventListener("change", load_image_propriedade_preview1, false);
+const inputPropriedadeImg1 = document.getElementById("InputPropriedadeImg1");
+inputPropriedadeImg1.addEventListener("change", load_image_propriedade_preview1, false);
 async function load_image_propriedade_preview1() {
     document.getElementById('ImagePropriedadeImg1Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg1 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg2 = document.getElementById("InputPropriedadeImg2");
-InputPropriedadeImg2.addEventListener("change", load_image_propriedade_preview2, false);
+const inputPropriedadeImg2 = document.getElementById("InputPropriedadeImg2");
+inputPropriedadeImg2.addEventListener("change", load_image_propriedade_preview2, false);
 async function load_image_propriedade_preview2() {
     document.getElementById('ImagePropriedadeImg2Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg2 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg3 = document.getElementById("InputPropriedadeImg3");
-InputPropriedadeImg3.addEventListener("change", load_image_propriedade_preview3, false);
+const inputPropriedadeImg3 = document.getElementById("InputPropriedadeImg3");
+inputPropriedadeImg3.addEventListener("change", load_image_propriedade_preview3, false);
 async function load_image_propriedade_preview3() {
     document.getElementById('ImagePropriedadeImg3Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg3 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg4 = document.getElementById("InputPropriedadeImg4");
-InputPropriedadeImg4.addEventListener("change", load_image_propriedade_preview4, false);
+const inputPropriedadeImg4 = document.getElementById("InputPropriedadeImg4");
+inputPropriedadeImg4.addEventListener("change", load_image_propriedade_preview4, false);
 async function load_image_propriedade_preview4() {
     document.getElementById('ImagePropriedadeImg4Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg4 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg5 = document.getElementById("InputPropriedadeImg5");
-InputPropriedadeImg5.addEventListener("change", load_image_propriedade_preview5, false);
+const inputPropriedadeImg5 = document.getElementById("InputPropriedadeImg5");
+inputPropriedadeImg5.addEventListener("change", load_image_propriedade_preview5, false);
 async function load_image_propriedade_preview5() {
     document.getElementById('ImagePropriedadeImg5Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg5 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg6 = document.getElementById("InputPropriedadeImg6");
-InputPropriedadeImg6.addEventListener("change", load_image_propriedade_preview6, false);
+const inputPropriedadeImg6 = document.getElementById("InputPropriedadeImg6");
+inputPropriedadeImg6.addEventListener("change", load_image_propriedade_preview6, false);
 async function load_image_propriedade_preview6() {
     document.getElementById('ImagePropriedadeImg6Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg6 = await toBase64(this.files[0]);
 }
-const InputPropriedadeImg7 = document.getElementById("InputPropriedadeImg7");
-InputPropriedadeImg7.addEventListener("change", load_image_propriedade_preview7, false);
+const inputPropriedadeImg7 = document.getElementById("InputPropriedadeImg7");
+inputPropriedadeImg7.addEventListener("change", load_image_propriedade_preview7, false);
 async function load_image_propriedade_preview7() {
     document.getElementById('ImagePropriedadeImg7Preview').innerHTML = this.files[0].name;
     bases64.InputPropriedadeImg7 = await toBase64(this.files[0]);

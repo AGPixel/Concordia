@@ -22,86 +22,86 @@ let bases64 = {
     InputAboutBrandsImg3: null,
     InputAboutBrandsImg4: null,
 };
-const InputAboutImg1 = document.getElementById("InputAboutImg1");
-InputAboutImg1.addEventListener("change", load_image_about_preview1, false);
+const inputAboutImg1 = document.getElementById("InputAboutImg1");
+inputAboutImg1.addEventListener("change", load_image_about_preview1, false);
 async function load_image_about_preview1() {
     document.getElementById('ImageAbout1').innerHTML = this.files[0].name;
     bases64.InputAboutImg1 = await toBase64(this.files[0]);
 }
-const InputAboutImg2 = document.getElementById("InputAboutImg2");
-InputAboutImg2.addEventListener("change", load_image_about_preview2, false);
+const inputAboutImg2 = document.getElementById("InputAboutImg2");
+inputAboutImg2.addEventListener("change", load_image_about_preview2, false);
 async function load_image_about_preview2() {
     document.getElementById('ImageAbout2').innerHTML = this.files[0].name;
     bases64.InputAboutImg2 = await toBase64(this.files[0]);
 }
-const InputAboutImg3 = document.getElementById("InputAboutImg3");
-InputAboutImg3.addEventListener("change", load_image_about_preview3, false);
+const inputAboutImg3 = document.getElementById("InputAboutImg3");
+inputAboutImg3.addEventListener("change", load_image_about_preview3, false);
 async function load_image_about_preview3() {
     document.getElementById('ImageAbout3').innerHTML = this.files[0].name;
     bases64.InputAboutImg3 = await toBase64(this.files[0]);
 }
-const InputAboutImg4 = document.getElementById("InputAboutImg4");
-InputAboutImg4.addEventListener("change", load_image_about_preview4, false);
+const inputAboutImg4 = document.getElementById("InputAboutImg4");
+inputAboutImg4.addEventListener("change", load_image_about_preview4, false);
 async function load_image_about_preview4() {
     document.getElementById('ImageAbout4').innerHTML = this.files[0].name;
     bases64.InputAboutImg4 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg1 = document.getElementById("InputAboutServiceImg1");
-InputAboutServiceImg1.addEventListener("change", load_image_about_preview5, false);
+const inputAboutServiceImg1 = document.getElementById("InputAboutServiceImg1");
+inputAboutServiceImg1.addEventListener("change", load_image_about_preview5, false);
 async function load_image_about_preview5() {
     document.getElementById('aboutServiceImg1').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg1 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg2 = document.getElementById("InputAboutServiceImg2");
-InputAboutServiceImg2.addEventListener("change", load_image_about_preview6, false);
+const inputAboutServiceImg2 = document.getElementById("InputAboutServiceImg2");
+inputAboutServiceImg2.addEventListener("change", load_image_about_preview6, false);
 async function load_image_about_preview6() {
     document.getElementById('aboutServiceImg2').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg2 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg3 = document.getElementById("InputAboutServiceImg3");
-InputAboutServiceImg3.addEventListener("change", load_image_about_preview7, false);
+const inputAboutServiceImg3 = document.getElementById("InputAboutServiceImg3");
+inputAboutServiceImg3.addEventListener("change", load_image_about_preview7, false);
 async function load_image_about_preview7() {
     document.getElementById('aboutServiceImg3').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg3 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg4 = document.getElementById("InputAboutServiceImg4");
-InputAboutServiceImg4.addEventListener("change", load_image_about_preview8, false);
+const inputAboutServiceImg4 = document.getElementById("InputAboutServiceImg4");
+inputAboutServiceImg4.addEventListener("change", load_image_about_preview8, false);
 async function load_image_about_preview8() {
     document.getElementById('aboutServiceImg4').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg4 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg5 = document.getElementById("InputAboutServiceImg5");
-InputAboutServiceImg5.addEventListener("change", load_image_about_preview9, false);
+const inputAboutServiceImg5 = document.getElementById("InputAboutServiceImg5");
+inputAboutServiceImg5.addEventListener("change", load_image_about_preview9, false);
 async function load_image_about_preview9() {
     document.getElementById('aboutServiceImg5').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg5 = await toBase64(this.files[0]);
 }
-const InputAboutServiceImg6 = document.getElementById("InputAboutServiceImg6");
-InputAboutServiceImg6.addEventListener("change", load_image_about_preview10, false);
+const inputAboutServiceImg6 = document.getElementById("InputAboutServiceImg6");
+inputAboutServiceImg6.addEventListener("change", load_image_about_preview10, false);
 async function load_image_about_preview10() {
     document.getElementById('aboutServiceImg6').innerHTML = this.files[0].name;
     bases64.InputAboutServiceImg6 = await toBase64(this.files[0]);
 }
-const InputAboutBrandsImg1 = document.getElementById("InputAboutBrandsImg1");
-InputAboutBrandsImg1.addEventListener("change", load_image_about_preview11, false);
+const inputAboutBrandsImg1 = document.getElementById("InputAboutBrandsImg1");
+inputAboutBrandsImg1.addEventListener("change", load_image_about_preview11, false);
 async function load_image_about_preview11() {
     document.getElementById('aboutBrandsImg1').innerHTML = this.files[0].name;
     bases64.InputAboutBrandsImg1 = await toBase64(this.files[0]);
 }
-const InputAboutBrandsImg2 = document.getElementById("InputAboutBrandsImg2");
-InputAboutBrandsImg2.addEventListener("change", load_image_about_preview12, false);
+const inputAboutBrandsImg2 = document.getElementById("InputAboutBrandsImg2");
+inputAboutBrandsImg2.addEventListener("change", load_image_about_preview12, false);
 async function load_image_about_preview12() {
     document.getElementById('aboutBrandsImg2').innerHTML = this.files[0].name;
     bases64.InputAboutBrandsImg2 = await toBase64(this.files[0]);
 }
-const InputAboutBrandsImg3 = document.getElementById("InputAboutBrandsImg3");
-InputAboutBrandsImg3.addEventListener("change", load_image_about_preview13, false);
+const inputAboutBrandsImg3 = document.getElementById("InputAboutBrandsImg3");
+inputAboutBrandsImg3.addEventListener("change", load_image_about_preview13, false);
 async function load_image_about_preview13() {
     document.getElementById('aboutBrandsImg3').innerHTML = this.files[0].name;
     bases64.InputAboutBrandsImg3 = await toBase64(this.files[0]);
 }
-const InputAboutBrandsImg4 = document.getElementById("InputAboutBrandsImg4");
-InputAboutBrandsImg4.addEventListener("change", load_image_about_preview14, false);
+const inputAboutBrandsImg4 = document.getElementById("InputAboutBrandsImg4");
+inputAboutBrandsImg4.addEventListener("change", load_image_about_preview14, false);
 async function load_image_about_preview14() {
     document.getElementById('aboutBrandsImg4').innerHTML = this.files[0].name;
     bases64.InputAboutBrandsImg4 = await toBase64(this.files[0]);

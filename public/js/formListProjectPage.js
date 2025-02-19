@@ -8,8 +8,8 @@ let toBase64 = file => new Promise((resolve, reject) => {
 let bases64 = {
     InputVideo: null,
 };
-const InputVideo = document.getElementById("InputVideo");
-InputVideo.addEventListener("change", load_image_work_preview1, false);
+const inputVideo = document.getElementById("InputVideo");
+inputVideo.addEventListener("change", load_image_work_preview1, false);
 async function load_image_work_preview1() {
     document.getElementById('InputVideoPreview').innerHTML = this.files[0].name;
     bases64.InputVideo = await toBase64(this.files[0]);

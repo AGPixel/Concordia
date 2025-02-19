@@ -12,26 +12,26 @@ let bases64 = {
     InputOportunidadeImg3: null,
     InputOportunidadeImg4: null,
 };
-const InputOportunidadeImg1 = document.getElementById("InputOportunidadeImg1");
-InputOportunidadeImg1.addEventListener("change", load_image_oportunidade_preview1, false);
+const inputOportunidadeImg1 = document.getElementById("InputOportunidadeImg1");
+inputOportunidadeImg1.addEventListener("change", load_image_oportunidade_preview1, false);
 async function load_image_oportunidade_preview1() {
     document.getElementById('ImageOportunidadeImg1Preview').innerHTML = this.files[0].name;
     bases64.InputOportunidadeImg1 = await toBase64(this.files[0]);
 }
-const InputOportunidadeImg2 = document.getElementById("InputOportunidadeImg2");
-InputOportunidadeImg2.addEventListener("change", load_image_oportunidade_preview2, false);
+const inputOportunidadeImg2 = document.getElementById("InputOportunidadeImg2");
+inputOportunidadeImg2.addEventListener("change", load_image_oportunidade_preview2, false);
 async function load_image_oportunidade_preview2() {
     document.getElementById('ImageOportunidadeImg2Preview').innerHTML = this.files[0].name;
     bases64.InputOportunidadeImg2 = await toBase64(this.files[0]);
 }
-const InputOportunidadeImg3 = document.getElementById("InputOportunidadeImg3");
-InputOportunidadeImg3.addEventListener("change", load_image_oportunidade_preview3, false);
+const inputOportunidadeImg3 = document.getElementById("InputOportunidadeImg3");
+inputOportunidadeImg3.addEventListener("change", load_image_oportunidade_preview3, false);
 async function load_image_oportunidade_preview3() {
     document.getElementById('ImageOportunidadeImg3Preview').innerHTML = this.files[0].name;
     bases64.InputOportunidadeImg3 = await toBase64(this.files[0]);
 }
-const InputOportunidadeImg4 = document.getElementById("InputOportunidadeImg4");
-InputOportunidadeImg4.addEventListener("change", load_image_oportunidade_preview4, false);
+const inputOportunidadeImg4 = document.getElementById("InputOportunidadeImg4");
+inputOportunidadeImg4.addEventListener("change", load_image_oportunidade_preview4, false);
 async function load_image_oportunidade_preview4() {
     document.getElementById('ImageOportunidadeImg4Preview').innerHTML = this.files[0].name;
     bases64.InputOportunidadeImg4 = await toBase64(this.files[0]);

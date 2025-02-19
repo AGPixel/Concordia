@@ -258,7 +258,7 @@
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Frame Number 1',
                                     'id_input_text' => 'InputFrameNumber1',
-                                    'arg_value' => $args->frame_number_1 ? $args->frame_number_1 : '' ])
+                                    'arg_value' => $args->frame_num_1 ? $args->frame_num_1 : '' ])
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
@@ -281,7 +281,7 @@
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Frame Number 2',
                                     'id_input_text' => 'InputFrameNumber2',
-                                    'arg_value' => $args->frame_number_2 ? $args->frame_number_2 : '' ])
+                                    'arg_value' => $args->frame_num_2 ? $args->frame_num_2 : '' ])
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
@@ -321,7 +321,7 @@
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Number 1',
                                     'id_input_text' => 'InputTestimonialsNum1',
-                                    'arg_value' => $args->testimonials_number_1 ? $args->testimonials_number_1 : '' ])
+                                    'arg_value' => $args->testimonials_num_1 ? $args->testimonials_num_1 : '' ])
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
@@ -357,7 +357,7 @@
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Number 2',
                                     'id_input_text' => 'InputTestimonialsNum2',
-                                    'arg_value' => $args->testimonials_number_2 ? $args->testimonials_number_2 : '' ])
+                                    'arg_value' => $args->testimonials_num_2 ? $args->testimonials_num_2 : '' ])
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
