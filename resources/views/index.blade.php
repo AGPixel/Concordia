@@ -61,6 +61,10 @@
             height: 1.37em !important;
         }
 
+        .dsn-testimonials .title .word {
+            height: 1.37em !important;
+        }
+
     </style>
 </head>
 
