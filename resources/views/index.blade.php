@@ -57,6 +57,10 @@
             height: 1.15em !important;
         }
 
+        .dsn-service .title .word {
+            height: 1.37em !important;
+        }
+
     </style>
 </head>
 
