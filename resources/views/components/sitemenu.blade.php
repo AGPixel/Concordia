@@ -39,7 +39,7 @@
 
             <li class="nav-item has-sub-menu">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">
-                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}</span>
+                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviços" : "Services" : "Serviços" }}</span>
                 </a>
                 <!--
                 <ul class="nav-item">
@@ -55,7 +55,7 @@
             </li>
             <li class="nav-item ">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contato" : "Contact" : "Contato" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">
-                    <span class="overflow">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contato" : "Contact" : "Contato" }}</span>
+                    <span class="overflow">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contactos" : "Contact" : "Contactos" }}</span>
                 </a>
             </li>
             <li class="nav-item has-sub-menu">
