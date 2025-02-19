@@ -59,10 +59,9 @@
             <!-- ========== End Slider Parallax ========== -->
 
             <div id="page_wrapper" class="wrapper">
-
                 <div class="section-margin text-center">
                     <div class="container">
-                        <h3 class="title text-upper mb-30">{{ isset($propriedade->title_1) ? $oportunidade->title_1 : 'Titulo 1' }}</h3>
+                        <h3 class="title text-upper mb-30">{{ isset($propriedade->title) ? $propriedade->title : 'Titulo 1' }}</h3>
                         <p class="max-w750">
                             {{ isset($propriedade->description) ? $propriedade->description : 'Descrição 1' }}
                         </p>
