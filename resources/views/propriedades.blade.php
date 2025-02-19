@@ -17,6 +17,13 @@
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
+
+    <style>
+        .header-page {
+            padding-top: 120px !important;
+        }
+
+    </style>
 </head>
 
 <body class="v-dark dsn-ajax">

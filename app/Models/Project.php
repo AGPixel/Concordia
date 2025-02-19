@@ -16,6 +16,7 @@ class Project extends Model
         'title_1_eng',
         'description_1',
         'description_1_eng',
+        'img_begin',
         'img_1',
         'img_2',
         'img_3',

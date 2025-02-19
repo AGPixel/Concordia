@@ -17,6 +17,12 @@
 
     <link href="{{asset("/assets/css/plugins.css")}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
+    <style>
+        .padding-left-0px {
+            padding-left: 0px !important;
+        }
+
+    </style>
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -110,7 +116,7 @@
                 <div class="p-relative container ">
                     <div class="d-grid" data-dsn-gap="30px 30px">
                         <div class="box-info d-grid">
-                            <div class="box-title p-relative over-hidden">
+                            <div class="box-title p-relative over-hidden padding-left-0px">
                                 <h2 class="title text-upper p-relative">{{ $contact->contact_form_title ? $contact->contact_form_title : 'contact_form_title' }}</h2>
                             </div>
                             <div class="dsn-form form-box d-flex flex-column p-relative">
