@@ -95,14 +95,16 @@
                                     'arg_value_eng' => isset($propriedade->type_1_eng) ? $propriedade->type_1_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 1',
                                     'id_input_text' => 'InputPropriedadeLegend1',
                                     'arg_value' => isset($propriedade->legend_1) ? $propriedade->legend_1 : '',
                                     'arg_value_eng' => isset($propriedade->legend_1_eng) ? $propriedade->legend_1_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 22222 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -121,14 +123,16 @@
                                     'arg_value_eng' => isset($propriedade->type_2_eng) ? $propriedade->type_2_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 2',
                                     'id_input_text' => 'InputPropriedadeLegend2',
                                     'arg_value' => isset($propriedade->legend_2) ? $propriedade->legend_2 : '',
                                     'arg_value_eng' => isset($propriedade->legend_2_eng) ? $propriedade->legend_2_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 33333 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -147,14 +151,16 @@
                                     'arg_value_eng' => isset($propriedade->type_3_eng) ? $propriedade->type_3_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 3',
                                     'id_input_text' => 'InputPropriedadeLegend3',
                                     'arg_value' => isset($propriedade->legend_3) ? $propriedade->legend_3 : '',
                                     'arg_value_eng' => isset($propriedade->legend_3_eng) ? $propriedade->legend_3_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 44444 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -173,14 +179,16 @@
                                     'arg_value_eng' => isset($propriedade->type_4_eng) ? $propriedade->type_4_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 4',
                                     'id_input_text' => 'InputPropriedadeLegend4',
                                     'arg_value' => isset($propriedade->legend_4) ? $propriedade->legend_4 : '',
                                     'arg_value_eng' => isset($propriedade->legend_4_eng) ? $propriedade->legend_4_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 55555 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -199,14 +207,16 @@
                                     'arg_value_eng' => isset($propriedade->type_5_eng) ? $propriedade->type_5_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 5',
                                     'id_input_text' => 'InputPropriedadeLegend5',
                                     'arg_value' => isset($propriedade->legend_5) ? $propriedade->legend_5 : '',
                                     'arg_value_eng' => isset($propriedade->legend_5_eng) ? $propriedade->legend_5_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 66666 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -225,14 +235,16 @@
                                     'arg_value_eng' => isset($propriedade->type_6_eng) ? $propriedade->type_6_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 6',
                                     'id_input_text' => 'InputPropriedadeLegend6',
                                     'arg_value' => isset($propriedade->legend_6) ? $propriedade->legend_6 : '',
                                     'arg_value_eng' => isset($propriedade->legend_6_eng) ? $propriedade->legend_6_eng : ''
                                     ])
                                 </div>
+                                -->
                                 <!-- 77777 -->
                                 <div class="card-body">
                                     <div class="form-group">
@@ -251,14 +263,16 @@
                                     'arg_value_eng' => isset($propriedade->type_7_eng) ? $propriedade->type_7_eng : ''
                                     ])
                                 </div>
+                                <!--
                                 <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Legend 7',
                                     'id_input_text' => 'InputPropriedadeLegend7',
                                     'arg_value' => isset($propriedade->legend_7) ? $propriedade->legend_7 : '',
                                     'arg_value_eng' => isset($propriedade->legend_7_eng) ? $propriedade->legend_7_eng : ''
                                     ])
                                 </div>
+                                -->
 
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="savePropriedadePage({{ isset($propriedade->id) ? $propriedade->id : 0 }})">Salvar modificações Propriedade Page</button>
