@@ -98,38 +98,38 @@ async function load_image_employee_img4_preview() {
     document.getElementById('InputBrandsImgBgPreview').innerHTML = this.files[0].name;
     bases64.InputBrandsImgBg = await toBase64(this.files[0]);
 }
-const InputBrandsImg1 = document.getElementById("InputBrandsImg1");
-InputBrandsImg1.addEventListener("change", load_image_employee_img5_preview, false);
+const inputBrandsImg1 = document.getElementById("InputBrandsImg1");
+inputBrandsImg1.addEventListener("change", load_image_employee_img5_preview, false);
 async function load_image_employee_img5_preview() {
     document.getElementById('InputBrandsImg1Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg1 = await toBase64(this.files[0]);
 }
-const InputBrandsImg2 = document.getElementById("InputBrandsImg2");
-InputBrandsImg2.addEventListener("change", load_image_employee_img6_preview, false);
+const inputBrandsImg2 = document.getElementById("InputBrandsImg2");
+inputBrandsImg2.addEventListener("change", load_image_employee_img6_preview, false);
 async function load_image_employee_img6_preview() {
     document.getElementById('InputBrandsImg2Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg2 = await toBase64(this.files[0]);
 }
-const InputBrandsImg3 = document.getElementById("InputBrandsImg3");
-InputBrandsImg3.addEventListener("change", load_image_employee_img7_preview, false);
+const inputBrandsImg3 = document.getElementById("InputBrandsImg3");
+inputBrandsImg3.addEventListener("change", load_image_employee_img7_preview, false);
 async function load_image_employee_img7_preview() {
     document.getElementById('InputBrandsImg3Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg3 = await toBase64(this.files[0]);
 }
-const InputBrandsImg4 = document.getElementById("InputBrandsImg4");
-InputBrandsImg4.addEventListener("change", load_image_employee_img8_preview, false);
+const inputBrandsImg4 = document.getElementById("InputBrandsImg4");
+inputBrandsImg4.addEventListener("change", load_image_employee_img8_preview, false);
 async function load_image_employee_img8_preview() {
     document.getElementById('InputBrandsImg4Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg4 = await toBase64(this.files[0]);
 }
-const InputBrandsImg5 = document.getElementById("InputBrandsImg5");
-InputBrandsImg5.addEventListener("change", load_image_employee_img9_preview, false);
+const inputBrandsImg5 = document.getElementById("InputBrandsImg5");
+inputBrandsImg5.addEventListener("change", load_image_employee_img9_preview, false);
 async function load_image_employee_img9_preview() {
     document.getElementById('InputBrandsImg5Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg5 = await toBase64(this.files[0]);
 }
-const InputBrandsImg6 = document.getElementById("InputBrandsImg6");
-InputBrandsImg6.addEventListener("change", load_image_employee_img10_preview, false);
+const inputBrandsImg6 = document.getElementById("InputBrandsImg6");
+inputBrandsImg6.addEventListener("change", load_image_employee_img10_preview, false);
 async function load_image_employee_img10_preview() {
     document.getElementById('InputBrandsImg6Preview').innerHTML = this.files[0].name;
     bases64.InputBrandsImg6 = await toBase64(this.files[0]);
