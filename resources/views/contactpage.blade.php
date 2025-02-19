@@ -55,7 +55,7 @@
                     <div class="p-relative d-flex align-items-center w-100  h-100 ">
 
                         <div class="box-content d-flex flex-column z-index-1">
-                            <h1 class="title-lg text-upper">{{isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale conosco" : "Contact us" : "Fale conosco" }}</h1>
+                            <h1 class="title-lg text-upper">{{isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Contact us" : "Fale connosco" }}</h1>
                             <div class="contact-links d-flex flex-column w-50 mt-50">
                                 @if(isset($contact->email1))
                                 <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email1 }}
