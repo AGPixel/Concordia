@@ -74,7 +74,9 @@
                                     @foreach($propriedades as $id => $propriedade)
                                     <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
-                                            <a href=" /pt/propriedade/1" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="teste" title="teste">
+
+                                            <a href="/pt/propriedade/{{$propriedade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="teste" title="teste">
+
                                                 @if(isset($propriedade->year))
                                                 <div class="cat background-main d-flex p-absolute top-0 right-0">
                                                     <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
@@ -89,7 +91,9 @@
                                                 </div>
                                                 @endif
                                                 <img src="{{ isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" class="cover-bg-img" alt="" />
+
                                             </a>
+
                                         </div>
 
                                         <div class="post-content mt-20 p-relative z-index-1 d-flex flex-column">
