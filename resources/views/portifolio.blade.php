@@ -157,7 +157,7 @@
 
                             <div class="container">
                                 <div class="dsn-posts dsn-post-type-cards box-image-normal d-grid grid-md-2 dsn-isotope use-filter v-dark-head" data-dsn-gap="30px">
-                                    @if(isset($work->img_1) && isset($work->type_1) && isset($work->title_1))
+                                    @if(isset($work->img_1) && isset($work->type_1_1) && isset($work->title_1))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -168,7 +168,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_1_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_1_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_1 }}</a>
@@ -178,7 +179,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_2) && isset($work->type_2) && isset($work->title_2))
+                                    @if(isset($work->img_2) && isset($work->type_2_1) && isset($work->title_2))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -189,7 +190,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_2 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_2_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_2_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_2 }}</a>
@@ -199,7 +201,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_3) && isset($work->type_3) && isset($work->title_3))
+                                    @if(isset($work->img_3) && isset($work->type_3_1) && isset($work->title_3))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -210,7 +212,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_3 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_3_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_3_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_3 }}</a>
@@ -220,7 +223,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_4) && isset($work->type_4) && isset($work->title_4))
+                                    @if(isset($work->img_4) && isset($work->type_4_1) && isset($work->title_4))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -231,7 +234,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_4 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_4_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_4_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_4 }}</a>
@@ -241,7 +245,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_5) && isset($work->type_5) && isset($work->title_5))
+                                    @if(isset($work->img_5) && isset($work->type_5_1) && isset($work->title_5))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -252,7 +256,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_5 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_5_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_5_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_5 }}</a>
@@ -262,7 +267,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_6) && isset($work->type_6) && isset($work->title_6))
+                                    @if(isset($work->img_6) && isset($work->type_6_1) && isset($work->title_6))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -273,7 +278,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_6 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_6_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_6_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_6 }}</a>
@@ -283,7 +289,7 @@
                                         </div>
                                     </article>
                                     @endif
-                                    @if(isset($work->img_7) && isset($work->type_7) && isset($work->title_7))
+                                    @if(isset($work->img_7) && isset($work->type_7_1) && isset($work->title_7))
                                     <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius fashion">
                                         <div class="box-content">
                                             <div class="w-100">
@@ -294,7 +300,8 @@
                                             <div class="post-content background-section z-index-1 d-flex flex-column">
                                                 <div class="post-info d-flex justify-content-between align-items-center p-20">
                                                     <div class="cat d-flex p-0">
-                                                        <span class="background-main heading-color">{{ $work->type_7 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_7_1 }}</span>
+                                                        <span class="background-main heading-color">{{ $work->type_7_2 }}</span>
                                                     </div>
                                                     <h2 class="post-title word-wrap d-inline-block title-block text-upper">
                                                         <a href="project-1.html" class="effect-ajax init-color" data-dsn-ajax="work">{{ $work->title_7 }}</a>

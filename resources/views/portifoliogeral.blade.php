@@ -170,11 +170,11 @@
                                                             <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
                                                             </path>
                                                         </svg>
-                                                        @if(isset($portifolio->type_1))
-                                                        <span class="background-main heading-color">{{ $portifolio->type_1 }}</span>
+                                                        @if(isset($portifolio->type_1_1))
+                                                        <span class="background-main heading-color">{{ $portifolio->type_1_1 }}</span>
                                                         @endif
-                                                        @if(isset($portifolio->type_2))
-                                                        <span class="background-main heading-color">{{ $portifolio->type_2 }}</span>
+                                                        @if(isset($portifolio->type_1_2))
+                                                        <span class="background-main heading-color">{{ $portifolio->type_1_2 }}</span>
                                                         @endif
                                                     </div>
                                                 </div>

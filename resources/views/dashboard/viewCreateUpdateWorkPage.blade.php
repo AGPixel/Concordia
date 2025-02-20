@@ -67,10 +67,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 1',
-                                    'id_input_text' => 'InputWorkType1',
-                                    'arg_value' => isset($work->type_1) ? $work->type_1 : '',
-                                    'arg_value_eng' => isset($work->type_1_eng) ? $work->type_1_eng : ''
+                                    'title' => 'Type 1 1',
+                                    'id_input_text' => 'InputWorkType11',
+                                    'arg_value' => isset($work->type_1_1) ? $work->type_1_1 : '',
+                                    'arg_value_eng' => isset($work->type_1_1_eng) ? $work->type_1_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 1 2',
+                                    'id_input_text' => 'InputWorkType12',
+                                    'arg_value' => isset($work->type_1_2) ? $work->type_1_2 : '',
+                                    'arg_value_eng' => isset($work->type_1_2_eng) ? $work->type_1_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -93,10 +101,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 2',
-                                    'id_input_text' => 'InputWorkType2',
-                                    'arg_value' => isset($work->type_2) ? $work->type_2 : '',
-                                    'arg_value_eng' => isset($work->type_2_eng) ? $work->type_2_eng : ''
+                                    'title' => 'Type 2 1',
+                                    'id_input_text' => 'InputWorkType21',
+                                    'arg_value' => isset($work->type_2_1) ? $work->type_2_1 : '',
+                                    'arg_value_eng' => isset($work->type_2_1_eng) ? $work->type_2_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 2 2',
+                                    'id_input_text' => 'InputWorkType22',
+                                    'arg_value' => isset($work->type_2_2) ? $work->type_2_2 : '',
+                                    'arg_value_eng' => isset($work->type_2_2_eng) ? $work->type_2_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -119,10 +135,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 3',
-                                    'id_input_text' => 'InputWorkType3',
-                                    'arg_value' => isset($work->type_3) ? $work->type_3 : '',
-                                    'arg_value_eng' => isset($work->type_3_eng) ? $work->type_3_eng : ''
+                                    'title' => 'Type 3 1',
+                                    'id_input_text' => 'InputWorkType31',
+                                    'arg_value' => isset($work->type_3_1) ? $work->type_3_1 : '',
+                                    'arg_value_eng' => isset($work->type_3_1_eng) ? $work->type_3_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 3 2',
+                                    'id_input_text' => 'InputWorkType32',
+                                    'arg_value' => isset($work->type_3_2) ? $work->type_3_2 : '',
+                                    'arg_value_eng' => isset($work->type_3_2_eng) ? $work->type_3_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -145,10 +169,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 4',
-                                    'id_input_text' => 'InputWorkType4',
-                                    'arg_value' => isset($work->type_4) ? $work->type_4 : '',
-                                    'arg_value_eng' => isset($work->type_4_eng) ? $work->type_4_eng : ''
+                                    'title' => 'Type 4 1',
+                                    'id_input_text' => 'InputWorkType41',
+                                    'arg_value' => isset($work->type_4_1) ? $work->type_4_1 : '',
+                                    'arg_value_eng' => isset($work->type_4_1_eng) ? $work->type_4_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 4 2',
+                                    'id_input_text' => 'InputWorkType42',
+                                    'arg_value' => isset($work->type_4_2) ? $work->type_4_2 : '',
+                                    'arg_value_eng' => isset($work->type_4_2_eng) ? $work->type_4_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -171,10 +203,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 5',
-                                    'id_input_text' => 'InputWorkType5',
-                                    'arg_value' => isset($work->type_5) ? $work->type_5 : '',
-                                    'arg_value_eng' => isset($work->type_5_eng) ? $work->type_5_eng : ''
+                                    'title' => 'Type 5 1',
+                                    'id_input_text' => 'InputWorkType51',
+                                    'arg_value' => isset($work->type_5_1) ? $work->type_5_1 : '',
+                                    'arg_value_eng' => isset($work->type_5_1_eng) ? $work->type_5_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 5 2',
+                                    'id_input_text' => 'InputWorkType52',
+                                    'arg_value' => isset($work->type_5_2) ? $work->type_5_2 : '',
+                                    'arg_value_eng' => isset($work->type_5_2_eng) ? $work->type_5_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -197,10 +237,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 6',
-                                    'id_input_text' => 'InputWorkType6',
-                                    'arg_value' => isset($work->type_6) ? $work->type_6 : '',
-                                    'arg_value_eng' => isset($work->type_6_eng) ? $work->type_6_eng : ''
+                                    'title' => 'Type 6 1',
+                                    'id_input_text' => 'InputWorkType61',
+                                    'arg_value' => isset($work->type_6_1) ? $work->type_6_1 : '',
+                                    'arg_value_eng' => isset($work->type_6_1_eng) ? $work->type_6_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 6 2',
+                                    'id_input_text' => 'InputWorkType62',
+                                    'arg_value' => isset($work->type_6_2) ? $work->type_6_2 : '',
+                                    'arg_value_eng' => isset($work->type_6_2_eng) ? $work->type_6_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
@@ -223,10 +271,18 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Type 7',
-                                    'id_input_text' => 'InputWorkType7',
-                                    'arg_value' => isset($work->type_7) ? $work->type_7 : '',
-                                    'arg_value_eng' => isset($work->type_7_eng) ? $work->type_7_eng : ''
+                                    'title' => 'Type 7 1',
+                                    'id_input_text' => 'InputWorkType71',
+                                    'arg_value' => isset($work->type_7_1) ? $work->type_7_1 : '',
+                                    'arg_value_eng' => isset($work->type_7_1_eng) ? $work->type_7_1_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Type 7 2',
+                                    'id_input_text' => 'InputWorkType72',
+                                    'arg_value' => isset($work->type_7_2) ? $work->type_7_2 : '',
+                                    'arg_value_eng' => isset($work->type_7_2_eng) ? $work->type_7_2_eng : ''
                                     ])
                                 </div>
                                 <div class="card-body">
