@@ -108,6 +108,8 @@ function savePropriedadePage(id) {
         type_7_eng: document.getElementById('InputPropriedadeType7Eng').value,
         //legend_7: document.getElementById('InputPropriedadeLegend7').value,
         //legend_7_eng: document.getElementById('InputPropriedadeLegend7Eng').value,
+        contact_title: document.getElementById('InputPropriedadeContactTitle').value,
+        contact_title_eng: document.getElementById('InputPropriedadeContactTitleEng').value,
         active: 1,
     };
 

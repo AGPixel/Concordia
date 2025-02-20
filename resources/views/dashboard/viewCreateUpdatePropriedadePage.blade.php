@@ -273,6 +273,14 @@
                                     ])
                                 </div>
                                 -->
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Contact Title',
+                                    'id_input_text' => 'InputPropriedadeContactTitle',
+                                    'arg_value' => isset($propriedade->contact_title) ? $propriedade->contact_title : '',
+                                    'arg_value_eng' => isset($propriedade->contact_title_eng) ? $propriedade->contact_title_eng : ''
+                                    ])
+                                </div>
 
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="savePropriedadePage({{ isset($propriedade->id) ? $propriedade->id : 0 }})">Salvar modificações Propriedade Page</button>

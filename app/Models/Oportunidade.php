@@ -41,6 +41,8 @@ class Oportunidade extends Model
         'type_4_eng',
         'title_4',
         'title_4_eng',
+        'contact_title',
+        'contact_title_eng',
     ];
 
 }

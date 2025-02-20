@@ -56,6 +56,8 @@ class Propriedade extends Model
         'type_7_eng',
         'legend_7',
         'legend_7_eng',
+        'contact_title',
+        'contact_title_eng',
     ];
 
 }

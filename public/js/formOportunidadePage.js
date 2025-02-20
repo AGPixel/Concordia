@@ -72,6 +72,8 @@ function saveOportunidadePage(id) {
         //type_4_eng: document.getElementById('InputOportunidadeType4Eng').value,
         title_4: document.getElementById('InputOportunidadeTitle4').value,
         title_4_eng: document.getElementById('InputOportunidadeTitle4Eng').value,
+        contact_title: document.getElementById('InputOportunidadeContactTitle').value,
+        contact_title_eng: document.getElementById('InputOportunidadeContactTitleEng').value,
         active: 1,
     };
 

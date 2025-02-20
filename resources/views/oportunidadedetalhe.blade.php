@@ -117,7 +117,7 @@
                     <div class="d-grid" data-dsn-gap="30px 30px">
                         <div class="box-info d-grid">
                             <div class="box-title p-relative over-hidden padding-left-0px">
-                                <h2 class="title text-upper p-relative">{{ $contact->contact_form_title ? $contact->contact_form_title : 'contact_form_title' }}</h2>
+                                <h2 class="title text-upper p-relative">{{ $oportunidade->contact_title ? $oportunidade->contact_title : 'contact_title' }}</h2>
                             </div>
                             <div class="dsn-form form-box d-flex flex-column p-relative">
                                 <form id="contact-form" class="form w-100" method="post" action="contact.php" data-toggle="validator">
