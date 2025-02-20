@@ -294,13 +294,13 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                    <a class="button background-main v-dark effect-ajax" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
+                                    <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
                                         <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
                                             <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}</span>
                                         </span>
                                     </a>
 
-                                    <span class="icon background-main v-dark">
+                                    <span class="icon background-main v-dark background-color-green">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
@@ -454,13 +454,13 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex mt-20">
 
-                                    <a class="button background-main v-dark" href="#">
-                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}">
-                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}</span>
+                                    <a class="button background-main v-dark background-color-green" href={{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}>
+                                        <span class=" title-btn text-upper p-relative z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}">
+                                        <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}</span>
                                         </span>
                                     </a>
 
-                                    <span class="icon background-main v-dark">
+                                    <span class="icon background-main v-dark background-color-green">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
                                             </path>
