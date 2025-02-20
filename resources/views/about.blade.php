@@ -33,6 +33,10 @@
             margin-top: 0px !important;
         }
 
+        .word {
+            height: 1.35em !important;
+        }
+
     </style>
 </head>
 
