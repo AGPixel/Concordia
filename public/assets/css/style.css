@@ -8924,3 +8924,7 @@ body.tax-product_cat #dsn_header {
 .transform-translate-x-75px {
   transform: translateX(75px) !important;
 }
+
+.background-color-green {
+  background-color: #b3de4f !important;
+}

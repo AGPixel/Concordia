@@ -26,10 +26,6 @@
             margin-top: 2em !important;
         }
 
-        .background-color-green {
-            background-color: #b3de4f;
-        }
-
     </style>
 </head>
 
