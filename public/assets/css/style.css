@@ -8928,3 +8928,8 @@ body.tax-product_cat #dsn_header {
 .background-color-green {
   background-color: #b3de4f !important;
 }
+
+.w-h-10-em {
+  width: 10em !important;
+  height: 10em !important;
+}
