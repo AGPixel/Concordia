@@ -454,7 +454,7 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex mt-20">
 
-                                    <a class="button background-main v-dark background-color-green" href={{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}>
+                                    <a class="button background-main v-dark background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}>
                                         <span class=" title-btn text-upper p-relative z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}">
                                         <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}</span>
                                         </span>
