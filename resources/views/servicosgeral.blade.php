@@ -123,6 +123,25 @@
 
                                     </div>
                                 </div>
+                                @else
+                                <div class="m-top-2em">
+                                    <div class="dsn-btn dsn-btn-shape d-flex">
+
+                                        <a class="button background-main v-dark effect-ajax" href="{{ $id == 1 ? 'portifolio' : 'portifolio' }}" data-dsn-text="{{ (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Ver Projectos' : 'See Projects') : 'Ver Projectos') }}">
+                                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Ver Projectos' : 'See Projects') : 'Ver Projectos') }}">
+                                                <span>{{ (isset($_COOKIE['language']) ? ($_COOKIE['language'] == 'pt' ? 'Ver Projectos' : 'See Projects') : 'Ver Projectos') }}</span>
+                                            </span>
+                                        </a>
+
+                                        <span class="icon background-main v-dark">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                                </path>
+                                            </svg>
+                                        </span>
+
+                                    </div>
+                                </div>
                                 @endif
                             </div>
 
