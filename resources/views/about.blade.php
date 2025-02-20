@@ -27,6 +27,7 @@
 
         span .word {
             height: 1.16em !important;
+            padding-top: 4px;
         }
 
         .m-top-0px {
@@ -35,6 +36,7 @@
 
         .word {
             height: 1.35em !important;
+            padding-top: 4px;
         }
 
     </style>
