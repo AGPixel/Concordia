@@ -64,6 +64,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
+
+                        @include('components.metatags',[ 'arg_object' => $portifolioGeral ])
+
+                        <hr />
+
                         <div class="card-body first-card-body">
                             @include('components.inputtextpteng',[
                             'title' => 'Title',

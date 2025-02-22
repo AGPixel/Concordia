@@ -12,6 +12,9 @@ class Contact extends Model
     protected $table = 'contact';
 
     protected $fillable = [
+        'meta_tags_title',
+        'meta_tags_description',
+        'meta_tags_keywords',
         'email1',
         'email2',
         'contact_form_title',

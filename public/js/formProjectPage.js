@@ -49,6 +49,10 @@ function saveProjectPage(id) {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         id: id,
         title_1: document.getElementById('InputProjectTitle1').value,
         title_1_eng: document.getElementById('InputProjectTitle1Eng').value,

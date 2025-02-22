@@ -3,11 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="{{ isset($metaTags->description) ? $metaTags->description : 'Description' }}">
-    <meta name="keywords" content="{{ isset($metaTags->keywords) ? $metaTags->keywords : 'Keywords' }}">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ isset($metaTags->title) ? $metaTags->title : 'Concordia' }} - Serviço</title>
+    @include('components.headmetatags',[ 'arg_object' => $oportunidade ])
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">

@@ -4,6 +4,9 @@ function saveContactPage() {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
         email1: document.getElementById('InputContactEmail1').value,
         email2: document.getElementById('InputContactEmail2').value,
         contact_form_title: document.getElementById('InputContactTitle').value,

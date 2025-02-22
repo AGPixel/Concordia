@@ -39,6 +39,11 @@
                         <div class="card card-primary">
                             <!-- form start -->
                             <form id="quickForm">
+
+                                @include('components.metatags',[ 'arg_object' => $contact ])
+
+                                <hr />
+
                                 <div class="card-body first-card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Contact Email 1',

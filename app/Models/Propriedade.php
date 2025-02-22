@@ -12,6 +12,9 @@ class Propriedade extends Model
     protected $table = 'propriedade';
 
     protected $fillable = [
+        'meta_tags_title',
+        'meta_tags_description',
+        'meta_tags_keywords',
         'title',
         'title_eng',
         'description',

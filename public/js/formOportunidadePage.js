@@ -42,6 +42,10 @@ function saveOportunidadePage(id) {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         id: id,
         title: document.getElementById('InputOportunidadeTitle').value,
         title_eng: document.getElementById('InputOportunidadeTitleEng').value,

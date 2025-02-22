@@ -112,6 +112,9 @@ function saveAboutPage() {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
         about_title_1: document.getElementById('InputAboutTitle1').value,
         about_title_1_eng: document.getElementById('InputAboutTitle1Eng').value,
         about_title_2: document.getElementById('InputAboutTitle2').value,

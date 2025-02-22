@@ -12,6 +12,9 @@ class IndexText extends Model
     protected $table = 'index_text';
 
     protected $fillable = [
+        'meta_tags_title',
+        'meta_tags_description',
+        'meta_tags_keywords',
         'about_title',
         'about_title_eng',
         'about_description',

@@ -56,6 +56,10 @@ function savePortifolioGeral() {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         title: document.getElementById('InputPortifolioTitle').value,
         description: document.getElementById('InputPortifolioDescription').value,
     };

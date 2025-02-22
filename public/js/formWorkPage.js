@@ -63,6 +63,10 @@ function saveWorkPage(id) {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         id: id,
         title: document.getElementById('InputWorkTitle').value,
         title_eng: document.getElementById('InputWorkTitleEng').value,

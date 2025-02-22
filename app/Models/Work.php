@@ -12,6 +12,9 @@ class Work extends Model
     protected $table = 'work';
 
     protected $fillable = [
+        'meta_tags_title',
+        'meta_tags_description',
+        'meta_tags_keywords',
         'title',
         'title_eng',
         'description',

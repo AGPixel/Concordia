@@ -140,6 +140,10 @@ function saveIndexPage() {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         about_title: document.getElementById('InputAboutTitle').value,
         about_title_eng: document.getElementById('InputAboutTitleEng').value,
         about_description: document.getElementById('InputAboutDescription').value,

@@ -2,11 +2,11 @@
 <html class="no-js" lang="">
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="{{ isset($metaTags->description) ? $metaTags->description : 'Description' }}">
-    <meta name="keywords" content="{{ isset($metaTags->keywords) ? $metaTags->keywords : 'Keywords' }}">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ isset($metaTags->title) ? $metaTags->title : 'Concordia' }} - {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}</title>
+    @if(isset($portifolios))
+    @if(count($portifolios) > 1)
+    @include('components.headmetatags',[ 'arg_object' => $portifolios ])
+    @endif
+    @endif
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">

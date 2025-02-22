@@ -39,6 +39,11 @@
                         <div class="card card-primary">
                             <!-- form start -->
                             <form id="quickForm">
+
+                                @include('components.metatags',[ 'arg_object' => $project ])
+
+                                <hr />
+
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Title 1',

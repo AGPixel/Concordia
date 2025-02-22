@@ -72,6 +72,10 @@ function saveServicoGeral() {
     showLoading();
 
     let form = {
+        meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
+        meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
+        meta_tags_keywords: document.getElementById('InputMetaTagsKeywords').value,
+
         video: bases64.InputVideo,
         pre_title_1: document.getElementById('InputPreTitle1').value,
         pre_title_1_eng: document.getElementById('InputPreTitle1Eng').value,
