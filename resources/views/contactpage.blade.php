@@ -58,7 +58,7 @@
                             <h1 class="title-lg text-upper">{{isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Contact us" : "Fale connosco" }}</h1>
                             <div class="contact-links d-flex flex-column w-50 mt-50">
                                 @if(isset($contact->email1))
-                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email1 }}
+                                <a href="malito:{{ $contact->email1 }}" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email1 }}
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
@@ -68,7 +68,7 @@
                                 </a>
                                 @endif
                                 @if(isset($contact->email2))
-                                <a href="#" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email2 }}
+                                <a href="tel:{{ $contact->email2 }}" class="sm-title-block text-upper d-flex justify-content-between align-items-center">b{{ $contact->email2 }}
                                     <span class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
