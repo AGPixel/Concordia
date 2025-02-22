@@ -22,12 +22,14 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
                 <li class="nav-header">SITE</li>
+                <!--
                 <li class="nav-item">
                     <a href="/pt/meta-tags-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Meta Tags</p>
                     </a>
                 </li>
+                -->
                 <li class="nav-item">
                     <a href="/pt/index-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
