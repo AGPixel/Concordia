@@ -73,7 +73,7 @@
                                     @foreach($oportunidades as $id => $oportunidade)
                                     <article class="dsn-item-post grid-item over-hidden p-relative brand photography">
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
-                                            <a href="/pt/oportunidade/{{$oportunidade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="teste" title="teste">
+                                            <a href="/pt/oportunidade/{{$oportunidade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $oportunidade->title }}" title="{{ $oportunidade->title }}">
                                                 @if(isset($oportunidade->year))
                                                 <div class="cat background-main d-flex p-absolute top-0 right-0">
                                                     <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">

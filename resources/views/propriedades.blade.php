@@ -75,7 +75,7 @@
                                     <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
 
-                                            <a href="/pt/propriedade/{{$propriedade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="teste" title="teste">
+                                            <a href="/pt/propriedade/{{$propriedade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">
 
                                                 @if(isset($propriedade->year))
                                                 <div class="cat background-main d-flex p-absolute top-0 right-0">
