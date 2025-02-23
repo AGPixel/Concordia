@@ -8954,3 +8954,7 @@ hr {
   min-height: 393px !important;
   max-height: 393px !important;
 }
+
+.menu-green {
+  color: lightgreen;
+}

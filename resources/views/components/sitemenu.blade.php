@@ -10,19 +10,19 @@
         <ul id="dsn-primary-list" class="primary-nav h2">
             <li class="nav-item">
                 <a title="Home" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}">
-                    <span class="overflow ">Home</span>
+                    <span class="overflow {{ $_SERVER['REQUEST_URI'] == '/pt' || $_SERVER['REQUEST_URI'] == '/eng' || $_SERVER['REQUEST_URI'] == '/pt/' || $_SERVER['REQUEST_URI'] == '/eng/' ? 'menu-green' : ''  }} ">Home</span>
                 </a>
             </li>
 
             <li class="nav-item">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Sobre" : "About" : "Sobre" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}sobre">
-                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Sobre" : "About" : "Sobre" }}</span>
+                    <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'sobre') ? 'menu-green' : ''  }} ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Sobre" : "About" : "Sobre" }}</span>
                 </a>
             </li>
 
             <li class="nav-item has-sub-menu">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio">
-                    <span class="overflow ">
+                    <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'portifolio') ? 'menu-green' : ''  }} ">
                         {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Projetos" : "Projects" : "Projetos" }}
                     </span>
                 </a>
@@ -30,7 +30,7 @@
                     @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
                         <a title="{{ $menuWork->title }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->id }}" data-dsn-text="{{ $menuWork->title }}">
-                            <span class="overflow">{{ $menuWork->title }}</span>
+                            <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'portifolio/'.$menuWork->id) ? 'menu-green' : ''  }} ">{{ $menuWork->title }}</span>
                         </a>
                     </li>
                     @endforeach
@@ -39,7 +39,9 @@
 
             <li class="nav-item has-sub-menu">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviço" : "Service" : "Serviço" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}servico">
-                    <span class="overflow ">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviços" : "Services" : "Serviços" }}</span>
+                    <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'servico') ? 'menu-green' : ''  }} ">
+                        {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Serviços" : "Services" : "Serviços" }}
+                    </span>
                 </a>
                 <!--
                 <ul class="nav-item">
@@ -55,7 +57,9 @@
             </li>
             <li class="nav-item ">
                 <a title="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contato" : "Contact" : "Contato" }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}contato">
-                    <span class="overflow">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contactos" : "Contact" : "Contactos" }}</span>
+                    <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'contato') ? 'menu-green' : ''  }} ">
+                        {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contactos" : "Contact" : "Contactos" }}
+                    </span>
                 </a>
             </li>
             <li class="nav-item has-sub-menu">
