@@ -1,6 +1,8 @@
 let host = window.location.hostname;
 let GLOBAL_URL = "http://127.0.0.1:8000/";
-if (!(host == 'http://127.0.0.1:8000/' || host == '127.0.0.1')) {
+if (!(host == 'http://127.0.0.1:8000/' || host == '127.0.0.1'
+    || host == 'http://localhost:8000/' || host == 'localhost'
+)) {
     GLOBAL_URL = "https://pixeldev05.com/";
 }
 const GLOBAL_URL_API = GLOBAL_URL + "api/";

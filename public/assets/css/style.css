@@ -8942,3 +8942,15 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
+.w-h-min-portifolio {
+  min-width: 570px !important;
+  min-height: 393px !important;
+  max-height: 393px !important;
+}
+
+.img-portifolio {
+  min-width: 570px !important;
+  min-height: 393px !important;
+  max-height: 393px !important;
+}
