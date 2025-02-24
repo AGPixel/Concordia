@@ -66,8 +66,6 @@
             </div>
 
             <div id="page_wrapper" class="wrapper">
-                {{$oportunidade->img_2}}<br>
-                {{$oportunidade->type_2}}
                 @include('components.galeryoportunidade',
                 [
                 'img_1' => $oportunidade->img_2, 'type_1' => $oportunidade->type_2,
