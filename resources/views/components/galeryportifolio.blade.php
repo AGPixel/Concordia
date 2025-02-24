@@ -1,4 +1,4 @@
-@if(isset($img) && isset($type) && isset($title))
+@if(isset($img))
 <a class="link-pop fj-gallery-item" href="{{asset("../storage/$img")}}" data-fancybox="_1" data-caption="{{ $title }}">
     <img class="" src="{{asset("../storage/$img")}}" alt="">
     <div class="cap">
