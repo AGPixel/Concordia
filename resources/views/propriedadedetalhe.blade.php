@@ -74,54 +74,30 @@
 
                 <div class="container p-relative section-margin over-hidden">
                     <div class="gallery-portfolio">
-                        @if(isset($propriedade->img_2))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_2) ? $propriedade->title_2 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_2) ? $propriedade->type_2 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
-                        @if(isset($propriedade->img_3))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_3) ? $propriedade->title_3 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_3) ? $propriedade->type_3 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
-                        @if(isset($propriedade->img_4))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_4) ? $propriedade->title_4 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_4) ? $propriedade->type_4 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
-                        @if(isset($propriedade->img_5))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_5) ? $propriedade->title_5 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_5) ? $propriedade->type_5 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
-                        @if(isset($propriedade->img_6))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_6) ? $propriedade->title_6 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_6) ? $propriedade->type_6 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
-                        @if(isset($propriedade->img_7))
-                        <a class="link-pop fj-gallery-item" href="{{ isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : 'assets/img/portfolio/project1/1.jpg' }}" data-fancybox="_1" data-caption="{{ isset($propriedade->title_7) ? $propriedade->title_7 : '' }}">
-                            <img width="512" height="320" src="{{ isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            <div class="cap">
-                                <span>{{ isset($propriedade->type_7) ? $propriedade->type_7 : '' }}</span>
-                            </div>
-                        </a>
-                        @endif
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_2,'type' => $propriedade->type_2,'title' => $propriedade->title_2 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_3,'type' => $propriedade->type_3,'title' => $propriedade->title_3 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_4,'type' => $propriedade->type_4,'title' => $propriedade->title_4 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_5,'type' => $propriedade->type_5,'title' => $propriedade->title_5 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_6,'type' => $propriedade->type_6,'title' => $propriedade->title_6 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_7,'type' => $propriedade->type_7,'title' => $propriedade->title_7 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_8,'type' => $propriedade->type_8,'title' => $propriedade->title_8 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_9,'type' => $propriedade->type_9,'title' => $propriedade->title_9 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_10,'type' => $propriedade->type_10,'title' => $propriedade->title_10 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_11,'type' => $propriedade->type_11,'title' => $propriedade->title_11 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_12,'type' => $propriedade->type_12,'title' => $propriedade->title_12 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_13,'type' => $propriedade->type_13,'title' => $propriedade->title_13 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_14,'type' => $propriedade->type_14,'title' => $propriedade->title_14 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_15,'type' => $propriedade->type_15,'title' => $propriedade->title_15 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_16,'type' => $propriedade->type_16,'title' => $propriedade->title_16 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_17,'type' => $propriedade->type_17,'title' => $propriedade->title_17 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_18,'type' => $propriedade->type_18,'title' => $propriedade->title_18 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_19,'type' => $propriedade->type_19,'title' => $propriedade->title_19 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_20,'type' => $propriedade->type_20,'title' => $propriedade->title_20 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_21,'type' => $propriedade->type_21,'title' => $propriedade->title_21 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_22,'type' => $propriedade->type_22,'title' => $propriedade->title_22 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_23,'type' => $propriedade->type_23,'title' => $propriedade->title_23 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_24,'type' => $propriedade->type_24,'title' => $propriedade->title_24 ])
+                        @include('components.galeryportifolio',[ 'img' => $propriedade->img_25,'type' => $propriedade->type_25,'title' => $propriedade->title_25 ])
                     </div>
                 </div>
             </div>

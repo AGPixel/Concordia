@@ -30,6 +30,10 @@
                 padding-bottom: 1em !important;
             }
 
+            .card-invisible {
+                display: none;
+            }
+
         </style>
         <!-- Main content -->
         <div class="content">
@@ -82,202 +86,232 @@
                                     'arg_value_eng' => isset($propriedade->job_2_eng) ? $propriedade->job_2_eng : ''
                                     ])
                                 </div>
-                                <!-- 11111 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 1',
-                                        'id_img_file' => 'InputPropriedadeImg1',
-                                        'id_text_file' => 'ImagePropriedadeImg1Preview',
-                                        'arg_value' => isset($propriedade->img_1) ? asset("../storage/$propriedade->img_1") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 1',
-                                    'id_input_text' => 'InputPropriedadeType1',
-                                    'arg_value' => isset($propriedade->type_1) ? $propriedade->type_1 : '',
-                                    'arg_value_eng' => isset($propriedade->type_1_eng) ? $propriedade->type_1_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 1',
-                                    'id_input_text' => 'InputPropriedadeLegend1',
-                                    'arg_value' => isset($propriedade->legend_1) ? $propriedade->legend_1 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_1_eng) ? $propriedade->legend_1_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 22222 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 2',
-                                        'id_img_file' => 'InputPropriedadeImg2',
-                                        'id_text_file' => 'ImagePropriedadeImg2Preview',
-                                        'arg_value' => isset($propriedade->img_2) ? asset("../storage/$propriedade->img_2") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 2',
-                                    'id_input_text' => 'InputPropriedadeType2',
-                                    'arg_value' => isset($propriedade->type_2) ? $propriedade->type_2 : '',
-                                    'arg_value_eng' => isset($propriedade->type_2_eng) ? $propriedade->type_2_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 2',
-                                    'id_input_text' => 'InputPropriedadeLegend2',
-                                    'arg_value' => isset($propriedade->legend_2) ? $propriedade->legend_2 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_2_eng) ? $propriedade->legend_2_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 33333 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 3',
-                                        'id_img_file' => 'InputPropriedadeImg3',
-                                        'id_text_file' => 'ImagePropriedadeImg3Preview',
-                                        'arg_value' => isset($propriedade->img_3) ? asset("../storage/$propriedade->img_3") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 3',
-                                    'id_input_text' => 'InputPropriedadeType3',
-                                    'arg_value' => isset($propriedade->type_3) ? $propriedade->type_3 : '',
-                                    'arg_value_eng' => isset($propriedade->type_3_eng) ? $propriedade->type_3_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 3',
-                                    'id_input_text' => 'InputPropriedadeLegend3',
-                                    'arg_value' => isset($propriedade->legend_3) ? $propriedade->legend_3 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_3_eng) ? $propriedade->legend_3_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 44444 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 4',
-                                        'id_img_file' => 'InputPropriedadeImg4',
-                                        'id_text_file' => 'ImagePropriedadeImg4Preview',
-                                        'arg_value' => isset($propriedade->img_4) ? asset("../storage/$propriedade->img_4") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 4',
-                                    'id_input_text' => 'InputPropriedadeType4',
-                                    'arg_value' => isset($propriedade->type_4) ? $propriedade->type_4 : '',
-                                    'arg_value_eng' => isset($propriedade->type_4_eng) ? $propriedade->type_4_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 4',
-                                    'id_input_text' => 'InputPropriedadeLegend4',
-                                    'arg_value' => isset($propriedade->legend_4) ? $propriedade->legend_4 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_4_eng) ? $propriedade->legend_4_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 55555 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 5',
-                                        'id_img_file' => 'InputPropriedadeImg5',
-                                        'id_text_file' => 'ImagePropriedadeImg5Preview',
-                                        'arg_value' => isset($propriedade->img_5) ? asset("../storage/$propriedade->img_5") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 5',
-                                    'id_input_text' => 'InputPropriedadeType5',
-                                    'arg_value' => isset($propriedade->type_5) ? $propriedade->type_5 : '',
-                                    'arg_value_eng' => isset($propriedade->type_5_eng) ? $propriedade->type_5_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 5',
-                                    'id_input_text' => 'InputPropriedadeLegend5',
-                                    'arg_value' => isset($propriedade->legend_5) ? $propriedade->legend_5 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_5_eng) ? $propriedade->legend_5_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 66666 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 6',
-                                        'id_img_file' => 'InputPropriedadeImg6',
-                                        'id_text_file' => 'ImagePropriedadeImg6Preview',
-                                        'arg_value' => isset($propriedade->img_6) ? asset("../storage/$propriedade->img_6") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 6',
-                                    'id_input_text' => 'InputPropriedadeType6',
-                                    'arg_value' => isset($propriedade->type_6) ? $propriedade->type_6 : '',
-                                    'arg_value_eng' => isset($propriedade->type_6_eng) ? $propriedade->type_6_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 6',
-                                    'id_input_text' => 'InputPropriedadeLegend6',
-                                    'arg_value' => isset($propriedade->legend_6) ? $propriedade->legend_6 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_6_eng) ? $propriedade->legend_6_eng : ''
-                                    ])
-                                </div>
-                                -->
-                                <!-- 77777 -->
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Image 7',
-                                        'id_img_file' => 'InputPropriedadeImg7',
-                                        'id_text_file' => 'ImagePropriedadeImg7Preview',
-                                        'arg_value' => isset($propriedade->img_7) ? asset("../storage/$propriedade->img_7") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
-                                <div class="card-body first-card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Type 7',
-                                    'id_input_text' => 'InputPropriedadeType7',
-                                    'arg_value' => isset($propriedade->type_7) ? $propriedade->type_7 : '',
-                                    'arg_value_eng' => isset($propriedade->type_7_eng) ? $propriedade->type_7_eng : ''
-                                    ])
-                                </div>
-                                <!--
-                                <div class="card-body first-card-body">
-                                    @ include('components.inputtextpteng',[
-                                    'title' => 'Legend 7',
-                                    'id_input_text' => 'InputPropriedadeLegend7',
-                                    'arg_value' => isset($propriedade->legend_7) ? $propriedade->legend_7 : '',
-                                    'arg_value_eng' => isset($propriedade->legend_7_eng) ? $propriedade->legend_7_eng : ''
-                                    ])
-                                </div>
-                                -->
+                                @include('components.blockimgpropriedade', [
+                                'id'=>1,
+                                'img'=>$propriedade->img_1,
+                                'imgprox'=>$propriedade->img_2,
+                                'type' => $propriedade->type_1,
+                                'type_eng' => $propriedade->type_1_eng,
+                                'legend' => $propriedade->legend_1,
+                                'legend_eng' => $propriedade->legend_1_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>2,
+                                'img'=>$propriedade->img_2,
+                                'imgprox'=>$propriedade->img_3,
+                                'type' => $propriedade->type_2,
+                                'type_eng' => $propriedade->type_2_eng,
+                                'legend' => $propriedade->legend_2,
+                                'legend_eng' => $propriedade->legend_2_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>3,
+                                'img'=>$propriedade->img_3,
+                                'imgprox'=>$propriedade->img_4,
+                                'type' => $propriedade->type_3,
+                                'type_eng' => $propriedade->type_3_eng,
+                                'legend' => $propriedade->legend_3,
+                                'legend_eng' => $propriedade->legend_3_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>4,
+                                'img'=>$propriedade->img_4,
+                                'imgprox'=>$propriedade->img_5,
+                                'type' => $propriedade->type_4,
+                                'type_eng' => $propriedade->type_4_eng,
+                                'legend' => $propriedade->legend_4,
+                                'legend_eng' => $propriedade->legend_4_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>5,
+                                'img'=>$propriedade->img_5,
+                                'imgprox'=>$propriedade->img_6,
+                                'type' => $propriedade->type_5,
+                                'type_eng' => $propriedade->type_5_eng,
+                                'legend' => $propriedade->legend_5,
+                                'legend_eng' => $propriedade->legend_5_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>6,
+                                'img'=>$propriedade->img_6,
+                                'imgprox'=>$propriedade->img_7,
+                                'type' => $propriedade->type_6,
+                                'type_eng' => $propriedade->type_6_eng,
+                                'legend' => $propriedade->legend_6,
+                                'legend_eng' => $propriedade->legend_6_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>7,
+                                'img'=>$propriedade->img_7,
+                                'imgprox'=>$propriedade->img_8,
+                                'type' => $propriedade->type_7,
+                                'type_eng' => $propriedade->type_7_eng,
+                                'legend' => $propriedade->legend_7,
+                                'legend_eng' => $propriedade->legend_7_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>8,
+                                'img'=>$propriedade->img_8,
+                                'imgprox'=>$propriedade->img_9,
+                                'type' => $propriedade->type_8,
+                                'type_eng' => $propriedade->type_8_eng,
+                                'legend' => $propriedade->legend_8,
+                                'legend_eng' => $propriedade->legend_8_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>9,
+                                'img'=>$propriedade->img_9,
+                                'imgprox'=>$propriedade->img_10,
+                                'type' => $propriedade->type_9,
+                                'type_eng' => $propriedade->type_9_eng,
+                                'legend' => $propriedade->legend_9,
+                                'legend_eng' => $propriedade->legend_9_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>10,
+                                'img'=>$propriedade->img_10,
+                                'imgprox'=>$propriedade->img_11,
+                                'type' => $propriedade->type_10,
+                                'type_eng' => $propriedade->type_10_eng,
+                                'legend' => $propriedade->legend_10,
+                                'legend_eng' => $propriedade->legend_10_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>11,
+                                'img'=>$propriedade->img_11,
+                                'imgprox'=>$propriedade->img_12,
+                                'type' => $propriedade->type_11,
+                                'type_eng' => $propriedade->type_11_eng,
+                                'legend' => $propriedade->legend_11,
+                                'legend_eng' => $propriedade->legend_11_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>12,
+                                'img'=>$propriedade->img_12,
+                                'imgprox'=>$propriedade->img_13,
+                                'type' => $propriedade->type_12,
+                                'type_eng' => $propriedade->type_12_eng,
+                                'legend' => $propriedade->legend_12,
+                                'legend_eng' => $propriedade->legend_12_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>13,
+                                'img'=>$propriedade->img_13,
+                                'imgprox'=>$propriedade->img_14,
+                                'type' => $propriedade->type_13,
+                                'type_eng' => $propriedade->type_13_eng,
+                                'legend' => $propriedade->legend_13,
+                                'legend_eng' => $propriedade->legend_13_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>14,
+                                'img'=>$propriedade->img_14,
+                                'imgprox'=>$propriedade->img_15,
+                                'type' => $propriedade->type_14,
+                                'type_eng' => $propriedade->type_14_eng,
+                                'legend' => $propriedade->legend_14,
+                                'legend_eng' => $propriedade->legend_14_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>15,
+                                'img'=>$propriedade->img_15,
+                                'imgprox'=>$propriedade->img_16,
+                                'type' => $propriedade->type_15,
+                                'type_eng' => $propriedade->type_15_eng,
+                                'legend' => $propriedade->legend_15,
+                                'legend_eng' => $propriedade->legend_15_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>16,
+                                'img'=>$propriedade->img_16,
+                                'imgprox'=>$propriedade->img_17,
+                                'type' => $propriedade->type_16,
+                                'type_eng' => $propriedade->type_16_eng,
+                                'legend' => $propriedade->legend_16,
+                                'legend_eng' => $propriedade->legend_16_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>17,
+                                'img'=>$propriedade->img_17,
+                                'imgprox'=>$propriedade->img_18,
+                                'type' => $propriedade->type_17,
+                                'type_eng' => $propriedade->type_17_eng,
+                                'legend' => $propriedade->legend_17,
+                                'legend_eng' => $propriedade->legend_17_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>18,
+                                'img'=>$propriedade->img_18,
+                                'imgprox'=>$propriedade->img_19,
+                                'type' => $propriedade->type_18,
+                                'type_eng' => $propriedade->type_18_eng,
+                                'legend' => $propriedade->legend_18,
+                                'legend_eng' => $propriedade->legend_18_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>19,
+                                'img'=>$propriedade->img_19,
+                                'imgprox'=>$propriedade->img_20,
+                                'type' => $propriedade->type_19,
+                                'type_eng' => $propriedade->type_19_eng,
+                                'legend' => $propriedade->legend_19,
+                                'legend_eng' => $propriedade->legend_19_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>20,
+                                'img'=>$propriedade->img_20,
+                                'imgprox'=>$propriedade->img_21,
+                                'type' => $propriedade->type_20,
+                                'type_eng' => $propriedade->type_20_eng,
+                                'legend' => $propriedade->legend_20,
+                                'legend_eng' => $propriedade->legend_20_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>21,
+                                'img'=>$propriedade->img_21,
+                                'imgprox'=>$propriedade->img_22,
+                                'type' => $propriedade->type_21,
+                                'type_eng' => $propriedade->type_21_eng,
+                                'legend' => $propriedade->legend_21,
+                                'legend_eng' => $propriedade->legend_21_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>22,
+                                'img'=>$propriedade->img_22,
+                                'imgprox'=>$propriedade->img_23,
+                                'type' => $propriedade->type_22,
+                                'type_eng' => $propriedade->type_22_eng,
+                                'legend' => $propriedade->legend_22,
+                                'legend_eng' => $propriedade->legend_22_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>23,
+                                'img'=>$propriedade->img_23,
+                                'imgprox'=>$propriedade->img_24,
+                                'type' => $propriedade->type_23,
+                                'type_eng' => $propriedade->type_23_eng,
+                                'legend' => $propriedade->legend_23,
+                                'legend_eng' => $propriedade->legend_23_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>24,
+                                'img'=>$propriedade->img_24,
+                                'imgprox'=>$propriedade->img_25,
+                                'type' => $propriedade->type_24,
+                                'type_eng' => $propriedade->type_24_eng,
+                                'legend' => $propriedade->legend_24,
+                                'legend_eng' => $propriedade->legend_24_eng,
+                                ])
+                                @include('components.blockimgpropriedade', [
+                                'id'=>25,
+                                'img'=>$propriedade->img_25,
+                                'imgprox'=>null,
+                                'type' => $propriedade->type_25,
+                                'type_eng' => $propriedade->type_25_eng,
+                                'legend' => $propriedade->legend_25,
+                                'legend_eng' => $propriedade->legend_25_eng,
+                                ])
+
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Contact Title',
