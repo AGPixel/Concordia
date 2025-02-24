@@ -75,7 +75,7 @@
                 @include('components.galeryoportunidade',
                 [
                 'img_1' => $oportunidade->img_3, 'type_1' => $oportunidade->type_3,
-                'img_2' => $oportunidade->img_5, 'type_2' => $oportunidade->type_5
+                'img_2' => $oportunidade->img_4, 'type_2' => $oportunidade->type_4
                 ])
 
             </div>
