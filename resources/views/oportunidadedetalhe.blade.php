@@ -71,11 +71,65 @@
                 'img_1' => $oportunidade->img_2, 'type_1' => $oportunidade->type_2,
                 'img_2' => $oportunidade->img_3, 'type_2' => $oportunidade->type_3
                 ])
-
                 @include('components.galeryoportunidade',
                 [
                 'img_1' => $oportunidade->img_3, 'type_1' => $oportunidade->type_3,
                 'img_2' => $oportunidade->img_4, 'type_2' => $oportunidade->type_4
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_5, 'type_1' => $oportunidade->type_5,
+                'img_2' => $oportunidade->img_6, 'type_2' => $oportunidade->type_6
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_7, 'type_1' => $oportunidade->type_7,
+                'img_2' => $oportunidade->img_8, 'type_2' => $oportunidade->type_8
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_9, 'type_1' => $oportunidade->type_9,
+                'img_2' => $oportunidade->img_10, 'type_2' => $oportunidade->type_10
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_11, 'type_1' => $oportunidade->type_11,
+                'img_2' => $oportunidade->img_12, 'type_2' => $oportunidade->type_12
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_13, 'type_1' => $oportunidade->type_13,
+                'img_2' => $oportunidade->img_14, 'type_2' => $oportunidade->type_14
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_15, 'type_1' => $oportunidade->type_15,
+                'img_2' => $oportunidade->img_16, 'type_2' => $oportunidade->type_16
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_17, 'type_1' => $oportunidade->type_17,
+                'img_2' => $oportunidade->img_18, 'type_2' => $oportunidade->type_18
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_19, 'type_1' => $oportunidade->type_19,
+                'img_2' => $oportunidade->img_20, 'type_2' => $oportunidade->type_20
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_21, 'type_1' => $oportunidade->type_21,
+                'img_2' => $oportunidade->img_22, 'type_2' => $oportunidade->type_22
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_23, 'type_1' => $oportunidade->type_23,
+                'img_2' => $oportunidade->img_24, 'type_2' => $oportunidade->type_24
+                ])
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_25, 'type_1' => $oportunidade->type_25,
+                'img_2' => null, 'type_2' => null
                 ])
 
             </div>
