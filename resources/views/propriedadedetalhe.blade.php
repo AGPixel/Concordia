@@ -157,7 +157,7 @@
 
                                             <div class="form-group dsn-up">
                                                 <div class="entry-box">
-                                                    <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Conte-nos sobre você e o mundo" : "Tell us about you and the world" : "Conte-nos sobre você e o mundo" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Por favor, deixe-nos uma mensagem." : "Please,leave us a message." : "Por favor, deixe-nos uma mensagem." }}"></textarea>
+                                                    <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Mensagem" : "Message" : "Mensagem" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Por favor, deixe-nos uma mensagem." : "Please,leave us a message." : "Por favor, deixe-nos uma mensagem." }}"></textarea>
                                                 </div>
                                                 <div class="help-block with-errors"></div>
                                             </div>
