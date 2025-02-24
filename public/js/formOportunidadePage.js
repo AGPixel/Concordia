@@ -342,3 +342,8 @@ function saveOportunidadePage(id) {
     });
 
 }
+
+function showNewImage(num) {
+    document.getElementById('bt-oportunidade-nova-imagem' + (num - 1)).classList.add('card-invisible');
+    document.getElementById('container-img-' + num).classList.remove('card-invisible');
+}

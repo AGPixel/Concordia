@@ -32,6 +32,6 @@
         'arg_value_eng' => isset($title1eng) ? $title1eng : ''
         ])
     </div>
-    @if($id < 25) @include('components.buttonportifolio',['img'=> $imgprox, 'num_img' => $id+1])
+    @if($id < 25) @include('components.buttonaddimage',['img'=> $imgprox, 'num_img' => $id+1])
         @endif
 </div>

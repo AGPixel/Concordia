@@ -1,4 +1,4 @@
-<div id="bt-portiflio-nova-imagem{{$num_img-1}}" class="card-body {{isset($img) ? 'card-invisible' : ''}}">
+<div id="bt-{{$bt_type}}-nova-imagem{{$num_img-1}}" class="card-body {{isset($img) ? 'card-invisible' : ''}}">
     <div class="row">
         <div class="col-md-10">
         </div>

@@ -34,8 +34,6 @@
                 display: none;
             }
 
-            .container-img-1 {}
-
         </style>
         <!-- Main content -->
         <div class="content">
