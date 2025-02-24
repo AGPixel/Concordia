@@ -144,6 +144,8 @@ class SiteService extends BaseService
         $about = $this->repository->about();
 
         if ($lingua == 'eng') {
+            $about->title = $this->changeLanguage($about->title,$about->title_eng);
+            $about->description = $this->changeLanguage($about->description,$about->description_eng);
             $about->about_title_1 = $this->changeLanguage($about->about_title_1,$about->about_title_1_eng);
             $about->about_title_2 = $this->changeLanguage($about->about_title_2,$about->about_title_2_eng);
             $about->about_pre_title_1 = $this->changeLanguage($about->about_pre_title_1,$about->about_pre_title_1_eng);

@@ -143,6 +143,15 @@
                 </div>
                 <!-- ========== End Award Scroll Right========== -->
 
+                <div class="section-margin text-center">
+                    <div class="container">
+                        <h3 class="title text-upper mb-30">{{ $about->title ? $about->title : 'titulo' }}</h3>
+                        <p class="max-w750">
+                            {{ $about->description ? $about->description : 'descrição' }}
+                        </p>
+                    </div>
+                </div>
+
 
                 <!-- ========== Service========== -->
                 <section class="services-lest-hover not-filter dsn-filter p-relative section-margin">

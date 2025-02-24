@@ -46,6 +46,24 @@
 
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
+                                    'title' => 'About Title',
+                                    'id_input_text' => 'InputAboutTitle',
+                                    'arg_value' => $about->title ? $about->title : '',
+                                    'arg_value_eng' => $about->title_eng ? $about->title_eng : ''
+                                    ])
+                                </div>
+
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Description',
+                                    'id_input_text' => 'InputAboutDescription',
+                                    'arg_value' => $about->description ? $about->description : '',
+                                    'arg_value_eng' => $about->description_eng ? $about->description_eng : ''
+                                    ])
+                                </div>
+
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
                                     'title' => 'About Title 1',
                                     'id_input_text' => 'InputAboutTitle1',
                                     'arg_value' => $about->about_title_1 ? $about->about_title_1 : '',

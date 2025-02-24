@@ -12,6 +12,10 @@ class About extends Model
     protected $table = 'about';
 
     protected $fillable = [
+        'title',
+        'title_eng',
+        'description',
+        'description_eng',
         'meta_tags_title',
         'meta_tags_description',
         'meta_tags_keywords',
