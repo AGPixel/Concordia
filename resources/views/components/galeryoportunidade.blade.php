@@ -1,5 +1,5 @@
 @if(isset($img_1) && isset($img_2))
-<div class="container p-relative">
+<div class="container p-relative m-b-1em">
     <div class="d-grid grid-sm-2 align-items-center">
         <div class="p-relative img-box-parallax before-z-index has-popup">
             <div class="effect-popup before-z-index h-v-70 " data-src="{{ isset($img_1) ? asset("../storage/$img_1") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($type_1) ?? $type_1 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
