@@ -66,40 +66,19 @@
             </div>
 
             <div id="page_wrapper" class="wrapper">
+                {{$oportunidade->img_2}}<br>
+                {{$oportunidade->type_2}}
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_2, 'type_1' => $oportunidade->type_2,
+                'img_2' => $oportunidade->img_3, 'type_2' => $oportunidade->type_3
+                ])
 
-                <div class="container p-relative">
-                    <div class="d-grid grid-sm-2 align-items-center">
-                        <div class="p-relative img-box-parallax before-z-index has-popup">
-                            <div class="effect-popup before-z-index h-v-70 " data-src="{{ isset($oportunidade->img_2) ? asset("../storage/$oportunidade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_2) ?? $oportunidade->type_2 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                                <img class="cover-bg-img has-border-radius" src="{{ isset($oportunidade->img_2) ? asset("../storage/$oportunidade->img_2") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            </div>
-                            <div class="cap">
-                                <span>{{ isset($oportunidade->type_2) ? $oportunidade->type_2 : ''}}</span>
-                            </div>
-                        </div>
-                        <div class="p-relative img-box-parallax before-z-index has-popup">
-                            <div class="effect-popup before-z-index h-v-70" data-src="{{ isset($oportunidade->img_3) ? asset("../storage/$oportunidade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_3) ?? $oportunidade->type_3 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                                <img class="cover-bg-img has-border-radius" src="{{ isset($oportunidade->img_3) ? asset("../storage/$oportunidade->img_3") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                            </div>
-                            <div class="cap">
-                                <span>{{ isset($oportunidade->type_3) ? $oportunidade->type_3 : '' }}</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container over-hidden mt-30">
-                    <div class="img-box-parallax dsn-animate dsn-effect-down has-popup dsn-active" data-dsn-grid="move-up">
-
-                        <div class="effect-popup before-z-index h-100" data-src="{{ isset($oportunidade->img_4) ? asset("../storage/$oportunidade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="{{ isset($oportunidade->type_4) ?? $oportunidade->type_4 }}" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
-                            <img class="cover-bg-img has-direction has-border-radius" src="{{ isset($oportunidade->img_4) ? asset("../storage/$oportunidade->img_4") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
-                        </div>
-
-                        <div class="cap">
-                            <span>{{ isset($oportunidade->type_4) ? $oportunidade->type_4 : '' }}</span>
-                        </div>
-                    </div>
-                </div>
+                @include('components.galeryoportunidade',
+                [
+                'img_1' => $oportunidade->img_3, 'type_1' => $oportunidade->type_3,
+                'img_2' => $oportunidade->img_5, 'type_2' => $oportunidade->type_5
+                ])
 
             </div>
 
@@ -123,13 +102,13 @@
                                             <div class="d-grid" data-dsn-gap="0px 30px">
                                                 <div class="form-group dsn-up">
                                                     <div class="entry-box">
-                                                        <input id="form_name" type="text" name="name" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite seu nome" : "Type your name" : "Digite seu nome" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "nome é obrigatório." : "name is required." : "nome é obrigatório." }}" />
+                                                        <input id="form_name" type="text" name="name" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu nome" : "Type your name" : "Digite o seu nome" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "nome é obrigatório." : "name is required." : "nome é obrigatório." }}" />
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
                                                 <div class="form-group dsn-up">
                                                     <div class="entry-box">
-                                                        <input id="form_email" type="email" name="email" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite seu endereço de e-mail" : "Type your Email Address" : "Digite seu endereço de e-mail" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "E-mail válido é obrigatório." : "Valid email is required." : "E-mail válido é obrigatório." }}" />
+                                                        <input id="form_email" type="email" name="email" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu endereço de e-mail" : "Type your Email Address" : "Digite o seu endereço de e-mail" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "E-mail válido é obrigatório." : "Valid email is required." : "E-mail válido é obrigatório." }}" />
                                                     </div>
                                                     <div class="help-block with-errors"></div>
                                                 </div>
