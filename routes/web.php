@@ -10,6 +10,8 @@ Route::get('/', function() { return redirect('/pt/'); });
 Route::get('/{lingua}/', [SiteController::class, 'index'])->name('site.index');
 Route::get('/{lingua}/contato', [SiteController::class, 'contato'])->name('site.contato');
 Route::get('/{lingua}/sobre', [SiteController::class, 'sobre'])->name('site.sobre');
+Route::get('/{lingua}/service-terms', [SiteController::class, 'serviceTerms'])->name('site.service-terms');
+Route::get('/{lingua}/privacy-politics', [SiteController::class, 'privacyPolitics'])->name('site.privacy-politics');
 Route::get('/{lingua}/portifolio', [SiteController::class, 'portifolioGeral'])->name('site.portifolio-geral');
 Route::get('/{lingua}/portifolio/{id}', [SiteController::class, 'portifolio'])->name('site.portifolio');
 Route::get('/{lingua}/servico', [SiteController::class, 'servicoGeral'])->name('site.servico-geral');

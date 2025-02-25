@@ -282,6 +282,9 @@ function saveIndexPage() {
         navigation_title_3: document.getElementById('InputNavigationTitle3').value,
         navigation_title_3_eng: document.getElementById('InputNavigationTitle3Eng').value,
         navigation_url_3: document.getElementById('InputNavigationUrl3').value,
+        navigation_title_4: document.getElementById('InputNavigationTitle4').value,
+        navigation_title_4_eng: document.getElementById('InputNavigationTitle4Eng').value,
+        navigation_url_4: document.getElementById('InputNavigationUrl4').value,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-index-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

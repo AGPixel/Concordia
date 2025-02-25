@@ -59,7 +59,7 @@
                                     'arg_value' => isset($serviceTerms->content) ? $serviceTerms->content : '',
                                     'arg_value_eng' => isset($serviceTerms->content_eng) ? $serviceTerms->content_eng : ''
                                     ])
-                                </div>s
+                                </div>
 
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="saveServiceTerms()">Salvar modificações Service Terms</button>
@@ -73,6 +73,6 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-        <script src="{{ asset ("/js/formServiceTermsPage.js") }}"></script>
+        <script src="{{ asset("/js/formServiceTermsPage.js") }}"></script>
         <!-- /.content -->
         @endsection

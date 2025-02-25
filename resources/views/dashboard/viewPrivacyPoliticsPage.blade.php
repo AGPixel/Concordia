@@ -1,4 +1,5 @@
 @include('components.header')
+<script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
 
 <body class="hold-transition sidebar-mini">
 
@@ -59,7 +60,21 @@
                                     'arg_value' => isset($privacyPolitics->content) ? $privacyPolitics->content : '',
                                     'arg_value_eng' => isset($privacyPolitics->content_eng) ? $privacyPolitics->content_eng : ''
                                     ])
-                                </div>s
+                                </div>
+                                <div class="card-body">
+                                    <textarea name="content" id="editor">
+                                        &lt;p&gt;This is some sample content.&lt;/p&gt;
+                                    </textarea>
+                                    <!-- parei aqui, finalizando o politica de privacidade -->
+                                    <script>
+                                        ClassicEditor
+                                            .create(document.querySelector('#editor'))
+                                            .catch(error => {
+                                                console.error(error);
+                                            });
+
+                                    </script>
+                                </div>
 
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="savePrivacyPolitics()">Salvar modificações Politicas de privacidade</button>
@@ -73,6 +88,7 @@
             </div>
             <!-- /.container-fluid -->
         </div>
-        <script src="{{ asset ("/js/formPrivacyPoliticsPage.js") }}"></script>
+        <script src="{{ asset("/js/formPrivacyPoliticsPage.js") }}"></script>
+
         <!-- /.content -->
         @endsection

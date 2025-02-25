@@ -714,6 +714,20 @@
                                     'id_input_text' => 'InputNavigationUrl3',
                                     'arg_value' => $args->navigation_url_3 ? $args->navigation_url_3 : '' ])
                                 </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Navigation Title 4',
+                                    'id_input_text' => 'InputNavigationTitle4',
+                                    'arg_value' => $args->navigation_title_4 ? $args->navigation_title_4 : '',
+                                    'arg_value_eng' => $args->navigation_title_4_eng ? $args->navigation_title_4_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body last-card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Navigation Url 4',
+                                    'id_input_text' => 'InputNavigationUrl4',
+                                    'arg_value' => $args->navigation_url_4 ? $args->navigation_url_4 : '' ])
+                                </div>
 
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="saveIndexPage()">Salvar modificações Index Page</button>

@@ -159,7 +159,10 @@ class IndexText extends Model
         'navigation_url_2',
         'navigation_title_3',
         'navigation_title_3_eng',
-        'navigation_url_3'
+        'navigation_url_3',
+        'navigation_title_4',
+        'navigation_title_4_eng',
+        'navigation_url_4'
     ];
 
 }

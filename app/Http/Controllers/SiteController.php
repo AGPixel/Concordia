@@ -36,6 +36,7 @@ class SiteController extends Controller
         
         $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $projects = $this->service->projectActive($lingua);
         $portifolios = $this->service->workActive($lingua);
@@ -43,7 +44,7 @@ class SiteController extends Controller
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('index', ['metaTags' => $metaTags, 'args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
+        return view('index', ['metaTags' => $metaTags, 'contact' => $contact, 'args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
     }
 
     public function saveIndexPage(Request $request) {
@@ -61,13 +62,14 @@ class SiteController extends Controller
         
         $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
         
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
         $serviceTerms = $this->service->serviceTerms($lingua);
 
-        return view('index', ['metaTags' => $metaTags, 
+        return view('service-terms', ['metaTags' => $metaTags, 'contact' => $contact, 
                               'index_text' => $index_text, 
                               'menuWorks' => $menuWorks, 
                               'menuProjects' => $menuProjects,
@@ -90,13 +92,14 @@ class SiteController extends Controller
         
         $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
         
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
         $privacyPolitics = $this->service->privacyPolitics($lingua);
 
-        return view('index', ['metaTags' => $metaTags, 
+        return view('privacy-politics', ['metaTags' => $metaTags, 'contact' => $contact, 
                               'index_text' => $index_text, 
                               'menuWorks' => $menuWorks, 
                               'menuProjects' => $menuProjects,
@@ -119,13 +122,12 @@ class SiteController extends Controller
 
         $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
-
         $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('contactpage', ['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('contactpage', ['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function saveContactPage(Request $request) {
@@ -143,15 +145,14 @@ class SiteController extends Controller
 
         $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $about = $this->service->about($lingua);
-
-        $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('about', ['metaTags' => $metaTags, 'args' => $index_text, 'contact' => $contact, 'about' => $about, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('about', ['metaTags' => $metaTags, 'contact' => $contact, 'args' => $index_text, 'about' => $about, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function saveAboutPage(Request $request) {
@@ -191,6 +192,7 @@ class SiteController extends Controller
 
         $works = $this->service->work($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
         $portifolios = $this->service->workActive($lingua);
@@ -200,7 +202,7 @@ class SiteController extends Controller
 
         $contact = $this->service->contact($lingua);
 
-        return view('portifoliogeral',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'portifolioGeral' => $portifolioGeral, 'portifolios' => $portifolios, 'works' => $works, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('portifoliogeral',['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'portifolioGeral' => $portifolioGeral, 'portifolios' => $portifolios, 'works' => $works, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function portifolio($lingua,$id) {
@@ -214,7 +216,7 @@ class SiteController extends Controller
 
         $contact = $this->service->contact($lingua);
 
-        return view('portifolio',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('portifolio',['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'work' => $work, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     public function savePortifolioGeral(Request $request) {
@@ -256,21 +258,19 @@ class SiteController extends Controller
     }
 
     public function servicoGeral($lingua) {
+        
+        $index_text = $this->service->indexText($lingua);
         $servicoGeral = $this->service->servicoGeral($lingua);
         $servicos = $this->service->projectActive($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
 
-        $index_text = $this->service->indexText($lingua);
-
-        $contact = $this->service->contact($lingua);
-
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('servicosgeral',['metaTags' => $metaTags, 
+        return view('servicosgeral',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
-                                     'contact' => $contact, 
                                      'servicos' => $servicos, 
                                      'servicoGeral' => $servicoGeral,
                                      'menuWorks' => $menuWorks, 
@@ -282,21 +282,20 @@ class SiteController extends Controller
     // ------------------------------------- SERVICO -------------------------------------
 
     public function servico($lingua,$id) {
-        $project = $this->service->projectById($id,$lingua);
-        $metaTags = $this->service->metaTags();
-
-        $menuWorks = $this->service->workActive($lingua);
-
         $index_text = $this->service->indexText($lingua);
-
+        $metaTags = $this->service->metaTags();
         $contact = $this->service->contact($lingua);
+        
+        $menuWorks = $this->service->workActive($lingua);
+        
+        $project = $this->service->projectById($id,$lingua);
 
         $menuProjects = $this->service->projectActive($lingua);
 
         $nextprojects = $this->service->getProjectThatIsNotId($id);
         $nextProject = $this->service->getRandomProject($nextprojects);
 
-        return view('servico',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('servico',['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
 
     // ------------------------------------- SERVICO -------------------------------------
@@ -304,38 +303,33 @@ class SiteController extends Controller
     // ------------------------------------- OPORTUNIDADE -------------------------------------
 
     public function oportunidades($lingua) {
+        
+        $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
 
-        $index_text = $this->service->indexText($lingua);
-
-        $contact = $this->service->contact($lingua);
-
         $oportunidades = $this->service->oportunidade($lingua);
 
-        return view('oportunidades',['metaTags' => $metaTags, 
+        return view('oportunidades',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
-                                     'contact' => $contact, 
                                      'menuWorks' => $menuWorks, 
                                      'oportunidades' => $oportunidades]);
     }
 
     public function oportunidadeDetalhe($lingua,$id) {
+        
+        $index_text = $this->service->indexText($lingua);
         $oportunidade = $this->service->oportunidadeById($id,$lingua);
         $metaTags = $this->service->metaTags();
-
-        $menuWorks = $this->service->workActive($lingua);
-
-        $index_text = $this->service->indexText($lingua);
-
         $contact = $this->service->contact($lingua);
 
+        $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('oportunidadedetalhe',['metaTags' => $metaTags,
+        return view('oportunidadedetalhe',['metaTags' => $metaTags, 'contact' => $contact,
                                      'index_text' => $index_text,
-                                     'contact' => $contact,
                                      'menuWorks' => $menuWorks,
                                      'menuProjects' => $menuProjects,
                                      'oportunidade' => $oportunidade]);
@@ -364,38 +358,34 @@ class SiteController extends Controller
     // ------------------------------------- PROPRIEDADES -------------------------------------
 
     public function propriedades($lingua) {
+
+        $index_text = $this->service->indexText($lingua);
         $metaTags = $this->service->metaTags();
+        $contact = $this->service->contact($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
 
-        $index_text = $this->service->indexText($lingua);
-
-        $contact = $this->service->contact($lingua);
-
         $propriedades = $this->service->propriedade($lingua);
 
-        return view('propriedades',['metaTags' => $metaTags, 
+        return view('propriedades',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
-                                     'contact' => $contact, 
                                      'menuWorks' => $menuWorks, 
                                      'propriedades' => $propriedades]);
     }
 
     public function propriedadeDetalhe($lingua,$id) {
-        $propriedade = $this->service->propriedadeById($id,$lingua);
-        $metaTags = $this->service->metaTags();
-
-        $menuWorks = $this->service->workActive($lingua);
-
+        
         $index_text = $this->service->indexText($lingua);
-
+        $metaTags = $this->service->metaTags();
         $contact = $this->service->contact($lingua);
-
+        
+        $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
+        
+        $propriedade = $this->service->propriedadeById($id,$lingua);
 
-        return view('propriedadedetalhe',['metaTags' => $metaTags, 
+        return view('propriedadedetalhe',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
-                                     'contact' => $contact, 
                                      'menuWorks' => $menuWorks, 
                                      'menuProjects' => $menuProjects,
                                      'propriedade' => $propriedade]);

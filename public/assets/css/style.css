@@ -8962,3 +8962,16 @@ hr {
 .m-b-1em {
   margin-bottom: 1em;
 }
+
+.li-links-uteis {
+  margin-bottom: 10px;
+  height: 21px;
+}
+
+.text-align-end {
+  text-align: end;
+}
+
+.text-link {
+  color: blue;
+}
