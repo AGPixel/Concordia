@@ -19,12 +19,18 @@ class SiteController extends Controller
         $this->service = new SiteService();
     }
 
+    // ------------------------------------- META TAGS -------------------------------------
+
     public function saveMetaTagsPage(Request $request) {
 
         $this->service->saveMetaTags($request->all());
         
         return true;
     }
+
+    // ------------------------------------- META TAGS -------------------------------------
+
+    // ------------------------------------- INDEX -------------------------------------
 
     public function index($lingua) {
         
@@ -47,6 +53,68 @@ class SiteController extends Controller
         return true;
     }
 
+    // ------------------------------------- INDEX -------------------------------------
+
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    public function serviceTerms($lingua) {
+        
+        $index_text = $this->service->indexText($lingua);
+        $metaTags = $this->service->metaTags();
+        
+        $menuWorks = $this->service->workActive($lingua);
+        $menuProjects = $this->service->projectActive($lingua);
+
+        $serviceTerms = $this->service->serviceTerms($lingua);
+
+        return view('index', ['metaTags' => $metaTags, 
+                              'index_text' => $index_text, 
+                              'menuWorks' => $menuWorks, 
+                              'menuProjects' => $menuProjects,
+                              'serviceTerms' => $serviceTerms,
+                            ]);
+    }
+
+    public function saveServiceTerms(Request $request) {
+
+        $this->service->saveServiceTerms($request->all());
+        
+        return true;
+    }
+
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
+    public function privacyPolitics($lingua) {
+        
+        $index_text = $this->service->indexText($lingua);
+        $metaTags = $this->service->metaTags();
+        
+        $menuWorks = $this->service->workActive($lingua);
+        $menuProjects = $this->service->projectActive($lingua);
+
+        $privacyPolitics = $this->service->privacyPolitics($lingua);
+
+        return view('index', ['metaTags' => $metaTags, 
+                              'index_text' => $index_text, 
+                              'menuWorks' => $menuWorks, 
+                              'menuProjects' => $menuProjects,
+                              'privacyPolitics' => $privacyPolitics,
+                            ]);
+    }
+
+    public function savePrivacyPolitics(Request $request) {
+
+        $this->service->savePrivacyPolitics($request->all());
+        
+        return true;
+    }
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
+    // ------------------------------------- CONTATO -------------------------------------
+
     public function contato($lingua) {
 
         $index_text = $this->service->indexText($lingua);
@@ -66,6 +134,10 @@ class SiteController extends Controller
         
         return true;
     }
+
+    // ------------------------------------- CONTATO -------------------------------------
+
+    // ------------------------------------- SOBRE -------------------------------------
 
     public function sobre($lingua) {
 
@@ -88,6 +160,10 @@ class SiteController extends Controller
         return true;
     }
 
+    // ------------------------------------- SOBRE -------------------------------------
+
+    // ------------------------------------- WORK -------------------------------------
+
     public function saveWorkPage(Request $request) {
         $this->service->saveWork($request->all());
         
@@ -105,6 +181,10 @@ class SiteController extends Controller
         
         return true;
     }
+
+    // ------------------------------------- WORK -------------------------------------
+
+    // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
 
     public function portifolioGeral($lingua) {
         $portifolioGeral = $this->service->portifolioGeral($lingua);
@@ -143,6 +223,10 @@ class SiteController extends Controller
         return true;
     }
 
+    // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
+
+    // ------------------------------------- PROJECT PAGE -------------------------------------
+
     public function saveProjectPage(Request $request) {
         $this->service->saveProject($request->all());
         
@@ -160,6 +244,10 @@ class SiteController extends Controller
         
         return true;
     }
+
+    // ------------------------------------- PROJECT PAGE -------------------------------------
+
+    // ------------------------------------- SERVICO GERAL -------------------------------------
 
     public function saveServicoGeral(Request $request) {
         $this->service->saveServicoGeral($request->all());
@@ -189,6 +277,10 @@ class SiteController extends Controller
                                      'menuProjects' => $menuProjects]);
     }
 
+    // ------------------------------------- SERVICO GERAL -------------------------------------
+
+    // ------------------------------------- SERVICO -------------------------------------
+
     public function servico($lingua,$id) {
         $project = $this->service->projectById($id,$lingua);
         $metaTags = $this->service->metaTags();
@@ -206,6 +298,10 @@ class SiteController extends Controller
 
         return view('servico',['metaTags' => $metaTags, 'index_text' => $index_text, 'contact' => $contact, 'project' => $project, 'nextProject' => $nextProject, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
     }
+
+    // ------------------------------------- SERVICO -------------------------------------
+
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
 
     public function oportunidades($lingua) {
         $metaTags = $this->service->metaTags();
@@ -263,6 +359,10 @@ class SiteController extends Controller
         return true;
     }
 
+    // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+    // ------------------------------------- PROPRIEDADES -------------------------------------
+
     public function propriedades($lingua) {
         $metaTags = $this->service->metaTags();
 
@@ -318,4 +418,6 @@ class SiteController extends Controller
         
         return true;
     }
+
+    // ------------------------------------- PROPRIEDADES -------------------------------------
 }

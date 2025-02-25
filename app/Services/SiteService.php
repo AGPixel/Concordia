@@ -32,6 +32,46 @@ class SiteService extends BaseService
 
     // ------------------------------------- META TAGS -------------------------------------
 
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    public function serviceTerms($lingua = 'pt') {
+
+        $serviceTerms = $this->repository->serviceTerms();
+
+        if ($lingua == 'eng') {
+            $serviceTerms->title = $this->changeLanguage($serviceTerms->title,$serviceTerms->title_eng);
+            $serviceTerms->content = $this->changeLanguage($serviceTerms->content,$serviceTerms->content_eng);
+        }
+
+        return $serviceTerms;
+    }
+
+    public function saveServiceTerms(array $arr) {
+        $this->repository->saveServiceTerms($arr);
+    }
+
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
+    public function privacyPolitics($lingua = 'pt') {
+
+        $privacyPolitics = $this->repository->privacyPolitics();
+
+        if ($lingua == 'eng') {
+            $privacyPolitics->title = $this->changeLanguage($privacyPolitics->title,$privacyPolitics->title_eng);
+            $privacyPolitics->content = $this->changeLanguage($privacyPolitics->content,$privacyPolitics->content_eng);
+        }
+
+        return $privacyPolitics;
+    }
+
+    public function savePrivacyPolitics(array $arr) {
+        $this->repository->savePrivacyPolitics($arr);
+    }
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
     // ------------------------------------- INDEX_TEXT -------------------------------------
 
     public function indexText($lingua = 'pt') {

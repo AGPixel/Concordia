@@ -44,6 +44,26 @@ class HomeController extends Controller
 
     // ------------------------------------- INDEX_TEXT -------------------------------------
 
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    public function serviceTerms() {
+        $service_terms = $this->siteService->serviceTerms();
+
+        return view('dashboard.viewServiceTermsPage', ['serviceTerms' => $service_terms]);
+    }
+
+    // ------------------------------------- SERVICE TERMS -------------------------------------
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
+    public function privacyPolitics() {
+        $privacy_politics = $this->siteService->privacyPolitics();
+
+        return view('dashboard.viewPrivacyPoliticsPage', ['privacyPolitics' => $privacy_politics]);
+    }
+
+    // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
     // ------------------------------------- CONTACT -------------------------------------
 
     public function contactPage() {

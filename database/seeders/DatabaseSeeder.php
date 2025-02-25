@@ -13,6 +13,8 @@ use App\Models\Propriedade;
 use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
 use App\Models\Project;
+use App\Models\ServiceTerms;
+use App\Models\PrivacyPolitics;
 use App\Models\MetaTags;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -176,5 +178,21 @@ class DatabaseSeeder extends Seeder
         $propriedade->job_2 = 'Job 2';
         $propriedade->active = true;
         $propriedade->save();
+
+        $serviceTerms = new ServiceTerms();
+        $serviceTerms->title = 'Titulo pt';
+        $serviceTerms->title_eng = 'Titulo eng';
+        $serviceTerms->content = 'Content pt';
+        $serviceTerms->content_eng = 'Content eng';
+        $serviceTerms->active = true;
+        $serviceTerms->save();
+
+        $privacyPolitics = new PrivacyPolitics();
+        $privacyPolitics->title = 'Titulo pt';
+        $privacyPolitics->title_eng = 'Titulo eng';
+        $privacyPolitics->content = 'Content pt';
+        $privacyPolitics->content_eng = 'Content eng';
+        $privacyPolitics->active = true;
+        $privacyPolitics->save();
     }
 }

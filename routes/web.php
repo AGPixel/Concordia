@@ -40,6 +40,10 @@ Route::get('/pt/contact-page', [HomeController::class, 'contactPage'])->name('vi
 
 Route::get('/pt/about-page', [HomeController::class, 'aboutPage'])->name('view.about-page');
 
+Route::get('/pt/service-terms-page', [HomeController::class, 'serviceTerms'])->name('view.service-terms-page');
+
+Route::get('/pt/privacy-politics-page', [HomeController::class, 'privacyPolitics'])->name('view.privacy-politics-page');
+
 Route::get('/pt/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
 Route::get('/pt/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
 Route::get('/pt/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');

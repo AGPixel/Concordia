@@ -72,6 +72,18 @@
                         <p class="text">Propriedade</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/pt/service-terms-page" class="nav-link">
+                        <i class="nav-icon fa fa-indent"></i>
+                        <p class="text">Termos do serviço</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pt/privacy-politics-page" class="nav-link">
+                        <i class="nav-icon fa fa-indent"></i>
+                        <p class="text">Políticas de privacidade</p>
+                    </a>
+                </li>
                 <li class="nav-header">CONFIGURAÇÕES</li>
                 <li class="nav-item">
                     <a href="/pt/trocar-senha" class="nav-link">

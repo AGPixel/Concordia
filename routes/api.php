@@ -28,6 +28,10 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::post('/save-portifolio-page', [SiteController::class, 'savePortifolioGeral'])->name('api.save-portifolio-page');
     
     Route::post('/save-servico-page', [SiteController::class, 'saveServicoGeral'])->name('api.save-servico-page');
+
+    Route::post('/save-service-terms-page', [SiteController::class, 'saveServiceTerms'])->name('api.save-service-terms-page');
+
+    Route::post('/save-privacy-politics-page', [SiteController::class, 'savePrivacyPolitics'])->name('api.save-privacy-politics-page');
     
     Route::post('/save-work-page', [SiteController::class, 'saveWorkPage'])->name('api.save-work-page');
     Route::delete('/delete-work-page', [SiteController::class, 'deleteWorkPage'])->name('api.delete-work-page');

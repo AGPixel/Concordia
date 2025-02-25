@@ -9,6 +9,8 @@ use App\Models\About;
 use App\Models\Work;
 use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
+use App\Models\ServiceTerms;
+use App\Models\PrivacyPolitics;
 use App\Models\Project;
 use App\Models\Oportunidade;
 use App\Models\Propriedade;
@@ -97,6 +99,36 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
+
+     // ------------------------------------- SERVICE TERMS -------------------------------------
+
+     public function serviceTerms() {
+          $modelServiceTerms = new ServiceTerms();
+          return $modelServiceTerms::first();
+     }
+
+     public function saveServiceTerms(array $arr) {
+          $serviceTerms = $this->serviceTerms();
+          $serviceTerms->fill($arr);
+          $serviceTerms->save();
+     }
+
+     // ------------------------------------- SERVICE TERMS -------------------------------------
+
+     // ------------------------------------- PRIVACY POLITICS -------------------------------------
+
+     public function privacyPolitics() {
+          $modelPrivacyPolitics = new PrivacyPolitics();
+          return $modelPrivacyPolitics::first();
+     }
+
+     public function savePrivacyPolitics(array $arr) {
+          $privacyPolitics = $this->privacyPolitics();
+          $privacyPolitics->fill($arr);
+          $privacyPolitics->save();
+     }
+
+     // ------------------------------------- PRIVACY POLITICS -------------------------------------
 
      // ------------------------------------- WORK -------------------------------------
 
