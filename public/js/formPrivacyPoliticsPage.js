@@ -3,6 +3,9 @@ function savePrivacyPolitics() {
 
     showLoading();
 
+    let valuePrivacyPoliticsContent = document.getElementById('privacyPoliticsContent').getElementsByClassName('ck-editor__editable')[0];
+    let valuePrivacyPoliticsContentEng = document.getElementById('privacyPoliticsContentEng').getElementsByClassName('ck-editor__editable')[0];
+
     let form = {
         meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
         meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
@@ -10,8 +13,8 @@ function savePrivacyPolitics() {
 
         title: document.getElementById('InputPrivacyPoliticsTitle').value,
         title_eng: document.getElementById('InputPrivacyPoliticsTitleEng').value,
-        content: document.getElementById('InputPrivacyPoliticsContent').value,
-        content_eng: document.getElementById('InputPrivacyPoliticsContentEng').value,
+        content: valuePrivacyPoliticsContent.innerHTML,
+        content_eng: valuePrivacyPoliticsContentEng.innerHTML,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-privacy-politics-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

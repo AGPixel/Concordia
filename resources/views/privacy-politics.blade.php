@@ -78,7 +78,11 @@
                     <div class="container">
                         <h3 class="title text-upper mb-30">{{ $privacyPolitics->title ? $privacyPolitics->title : 'titulo' }}</h3>
                         <p class="max-w750">
-                            {{ $privacyPolitics->content ? $privacyPolitics->content : 'conteudo' }}
+                            @php
+                            if($privacyPolitics->content) {
+                            echo $privacyPolitics->content;
+                            }
+                            @endphp
                         </p>
                     </div>
                 </div>

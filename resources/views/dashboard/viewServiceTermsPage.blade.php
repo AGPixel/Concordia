@@ -1,4 +1,5 @@
 @include('components.header')
+<script src="https://cdn.ckeditor.com/ckeditor5/11.0.1/classic/ckeditor.js"></script>
 
 <body class="hold-transition sidebar-mini">
 
@@ -30,6 +31,10 @@
                 padding-bottom: 1em !important;
             }
 
+            .ck-editor__main .ck-content {
+                height: 10em;
+            }
+
         </style>
         <!-- Main content -->
         <div class="content">
@@ -53,12 +58,34 @@
                                     ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Content',
-                                    'id_input_text' => 'InputServiceTermsContent',
-                                    'arg_value' => isset($serviceTerms->content) ? $serviceTerms->content : '',
-                                    'arg_value_eng' => isset($serviceTerms->content_eng) ? $serviceTerms->content_eng : ''
-                                    ])
+                                    <div class="form-group input-text-language-48percent m-left-4percent" id="serviceTermsContent">
+                                        <img class="m-bot-05 image_bandeira" src="{{asset("../storage/pt.png")}}" alt="">
+                                        <textarea style="height:auto!important" rows="20" name="content" id="InputServiceTermsContent">
+                                        {{ isset($serviceTerms->content) ? $serviceTerms->content : '' }}
+                                        </textarea>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#InputServiceTermsContent'))
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+
+                                        </script>
+                                    </div>
+                                    <div class="form-group input-text-language-48percent" id="serviceTermsContentEng">
+                                        <img class="m-bot-05 image_bandeira" src="{{asset("../storage/eng.png")}}" alt="">
+                                        <textarea style="height:auto!important" rows="20" name="content" id="InputServiceTermsContentEng">
+                                        {{!! isset($serviceTerms->content_eng) ? $serviceTerms->content_eng : '' !!}}
+                                        </textarea>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#InputServiceTermsContentEng'))
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+
+                                        </script>
+                                    </div>
                                 </div>
 
                                 <div class="card-footer">

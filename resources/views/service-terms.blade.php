@@ -78,7 +78,11 @@
                     <div class="container">
                         <h3 class="title text-upper mb-30">{{ $serviceTerms->title ? $serviceTerms->title : 'titulo' }}</h3>
                         <p class="max-w750">
-                            {{ $serviceTerms->content ? $serviceTerms->content : 'conteudo' }}
+                            @php
+                            if($serviceTerms->content) {
+                            echo $serviceTerms->content;
+                            }
+                            @endphp
                         </p>
                     </div>
                 </div>

@@ -31,6 +31,10 @@
                 padding-bottom: 1em !important;
             }
 
+            .ck-editor__main .ck-content {
+                height: 10em;
+            }
+
         </style>
         <!-- Main content -->
         <div class="content">
@@ -54,26 +58,36 @@
                                     ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtextpteng',[
-                                    'title' => 'Content',
-                                    'id_input_text' => 'InputPrivacyPoliticsContent',
-                                    'arg_value' => isset($privacyPolitics->content) ? $privacyPolitics->content : '',
-                                    'arg_value_eng' => isset($privacyPolitics->content_eng) ? $privacyPolitics->content_eng : ''
-                                    ])
-                                </div>
-                                <div class="card-body">
-                                    <textarea name="content" id="editor">
-                                        &lt;p&gt;This is some sample content.&lt;/p&gt;
-                                    </textarea>
-                                    <!-- parei aqui, finalizando o politica de privacidade -->
-                                    <script>
-                                        ClassicEditor
-                                            .create(document.querySelector('#editor'))
-                                            .catch(error => {
-                                                console.error(error);
-                                            });
+                                    <div class="form-group input-text-language-48percent m-left-4percent" id="privacyPoliticsContent">
+                                        <img class="m-bot-05 image_bandeira" src="{{asset("../storage/pt.png")}}" alt="">
+                                        <label for="InputPrivacyPoliticsContent">Content</label>
+                                        <textarea name="content" id="InputPrivacyPoliticsContent">
+                                        {{!! isset($privacyPolitics->content) ? $privacyPolitics->content : '' !!}}
+                                        </textarea>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#InputPrivacyPoliticsContent'))
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
 
-                                    </script>
+                                        </script>
+                                    </div>
+                                    <div class="form-group input-text-language-48percent" id="privacyPoliticsContentEng">
+                                        <img class="m-bot-05 image_bandeira" src="{{asset("../storage/eng.png")}}" alt="">
+                                        <label for="InputPrivacyPoliticsContentEng">Content</label>
+                                        <textarea name="content" id="InputPrivacyPoliticsContentEng">
+                                        {{ isset($privacyPolitics->content_eng) ? $privacyPolitics->content_eng : '' }}
+                                        </textarea>
+                                        <script>
+                                            ClassicEditor
+                                                .create(document.querySelector('#InputPrivacyPoliticsContentEng'))
+                                                .catch(error => {
+                                                    console.error(error);
+                                                });
+
+                                        </script>
+                                    </div>
                                 </div>
 
                                 <div class="card-footer">
