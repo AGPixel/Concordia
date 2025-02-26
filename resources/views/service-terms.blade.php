@@ -23,7 +23,7 @@
         }
 
         span .word {
-            height: 1.21em !important;
+            height: 1.41em !important;
             padding-top: 4px;
         }
 
