@@ -40,6 +40,10 @@
             font-size: 3.5em !important;
         }
 
+        .testimonial-font-size {
+            font-size: 3.6em !important;
+        }
+
     </style>
 </head>
 
@@ -345,7 +349,7 @@
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title m-top-0px">“{{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}”</h3>
+                                                <h3 class="title m-top-0px testimonial-font-size">“{{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}”</h3>
 
                                                 <div class="auther mt-20">
                                                     <h5 class="text-upper mb-5">{{ $testimonial->company ? $testimonial->company : 'testimonials_company_1' }}</h5>
