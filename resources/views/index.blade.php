@@ -492,7 +492,13 @@
                     <div class="container">
                         <h3 class="title text-upper mb-30">{{ $args->about_us_title ? $args->about_us_title : 'about_us_description' }}</h3>
                         <p class="max-w750">
-                            {{ $args->about_us_description ? $args->about_us_description : 'about_us_description' }}
+                            @php
+                            if($args->about_us_description) {
+                            echo $args->about_us_description;
+                            } else {
+                                echo "about_us_description";
+                            }
+                            @endphp
                         </p>
                     </div>
                 </div>
