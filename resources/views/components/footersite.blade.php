@@ -114,6 +114,7 @@
     <div class="copyright background-main">
         <div class="container d-flex align-items-center justify-content-between">
             <strong>Copyright Concórdia Management 2025{{ date("Y") == '2025' ? '' : '-'.date("Y") }} &copy; Todos os direitos reservados.</strong>
+            Licença AMI 13796
             <div>Desenvolvido por <a class="text-link" href="https://pixelinmotion.pt/" target="_blank">Pixel In Motion</a></div>
             <!-- 
             Desenvolvedor: Lucas Daniel Beltrame de Lima Rodrigues 
