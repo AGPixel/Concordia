@@ -86,10 +86,10 @@
                 </ul>
 
                 <div style="margin-top: 2em;">
-                    {{ $contact->footer_email }}
+                    <a href="malito:{{ $contact->footer_email }}">{{ $contact->footer_email }}</a>
                 </div>
                 <div style="margin-top: 0.5em;">
-                    {{ $contact->footer_call }}
+                    <a href="tel:{{ $contact->footer_call }}">{{ $contact->footer_call }}</a>
                 </div>
 
             </div>
