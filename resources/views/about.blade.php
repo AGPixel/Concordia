@@ -36,6 +36,10 @@
             padding-top: 4px;
         }
 
+        .title-font-size {
+            font-size: 3.5em !important;
+        }
+
     </style>
 </head>
 
@@ -168,37 +172,37 @@
 
                                 @if(isset($about->about_service_1))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/services/1.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_1 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax ">{{ $about->about_service_1 }}</a></h2>
                                     <span class="number">01</span>
                                 </div>
                                 @endif
                                 @if(isset($about->about_service_2))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_2 ? asset("../storage/$about->about_service_img_2") : asset("/assets/img/services/2.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_2 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax">{{ $about->about_service_2 }}</a></h2>
                                     <span class="number">02</span>
                                 </div>
                                 @endif
                                 @if(isset($about->about_service_3))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_3 ? asset("../storage/$about->about_service_img_3") : asset("/assets/img/services/3.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_3 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax">{{ $about->about_service_3 }}</a></h2>
                                     <span class="number">03</span>
                                 </div>
                                 @endif
                                 @if(isset($about->about_service_4))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_4 ? asset("../storage/$about->about_service_img_4") : asset("/assets/img/services/4.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_4 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax">{{ $about->about_service_4 }}</a></h2>
                                     <span class="number">04</span>
                                 </div>
                                 @endif
                                 @if(isset($about->about_service_5))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_5 ? asset("../storage/$about->about_service_img_5") : asset("/assets/img/services/5.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_5 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax">{{ $about->about_service_5 }}</a></h2>
                                     <span class="number">05</span>
                                 </div>
                                 @endif
                                 @if(isset($about->about_service_6))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_6 ? asset("../storage/$about->about_service_img_6") : asset("/assets/img/services/6.jpg")}}">
-                                    <h2 class="title"><a href="#" class="effect-ajax">{{ $about->about_service_6 }}</a></h2>
+                                    <h2 class="title title-font-size"><a href="#" class="effect-ajax">{{ $about->about_service_6 }}</a></h2>
                                     <span class="number">06</span>
                                 </div>
                                 @endif
