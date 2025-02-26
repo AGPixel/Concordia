@@ -83,20 +83,6 @@
                 <div class="footer-head w-100 p-relative mt-80 z-index-2">
                     <div class="container d-flex justify-content-between">
                         <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
-
-                            <a class="button v-dark background-section" href="#page_wrapper" rel="nofollow" data-dsn-option='{"ease": "power4.inOut" , "duration" : 1.5}'>
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Scroll Down">
-                                    <span>Scroll Down</span>
-                                </span>
-                            </a>
-
-                            <span class="icon v-dark background-section">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                    </path>
-                                </svg>
-                            </span>
-
                         </div>
 
                         <div class="social-box d-flex align-items-center">

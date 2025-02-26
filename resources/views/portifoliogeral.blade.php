@@ -69,20 +69,6 @@
                 <div class="footer-head w-100 p-relative mt-80 z-index-2">
                     <div class="container d-flex justify-content-between">
                         <div class="dsn-btn dsn-btn-shape rotate-icon d-flex">
-
-                            <a class="button v-dark background-section" href="#">
-                                <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="Scroll Down">
-                                    <span>Scroll Down</span>
-                                </span>
-                            </a>
-
-                            <span class="icon v-dark background-section">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                    </path>
-                                </svg>
-                            </span>
-
                         </div>
 
                         <div class="social-box d-flex align-items-center">
@@ -125,92 +111,69 @@
 
                             <div class="dsn-filtering z-index-1 p-relative w-100 mb-70 pt-50 pb-50 border-bottom">
 
-                                <div class="filtering-t w-100">
-                                    <div class="filtering-wrap w-100">
-                                        <div class="filtering w-100">
-                                            <div class="container">
-                                                <button class="active" data-filter="*" type="button">
-                                                    All
-                                                </button>
-                                                <button type="button" class="dsn-filter-category-production" data-filter=".brand , .category-brand">
-                                                    Brand
-                                                </button>
-                                                <button type="button" class="dsn-filter-category-photography" data-filter=".photography , .category-photography">
-                                                    Photography
-                                                </button>
-                                                <button type="button" class="sm-title-block dsn-filter-category-creative" data-filter=".sports , .category-sports">Sports
-                                                </button>
-                                                <button type="button" class="sm-title-block dsn-filter-category-creative" data-filter=".fashion , .category-fashion">Fashion
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                <div class="container">
+                                    <div class="dsn-posts hover-box-item d-grid grid-md-2 dsn-isotope use-filter v-dark-head" data-dsn-gap="30px">
 
-                            <div class="container">
-                                <div class="dsn-posts hover-box-item d-grid grid-md-2 dsn-isotope use-filter v-dark-head" data-dsn-gap="30px">
+                                        @foreach($portifolios as $id => $portifolio)
+                                        <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
 
-                                    @foreach($portifolios as $id => $portifolio)
-                                    <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
+                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
+                                                <div class="box-content d-flex ">
+                                                    <div class="img-cat w-100">
+                                                        <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
+                                                            <img src="{{ isset($portifolio->img_1) ? asset("../storage/$portifolio->img_1") : asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                        </div>
 
-                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
-                                            <div class="box-content d-flex ">
-                                                <div class="img-cat w-100">
-                                                    <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
-                                                        <img src="{{ isset($portifolio->img_1) ? asset("../storage/$portifolio->img_1") : asset("/assets/img/portfolio/project1/1.jpg")}}" class="cover-bg-img dsn-swiper-parallax-transform" alt="" />
+                                                        <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
+                                                            <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
+                                                                </path>
+                                                            </svg>
+                                                            <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
+                                                                <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
+                                                                </path>
+                                                            </svg>
+                                                            @if(isset($portifolio->type_1_1))
+                                                            <span class="background-main heading-color">{{ $portifolio->type_1_1 }}</span>
+                                                            @endif
+                                                            @if(isset($portifolio->type_1_2))
+                                                            <span class="background-main heading-color">{{ $portifolio->type_1_2 }}</span>
+                                                            @endif
+                                                        </div>
                                                     </div>
 
-                                                    <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
-                                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                            </path>
-                                                        </svg>
-                                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                                            </path>
-                                                        </svg>
-                                                        @if(isset($portifolio->type_1_1))
-                                                        <span class="background-main heading-color">{{ $portifolio->type_1_1 }}</span>
-                                                        @endif
-                                                        @if(isset($portifolio->type_1_2))
-                                                        <span class="background-main heading-color">{{ $portifolio->type_1_2 }}</span>
-                                                        @endif
-                                                    </div>
-                                                </div>
+                                                    <div class="post-content p-30 v-dark-head p-relative z-index-1 d-flex flex-column p-absolute w-100 bottom-0">
 
-                                                <div class="post-content p-30 v-dark-head p-relative z-index-1 d-flex flex-column p-absolute w-100 bottom-0">
-
-                                                    <div class="post-info">
-                                                        <h2 class="post-title word-wrap d-inline-block title-block">
-                                                            {{ $portifolio->title }}
-                                                            <!--
+                                                        <div class="post-info">
+                                                            <h2 class="post-title word-wrap d-inline-block title-block">
+                                                                {{ $portifolio->title }}
+                                                                <!--
                                                         <a href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{ { $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">
                                                         </a>
                                                         -->
-                                                        </h2>
+                                                            </h2>
 
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
+                                            </a>
 
-                                    </article>
-                                    @endforeach
+                                        </article>
+                                        @endforeach
 
+                                    </div>
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- ========== End Portfolio ========== -->
+                    <!-- ========== End Portfolio ========== -->
 
-                @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
+                    @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
+
+                </div>
 
             </div>
-
-        </div>
 
 
 
