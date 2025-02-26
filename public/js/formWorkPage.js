@@ -386,6 +386,6 @@ function saveWorkPage(id) {
 }
 
 function showNewImage(num) {
-    document.getElementById('bt-portiflio-nova-imagem' + (num - 1)).classList.add('card-invisible');
+    document.getElementById('bt-portifolio-nova-imagem' + (num - 1)).classList.add('card-invisible');
     document.getElementById('container-img-' + num).classList.remove('card-invisible');
 }

@@ -3,7 +3,18 @@
 namespace App\Services;
 
 use App\Models\Site;
+use App\Models\MetaTags;
+use App\Models\IndexText;
+use App\Models\Contact;
+use App\Models\About;
 use App\Models\Work;
+use App\Models\PortifolioGeral;
+use App\Models\ServicoGeral;
+use App\Models\ServiceTerms;
+use App\Models\PrivacyPolitics;
+use App\Models\Project;
+use App\Models\Oportunidade;
+use App\Models\Propriedade;
 use App\Repositories\SiteRepository;
 use App\Exceptions\SiteException;
 use App\Exceptions\OldPasswordIncorrectException;
@@ -528,6 +539,10 @@ class SiteService extends BaseService
         return $portifolios;
     }
 
+    public function newBlankWork() {
+        return new Work();
+    }
+
     public function saveNewWork(array $arr) {
         $arr = $this->uploadWorkImages($arr);
         $this->repository->saveNewWork($arr);
@@ -705,6 +720,10 @@ class SiteService extends BaseService
             }
         }
         return $project;
+    }
+
+    public function newBlankProject() {
+        return new Project();
     }
 
     public function saveNewProject(array $arr) {
@@ -962,6 +981,10 @@ class SiteService extends BaseService
         }
 
         return $oportunidade;
+    }
+
+    public function newBlankOportunidade() {
+        return new Oportunidade();
     }
 
     public function saveNewOportunidade(array $arr) {
@@ -1260,6 +1283,10 @@ class SiteService extends BaseService
         }
 
         return $propriedade;
+    }
+
+    public function newBlankPropriedade() {
+        return new Propriedade();
     }
 
     public function saveNewPropriedade(array $arr) {

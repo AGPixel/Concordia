@@ -100,7 +100,9 @@ class HomeController extends Controller
     }
 
     public function newWorkPage() {
-        return view('dashboard.viewCreateUpdateWorkPage', ['work' => []]);
+        $work = $this->siteService->newBlankWork();
+
+        return view('dashboard.viewCreateUpdateWorkPage', ['work' => $work]);
     }
 
     // ------------------------------------- WORK -------------------------------------
@@ -121,7 +123,9 @@ class HomeController extends Controller
     }
 
     public function newProjectPage() {
-        return view('dashboard.viewCreateUpdateProjectPage', ['project' => []]);
+        $project = $this->siteService->newBlankProject();
+
+        return view('dashboard.viewCreateUpdateProjectPage', ['project' => $project]);
     }
 
     // ------------------------------------- PROJECT -------------------------------------
@@ -142,7 +146,9 @@ class HomeController extends Controller
     }
 
     public function newOportunidadePage() {
-        return view('dashboard.viewCreateUpdateOportunidadePage', ['oportunidade' => []]);
+        $oportunidade = $this->siteService->newBlankOportunidade();
+
+        return view('dashboard.viewCreateUpdateOportunidadePage', ['oportunidade' => $oportunidade]);
     }
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
@@ -163,7 +169,9 @@ class HomeController extends Controller
     }
 
     public function newPropriedadePage() {
-        return view('dashboard.viewCreateUpdatePropriedadePage', ['propriedade' => []]);
+        $propriedade = $this->siteService->newBlankPropriedade();
+
+        return view('dashboard.viewCreateUpdatePropriedadePage', ['propriedade' => $propriedade]);
     }
 
     // ------------------------------------- PROPRIEDADE -------------------------------------
