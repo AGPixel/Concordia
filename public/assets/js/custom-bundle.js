@@ -1,6 +1,6 @@
 const dsnParam = {
     map: {
-        marker_icon: "assets/img/map-marker.png",
+        marker_icon: "../assets/img/map-marker.png",
         api: "AIzaSyDMyAS2jdzj-vdgBIFaIStYOWJtSlghndg"
     },
     cursor: {
