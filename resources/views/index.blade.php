@@ -61,6 +61,10 @@
             height: 1.37em !important;
         }
 
+        .section-title {
+            height: auto !important;
+        }
+
     </style>
 </head>
 
@@ -471,10 +475,11 @@
                         <div class="testimonials-inner d-flex over-hidden">
                             <div class="swiper swiper-container">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
+                                    @foreach($testimonials as $id => $testimonial)
+                                    @if($id < 2) <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                         <div class="content">
                                             <div class="rating">
-                                                <h3 class="heading">{{ $args->testimonials_num_1 ? $args->testimonials_num_1 : 'testimonials_num_1' }}
+                                                <h3 class="heading">{{ $testimonial->num ? $testimonial->num : 'testimonials_num_1' }}
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                                         <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                                                     </svg>
@@ -484,7 +489,7 @@
                                             </div>
 
                                             <p class="title-block mt-50 text-upper">
-                                                {{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}
+                                                {{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}
                                             </p>
 
                                             <div class="quote mt-30">
@@ -499,373 +504,247 @@
                                         <div class="box-authoer w-100 v-light background-main p-20">
                                             <div class="authoer d-flex">
                                                 <div class="text background-section">
-                                                    <h5>{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
-                                                    <span>{{ $args->testimonials_name_1 ? $args->testimonials_name_1 : 'testimonials_name_1' }}</span>
+                                                    <h5>{{ $testimonial->company ? $testimonial->company : 'testimonials_company_1' }}</h5>
+                                                    <span>{{ $testimonial->name ? $testimonial->name : 'testimonials_name_1' }}</span>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
-                                        <div class="content">
-                                            <div class="rating">
-                                                <h3 class="heading">{{ $args->testimonials_num_2 ? $args->testimonials_num_2 : 'testimonials_num_2' }}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                                        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                                                    </svg>
-                                                </h3>
-
-                                                <p class="text-upper">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "de 5 estrelas" : "out of 5 stars" : "de 5 estrelas" }}</p>
-                                            </div>
-
-                                            <p class="title-block mt-50 text-upper">
-                                                {{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}
-                                            </p>
-
-                                            <div class="quote mt-30">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30" fill="none">
-                                                    <path d="M0 0V30L15.0025 15V0H0Z" fill="#030104"></path>
-                                                    <path d="M24.9961 0V30L39.9986 15V0H24.9961Z" fill="#030104">
-                                                    </path>
-                                                </svg>
-                                            </div>
-                                        </div>
-
-                                        <div class="box-authoer w-100 v-light background-main p-20">
-                                            <div class="authoer d-flex">
-                                                <div class="text background-section">
-                                                    <h5>{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
-                                                    <span>{{ $args->testimonials_name_2 ? $args->testimonials_name_2 : 'testimonials_name_2' }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- ==========  End testimonials ========== -->
-
-                <!-- ========== Team ========== -->
-                <section class="dsn-team section-padding background-section">
-                    <div class="container">
-                        <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">{{ $args->pre_title_4 ? $args->pre_title_4 : 'pre_title_4' }}</span>
-                            <h2 class="title ">
-                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
-                            </h2>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="d-grid grid-lg-3 grid-md-2">
-                            <div class="team-item d-flex align-items-end">
-                                <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
-                                </div>
-                                <div class="content d-flex justify-content-between w-100">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
-                                        </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="team-item d-flex align-items-end">
-                                <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
-                                </div>
-                                <div class="content d-flex justify-content-between w-100">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
-                                        </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="team-item d-flex align-items-end">
-                                <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
-                                </div>
-                                <div class="content w-100 d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
-                                        </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- ========== End Team ========== -->
-
-
-                <!-- ========== Blog ==========
-                <section class="dsn-cards-post section-padding">
-                    <div class="container">
-                        <div class="section-title dsn-fill mb-70 d-flex flex-column">
-                            <span class="sub-heading mb-5">SERVICES</span>
-                            <h2 class="title ">Find a
-                                service That<br>
-                                works for you</h2>
-                        </div>
-                    </div>
-
-                    <div class="container">
-
-                        <div class="dsn-posts">
-                            <div class="d-grid grid-lg-3 grid-md-2">
-                                <div class="post-item p-relative d-flex flex-column justify-content-end over-hidden">
-                                    <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
-                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <span class="background-section heading-color">Branding</span>
-                                    </div>
-
-                                    <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/1.jpg")}}" alt="">
-                                    </div>
-
-                                    <div class="content p-relative z-index-1 mt-20">
-                                        <span class="date mb-10 background-section p-5">13 June 2023</span>
-                                        <h4 class="title-block text-upper fw-bold">Curating a workplace that inspires
-                                            all of us</h4>
-                                    </div>
-                                </div>
-
-                                <div class="post-item p-relative d-flex flex-column justify-content-end over-hidden">
-                                    <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
-                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <span class="background-section heading-color">Branding</span>
-                                    </div>
-
-                                    <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/2.jpg")}}" alt="">
-                                    </div>
-
-                                    <div class="content p-relative z-index-1 mt-20">
-                                        <span class="date mb-10 background-section p-5">13 June 2023</span>
-                                        <h4 class="title-block text-upper fw-bold">Curating a workplace that inspires
-                                            all of us</h4>
-                                    </div>
-                                </div>
-
-                                <div class="post-item p-relative d-flex flex-column justify-content-end over-hidden">
-                                    <div class="cat background-main d-flex p-absolute top-0 right-0 z-index-1">
-                                        <svg class="top-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <svg class="bottom-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 100 100" xml:space="preserve">
-                                            <path d="M98.1 0h1.9v51.9h-1.9c0-27.6-22.4-50-50-50V0h50z">
-                                            </path>
-                                        </svg>
-                                        <span class="background-section heading-color">Branding</span>
-                                    </div>
-
-                                    <div class="box-img w-100 h-500">
-                                        <img class="cover-bg-img has-border-radius" src="{ {asset("/assets/img/blog/3.jpg")}}" alt="">
-                                    </div>
-
-                                    <div class="content p-relative z-index-1 mt-20">
-                                        <span class="date mb-10 background-section p-5">13 June 2023</span>
-                                        <h4 class="title-block text-upper fw-bold">Curating a workplace that inspires
-                                            all of us</h4>
-                                    </div>
-                                </div>
+                                @endif
+                                @endforeach
 
                             </div>
                         </div>
                     </div>
-                </section>
-                 ========== End Blog ========== -->
+            </div>
+            </section>
+            <!-- ==========  End testimonials ========== -->
 
-                <!-- ========== Brand ========== -->
-                @if(isset($args->brands_bg_img))
-                <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
-                    <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
-                        <div class="img-box-parallax before-z-index w-100 h-100 p-absolute top-0 bottom-0 left-0" data-overlay="7" data-dsn-grid="move-up">
-                            <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
-                        </div>
+            <!-- ========== Team ========== -->
+            <section class="dsn-team section-padding background-section">
+                <div class="container">
+                    <div class="section-title dsn-fill mb-70 d-flex flex-column">
+                        <span class="sub-heading mb-5">{{ $args->pre_title_4 ? $args->pre_title_4 : 'pre_title_4' }}</span>
+                        <h2 class="title ">
+                            {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
+                        </h2>
                     </div>
-                    <div class="container">
-                        <div class="brand-inner d-grid grid-md-2 grid-lg-4  align-items-center p-relative z-index-1">
-                            <div class="brand-boxs d-flex flex-column align-items-end">
-                                @if(isset($args->brands_img_1))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_1") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_2))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_2") }}" alt="">
-                                </div>
-                                @endif
-                            </div>
+                </div>
 
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_5))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_6))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
-                                </div>
-                                @endif
+                <div class="container">
+                    <div class="d-grid grid-lg-3 grid-md-2">
+                        <div class="team-item d-flex align-items-end">
+                            <div class="box-img">
+                                <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                             </div>
+                            <div class="content d-flex justify-content-between w-100">
+                                <div class="text">
+                                    <h4 class="title-block text-upper mb-5">
+                                        {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
+                                    </h4>
+                                    <span>
+                                        {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
+                                    </span>
+                                </div>
+                                <div class="social-inner d-flex">
+                                    <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                    <div class="social d-flex flex-column background-section">
+                                        <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
 
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_3))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_3") }}" alt="">
+                                        <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+
+                                        <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                                @endif
-                                @if(isset($args->brands_img_4))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_4") }}" alt="">
-                                </div>
-                                @endif
                             </div>
+                        </div>
 
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_5))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
+                        <div class="team-item d-flex align-items-end">
+                            <div class="box-img has-border-radius">
+                                <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
+                            </div>
+                            <div class="content d-flex justify-content-between w-100">
+                                <div class="text">
+                                    <h4 class="title-block text-upper mb-5">
+                                        {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
+                                    </h4>
+                                    <span>
+                                        {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
+                                    </span>
                                 </div>
-                                @endif
-                                @if(isset($args->brands_img_6))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
+                                <div class="social-inner d-flex">
+                                    <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                    <div class="social d-flex flex-column background-section">
+                                        <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+
+                                        <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+
+                                        <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
                                 </div>
-                                @endif
+                            </div>
+                        </div>
+
+                        <div class="team-item d-flex align-items-end">
+                            <div class="box-img">
+                                <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
+                            </div>
+                            <div class="content w-100 d-flex justify-content-between">
+                                <div class="text">
+                                    <h4 class="title-block text-upper mb-5">
+                                        {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
+                                    </h4>
+                                    <span>
+                                        {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
+                                    </span>
+                                </div>
+                                <div class="social-inner d-flex">
+                                    <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                    <div class="social d-flex flex-column background-section">
+                                        <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+
+                                        <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+
+                                        <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endif
-                <!-- ========== End Brand ========== -->
+            </section>
+            <!-- ========== End Team ========== -->
 
-                <section class="next-page v-dark section-padding">
-                    <div class="container">
-                        <div class="tob-box d-flex justify-content-between align-items-end border-bottom pb-50 mb-50">
-                            <h2 class="title text-upper">{{ $args->final_title ? $args->final_title : 'final_title' }}</h2>
-
-                            <div class="dsn-btn dsn-btn-shape d-flex">
-
-                                <a class="button background-main v-light effect-ajax" href="contact.html">
-                                    <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}">
-                                        <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}</span>
-                                    </span>
-                                </a>
-
-                                <span class="icon background-main v-light">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                        <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                        </path>
-                                    </svg>
-                                </span>
-
+            <!-- ========== Brand ========== -->
+            @if(isset($args->brands_bg_img))
+            <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
+                <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
+                    <div class="img-box-parallax before-z-index w-100 h-100 p-absolute top-0 bottom-0 left-0" data-overlay="7" data-dsn-grid="move-up">
+                        <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="brand-inner d-grid grid-md-2 grid-lg-4  align-items-center p-relative z-index-1">
+                        <div class="brand-boxs d-flex flex-column align-items-end">
+                            @if(isset($args->brands_img_1))
+                            <div class="brand-item brand-item-lg content-blure">
+                                <img src="{{ asset("../storage/$args->brands_img_1") }}" alt="">
                             </div>
+                            @endif
+                            @if(isset($args->brands_img_2))
+                            <div class="brand-item brand-item-sm content-blure mt-30">
+                                <img src="{{ asset("../storage/$args->brands_img_2") }}" alt="">
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="brand-boxs d-flex flex-column align-items-start">
+                            @if(isset($args->brands_img_5))
+                            <div class="brand-item brand-item-lg content-blure">
+                                <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
+                            </div>
+                            @endif
+                            @if(isset($args->brands_img_6))
+                            <div class="brand-item brand-item-sm content-blure mt-30">
+                                <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="brand-boxs d-flex flex-column align-items-start">
+                            @if(isset($args->brands_img_3))
+                            <div class="brand-item brand-item-lg content-blure">
+                                <img src="{{ asset("../storage/$args->brands_img_3") }}" alt="">
+                            </div>
+                            @endif
+                            @if(isset($args->brands_img_4))
+                            <div class="brand-item brand-item-sm content-blure mt-30">
+                                <img src="{{ asset("../storage/$args->brands_img_4") }}" alt="">
+                            </div>
+                            @endif
+                        </div>
+
+                        <div class="brand-boxs d-flex flex-column align-items-start">
+                            @if(isset($args->brands_img_5))
+                            <div class="brand-item brand-item-lg content-blure">
+                                <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
+                            </div>
+                            @endif
+                            @if(isset($args->brands_img_6))
+                            <div class="brand-item brand-item-sm content-blure mt-30">
+                                <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
+                            </div>
+                            @endif
                         </div>
                     </div>
-
-                    <div class="dsn-container dsn-right-container over-hidden">
-                        <div class="bottom-box ">
-                            <div class="d-grid custom-width">
-                                <div class="text">
-                                    <h4 class="title-block mb-15">{{ $args->sign_title ? $args->sign_title : 'sign_title' }}</h4>
-                                    <p>{{ $args->sign_description ? $args->sign_description : 'sign_description' }}</p>
-                                </div>
-
-                                <div class="p-relative dsn-marquee over-hidden" data-dsn-option='{"speed":0,"duplicatedNumber":7,"duration":7000,"gap":60,"delayBeforeStart":1000,"direction":"left","duplicated":true,"pauseOnHover":false,"startVisible":true,"pauseOnCycle":false,"allowCss3Support":true}'>
-                                    <h2 class="dsn-text-marquee d-flex title-lg">{{ $args->sign_rolling ? $args->sign_rolling : 'sign_rolling' }}</h2>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </section>
-
+                </div>
             </div>
+            @endif
+            <!-- ========== End Brand ========== -->
 
-            @include('components.footersite',['args'=> $args,'contact'=> $contact])
+            <section class="next-page v-dark section-padding">
+                <div class="container">
+                    <div class="tob-box d-flex justify-content-between align-items-end border-bottom pb-50 mb-50">
+                        <h2 class="title text-upper">{{ $args->final_title ? $args->final_title : 'final_title' }}</h2>
+
+                        <div class="dsn-btn dsn-btn-shape d-flex">
+
+                            <a class="button background-main v-light effect-ajax" href="contact.html">
+                                <span class="title-btn p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}">
+                                    <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar!" : "Let's talk!" : "Vamos falar!" }}</span>
+                                </span>
+                            </a>
+
+                            <span class="icon background-main v-light">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                    <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                    </path>
+                                </svg>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dsn-container dsn-right-container over-hidden">
+                    <div class="bottom-box ">
+                        <div class="d-grid custom-width">
+                            <div class="text">
+                                <h4 class="title-block mb-15">{{ $args->sign_title ? $args->sign_title : 'sign_title' }}</h4>
+                                <p>{{ $args->sign_description ? $args->sign_description : 'sign_description' }}</p>
+                            </div>
+
+                            <div class="p-relative dsn-marquee over-hidden" data-dsn-option='{"speed":0,"duplicatedNumber":7,"duration":7000,"gap":60,"delayBeforeStart":1000,"direction":"left","duplicated":true,"pauseOnHover":false,"startVisible":true,"pauseOnCycle":false,"allowCss3Support":true}'>
+                                <h2 class="dsn-text-marquee d-flex title-lg">{{ $args->sign_rolling ? $args->sign_rolling : 'sign_rolling' }}</h2>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+        @include('components.footersite',['args'=> $args,'contact'=> $contact])
 
         </div>
 

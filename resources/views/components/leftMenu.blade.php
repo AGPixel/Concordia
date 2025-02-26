@@ -49,6 +49,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="/pt/list-testimonial-page" class="nav-link">
+                        <i class="nav-icon fa fa-indent"></i>
+                        <p class="text">Testemunho</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="/pt/list-work-page" class="nav-link">
                         <i class="nav-icon fa fa-indent"></i>
                         <p class="text">Projetos</p>

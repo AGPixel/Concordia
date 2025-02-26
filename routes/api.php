@@ -33,6 +33,10 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
 
     Route::post('/save-privacy-politics-page', [SiteController::class, 'savePrivacyPolitics'])->name('api.save-privacy-politics-page');
     
+    Route::post('/save-testimonial-page', [SiteController::class, 'saveTestimonialPage'])->name('api.save-testimonial-page');
+    Route::delete('/delete-testimonial-page', [SiteController::class, 'deleteTestimonialPage'])->name('api.delete-testimonial-page');
+    Route::post('/update-active-testimonial', [SiteController::class, 'updateActiveTestimonialPage'])->name('api.update-actve-testimonial-page');
+
     Route::post('/save-work-page', [SiteController::class, 'saveWorkPage'])->name('api.save-work-page');
     Route::delete('/delete-work-page', [SiteController::class, 'deleteWorkPage'])->name('api.delete-work-page');
     Route::post('/update-active-work', [SiteController::class, 'updateActiveWorkPage'])->name('api.update-actve-work-page');

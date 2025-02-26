@@ -46,6 +46,10 @@ Route::get('/pt/service-terms-page', [HomeController::class, 'serviceTerms'])->n
 
 Route::get('/pt/privacy-politics-page', [HomeController::class, 'privacyPolitics'])->name('view.privacy-politics-page');
 
+Route::get('/pt/list-testimonial-page', [HomeController::class, 'listTestimonialPage'])->name('view.list-testimonial-page');
+Route::get('/pt/new-testimonial-page', [HomeController::class, 'newTestimonialPage'])->name('view.new-testimonial-page');
+Route::get('/pt/testimonial-page/{id}', [HomeController::class, 'testimonialPage'])->name('view.testimonial-page');
+
 Route::get('/pt/list-work-page', [HomeController::class, 'listWorkPage'])->name('view.list-work-page');
 Route::get('/pt/new-work-page', [HomeController::class, 'newWorkPage'])->name('view.new-work-page');
 Route::get('/pt/work-page/{id}', [HomeController::class, 'workPage'])->name('view.work-page');

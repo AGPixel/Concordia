@@ -84,6 +84,29 @@ class HomeController extends Controller
 
     // ------------------------------------- ABOUT -------------------------------------
 
+    // ------------------------------------- TESTIMONIALS -------------------------------------
+
+    public function listTestimonialPage() {
+        $portifolioGeral = $this->siteService->portifolioGeral();
+        $testimonials = $this->siteService->testimonial();
+
+        return view('dashboard.viewListTestimonialPage', ['testimonials' => $testimonials, 'portifolioGeral' => $portifolioGeral]);
+    }
+
+    public function testimonialPage($id) {
+        $testimonials = $this->siteService->testimonialById($id);
+        
+        return view('dashboard.viewCreateUpdateTestimonialPage', ['testimonial' => $testimonials]);
+    }
+
+    public function newTestimonialPage() {
+        $testimonial = $this->siteService->newBlankTestimonial();
+
+        return view('dashboard.viewCreateUpdateTestimonialPage', ['testimonial' => $testimonial]);
+    }
+
+    // ------------------------------------- TESTIMONIALS -------------------------------------
+
     // ------------------------------------- WORK -------------------------------------
 
     public function listWorkPage() {

@@ -7,6 +7,7 @@ use App\Models\IndexText;
 use App\Models\Contact;
 use App\Models\About;
 use App\Models\Work;
+use App\Models\Testimonial;
 use App\Models\PortifolioGeral;
 use App\Models\ServicoGeral;
 use App\Models\ServiceTerms;
@@ -183,6 +184,41 @@ class SiteRepository extends BaseRepository
      }
 
      // ------------------------------------- SERVICO GERAL -------------------------------------
+
+     // ------------------------------------- TESTIMONIALS -------------------------------------
+
+     public function testimonialById($id): object {
+          $modelTestimonial = new Testimonial();
+          return $modelTestimonial->where('id',$id)->first();
+     }
+
+     public function getTestimonialThatIsNotId($id) {
+          $modelTestimonial = new Testimonial();
+          return $modelTestimonial->where('id','!=',$id)->get();
+     }
+
+     public function testimonial() {
+          $modelTestimonial = new Testimonial();
+          return $modelTestimonial::get();
+     }
+
+     public function saveTestimonial(array $arr) {
+          $testimonial = $this->testimonialById($arr['id']);
+          $testimonial->fill($arr);
+          $testimonial->save();
+     }
+
+     public function saveNewTestimonial(array $arr) {
+          $testimonial = new Testimonial();
+          $testimonial->fill($arr);
+          $testimonial->save();
+     }
+
+     public function deleteTestimonial($id) {
+          Testimonial::where('id',$id)->delete();
+     }
+
+     // ------------------------------------- TESTIMONIALS -------------------------------------
 
      // ------------------------------------- PROJECT -------------------------------------
 

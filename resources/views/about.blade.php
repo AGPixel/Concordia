@@ -336,45 +336,23 @@
 
                             <div class="swiper-container swiper">
                                 <div class="swiper-wrapper">
+
+                                    @foreach($testimonials as $id => $testimonial)
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_1 ? $args->testimonials_description_1 : 'testimonials_description_1' }}”</h3>
+                                                <h3 class="title m-top-0px">“{{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}”</h3>
 
                                                 <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_1 ? $args->testimonials_company_1 : 'testimonials_company_1' }}</h5>
-                                                    <span class="text-upper">{{ $args->testimonials_name_1 ? $args->testimonials_name_1 : 'testimonials_name_1' }}</span>
+                                                    <h5 class="text-upper mb-5">{{ $testimonial->company ? $testimonial->company : 'testimonials_company_1' }}</h5>
+                                                    <span class="text-upper">{{ $testimonial->name ? $testimonial->name : 'testimonials_name_1' }}</span>
                                                 </div>
                                             </div>
 
                                         </div>
                                     </div>
+                                    @endforeach
 
-                                    <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
-                                        <div class="box-img">
-                                            <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_2 ? $args->testimonials_description_2 : 'testimonials_description_2' }}”</h3>
-
-                                                <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_2 ? $args->testimonials_company_2 : 'testimonials_company_2' }}</h5>
-                                                    <span class="text-upper">{{ $args->testimonials_name_2 ? $args->testimonials_name_2 : 'testimonials_name_2' }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
-                                        <div class="box-img">
-                                            <div class="box-content" data-swiper-parallax-opacity="0">
-                                                <h3 class="title m-top-0px">“{{ $args->testimonials_description_3 ? $args->testimonials_description_3 : 'testimonials_description_3' }}”</h3>
-
-                                                <div class="auther mt-20">
-                                                    <h5 class="text-upper mb-5">{{ $args->testimonials_company_3 ? $args->testimonials_company_3 : 'testimonials_company_3' }}</h5>
-                                                    <span class="text-upper">{{ $args->testimonials_name_3 ? $args->testimonials_name_3 : 'testimonials_name_3' }}</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
 

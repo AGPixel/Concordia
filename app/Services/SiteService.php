@@ -13,6 +13,7 @@ use App\Models\ServicoGeral;
 use App\Models\ServiceTerms;
 use App\Models\PrivacyPolitics;
 use App\Models\Project;
+use App\Models\Testimonial;
 use App\Models\Oportunidade;
 use App\Models\Propriedade;
 use App\Repositories\SiteRepository;
@@ -253,6 +254,48 @@ class SiteService extends BaseService
     }
 
     // ------------------------------------- ABOUT -------------------------------------
+
+    // ------------------------------------- TESTIMONIALS -------------------------------------
+
+    public function testimonial($lingua = 'pt') {
+
+        $testimonial = $this->repository->testimonial();
+
+        if ($lingua == 'eng') {
+            $testimonial->description = $this->changeLanguage($testimonial->description,$testimonial->description_eng);
+        }
+
+        return $testimonial;
+    }
+
+    public function testimonialById($id,$lingua = 'pt') {
+        $testimonial = $this->repository->testimonialById($id);
+
+        if ($lingua == 'eng') {
+            $testimonial->description = $this->changeLanguage($testimonial->description,$testimonial->description_eng);
+        }
+
+        return $testimonial;
+    }
+
+    public function saveTestimonial(array $arr) {
+        if ($arr['id'] == 0) {
+            unset($arr['id']);
+            $this->repository->saveNewTestimonial($arr);
+        } else {
+            $this->repository->saveTestimonial($arr);
+        }
+    }
+
+    public function newBlankTestimonial() {
+        return new Testimonial();
+    }
+
+    public function deleteTestimonial(array $arr) {
+        $this->repository->deleteTestimonial($arr['id']);
+    }
+
+    // ------------------------------------- TESTIMONIALS -------------------------------------
 
     // ------------------------------------- PORTIFOLIO GERAL -------------------------------------
 

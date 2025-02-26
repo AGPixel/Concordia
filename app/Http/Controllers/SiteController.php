@@ -38,13 +38,21 @@ class SiteController extends Controller
         $metaTags = $this->service->metaTags();
         $contact = $this->service->contact($lingua);
 
+        $testimonials = $this->service->testimonial($lingua);
         $projects = $this->service->projectActive($lingua);
         $portifolios = $this->service->workActive($lingua);
         
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('index', ['metaTags' => $metaTags, 'contact' => $contact, 'args' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects, 'projects' => $projects, 'portifolios' => $portifolios]);
+        return view('index', ['metaTags' => $metaTags, 
+                              'contact' => $contact, 
+                              'args' => $index_text, 
+                              'menuWorks' => $menuWorks, 
+                              'menuProjects' => $menuProjects, 
+                              'projects' => $projects, 
+                              'testimonials' => $testimonials, 
+                              'portifolios' => $portifolios]);
     }
 
     public function saveIndexPage(Request $request) {
@@ -149,10 +157,17 @@ class SiteController extends Controller
 
         $about = $this->service->about($lingua);
 
+        $testimonials = $this->service->testimonial($lingua);
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('about', ['metaTags' => $metaTags, 'contact' => $contact, 'args' => $index_text, 'about' => $about, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('about', ['metaTags' => $metaTags, 
+                              'contact' => $contact, 
+                              'args' => $index_text, 
+                              'about' => $about, 
+                              'testimonials' => $testimonials, 
+                              'menuWorks' => $menuWorks, 
+                              'menuProjects' => $menuProjects]);
     }
 
     public function saveAboutPage(Request $request) {
@@ -299,6 +314,22 @@ class SiteController extends Controller
     }
 
     // ------------------------------------- SERVICO -------------------------------------
+
+    // ------------------------------------- TESTIMONIAL -------------------------------------
+
+    public function saveTestimonialPage(Request $request) {
+        $this->service->saveTestimonial($request->all());
+        
+        return true;
+    }
+
+    public function deleteTestimonialPage(Request $request) {
+        $this->service->deleteTestimonial($request->all());
+        
+        return true;
+    }
+
+    // ------------------------------------- TESTIMONIAL -------------------------------------
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
 

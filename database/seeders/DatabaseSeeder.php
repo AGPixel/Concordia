@@ -16,6 +16,7 @@ use App\Models\Project;
 use App\Models\ServiceTerms;
 use App\Models\PrivacyPolitics;
 use App\Models\MetaTags;
+use App\Models\Testimonial;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -194,5 +195,13 @@ class DatabaseSeeder extends Seeder
         $privacyPolitics->content_eng = 'Content eng';
         $privacyPolitics->active = true;
         $privacyPolitics->save();
+
+        $testimonial = new Testimonial();
+        $testimonial->num = '4';
+        $testimonial->company = 'company';
+        $testimonial->name = 'Pedro';
+        $testimonial->description = 'description pt';
+        $testimonial->description_eng = 'description eng';
+        $testimonial->save();
     }
 }
