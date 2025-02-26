@@ -111,6 +111,8 @@ class SiteService extends BaseService
             $index_text->testimonials_description = $this->changeLanguage($index_text->testimonials_description,$index_text->testimonials_description_eng);
             $index_text->testimonials_description_1 = $this->changeLanguage($index_text->testimonials_description_1,$index_text->testimonials_description_1_eng);
             $index_text->testimonials_description_2 = $this->changeLanguage($index_text->testimonials_description_2,$index_text->testimonials_description_2_eng);
+            $index_text->about_us_title = $this->changeLanguage($index_text->about_us_title,$index_text->about_us_title_eng);
+            $index_text->about_us_description = $this->changeLanguage($index_text->about_us_description,$index_text->about_us_description_eng);
             $index_text->employee_title = $this->changeLanguage($index_text->employee_title,$index_text->employee_title_eng);
             $index_text->employee_name_1 = $this->changeLanguage($index_text->employee_name_1,$index_text->employee_name_1_eng);
             $index_text->employee_work_1 = $this->changeLanguage($index_text->employee_work_1,$index_text->employee_work_1_eng);

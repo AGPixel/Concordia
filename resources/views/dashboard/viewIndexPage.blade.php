@@ -307,6 +307,23 @@
 
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
+                                    'title' => 'About Us Title',
+                                    'id_input_text' => 'InputAboutUsTitle',
+                                    'arg_value' => $args->about_us_title ? $args->about_us_title : '',
+                                    'arg_value_eng' => $args->about_us_title_eng ? $args->about_us_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Us Description',
+                                    'id_input_text' => 'InputAboutUsDescription',
+                                    'arg_value' => $args->about_us_description ? $args->about_us_description : '',
+                                    'arg_value_eng' => $args->about_us_description_eng ? $args->about_us_description_eng : ''
+                                    ])
+                                </div>
+
+                                <div class="card-body">
+                                    @include('components.inputtextpteng',[
                                     'title' => 'Testimonials Title',
                                     'id_input_text' => 'InputTestimonialsTitle',
                                     'arg_value' => $args->testimonials_title ? $args->testimonials_title : '',

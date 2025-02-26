@@ -202,6 +202,11 @@ function saveIndexPage() {
         frame_description_2: document.getElementById('InputFrameDescription2').value,
         frame_description_2_eng: document.getElementById('InputFrameDescription2Eng').value,
 
+        about_us_title: document.getElementById('InputAboutUsTitle').value,
+        about_us_title_eng: document.getElementById('InputAboutUsTitleEng').value,
+        about_us_description: document.getElementById('InputAboutUsDescription').value,
+        about_us_description_eng: document.getElementById('InputAboutUsDescriptionEng').value,
+
         testimonials_title: document.getElementById('InputTestimonialsTitle').value,
         testimonials_title_eng: document.getElementById('InputTestimonialsTitleEng').value,
         testimonials_description: document.getElementById('InputTestimonialsDescription').value,

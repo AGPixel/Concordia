@@ -83,6 +83,10 @@
             height: 100%;
         }
 
+        .length-testimonial-description {
+            font-size: 18px !important;
+        }
+
     </style>
 </head>
 
@@ -482,6 +486,19 @@
                 </div>
                 <!-- ========== End Award ========== -->
 
+                <!-- ========== ABOUT US ========== -->
+
+                <div class="section-margin text-center">
+                    <div class="container">
+                        <h3 class="title text-upper mb-30">{{ $args->about_us_title ? $args->about_us_title : 'about_us_description' }}</h3>
+                        <p class="max-w750">
+                            {{ $args->about_us_description ? $args->about_us_description : 'about_us_description' }}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========== End ABOUT US ========== -->
+
                 <!-- ==========   testimonials ========== -->
                 <section class="dsn-testimonials testimonials-small full-testimonials section-margin dsn-swiper" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":true,"parallax":false,"slidesPerGroup":1,"slidesPerView":2,"speed":1000,"effect":"card"}'>
                     <div class="container">
@@ -514,7 +531,7 @@
                                                 <p class="text-upper">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "de 5 estrelas" : "out of 5 stars" : "de 5 estrelas" }}</p>
                                             </div>
 
-                                            <p class="title-block mt-50 text-upper">
+                                            <p class="title-block mt-50 text-upper length-testimonial-description">
                                                 {{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}
                                             </p>
 
