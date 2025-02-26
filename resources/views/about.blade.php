@@ -300,9 +300,9 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex">
 
-                                    <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
-                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}">
-                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contate-nos" : "Contact Us" : "Contate-nos" }}</span>
+                                    <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}">
+                                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}">
+                                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}</span>
                                         </span>
                                     </a>
 
@@ -438,9 +438,9 @@
                             <div class="dsn-up">
                                 <div class="dsn-btn dsn-btn-shape d-flex mt-20">
 
-                                    <a class="button background-main v-dark background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}>
-                                        <span class=" title-btn text-upper p-relative z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}">
-                                        <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Junta-se a eles" : "Join them" : "Junta-se a eles" }}</span>
+                                    <a class="button background-main v-dark background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "JUNTA-SE A ELES" : "JOIN THEM" : "JUNTA-SE A ELES" }}>
+                                        <span class=" title-btn text-upper p-relative z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "JUNTA-SE A ELES" : "JOIN THEM" : "JUNTA-SE A ELES" }}">
+                                        <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "JUNTA-SE A ELES" : "JOIN THEM" : "JUNTA-SE A ELES" }}</span>
                                         </span>
                                     </a>
 
