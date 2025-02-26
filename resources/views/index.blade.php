@@ -65,6 +65,24 @@
             height: auto !important;
         }
 
+        .prev-paginate {
+            border: 0px !important;
+            padding-right: 1em !important;
+        }
+
+        .prev-paginate .dsn-icon {
+            height: 100%;
+        }
+
+        .next-paginate {
+            border: 0px !important;
+            padding-right: 1em !important;
+        }
+
+        .next-paginate .dsn-icon {
+            height: 100%;
+        }
+
     </style>
 </head>
 
@@ -473,6 +491,13 @@
                             <p class="mt-20">{{ $args->testimonials_description ? $args->testimonials_description : 'testimonials_description' }}</p>
                         </div>
                         <div class="testimonials-inner d-flex over-hidden">
+                            <div class="prev-paginate">
+                                <span class="dsn-icon dsn-icon-heading-color background-section">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                        <path d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z" fill=""></path>
+                                    </svg>
+                                </span>
+                            </div>
                             <div class="swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     @foreach($testimonials as $id => $testimonial)
@@ -515,6 +540,13 @@
                                     @endforeach
 
                                 </div>
+                            </div>
+                            <div class="next-paginate">
+                                <span class="dsn-icon dsn-icon-heading-color background-section">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                        <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
+                                    </svg>
+                                </span>
                             </div>
                         </div>
                     </div>
