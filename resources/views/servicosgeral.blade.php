@@ -22,6 +22,18 @@
             margin-top: 2em !important;
         }
 
+        .margin-auto-button {
+            margin: auto;
+        }
+
+        .margin-bottom-2em {
+            margin-bottom: 2em;
+        }
+
+        .margin-bottom-5em {
+            margin-bottom: 5em;
+        }
+
     </style>
 </head>
 
@@ -97,7 +109,6 @@
                                     <p>
                                         {{ $s->description_1 ? $s->description_1 : 'description_1' }}
                                     </p>
-
 
                                 </div>
                                 @if( $id > 0 )
@@ -178,22 +189,45 @@
                     </div>
                 </div>
 
-                <div class="section-margin text-center">
-                    <div class="container">
-                        <h3 class="title text-upper mb-30">{{ $s->title_2 ? $s->title_2 : 'title_2' }}</h3>
-                        <p class="max-w750">
-                            {{ $s->description_2 ? $s->description_2 : 'description_2' }}
-                        </p>
+                @if($id == 0)
+                <div class="section-margin text-center margin-bottom-2em">
+                    @else
+                    <div class="section-margin text-center">
+                        @endif
+                        <div class="container">
+                            <h3 class="title text-upper mb-30">{{ $s->title_2 ? $s->title_2 : 'title_2' }}</h3>
+                            <p class="max-w750">
+                                {{ $s->description_2 ? $s->description_2 : 'description_2' }}
+                            </p>
+                        </div>
                     </div>
+
+                    @if($id == 0)
+                    <div class="dsn-btn dsn-btn-shape d-flex margin-auto-button margin-bottom-5em">
+
+                        <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}">
+                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}">
+                                <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}</span>
+                            </span>
+                        </a>
+
+                        <span class="icon background-main v-dark background-color-green">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                                </path>
+                            </svg>
+                        </span>
+
+                    </div>
+                    @endif
+
                 </div>
+                @endforeach
+                <!-- end product -->
 
             </div>
-            @endforeach
-            <!-- end product -->
 
-        </div>
-
-        @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
+            @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
 
 
     </main>
