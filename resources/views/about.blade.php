@@ -495,22 +495,28 @@
                                             {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
                                         </span>
                                     </div>
+                                    @if($args->employee_url_facebook_1 || $args->employee_url_instagram_1 || $args->employee_url_twitter_1)
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
+                                            @if($args->employee_url_facebook_1)
                                             <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_instagram_1)
                                             <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_twitter_1)
                                             <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
+                                            @endif
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                             </div>
 
@@ -527,22 +533,28 @@
                                             {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
                                         </span>
                                     </div>
+                                    @if($args->employee_url_facebook_2 || $args->employee_url_instagram_2 || $args->employee_url_twitter_2)
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
+                                            @if($args->employee_url_facebook_2)
                                             <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_instagram_2)
                                             <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_twitter_2)
                                             <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
+                                            @endif
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                             </div>
 
@@ -559,22 +571,28 @@
                                             {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
                                         </span>
                                     </div>
+                                    @if($args->employee_url_facebook_3 || $args->employee_url_instagram_3 || $args->employee_url_twitter_3)
                                     <div class="social-inner d-flex">
                                         <h6 class="theme-color">SOCIAL MEDIA</h6>
                                         <div class="social d-flex flex-column background-section">
+                                            @if($args->employee_url_facebook_3)
                                             <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
                                                 <i class="fab fa-facebook-f"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_instagram_3)
                                             <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
                                                 <i class="fab fa-instagram"></i>
                                             </a>
-
+                                            @endif
+                                            @if($args->employee_url_twitter_3)
                                             <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
                                                 <i class="fab fa-twitter"></i>
                                             </a>
+                                            @endif
                                         </div>
                                     </div>
+                                    @endif
                                 </div>
                             </div>
                         </div>
