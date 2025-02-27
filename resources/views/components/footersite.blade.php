@@ -67,22 +67,28 @@
                 <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
                     {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "SIGA-NOS" : "FOLLOW US" : "SIGA-NOS" }}
                 </h4>
-                <ul class="dsn-socials box-social">
+                <ul class="dsn-socials box-social" style="height:2.2em;">
+                    @if($args->social_url_facebook)
                     <li>
                         <a href="{{ $args->social_url_facebook ? $args->social_url_facebook : 'social_url_facebook' }}" target="_blank" class="background-main">
                             <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
                         </a>
                     </li>
+                    @endif
+                    @if($args->social_url_instagram)
                     <li>
                         <a href="{{ $args->social_url_instagram ? $args->social_url_instagram : 'social_url_instagram' }}" target="_blank" class="background-main">
                             <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
                         </a>
                     </li>
+                    @endif
+                    @if($args->social_url_twitter)
                     <li>
                         <a href="{{ $args->social_url_twitter ? $args->social_url_twitter : 'social_url_twitter' }}" target="_blank" class="background-main">
                             <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
                         </a>
                     </li>
+                    @endif
                 </ul>
 
                 <div style="margin-top: 2em;">
