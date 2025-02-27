@@ -496,7 +496,7 @@
                             if($args->about_us_description) {
                             echo $args->about_us_description;
                             } else {
-                                echo "about_us_description";
+                            echo "about_us_description";
                             }
                             @endphp
                         </p>
@@ -576,114 +576,36 @@
                 </section>
                 <!-- ==========  End testimonials ========== -->
 
-                <!-- ========== Team ========== -->
+                <!-- ========== Team ==========  Pegar as oportunidades e mostra-las -->
                 <section class="dsn-team section-padding background-section">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">{{ $args->pre_title_4 ? $args->pre_title_4 : 'pre_title_4' }}</span>
                             <h2 class="title ">
-                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
+                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }} aaa
                             </h2>
                         </div>
                     </div>
 
                     <div class="container">
                         <div class="d-grid grid-lg-3 grid-md-2">
+                            @foreach($oportunidades as $id => $oportunidade)
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $oportunidade->img_1 ? asset("../storage/$oportunidade->img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
                                         <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
+                                            {{ $oportunidade->title_1 ? $oportunidade->title_1 : 'title_1' }}
                                         </h4>
                                         <span>
-                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
+                                            {{ $oportunidade->description ? $oportunidade->description : 'description' }}
                                         </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="team-item d-flex align-items-end">
-                                <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
-                                </div>
-                                <div class="content d-flex justify-content-between w-100">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
-                                        </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="team-item d-flex align-items-end">
-                                <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
-                                </div>
-                                <div class="content w-100 d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
-                                        </span>
-                                    </div>
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-
-                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                 </section>

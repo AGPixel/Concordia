@@ -41,6 +41,7 @@ class SiteController extends Controller
         $testimonials = $this->service->testimonial($lingua);
         $projects = $this->service->projectActive($lingua);
         $portifolios = $this->service->workActive($lingua);
+        $oportunidades = $this->service->oportunidade($lingua);
         
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
@@ -49,7 +50,8 @@ class SiteController extends Controller
                               'contact' => $contact, 
                               'args' => $index_text, 
                               'menuWorks' => $menuWorks, 
-                              'menuProjects' => $menuProjects, 
+                              'menuProjects' => $menuProjects,
+                              'oportunidades' => $oportunidades,
                               'projects' => $projects, 
                               'testimonials' => $testimonials, 
                               'portifolios' => $portifolios]);
