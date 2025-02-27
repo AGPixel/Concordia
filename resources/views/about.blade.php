@@ -146,7 +146,13 @@
                     </div>
 
                     <div class=" over-hidden box-text has-border-radius v-middle d-flex align-items-center justify-content-center text-center dsn-fill">
-                        <h2 class="title-lg"><span class="fw-200">{{ $about->about_title_1 ? $about->about_title_1 : 'Seamless' }}</span><br>{{ $about->about_title_2 ? $about->about_title_2 : 'Experience' }}</h2>
+                        <h2 class="title-lg">
+                            <div style="display:none;">{{ $about->about_title_1 ? $about->about_title_1 : 'Seamless' }}</div>
+                            <div style="display:none;">{{ $about->about_title_1 ? $about->about_title_1 : 'Seamless' }}</div>
+                            <span class="fw-200">{{ $about->about_title_1 ? $about->about_title_1 : 'Seamless' }}</span>
+                            <br>
+                            {{ $about->about_title_2 ? $about->about_title_2 : 'Experience' }}
+                        </h2>
                     </div>
                 </div>
                 <!-- ========== End Award Scroll Right========== -->
