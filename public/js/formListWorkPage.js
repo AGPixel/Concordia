@@ -64,6 +64,10 @@ function savePortifolioGeral() {
         title_eng: document.getElementById('InputPortifolioTitleEng').value,
         description: document.getElementById('InputPortifolioDescription').value,
         description_eng: document.getElementById('InputPortifolioDescriptionEng').value,
+        title_1: document.getElementById('InputPortifolioTitle1').value,
+        title_1_eng: document.getElementById('InputPortifolioTitle1Eng').value,
+        description_1: document.getElementById('InputPortifolioDescription1').value,
+        description_1_eng: document.getElementById('InputPortifolioDescription1Eng').value,
     };
 
     apiPostBearer(GLOBAL_URL_API + 'save-portifolio-page', form, GLOBAL_DATATYPE_JSON, function (_return) {

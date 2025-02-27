@@ -19,6 +19,10 @@ class PortifolioGeral extends Model
         'title_eng',
         'description',
         'description_eng',
+        'title_1',
+        'title_1_eng',
+        'description_1',
+        'description_1_eng',
     ];
 
 }

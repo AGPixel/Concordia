@@ -77,12 +77,28 @@
                             'arg_value_eng' => $portifolioGeral->title_eng ? $portifolioGeral->title_eng : ''
                             ])
                         </div>
-                        <div class="card-body first-card-body">
+                        <div class="card-body">
                             @include('components.inputtextpteng',[
                             'title' => 'Description',
                             'id_input_text' => 'InputPortifolioDescription',
                             'arg_value' => $portifolioGeral->description ? $portifolioGeral->description : '',
                             'arg_value_eng' => $portifolioGeral->description_eng ? $portifolioGeral->description_eng : ''
+                            ])
+                        </div>
+                        <div class="card-body">
+                            @include('components.inputtextpteng',[
+                            'title' => 'Title 1',
+                            'id_input_text' => 'InputPortifolioTitle1',
+                            'arg_value' => $portifolioGeral->title_1 ? $portifolioGeral->title_1 : '',
+                            'arg_value_eng' => $portifolioGeral->title_1_eng ? $portifolioGeral->title_1_eng : ''
+                            ])
+                        </div>
+                        <div class="card-body">
+                            @include('components.inputtextpteng',[
+                            'title' => 'Description 1',
+                            'id_input_text' => 'InputPortifolioDescription1',
+                            'arg_value' => $portifolioGeral->description_1 ? $portifolioGeral->description_1 : '',
+                            'arg_value_eng' => $portifolioGeral->description_1_eng ? $portifolioGeral->description_1_eng : ''
                             ])
                         </div>
                     </div>

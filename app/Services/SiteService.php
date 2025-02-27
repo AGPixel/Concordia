@@ -308,6 +308,8 @@ class SiteService extends BaseService
         if ($lingua == 'eng') {
             $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
             $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+            $portifolio->description_1 = $this->changeLanguage($portifolio->description_1,$portifolio->description_1_eng);
         }
 
         return $portifolio;
