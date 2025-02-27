@@ -38,6 +38,8 @@
     12.Version Light
 
 -------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
 :root,
 :root .v-light,
 :root .v-light-head {
@@ -8974,4 +8976,8 @@ hr {
 
 .text-link {
   color: blue;
+}
+
+.sub-heading {
+  font-family: 'Open Sans', sans-serif;
 }
