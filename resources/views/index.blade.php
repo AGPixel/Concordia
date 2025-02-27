@@ -541,7 +541,7 @@
                                                 <p class="text-upper">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "de 5 estrelas" : "out of 5 stars" : "de 5 estrelas" }}</p>
                                             </div>
 
-                                            <p class="title-block mt-50 text-upper length-testimonial-description">
+                                            <p class="title-block mt-50 length-testimonial-description">
                                                 {{ $testimonial->description ? $testimonial->description : 'testimonials_description_1' }}
                                             </p>
 
