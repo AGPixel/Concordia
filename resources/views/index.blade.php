@@ -528,7 +528,7 @@
                             <div class="swiper swiper-container">
                                 <div class="swiper-wrapper">
                                     @foreach($testimonials as $id => $testimonial)
-                                    <!-- @ if($id < 2)  -->
+                                    @if($testimonial->show == "homepage")
                                     <div class="swiper-slide testimonal-item background-section has-border-radius d-flex flex-column align-items-center">
                                         <div class="content">
                                             <div class="rating">
@@ -563,7 +563,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- @ endif  -->
+                                    @endif
                                     @endforeach
 
                                 </div>

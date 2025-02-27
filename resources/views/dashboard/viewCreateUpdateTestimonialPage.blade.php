@@ -51,18 +51,26 @@
                                     'arg_value' => $testimonial->name ? $testimonial->name : '' ])
                                 </div>
 
-                                <div class="card-body first-card-body">
+                                <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Company',
                                     'id_input_text' => 'InputTestimonialCompany',
                                     'arg_value' => $testimonial->company ? $testimonial->company : '' ])
                                 </div>
 
-                                <div class="card-body first-card-body">
+                                <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Num',
                                     'id_input_text' => 'InputTestimonialNum',
                                     'arg_value' => $testimonial->num ? $testimonial->num : '' ])
+                                </div>
+
+                                <div class="card-body">
+                                    <label for="InputTestimonialShow">Show</label>
+                                    <select class="custom-select rounded-0" name="show" id="InputTestimonialShow">
+                                        <option value="homepage" {{ $testimonial->show == 'homepage' ? 'selected' : ''}}>Homepage</option>
+                                        <option value="about" {{ $testimonial->show == 'about' ? 'selected' : ''}}>Sobre</option>
+                                    </select>
                                 </div>
 
                                 <div class="card-body">

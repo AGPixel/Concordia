@@ -346,6 +346,7 @@
                                 <div class="swiper-wrapper">
 
                                     @foreach($testimonials as $id => $testimonial)
+                                    @if($testimonial->show == "about")
                                     <div class="swiper-slide testimonal-item text-center d-flex flex-column justify-content-center align-items-center">
                                         <div class="box-img">
                                             <div class="box-content" data-swiper-parallax-opacity="0">
@@ -359,6 +360,7 @@
 
                                         </div>
                                     </div>
+                                    @endif
                                     @endforeach
 
                                 </div>

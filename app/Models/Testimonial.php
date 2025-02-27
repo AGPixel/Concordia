@@ -18,6 +18,7 @@ class Testimonial extends Model
         'num',
         'name',
         'company',
+        'show',
         'description',
         'description_eng',
     ];

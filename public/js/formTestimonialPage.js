@@ -3,6 +3,9 @@ function saveTestimonialPage(id) {
 
     showLoading();
 
+    console.log(document.getElementById('InputTestimonialShow'));
+    console.log(document.getElementById('InputTestimonialShow').value);
+
     let form = {
         meta_tags_title: document.getElementById('InputMetaTagsTitle').value,
         meta_tags_description: document.getElementById('InputMetaTagsDescription').value,
@@ -12,6 +15,7 @@ function saveTestimonialPage(id) {
         name: document.getElementById('InputTestimonialName').value,
         company: document.getElementById('InputTestimonialCompany').value,
         num: document.getElementById('InputTestimonialNum').value,
+        show: document.getElementById('InputTestimonialShow').value,
         description: document.getElementById('InputTestimonialDescription').value,
         description_eng: document.getElementById('InputTestimonialDescriptionEng').value,
     };

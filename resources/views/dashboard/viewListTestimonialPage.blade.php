@@ -83,6 +83,7 @@
                                             <th>ID</th>
                                             <th>Name</th>
                                             <th>Company</th>
+                                            <th>Show</th>
                                             <th>Actions</th>
                                         </tr>
                                     </thead>
@@ -92,6 +93,7 @@
                                             <td>{{ $testimonial->id }}</td>
                                             <td>{{ $testimonial->name }}</td>
                                             <td>{{ $testimonial->company }}</td>
+                                            <td>{{ $testimonial->show }}</td>
                                             <td class="action-bts">
                                                 <button type="button" class="btn btn-info btn-block btn-flat bt-width" onclick="editTestimonial({{$testimonial}})">
                                                     <i class="fa fa-pen"></i>
