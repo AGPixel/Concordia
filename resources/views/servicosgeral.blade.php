@@ -189,63 +189,39 @@
                     </div>
                 </div>
 
-                @if($id == 0 || $id == 2)
                 <div class="section-margin text-center margin-bottom-2em">
-                    @else
-                    <div class="section-margin text-center">
-                        @endif
-                        <div class="container">
-                            <h3 class="title text-upper mb-30">{{ $s->title_2 ? $s->title_2 : 'title_2' }}</h3>
-                            <p class="max-w750">
-                                {{ $s->description_2 ? $s->description_2 : 'description_2' }}
-                            </p>
-                        </div>
+                    <div class="container">
+                        <h3 class="title text-upper mb-30">{{ $s->title_2 ? $s->title_2 : 'title_2' }}</h3>
+                        <p class="max-w750">
+                            {{ $s->description_2 ? $s->description_2 : 'description_2' }}
+                        </p>
                     </div>
+                </div>
 
-                    @if($id == 0)
-                    <div class="dsn-btn dsn-btn-shape d-flex margin-auto-button margin-bottom-5em">
+                <div class="dsn-btn dsn-btn-shape d-flex margin-auto-button margin-bottom-5em">
 
-                        <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}">
-                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}">
-                                <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Vamos falar" : "let's talk" : "Vamos falar" }}</span>
-                            </span>
-                        </a>
-
-                        <span class="icon background-main v-dark background-color-green">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                </path>
-                            </svg>
+                    <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Talk to us" : "Fale connosco" }}">
+                        <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Talk to us" : "Fale connosco" }}">
+                            <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Talk to us" : "Fale connosco" }}</span>
                         </span>
+                    </a>
 
-                    </div>
-                    @endif
-                    @if($id == 2)
-                    <div class="dsn-btn dsn-btn-shape d-flex margin-auto-button margin-bottom-5em">
-
-                        <a class="button background-main v-dark effect-ajax background-color-green" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/contato" : "/eng/contato" : "/pt/contato" }}" data-dsn-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}">
-                            <span class="title-btn text-upper p-relative  z-index-1 heading-color" data-animate-text="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}">
-                                <span>{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Contacte-nos" : "Contact Us" : "Contacte-nos" }}</span>
-                            </span>
-                        </a>
-
-                        <span class="icon background-main v-dark background-color-green">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                                <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
-                                </path>
-                            </svg>
-                        </span>
-
-                    </div>
-                    @endif
+                    <span class="icon background-main v-dark background-color-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
+                            </path>
+                        </svg>
+                    </span>
 
                 </div>
-                @endforeach
-                <!-- end product -->
 
             </div>
+            @endforeach
+            <!-- end product -->
 
-            @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
+        </div>
+
+        @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
 
 
     </main>
