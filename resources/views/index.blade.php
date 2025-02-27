@@ -87,6 +87,10 @@
             font-size: 18px !important;
         }
 
+        .text-size-about-us-description {
+            font-size: 18px;
+        }
+
     </style>
 </head>
 
@@ -491,7 +495,7 @@
                 <div class="section-margin text-center">
                     <div class="container">
                         <h3 class="title text-upper mb-30">{{ $args->about_us_title ? $args->about_us_title : 'about_us_description' }}</h3>
-                        <p class="max-w750">
+                        <p class="max-w750 text-size-about-us-description">
                             @php
                             if($args->about_us_description) {
                             echo $args->about_us_description;
