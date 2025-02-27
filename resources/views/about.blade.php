@@ -41,7 +41,7 @@
         }
 
         .testimonial-font-size {
-            font-size: 3.6em !important;
+            font-size: 2.5em !important;
         }
 
     </style>
