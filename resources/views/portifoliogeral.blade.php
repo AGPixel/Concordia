@@ -22,6 +22,17 @@
             margin-top: 1.5em;
         }
 
+        .left-column-descricao {
+            float: left;
+            width: 48%;
+            margin-right: 4%;
+        }
+
+        .right-column-descricao {
+            float: left;
+            width: 48%;
+        }
+
     </style>
 </head>
 
@@ -64,12 +75,18 @@
 
                             <h1 class="title-lg text-upper">{{ $portifolioGeral->title ? $portifolioGeral->title : 'title' }}</h1>
 
+                            @if(isset($portifolioGeral->column1))
+                            <div class="contact-links w-50 mt-20 left-column-descricao">
+                                <p>{{ $portifolioGeral->column1 ? $portifolioGeral->column1 : 'column1' }}</p>
+                            </div>
+                            <div class="contact-links w-50 mt-20 right-column-descricao">
+                                <p>{{ $portifolioGeral->column2 ? $portifolioGeral->column2 : 'column2' }}</p>
+                            </div>
+                            @else 
                             <div class="contact-links w-50 mt-20">
                                 <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
                             </div>
-                            <div class="contact-links w-50 mt-20">
-                                <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
-                            </div>
+                            @endif
                         </div>
 
 

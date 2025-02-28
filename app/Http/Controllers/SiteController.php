@@ -219,7 +219,14 @@ class SiteController extends Controller
 
         $contact = $this->service->contact($lingua);
 
-        return view('portifoliogeral',['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'portifolioGeral' => $portifolioGeral, 'portifolios' => $portifolios, 'works' => $works, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        return view('portifoliogeral',['metaTags' => $metaTags, 
+                                       'contact' => $contact, 
+                                       'index_text' => $index_text, 
+                                       'portifolioGeral' => $portifolioGeral, 
+                                       'portifolios' => $portifolios, 
+                                       'works' => $works, 
+                                       'menuWorks' => $menuWorks, 
+                                       'menuProjects' => $menuProjects]);
     }
 
     public function portifolio($lingua,$id) {

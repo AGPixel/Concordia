@@ -312,7 +312,17 @@ class SiteService extends BaseService
             $portifolio->description_1 = $this->changeLanguage($portifolio->description_1,$portifolio->description_1_eng);
         }
 
+        $columns = $this->verifyColumns($portifolio->description);
+        if (count($columns) > 1) {
+            $portifolio->column1 = trim($columns[0]);
+            $portifolio->column2 = trim($columns[1]);
+        }
+
         return $portifolio;
+    }
+    
+    private function verifyColumns($descritpion) {
+        return explode('<br/>',$descritpion);
     }
 
     public function savePortifolioGeral(array $arr) {
