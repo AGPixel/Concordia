@@ -335,6 +335,24 @@
                 </section>
                 <!-- ========== End award========== -->
 
+                <!-- ========== ABOUT US ========== -->
+
+                <div class="section-margin text-center">
+                    <div class="container">
+                        <h3 class="title text-upper mb-30">{{ $about->about_about_title ? $about->about_about_title : 'about_about_title' }}</h3>
+                        <p class="max-w750 text-size-about-us-description">
+                            @php
+                            if($about->about_about_description) {
+                            echo $about->about_about_description;
+                            } else {
+                            echo "about_about_description";
+                            }
+                            @endphp
+                        </p>
+                    </div>
+                </div>
+
+                <!-- ========== End ABOUT US ========== -->
 
                 <!-- ========== testimonial========== -->
                 <section class="testimonal-personal section-margin dsn-swiper" data-dsn-option='{"spaceBetween":30,"centeredSlides":false,"grabCursor":true,"loop":true,"speed":1000}'>

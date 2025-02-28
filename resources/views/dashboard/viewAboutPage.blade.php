@@ -329,6 +329,22 @@
                                 </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
+                                    'title' => 'About Us Title',
+                                    'id_input_text' => 'InputAboutAboutTitle',
+                                    'arg_value' => $about->about_about_title ? $about->about_about_title : '',
+                                    'arg_value_eng' => $about->about_about_title_eng ? $about->about_about_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'About Us Description',
+                                    'id_input_text' => 'InputAboutAboutDescription',
+                                    'arg_value' => $about->about_about_description ? $about->about_about_description : '',
+                                    'arg_value_eng' => $about->about_about_description_eng ? $about->about_about_description_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body first-card-body">
+                                    @include('components.inputtextpteng',[
                                     'title' => 'About Pre Title 2',
                                     'id_input_text' => 'InputAboutPreTitle2',
                                     'arg_value' => $about->about_pre_title_2 ? $about->about_pre_title_2 : '',

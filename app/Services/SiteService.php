@@ -219,6 +219,8 @@ class SiteService extends BaseService
             $about->about_experience_description_3 = $this->changeLanguage($about->about_experience_description_3,$about->about_experience_description_3_eng);
             $about->about_experience_title_4 = $this->changeLanguage($about->about_experience_title_4,$about->about_experience_title_4_eng);
             $about->about_experience_description_4 = $this->changeLanguage($about->about_experience_description_4,$about->about_experience_description_4_eng);
+            $about->about_about_title = $this->changeLanguage($about->about_about_title,$about->about_about_title_eng);
+            $about->about_about_description = $this->changeLanguage($about->about_about_description,$about->about_about_description_eng);
             $about->about_pre_title_2 = $this->changeLanguage($about->about_pre_title_2,$about->about_pre_title_2_eng);
             $about->about_brands_title = $this->changeLanguage($about->about_brands_title,$about->about_brands_title_eng);
             $about->about_brands_description = $this->changeLanguage($about->about_brands_description,$about->about_brands_description_eng);
