@@ -67,6 +67,9 @@
                             <div class="contact-links w-50 mt-20">
                                 <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
                             </div>
+                            <div class="contact-links w-50 mt-20">
+                                <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
+                            </div>
                         </div>
 
 
