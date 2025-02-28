@@ -69,7 +69,7 @@
                                         'arg_value' => $args->about_img ? asset("../storage/$args->about_img") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 1',
@@ -84,7 +84,7 @@
                                     'arg_value_eng' => $args->about_description_1_eng ? $args->about_description_1_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 2',
@@ -99,7 +99,7 @@
                                     'arg_value_eng' => $args->about_description_2_eng ? $args->about_description_2_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 3',
@@ -123,7 +123,7 @@
                                         'arg_value' => $args->about_img_3 ? asset("../storage/$args->about_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Pre Title 1',
@@ -156,7 +156,7 @@
                                     'arg_value_eng' => $args->pre_title_4_eng ? $args->pre_title_4_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Service Title',
@@ -240,7 +240,7 @@
                                         'arg_value' => $args->service_img_3 ? asset("../storage/$args->service_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Projects Title',
@@ -249,7 +249,7 @@
                                     'arg_value_eng' => $args->portifolio_title_eng ? $args->portifolio_title_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
@@ -281,7 +281,7 @@
                                     'arg_value_eng' => $args->frame_description_1_eng ? $args->frame_description_1_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Frame Number 2',
@@ -304,7 +304,7 @@
                                     'arg_value_eng' => $args->frame_description_2_eng ? $args->frame_description_2_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'About Us Title',
@@ -321,7 +321,7 @@
                                     'arg_value_eng' => $args->about_us_description_eng ? $args->about_us_description_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Testimonials Title',
@@ -338,15 +338,16 @@
                                     'arg_value_eng' => $args->testimonials_description_eng ? $args->testimonials_description_eng : ''
                                     ])
                                 </div>
-
+<hr />
+                                <!--
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Number 1',
                                     'id_input_text' => 'InputTestimonialsNum1',
                                     'arg_value' => $args->testimonials_num_1 ? $args->testimonials_num_1 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Testimonials Description 1',
                                     'id_input_text' => 'InputTestimonialsDescription1',
                                     'arg_value' => $args->testimonials_description_1 ? $args->testimonials_description_1 : '',
@@ -355,7 +356,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
+                                        @ include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Testimonials Image 1',
                                         'id_img_file' => 'InputTestimonialsImg1',
                                         'id_text_file' => 'InputTestimonialsImg1Preview',
@@ -363,26 +364,26 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Company 1',
                                     'id_input_text' => 'InputTestimonialsCompany1',
                                     'arg_value' => $args->testimonials_company_1 ? $args->testimonials_company_1 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Name 1',
                                     'id_input_text' => 'InputTestimonialsName1',
                                     'arg_value' => $args->testimonials_name_1 ? $args->testimonials_name_1 : '' ])
                                 </div>
 
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Number 2',
                                     'id_input_text' => 'InputTestimonialsNum2',
                                     'arg_value' => $args->testimonials_num_2 ? $args->testimonials_num_2 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtextpteng',[
+                                    @ include('components.inputtextpteng',[
                                     'title' => 'Testimonials Description 2',
                                     'id_input_text' => 'InputTestimonialsDescription2',
                                     'arg_value' => $args->testimonials_description_2 ? $args->testimonials_description_2 : '',
@@ -391,7 +392,7 @@
                                 </div>
                                 <div class="card-body">
                                     <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
+                                        @ include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Testimonials Image 2',
                                         'id_img_file' => 'InputTestimonialsImg2',
                                         'id_text_file' => 'InputTestimonialsImg2Preview',
@@ -399,21 +400,22 @@
                                     </div>
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Company 2',
                                     'id_input_text' => 'InputTestimonialsCompany2',
                                     'arg_value' => $args->testimonials_company_2 ? $args->testimonials_company_2 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Testimonials Name 2',
                                     'id_input_text' => 'InputTestimonialsName2',
                                     'arg_value' => $args->testimonials_name_2 ? $args->testimonials_name_2 : '' ])
                                 </div>
+                                -->
 
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Title',
+                                    'title' => 'Oportunidades Title',
                                     'id_input_text' => 'InputEmployeeTitle',
                                     'arg_value' => $args->employee_title ? $args->employee_title : '',
                                     'arg_value_eng' => $args->employee_title_eng ? $args->employee_title_eng : ''
@@ -421,7 +423,7 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Name 1',
+                                    'title' => 'Oportunidade titulo 1',
                                     'id_input_text' => 'InputEmployeeName1',
                                     'arg_value' => $args->employee_name_1 ? $args->employee_name_1 : '',
                                     'arg_value_eng' => $args->employee_name_1_eng ? $args->employee_name_1_eng : ''
@@ -429,7 +431,7 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Work 1',
+                                    'title' => 'Oportunidade descrição 1',
                                     'id_input_text' => 'InputEmployeeWork1',
                                     'arg_value' => $args->employee_work_1 ? $args->employee_work_1 : '',
                                     'arg_value_eng' => $args->employee_work_1_eng ? $args->employee_work_1_eng : ''
@@ -438,33 +440,35 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Employee Image 1',
+                                        'title' => 'Oportunidade Image 1',
                                         'id_img_file' => 'InputEmployeeImg1',
                                         'id_text_file' => 'InputEmployeeImg1Preview',
                                         'arg_value' => $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <!--
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Facebook 1',
                                     'id_input_text' => 'InputEmployeeUrlFacebook1',
                                     'arg_value' => $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Instagram 1',
                                     'id_input_text' => 'InputEmployeeUrlInstagram1',
                                     'arg_value' => $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Twitter 1',
                                     'id_input_text' => 'InputEmployeeUrlTwitter1',
                                     'arg_value' => $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : '' ])
                                 </div>
+                                -->
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Name 2',
+                                    'title' => 'Oportunidade titulo 2',
                                     'id_input_text' => 'InputEmployeeName2',
                                     'arg_value' => $args->employee_name_2 ? $args->employee_name_2 : '',
                                     'arg_value_eng' => $args->employee_name_2_eng ? $args->employee_name_2_eng : ''
@@ -472,7 +476,7 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Work 2',
+                                    'title' => 'Oportunidade descrição 2',
                                     'id_input_text' => 'InputEmployeeWork2',
                                     'arg_value' => $args->employee_work_2 ? $args->employee_work_2 : '',
                                     'arg_value_eng' => $args->employee_work_2_eng ? $args->employee_work_2_eng : ''
@@ -487,27 +491,29 @@
                                         'arg_value' => $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <!--
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Facebook 2',
                                     'id_input_text' => 'InputEmployeeUrlFacebook2',
                                     'arg_value' => $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Instagram 2',
                                     'id_input_text' => 'InputEmployeeUrlInstagram2',
                                     'arg_value' => $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Twitter 2',
                                     'id_input_text' => 'InputEmployeeUrlTwitter2',
                                     'arg_value' => $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : '' ])
                                 </div>
+                                -->
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Name 3',
+                                    'title' => 'Oportunidade titulo 3',
                                     'id_input_text' => 'InputEmployeeName3',
                                     'arg_value' => $args->employee_name_3 ? $args->employee_name_3 : '',
                                     'arg_value_eng' => $args->employee_name_3_eng ? $args->employee_name_3_eng : ''
@@ -515,7 +521,7 @@
                                 </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
-                                    'title' => 'Employee Work 3',
+                                    'title' => 'Oportunidade descrição 3',
                                     'id_input_text' => 'InputEmployeeWork3',
                                     'arg_value' => $args->employee_work_3 ? $args->employee_work_3 : '',
                                     'arg_value_eng' => $args->employee_work_3_eng ? $args->employee_work_3_eng : ''
@@ -524,30 +530,33 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Employee Image 3',
+                                        'title' => 'Oportunidade Image 3',
                                         'id_img_file' => 'InputEmployeeImg3',
                                         'id_text_file' => 'InputEmployeeImg3Preview',
                                         'arg_value' => $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <!--
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Facebook 3',
                                     'id_input_text' => 'InputEmployeeUrlFacebook3',
                                     'arg_value' => $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Instagram 3',
                                     'id_input_text' => 'InputEmployeeUrlInstagram3',
                                     'arg_value' => $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : '' ])
                                 </div>
                                 <div class="card-body">
-                                    @include('components.inputtext',['flag' => 'pteng',
+                                    @ include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Employee Twitter 3',
                                     'id_input_text' => 'InputEmployeeUrlTwitter3',
                                     'arg_value' => $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : '' ])
                                 </div>
+                                -->
+                                <hr />
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
@@ -611,6 +620,7 @@
                                         'arg_value' => $args->brands_img_6 ? asset("../storage/$args->brands_img_6") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Final Title',
@@ -644,7 +654,7 @@
                                     'arg_value_eng' => $args->sign_rolling_eng ? $args->sign_rolling_eng : ''
                                     ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Social Facebook',
@@ -669,7 +679,7 @@
                                     'id_input_text' => 'InputSocialLinkedin',
                                     'arg_value' => $args->social_url_linkedin ? $args->social_url_linkedin : '' ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Contact Telephone',
@@ -688,7 +698,7 @@
                                     'id_input_text' => 'InputContactEmail',
                                     'arg_value' => $args->contact_email ? $args->contact_email : '' ])
                                 </div>
-
+<hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Navigation Title 1',
@@ -745,7 +755,7 @@
                                     'id_input_text' => 'InputNavigationUrl4',
                                     'arg_value' => $args->navigation_url_4 ? $args->navigation_url_4 : '' ])
                                 </div>
-
+<hr />
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="saveIndexPage()">Salvar modificações Index Page</button>
                                 </div>

@@ -586,30 +586,77 @@
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">{{ $args->pre_title_4 ? $args->pre_title_4 : 'pre_title_4' }}</span>
                             <h2 class="title ">
-                                {{ $args->employee_title ? $args->employee_title : 'employee_title' }}
+                                {{ $args->employee_title ? $args->employee_title : 'Oportunidades' }}
                             </h2>
                         </div>
                     </div>
 
                     <div class="container">
                         <div class="d-grid grid-lg-3 grid-md-2">
-                            @foreach($oportunidades as $id => $oportunidade)
                             <div class="team-item d-flex align-items-end">
                                 <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $oportunidade->img_1 ? asset("../storage/$oportunidade->img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                                 </div>
                                 <div class="content d-flex justify-content-between w-100">
                                     <div class="text">
                                         <h4 class="title-block text-upper mb-5">
-                                            {{ $oportunidade->title_1 ? $oportunidade->title_1 : 'title_1' }}
+                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'title' }}
                                         </h4>
                                         <span>
-                                            {{ $oportunidade->description ? $oportunidade->description : 'description' }}
+                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'description' }}
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                            <div class="team-item d-flex align-items-end">
+                                <div class="box-img">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/1.jpg")}}" alt="">
+                                </div>
+                                <div class="content d-flex justify-content-between w-100">
+                                    <div class="text">
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'title' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'description' }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-item d-flex align-items-end">
+                                <div class="box-img">
+                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/1.jpg")}}" alt="">
+                                </div>
+                                <div class="content d-flex justify-content-between w-100">
+                                    <div class="text">
+                                        <h4 class="title-block text-upper mb-5">
+                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'title' }}
+                                        </h4>
+                                        <span>
+                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'description' }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--
+                            @ foreach($oportunidades as $id => $oportunidade)
+                            <div class="team-item d-flex align-items-end">
+                                <div class="box-img">
+                                    <img class="cover-bg-img has-border-radius" src="{ { $oportunidade->img_1 ? asset("../storage/$oportunidade->img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
+                                </div>
+                                <div class="content d-flex justify-content-between w-100">
+                                    <div class="text">
+                                        <h4 class="title-block text-upper mb-5">
+                                            { { $oportunidade->title_1 ? $oportunidade->title_1 : 'title_1' }}
+                                        </h4>
+                                        <span>
+                                            { { $oportunidade->description ? $oportunidade->description : 'description' }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            @ endforeach
+                            -->
                         </div>
                     </div>
                 </section>
