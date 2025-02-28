@@ -44,6 +44,10 @@
             font-size: 2.5em !important;
         }
 
+        .dsn-team {
+            background-color: black;
+        }
+
     </style>
 </head>
 
@@ -494,7 +498,7 @@
                 <!-- ========== End Brand========== -->
 
                 <!-- ========== Team ========== -->
-                <section class="dsn-team section-padding background-section">
+                <section class="dsn-team section-padding background-section ">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
                             <span class="sub-heading mb-5">{{ $about->about_pre_title_3 ? $about->about_pre_title_3 : 'about_pre_title_3' }}</span>
