@@ -422,6 +422,12 @@
                                     ])
                                 </div>
                                 <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 1',
+                                    'id_input_text' => 'InputEmployeeURL1',
+                                    'arg_value' => $args->employee_url_1 ? $args->employee_url_1 : '' ])
+                                </div>
+                                <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Oportunidade titulo 1',
                                     'id_input_text' => 'InputEmployeeName1',
@@ -467,6 +473,12 @@
                                 </div>
                                 -->
                                 <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 2',
+                                    'id_input_text' => 'InputEmployeeURL2',
+                                    'arg_value' => $args->employee_url_2 ? $args->employee_url_2 : '' ])
+                                </div>
+                                <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Oportunidade titulo 2',
                                     'id_input_text' => 'InputEmployeeName2',
@@ -511,6 +523,12 @@
                                     'arg_value' => $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : '' ])
                                 </div>
                                 -->
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 3',
+                                    'id_input_text' => 'InputEmployeeURL3',
+                                    'arg_value' => $args->employee_url_3 ? $args->employee_url_3 : '' ])
+                                </div>
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Oportunidade titulo 3',

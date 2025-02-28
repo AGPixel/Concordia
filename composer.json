@@ -13,7 +13,8 @@
         "laravel/framework": "^11.31",
         "laravel/helpers": "^1.7",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "teampanfu/laravel-hcaptcha": "^1.1"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

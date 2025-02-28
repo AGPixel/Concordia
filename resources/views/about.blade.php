@@ -511,117 +511,123 @@
                     <div class="container">
                         <div class="d-grid grid-lg-3 grid-md-2">
                             <div class="team-item d-flex align-items-end">
-                                <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
-                                </div>
-                                <div class="content d-flex justify-content-between w-100">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
-                                        </span>
+                                <a href="{{ $args->employee_url_1 ? $args->employee_url_1 : '#' }}">
+                                    <div class="box-img">
+                                        <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_1 ? asset("../storage/$args->employee_img_1") : asset("/assets/img/team/1.jpg")}}" alt="">
                                     </div>
-                                    @if($args->employee_url_facebook_1 || $args->employee_url_instagram_1 || $args->employee_url_twitter_1)
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            @if($args->employee_url_facebook_1)
-                                            <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_instagram_1)
-                                            <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_twitter_1)
-                                            <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            @endif
+                                    <div class="content d-flex justify-content-between w-100">
+                                        <div class="text">
+                                            <h4 class="title-block text-upper mb-5">
+                                                {{ $args->employee_name_1 ? $args->employee_name_1 : 'employee_name_1' }}
+                                            </h4>
+                                            <span>
+                                                {{ $args->employee_work_1 ? $args->employee_work_1 : 'employee_work_1' }}
+                                            </span>
                                         </div>
+                                        @if($args->employee_url_facebook_1 || $args->employee_url_instagram_1 || $args->employee_url_twitter_1)
+                                        <div class="social-inner d-flex">
+                                            <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                            <div class="social d-flex flex-column background-section">
+                                                @if($args->employee_url_facebook_1)
+                                                <a href="{{ $args->employee_url_facebook_1 ? $args->employee_url_facebook_1 : 'employee_url_facebook_1' }}" class="social-item">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_instagram_1)
+                                                <a href="{{ $args->employee_url_instagram_1 ? $args->employee_url_instagram_1 : 'employee_url_instagram_1' }}" class="social-item">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_twitter_1)
+                                                <a href="{{ $args->employee_url_twitter_1 ? $args->employee_url_twitter_1 : 'employee_url_twitter_1' }}" class="social-item">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        @endif
                                     </div>
-                                    @endif
-                                </div>
+                                </a>
                             </div>
 
                             <div class="team-item d-flex align-items-end">
-                                <div class="box-img has-border-radius">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
-                                </div>
-                                <div class="content d-flex justify-content-between w-100">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
-                                        </span>
+                                <a href="{{ $args->employee_url_2 ? $args->employee_url_2 : '#' }}">
+                                    <div class="box-img has-border-radius">
+                                        <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_2 ? asset("../storage/$args->employee_img_2") : asset("/assets/img/team/2.jpg")}}" alt="">
                                     </div>
-                                    @if($args->employee_url_facebook_2 || $args->employee_url_instagram_2 || $args->employee_url_twitter_2)
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            @if($args->employee_url_facebook_2)
-                                            <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_instagram_2)
-                                            <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_twitter_2)
-                                            <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            @endif
+                                    <div class="content d-flex justify-content-between w-100">
+                                        <div class="text">
+                                            <h4 class="title-block text-upper mb-5">
+                                                {{ $args->employee_name_2 ? $args->employee_name_2 : 'employee_name_2' }}
+                                            </h4>
+                                            <span>
+                                                {{ $args->employee_work_2 ? $args->employee_work_2 : 'employee_work_2' }}
+                                            </span>
                                         </div>
+                                        @if($args->employee_url_facebook_2 || $args->employee_url_instagram_2 || $args->employee_url_twitter_2)
+                                        <div class="social-inner d-flex">
+                                            <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                            <div class="social d-flex flex-column background-section">
+                                                @if($args->employee_url_facebook_2)
+                                                <a href="{{ $args->employee_url_facebook_2 ? $args->employee_url_facebook_2 : 'employee_url_facebook_2' }}" class="social-item">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_instagram_2)
+                                                <a href="{{ $args->employee_url_instagram_2 ? $args->employee_url_instagram_2 : 'employee_url_instagram_2' }}" class="social-item">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_twitter_2)
+                                                <a href="{{ $args->employee_url_twitter_2 ? $args->employee_url_twitter_2 : 'employee_url_twitter_2' }}" class="social-item">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        @endif
                                     </div>
-                                    @endif
-                                </div>
+                                </a>
                             </div>
 
                             <div class="team-item d-flex align-items-end">
-                                <div class="box-img">
-                                    <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
-                                </div>
-                                <div class="content w-100 d-flex justify-content-between">
-                                    <div class="text">
-                                        <h4 class="title-block text-upper mb-5">
-                                            {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
-                                        </h4>
-                                        <span>
-                                            {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
-                                        </span>
+                                <a href="{{ $args->employee_url_3 ? $args->employee_url_3 : '#' }}">
+                                    <div class="box-img">
+                                        <img class="cover-bg-img has-border-radius" src="{{ $args->employee_img_3 ? asset("../storage/$args->employee_img_3") : asset("/assets/img/team/3.jpg")}}" alt="">
                                     </div>
-                                    @if($args->employee_url_facebook_3 || $args->employee_url_instagram_3 || $args->employee_url_twitter_3)
-                                    <div class="social-inner d-flex">
-                                        <h6 class="theme-color">SOCIAL MEDIA</h6>
-                                        <div class="social d-flex flex-column background-section">
-                                            @if($args->employee_url_facebook_3)
-                                            <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_instagram_3)
-                                            <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                            @endif
-                                            @if($args->employee_url_twitter_3)
-                                            <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
-                                                <i class="fab fa-twitter"></i>
-                                            </a>
-                                            @endif
+                                    <div class="content w-100 d-flex justify-content-between">
+                                        <div class="text">
+                                            <h4 class="title-block text-upper mb-5">
+                                                {{ $args->employee_name_3 ? $args->employee_name_3 : 'employee_name_3' }}
+                                            </h4>
+                                            <span>
+                                                {{ $args->employee_work_3 ? $args->employee_work_3 : 'employee_work_3' }}
+                                            </span>
                                         </div>
+                                        @if($args->employee_url_facebook_3 || $args->employee_url_instagram_3 || $args->employee_url_twitter_3)
+                                        <div class="social-inner d-flex">
+                                            <h6 class="theme-color">SOCIAL MEDIA</h6>
+                                            <div class="social d-flex flex-column background-section">
+                                                @if($args->employee_url_facebook_3)
+                                                <a href="{{ $args->employee_url_facebook_3 ? $args->employee_url_facebook_3 : 'employee_url_facebook_3' }}" class="social-item">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_instagram_3)
+                                                <a href="{{ $args->employee_url_instagram_3 ? $args->employee_url_instagram_3 : 'employee_url_instagram_3' }}" class="social-item">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                                @endif
+                                                @if($args->employee_url_twitter_3)
+                                                <a href="{{ $args->employee_url_twitter_3 ? $args->employee_url_twitter_3 : 'employee_url_twitter_3' }}" class="social-item">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                                @endif
+                                            </div>
+                                        </div>
+                                        @endif
                                     </div>
-                                    @endif
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

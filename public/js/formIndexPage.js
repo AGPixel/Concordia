@@ -367,6 +367,7 @@ function saveIndexPage() {
         employee_title: document.getElementById("InputEmployeeTitle").value,
         employee_title_eng: document.getElementById("InputEmployeeTitleEng")
             .value,
+        employee_url_1: document.getElementById("InputEmployeeURL1").value,
         employee_name_1: document.getElementById("InputEmployeeName1").value,
         employee_name_1_eng: document.getElementById("InputEmployeeName1Eng")
             .value,
@@ -385,6 +386,7 @@ function saveIndexPage() {
             "InputEmployeeUrlTwitter1"
         ).value,
         */
+        employee_url_2: document.getElementById("InputEmployeeURL2").value,
         employee_name_2: document.getElementById("InputEmployeeName2").value,
         employee_name_2_eng: document.getElementById("InputEmployeeName2Eng")
             .value,
@@ -403,6 +405,7 @@ function saveIndexPage() {
             "InputEmployeeUrlTwitter2"
         ).value,
         */
+        employee_url_3: document.getElementById("InputEmployeeURL3").value,
         employee_name_3: document.getElementById("InputEmployeeName3").value,
         employee_name_3_eng: document.getElementById("InputEmployeeName3Eng")
             .value,
