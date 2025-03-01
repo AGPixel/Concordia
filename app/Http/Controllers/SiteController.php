@@ -379,9 +379,12 @@ class SiteController extends Controller
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
+        $dataSiteKey = env('HCAPTCHA_SITEKEY');
+
         return view('oportunidadedetalhe',['metaTags' => $metaTags, 'contact' => $contact,
                                      'index_text' => $index_text,
                                      'menuWorks' => $menuWorks,
+                                     'dataSiteKey' => $dataSiteKey,
                                      'menuProjects' => $menuProjects,
                                      'oportunidade' => $oportunidade]);
     }
@@ -435,9 +438,12 @@ class SiteController extends Controller
         
         $propriedade = $this->service->propriedadeById($id,$lingua);
 
+        $dataSiteKey = env('HCAPTCHA_SITEKEY');
+
         return view('propriedadedetalhe',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
                                      'menuWorks' => $menuWorks, 
+                                     'dataSiteKey' => $dataSiteKey,
                                      'menuProjects' => $menuProjects,
                                      'propriedade' => $propriedade]);
     }
