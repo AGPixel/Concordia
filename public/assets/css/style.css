@@ -8981,3 +8981,16 @@ hr {
 .sub-heading {
   font-family: 'Open Sans', sans-serif;
 }
+
+.bt-concordia-send {
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  padding: 20px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 9;
+}

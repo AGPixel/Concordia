@@ -11,6 +11,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 Route::post('/logar', [LoginController::class, 'logar'])->name('api.logar');
+Route::post('/send-email', [SiteController::class, 'sendEmail'])->name('api.send-email');
 
 Route::middleware([EnsureTokenIsValid::class])->group(function () {
 

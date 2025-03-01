@@ -19,6 +19,8 @@
         }
 
     </style>
+
+    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -166,13 +168,15 @@
                                                 </div>
                                             </div>
 
-
                                             <div class="form-group dsn-up">
                                                 <div class="entry-box">
                                                     <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Mensagem" : "Message" : "Mensagem" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Por favor, deixe-nos uma mensagem." : "Please,leave us a message." : "Por favor, deixe-nos uma mensagem." }}"></textarea>
                                                 </div>
                                                 <div class="help-block with-errors"></div>
                                             </div>
+
+                                            <div id="returnFeedback"></div>
+                                            <div class="h-captcha" data-sitekey="{{ $dataSiteKey }}"></div>
 
                                             <div class="d-flex dsn-up w-100">
                                                 <div class="image-zoom move-circle w-100" data-dsn="parallax">
@@ -236,6 +240,7 @@
     <script src="{{ asset("/assets/js/plugins/dsn-grid.min.js") }}"></script>
     <script src="{{ asset("/assets/js/custom.js") }}"></script>
     <script src="{{ asset("/js/jquery.js") }}"></script>
+    <script src="{{ asset("/js/formContactHomePage.js") }}"></script>
 </body>
 
 </html>

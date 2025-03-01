@@ -137,7 +137,14 @@ class SiteController extends Controller
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
 
-        return view('contactpage', ['metaTags' => $metaTags, 'contact' => $contact, 'index_text' => $index_text, 'menuWorks' => $menuWorks, 'menuProjects' => $menuProjects]);
+        $dataSiteKey = env('HCAPTCHA_SITEKEY');
+
+        return view('contactpage', ['metaTags' => $metaTags, 
+                                    'contact' => $contact, 
+                                    'dataSiteKey' => $dataSiteKey,
+                                    'index_text' => $index_text, 
+                                    'menuWorks' => $menuWorks, 
+                                    'menuProjects' => $menuProjects]);
     }
 
     public function saveContactPage(Request $request) {
@@ -145,6 +152,10 @@ class SiteController extends Controller
         $this->service->saveContact($request->all());
         
         return true;
+    }
+
+    public function sendEmail(Request $request) {
+        return $this->service->sendEmail($request->all());
     }
 
     // ------------------------------------- CONTATO -------------------------------------

@@ -16,9 +16,15 @@ use App\Models\Project;
 use App\Models\Testimonial;
 use App\Models\Oportunidade;
 use App\Models\Propriedade;
+
+use App\Mail\ContactMail;
+
 use App\Repositories\SiteRepository;
+
 use App\Exceptions\SiteException;
 use App\Exceptions\OldPasswordIncorrectException;
+
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Storage;
@@ -187,6 +193,29 @@ class SiteService extends BaseService
 
     public function saveContact(array $arr) {
         $this->repository->saveContact($arr);
+    }
+
+    public function sendEmail(array $arr) {
+
+        $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+
+        $errorMessage = 'There was an error while submitting the form. Please try again later';
+
+        try {
+
+            $to = env('MAIL_FROM_ADDRESS');
+
+            Mail::to($to)->send(new ContactMail($arr['name'],$arr['email'],$arr['message']));
+
+            $responseArray = array('type' => 'success', 'message' => $okMessage);
+
+        } catch ( \Exception $e ) {
+
+            $responseArray = array('type' => 'danger', 'message' => $e->getMessage());
+
+        }
+
+        return $responseArray;
     }
 
     // ------------------------------------- CONTACT -------------------------------------
