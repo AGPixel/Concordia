@@ -149,84 +149,82 @@
                                 <h2 class="title text-upper p-relative">{{ $oportunidade->contact_title ? $oportunidade->contact_title : 'contact_title' }}</h2>
                             </div>
                             <div class="dsn-form form-box d-flex flex-column p-relative">
-                                <form id="contact-form" class="form w-100" method="post" action="contact.php" data-toggle="validator">
-                                    <div class="messages"></div>
-                                    <div class="input__wrap controls">
+                                <div class="messages"></div>
+                                <div class="input__wrap controls">
+                                    <div class="d-grid" data-dsn-gap="0px 30px">
                                         <div class="d-grid" data-dsn-gap="0px 30px">
-                                            <div class="d-grid" data-dsn-gap="0px 30px">
-                                                <div class="form-group dsn-up">
-                                                    <div class="entry-box">
-                                                        <input id="form_name" type="text" name="name" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu nome" : "Type your name" : "Digite o seu nome" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "nome é obrigatório." : "name is required." : "nome é obrigatório." }}" />
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                                <div class="form-group dsn-up">
-                                                    <div class="entry-box">
-                                                        <input id="form_email" type="email" name="email" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu endereço de e-mail" : "Type your Email Address" : "Digite o seu endereço de e-mail" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "E-mail válido é obrigatório." : "Valid email is required." : "E-mail válido é obrigatório." }}" />
-                                                    </div>
-                                                    <div class="help-block with-errors"></div>
-                                                </div>
-                                            </div>
-
                                             <div class="form-group dsn-up">
                                                 <div class="entry-box">
-                                                    <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Mensagem" : "Message" : "Mensagem" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Por favor, deixe-nos uma mensagem." : "Please,leave us a message." : "Por favor, deixe-nos uma mensagem." }}"></textarea>
+                                                    <input id="form_name" type="text" name="name" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu nome" : "Type your name" : "Digite o seu nome" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "nome é obrigatório." : "name is required." : "nome é obrigatório." }}" />
                                                 </div>
                                                 <div class="help-block with-errors"></div>
                                             </div>
-
-                                            <div id="returnFeedback"></div>
-                                            <div class="h-captcha" data-sitekey="{{ $dataSiteKey }}"></div>
-
-                                            <div class="d-flex dsn-up w-100">
-                                                <div class="image-zoom move-circle w-100" data-dsn="parallax">
-                                                    <input class="background-theme w-100" type="submit" value="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Enviar mensagem" : "Send Message" : "Enviar mensagem" }}">
+                                            <div class="form-group dsn-up">
+                                                <div class="entry-box">
+                                                    <input id="form_email" type="email" name="email" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Digite o seu endereço de e-mail" : "Type your Email Address" : "Digite o seu endereço de e-mail" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "E-mail válido é obrigatório." : "Valid email is required." : "E-mail válido é obrigatório." }}" />
                                                 </div>
+                                                <div class="help-block with-errors"></div>
                                             </div>
                                         </div>
-                                </form>
+
+                                        <div class="form-group dsn-up">
+                                            <div class="entry-box">
+                                                <textarea id="form_message" class="form-control" name="message" rows="7" placeholder="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Mensagem" : "Message" : "Mensagem" }}" required="required" data-error="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Por favor, deixe-nos uma mensagem." : "Please,leave us a message." : "Por favor, deixe-nos uma mensagem." }}"></textarea>
+                                            </div>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+
+                                        <div id="returnFeedback"></div>
+                                        <div class="h-captcha" data-sitekey="{{ $dataSiteKey }}"></div>
+
+                                        <div class="d-flex dsn-up w-100">
+                                            <div class="image-zoom move-circle w-100" data-dsn="parallax">
+                                                <button class="background-theme w-100 bt-concordia-send" onclick="sendEmail()">{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Enviar mensagem" : "Send Message" : "Enviar mensagem" }}</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="social-box border-bottom border-top mt-30 d-flex align-items-center justify-content-center">
-                        <ul class="dsn-socials box-social">
-                            @if(isset($index_text->social_url_facebook))
-                            <li>
-                                <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-section">
-                                    <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
-                                </a>
-                            </li>
-                            @endif
-                            @if(isset($index_text->social_url_instagram))
-                            <li>
-                                <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-section">
-                                    <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
-                                </a>
-                            </li>
-                            @endif
-                            @if(isset($index_text->social_url_twitter))
-                            <li>
-                                <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-section">
-                                    <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
-                                </a>
-                            </li>
-                            @endif
-                            @if(isset($index_text->social_url_linkedin))
-                            <li>
-                                <a href="{{ $index_text->social_url_linkedin }}" target="_blank" class="background-section">
-                                    <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
-                                </a>
-                            </li>
-                            @endif
-                        </ul>
+                        <div class="social-box border-bottom border-top mt-30 d-flex align-items-center justify-content-center">
+                            <ul class="dsn-socials box-social">
+                                @if(isset($index_text->social_url_facebook))
+                                <li>
+                                    <a href="{{ $index_text->social_url_facebook }}" target="_blank" class="background-section">
+                                        <i class="fab fa-facebook-f" aria-hidden="true"></i> <span>FB</span>
+                                    </a>
+                                </li>
+                                @endif
+                                @if(isset($index_text->social_url_instagram))
+                                <li>
+                                    <a href="{{ $index_text->social_url_instagram }}" target="_blank" class="background-section">
+                                        <i class="fab fa-instagram" aria-hidden="true"></i> <span>IN</span>
+                                    </a>
+                                </li>
+                                @endif
+                                @if(isset($index_text->social_url_twitter))
+                                <li>
+                                    <a href="{{ $index_text->social_url_twitter }}" target="_blank" class="background-section">
+                                        <i class="fab fa-twitter" aria-hidden="true"></i> <span>TW</span>
+                                    </a>
+                                </li>
+                                @endif
+                                @if(isset($index_text->social_url_linkedin))
+                                <li>
+                                    <a href="{{ $index_text->social_url_linkedin }}" target="_blank" class="background-section">
+                                        <i class="fab fa-linkedin" aria-hidden="true"></i> <span>LN</span>
+                                    </a>
+                                </li>
+                                @endif
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <!-- ========== End Contact  ========== -->
             </div>
-            <!-- ========== End Contact  ========== -->
-        </div>
 
-        @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
+            @include('components.footersite',['args'=> $index_text,'contact'=> $contact])
 
     </main>
 
