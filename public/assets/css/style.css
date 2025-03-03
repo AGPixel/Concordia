@@ -8487,11 +8487,13 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 /* -------------- Usado para correção dos titulos que estão muito parecidos -------------- */
 
 /* -------------- Usado para correção da descrição do portidolio -------------- */
+/* -------------- Usado para correção do telefone em contato -------------- */
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .w-100-when-mobile {
     width:100% !important;
   }
 }
+/* -------------- Usado para correção do telefone em contato -------------- */
 /* -------------- Usado para correção da descrição do portidolio -------------- */
 
 /* -------------- Usado para correção do tipo de portifolio -------------- */

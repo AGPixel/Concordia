@@ -54,7 +54,7 @@
 
                         <div class="box-content d-flex flex-column z-index-1">
                             <h1 class="title-lg text-upper">{{isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "Fale connosco" : "Contact us" : "Fale connosco" }}</h1>
-                            <div class="contact-links d-flex flex-column w-50 mt-50">
+                            <div class="contact-links d-flex flex-column w-50 mt-50 w-100-when-mobile">
                                 @if(isset($contact->email1))
                                 <a href="malito:{{ $contact->email1 }}" class="sm-title-block text-upper d-flex justify-content-between align-items-center">{{ $contact->email1 }}
                                     <span class="icon">
