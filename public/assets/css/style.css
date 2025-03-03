@@ -8494,6 +8494,27 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 /* -------------- Usado para correção da descrição do portidolio -------------- */
 
+/* -------------- Usado para correção do tipo de portifolio -------------- */
+
+.hide-portifolio-mobile {
+  display: block;
+}
+
+.show-portifolio-mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .hide-portifolio-mobile {
+    display: none;
+  }
+  
+  .show-portifolio-mobile {
+    display: block;
+  }
+}
+/* -------------- Usado para correção do tipo de portifolio -------------- */
+
 @media only screen and (max-width: 767px) {
   .about-2 .bg-mask {
     width: 100%;

@@ -161,11 +161,23 @@
                                                                 </path>
                                                             </svg>
                                                             @if(isset($portifolio->type_1_1))
-                                                            <span class="background-main heading-color">{{ $portifolio->type_1_1 }}</span>
+                                                            <span class="background-main heading-color hide-portifolio-mobile">{{ $portifolio->type_1_1 }}</span>
                                                             @endif
                                                             @if(isset($portifolio->type_1_2))
-                                                            <span class="background-main heading-color">{{ $portifolio->type_1_2 }}</span>
+                                                            <span class="background-main heading-color hide-portifolio-mobile">{{ $portifolio->type_1_2 }}</span>
                                                             @endif
+                                                            <ul class="show-portifolio-mobile">
+                                                                @if(isset($portifolio->type_1_1))
+                                                                <li class="background-main heading-color">
+                                                                    {{ $portifolio->type_1_1 }}
+                                                                </li>
+                                                                @endif
+                                                                @if(isset($portifolio->type_1_2))
+                                                                <li class="background-main heading-color">
+                                                                    {{ $portifolio->type_1_2 }}
+                                                                </li>
+                                                                @endif
+                                                            </ul>
                                                         </div>
                                                     </div>
 
