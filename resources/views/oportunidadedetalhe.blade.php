@@ -51,7 +51,7 @@
             //dd($oportunidade->type_2);
             @endphp
             <!-- ========== Slider Parallax ========== -->
-            <header class="dsn-section-padding v-dark-head h-100-v p-relative">
+            <header class="dsn-section-padding v-dark-head p-relative">
                 <div class="effect-popup before-z-index h-100" data-src="{{ isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" data-caption="Caption #3" data-fancybox="_1" data-cursor="open" data-dsn-overlay="0">
                     <img class="cover-bg-img has-direction" src="{{ isset($oportunidade->img_1) ? asset("../storage/$oportunidade->img_1") : 'assets/img/portfolio/project1/1.jpg' }}" alt="">
                 </div>
