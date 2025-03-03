@@ -295,6 +295,15 @@
                                     </p>
                                 </div>
 
+                                <div class="fact-item background-main has-border-radius p-30 dsn-up display-block-575-width" style="background-image: url({{ $args->about_img_3 ? asset("../storage/$args->about_img_3") : asset("/assets/img/bg-video.jpg") }})">
+                                    <h3 class="title d-flex align-items-start justify-content-center">
+                                        {{ $args->about_num_3 ? $args->about_num_3 : 'about_num_2' }}
+                                    </h3>
+                                    <p class="text-upper mt-20 v-light background-main p-5 text-center heading-color">
+                                        {{ $args->about_description_3 ? $args->about_description_3 : 'about_description_2' }}
+                                    </p>
+                                </div>
+
                             </div>
 
                             <div class="box-video dsn-up">

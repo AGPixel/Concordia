@@ -497,7 +497,7 @@
                 </section>
                 <!-- ========== End Brand========== -->
 
-                <!-- ========== Team ========== -->
+                <!-- ========== Oportunidade ========== -->
                 <section class="dsn-team section-padding background-section ">
                     <div class="container">
                         <div class="section-title dsn-fill mb-70 d-flex flex-column">
@@ -566,7 +566,7 @@
                         </div>
                     </div>
                 </section>
-                <!-- ========== End Team ========== -->
+                <!-- ========== Oportunidade ========== -->
 
                 @include('components.footersite',['args'=> $args,'contact'=> $contact])
 

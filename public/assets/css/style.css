@@ -183,6 +183,16 @@
   }
 }
 
+.display-block-575-width {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 575px) {
+  .display-block-575-width {
+    display: block !important;
+  }
+}
+
 @media only screen and (max-width: 575px) {
   :root {
     --dsn-gap-container: 15px;
