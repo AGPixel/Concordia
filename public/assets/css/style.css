@@ -8482,9 +8482,17 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
   }
   .services-lest-hover .item h2 {
     line-height: 80px !important;
-}
+  }
 }
 /* -------------- Usado para correção dos titulos que estão muito parecidos -------------- */
+
+/* -------------- Usado para correção da descrição do portidolio -------------- */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .w-100-when-mobile {
+    width:100% !important;
+  }
+}
+/* -------------- Usado para correção da descrição do portidolio -------------- */
 
 @media only screen and (max-width: 767px) {
   .about-2 .bg-mask {

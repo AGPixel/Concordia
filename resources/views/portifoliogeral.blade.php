@@ -76,13 +76,13 @@
                             <h1 class="title-lg text-upper">{{ $portifolioGeral->title ? $portifolioGeral->title : 'title' }}</h1>
 
                             @if(isset($portifolioGeral->column1))
-                            <div class="contact-links w-50 mt-20 left-column-descricao">
+                            <div class="contact-links w-50 mt-20 left-column-descricao w-100-when-mobile">
                                 <p>{{ $portifolioGeral->column1 ? $portifolioGeral->column1 : 'column1' }}</p>
                             </div>
-                            <div class="contact-links w-50 mt-20 right-column-descricao">
+                            <div class="contact-links w-50 mt-20 right-column-descricao w-100-when-mobile">
                                 <p>{{ $portifolioGeral->column2 ? $portifolioGeral->column2 : 'column2' }}</p>
                             </div>
-                            @else 
+                            @else
                             <div class="contact-links w-50 mt-20">
                                 <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
                             </div>
