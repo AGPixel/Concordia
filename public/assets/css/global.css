@@ -1292,6 +1292,7 @@ a:focus {
     margin-top: var(--grid-gap-row, 30px);
   }
 }
+
 @media only screen and (max-width: 767px) {
   .grid-md-3.dsn-isotope > * {
     width: calc(100% - var(--grid-gap, 30px));

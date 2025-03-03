@@ -1,6 +1,6 @@
 <footer class="footer background-section v-dark pt-60">
     <div class="container p-relative">
-        <div class="d-grid grid-lg-4 grid-md-3">
+        <div class="d-grid grid-lg-4 grid-md-3 display-flex-div-all">
             <div class="logo-wrap">
                 <div class="logo d-flex">
                     <img src="{{ asset("/assets/img/logo-light.png") }}" alt="" class="logo">
@@ -21,9 +21,10 @@
 
             </div>
 
-            <div class="footer-links">
+            <div class="footer-links display-flex-div-parent-text-center">
                 <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
-                    {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "INFORMAÇÃO" : "INFORMATION" : "INFORMAÇÃO" }}</h4>
+                    {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "INFORMAÇÃO" : "INFORMATION" : "INFORMAÇÃO" }}
+                </h4>
                 <ul>
                     <li class="">
                         <a href="{{ $args->navigation_url_1 ? $args->navigation_url_1 : '#' }}">{{ $args->navigation_title_1 ? $args->navigation_title_1 : 'navigation_title_1' }}</a>
@@ -41,8 +42,8 @@
                 </ul>
             </div>
 
-            <div class="footer-contact">
-                <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
+            <div class="footer-contact display-flex-div-parent-text-center">
+                <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper footer-linksuteis-fix-margin-left">
                     {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "LINKS ÚTEIS" : "USEFUL LINKS" : "LINKS ÚTEIS" }}
                 </h4>
 
@@ -63,7 +64,7 @@
 
             </div>
 
-            <div class="footer-socials">
+            <div class="footer-socials display-flex-div-parent-text-center">
                 <h4 class="sm-title-block p-relative circle-before circle-after circle-both-before mb-10 text-upper">
                     {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "SIGA-NOS" : "FOLLOW US" : "SIGA-NOS" }}
                 </h4>

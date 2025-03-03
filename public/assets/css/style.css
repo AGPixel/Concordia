@@ -8450,6 +8450,21 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
   }
 }
 
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .display-flex-div-all {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+
+  .display-flex-div-parent-text-center {
+      text-align: center;
+  }
+  .footer-linksuteis-fix-margin-left {
+    padding-left: 15px !important;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .about-2 .bg-mask {
     width: 100%;
