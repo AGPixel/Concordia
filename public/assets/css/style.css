@@ -7130,9 +7130,11 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 @media only screen and (max-width: 575px) {
+  /*
   .services-lest-hover .item .number {
     display: none;
   }
+  */
 }
 
 .services-lest-hover .item:not(:last-of-type)::after {
@@ -7144,9 +7146,11 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 @media only screen and (max-width: 575px) {
+  /*
   .services-lest-hover .item:not(:last-of-type)::after {
     display: none;
   }
+    */
 }
 
 .service-under-header .item {
@@ -8450,6 +8454,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
   }
 }
 
+/* -------------- Usado para correção do footer -------------- */
 @media only screen and (min-width: 500px) and (max-width: 767px) {
   .display-flex-div-all {
       display: flex !important;
@@ -8464,6 +8469,19 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
     padding-left: 15px !important;
   }
 }
+/* -------------- Usado para correção do footer -------------- */
+
+.title-font-size {
+  font-size: 3.5em;
+}
+
+/* -------------- Usado para correção dos titulos que estão muito parecidos -------------- */
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .title-font-size {
+    font-size: 2em;
+  }
+}
+/* -------------- Usado para correção dos titulos que estão muito parecidos -------------- */
 
 @media only screen and (max-width: 767px) {
   .about-2 .bg-mask {

@@ -36,10 +36,6 @@
             padding-top: 4px;
         }
 
-        .title-font-size {
-            font-size: 3.5em !important;
-        }
-
         .testimonial-font-size {
             font-size: 2.5em !important;
         }
@@ -182,8 +178,8 @@
                     </div>
                     <div class="container">
                         <div class="dsn-cards">
-                            <div class="dsn-posts dsn-style-hover-list dsn-layout-fade-up" data-dsn-fx="2">
 
+                            <div class="dsn-posts dsn-style-hover-list dsn-layout-fade-up" data-dsn-fx="2">
                                 @if(isset($about->about_service_1))
                                 <div class="item d-flex p-relative box-hover-image dsn-style-hover dsn-up" data-img="{{ $about->about_service_img_1 ? asset("../storage/$about->about_service_img_1") : asset("/assets/img/services/1.jpg")}}">
                                     <h2 class="title title-font-size"><a href="#" class="effect-ajax ">{{ $about->about_service_1 }}</a></h2>
@@ -235,11 +231,10 @@
                                                 </path>
                                             </svg>
                                         </span>
-
                                     </div>
                                 </div>
-
                             </div>
+
                         </div>
                     </div>
                 </section>
