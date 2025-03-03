@@ -412,6 +412,101 @@
                                     ])
                                 </div>
 
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidades Title',
+                                    'id_input_text' => 'InputOportunidadeTitle',
+                                    'arg_value' => $about->oportunidade_title ? $about->oportunidade_title : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 1',
+                                    'id_input_text' => 'InputOportunidadeURL1',
+                                    'arg_value' => $about->oportunidade_url_1 ? $about->oportunidade_url_1 : '' ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade titulo 1',
+                                    'id_input_text' => 'InputOportunidadeName1',
+                                    'arg_value' => $about->oportunidade_name_1 ? $about->oportunidade_name_1 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade descrição 1',
+                                    'id_input_text' => 'InputOportunidadeWork1',
+                                    'arg_value' => $about->oportunidade_work_1 ? $about->oportunidade_work_1 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Oportunidade Image 1',
+                                        'id_img_file' => 'InputOportunidadeImg1',
+                                        'id_text_file' => 'oportunidadeImg1',
+                                        'arg_value' => $about->oportunidade_img_1 ? asset("../storage/$about->oportunidade_img_1") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 2',
+                                    'id_input_text' => 'InputOportunidadeURL2',
+                                    'arg_value' => $about->oportunidade_url_2 ? $about->oportunidade_url_2 : '' ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade titulo 2',
+                                    'id_input_text' => 'InputOportunidadeName2',
+                                    'arg_value' => $about->oportunidade_name_2 ? $about->oportunidade_name_2 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade descrição 2',
+                                    'id_input_text' => 'InputOportunidadeWork2',
+                                    'arg_value' => $about->oportunidade_work_2 ? $about->oportunidade_work_2 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Oportunidade Image 2',
+                                        'id_img_file' => 'InputOportunidadeImg2',
+                                        'id_text_file' => 'oportunidadeImg2',
+                                        'arg_value' => $about->oportunidade_img_2 ? asset("../storage/$about->oportunidade_img_2") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade URL 3',
+                                    'id_input_text' => 'InputOportunidadeURL3',
+                                    'arg_value' => $about->oportunidade_url_3 ? $about->oportunidade_url_3 : '' ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade titulo 3',
+                                    'id_input_text' => 'InputOportunidadeName3',
+                                    'arg_value' => $about->oportunidade_name_3 ? $about->oportunidade_name_3 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    @include('components.inputtext',['flag' => 'pteng',
+                                    'title' => 'Oportunidade descrição 3',
+                                    'id_input_text' => 'InputOportunidadeWork3',
+                                    'arg_value' => $about->oportunidade_work_3 ? $about->oportunidade_work_3 : '',
+                                    ])
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Oportunidade Image 3',
+                                        'id_img_file' => 'InputOportunidadeImg3',
+                                        'id_text_file' => 'oportunidadeImg3',
+                                        'arg_value' => $about->oportunidade_img_3 ? asset("../storage/$about->oportunidade_img_3") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="saveAboutPage()">Salvar modificações About Page</button>
                                 </div>

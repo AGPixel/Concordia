@@ -87,6 +87,19 @@ class About extends Model
         'about_brands_description_eng',
         'about_pre_title_3',
         'about_pre_title_3_eng',
+        'oportunidade_title',
+        'oportunidade_name_1',
+        'oportunidade_work_1',
+        'oportunidade_img_1',
+        'oportunidade_url_1',
+        'oportunidade_name_2',
+        'oportunidade_work_2',
+        'oportunidade_img_2',
+        'oportunidade_url_2',
+        'oportunidade_name_3',
+        'oportunidade_work_3',
+        'oportunidade_img_3',
+        'oportunidade_url_3',
     ];
 
 }
