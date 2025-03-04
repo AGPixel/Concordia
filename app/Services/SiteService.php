@@ -367,6 +367,92 @@ class SiteService extends BaseService
 
     // ------------------------------------- PORTIFOLIO -------------------------------------
 
+    public function workByTitle($id,$lingua = 'pt') {
+        $portifolio = $this->repository->workByTitle($id);
+
+        if ($lingua == 'eng') {
+            $portifolio->title = $this->changeLanguage($portifolio->title,$portifolio->title_eng);
+            $portifolio->description = $this->changeLanguage($portifolio->description,$portifolio->description_eng);
+            $portifolio->type_1_1 = $this->changeLanguage($portifolio->type_1_1,$portifolio->type_1_1_eng);
+            $portifolio->type_1_2 = $this->changeLanguage($portifolio->type_1_2,$portifolio->type_1_2_eng);
+            $portifolio->title_1 = $this->changeLanguage($portifolio->title_1,$portifolio->title_1_eng);
+            $portifolio->type_2_1 = $this->changeLanguage($portifolio->type_2_1,$portifolio->type_2_1_eng);
+            $portifolio->type_2_2 = $this->changeLanguage($portifolio->type_2_2,$portifolio->type_2_2_eng);
+            $portifolio->title_2 = $this->changeLanguage($portifolio->title_2,$portifolio->title_2_eng);
+            $portifolio->type_3_1 = $this->changeLanguage($portifolio->type_3_1,$portifolio->type_3_1_eng);
+            $portifolio->type_3_2 = $this->changeLanguage($portifolio->type_3_2,$portifolio->type_3_2_eng);
+            $portifolio->title_3 = $this->changeLanguage($portifolio->title_3,$portifolio->title_3_eng);
+            $portifolio->type_4_1 = $this->changeLanguage($portifolio->type_4_1,$portifolio->type_4_1_eng);
+            $portifolio->type_4_2 = $this->changeLanguage($portifolio->type_4_2,$portifolio->type_4_2_eng);
+            $portifolio->title_4 = $this->changeLanguage($portifolio->title_4,$portifolio->title_4_eng);
+            $portifolio->type_5_1 = $this->changeLanguage($portifolio->type_5_1,$portifolio->type_5_1_eng);
+            $portifolio->type_5_2 = $this->changeLanguage($portifolio->type_5_2,$portifolio->type_5_2_eng);
+            $portifolio->title_5 = $this->changeLanguage($portifolio->title_5,$portifolio->title_5_eng);
+            $portifolio->type_6_1 = $this->changeLanguage($portifolio->type_6_1,$portifolio->type_6_1_eng);
+            $portifolio->type_6_2 = $this->changeLanguage($portifolio->type_6_2,$portifolio->type_6_2_eng);
+            $portifolio->title_6 = $this->changeLanguage($portifolio->title_6,$portifolio->title_6_eng);
+            $portifolio->type_7_1 = $this->changeLanguage($portifolio->type_7_1,$portifolio->type_7_1_eng);
+            $portifolio->type_7_2 = $this->changeLanguage($portifolio->type_7_2,$portifolio->type_7_2_eng);
+            $portifolio->title_7 = $this->changeLanguage($portifolio->title_7,$portifolio->title_7_eng);
+            $portifolio->type_8_1 = $this->changeLanguage($portifolio->type_8_1,$portifolio->type_8_1_eng);
+            $portifolio->type_8_2 = $this->changeLanguage($portifolio->type_8_2,$portifolio->type_8_2_eng);
+            $portifolio->title_8 = $this->changeLanguage($portifolio->title_8,$portifolio->title_8_eng);
+            $portifolio->type_9_1 = $this->changeLanguage($portifolio->type_9_1,$portifolio->type_8_1_eng);
+            $portifolio->type_9_2 = $this->changeLanguage($portifolio->type_9_2,$portifolio->type_9_2_eng);
+            $portifolio->title_9 = $this->changeLanguage($portifolio->title_9,$portifolio->title_9_eng);
+            $portifolio->type_10_1 = $this->changeLanguage($portifolio->type_10_1,$portifolio->type_10_1_eng);
+            $portifolio->type_10_2 = $this->changeLanguage($portifolio->type_10_2,$portifolio->type_10_2_eng);
+            $portifolio->title_10 = $this->changeLanguage($portifolio->title_10,$portifolio->title_10_eng);
+            $portifolio->type_11_1 = $this->changeLanguage($portifolio->type_11_1,$portifolio->type_11_1_eng);
+            $portifolio->type_11_2 = $this->changeLanguage($portifolio->type_11_2,$portifolio->type_11_2_eng);
+            $portifolio->title_11 = $this->changeLanguage($portifolio->title_11,$portifolio->title_11_eng);
+            $portifolio->type_12_1 = $this->changeLanguage($portifolio->type_12_1,$portifolio->type_12_1_eng);
+            $portifolio->type_12_2 = $this->changeLanguage($portifolio->type_12_2,$portifolio->type_12_2_eng);
+            $portifolio->title_12 = $this->changeLanguage($portifolio->title_12,$portifolio->title_12_eng);
+            $portifolio->type_13_1 = $this->changeLanguage($portifolio->type_13_1,$portifolio->type_13_1_eng);
+            $portifolio->type_13_2 = $this->changeLanguage($portifolio->type_13_2,$portifolio->type_13_2_eng);
+            $portifolio->title_13 = $this->changeLanguage($portifolio->title_13,$portifolio->title_13_eng);
+            $portifolio->type_14_1 = $this->changeLanguage($portifolio->type_14_1,$portifolio->type_14_1_eng);
+            $portifolio->type_14_2 = $this->changeLanguage($portifolio->type_14_2,$portifolio->type_14_2_eng);
+            $portifolio->title_14 = $this->changeLanguage($portifolio->title_14,$portifolio->title_14_eng);
+            $portifolio->type_15_1 = $this->changeLanguage($portifolio->type_15_1,$portifolio->type_15_1_eng);
+            $portifolio->type_15_2 = $this->changeLanguage($portifolio->type_15_2,$portifolio->type_15_2_eng);
+            $portifolio->title_15 = $this->changeLanguage($portifolio->title_15,$portifolio->title_15_eng);
+            $portifolio->type_16_1 = $this->changeLanguage($portifolio->type_16_1,$portifolio->type_16_1_eng);
+            $portifolio->type_16_2 = $this->changeLanguage($portifolio->type_16_2,$portifolio->type_16_2_eng);
+            $portifolio->title_16 = $this->changeLanguage($portifolio->title_16,$portifolio->title_16_eng);
+            $portifolio->type_17_1 = $this->changeLanguage($portifolio->type_17_1,$portifolio->type_17_1_eng);
+            $portifolio->type_17_2 = $this->changeLanguage($portifolio->type_17_2,$portifolio->type_17_2_eng);
+            $portifolio->title_17 = $this->changeLanguage($portifolio->title_17,$portifolio->title_17_eng);
+            $portifolio->type_18_1 = $this->changeLanguage($portifolio->type_18_1,$portifolio->type_18_1_eng);
+            $portifolio->type_18_2 = $this->changeLanguage($portifolio->type_18_2,$portifolio->type_18_2_eng);
+            $portifolio->title_18 = $this->changeLanguage($portifolio->title_18,$portifolio->title_18_eng);
+            $portifolio->type_19_1 = $this->changeLanguage($portifolio->type_19_1,$portifolio->type_19_1_eng);
+            $portifolio->type_19_2 = $this->changeLanguage($portifolio->type_19_2,$portifolio->type_19_2_eng);
+            $portifolio->title_19 = $this->changeLanguage($portifolio->title_19,$portifolio->title_19_eng);
+            $portifolio->type_20_1 = $this->changeLanguage($portifolio->type_20_1,$portifolio->type_20_1_eng);
+            $portifolio->type_20_2 = $this->changeLanguage($portifolio->type_20_2,$portifolio->type_20_2_eng);
+            $portifolio->title_20 = $this->changeLanguage($portifolio->title_20,$portifolio->title_20_eng);
+            $portifolio->type_21_1 = $this->changeLanguage($portifolio->type_21_1,$portifolio->type_21_1_eng);
+            $portifolio->type_21_2 = $this->changeLanguage($portifolio->type_21_2,$portifolio->type_21_2_eng);
+            $portifolio->title_21 = $this->changeLanguage($portifolio->title_21,$portifolio->title_21_eng);
+            $portifolio->type_22_1 = $this->changeLanguage($portifolio->type_22_1,$portifolio->type_22_1_eng);
+            $portifolio->type_22_2 = $this->changeLanguage($portifolio->type_22_2,$portifolio->type_22_2_eng);
+            $portifolio->title_22 = $this->changeLanguage($portifolio->title_22,$portifolio->title_22_eng);
+            $portifolio->type_23_1 = $this->changeLanguage($portifolio->type_23_1,$portifolio->type_23_1_eng);
+            $portifolio->type_23_2 = $this->changeLanguage($portifolio->type_23_2,$portifolio->type_23_2_eng);
+            $portifolio->title_23 = $this->changeLanguage($portifolio->title_23,$portifolio->title_23_eng);
+            $portifolio->type_24_1 = $this->changeLanguage($portifolio->type_24_1,$portifolio->type_24_1_eng);
+            $portifolio->type_24_2 = $this->changeLanguage($portifolio->type_24_2,$portifolio->type_24_2_eng);
+            $portifolio->title_24 = $this->changeLanguage($portifolio->title_24,$portifolio->title_24_eng);
+            $portifolio->type_25_1 = $this->changeLanguage($portifolio->type_25_1,$portifolio->type_25_1_eng);
+            $portifolio->type_25_2 = $this->changeLanguage($portifolio->type_25_2,$portifolio->type_25_2_eng);
+            $portifolio->title_25 = $this->changeLanguage($portifolio->title_25,$portifolio->title_25_eng);
+        }
+
+        return $portifolio;
+    }
+
     public function workById($id,$lingua = 'pt') {
         $portifolio = $this->repository->workById($id);
 
@@ -764,6 +850,19 @@ class SiteService extends BaseService
 
     // ------------------------------------- PROJECT -------------------------------------
 
+    public function projectByTitle($id,$lingua = 'pt') {
+        $project = $this->repository->projectByTitle($id);
+
+        if ($lingua == 'eng') {
+            $project->title_1 = $this->changeLanguage($project->title_1,$project->title_1_eng);
+            $project->description_1 = $this->changeLanguage($project->description_1,$project->description_1_eng);
+            $project->title_2 = $this->changeLanguage($project->title_2,$project->title_2_eng);
+            $project->description_2 = $this->changeLanguage($project->description_2,$project->description_2_eng);
+        }
+
+        return $project;
+    }
+
     public function projectById($id,$lingua = 'pt') {
         $project = $this->repository->projectById($id);
 
@@ -869,6 +968,70 @@ class SiteService extends BaseService
     // ------------------------------------- PROJECT -------------------------------------
 
     // ------------------------------------- OPORTUNIDADE -------------------------------------
+
+    public function oportunidadeByTitle($id,$lingua = 'pt') {
+        $oportunidade = $this->repository->oportunidadeByTitle($id);
+
+        if ($lingua == 'eng') {
+            $oportunidade->title = $this->changeLanguage($oportunidade->title,$oportunidade->title_eng);
+            $oportunidade->description = $this->changeLanguage($oportunidade->description,$oportunidade->description_eng);
+            $oportunidade->job_1 = $this->changeLanguage($oportunidade->job_1,$oportunidade->job_1_eng);
+            $oportunidade->job_2 = $this->changeLanguage($oportunidade->job_2,$oportunidade->job_2_eng);
+            $oportunidade->type_1 = $this->changeLanguage($oportunidade->type_1,$oportunidade->type_1_eng);
+            $oportunidade->title_1 = $this->changeLanguage($oportunidade->title_1,$oportunidade->title_1_eng);
+            $oportunidade->type_2 = $this->changeLanguage($oportunidade->type_2,$oportunidade->type_2_eng);
+            $oportunidade->title_2 = $this->changeLanguage($oportunidade->title_2,$oportunidade->title_2_eng);
+            $oportunidade->type_3 = $this->changeLanguage($oportunidade->type_3,$oportunidade->type_3_eng);
+            $oportunidade->title_3 = $this->changeLanguage($oportunidade->title_3,$oportunidade->title_3_eng);
+            $oportunidade->type_4 = $this->changeLanguage($oportunidade->type_4,$oportunidade->type_4_eng);
+            $oportunidade->title_4 = $this->changeLanguage($oportunidade->title_4,$oportunidade->title_4_eng);
+            $oportunidade->type_5 = $this->changeLanguage($oportunidade->type_5,$oportunidade->type_5_eng);
+            $oportunidade->title_5 = $this->changeLanguage($oportunidade->title_5,$oportunidade->title_5_eng);
+            $oportunidade->type_6 = $this->changeLanguage($oportunidade->type_6,$oportunidade->type_6_eng);
+            $oportunidade->title_6 = $this->changeLanguage($oportunidade->title_6,$oportunidade->title_6_eng);
+            $oportunidade->type_7 = $this->changeLanguage($oportunidade->type_7,$oportunidade->type_7_eng);
+            $oportunidade->title_7 = $this->changeLanguage($oportunidade->title_7,$oportunidade->title_7_eng);
+            $oportunidade->type_8 = $this->changeLanguage($oportunidade->type_8,$oportunidade->type_8_eng);
+            $oportunidade->title_8 = $this->changeLanguage($oportunidade->title_8,$oportunidade->title_8_eng);
+            $oportunidade->type_9 = $this->changeLanguage($oportunidade->type_9,$oportunidade->type_9_eng);
+            $oportunidade->title_9 = $this->changeLanguage($oportunidade->title_9,$oportunidade->title_9_eng);
+            $oportunidade->type_10 = $this->changeLanguage($oportunidade->type_10,$oportunidade->type_10_eng);
+            $oportunidade->title_10 = $this->changeLanguage($oportunidade->title_10,$oportunidade->title_10_eng);
+            $oportunidade->type_11 = $this->changeLanguage($oportunidade->type_11,$oportunidade->type_11_eng);
+            $oportunidade->title_11 = $this->changeLanguage($oportunidade->title_11,$oportunidade->title_11_eng);
+            $oportunidade->type_12 = $this->changeLanguage($oportunidade->type_12,$oportunidade->type_12_eng);
+            $oportunidade->title_12 = $this->changeLanguage($oportunidade->title_12,$oportunidade->title_12_eng);
+            $oportunidade->type_13 = $this->changeLanguage($oportunidade->type_13,$oportunidade->type_13_eng);
+            $oportunidade->title_13 = $this->changeLanguage($oportunidade->title_13,$oportunidade->title_13_eng);
+            $oportunidade->type_14 = $this->changeLanguage($oportunidade->type_14,$oportunidade->type_14_eng);
+            $oportunidade->title_14 = $this->changeLanguage($oportunidade->title_14,$oportunidade->title_14_eng);
+            $oportunidade->type_15 = $this->changeLanguage($oportunidade->type_15,$oportunidade->type_15_eng);
+            $oportunidade->title_15 = $this->changeLanguage($oportunidade->title_15,$oportunidade->title_15_eng);
+            $oportunidade->type_16 = $this->changeLanguage($oportunidade->type_16,$oportunidade->type_16_eng);
+            $oportunidade->title_16 = $this->changeLanguage($oportunidade->title_16,$oportunidade->title_16_eng);
+            $oportunidade->type_17 = $this->changeLanguage($oportunidade->type_17,$oportunidade->type_17_eng);
+            $oportunidade->title_17 = $this->changeLanguage($oportunidade->title_17,$oportunidade->title_17_eng);
+            $oportunidade->type_18 = $this->changeLanguage($oportunidade->type_18,$oportunidade->type_18_eng);
+            $oportunidade->title_18 = $this->changeLanguage($oportunidade->title_18,$oportunidade->title_18_eng);
+            $oportunidade->type_19 = $this->changeLanguage($oportunidade->type_19,$oportunidade->type_19_eng);
+            $oportunidade->title_19 = $this->changeLanguage($oportunidade->title_19,$oportunidade->title_19_eng);
+            $oportunidade->type_20 = $this->changeLanguage($oportunidade->type_20,$oportunidade->type_20_eng);
+            $oportunidade->title_20 = $this->changeLanguage($oportunidade->title_20,$oportunidade->title_20_eng);
+            $oportunidade->type_21 = $this->changeLanguage($oportunidade->type_21,$oportunidade->type_21_eng);
+            $oportunidade->title_21 = $this->changeLanguage($oportunidade->title_21,$oportunidade->title_21_eng);
+            $oportunidade->type_22 = $this->changeLanguage($oportunidade->type_22,$oportunidade->type_22_eng);
+            $oportunidade->title_22 = $this->changeLanguage($oportunidade->title_22,$oportunidade->title_22_eng);
+            $oportunidade->type_23 = $this->changeLanguage($oportunidade->type_23,$oportunidade->type_23_eng);
+            $oportunidade->title_23 = $this->changeLanguage($oportunidade->title_23,$oportunidade->title_23_eng);
+            $oportunidade->type_24 = $this->changeLanguage($oportunidade->type_24,$oportunidade->type_24_eng);
+            $oportunidade->title_24 = $this->changeLanguage($oportunidade->title_24,$oportunidade->title_24_eng);
+            $oportunidade->type_25 = $this->changeLanguage($oportunidade->type_25,$oportunidade->type_25_eng);
+            $oportunidade->title_25 = $this->changeLanguage($oportunidade->title_25,$oportunidade->title_25_eng);
+            $oportunidade->contact_title = $this->changeLanguage($oportunidade->contact_title,$oportunidade->contact_title_eng);
+        }
+
+        return $oportunidade;
+    }
 
     public function oportunidadeById($id,$lingua = 'pt') {
         $oportunidade = $this->repository->oportunidadeById($id);
@@ -1171,6 +1334,70 @@ class SiteService extends BaseService
     // ------------------------------------- OPORTUNIDADE -------------------------------------
 
     // ------------------------------------- PROPRIEDADE -------------------------------------
+
+    public function propriedadeByTitle($id,$lingua = 'pt') {
+        $propriedade = $this->repository->propriedadeByTitle($id);
+
+        if ($lingua == 'eng') {
+            $propriedade->title = $this->changeLanguage($propriedade->title,$propriedade->title_eng);
+            $propriedade->description = $this->changeLanguage($propriedade->description,$propriedade->description_eng);
+            $propriedade->job_1 = $this->changeLanguage($propriedade->job_1,$propriedade->job_1_eng);
+            $propriedade->job_2 = $this->changeLanguage($propriedade->job_2,$propriedade->job_2_eng);
+            $propriedade->type_1 = $this->changeLanguage($propriedade->type_1,$propriedade->type_1_eng);
+            $propriedade->legend_1 = $this->changeLanguage($propriedade->legend_1,$propriedade->legend_1_eng);
+            $propriedade->type_2 = $this->changeLanguage($propriedade->type_2,$propriedade->type_2_eng);
+            $propriedade->legend_2 = $this->changeLanguage($propriedade->legend_2,$propriedade->legend_2_eng);
+            $propriedade->type_3 = $this->changeLanguage($propriedade->type_3,$propriedade->type_3_eng);
+            $propriedade->legend_3 = $this->changeLanguage($propriedade->legend_3,$propriedade->legend_3_eng);
+            $propriedade->type_4 = $this->changeLanguage($propriedade->type_4,$propriedade->type_4_eng);
+            $propriedade->legend_4 = $this->changeLanguage($propriedade->legend_4,$propriedade->legend_4_eng);
+            $propriedade->type_5 = $this->changeLanguage($propriedade->type_5,$propriedade->type_5_eng);
+            $propriedade->legend_5 = $this->changeLanguage($propriedade->legend_5,$propriedade->legend_5_eng);
+            $propriedade->type_6 = $this->changeLanguage($propriedade->type_6,$propriedade->type_6_eng);
+            $propriedade->legend_6 = $this->changeLanguage($propriedade->legend_6,$propriedade->legend_6_eng);
+            $propriedade->type_7 = $this->changeLanguage($propriedade->type_7,$propriedade->type_7_eng);
+            $propriedade->legend_7 = $this->changeLanguage($propriedade->legend_7,$propriedade->legend_7_eng);
+            $propriedade->type_8 = $this->changeLanguage($propriedade->type_8,$propriedade->type_8_eng);
+            $propriedade->legend_8 = $this->changeLanguage($propriedade->legend_8,$propriedade->legend_8_eng);
+            $propriedade->type_9 = $this->changeLanguage($propriedade->type_9,$propriedade->type_9_eng);
+            $propriedade->legend_9 = $this->changeLanguage($propriedade->legend_9,$propriedade->legend_9_eng);
+            $propriedade->type_10 = $this->changeLanguage($propriedade->type_10,$propriedade->type_10_eng);
+            $propriedade->legend_10 = $this->changeLanguage($propriedade->legend_10,$propriedade->legend_10_eng);
+            $propriedade->type_11 = $this->changeLanguage($propriedade->type_11,$propriedade->type_11_eng);
+            $propriedade->legend_11 = $this->changeLanguage($propriedade->legend_11,$propriedade->legend_11_eng);
+            $propriedade->type_12 = $this->changeLanguage($propriedade->type_12,$propriedade->type_12_eng);
+            $propriedade->legend_12 = $this->changeLanguage($propriedade->legend_12,$propriedade->legend_12_eng);
+            $propriedade->type_13 = $this->changeLanguage($propriedade->type_13,$propriedade->type_13_eng);
+            $propriedade->legend_13 = $this->changeLanguage($propriedade->legend_13,$propriedade->legend_13_eng);
+            $propriedade->type_14 = $this->changeLanguage($propriedade->type_14,$propriedade->type_14_eng);
+            $propriedade->legend_14 = $this->changeLanguage($propriedade->legend_14,$propriedade->legend_14_eng);
+            $propriedade->type_15 = $this->changeLanguage($propriedade->type_15,$propriedade->type_15_eng);
+            $propriedade->legend_15 = $this->changeLanguage($propriedade->legend_15,$propriedade->legend_15_eng);
+            $propriedade->type_16 = $this->changeLanguage($propriedade->type_16,$propriedade->type_16_eng);
+            $propriedade->legend_16 = $this->changeLanguage($propriedade->legend_16,$propriedade->legend_16_eng);
+            $propriedade->type_17 = $this->changeLanguage($propriedade->type_17,$propriedade->type_17_eng);
+            $propriedade->legend_17 = $this->changeLanguage($propriedade->legend_17,$propriedade->legend_17_eng);
+            $propriedade->type_18 = $this->changeLanguage($propriedade->type_18,$propriedade->type_18_eng);
+            $propriedade->legend_18 = $this->changeLanguage($propriedade->legend_18,$propriedade->legend_18_eng);
+            $propriedade->type_19 = $this->changeLanguage($propriedade->type_19,$propriedade->type_19_eng);
+            $propriedade->legend_19 = $this->changeLanguage($propriedade->legend_19,$propriedade->legend_19_eng);
+            $propriedade->type_20 = $this->changeLanguage($propriedade->type_20,$propriedade->type_20_eng);
+            $propriedade->legend_20 = $this->changeLanguage($propriedade->legend_20,$propriedade->legend_20_eng);
+            $propriedade->type_21 = $this->changeLanguage($propriedade->type_21,$propriedade->type_21_eng);
+            $propriedade->legend_21 = $this->changeLanguage($propriedade->legend_21,$propriedade->legend_21_eng);
+            $propriedade->type_22 = $this->changeLanguage($propriedade->type_22,$propriedade->type_22_eng);
+            $propriedade->legend_22 = $this->changeLanguage($propriedade->legend_22,$propriedade->legend_22_eng);
+            $propriedade->type_23 = $this->changeLanguage($propriedade->type_23,$propriedade->type_23_eng);
+            $propriedade->legend_23 = $this->changeLanguage($propriedade->legend_23,$propriedade->legend_23_eng);
+            $propriedade->type_24 = $this->changeLanguage($propriedade->type_24,$propriedade->type_24_eng);
+            $propriedade->legend_24 = $this->changeLanguage($propriedade->legend_24,$propriedade->legend_24_eng);
+            $propriedade->type_25 = $this->changeLanguage($propriedade->type_25,$propriedade->type_25_eng);
+            $propriedade->legend_25 = $this->changeLanguage($propriedade->legend_25,$propriedade->legend_25_eng);
+            $propriedade->contact_title = $this->changeLanguage($propriedade->contact_title,$propriedade->contact_title_eng);
+        }
+
+        return $propriedade;
+    }
 
     public function propriedadeById($id,$lingua = 'pt') {
         $propriedade = $this->repository->propriedadeById($id);

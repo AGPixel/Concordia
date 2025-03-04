@@ -241,7 +241,7 @@ class SiteController extends Controller
     }
 
     public function portifolio($lingua,$id) {
-        $work = $this->service->workById($id,$lingua);
+        $work = $this->service->workByTitle($id,$lingua);
         $metaTags = $this->service->metaTags($lingua);
 
         $menuWorks = $this->service->workActive($lingua);
@@ -323,7 +323,7 @@ class SiteController extends Controller
         
         $menuWorks = $this->service->workActive($lingua);
         
-        $project = $this->service->projectById($id,$lingua);
+        $project = $this->service->projectByTitle($id,$lingua);
 
         $menuProjects = $this->service->projectActive($lingua);
 
@@ -372,7 +372,7 @@ class SiteController extends Controller
     public function oportunidadeDetalhe($lingua,$id) {
         
         $index_text = $this->service->indexText($lingua);
-        $oportunidade = $this->service->oportunidadeById($id,$lingua);
+        $oportunidade = $this->service->oportunidadeByTitle($id,$lingua);
         $metaTags = $this->service->metaTags();
         $contact = $this->service->contact($lingua);
 
@@ -436,7 +436,7 @@ class SiteController extends Controller
         $menuWorks = $this->service->workActive($lingua);
         $menuProjects = $this->service->projectActive($lingua);
         
-        $propriedade = $this->service->propriedadeById($id,$lingua);
+        $propriedade = $this->service->propriedadeByTitle($id,$lingua);
 
         $dataSiteKey = env('HCAPTCHA_SITEKEY');
 

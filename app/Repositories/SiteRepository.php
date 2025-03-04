@@ -136,6 +136,12 @@ class SiteRepository extends BaseRepository
      public function workById($id): object {
           $modelWork = new Work();
           return $modelWork->where('id',$id)->first();
+          
+     }
+
+     public function workByTitle($title): object {
+          $modelWork = new Work();
+          return $modelWork->where('title',$title)->first();
      }
 
      public function work() {
@@ -227,6 +233,11 @@ class SiteRepository extends BaseRepository
           return $modelProject->where('id',$id)->first();
      }
 
+     public function projectByTitle($title): object {
+          $modelProject = new Project();
+          return $modelProject->where('title',$title)->first();
+     }
+
      public function getProjectThatIsNotId($id) {
           $modelProject = new Project();
           return $modelProject->where('id','!=',$id)->get();
@@ -271,6 +282,11 @@ class SiteRepository extends BaseRepository
           return $modelOportunidade->where('id',$id)->first();
      }
 
+     public function oportunidadeByTitle($title): object {
+          $modelOportunidade = new Oportunidade();
+          return $modelOportunidade->where('title',$title)->first();
+     }
+
      public function getOportunidadeThatIsNotId($id) {
           $modelOportunidade = new Oportunidade();
           return $modelOportunidade->where('id','!=',$id)->get();
@@ -313,6 +329,11 @@ class SiteRepository extends BaseRepository
      public function propriedadeById($id): object {
           $modelPropriedade = new Propriedade();
           return $modelPropriedade->where('id',$id)->first();
+     }
+
+     public function propriedadeByTitle($title): object {
+          $modelPropriedade = new Propriedade();
+          return $modelPropriedade->where('title',$title)->first();
      }
 
      public function getPropriedadeThatIsNotId($id) {

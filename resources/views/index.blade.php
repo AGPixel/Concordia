@@ -451,9 +451,9 @@
                                     </div>
                                     <div class="d-flex justify-content-between align-items-center mt-15">
                                         <h2 class="post-title word-wrap d-inline-block title-block text-upper text-upper">
-                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}{{ $portifolio->id }}" class="effect-ajax" data-dsn-ajax="work">{{ $portifolio->title }}</a>
+                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}{{ $portifolio->title }}" class="effect-ajax" data-dsn-ajax="work">{{ $portifolio->title }}</a>
                                         </h2>
-                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
+                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->title }}" class="dsn-btn dsn-btn-shape d-flex background-section border-circle effect-ajax">
                                             <span class="icon v-dark background-section">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                     <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">

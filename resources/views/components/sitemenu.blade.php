@@ -29,8 +29,8 @@
                 <ul class="nav-item">
                     @foreach($menuWorks as $id => $menuWork)
                     <li class="nav-item">
-                        <a title="{{ $menuWork->title }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->id }}" data-dsn-text="{{ $menuWork->title }}">
-                            <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'portifolio/'.$menuWork->id) ? 'menu-green' : ''  }} ">{{ $menuWork->title }}</span>
+                        <a title="{{ $menuWork->title }}" href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $menuWork->title }}" data-dsn-text="{{ $menuWork->title }}">
+                            <span class="overflow {{ str_contains($_SERVER['REQUEST_URI'],'portifolio/'.$menuWork->title) ? 'menu-green' : ''  }} ">{{ $menuWork->title }}</span>
                         </a>
                     </li>
                     @endforeach

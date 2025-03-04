@@ -144,7 +144,7 @@
                                         @foreach($portifolios as $id => $portifolio)
                                         <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
 
-                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->id }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
+                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->title }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
                                                 <div class="box-content d-flex ">
                                                     <div class="img-cat w-100">
                                                         <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
@@ -187,7 +187,7 @@
                                                             <h2 class="post-title word-wrap d-inline-block title-block">
                                                                 {{ $portifolio->title }}
                                                                 <!--
-                                                        <a href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{ { $portifolio->id }}" class="effect-ajax init-color" data-dsn-ajax="work">
+                                                        <a href="{ { isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{ { $portifolio->title }}" class="effect-ajax init-color" data-dsn-ajax="work">
                                                         </a>
                                                         -->
                                                             </h2>

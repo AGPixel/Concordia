@@ -75,7 +75,7 @@
                                     <article class="dsn-item-post grid-item over-hidden p-relative brand fashion">
                                         <div class="box-image-bg has-border-radius w-100 h-v-70 over-hidden before-z-index">
 
-                                            <a href="/pt/propriedade/{{$propriedade->id}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">
+                                            <a href="/pt/propriedade/{{$propriedade->title}}" class="w100-h100-percent dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">
 
                                                 @if(isset($propriedade->year))
                                                 <div class="cat background-main d-flex p-absolute top-0 right-0">
@@ -110,11 +110,11 @@
                                                     </div>
 
                                                     <h2 class="post-title word-wrap d-inline-block title-block">
-                                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->id }}" class="effect-ajax init-color" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">{{ $propriedade->title }}</a>
+                                                        <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->title }}" class="effect-ajax init-color" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">{{ $propriedade->title }}</a>
                                                     </h2>
                                                 </div>
 
-                                                <a href=" {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->id }}" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">
+                                                <a href=" {{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}propriedade/{{ $propriedade->title }}" class="dsn-btn dsn-btn-shape effect-ajax d-flex align-items-end mr-20" data-dsn-text="{{ $propriedade->title }}" title="{{ $propriedade->title }}">
                                                     <span class="icon background-section v-light">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                                                             <path d="M328 96h24v288h-48V177.9L81 401l-17 17-33.9-34 17-17 223-223H64V96h264z">
