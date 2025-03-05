@@ -187,7 +187,7 @@
     display: none;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 575px) {
+@media only screen  and (max-width: 575px) {
   .display-block-575-width {
     display: block !important;
   }
@@ -8455,7 +8455,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 /* -------------- Usado para correção do footer -------------- */
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .display-flex-div-all {
       display: flex !important;
       flex-direction: column !important;
@@ -8469,6 +8469,18 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
     padding-left: 15px !important;
   }
 }
+
+/* -------------- Usado para correção do titulo do serviço -------------- */
+
+@media only screen and (max-width: 767px) {
+  .title-service-font-size {
+    font-size: 1.5em;
+    line-height: 32px !important;
+  }
+}
+
+/* -------------- Usado para correção do footer -------------- */
+
 /* -------------- Usado para correção do footer -------------- */
 
 .title-font-size {
@@ -8476,7 +8488,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 /* -------------- Usado para correção dos titulos que estão muito parecidos -------------- */
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen  and (max-width: 767px) {
   .title-font-size {
     font-size: 2em;
   }
@@ -8488,7 +8500,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 
 /* -------------- Usado para correção da descrição do portidolio -------------- */
 /* -------------- Usado para correção do telefone em contato -------------- */
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen  and (max-width: 767px) {
   .w-100-when-mobile {
     width:100% !important;
   }
@@ -8506,7 +8518,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
   display: none;
 }
 
-@media only screen and (min-width: 500px) and (max-width: 767px) {
+@media only screen  and (max-width: 767px) {
   .hide-portifolio-mobile {
     display: none;
   }
