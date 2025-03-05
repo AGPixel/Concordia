@@ -83,7 +83,7 @@
                                 <p>{{ $portifolioGeral->column2 ? $portifolioGeral->column2 : 'column2' }}</p>
                             </div>
                             @else
-                            <div class="contact-links w-50 mt-20">
+                            <div class="contact-links w-100 mt-20">
                                 <p>{{ $portifolioGeral->description ? $portifolioGeral->description : 'description' }}</p>
                             </div>
                             @endif
