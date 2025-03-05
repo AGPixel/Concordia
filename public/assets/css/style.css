@@ -9080,3 +9080,9 @@ hr {
   cursor: pointer;
   z-index: 9;
 }
+
+@media only screen and (min-width: 500px) {
+  .work-massonary-grid .dsn-item-post:not(:first-of-type) {
+    margin-top: 70px !important;
+  }
+}
