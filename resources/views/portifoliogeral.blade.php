@@ -144,7 +144,7 @@
                                         @foreach($portifolios as $id => $portifolio)
                                         <article class="dsn-item-post grid-item over-hidden p-relative has-border-radius brand sports">
 
-                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->title }}" class="effect-ajax init-color w-100" data-dsn-ajax="work">
+                                            <a href="{{ isset($_COOKIE['language']) ? $_COOKIE['language'] == 'pt' ? "/pt/" : "/eng/" : "/pt/" }}portifolio/{{ $portifolio->title }}" class="effect-ajax init-color w-100" data-dsn-ajax="work" data-dsn-text="{{ $portifolio->title }}">
                                                 <div class="box-content d-flex ">
                                                     <div class="img-cat w-100">
                                                         <div class="box-image-bg w-100 over-hidden h-350 before-z-index dsn-swiper-parallax-transform p-relative" data-overlay="7">
