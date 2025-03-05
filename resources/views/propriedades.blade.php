@@ -28,6 +28,10 @@
             height: 100% !important;
         }
 
+        article {
+            margin-top: 30px;
+        }
+
     </style>
 </head>
 
