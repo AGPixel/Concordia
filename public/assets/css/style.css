@@ -9081,7 +9081,7 @@ hr {
   z-index: 9;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
   .work-massonary-grid .dsn-item-post:not(:first-of-type) {
     margin-top: 70px !important;
   }
