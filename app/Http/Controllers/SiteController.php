@@ -361,7 +361,7 @@ class SiteController extends Controller
 
         $menuWorks = $this->service->workActive($lingua);
 
-        $oportunidades = $this->service->oportunidade($lingua);
+        $oportunidades = $this->service->oportunidadeActive($lingua);
 
         return view('oportunidades',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
@@ -419,7 +419,7 @@ class SiteController extends Controller
 
         $menuWorks = $this->service->workActive($lingua);
 
-        $propriedades = $this->service->propriedade($lingua);
+        $propriedades = $this->service->propriedadeActive($lingua);
 
         return view('propriedades',['metaTags' => $metaTags, 'contact' => $contact, 
                                      'index_text' => $index_text, 
