@@ -24,11 +24,11 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('testimonial', function($table) {
-            $table->dropColumn('about_about_title')->nullable(true);
-            $table->dropColumn('about_about_title_eng')->nullable(true);
-            $table->dropColumn('about_about_description')->nullable(true);
-            $table->dropColumn('about_about_description_eng')->nullable(true);
+        Schema::table('about', function($table) {
+            $table->dropColumn('about_about_title');
+            $table->dropColumn('about_about_title_eng');
+            $table->dropColumn('about_about_description');
+            $table->dropColumn('about_about_description_eng');
         });
     }
 };

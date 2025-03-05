@@ -36,22 +36,22 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('about', function($table) {
-            $table->dropColumn('oportunidade_title')->nullable(true);
+            $table->dropColumn('oportunidade_title');
 
-            $table->dropColumn('oportunidade_name_1')->nullable(true);
-            $table->dropColumn('oportunidade_work_1')->nullable(true);
-            $table->dropColumn('oportunidade_img_1')->nullable(true);
-            $table->dropColumn('oportunidade_url_1')->nullable(true);
+            $table->dropColumn('oportunidade_name_1');
+            $table->dropColumn('oportunidade_work_1');
+            $table->dropColumn('oportunidade_img_1');
+            $table->dropColumn('oportunidade_url_1');
             
-            $table->dropColumn('oportunidade_name_2')->nullable(true);
-            $table->dropColumn('oportunidade_work_2')->nullable(true);
-            $table->dropColumn('oportunidade_img_2')->nullable(true);
-            $table->dropColumn('oportunidade_url_2')->nullable(true);
+            $table->dropColumn('oportunidade_name_2');
+            $table->dropColumn('oportunidade_work_2');
+            $table->dropColumn('oportunidade_img_2');
+            $table->dropColumn('oportunidade_url_2');
             
-            $table->dropColumn('oportunidade_name_3')->nullable(true);
-            $table->dropColumn('oportunidade_work_3')->nullable(true);
-            $table->dropColumn('oportunidade_img_3')->nullable(true);
-            $table->dropColumn('oportunidade_url_3')->nullable(true);
+            $table->dropColumn('oportunidade_name_3');
+            $table->dropColumn('oportunidade_work_3');
+            $table->dropColumn('oportunidade_img_3');
+            $table->dropColumn('oportunidade_url_3');
         });
     }
 };

@@ -459,6 +459,11 @@
                                                 <img src="{{ asset("../storage/$about->about_brands_img_4") }}" alt="">
                                             </div>
                                             @endif
+                                            @if(isset($about->about_brands_img_5))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$about->about_brands_img_5") }}" alt="">
+                                            </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>

@@ -21,6 +21,7 @@ let bases64 = {
     InputAboutBrandsImg2: null,
     InputAboutBrandsImg3: null,
     InputAboutBrandsImg4: null,
+    InputAboutBrandsImg5: null,
     InputOportunidadeImg1: null,
     InputOportunidadeImg2: null,
     InputOportunidadeImg3: null,
@@ -140,15 +141,18 @@ async function load_image_about_preview13() {
     bases64.InputAboutBrandsImg3 = await toBase64(this.files[0]);
 }
 const inputAboutBrandsImg4 = document.getElementById("InputAboutBrandsImg4");
-inputAboutBrandsImg4.addEventListener(
-    "change",
-    load_image_about_preview14,
-    false
-);
+inputAboutBrandsImg4.addEventListener("change",load_image_about_preview14,false);
 async function load_image_about_preview14() {
     document.getElementById("aboutBrandsImg4").innerHTML = this.files[0].name;
     bases64.InputAboutBrandsImg4 = await toBase64(this.files[0]);
 }
+const inputAboutBrandsImg5 = document.getElementById("InputAboutBrandsImg5");
+inputAboutBrandsImg5.addEventListener("change",load_image_about_preview15,false);
+async function load_image_about_preview15() {
+    document.getElementById("aboutBrandsImg5").innerHTML = this.files[0].name;
+    bases64.InputAboutBrandsImg5 = await toBase64(this.files[0]);
+}
+
 const inputOportunidadeImg1 = document.getElementById("InputOportunidadeImg1");
 inputOportunidadeImg1.addEventListener("change",load_image_oportunidade1_preview,false);
 async function load_image_oportunidade1_preview() {
@@ -267,6 +271,7 @@ function saveAboutPage() {
         about_brands_img_2: bases64.InputAboutBrandsImg2,
         about_brands_img_3: bases64.InputAboutBrandsImg3,
         about_brands_img_4: bases64.InputAboutBrandsImg4,
+        about_brands_img_5: bases64.InputAboutBrandsImg5,
         about_brands_description: document.getElementById("InputAboutBrandsDescription"
         ).value,
         about_brands_description_eng: document.getElementById("InputAboutBrandsDescriptionEng"

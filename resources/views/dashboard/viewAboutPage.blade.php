@@ -395,6 +395,15 @@
                                         'arg_value' => $about->about_brands_img_4 ? asset("../storage/$about->about_brands_img_4") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'About Brands Image 5',
+                                        'id_img_file' => 'InputAboutBrandsImg5',
+                                        'id_text_file' => 'aboutBrandsImg5',
+                                        'arg_value' => $about->about_brands_img_5 ? asset("../storage/$about->about_brands_img_5") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
                                 <div class="card-body first-card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'About Brands Description',

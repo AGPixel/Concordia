@@ -83,6 +83,7 @@ class About extends Model
         'about_brands_img_2',
         'about_brands_img_3',
         'about_brands_img_4',
+        'about_brands_img_5',
         'about_brands_description',
         'about_brands_description_eng',
         'about_pre_title_3',
