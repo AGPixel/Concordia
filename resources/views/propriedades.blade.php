@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
 
     <style>
-        .header-page {
-            padding-top: 120px !important;
+        @media only screen and (min-width: 501px) {
+            .header-page {
+                padding-top: 120px !important;
+            }
         }
 
         .w100-h100-percent {
