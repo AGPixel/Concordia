@@ -686,58 +686,20 @@
                         </div>
                     </div>
                     <div class="container">
-                        <div class="brand-inner d-grid grid-md-2 grid-lg-4  align-items-center p-relative z-index-1">
-                            <div class="brand-boxs d-flex flex-column align-items-end">
-                                @if(isset($args->brands_img_1))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_1") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_2))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_2") }}" alt="">
-                                </div>
-                                @endif
-                            </div>
-
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_5))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_6))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
-                                </div>
-                                @endif
-                            </div>
-
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_3))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_3") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_4))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_4") }}" alt="">
-                                </div>
-                                @endif
-                            </div>
-
-                            <div class="brand-boxs d-flex flex-column align-items-start">
-                                @if(isset($args->brands_img_5))
-                                <div class="brand-item brand-item-lg content-blure">
-                                    <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
-                                </div>
-                                @endif
-                                @if(isset($args->brands_img_6))
-                                <div class="brand-item brand-item-sm content-blure mt-30">
-                                    <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
-                                </div>
-                                @endif
-                            </div>
+                        <div class="brand-inner d-grid grid-md-4 grid-lg-3 align-items-center p-relative z-index-1">
+                            <!-- Parei aqui - fazer mostrar de forma mais aleatoria para não ficar tão uniforme -->
+                            @include('components.brandBallon',['img' => $args->brands_img_1])
+                            @include('components.brandBallon',['img' => $args->brands_img_2])
+                            @include('components.brandBallon',['img' => $args->brands_img_3])
+                            @include('components.brandBallon',['img' => $args->brands_img_4])
+                            @include('components.brandBallon',['img' => $args->brands_img_5])
+                            @include('components.brandBallon',['img' => $args->brands_img_6])
+                            @include('components.brandBallon',['img' => $args->brands_img_7])
+                            @include('components.brandBallon',['img' => $args->brands_img_8])
+                            @include('components.brandBallon',['img' => $args->brands_img_9])
+                            @include('components.brandBallon',['img' => $args->brands_img_10])
+                            @include('components.brandBallon',['img' => $args->brands_img_11])
+                            @include('components.brandBallon',['img' => $args->brands_img_12])
                         </div>
                     </div>
                 </div>

@@ -69,7 +69,7 @@
                                         'arg_value' => $args->about_img ? asset("../storage/$args->about_img") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 1',
@@ -84,7 +84,7 @@
                                     'arg_value_eng' => $args->about_description_1_eng ? $args->about_description_1_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 2',
@@ -99,7 +99,7 @@
                                     'arg_value_eng' => $args->about_description_2_eng ? $args->about_description_2_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'About Number 3',
@@ -123,7 +123,7 @@
                                         'arg_value' => $args->about_img_3 ? asset("../storage/$args->about_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Pre Title 1',
@@ -156,7 +156,7 @@
                                     'arg_value_eng' => $args->pre_title_4_eng ? $args->pre_title_4_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Service Title',
@@ -240,7 +240,7 @@
                                         'arg_value' => $args->service_img_3 ? asset("../storage/$args->service_img_3") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Projects Title',
@@ -249,7 +249,7 @@
                                     'arg_value_eng' => $args->portifolio_title_eng ? $args->portifolio_title_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
@@ -281,7 +281,7 @@
                                     'arg_value_eng' => $args->frame_description_1_eng ? $args->frame_description_1_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Frame Number 2',
@@ -304,7 +304,7 @@
                                     'arg_value_eng' => $args->frame_description_2_eng ? $args->frame_description_2_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'About Us Title',
@@ -321,7 +321,7 @@
                                     'arg_value_eng' => $args->about_us_description_eng ? $args->about_us_description_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Testimonials Title',
@@ -338,7 +338,7 @@
                                     'arg_value_eng' => $args->testimonials_description_eng ? $args->testimonials_description_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <!--
                                 <div class="card-body">
                                     @ include('components.inputtext',['flag' => 'pteng',
@@ -638,6 +638,60 @@
                                         'arg_value' => $args->brands_img_6 ? asset("../storage/$args->brands_img_6") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 7',
+                                        'id_img_file' => 'InputBrandsImg7',
+                                        'id_text_file' => 'InputBrandsImg7Preview',
+                                        'arg_value' => $args->brands_img_7 ? asset("../storage/$args->brands_img_7") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 8',
+                                        'id_img_file' => 'InputBrandsImg8',
+                                        'id_text_file' => 'InputBrandsImg8Preview',
+                                        'arg_value' => $args->brands_img_8 ? asset("../storage/$args->brands_img_8") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 9',
+                                        'id_img_file' => 'InputBrandsImg9',
+                                        'id_text_file' => 'InputBrandsImg9Preview',
+                                        'arg_value' => $args->brands_img_9 ? asset("../storage/$args->brands_img_9") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 10',
+                                        'id_img_file' => 'InputBrandsImg10',
+                                        'id_text_file' => 'InputBrandsImg10Preview',
+                                        'arg_value' => $args->brands_img_10 ? asset("../storage/$args->brands_img_10") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 11',
+                                        'id_img_file' => 'InputBrandsImg11',
+                                        'id_text_file' => 'InputBrandsImg11Preview',
+                                        'arg_value' => $args->brands_img_11 ? asset("../storage/$args->brands_img_11") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 12',
+                                        'id_img_file' => 'InputBrandsImg12',
+                                        'id_text_file' => 'InputBrandsImg12Preview',
+                                        'arg_value' => $args->brands_img_12 ? asset("../storage/$args->brands_img_12") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
                                 <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
@@ -672,7 +726,7 @@
                                     'arg_value_eng' => $args->sign_rolling_eng ? $args->sign_rolling_eng : ''
                                     ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Social Facebook',
@@ -697,7 +751,7 @@
                                     'id_input_text' => 'InputSocialLinkedin',
                                     'arg_value' => $args->social_url_linkedin ? $args->social_url_linkedin : '' ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtext',['flag' => 'pteng',
                                     'title' => 'Contact Telephone',
@@ -716,7 +770,7 @@
                                     'id_input_text' => 'InputContactEmail',
                                     'arg_value' => $args->contact_email ? $args->contact_email : '' ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
                                     'title' => 'Navigation Title 1',
@@ -773,7 +827,7 @@
                                     'id_input_text' => 'InputNavigationUrl4',
                                     'arg_value' => $args->navigation_url_4 ? $args->navigation_url_4 : '' ])
                                 </div>
-<hr />
+                                <hr />
                                 <div class="card-footer">
                                     <button type="button" class="btn btn-primary" onclick="saveIndexPage()">Salvar modificações Index Page</button>
                                 </div>
