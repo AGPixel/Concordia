@@ -36,7 +36,7 @@
 
         @media only screen and (max-width: 500px) {
             article {
-                margin-left: 0px;
+                margin-left: 0px !important;
             }
         }
 
