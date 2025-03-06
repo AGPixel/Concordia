@@ -18,8 +18,8 @@
     <style>
         @media only screen and (max-width: 500px) {
             .header-page {
-                padding-top: 8em !important;
-                font-size: 6em !important;
+                padding-top: 2.5em !important;
+                font-size: 1.05em !important;
             }
         }
 
