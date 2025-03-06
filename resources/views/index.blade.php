@@ -697,8 +697,8 @@
                             @include('components.brandBallon',['img' => $args->brands_img_8])
                             @include('components.brandBallon',['img' => $args->brands_img_9])
                             @include('components.brandBallon',['img' => $args->brands_img_10])
-                            @include('components.brandBallon',['img' => $args->brands_img_11])
-                            <!-- @ include('components.brandBallon',['img' => $args->brands_img_12]) -->
+                            @include('components.brandBallon',['img' => $args->brands_img_12])
+                            <!-- @ include('components.brandBallon',['img' => $args->brands_img_11]) -->
                         </div>
                     </div>
                 </div>

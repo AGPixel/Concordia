@@ -674,26 +674,26 @@
                                         'arg_value' => $args->brands_img_10 ? asset("../storage/$args->brands_img_10") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-                                <div class="card-body">
-                                    <div class="form-group">
-                                        @include('components.inputimg',['flag' => 'pteng',
-                                        'title' => 'Brands Image 11',
-                                        'id_img_file' => 'InputBrandsImg11',
-                                        'id_text_file' => 'InputBrandsImg11Preview',
-                                        'arg_value' => $args->brands_img_11 ? asset("../storage/$args->brands_img_11") : asset("/assets/img/sem_foto.png")])
-                                    </div>
-                                </div>
                                 <!--
                                 <div class="card-body">
                                     <div class="form-group">
                                         @ include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Brands Image 12',
+                                        'id_img_file' => 'InputBrandsImg11',
+                                        'id_text_file' => 'InputBrandsImg11Preview',
+                                        'arg_value' => $args->brands_img_11 ? asset("../storage/$args->brands_img_11") : asset("/assets/img/sem_foto.png")])
+                                    </div>
+                                </div>
+                                -->
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        @include('components.inputimg',['flag' => 'pteng',
+                                        'title' => 'Brands Image 11',
                                         'id_img_file' => 'InputBrandsImg12',
                                         'id_text_file' => 'InputBrandsImg12Preview',
                                         'arg_value' => $args->brands_img_12 ? asset("../storage/$args->brands_img_12") : asset("/assets/img/sem_foto.png")])
                                     </div>
                                 </div>
-                                -->
                                 <hr />
                                 <div class="card-body">
                                     @include('components.inputtextpteng',[
