@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="{{asset("/assets/css/style.css")}}">
 
     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <style>
+        @media only screen and (max-width: 500px) {
+            .header-page {
+                padding-top: 8em !important;
+                font-size: 6em !important;
+            }
+        }
+
+    </style>
 </head>
 
 <body class="v-dark dsn-ajax">
