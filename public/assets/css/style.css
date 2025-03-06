@@ -7595,7 +7595,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 .dsn-brand.brand-radu .brand-item.brand-item-sm {
-  height: 120px;
+  height: 150px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -7605,7 +7605,7 @@ ul.intro-project-list li h5.title-list-project+p.description-list-project {
 }
 
 .dsn-brand.brand-radu .brand-item.brand-item-sm img {
-  width: 70px;
+  width: 85px;
 }
 
 .dsn-brand .brand-item {

@@ -687,7 +687,6 @@
                     </div>
                     <div class="container">
                         <div class="brand-inner d-grid grid-md-4 grid-lg-3 align-items-center p-relative z-index-1">
-                            <!-- Parei aqui - fazer mostrar de forma mais aleatoria para não ficar tão uniforme -->
                             @include('components.brandBallon',['img' => $args->brands_img_1])
                             @include('components.brandBallon',['img' => $args->brands_img_2])
                             @include('components.brandBallon',['img' => $args->brands_img_3])
@@ -699,7 +698,7 @@
                             @include('components.brandBallon',['img' => $args->brands_img_9])
                             @include('components.brandBallon',['img' => $args->brands_img_10])
                             @include('components.brandBallon',['img' => $args->brands_img_11])
-                            @include('components.brandBallon',['img' => $args->brands_img_12])
+                            <!-- @ include('components.brandBallon',['img' => $args->brands_img_12]) -->
                         </div>
                     </div>
                 </div>
