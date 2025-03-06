@@ -190,6 +190,8 @@
 @media only screen  and (max-width: 575px) {
   .display-block-575-width {
     display: block !important;
+    background-position: center;
+    background-size: cover;
   }
 }
 
