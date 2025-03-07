@@ -136,6 +136,8 @@ class IndexText extends Model
         'works_date_3',
         'works_description_3',
         'works_description_3_eng',
+        'brands_title',
+        'brands_title_eng',
         'brands_bg_img',
         'brands_img_1',
         'brands_img_2',

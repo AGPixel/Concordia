@@ -126,6 +126,7 @@ class SiteService extends BaseService
             $index_text->employee_work_2 = $this->changeLanguage($index_text->employee_work_2,$index_text->employee_work_2_eng);
             $index_text->employee_name_3 = $this->changeLanguage($index_text->employee_name_3,$index_text->employee_name_3_eng);
             $index_text->employee_work_3 = $this->changeLanguage($index_text->employee_work_3,$index_text->employee_work_3_eng);
+            $index_text->brands_title = $this->changeLanguage($index_text->brands_title,$index_text->brands_title_eng);
             $index_text->works_title = $this->changeLanguage($index_text->works_title,$index_text->works_title_eng);
             $index_text->works_title_1 = $this->changeLanguage($index_text->works_title_1,$index_text->works_title_1_eng);
             $index_text->works_description_1 = $this->changeLanguage($index_text->works_description_1,$index_text->works_description_1_eng);

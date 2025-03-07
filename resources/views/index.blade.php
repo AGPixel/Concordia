@@ -112,6 +112,10 @@
             .mobile-hide-brands {
                 display: none;
             }
+
+            .mobile-text-title-brands {
+                font-size: 26px !important;
+            }
         }
 
     </style>
@@ -702,6 +706,9 @@
 
                 <!-- ========== Brand ========== -->
                 @if(isset($args->brands_bg_img))
+                <h2 class="title mb-30 dsn-fill mobile-text-title-brands" style="text-align: center; margin-top: 25px;">
+                    {{ $args->brands_title ? $args->brands_title : 'brands_title' }}
+                </h2>
                 <div class="mobile-hide-brands">
                     <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
                         <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
@@ -709,6 +716,7 @@
                                 <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
                             </div>
                         </div>
+
                         <div class="container">
                             <div class="brand-inner d-grid grid-md-4 grid-lg-3 align-items-center p-relative z-index-1">
                                 @include('components.brandBallon',['img' => $args->brands_img_1])

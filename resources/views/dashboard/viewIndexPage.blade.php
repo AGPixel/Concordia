@@ -576,6 +576,14 @@
                                 -->
                                 <hr />
                                 <div class="card-body">
+                                    @include('components.inputtextpteng',[
+                                    'title' => 'Brands Title',
+                                    'id_input_text' => 'InputBrandsTitle',
+                                    'arg_value' => $args->brands_title ? $args->brands_title : '',
+                                    'arg_value_eng' => $args->brands_title_eng ? $args->brands_title_eng : ''
+                                    ])
+                                </div>
+                                <div class="card-body">
                                     <div class="form-group">
                                         @include('components.inputimg',['flag' => 'pteng',
                                         'title' => 'Brands Background Image',

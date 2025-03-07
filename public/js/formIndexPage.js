@@ -466,6 +466,8 @@ function saveIndexPage() {
             "InputEmployeeUrlTwitter3"
         ).value,
         */
+        brands_title: document.getElementById("InputBrandsTitle").value,
+        brands_title_eng: document.getElementById("InputBrandsTitleEng").value,
         brands_bg_img: bases64.InputBrandsImgBg,
         brands_img_1: bases64.InputBrandsImg1,
         brands_img_2: bases64.InputBrandsImg2,
