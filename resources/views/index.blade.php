@@ -91,6 +91,24 @@
             font-size: 18px;
         }
 
+        .mobile-show-brands {
+            display: none;
+        }
+
+        .mobile-hide-brands {
+            display: block;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .mobile-show-brands {
+                display: block;
+            }
+
+            .mobile-hide-brands {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
@@ -679,27 +697,123 @@
 
                 <!-- ========== Brand ========== -->
                 @if(isset($args->brands_bg_img))
-                <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
-                    <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
-                        <div class="img-box-parallax before-z-index w-100 h-100 p-absolute top-0 bottom-0 left-0" data-overlay="7" data-dsn-grid="move-up">
-                            <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                <div class="mobile-hide-brands">
+                    <div class="dsn-brand brand-radu p-relative section-padding background-section dsn-skew-scroll">
+                        <div class="p-absolute top-0 left-0 bottom-0 w-100 h-100">
+                            <div class="img-box-parallax before-z-index w-100 h-100 p-absolute top-0 bottom-0 left-0" data-overlay="7" data-dsn-grid="move-up">
+                                <img src="{{ asset("../storage/$args->brands_bg_img") }}" class="has-bigger-scale cover-bg-img has-direction" alt="">
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="brand-inner d-grid grid-md-4 grid-lg-3 align-items-center p-relative z-index-1">
+                                @include('components.brandBallon',['img' => $args->brands_img_1])
+                                @include('components.brandBallon',['img' => $args->brands_img_2])
+                                @include('components.brandBallon',['img' => $args->brands_img_3])
+                                @include('components.brandBallon',['img' => $args->brands_img_4])
+                                @include('components.brandBallon',['img' => $args->brands_img_5])
+                                @include('components.brandBallon',['img' => $args->brands_img_6])
+                                @include('components.brandBallon',['img' => $args->brands_img_7])
+                                @include('components.brandBallon',['img' => $args->brands_img_8])
+                                @include('components.brandBallon',['img' => $args->brands_img_9])
+                                @include('components.brandBallon',['img' => $args->brands_img_10])
+                                <!-- @ include('components.brandBallon',['img' => $args->brands_img_11]) -->
+                                @include('components.brandBallon',['img' => $args->brands_img_12])
+                            </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <div class="brand-inner d-grid grid-md-4 grid-lg-3 align-items-center p-relative z-index-1">
-                            @include('components.brandBallon',['img' => $args->brands_img_1])
-                            @include('components.brandBallon',['img' => $args->brands_img_2])
-                            @include('components.brandBallon',['img' => $args->brands_img_3])
-                            @include('components.brandBallon',['img' => $args->brands_img_4])
-                            @include('components.brandBallon',['img' => $args->brands_img_5])
-                            @include('components.brandBallon',['img' => $args->brands_img_6])
-                            @include('components.brandBallon',['img' => $args->brands_img_7])
-                            @include('components.brandBallon',['img' => $args->brands_img_8])
-                            @include('components.brandBallon',['img' => $args->brands_img_9])
-                            @include('components.brandBallon',['img' => $args->brands_img_10])
-                            @include('components.brandBallon',['img' => $args->brands_img_12])
-                            <!-- @ include('components.brandBallon',['img' => $args->brands_img_11]) -->
+                </div>
+                <div class="mobile-show-brands" style="background-image:url({{ asset("../storage/$args->brands_bg_img") }}); background-size: cover; height: 13.4em;">
+                    <div class="d-flex flex-column align-items-center justify-content-center " style="padding-top: 1em;">
+                        <div class="box-brands max-w750 dsn-swiper dsn-up" data-dsn-option='{"spaceBetween":50,"centeredSlides":false,"direction":"horizontal","autoHeight":false,"slideToClickedSlide":false,"grabCursor":true,"mousewheel":false,"loop":false,"parallax":false,"slidesPerView":4,"speed":1000,"effect":"slide"}'>
+                            <div class="brand-inner">
+                                <div class="d-flex">
+                                    <div class="prev-paginate" style="opacity: 0.7; padding-right: 4px !important;">
+                                        <span class="dsn-icon dsn-icon-heading-color background-section">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                                <path d="M6.81496 0.699692L7.66349 1.54822L2.31371 6.898L16.4017 6.88707L16.4008 8.08442L2.31278 8.09535L7.65426 13.4368L6.80442 14.2867L0.0161911 7.49846L6.81496 0.699692Z" fill=""></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="swiper-container swiper">
+                                        <div class="swiper-wrapper">
+                                            @if(isset($args->brands_img_1))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_1") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_2))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_2") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_3))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_3") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_4))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_4") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_5))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_5") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_6))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_6") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_7))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_7") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_8))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_8") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_9))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_9") }}" alt="">
+                                            </div>
+                                            @endif
+                                            @if(isset($args->brands_img_10))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_10") }}" alt="">
+                                            </div>
+                                            @endif
+                                            <!--
+                                            @ if(isset($args->brands_img_11))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{ { asset("../storage/$args->brands_img_11") }}" alt="">
+                                            </div>
+                                            @ endif
+                                            -->
+                                            @if(isset($args->brands_img_12))
+                                            <div class="swiper-slide brand-item d-flex align-items-center justify-content-center">
+                                                <img src="{{ asset("../storage/$args->brands_img_12") }}" alt="">
+                                            </div>
+                                            @endif
+                                        </div>
+                                    </div>
+
+                                    <div class="next-paginate" style="opacity: 0.7; padding-right: 4px !important;">
+                                        <span class="dsn-icon dsn-icon-heading-color background-section">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="15" viewBox="0 0 17 15" fill="">
+                                                <path d="M10.185 0.699692L9.33651 1.54822L14.6863 6.898L0.598282 6.88707L0.599212 8.08442L14.6872 8.09535L9.34574 13.4368L10.1956 14.2867L16.9838 7.49846L10.185 0.699692Z" fill=""></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 @endif
