@@ -100,6 +100,11 @@
         }
 
         @media only screen and (max-width: 500px) {
+
+            .length-testimonial-description {
+                font-size: 13px !important;
+            }
+
             .mobile-show-brands {
                 display: block;
             }
